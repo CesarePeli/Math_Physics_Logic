@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insights & Exploration</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -73,8 +84,16 @@
       – A teaching module and a qualitative study on pre-service teacher awareness
     </p>
     <p>
-      📘 Available for free on Gumroad:<br>
-      <a href="https://cesarepeli.gumroad.com/l/puxszq" target="_blank" style="color:#aadfff; font-weight:bold;">Download the thesis →</a>
+      📘 Download gratuito diretto:<br>
+      <a href="/assets/downloads/galileo-thesis.pdf"
+         onclick="gtag('event', 'download', {
+           event_category: 'Materiale Gratuito',
+           event_label: 'Galileo Thesis'
+         });"
+         target="_blank"
+         style="color:#aadfff; font-weight:bold;">
+        Scarica la tesi su Galileo →
+      </a>
     </p>
   </section>
 </body>
