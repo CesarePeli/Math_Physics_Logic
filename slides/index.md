@@ -34,3 +34,16 @@ All materials are in PDF format, ready to use, print, or adapt as needed.
 ---
 
 More topics and packs will be added soon.
+
+---
+layout: default
+title: Test Slide
+permalink: /slides/test/
+---
+
+# Test in /slides/
+
+Verifica della generazione di una pagina in sottocartella.
+
+
+
