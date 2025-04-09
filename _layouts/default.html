@@ -7,18 +7,19 @@
   <meta name="description" content="{{ page.description | default: 'Logic & Motion – Math and Physics teaching materials' }}">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body style="
-  background-image: url('{{ page.background_image }}');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #eee;
-">
+<body style="...">
   {% include header.html %}
-<main class="content-box" style="margin-top: 2rem;">
-  {{ content }}
-</main>
+  {% unless page.title == "Home" %}
+    <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #aadfff; margin-bottom: 1rem;">
+      Logic & Motion
+    </div>
+  {% endunless %}
+
+  <main class="content-box" style="margin-top: 2rem;">
+    {{ content }}
+  </main>
+</body>
+
 
 {% if page.title == "Home" %}
   <h1 style="font-size: 5rem; text-align: center; color: #fff;
