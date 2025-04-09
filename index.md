@@ -6,6 +6,7 @@ nav_exclude: false
 background_image: "/images/spirale.png"
 ---
 
+
 # Logic & Motion
 
 _Teaching tools for a rational understanding_
