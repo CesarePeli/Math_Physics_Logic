@@ -1,26 +1,8 @@
 <nav>
-  {% assign pages = 
-    "index:Home,
-     odd-questions:The Odd Questions,
-     insights:Scientific Insights,
-     slides:Complete Slides,
-     exercises:Guided Exercises,
-     formulas:Formulas & Summaries,
-     about:About" | split: "," %}
-
-  {% assign current_url = page.url | replace:'index.html','' | replace:'/index','/' %}
-
-  {% for item in pages %}
-    {% assign pair = item | split: ":" %}
-    {% assign page_slug = pair[0] %}
-    {% assign label = pair[1] %}
-    {% assign page_url = '/' %}
-    {% unless page_slug == 'index' %}
-      {% assign page_url = '/' | append: page_slug | append: '/' %}
-    {% endunless %}
-
-    {% unless current_url == page_url %}
-      <a href="{{ page_url }}"><span style="white-space: nowrap;">{{ label }}</span></a>
+  {% assign nav = site.pages | where_exp: "p", "p.nav == true" | sort: "order" %}
+  {% for p in nav %}
+    {% unless page.url == p.url %}
+      <a href="{{ p.url }}"><span style="white-space: nowrap;">{{ p.title }}</span></a>
     {% endunless %}
   {% endfor %}
 </nav>
