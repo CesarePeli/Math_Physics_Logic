@@ -7,9 +7,7 @@
      exercises:Guided Exercises,
      formulas:Formulas & Summaries,
      about:About" | split: "," %}
-
   {% assign current_url = page.url | replace: "/index.html", "/" %}
-
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
     {% assign slug = parts[0] %}
@@ -21,4 +19,3 @@
     {% unless current_url == url %}<a href="{{ url | relative_url }}" style="margin: 0 0.5rem; white-space: nowrap;">{{ label }}</a>{% endunless %}
   {% endfor %}
 </nav>
-
