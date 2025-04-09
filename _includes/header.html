@@ -14,16 +14,11 @@
     {% assign parts = item | split: ":" %}
     {% assign slug = parts[0] %}
     {% assign label = parts[1] %}
-
     {% assign url = "/" %}
     {% unless slug == "index" %}
       {% assign url = "/" | append: slug | append: "/" %}
     {% endunless %}
-
-    {% unless current_url == url %}
-      <a href="{{ url | relative_url }}" style="margin: 0 0.5rem; white-space: nowrap;">
-        {{ label }}
-      </a>
-    {% endunless %}
+    {% unless current_url == url %}<a href="{{ url | relative_url }}" style="margin: 0 0.5rem; white-space: nowrap;">{{ label }}</a>{% endunless %}
   {% endfor %}
 </nav>
+
