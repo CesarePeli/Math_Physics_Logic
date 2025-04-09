@@ -1,4 +1,4 @@
-<nav>
+<nav style="text-align: center; margin: 1rem 0;">
   {% assign nav_items = 
     "index:Home,
      odd-questions:The Odd Questions,
@@ -14,13 +14,16 @@
     {% assign parts = item | split: ":" %}
     {% assign slug = parts[0] %}
     {% assign label = parts[1] %}
+
     {% assign url = "/" %}
     {% unless slug == "index" %}
       {% assign url = "/" | append: slug | append: "/" %}
     {% endunless %}
 
     {% unless current_url == url %}
-      <a href="{{ url }}"><span style="white-space: nowrap;">{{ label }}</span></a>
+      <a href="{{ url | relative_url }}" style="margin: 0 0.5rem; white-space: nowrap;">
+        {{ label }}
+      </a>
     {% endunless %}
   {% endfor %}
 </nav>
