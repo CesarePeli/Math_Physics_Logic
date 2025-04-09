@@ -1,12 +1,9 @@
-# Impostazioni generali per Jekyll
 markdown: kramdown
 theme: minima
 plugins: []
 
-# Usa URL "puliti" del tipo /about/ invece di /about.html
 permalink: pretty
 
-# Escludi file o cartelle dalla build, se presenti
 exclude:
   - .nojekyll
   - README.md
@@ -14,10 +11,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# Include cartelle manuali (opzionale, utile se usi _pages o simili)
-# include:
-#   - _pages
-
-# Impostazioni opzionali (solo se servono)
-# baseurl: ""   # se il sito è in una sottocartella, altrimenti lascia vuoto
-# url: "https://cesarepeli.com"  # facoltativo
+# Se stai usando un repo "project site"
+baseurl: "/Math_Physics_Logic"
+url: "https://cesarepeli.com"
