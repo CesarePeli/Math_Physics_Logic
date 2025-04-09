@@ -1,0 +1,25 @@
+<nav>
+  {% assign pages = 
+    "index:Home,
+     odd-questions:The Odd Questions,
+     insights:Scientific Insights,
+     slides:Complete Slides,
+     exercises:Guided Exercises,
+     formulas:Formulas & Summaries,
+     about:About" | split: "," %}
+
+  {% assign current = page.url %}
+  {% if current == "/" %}
+    {% assign current = "/index.html" %}
+  {% endif %}
+
+  {% for item in pages %}
+    {% assign pair = item | split: ":" %}
+    {% assign url = "/" | append: pair[0] | append: ".html" %}
+    {% assign label = pair[1] %}
+    {% unless current == url %}
+      <a href="{{ url }}"><span style="white-space: nowrap;">{{ label }}</span></a>
+    {% endunless %}
+  {% endfor %}
+</nav>
+
