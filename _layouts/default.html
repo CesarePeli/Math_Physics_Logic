@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Logic & Motion</title>
   <meta name="description" content="{{ page.description | default: 'Logic & Motion – Math and Physics teaching materials' }}">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 </head>
 <body style="
   background-image: url('{{ page.background_image }}');
@@ -19,6 +19,7 @@
 <main class="content-box" style="margin-top: 2rem;">
   {{ content }}
 </main>
+
 {% if page.title == "Home" %}
   <h1 style="font-size: 5rem; text-align: center; color: #fff;
              text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
