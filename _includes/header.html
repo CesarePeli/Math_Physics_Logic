@@ -1,8 +1,29 @@
 <nav>
-  {% assign nav = site.pages | where_exp: "p", "p.nav == true" | sort: "order" %}
-  {% for p in nav %}
-    {% unless page.url == p.url %}
-      <a href="{{ p.url }}"><span style="white-space: nowrap;">{{ p.title }}</span></a>
-    {% endunless %}
-  {% endfor %}
+  {% unless page.url == '/' %}
+    <a href="/"><span style="white-space: nowrap;">Home</span></a>
+  {% endunless %}
+
+  {% unless page.url == '/odd-questions.html' %}
+    <a href="/odd-questions.html">The Odd Questions</a>
+  {% endunless %}
+
+  {% unless page.url == '/insights.html' %}
+    <a href="/insights.html">Scientific Insights</a>
+  {% endunless %}
+
+  {% unless page.url == '/slides.html' %}
+    <a href="/slides.html">Complete Slides</a>
+  {% endunless %}
+
+  {% unless page.url == '/exercises.html' %}
+    <a href="/exercises.html">Guided Exercises</a>
+  {% endunless %}
+
+  {% unless page.url == '/formulas.html' %}
+    <a href="/formulas.html"><span style="white-space: nowrap;">Formulas & Summaries</span></a>
+  {% endunless %}
+
+  {% unless page.url == '/about.html' %}
+    <a href="/about.html">About</a>
+  {% endunless %}
 </nav>
