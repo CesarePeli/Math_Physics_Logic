@@ -8,18 +8,19 @@
      formulas:Formulas & Summaries,
      about:About" | split: "," %}
 
-  {% assign current = page.url %}
-  {% if current == "/" %}
-    {% assign current = "/index.html" %}
-  {% endif %}
+  {% assign current_url = page.url | replace:'index.html','' | replace:'/index','/' %}
 
   {% for item in pages %}
     {% assign pair = item | split: ":" %}
-    {% assign url = "/" | append: pair[0] | append: ".html" %}
+    {% assign page_slug = pair[0] %}
     {% assign label = pair[1] %}
-    {% unless current == url %}
-      <a href="{{ url }}"><span style="white-space: nowrap;">{{ label }}</span></a>
+    {% assign page_url = '/' %}
+    {% unless page_slug == 'index' %}
+      {% assign page_url = '/' | append: page_slug | append: '/' %}
+    {% endunless %}
+
+    {% unless current_url == page_url %}
+      <a href="{{ page_url }}"><span style="white-space: nowrap;">{{ label }}</span></a>
     {% endunless %}
   {% endfor %}
 </nav>
-
