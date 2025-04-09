@@ -4,13 +4,12 @@ plugins: []
 
 permalink: pretty
 
+url: "https://cesarepeli.com"
+baseurl: ""  # sito servito dalla root del dominio
+
 exclude:
   - .nojekyll
   - README.md
   - node_modules
   - Gemfile
   - Gemfile.lock
-
-# Se stai usando un repo "project site"
-baseurl: "/Math_Physics_Logic"
-url: "https://cesarepeli.com"
