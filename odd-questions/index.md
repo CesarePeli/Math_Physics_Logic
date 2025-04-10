@@ -16,10 +16,6 @@ _Where curiosity meets contradiction._
 
 Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics. These are not just puzzles — they're doorways to deeper understanding.
 
-</div>
-
-<div class="content-box">
-
 <div class="content-box">
 
 ## ➗ Why Can’t You Divide by Zero?
