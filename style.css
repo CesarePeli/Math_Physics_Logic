@@ -1,65 +1,50 @@
-/* Sfondo della pagina (variabile da layout) */
 body {
   font-family: system-ui, sans-serif;
-  margin: 2rem auto;
-  max-width: 800px;
   line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.3); /* layer neutro per migliorare leggibilità */
+  margin: 0;
+  padding: 0;
   color: #eee;
- padding: 2rem 1rem;
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-align: center;
+/* Contenuto centrale */
+.content-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 850px;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
 }
 
-nav a {
+/* Titoli */
+h1, h2, h3 {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Link */
+a {
   color: #aadfff;
   text-decoration: none;
-  font-size: 1rem;
-  white-space: nowrap;
+  transition: color 0.2s ease-in-out;
 }
 
-/* TITOLO */
-h1 {
-  font-size: 5rem;
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Elenchi */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #aaa;
   text-align: center;
-  margin-bottom: 0;
-  color: #fff;
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-}
-
-.subtitle {
-  font-size: 2.5rem;
-  font-style: italic;
-  color: #ddd;
-  text-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-}
-
-/* BOX CONTENUTI */
-.content-box {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 2rem auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin: 4rem 0 2rem;
 }
