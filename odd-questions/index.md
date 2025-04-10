@@ -16,15 +16,10 @@ _Where curiosity meets contradiction._
 
 Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics. These are not just puzzles — they're doorways to deeper understanding.
 
-<div class="content-box">
-
-## ➗ Why Can’t You Divide by Zero?
-
-[Read the full article →](/odd-questions/divide-by-zero/)
+## ➗ [Why Can’t You Divide by Zero?](/odd-questions/divide-by-zero/)
 
 An accessible explanation of why division by zero isn’t just tricky — it’s actually undefined.
 
-</div>
 <div class="content-box">
 
 ## ♾️ How Much Is ∞ + 1?
