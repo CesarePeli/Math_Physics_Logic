@@ -20,15 +20,15 @@ Explore some of the most fascinating, strange, and brain-twisting questions from
 
 <div class="content-box">
 
+<div class="content-box">
+
 ## ➗ Why Can’t You Divide by Zero?
 
 [Read the full article →](/odd-questions/divide-by-zero/)
 
-Because it breaks the very logic of arithmetic. Division by zero leads to contradictions such as $1 = 2$ when manipulating basic equations.  
-It’s not just "undefined" — it’s structurally impossible.
+An accessible explanation of why division by zero isn’t just tricky — it’s actually undefined.
 
 </div>
-
 <div class="content-box">
 
 ## ♾️ How Much Is ∞ + 1?
