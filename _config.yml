@@ -5,7 +5,7 @@ plugins: []
 permalink: pretty
 
 url: "https://cesarepeli.com"
-baseurl: ""  # sito servito dalla root del dominio
+baseurl: ""
 
 exclude:
   - .nojekyll
@@ -13,3 +13,7 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+
+kramdown:
+  input: GFM
+  parse_block_html: true
