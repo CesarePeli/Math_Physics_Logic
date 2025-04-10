@@ -35,9 +35,16 @@
     </section>
   {% endif %}
 
-  <main style="margin-top: 2rem;">
+<main style="margin-top: 2rem;">
+  {% if page.raw %}
     {{ content }}
-  </main>
+  {% else %}
+    <div class="content-box">
+      {{ content }}
+    </div>
+  {% endif %}
+</main>
+
 
   <footer style="text-align: center; font-size: 0.9rem; color: #aaa; margin: 4rem 0 2rem;">
     © {{ "now" | date: "%Y" }} Logic & Motion · Created by Cesare Peli
