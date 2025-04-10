@@ -4,6 +4,7 @@ title: Why You Can't Divide by Zero
 permalink: /odd-questions/divide-by-zero/
 background_image: "/images/odd-zero.png"
 description: "It’s not a taboo or a glitch in the Matrix — it simply makes no mathematical sense."
+raw: true
 ---
 
 <div class="content-box">
@@ -14,7 +15,9 @@ Is dividing by zero just a weird taboo? A mathematical superstition? Actually, i
 
 Let’s dig into why — first with integers, then with real numbers, and finally with a bit of abstract algebra.
 
----
+</div>
+
+<div class="content-box">
 
 ### Integers and Euclidean Division
 
@@ -57,9 +60,11 @@ $$
 0 = 0 \cdot q + r \quad \text{with } 0 \leq r < 0
 $$
 
-That condition $r < 0$ makes **no sense**. No such remainder can exist.
+That condition $r < 0$ makes **no sense**.
 
----
+</div>
+
+<div class="content-box">
 
 ### Real Numbers and the Equation $a = dq$
 
@@ -71,7 +76,7 @@ $$
 
 So to compute $a \div d$, we ask: what number $q$ satisfies $a = d \cdot q$?
 
-For example:
+Example:
 
 $$
 1 \div 2 = 0.5 \quad \text{because} \quad 1 = 2 \cdot 0.5
@@ -103,9 +108,11 @@ $$
 0 = 0 \cdot q
 $$
 
-This is true for **any** $q$ — so the operation isn’t **well-defined**. There’s no unique answer. That’s a red flag.
+This is true for **any** $q$ — so the operation isn’t **well-defined**.
 
----
+</div>
+
+<div class="content-box">
 
 ### Abstract Perspective: Multiplicative Inverses
 
@@ -116,7 +123,7 @@ a \div b = a \cdot \frac{1}{b}
 $$
 
 This works beautifully — as long as $b \neq 0$.  
-Because: to define $\frac{1}{b}$, we must find a number $x$ such that:
+To define $\frac{1}{b}$, we must find $x$ such that:
 
 $$
 b \cdot x = 1
@@ -142,14 +149,16 @@ $$
 
 has **no solution**. Zero has **no multiplicative inverse**.
 
----
+</div>
+
+<div class="content-box">
 
 ### Final Verdict
 
 To divide $a$ by $b$, we multiply by the inverse of $b$.  
 But **zero has no inverse**. So $a \div 0$ is undefined — always.
 
-This isn’t a forbidden operation. It’s just **meaningless**. No consistent mathematical structure allows it.  
-And that’s the beauty of it: mathematics doesn’t deal in taboos — only in **definitions that work**.
+This isn’t a forbidden operation. It’s just **meaningless**.  
+Mathematics doesn’t deal in taboos — only in **definitions that work**.
 
 </div>
