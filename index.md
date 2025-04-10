@@ -27,6 +27,3 @@ Alongside structured teaching materials, you’ll find free resources: summaries
   Clean, printable resources for quick reference and review  
 - [**About**]({{ "/about/" | relative_url }})  
   Learn more about the author and the educational vision
-
-
-
