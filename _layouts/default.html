@@ -15,27 +15,29 @@
   background-repeat: no-repeat;
   color: #eee;
 ">
-  {% include header.html %}
-<main class="content-box" style="margin-top: 2rem;">
-  {{ content }}
-</main>
 
-{% if page.title == "Home" %}
-  <h1 style="font-size: 5rem; text-align: center; color: #fff;
-             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
-                          -1px  1px 0 #000, 1px  1px 0 #000;">
-    Logic & Motion
-  </h1>
-  <div class="subtitle" style="text-align: center; font-size: 2rem; font-style: italic; color: #ddd;
-             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
-                          -1px  1px 0 #000, 1px  1px 0 #000;">
-    Teaching tools for a rational understanding
-  </div>
-{% else %}
-  <div style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #aadfff; margin-bottom: 1rem;">
-    Logic & Motion
-  </div>
-{% endif %}
+  {% include header.html %}
+
+  {% if page.title == "Home" %}
+    <section class="hero" style="text-align: center; margin: 3rem 0 2rem 0;">
+      <h1 style="font-size: 4rem; color: #fff;
+                 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                              -1px  1px 0 #000, 1px  1px 0 #000;
+                 margin: 0;">
+        Logic & Motion
+      </h1>
+      <p style="font-size: 1.5rem; font-style: italic; color: #ddd;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                             -1px  1px 0 #000, 1px  1px 0 #000;
+                margin-top: 0.5rem;">
+        Teaching tools for a rational understanding
+      </p>
+    </section>
+  {% endif %}
+
+  <main class="content-box" style="margin-top: 2rem;">
+    {{ content }}
+  </main>
 
 </body>
 </html>
