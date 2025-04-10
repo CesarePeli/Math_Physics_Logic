@@ -19,8 +19,8 @@
   {% include header.html %}
 
   {% if page.title == "Home" %}
-    <section class="hero" style="text-align: center; margin: 4rem 0 2rem 0;">
-      <h1 style="font-size: 4rem; color: #fff;
+    <section class="hero" style="text-align: center; margin: 3rem 0 2rem 0;">
+      <h1 style="font-size: 6rem; color: #fff;
                  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
                               -1px  1px 0 #000, 1px  1px 0 #000;
                  margin: 0;">
@@ -35,12 +35,13 @@
     </section>
   {% endif %}
 
-<main style="margin-top: 2rem;">
-  <div class="content-box">
+  <main style="margin-top: 2rem;">
     {{ content }}
-  </div>
-</main>
+  </main>
 
+  <footer style="text-align: center; font-size: 0.9rem; color: #aaa; margin: 4rem 0 2rem;">
+    © {{ "now" | date: "%Y" }} Logic & Motion · Created by Cesare Peli
+  </footer>
 
 </body>
 </html>

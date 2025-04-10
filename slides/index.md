@@ -3,7 +3,7 @@ layout: default
 title: Complete Slides
 permalink: /slides/
 nav_exclude: false
-background_image: "/images/u7413423743_square_image_depicting_a_trip_to_the_moon_in_the__7ecec992-7051-494a-aa0b-578560adfc9f_2.png"
+background_image: "/images/testa.png"
 ---
 
 # Complete Slides
