@@ -3,7 +3,7 @@ layout: default
 title: The Odd Questions
 permalink: /odd-questions/
 nav_exclude: false
-background_image: "/images/odd.png"
+background_image: "/images/rorschach.png"
 ---
 
 # The Odd Questions
