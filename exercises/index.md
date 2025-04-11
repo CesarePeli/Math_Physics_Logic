@@ -23,13 +23,8 @@ Problem sets with detailed solutions, step-by-step guidance, and focused practic
 An intuitive and visual presentation to explore the concept of limits — without using the epsilon-delta definition.
 
 <div id="pdf-container" style="position: relative;">
-  <iframe 
-    id="pdf-frame"
-    src="/exercises/intro-limits.pdf#toolbar=0"
-    width="100%" 
-    height="600px" 
-    style="border: none;">
-  </iframe>
+<iframe src="/exercises/intro-limits.pdf#toolbar=0" width="100%" height="600px" allowfullscreen></iframe>
+
   <button 
     onclick="document.getElementById('pdf-frame').requestFullscreen()" 
     style="position: absolute; top: 10px; right: 10px; background-color: #aadfff; border: none; padding: 6px 10px; border-radius: 8px; cursor: pointer;">
