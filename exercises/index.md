@@ -4,6 +4,7 @@ title: Guided Exercises
 permalink: /exercises/
 nav_exclude: false
 background_image: /images/scala.png
+description: "Problem sets and intuitive presentations to practice math and physics concepts with step-by-step guidance."
 raw: true
 ---
 
@@ -19,13 +20,21 @@ Problem sets with detailed solutions, step-by-step guidance, and focused practic
 
 ## Introduction to Limits
 
-An intuitive and visual presentation to explore the concept of limits — without using epsilon-delta definitions.
+An intuitive and visual presentation to explore the concept of limits — without using the epsilon-delta definition.
 
-<iframe 
-  src="/exercises/intro-limits.pdf#toolbar=0" 
-  width="100%" 
-  height="600px" 
-  style="border: none;">
-</iframe>
+<div id="pdf-container" style="position: relative;">
+  <iframe 
+    id="pdf-frame"
+    src="/exercises/intro-limits.pdf#toolbar=0"
+    width="100%" 
+    height="600px" 
+    style="border: none;">
+  </iframe>
+  <button 
+    onclick="document.getElementById('pdf-frame').requestFullscreen()" 
+    style="position: absolute; top: 10px; right: 10px; background-color: #aadfff; border: none; padding: 6px 10px; border-radius: 8px; cursor: pointer;">
+    ⛶ Fullscreen
+  </button>
+</div>
 
 </div>
