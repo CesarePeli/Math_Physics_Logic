@@ -3,7 +3,7 @@ layout: default
 title: Guided Exercises
 permalink: /exercises/
 background_image: /images/scala.png
-description: "Problem sets, visual guides and interactive explanations for key scientific concepts."
+description: "Problem sets with detailed solutions, visual explanations, and step-by-step guidance on math and physics concepts."
 raw: true
 ---
 
@@ -11,8 +11,9 @@ raw: true
 
 # Guided Exercises
 
-This section offers detailed problem sets and visual walkthroughs of key ideas in math and physics.  
-Each exercise is designed to guide your reasoning step by step — not just show the final answer.
+Problem sets with detailed solutions, step-by-step guidance, and focused practice on key concepts in mathematics and physics.
+
+This section is designed to help students **understand** before they calculate. Each exercise emphasizes reasoning, structure, and visualization — not just results.
 
 </div>
 
@@ -20,8 +21,10 @@ Each exercise is designed to guide your reasoning step by step — not just show
 
 ## Introduction to the Concept of Limit
 
-This intuitive presentation introduces the idea of a function limit **without** relying on formal definitions like the epsilon-delta formulation.  
-Ideal for beginners, it builds visual and conceptual understanding through examples and plots.
+A gentle, intuitive presentation for first-time learners.  
+We introduce the notion of limits without using the epsilon-delta definition, relying instead on **graphs**, **simple examples**, and **clear explanations**.
+
+Ideal for students encountering limits for the first time — or for anyone who wants to rebuild their intuition from scratch.
 
 </div>
 
@@ -35,7 +38,20 @@ Ideal for beginners, it builds visual and conceptual understanding through examp
   style="border: none;">
 </iframe>
 
-<a href="/exercises/intro-limits.pdf" target="_blank" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1.2rem; background-color: #aadfff; color: black; font-weight: bold; border-radius: 10px; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#aadfff'">
+<a href="/exercises/intro-limits.pdf" 
+   target="_blank" 
+   style="
+     display: inline-block; 
+     margin-top: 1rem; 
+     padding: 0.6rem 1.3rem; 
+     background-color: #aadfff; 
+     color: black; 
+     font-weight: bold; 
+     border-radius: 12px; 
+     text-decoration: none; 
+     transition: background 0.3s;" 
+   onmouseover="this.style.backgroundColor='#ffffff'" 
+   onmouseout="this.style.backgroundColor='#aadfff'">
 🔎 View Full Screen
 </a>
 
