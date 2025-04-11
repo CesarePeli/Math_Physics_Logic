@@ -16,17 +16,16 @@ Problem sets with detailed solutions, step-by-step guidance, and focused practic
 
 <div class="content-box">
 
-## 🎥 Introduction to Limits (Intuitive Presentation)
+## 🎥 Introduction to Limits – Visual & Intuitive
 
-This visual presentation introduces the concept of limits without using formal definitions like epsilon-delta. Through simple examples and geometric reasoning, students learn:
+This introductory presentation explains the concept of limits **without formal definitions** like epsilon-delta. It's ideal for students approaching calculus for the first time, focusing on:
 
-- What it means for a function to “tend” toward a value
-- How to read limits from graphs
+- The intuitive meaning of “approaching a value”
 - Left-hand and right-hand limits
-- Discontinuities and vertical asymptotes
-- Why division by zero is undefined
+- Discontinuities and asymptotes
+- Why division by zero leads to infinity
 
-It’s an ideal first step before formal calculus. You can view the slides below or click full screen for an immersive experience.
+You can explore the full presentation below or open it in fullscreen mode for a better experience.
 
 </div>
 
@@ -43,7 +42,7 @@ It’s an ideal first step before formal calculus. You can view the slides below
 <br>
 
 <a href="/exercises/intro-limits.pdf" target="_blank" style="display: inline-block; margin-top: 1rem; background: #aadfff; padding: 0.5rem 1rem; border-radius: 12px; color: black; font-weight: bold; text-decoration: none;">
-🔎 View Full Screen
+🖥️ View Full Screen
 </a>
 
 </div>
