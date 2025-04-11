@@ -11,8 +11,7 @@ raw: true
 
 # Guided Exercises
 
-This section offers detailed problem sets and visual walkthroughs of key ideas in math and physics.
-
+This section offers detailed problem sets and visual walkthroughs of key ideas in math and physics.  
 Each exercise is designed to guide your reasoning step by step — not just show the final answer.
 
 </div>
@@ -24,12 +23,20 @@ Each exercise is designed to guide your reasoning step by step — not just show
 This intuitive presentation introduces the idea of a function limit **without** relying on formal definitions like the epsilon-delta formulation.  
 Ideal for beginners, it builds visual and conceptual understanding through examples and plots.
 
-<div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="/exercises/intro-limits.pdf#toolbar=0" 
-    allowfullscreen 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
-  </iframe>
 </div>
+
+<div class="content-box">
+
+<iframe 
+  src="/exercises/intro-limits.pdf#toolbar=0" 
+  width="100%" 
+  height="600px" 
+  allowfullscreen 
+  style="border: none;">
+</iframe>
+
+<a href="/exercises/intro-limits.pdf" target="_blank" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1.2rem; background-color: #aadfff; color: black; font-weight: bold; border-radius: 10px; text-decoration: none; transition: background 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#aadfff'">
+🔎 View Full Screen
+</a>
 
 </div>
