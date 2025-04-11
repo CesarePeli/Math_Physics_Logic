@@ -3,7 +3,7 @@ layout: default
 title: Guided Exercises
 permalink: /exercises/
 background_image: /images/scala.png
-description: "Guided exercises and visual presentations to build intuition in math and physics."
+description: "Problem sets and intuitive visual guides for learning limits, derivatives, and more."
 ---
 
 <div class="content-box">
@@ -16,30 +16,34 @@ Problem sets with detailed solutions, step-by-step guidance, and focused practic
 
 <div class="content-box">
 
-## 🎥 Visual Introduction to Limits
+## 🎥 Introduction to Limits (Intuitive Presentation)
 
-<iframe 
-    src="/exercises/intro-limits.pdf#toolbar=0&navpanes=0&scrollbar=0" 
-    width="100%" 
-    height="600px" 
-    style="border: none;"
-    allowfullscreen
-></iframe>
+This visual presentation introduces the concept of limits without using formal definitions like epsilon-delta. Through simple examples and geometric reasoning, students learn:
+
+- What it means for a function to “tend” toward a value
+- How to read limits from graphs
+- Left-hand and right-hand limits
+- Discontinuities and vertical asymptotes
+- Why division by zero is undefined
+
+It’s an ideal first step before formal calculus. You can view the slides below or click full screen for an immersive experience.
 
 </div>
 
-<div class="content-box">
+<div class="content-box" style="text-align: center;">
 
-### 📌 What You'll Learn
+<iframe 
+    src="/exercises/intro-limits.pdf#toolbar=0" 
+    width="100%" 
+    height="640px" 
+    style="border: none; max-width: 100%;"
+    allowfullscreen
+></iframe>
 
-This intuitive presentation introduces the concept of limits in calculus without relying on formal definitions like epsilon-delta. Through graphs, simple examples, and geometric interpretations, you'll explore:
+<br>
 
-- What it means for a function to *tend toward a value* as \( x \) approaches a point
-- The difference between left-hand and right-hand limits
-- The idea of continuity and how it relates to the limit
-- Visualizing asymptotes and infinite limits
-- Why division by zero leads to divergence
-
-This guide is perfect for high school and early university students who want to build a conceptual foundation before diving into formal techniques.
+<a href="/exercises/intro-limits.pdf" target="_blank" style="display: inline-block; margin-top: 1rem; background: #aadfff; padding: 0.5rem 1rem; border-radius: 12px; color: black; font-weight: bold; text-decoration: none;">
+🔎 View Full Screen
+</a>
 
 </div>
