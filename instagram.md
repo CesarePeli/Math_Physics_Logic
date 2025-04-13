@@ -6,6 +6,12 @@ background_image: "/images/odd.png"
 description: "Discover the beauty of strange questions, conceptual clarity, and scientific insight."
 ---
 
+<style>
+.content-box {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+</style>
+
 <div class="content-box">
 
 ## Welcome 👋
