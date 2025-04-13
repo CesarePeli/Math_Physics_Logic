@@ -2,7 +2,7 @@
 layout: default
 title: Welcome from Instagram
 permalink: /instagram/
-background_image: "/images/oddquestions.png"
+background_image: "/images/odd.png"
 description: "Discover the beauty of strange questions, conceptual clarity, and scientific insight."
 ---
 
