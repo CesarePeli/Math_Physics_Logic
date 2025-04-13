@@ -24,9 +24,7 @@ Or continue exploring:
 - 🧩 [Guided Exercises](/exercises/) – Learn by solving and thinking  
 - 📘 [Complete Slides](/slides/) – Clear presentations for students and teachers
 
-</div>
-
-—
+---
 
 👉 [Back to the homepage](https://www.cesarepeli.com)
 
