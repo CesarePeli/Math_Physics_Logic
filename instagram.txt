@@ -20,9 +20,11 @@ Here, we explore the **strange, the deep, and the beautifully structured** — t
   Paradoxes, contradictions, and ideas that twist logic.
 
 Or continue exploring:
-- 🧠 [Scientific Insights](/insights/) – Essays on knowledge and the structure of science
-- 🧩 [Guided Exercises](/exercises/) – Learn by solving and thinking
+- 🧠 [Scientific Insights](/insights/) – Essays on knowledge and the structure of science  
+- 🧩 [Guided Exercises](/exercises/) – Learn by solving and thinking  
 - 📘 [Complete Slides](/slides/) – Clear presentations for students and teachers
+
+</div>
 
 —
 
