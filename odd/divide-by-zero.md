@@ -6,21 +6,6 @@ background_image: "/images/div.png"
 description: "It’s not a taboo or a glitch in the Matrix — it simply makes no mathematical sense."
 raw: true
 ---
-
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
 <div class="content-box">
 
 ## Why You Can't Divide by Zero
