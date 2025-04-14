@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Odd Questions
-permalink: /odd-questions/
+permalink: /odd/
 nav_exclude: false
 background_image: "/images/odd.png"
 description: "Strange questions, paradoxes and insights from the edges of mathematics and physics."
