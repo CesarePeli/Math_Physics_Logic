@@ -3,12 +3,8 @@ layout: default
 title: What Is Infinity Plus One?  
 permalink: /odd/infinity-plus-one/  
 background_image: "/images/odd-infinity.png"  
-description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."  
-
+description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."
 ---
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 
 <div class="content-box">
 
@@ -64,19 +60,19 @@ In the world of infinity, **there’s always room for more**.
 
 From a formal standpoint, mathematics gives us a crisp answer:
 
-\[
+\\[
 \infty + 1 = \infty
-\]
+\\]
 
-But then — if we subtract \(\infty\) from both sides, do we get:
+But then — if we subtract \\( \infty \\) from both sides, do we get:
 
-\[
-\infty + 1 - \infty = \infty - \infty \Rightarrow 1 = 0\ \text{?}
-\]
+\\[
+\infty + 1 - \infty = \infty - \infty \Rightarrow 1 = 0?
+\\]
 
 Of course not.  
 This only highlights a key point: **we can’t treat infinity like an ordinary number**.  
-Some operations — like \(\infty - \infty\) — **aren’t defined**, because infinity isn’t a concrete value.
+Some operations — like \\( \infty - \infty \\) — **aren’t defined**, because infinity isn’t a concrete value.
 
 So what *is* infinity, really?
 
@@ -128,36 +124,42 @@ Infinity — like numbers — **does not have a single meaning**. It takes on di
 Let’s look at a few examples:
 
 ### 🧮 Extended Arithmetic
-\[
+
+\\[
 \infty + 1 = \infty
-\]
+\\]
+
 This is treated as a **symbolic statement**, expressing the idea that “adding one to infinity changes nothing.”  
-But beware: expressions like \(\infty - \infty\) **are undefined**.
+But beware: expressions like \\( \infty - \infty \\) **are undefined**.
 
 ---
 
 ### 📐 Calculus and Limits
-\[
+
+\\[
 \lim_{x \to \infty}(x + 1) = \infty
-\]
+\\]
+
 Here, infinity represents **asymptotic behavior**, not a fixed value.  
 Adding 1 doesn’t change the *trend* toward infinity.
 
 ---
 
 ### 🔢 Set Theory and Cardinality
-The set of natural numbers \(\mathbb{N}\) has cardinality \(\aleph_0\).  
+
+The set of natural numbers \\( \mathbb{N} \\) has cardinality \\( \aleph_0 \\).  
 Adding a single element doesn’t change its size:
 
-\[
+\\[
 \aleph_0 + 1 = \aleph_0
-\]
+\\]
 
-Even adding **another countably infinite set** still gives \(\aleph_0\).
+Even adding **another countably infinite set** still gives \\( \aleph_0 \\).
 
 ---
 
 ### 🧠 Philosophy of Mathematics
+
 In this broader view, "infinity plus one" becomes **a conceptual statement**:
 
 > Infinity cannot be completed, counted, or exceeded by one.  
@@ -169,7 +171,7 @@ In this broader view, "infinity plus one" becomes **a conceptual statement**:
 
 ## Conclusion: Infinity Plus One Is Not a Calculation — It's an Idea
 
-When we say \(\infty + 1 = \infty\), we’re not solving an equation.  
+When we say \\( \infty + 1 = \infty \\), we’re not solving an equation.  
 We’re recognizing the **conceptual nature of infinity**.
 
 > Infinity isn’t measured, summed, or exhausted.  
