@@ -21,7 +21,7 @@ These are not just puzzles — they're doorways to deeper understanding.
 
 <div class="content-box">
 
-## ➗ [Why Can’t You Divide by Zero?](/odd-questions/divide-by-zero/)
+## ➗ [Why Can’t You Divide by Zero?](/odd/divide-by-zero/)
 
 An accessible explanation of why division by zero isn’t just tricky — it’s actually undefined.
 
@@ -29,11 +29,10 @@ An accessible explanation of why division by zero isn’t just tricky — it’s
 
 <div class="content-box">
 
-## ♾️ How Much Is ∞ + 1?
+## ♾️ [What Is Infinity Plus One?](/odd/infinity-plus-one/)
 
-It’s still ∞, but not always the **same** ∞.  
-In set theory, there are **different sizes of infinity**, and adding one to a countable infinity changes... nothing.  
-But the real question is: _what kind of infinity are you working with_?
+Adding one to infinity still gives infinity — but not in the way arithmetic would suggest.  
+Through Hilbert’s Hotel and the logic of set theory, we discover that infinity is not a number, but a **concept** — one that changes meaning depending on the context.
 
 </div>
 
