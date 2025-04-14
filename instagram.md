@@ -17,7 +17,7 @@ If you're here from Instagram, you're probably curious. Good.
 Here, we explore the **strange, the deep, and the beautifully structured** — through math, science, and ideas that challenge your thinking.
 
 ### Start with our most unexpected questions:
-- 🌀 [The Odd Questions](/oddquestions/)  
+- 🌀 [The Odd Questions](/odd/)  
   Paradoxes, contradictions, and ideas that twist logic.
 
 Or continue exploring:
