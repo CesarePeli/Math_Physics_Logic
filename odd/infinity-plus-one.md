@@ -6,16 +6,6 @@ background_image: "/images/odd-infinity.png"
 description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."  
 
 ---
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
