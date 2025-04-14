@@ -1,7 +1,7 @@
 ---
 layout: default  
 title: What Is Infinity Plus One?  
-permalink: /odd-questions/infinity-plus-one/  
+permalink: /odd/infinity-plus-one/  
 background_image: "/images/odd-infinity.png"  
 description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."  
 ---
