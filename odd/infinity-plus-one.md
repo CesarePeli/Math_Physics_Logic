@@ -4,8 +4,8 @@ title: What Is Infinity Plus One?
 permalink: /odd/infinity-plus-one/  
 background_image: "/images/odd-infinity.png"  
 description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."  
----
 
+---
 <script>
   window.MathJax = {
     tex: {
