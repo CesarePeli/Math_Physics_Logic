@@ -15,7 +15,7 @@ Alongside structured teaching materials, you’ll find free resources: summaries
 
 ## Explore the Sections
 
-- [**The Odd Questions**]({{ "/odd/" | relative_url }})  
+- [**The Odd Questions**]({{ "/" | relative_url }})  
   Strange, fascinating, and thought-provoking concepts in math and science  
 - [**Scientific Insights**]({{ "/insights/" | relative_url }})  
   Articles and reflections on how we understand and teach science  
