@@ -4,7 +4,6 @@ title: Why You Can't Divide by Zero
 permalink: /odd/divide-by-zero/
 background_image: "/images/div.png"
 description: "It’s not a taboo or a glitch in the Matrix — it simply makes no mathematical sense."
-raw: true
 ---
 <div class="content-box">
 
