@@ -18,3 +18,4 @@ This formula sheet summarizes the most useful **immediate and generalized indefi
 
 👉 [**Open the PDF full-screen**](/materials/high-school/math/immediate-integrals.pdf){:target="_blank"}
 
+
