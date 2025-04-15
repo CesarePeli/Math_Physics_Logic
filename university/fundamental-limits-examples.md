@@ -9,7 +9,7 @@ background_image: "/images/exercises.png"
 
 <div class="content-box">
 
-## Using Foundamental Limits
+## Using Fundamental Limits
 
 ### Theoretical Background
 
