@@ -3,20 +3,24 @@ layout: default
 title: University Materials
 permalink: /university/
 background_image: "/images/university.png"
-description: "Explained slides and solved exercises for university-level calculus, linear algebra, and more."
+description: "Solved exercises and upcoming slides for university-level calculus, linear algebra, and more."
 ---
 
 ## University Math Materials
 
-Resources designed for undergraduate mathematics students. All content is aimed at improving comprehension and preparing for exams.
+Resources designed for undergraduate mathematics students. All content is created to enhance conceptual understanding and support exam preparation.
 
-This section focuses on key subjects taught in the first years of university math programs, including:
+### Available Material
 
-- Calculus I and II
-- Linear Algebra
-- Probability and Statistics
-- Basic Real Analysis
+- ✍️ [**Solved Exercises**](/university/solved-exercises/):  
+  Problem sets with detailed, step-by-step solutions to reinforce techniques and build confidence.
 
-Each topic includes two types of materials:
-- 📘 [Explained Slides](/university/explained-slides/): visual theory with examples
-- ✍️ [Solved Exercises](/university/solved-exercises/): problems with detailed solutions
+### Coming Soon
+
+- 📘 **Explained Slides**:  
+  Structured Beamer presentations covering key topics in calculus and linear algebra.  
+  *(Currently in development — stay tuned!)*
+
+---
+
+All resources will be free and in printable PDF format.
