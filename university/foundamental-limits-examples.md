@@ -1,7 +1,7 @@
 ---
 title: "Worked Examples with Foundamental Limits"
 meta-description: "A collection of solved exercises using foundamental limits, with detailed step-by-step reasoning and key theoretical results. Perfect for students preparing for calculus."
-permalink: "/university/solved-exercises/foundamental-limits-examples/"
+permalink: "/university/solved-exercises/fundamental-limits-examples/"
 background_image: "/images/exercises.png"
 ---
 
