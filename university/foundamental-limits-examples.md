@@ -1,6 +1,6 @@
 ---
 title: "Worked Examples with Notable Limits"
-meta-description: "A collection of solved exercises using notable limits, with detailed step-by-step reasoning and key theoretical results. Perfect for students preparing for calculus."
+meta-description: "A collection of solved exercises using foundamental limits, with detailed step-by-step reasoning and key theoretical results. Perfect for students preparing for calculus."
 permalink: "/university/solved-exercises/foundamental-limits-examples/"
 background_image: "/images/exercises.png"
 ---
@@ -9,7 +9,7 @@ background_image: "/images/exercises.png"
 
 <div class="content-box">
 
-## Using Notable Limits
+## Using Foundamental Limits
 
 ### Theoretical Background
 
