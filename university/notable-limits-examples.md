@@ -4,6 +4,8 @@ meta-description: "A collection of solved exercises using notable limits, with d
 permalink: "/university/solved-exercises/notable-limits-examples/"
 ---
 
+**Prepared by Professor Antonino De Martino (Polytechnic University of Milan) and Dr. Luana Manfredini.**
+
 ## Using Notable Limits
 
 ### Theoretical Background
