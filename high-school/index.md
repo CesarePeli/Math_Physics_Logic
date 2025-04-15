@@ -2,7 +2,7 @@
 layout: default
 title: High School Materials
 permalink: /high-school/
-background_image: "/images/highschool.png"
+background_image: "/images/scala.png"
 description: "Teaching and study resources for high school mathematics and physics: slides, solved exercises and formula sheets."
 ---
 
