@@ -19,14 +19,11 @@ Rooted in curiosity, logic, and the pursuit of understanding, the project sees s
 - [**Scientific Insights**]({{ "/insights/" | relative_url }})  
   Articles and reflections on how we understand and teach science
 
-- [**Complete Slides**]({{ "/slides/" | relative_url }})  
-  Ready-to-use Beamer slides for class use and individual study
+- [**High School**]({{ "/high-school/" | relative_url }})  
+  Math and physics resources for high school students and teachers: explained slides, solved exercises, and printable formula sheets
 
-- [**Guided Exercises**]({{ "/exercises/" | relative_url }})  
-  Structured problem sets with solutions and step-by-step guidance
-
-- [**Formulas & Summaries**]({{ "/formulas/" | relative_url }})  
-  Clean, printable resources for quick reference and review
+- [**University**]({{ "/university/" | relative_url }})  
+  Materials for undergraduate students: explained slides and solved exercises covering calculus, linear algebra, and more
 
 - [**About**]({{ "/about/" | relative_url }})  
   Learn more about the author and the educational vision

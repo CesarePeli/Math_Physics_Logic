@@ -5,7 +5,7 @@
             border-radius: 1rem;
             max-width: 850px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);">
-  {% assign nav_items = "index:Home,odd:The Odd Questions,insights:Scientific Insights,slides:Complete Slides,exercises:Guided Exercises,formulas:Formulas & Summaries,about:About" | split: "," %}
+  {% assign nav_items = "index:Home,odd:The Odd Questions,insights:Scientific Insights,high-school:High School,university:University,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
@@ -27,4 +27,3 @@
     {% endunless %}
   {% endfor %}
 </nav>
-
