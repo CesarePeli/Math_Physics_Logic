@@ -125,7 +125,6 @@ $$
 
 ## Solutions
 
-## Solutions
 
 ### Exercise 1
 
@@ -167,7 +166,7 @@ $$
 \lim_{x \to \infty} x \cdot \log\left( 1 - \frac{1}{x + 5} \right)
 $$
 
-Let \( t = -\frac{1}{x + 5} \), so \( x = \frac{-1 - 5t}{t} \). Then:
+Let $$ t = -\frac{1}{x + 5} \), so $$ x = \frac{-1 - 5t}{t} $$. Then:
 
 $$
 \lim_{t \to 0} \frac{-1 - 5t}{t} \cdot \log(1 + t) = -1
@@ -189,7 +188,7 @@ $$
 \left( \frac{2x + 9}{2x + 1} \right)^x = \left( 1 + \frac{8}{2x + 1} \right)^x
 $$
 
-Let \( t = \frac{8}{2x + 1} \), so \( x = \frac{4}{t} - \frac{1}{2} \). Then:
+Let $$ t = \frac{8}{2x + 1} $$, so $$ x = \frac{4}{t} - \frac{1}{2} $$. Then:
 
 $$
 (1 + t)^{\frac{4}{t} - \frac{1}{2}} = 
@@ -212,7 +211,7 @@ $$
 \frac{x^2 + 1}{x^2 + x} = \frac{1 + \frac{1}{x^2}}{1 + \frac{1}{x}}
 $$
 
-Let \( t = \frac{1}{x} \), so \( x = \frac{1}{t} \). Then:
+Let $$ t = \frac{1}{x} $$, so $$ x = \frac{1}{t} $$. Then:
 
 $$
 \lim_{t \to 0} \frac{1}{t} \cdot \log\left( \frac{1 + t^2}{1 + t} \right)
@@ -259,7 +258,7 @@ $$
 \frac{\frac{\sin x}{x} - 1}{\frac{\cos x}{x} + \sqrt{1 + \frac{1}{x^2}}}
 $$
 
-As \( x \to +\infty \), we know:
+As $$ x \to +\infty $$, we know:
 
 $$
 \frac{\sin x}{x} \to 0, \quad \frac{\cos x}{x} \to 0
@@ -295,8 +294,8 @@ $$
 = \frac{1 + \frac{1}{\sqrt{x}}}{\sqrt{1 + \frac{1}{x}}}
 $$
 
-As \( x \to +\infty \), this tends to 1, so the logarithm tends to 0.
-Since \( \sin x \) is bounded, the product tends to 0:
+As $$ x \to +\infty $$, this tends to 1, so the logarithm tends to 0.
+Since $$ \sin x $$ is bounded, the product tends to 0:
 
 $$
 \lim_{x \to +\infty} \sin x \cdot \log\left( \frac{\sqrt{x} + 1}{\sqrt{x + 1}} \right) = 0
@@ -320,7 +319,7 @@ $$
 = \left( 1 + \frac{4}{x - 1} \right)^x \cdot \left( 1 + \frac{4}{x - 1} \right)
 $$
 
-Let \( y = \frac{4}{x - 1} \), so \( x = \frac{4 + y}{y} \). Then:
+Let $$ y = \frac{4}{x - 1} $$, so $$ x = \frac{4 + y}{y} $$. Then:
 
 $$
 \lim_{y \to 0} (1 + y)^{\frac{4}{y}} \cdot (1 + y) = e^4
@@ -336,7 +335,7 @@ $$
 
 **Solution:**
 
-Let \( y = \frac{1}{\log(3x)} \), then \( x = \frac{e^{1/y}}{3} \), so:
+Let $$ y = \frac{1}{\log(3x)} $$, then $$ x = \frac{e^{1/y}}{3} $$, so:
 
 $$
 \lim_{y \to 0^+} \left( \frac{e^y}{3} \right)^y
