@@ -14,5 +14,5 @@ Each set focuses on a specific concept — such as limits, derivatives, or integ
 
 This series is curated by **Professor Antonino De Martino** (Polytechnic University of Milan) and **Dr. Luana Manfredini**, and aims to support university students in mastering the foundational techniques of real analysis.
 
-👉 [`/university/solved-exercises/notable-limits-examples/`](/university/solved-exercises/notable-limits-examples/)
+👉 [`/university/solved-exercises/foundamental-limits-examples/`](/university/solved-exercises/notable-limits-examples/)
 
