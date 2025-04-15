@@ -16,6 +16,6 @@ Clean and topic-based reference sheets for students and teachers. Each PDF is de
 
 This formula sheet summarizes the most useful **immediate and generalized indefinite integrals** encountered in high school calculus.
 
-👉 [**Open the PDF full-screen**](/materials/high-school/math/immediate-integrals.pdf){:target="_blank"}
+👉 [**Open the PDF full-screen**](/materials/high-school/math/immediate_integrals.pdf){:target="_blank"}
 
 
