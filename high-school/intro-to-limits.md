@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Understanding Limits in Calculus"
 permalink: /high-school/math/intro-to-limits/
 description: "A beginner-friendly introduction to the concept of limits in calculus, using visual examples and clear explanations. Ideal for high school students."
