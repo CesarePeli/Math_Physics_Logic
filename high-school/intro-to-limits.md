@@ -5,6 +5,7 @@ permalink: /high-school/math/intro-to-limits/
 description: "A beginner-friendly introduction to the concept of limits in calculus, using visual examples and clear explanations. Ideal for high school students."
 keywords: ["limits in calculus", "introduction to limits", "high school math pdf", "conceptual calculus", "understanding limits"]
 categories: high-school math
+background_image:  "/images/slide.png"
 ---
 
 # Understanding Limits in Calculus
