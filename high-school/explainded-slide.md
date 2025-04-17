@@ -1,3 +1,14 @@
+---
+layout: page
+title: "Math & Physics PDF Slides – Free and Premium Resources"
+permalink: /high-school/explained-slides/
+description: "Browse our collection of math and physics slides in PDF format, available for free or as premium packs. Ideal for students and teachers at the high school and university level."
+keywords: ["math pdf slides", "physics pdf resources", "high school math", "free physics pdf", "explained slides"]
+categories: high-school
+---
+
+
+
 ## 📂 Free Resources
 
 ### Introduction to the Concept of Limit
