@@ -1,71 +1,83 @@
-body {
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  background-color: rgba(0, 0, 0, 0.3); /* layer neutro per migliorare leggibilità */
-  margin: 0;
-  padding: 0;
-  color: #eee;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limits Mobile Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #eee;
+    }
 
-/* Contenuto centrale */
-.content-box {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 850px;
-  border-radius: 1rem;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
-  box-sizing: border-box;
-}
+    main {
+      margin-top: 2rem;
+      width: 100vw;
+      overflow-x: hidden;
+    }
 
-/* Titoli */
-h1, h2, h3 {
-  color: #fff;
-  margin-top: 2rem;
-}
+    .content-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 850px;
+      border-radius: 1rem;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(2px);
+      box-sizing: border-box;
+    }
 
-/* Link */
-a {
-  color: #aadfff;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
+    @media screen and (max-width: 600px) {
+      main {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
 
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
+      .content-box {
+        width: 100vw;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+        max-width: none;
+      }
 
-/* Elenchi */
-ul, ol {
-  padding-left: 1.5rem;
-}
-
-/* Footer */
-footer {
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: center;
-  margin: 4rem 0 2rem;
-}
-
-/* Responsive fix per contenuto da mobile */
-@media screen and (max-width: 600px) {
-  .content-box {
-    width: 100vw;
-    margin: 0;
-    border-radius: 0;
-    padding: 1rem;
-    max-width: none;
-  }
-
-  mjx-container {
-    display: block;
-    overflow-x: auto;
-    max-width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-}
+      mjx-container {
+        overflow-x: auto;
+        max-width: 100%;
+        display: block;
+        padding: 0 1rem;
+        box-sizing: border-box;
+      }
+    }
+  </style>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      chtml: {
+        displayAlign: 'center',
+        linebreaks: { automatic: true }
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <main>
+    <div class="content-box">
+      <h2>Test: Fundamental Limit</h2>
+      <p>This formula should wrap or fit correctly on mobile:</p>
+      <p>$$
+        \lim_{x\to \infty} \left( \sqrt{x^2 + x + 1} - \sqrt{x^2 - x + 1} \right)
+      $$</p>
+    </div>
+  </main>
+</body>
+</html>
