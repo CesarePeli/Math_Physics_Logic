@@ -1,26 +1,25 @@
+## 📂 Free Resources
+
+### Introduction to the Concept of Limit
+
+A gentle, intuitive presentation for first-time learners.  
+We introduce the notion of limits without using the epsilon-delta definition, relying instead on **graphs**, **simple examples**, and **clear explanations**.
+
+Ideal for students encountering limits for the first time — or for anyone who wants to rebuild their intuition from scratch.
+
+👉 [**Explore the full lesson page**](/high-school/math/intro-to-limits/){:target="_blank"}
+
+
 ---
-layout: default
-title: Explained Slides – High School
-permalink: /high-school/explained-slides/
-background_image: "/images/slides.png"
-description: "Slides for high school math and physics. Ready to use with an interactive whiteboard or for self-study."
----
 
-## Explained Slides for High School
+## 💼 Premium Resources
 
-These slides are designed for both teaching and learning. Each presentation includes structured explanations, diagrams and examples.
+### Quadratic Equations – Complete Slide Pack
 
-### 👩‍🏫 Teachers:
-- Ideal for classroom use with an interactive whiteboard or projector
-- Useful as visual support during explanations
+- 🎓 [**Full Slide Pack**](https://cesarepeli.gumroad.com/l/quadratic-slide-pack){:target="_blank"}  
+  A complete sequence with theory, worked examples, and visual elements. Perfect for classroom use or independent study.
 
-### 🧑‍🎓 Students:
-- Helpful for reviewing concepts at home
-- Visual organization improves clarity and retention
+- ✨ [**Free Sample Pack**](https://cesarepeli.gumroad.com/l/hoxus){:target="_blank"}  
+  A short preview for teachers and students to try before purchasing.
 
-### Topics include:
-- Functions and Graphs
-- Motion and Kinematics (Physics)
-- Derivatives and Applications
-- Electric Circuits (Physics)
-- Exponentials and Logarithms
+All materials are in **PDF format**, ready to print, project, or use on an interactive whiteboard.
