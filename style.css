@@ -54,11 +54,11 @@ footer {
 /* Responsive fix per contenuto da mobile */
 @media screen and (max-width: 600px) {
   .content-box {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     border-radius: 0;
     padding: 1rem;
-    box-sizing: border-box;
+    max-width: none;
   }
 
   mjx-container {
