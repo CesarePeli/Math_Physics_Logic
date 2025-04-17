@@ -35,46 +35,41 @@
     </section>
   {% endif %}
 
-<main style="margin-top: 2rem;">
-  {% if page.raw %}
-    {{ content }}
-  {% else %}
-    <div class="content-box">
+  <main style="margin-top: 2rem; width: 100vw; margin: 0; padding: 0;">
+    {% if page.raw %}
       {{ content }}
-    </div>
-  {% endif %}
-</main>
-
+    {% else %}
+      <div class="content-box">
+        {{ content }}
+      </div>
+    {% endif %}
+  </main>
 
   <footer style="text-align: center; font-size: 0.9rem; color: #aaa; margin: 4rem 0 2rem;">
     © {{ "now" | date: "%Y" }} Logic & Motion · Created by Cesare Peli
   </footer>
-<script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    options: {
-      renderActions: {
-        addMenu: []
-      }
-    },
-    chtml: {
-      displayAlign: 'center',
-      scale: 1,
-      linebreaks: {
-        automatic: true
-      }
-    }
-  };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        renderActions: {
+          addMenu: []
+        }
+      },
+      chtml: {
+        displayAlign: 'center',
+        scale: 1,
+        linebreaks: {
+          automatic: true
+        }
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
 </html>
