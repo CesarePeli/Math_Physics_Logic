@@ -50,29 +50,28 @@
     © {{ "now" | date: "%Y" }} Logic & Motion · Created by Cesare Peli
   </footer>
 <script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  },
-  options: {
-    renderActions: {
-      addMenu: [] // Rimuove il menu MathJax se non necessario
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      renderActions: {
+        addMenu: []
+      }
+    },
+    chtml: {
+      displayAlign: 'center',
+      scale: 1,
+      linebreaks: {
+        automatic: true
+      }
     }
-  },
-  chtml: {
-    displayAlign: 'center',
-    linebreaks: {
-      automatic: true
-    }
-  },
-  svg: {
-    fontCache: 'global',
-    linebreaks: {
-      automatic: true
-    }
-  }
-};
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
