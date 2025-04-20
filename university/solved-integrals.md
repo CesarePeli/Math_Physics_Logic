@@ -171,9 +171,13 @@ Evaluate the definite integral:
 $$
 \int_1^e \sin(\log x) \, dx
 $$
-
+</div>
 
 <div class="content-box">
+
+## Solutions
+
+
 
 ### Exercise 1
 
