@@ -169,13 +169,11 @@ $$
 Evaluate the indefinite integral:
 
 $$
-\int \frac{e^x - e^{-x}}{x} \, dx
+\int_0^1 e^{2x} \log(1 + e^x) \, dx
 $$
 </div>
 
 <div class="content-box">
-
-## Solutions
 
 ### Exercise 1
 
@@ -187,7 +185,7 @@ $$
 
 **Solution:**
 
-We split the integral at \( x = 1 \):
+We split the integral at the point where the argument of the logarithm changes sign:
 
 $$
 \int_{\frac{1}{e}}^e \frac{\log(|\log x|)}{x} \, dx =
@@ -195,24 +193,49 @@ $$
 \int_1^e \frac{\log(\log x)}{x} \, dx
 $$
 
-Letting \( t = -\log x \) and \( dt = -\frac{1}{x} dx \) in the first integral:
+In the first part, let
 
 $$
-\int_{\frac{1}{e}}^1 \frac{\log(-\log x)}{x} dx =
+t = -\log x, \quad dt = -\frac{dx}{x}
+$$
+
+Then:
+
+$$
+\int_{\frac{1}{e}}^1 \frac{\log(-\log x)}{x} \, dx =
 - \int_1^0 \log t \, dt = \int_0^1 \log t \, dt
 $$
 
-Similarly, the second becomes:
+For the second part, let
 
 $$
-\int_1^e \frac{\log(\log x)}{x} dx = \int_0^1 \log t \, dt
+t = \log x, \quad dt = \frac{dx}{x}
 $$
 
-Hence:
+So:
+
+$$
+\int_1^e \frac{\log(\log x)}{x} \, dx = \int_0^1 \log t \, dt
+$$
+
+Therefore:
 
 $$
 \int_{\frac{1}{e}}^e \frac{\log(|\log x|)}{x} \, dx =
-2 \int_0^1 \log t \, dt = -2
+2 \int_0^1 \log t \, dt
+$$
+
+Using integration by parts:
+
+$$
+\int_0^1 \log t \, dt = \lim_{a \to 0^+} \left( t \log t - t \right)\bigg|_a^1 =
+\lim_{a \to 0^+} \left( -1 - a \log a + a \right) = -1
+$$
+
+Thus:
+
+$$
+\int_{\frac{1}{e}}^e \frac{\log(|\log x|)}{x} \, dx = -2
 $$
 
 ---
@@ -227,11 +250,18 @@ $$
 
 **Solution:**
 
-We write:
+We use the identity:
 
 $$
-\frac{1}{\sin^2 x \cos^2 x} = \frac{\sin^2 x + \cos^2 x}{\sin^2 x \cos^2 x}
-= \frac{1}{\cos^2 x} + \frac{1}{\sin^2 x}
+\sin^2 x + \cos^2 x = 1
+$$
+
+Then:
+
+$$
+\frac{1}{\sin^2 x \cos^2 x} =
+\frac{\sin^2 x + \cos^2 x}{\sin^2 x \cos^2 x} =
+\frac{1}{\cos^2 x} + \frac{1}{\sin^2 x}
 $$
 
 So:
@@ -254,14 +284,30 @@ $$
 
 **Solution:**
 
-Using the substitution $$ x = \sin t $$, $$ dx = \cos t dt $$, and identity $$ \sqrt{1 - \sin^2 t} = |\cos t| $$:
+Let
 
-Since $$ \cos t \geq 0 $$ in $$ [-\pi/2, \pi/2] $$:
+$$
+x = \sin t, \quad dx = \cos t \, dt
+$$
+
+Then:
 
 $$
 \int_{-1}^{1} \sqrt{1 - x^2} \, dx =
-\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \cos^2 t \, dt =
+\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \cos^2 t \, dt
+$$
+
+Use the identity:
+
+$$
+\cos^2 t = \frac{1 + \cos(2t)}{2}
+$$
+
+So:
+
+$$
 \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1 + \cos(2t)}{2} \, dt =
+\left( \frac{t}{2} + \frac{\sin(2t)}{4} \right)\bigg|_{-\frac{\pi}{2}}^{\frac{\pi}{2}} =
 \frac{\pi}{2}
 $$
 
@@ -277,12 +323,25 @@ $$
 
 **Solution:**
 
-Using the substitution $$ x = 2 \sin t $$, so $$ dx = 2 \cos t dt $$, and the integrand becomes:
+We write:
 
 $$
-\int_{-1}^1 \frac{1}{\sqrt{4 - x^2}} \, dx =
-2 \int_0^1 \frac{1}{\sqrt{4 - x^2}} \, dx =
-2 \arcsin\left( \frac{x}{2} \right) \bigg|_0^1 = \frac{\pi}{3}
+\int_{-1}^{1} \frac{1}{\sqrt{4 - x^2}} \, dx =
+\int_{-1}^{1} \frac{1}{2 \sqrt{1 - \left( \frac{x}{2} \right)^2}} \, dx
+$$
+
+Let
+
+$$
+t = \frac{x}{2}
+$$
+
+Then:
+
+$$
+\int_{-1}^{1} \frac{1}{\sqrt{4 - x^2}} \, dx =
+2 \int_0^{\frac{1}{2}} \frac{1}{\sqrt{1 - t^2}} \, dt =
+2 \arcsin t \bigg|_0^{\frac{1}{2}} = \frac{\pi}{3}
 $$
 
 ---
@@ -297,11 +356,35 @@ $$
 
 **Solution:**
 
-Split numerator:
+We rewrite the numerator:
 
 $$
 \int \frac{x^2 + 2 - 2}{x^2 + 2} \, dx =
-\int 1 \, dx - \int \frac{2}{x^2 + 2} \, dx =
+\int 1 \, dx - \int \frac{2}{x^2 + 2} \, dx
+$$
+
+Now:
+
+$$
+\int \frac{2}{x^2 + 2} \, dx =
+\int \frac{1}{\left( \frac{x}{\sqrt{2}} \right)^2 + 1} \, dx
+$$
+
+Let
+
+$$
+t = \frac{x}{\sqrt{2}}, \quad dt = \frac{dx}{\sqrt{2}}
+$$
+
+Then:
+
+$$
+\sqrt{2} \int \frac{1}{1 + t^2} \, dt = \sqrt{2} \arctan t + c
+$$
+
+So the result is:
+
+$$
 x - \sqrt{2} \arctan\left( \frac{x}{\sqrt{2}} \right) + c
 $$
 
@@ -320,8 +403,7 @@ $$
 Using the identity:
 
 $$
-\int \frac{1}{\sin x} \, dx =
-\log\left| \tan \frac{x}{2} \right| + c
+\int \frac{1}{\sin x} \, dx = \log \left| \tan \frac{x}{2} \right| + c
 $$
 
 ---
@@ -336,13 +418,24 @@ $$
 
 **Solution:**
 
-Use symmetry and \( x = 2 \sin t \), \( dx = 2 \cos t dt \):
+By symmetry:
 
 $$
-\int_{-2}^2 \sqrt{4 - x^2} \, dx =
-2 \int_0^2 \sqrt{4 - x^2} \, dx =
-8 \int_0^{\pi/2} \cos^2 t \, dt =
-8 \cdot \frac{\pi}{4} = 2\pi
+\int_{-2}^{2} \sqrt{4 - x^2} \, dx = 2 \int_0^2 \sqrt{4 - x^2} \, dx
+$$
+
+Let
+
+$$
+x = 2 \sin t, \quad dx = 2 \cos t \, dt
+$$
+
+Then:
+
+$$
+8 \int_0^{\frac{\pi}{2}} \cos^2 t \, dt =
+8 \left( \frac{t}{2} + \frac{\sin(2t)}{4} \right) \bigg|_0^{\frac{\pi}{2}} =
+2\pi
 $$
 
 ---
@@ -359,18 +452,34 @@ $$
 
 Integration by parts twice:
 
-Let \( I = \int \sin x \, e^x \, dx \). Then:
+Let
 
 $$
-I = e^x \sin x - \int e^x \cos x \, dx =
-e^x (\sin x - \cos x) + I
+I = \int \sin x \, e^x \, dx
+$$
+
+Then:
+
+$$
+I = \sin x \, e^x - \int e^x \cos x \, dx
+$$
+
+and
+
+$$
+\int e^x \cos x \, dx = e^x \cos x + I
 $$
 
 So:
 
 $$
-2I = e^x (\sin x - \cos x) \Rightarrow
-I = \frac{e^x(\sin x - \cos x)}{2} + c
+2I = e^x (\sin x - \cos x)
+$$
+
+and therefore:
+
+$$
+\int \sin x \, e^x \, dx = \frac{e^x (\sin x - \cos x)}{2} + c
 $$
 
 ---
@@ -385,37 +494,101 @@ $$
 
 **Solution:**
 
-Substitute $$ t = e^x $$,$$ dt = e^x dx $$, so $$dx = \frac{dt}{t} $$, and bounds become $$ t \in [1, e] $$:
+Let
 
 $$
-\int_0^1 e^{2x} \log(1 + e^x) \, dx =
+t = e^x, \quad dx = \frac{dt}{t}
+$$
+
+Then the bounds become \( t \in [1, e] \), and the integral becomes:
+
+$$
 \int_1^e t \log(1 + t) \, dt
 $$
 
-Apply integration by parts or polynomial division to simplify the integrand. Final result is a rational expression involving logs and powers (detailed steps omitted for brevity).
+Apply integration by parts:
 
----
+$$
+\int_1^e t \log(1 + t) \, dt =
+\frac{t^2}{2} \log(1 + t) \bigg|_1^e -
+\frac{1}{2} \int_1^e \frac{t^2}{1 + t} \, dt
+$$
+
+We divide:
+
+$$
+\frac{t^2}{1 + t} = t - 1 + \frac{1}{1 + t}
+$$
+
+So:
+
+$$
+\int_1^e \frac{t^2}{1 + t} \, dt =
+\int_1^e \left( t - 1 + \frac{1}{1 + t} \right) \, dt =
+\left( \frac{t^2}{2} - t + \log(1 + t) \right) \bigg|_1^e
+$$
+
+Final result:
+
+$$
+\frac{e^2}{2} \log(1 + e) - \frac{e^2}{4} + \frac{e}{2}
+- \frac{1}{4} - \frac{\log(1 + e)}{2}
+$$
 
 ### Exercise 10
 
-Evaluate the indefinite integral:
+Evaluate the definite integral:
 
 $$
-\int \frac{e^x - e^{-x}}{x} \, dx
+\int_0^1 e^{2x} \log(1 + e^x) \, dx
 $$
 
 **Solution:**
 
-Split into two known integrals:
+Let
 
 $$
-\int \frac{e^x - 1}{x} \, dx + \int \frac{1 - e^{-x}}{x} \, dx
+t = e^x, \quad dx = \frac{dt}{t}
 $$
 
-These define the exponential integral:
+Bounds: when \( x = 0 \), \( t = 1 \); when \( x = 1 \), \( t = e \)
+
+The integral becomes:
 
 $$
-\text{Ein}(x) + \text{Ein}(-x) + c
+\int_1^e t \log(1 + t) \, dt
+$$
+
+Use integration by parts:
+
+$$
+\int_1^e t \log(1 + t) \, dt =
+\frac{t^2}{2} \log(1 + t) \bigg|_1^e -
+\frac{1}{2} \int_1^e \frac{t^2}{1 + t} \, dt
+$$
+
+Divide the integrand:
+
+$$
+\frac{t^2}{1 + t} = t - 1 + \frac{1}{1 + t}
+$$
+
+Then:
+
+$$
+\int_1^e \frac{t^2}{1 + t} \, dt =
+\left( \frac{t^2}{2} - t + \log(1 + t) \right) \bigg|_1^e
+$$
+
+Putting it all together:
+
+$$
+\int_0^1 e^{2x} \log(1 + e^x) \, dx =
+\frac{e^2}{2} \log(1 + e)
+- \frac{e^2}{4}
++ \frac{e}{2}
+- \frac{1}{4}
+- \frac{\log(1 + e)}{2}
 $$
 
 </div>
