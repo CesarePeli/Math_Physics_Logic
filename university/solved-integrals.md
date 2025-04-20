@@ -1,7 +1,7 @@
 ---
 title: "Worked Examples with Integrals"
 meta-description: "A curated collection of solved integrals, with theoretical summaries and detailed step-by-step reasoning. Ideal for students in calculus courses."
-permalink: "/university/solved-exerises/solved-integrals/"
+permalink: "/university/solved-exercises/solved-integrals/"
 background_image: "/images/exercises.png"
 ---
 
