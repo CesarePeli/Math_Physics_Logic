@@ -5,6 +5,8 @@ permalink: /high-school/math/quadratic-equations-basics/
 background_image: "/images/exercises.png"
 ---
 
+<div class="content-box">
+
 ## What Is a Quadratic Equation?
 
 A **quadratic equation** is an equation where the variable appears with exponent 2:
@@ -15,7 +17,9 @@ $$
 
 It has at most **two real solutions**.
 
----
+</div>
+
+<div class="content-box">
 
 ## Common Forms
 
@@ -26,7 +30,9 @@ Some quadratic equations look simpler than others:
 - **Spurious quadratic:** \( ax^2 + bx = 0 \)
 - **Perfect square:** \( (x + r)^2 = 0 \)
 
----
+</div>
+
+<div class="content-box">
 
 ## Solving Methods
 
@@ -68,13 +74,15 @@ $$
 
 ---
 
-## How Many Solutions?
+### ✅ How Many Solutions?
 
 - If \( \Delta > 0 \): two real solutions  
 - If \( \Delta = 0 \): one real solution (a double root)  
 - If \( \Delta < 0 \): no real solution
 
----
+</div>
+
+<div class="content-box">
 
 ## Solved Examples
 
@@ -131,16 +139,18 @@ $$
 x = -1 \quad \text{or} \quad x = -\frac{1}{2}
 $$
 
----
+</div>
+
+<div class="content-box">
 
 ## Practice Exercises
 
 Try solving the following equations:
 
-1. \( x^2 - 4 = 0 \)
-2. \( x(x - 5) = 0 \)
-3. \( x^2 + 8x + 16 = 0 \)
-4. \( x^2 + 2x - 3 = 0 \)
+1. \( x^2 - 4 = 0 \)  
+2. \( x(x - 5) = 0 \)  
+3. \( x^2 + 8x + 16 = 0 \)  
+4. \( x^2 + 2x - 3 = 0 \)  
 5. \( x^2 + x + 1 = 0 \)
 
 ---
@@ -152,3 +162,19 @@ Try solving the following equations:
 3. \( x = -4 \)  
 4. \( x = 1 \), \( x = -3 \)  
 5. ❌ No real solutions (discriminant is negative)
+
+</div>
+
+<div class="content-box">
+
+## 📚 Want the Full Lesson?
+
+This is just a quick overview. You can find the complete slide set — with theory, examples, and exercises — in our free explained PDF:
+
+👉 [**Quadratic Equations – Full Lesson (PDF)**](/materials/high-school/math/quadratic-equations.pdf){:target="_blank"}
+
+Or explore all available lessons:
+
+👉 [**High School Explained Slides**](/high-school/explained-slides/)
+
+</div>
