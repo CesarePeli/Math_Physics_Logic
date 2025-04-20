@@ -164,14 +164,14 @@ $$
 \int_0^1 e^{2x} \log(1 + e^x) \, dx
 $$
 
-#### Exercise 10
+### Exercise 10
 
-Evaluate the indefinite integral:
+Evaluate the definite integral:
 
 $$
-\int_0^1 e^{2x} \log(1 + e^x) \, dx
+\int_1^e \sin(\log x) \, dx
 $$
-</div>
+
 
 <div class="content-box">
 
@@ -500,57 +500,6 @@ $$
 t = e^x, \quad dx = \frac{dt}{t}
 $$
 
-Then the bounds become \( t \in [1, e] \), and the integral becomes:
-
-$$
-\int_1^e t \log(1 + t) \, dt
-$$
-
-Apply integration by parts:
-
-$$
-\int_1^e t \log(1 + t) \, dt =
-\frac{t^2}{2} \log(1 + t) \bigg|_1^e -
-\frac{1}{2} \int_1^e \frac{t^2}{1 + t} \, dt
-$$
-
-We divide:
-
-$$
-\frac{t^2}{1 + t} = t - 1 + \frac{1}{1 + t}
-$$
-
-So:
-
-$$
-\int_1^e \frac{t^2}{1 + t} \, dt =
-\int_1^e \left( t - 1 + \frac{1}{1 + t} \right) \, dt =
-\left( \frac{t^2}{2} - t + \log(1 + t) \right) \bigg|_1^e
-$$
-
-Final result:
-
-$$
-\frac{e^2}{2} \log(1 + e) - \frac{e^2}{4} + \frac{e}{2}
-- \frac{1}{4} - \frac{\log(1 + e)}{2}
-$$
-
-### Exercise 10
-
-Evaluate the definite integral:
-
-$$
-\int_0^1 e^{2x} \log(1 + e^x) \, dx
-$$
-
-**Solution:**
-
-Let
-
-$$
-t = e^x, \quad dx = \frac{dt}{t}
-$$
-
 Bounds: when \( x = 0 \), \( t = 1 \); when \( x = 1 \), \( t = e \)
 
 The integral becomes:
@@ -590,5 +539,71 @@ $$
 - \frac{1}{4}
 - \frac{\log(1 + e)}{2}
 $$
+
+### Exercise 10
+
+Evaluate the definite integral:
+
+$$
+\int_1^e \sin(\log x) \, dx
+$$
+
+**Solution:**
+
+We integrate by parts:
+
+Let:
+
+$$
+u = \sin(\log x), \quad dv = dx
+$$
+
+Then:
+
+$$
+\int_1^e \sin(\log x) \, dx =
+x \sin(\log x) \Big|_1^e - \int_1^e x \cdot \frac{d}{dx}[\sin(\log x)] \cdot \frac{1}{x} \, dx
+$$
+
+We compute:
+
+$$
+\frac{d}{dx}[\sin(\log x)] = \frac{1}{x} \cos(\log x)
+$$
+
+So the integral becomes:
+
+$$
+e \sin 1 - \int_1^e \cos(\log x) \, dx
+$$
+
+Now we integrate by parts again:
+
+Let:
+
+$$
+\int_1^e \cos(\log x) \, dx =
+x \cos(\log x) \Big|_1^e - \int_1^e \frac{1}{x} \cdot (-\sin(\log x)) \cdot x \, dx
+= e \cos 1 - \int_1^e \sin(\log x) \, dx
+$$
+
+Putting all together:
+
+$$
+\int_1^e \sin(\log x) \, dx = e \sin 1 - \left( e \cos 1 - \int_1^e \sin(\log x) \, dx \right)
+$$
+
+Simplifying:
+
+$$
+2 \int_1^e \sin(\log x) \, dx = e(\sin 1 - \cos 1) + 1
+$$
+
+Therefore:
+
+$$
+\int_1^e \sin(\log x) \, dx = \frac{e(\sin 1 - \cos 1)}{2} + \frac{1}{2}
+$$
+
 
 </div>
