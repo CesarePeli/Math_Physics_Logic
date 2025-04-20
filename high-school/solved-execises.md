@@ -11,17 +11,23 @@ description: "Math and physics exercises for high school with detailed step-by-s
 Each exercise includes detailed steps and reasoning. Great for practicing at home, preparing for tests, or assigning in class.
 
 ### 👩‍🏫 Teachers:
-- Ready-to-use exercises for worksheets or assessments
+- Ready-to-use exercises for worksheets or assessments  
 - Structured approach supports progressive understanding
 
 ### 🧑‍🎓 Students:
-- Helpful for revising methods and problem-solving strategies
+- Helpful for revising methods and problem-solving strategies  
 - Ideal for exam preparation and practice
 
-### Topics include:
-- Algebra and Equations
-- Forces and Newton’s Laws (Physics)
-- Functions and Derivatives
-- Energy and Work (Physics)
+---
+
+### 📘 Available Sets
+
+👉 [**Basic Equations**](/high-school/math/quadratic-equations-basics/):  
+Introduction to quadratic equations with complete explanations, solved examples and visual intuition.
+
+👉 [**Understanding Limits**](/high-school/math/intro-to-limits/):  
+A beginner-friendly guide to the concept of limit in calculus, with graphs, examples and downloadable PDF.
+
+---
 
 [Back to High School Materials](/high-school/)
