@@ -166,7 +166,7 @@ $$
 \lim_{x \to \infty} x \cdot \log\left( 1 - \frac{1}{x + 5} \right)
 $$
 
-Let $$ t = -\frac{1}{x + 5} \), so $$ x = \frac{-1 - 5t}{t} $$. Then:
+Let $$ t = -\frac{1}{x + 5} $$, so $$ x = \frac{-1 - 5t}{t} $$. Then:
 
 $$
 \lim_{t \to 0} \frac{-1 - 5t}{t} \cdot \log(1 + t) = -1
