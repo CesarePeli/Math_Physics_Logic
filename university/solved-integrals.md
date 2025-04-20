@@ -171,7 +171,7 @@ Evaluate the indefinite integral:
 $$
 \int \frac{e^x - e^{-x}}{x} \, dx
 $$
-<div>
+</div>
 
 <div class="content-box">
 
