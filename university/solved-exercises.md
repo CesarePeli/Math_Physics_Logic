@@ -14,5 +14,12 @@ Each set focuses on a specific concept — such as limits, derivatives, or integ
 
 This series is curated by **Professor Antonino De Martino** (Polytechnic University of Milan) and **Dr. Luana Manfredini**, and aims to support university students in mastering the foundational techniques of real analysis.
 
-👉 [`/university/solved-exercises/fundamental-limits-examples/`](/university/solved-exercises/fundamental-limits-examples/)
+#### Available Sets
+
+👉 [**Fundamental Limits**](/university/solved-exercises/fundamental-limits-examples/):  
+Solved exercises involving classical limits, with concise theoretical reminders.
+
+👉 [**Solved Integrals**](/university/solved-exercises/solved-integrals/):  
+A set of integrals with full solutions and essential theoretical notes, including elementary and improper cases.
+
 
