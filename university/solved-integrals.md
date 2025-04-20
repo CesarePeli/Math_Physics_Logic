@@ -26,7 +26,7 @@ $$ \int a^{f(x)} f'(x) \, dx =
 ### Trigonometric and Hyperbolic Functions
 
 $$ \int \cos x \, dx = \sin x + c $$
-$$ \int \sin x \, dx = -\cos x + c $$
+$$ \int \sin x \, dx = -\cos x + c $
 $$ \int f'(x) \cos f(x) \, dx = \sin f(x) + c $$
 $$ \int f'(x) \sin f(x) \, dx = -\cos f(x) + c $$
 $$ \int \frac{1}{\cos^2 x} \, dx = \tan x + c $$
@@ -254,9 +254,9 @@ $$
 
 **Solution:**
 
-Using the substitution \( x = \sin t \), \( dx = \cos t dt \), and identity \( \sqrt{1 - \sin^2 t} = |\cos t| \):
+Using the substitution $$ x = \sin t $$, $$ dx = \cos t dt $$, and identity $$ \sqrt{1 - \sin^2 t} = |\cos t| $$:
 
-Since \( \cos t \geq 0 \) in \( [-\pi/2, \pi/2] \):
+Since $$ \cos t \geq 0 $$ in $$ [-\pi/2, \pi/2] $$:
 
 $$
 \int_{-1}^{1} \sqrt{1 - x^2} \, dx =
@@ -277,7 +277,7 @@ $$
 
 **Solution:**
 
-Using the substitution \( x = 2 \sin t \), so \( dx = 2 \cos t dt \), and the integrand becomes:
+Using the substitution $$ x = 2 \sin t $$, so $$ dx = 2 \cos t dt $$, and the integrand becomes:
 
 $$
 \int_{-1}^1 \frac{1}{\sqrt{4 - x^2}} \, dx =
@@ -385,7 +385,7 @@ $$
 
 **Solution:**
 
-Substitute \( t = e^x \), \( dt = e^x dx \), so \( dx = \frac{dt}{t} \), and bounds become \( t \in [1, e] \):
+Substitute $$ t = e^x $$,$$ dt = e^x dx $$, so $$dx = \frac{dt}{t} $$, and bounds become $$ t \in [1, e] $$:
 
 $$
 \int_0^1 e^{2x} \log(1 + e^x) \, dx =
