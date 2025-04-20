@@ -25,17 +25,49 @@ $$ \int a^{f(x)} f'(x) \, dx =
 
 ### Trigonometric and Hyperbolic Functions
 
-$$ \int \cos x \, dx = \sin x + c $$
-$$ \int \sin x \, dx = -\cos x + c $
-$$ \int f'(x) \cos f(x) \, dx = \sin f(x) + c $$
-$$ \int f'(x) \sin f(x) \, dx = -\cos f(x) + c $$
-$$ \int \frac{1}{\cos^2 x} \, dx = \tan x + c $$
-$$ \int \frac{1}{\sin^2 x} \, dx = -\cot x + c $$
-$$ \int \frac{1}{\sqrt{1 - x^2}} \, dx = \arcsin x + c $$
-$$ \int \frac{1}{1 + x^2} \, dx = \arctan x + c $$
-$$ \int \frac{f'(x)}{1 + f(x)^2} \, dx = \arctan f(x) + c $$
-$$ \int \cosh x \, dx = \sinh x + c $$
-$$ \int \sinh x \, dx = \cosh x + c $$
+$$
+\int \cos x \, dx = \sin x + c
+$$
+
+$$
+\int \sin x \, dx = -\cos x + c
+$$
+
+$$
+\int f'(x) \cos f(x) \, dx = \sin f(x) + c
+$$
+
+$$
+\int f'(x) \sin f(x) \, dx = -\cos f(x) + c
+$$
+
+$$
+\int \frac{1}{\cos^2 x} \, dx = \tan x + c
+$$
+
+$$
+\int \frac{1}{\sin^2 x} \, dx = -\cot x + c
+$$
+
+$$
+\int \frac{1}{\sqrt{1 - x^2}} \, dx = \arcsin x + c
+$$
+
+$$
+\int \frac{1}{1 + x^2} \, dx = \arctan x + c
+$$
+
+$$
+\int \frac{f'(x)}{1 + f(x)^2} \, dx = \arctan f(x) + c
+$$
+
+$$
+\int \cosh x \, dx = \sinh x + c
+$$
+
+$$
+\int \sinh x \, dx = \cosh x + c
+$$
 
 ### Useful Trig Identities
 
