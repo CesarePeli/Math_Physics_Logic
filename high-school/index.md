@@ -25,26 +25,3 @@ A collection of digital resources designed for both teachers and students. Mater
 ### 📑 [Formula Sheets](/high-school/formula-sheets/)
 
 
-
-## Triangolo geometrico minimale
-
-<div id="triangle-plot" style="height: 400px;"></div>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    Plotly.newPlot('triangle-plot', [{
-      x: [0, 1, 0.5, 0],
-      y: [0, 0, 1, 0],
-      mode: 'lines',
-      line: { color: 'white', width: 3 },
-      type: 'scatter'
-    }], {
-      margin: { t: 20, b: 20, l: 20, r: 20 },
-      xaxis: { visible: false },
-      yaxis: { visible: false },
-      plot_bgcolor: '#000',
-      paper_bgcolor: '#000',
-      showlegend: false
-    }, { staticPlot: true });
-  });
-</script>
