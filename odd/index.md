@@ -8,7 +8,7 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
 ---
 
 <h1>The Odd Questions</h1>
-<pi<em> Where curiosity meets contradiction.<em></pi>
+<pi><em> Where curiosity meets contradiction.<em></pi>
 
 <div class="content-box">
   
