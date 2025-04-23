@@ -64,6 +64,8 @@ All didactic materials on the site — slides, diagrams, illustrations, animatio
 
 </div>
 
+<div class="content-box">
+
 ## 📬 Contact
 
 For questions, feedback or collaboration:
