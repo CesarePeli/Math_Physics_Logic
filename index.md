@@ -14,13 +14,16 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 
 <div class="content-box">
 
+Logic & Motion was born from a simple idea:  
+math and physics are not collections of facts —  
+but languages to think with, and tools to see the world more clearly.
+
 At the heart of the project lies a clear didactic vision:  
 **Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence. We embrace logic and clarity over rote learning, even without unnecessary formalism.  
 **Physics**, in turn, is approached as the science of models: abstract principles expressed through mathematics, applied across diverse real-world contexts.
 
 The project bridges education and exploration — offering slides, guided exercises, printable summaries, and original writing that invite reflection as well as understanding.  
 Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees science as a structured way of thinking — intellectually rigorous, but always human and meaningful.
-
 </div>
 
 <div class="content-box">
