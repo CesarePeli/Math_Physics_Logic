@@ -17,6 +17,14 @@ description: "Solved exercises and concept-driven slides for university-level ca
 </div>
 
 <div class="content-box">
+  <h2>✍️ Solved Exercises</h2>
+  <p>
+    <a href="/university/solved-exercises/">Explore the collection</a> of fully solved problem sets with clean notation and structured reasoning.  
+    Exercises are chosen to reinforce theory, not just technique — helping you build confidence and clarity.
+  </p>
+</div>
+
+<div class="content-box">
   <h2>🧩 Slides (Coming Soon)</h2>
   <p>
     Explained and structured PDF slides on major topics in calculus and linear algebra.  
@@ -25,13 +33,7 @@ description: "Solved exercises and concept-driven slides for university-level ca
   </p>
 </div>
 
-<div class="content-box">
-  <h2>✍️ Solved Exercises</h2>
-  <p>
-    <a href="/university/solved-exercises/">Explore the collection</a> of fully solved problem sets with clean notation and structured reasoning.  
-    Exercises are chosen to reinforce theory, not just technique — helping you build confidence and clarity.
-  </p>
-</div>
+
 
 <div class="content-box">
   <h2>📚 Core Topics</h2>
