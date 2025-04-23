@@ -22,7 +22,7 @@ background_image: "/images/moon.png"
 **Logic & Motion** is an independent educational project curated by Cesare Peli.  
 It offers structured resources in mathematics and physics for high school and early university level.
 
----
+
 
 ## 👤 Author
 
@@ -32,7 +32,9 @@ He holds a degree in **Mathematics**, a **Master’s in Scientific Teaching and 
 He collaborates with Italian publishers as a scientific content editor, and has written historical-biographical essays.  
 He also works in **creative writing** and science communication.
 
----
+</div>
+
+<div class="content-box">
 
 ## 👥 Collaborators
 
@@ -44,7 +46,9 @@ Physicist and Associate Professor at the **University of Padua**, Department of 
 Researcher in Mathematics at the **Politecnico di Milano**  
 → Supports the development of university-level calculus exercises and mathematical accuracy
 
----
+</div>
+
+<div class="content-box">
 
 ## 🛠️ Tools and Workflow
 
@@ -54,7 +58,7 @@ All didactic materials on the site — slides, diagrams, illustrations, animatio
 - **Python** for simulations, plots, and code-based models  
 - **Artificial Intelligence** for formatting, generation, and optimization tasks
 
----
+</div>
 
 ## 📬 Contact
 
