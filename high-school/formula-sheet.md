@@ -5,6 +5,15 @@ permalink: /high-school/formula-sheets/
 background_image: "/images/formulas.png"
 description: "Printable formula sheets for high school math and physics. Clear, concise, and topic-organized."
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
 
 # Formula Sheets – High School
 

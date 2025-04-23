@@ -6,6 +6,16 @@ nav_exclude: false
 background_image: "/images/u7413423743_Square_image_with_inverted_stairs_in_the_style_of_f71a0c2e-5d8f-4ed0-9bf2-06348857b5f2_3.png"
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 # Scientific Insights
 
 _Articles, reflections, and conceptual explorations in mathematics and physics_

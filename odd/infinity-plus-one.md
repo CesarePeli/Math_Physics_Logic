@@ -5,6 +5,15 @@ permalink: /odd/infinity-plus-one/
 background_image: "/images/odd-infinity.png"  
 description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
 
 <div class="content-box">
 

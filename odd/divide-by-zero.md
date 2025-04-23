@@ -6,6 +6,16 @@ background_image: "/images/div.png"
 description: "It’s not a taboo or a glitch in the Matrix — it simply makes no mathematical sense."
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 <div class="content-box">
 
 ## Why You Can't Divide by Zero

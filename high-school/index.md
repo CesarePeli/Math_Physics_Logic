@@ -6,6 +6,16 @@ background_image: "/images/slide.png"
 description: "Teaching and study resources for high school mathematics and physics: slides, solved exercises and formula sheets."
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 ## High School Math and Physics
 
 A collection of digital resources designed for both teachers and students. Materials cover mathematics and physics topics typically taught in high school.

@@ -6,7 +6,15 @@ background_image: "/images/scala.png"
 description: "Browse our collection of math and physics slides in PDF format, available for free or as premium packs. Ideal for students and teachers at the high school and university level."
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
 
 
 ## 📂 Free Resources

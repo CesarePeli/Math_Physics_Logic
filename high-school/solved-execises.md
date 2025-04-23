@@ -6,6 +6,16 @@ background_image: "/images/exercises.png"
 description: "Math and physics exercises for high school with detailed step-by-step solutions. Great for test preparation and revision."
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 ## Solved Exercises for High School
 
 Each exercise includes detailed steps and reasoning. Great for practicing at home, preparing for tests, or assigning in class.
