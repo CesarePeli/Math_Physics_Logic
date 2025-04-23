@@ -7,11 +7,10 @@ description: "Solved exercises and concept-driven slides for university-level ca
 ---
 
 
-  <h1>University Math Materials</h1>
+  <h1>University Materials</h1>
 
 <div class="content-box">
-    Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.
-
+Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.
 
  These materials are created to connect reasoning with application.
 
