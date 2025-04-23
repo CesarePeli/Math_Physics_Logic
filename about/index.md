@@ -6,38 +6,46 @@ nav_exclude: false
 background_image: "/images/moon.png"
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 # About
 
-_Logic & Motion is more than a resource hub — it's a didactic vision._
+<div class="content-box">
+
+**Logic & Motion** is an independent educational project curated by Cesare Peli.  
+It offers structured resources in mathematics and physics for high school and early university level.
 
 ---
 
-**Cesare Peli** is a mathematics graduate and educator with a passion for both rigorous theory and creative expression.  
-With degrees in both **Mathematics** and **Performing Arts (DAMS)**, his work combines analytical precision with a clear, narrative-driven approach to teaching.
+## 👤 Author
 
-This site is part of a broader educational project aimed at rethinking how mathematics and physics are presented in schools.
+**Cesare Peli** is a tenured teacher of mathematics and physics at the secondary level.  
+He holds a degree in **Mathematics**, a **Master’s in Scientific Teaching and Communication**, and a **Master’s in Theatre and Multimedia Production**.
 
-The goal:  
-✅ Materials that are technically sound  
-✅ Conceptually engaging  
-✅ Visually coherent
+He collaborates with Italian publishers as a scientific content editor, and has written historical-biographical essays.  
+He also works in **creative writing** and science communication.
 
 ---
 
-All resources are designed for high school students and teachers, blending:
+## 👥 Collaborators
 
-- Structured content (LaTeX Beamer)
-- Dynamic tools (Python)
-- A cultural and pedagogical approach that values clarity, rigor, and creativity
+**Prof. Marco Ruzzi**  
+Physicist and Associate Professor at the **University of Padua**, Department of Chemistry  
+→ Contributes to the physics materials, both for university-level exercises and conceptual outreach
 
----
-
-## 📬 Contact
-
-If you have questions, feedback, or collaboration ideas, feel free to reach out:
-
-**✉️ info@cesarepeli.com**
+**Prof. Antonino De Martino**  
+Researcher in Mathematics at the **Politecnico di Milano**  
+→ Supports the development of university-level calculus exercises and mathematical accuracy
 
 ---
 
-<div style="text-align:center; margin-top: 2rem
+## 🛠️ Tools and Workflow
+
+All didactic materials on the
