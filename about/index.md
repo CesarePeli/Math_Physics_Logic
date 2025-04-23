@@ -47,7 +47,7 @@ Physicist and Associate Professor at the **University of Padua**, Department of 
 → Contributes to the physics materials, both for university-level exercises and conceptual outreach
 
 **Prof. Antonino De Martino**  
-Researcher in Mathematics at the **Politecnico di Milano**  
+Researcher in Mathematics at **Polytechnic University of Milan**
 → Supports the development of university-level calculus exercises and mathematical accuracy
 
 </div>
@@ -70,6 +70,13 @@ All didactic materials on the site — slides, diagrams, illustrations, animatio
 
 For questions, feedback or collaboration:
 
+## 📬 Contact
+
+For questions, feedback or collaboration:
+
 **✉️ info@cesarepeli.com**
+
+**📸 Instagram**: [@logicandmotion](https://www.instagram.com/logicandmotion/)  
+**💼 LinkedIn**: [Cesare Peli](https://www.linkedin.com/in/cesarepeli/)
 
 </div>
