@@ -15,7 +15,7 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
   gtag('js', new Date());
 
   gtag('config', 'G-3P4GLVFYWW');
-</script>
+
 
 <div class="content-box">
 
