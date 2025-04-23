@@ -3,24 +3,64 @@ layout: default
 title: University Materials
 permalink: /university/
 background_image: "/images/university.png"
-description: "Solved exercises and upcoming slides for university-level calculus, linear algebra, and more."
+description: "Solved exercises and concept-driven slides for university-level calculus, linear algebra, and more."
 ---
 
-## University Math Materials
+<div class="content-box">
+  <h1>University Math Materials</h1>
+  <p>
+    Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.
+  </p>
+  <p>
+    At Logic & Motion, we believe that university-level math is not a collection of formulas, but a language for exploring structure, transformation, and abstraction. These materials are created to connect reasoning with application.
+  </p>
+</div>
 
-Resources designed for undergraduate mathematics students. All content is created to enhance conceptual understanding and support exam preparation.
+<div class="content-box">
+  <h2>🧩 Slides (Coming Soon)</h2>
+  <p>
+    Explained and structured PDF slides on major topics in calculus and linear algebra.  
+    Designed to guide conceptual reasoning through examples, visuals, and step-by-step logic.  
+    Ideal for focused self-study or thoughtful classroom use.
+  </p>
+</div>
 
-### Available Material
+<div class="content-box">
+  <h2>✍️ Solved Exercises</h2>
+  <p>
+    <a href="/university/solved-exercises/">Explore the collection</a> of fully solved problem sets with clean notation and structured reasoning.  
+    Exercises are chosen to reinforce theory, not just technique — helping you build confidence and clarity.
+  </p>
+</div>
 
-- ✍️ [**Solved Exercises**](/university/solved-exercises/):  
-  Problem sets with detailed, step-by-step solutions to reinforce techniques and build confidence.
+<div class="content-box">
+  <h2>📚 Core Topics</h2>
+  <ul>
+    <li><strong>Calculus</strong>: limits, continuity, derivatives, integrals, sequences, series</li>
+    <li><strong>Linear Algebra</strong>: vector spaces, matrices, determinants, systems, eigenvalues</li>
+    <li><strong>Mathematical Methods</strong>: reasoning strategies, symbolic manipulation, functional thinking</li>
+    <li><strong>Applications</strong>: modeling, geometric intuition, problem structure</li>
+  </ul>
+</div>
 
-### Coming Soon
+<div class="content-box">
+  <h2>🎓 Philosophy of Use</h2>
+  <p>
+    These materials aim to:
+  </p>
+  <ul>
+    <li>Emphasize <strong>understanding over memorization</strong></li>
+    <li>Highlight <strong>connections between topics</strong></li>
+    <li>Provide <strong>models, not just solutions</strong></li>
+    <li>Foster a mindset of <strong>clarity, logic, and depth</strong></li>
+  </ul>
+  <p>
+    All content is screen-optimized and available in PDF format, suitable for tablets, laptops, and projection.
+  </p>
+</div>
 
-- 📘 **Explained Slides**:  
-  Structured Beamer presentations covering key topics in calculus and linear algebra.  
-  *(Currently in development — stay tuned!)*
-
----
-
-All resources will be free and in printable PDF format.
+<div class="content-box">
+  <p>
+    📎 For more resources, visit the <a href="/high-school/">High School</a> section or explore <a href="/odd-questions/">The Odd Questions</a> to challenge your intuition.
+  </p>
+</div>
