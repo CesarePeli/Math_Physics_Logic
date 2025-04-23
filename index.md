@@ -7,9 +7,10 @@ background_image: "/images/spirale.png"
 description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
 ---
 
-# Logic & Motion
-
-**Tools for students and teachers — grounded in reasoning and clarity.**
+<div class="homepage-header">
+  <h1 class="homepage-title">Logic & Motion</h1>
+  <p class="homepage-subtitle">Tools for students and teachers — grounded in reasoning and clarity.</p>
+</div>
 
 <div class="content-box">
 
