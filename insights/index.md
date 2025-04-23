@@ -8,9 +8,9 @@ description: "Articles, reflections, and conceptual explorations in mathematics 
 ---
 
 <h1>Scientific Insights</h1>
+ <p><em>Articles, reflections, and conceptual explorations in mathematics and physics</em></p>
 
 <div class="content-box">
-  <p><em>Articles, reflections, and conceptual explorations in mathematics and physics</em></p>
 
   <p>
     This section features original reflections, brief articles, and conceptual explorations in mathematics and physics.  
