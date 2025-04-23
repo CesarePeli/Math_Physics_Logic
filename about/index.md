@@ -48,4 +48,18 @@ Researcher in Mathematics at the **Politecnico di Milano**
 
 ## 🛠️ Tools and Workflow
 
-All didactic materials on the
+All didactic materials on the site — slides, diagrams, illustrations, animations — are created using:
+
+- **LaTeX** for professional typesetting and structure  
+- **Python** for simulations, plots, and code-based models  
+- **Artificial Intelligence** for formatting, generation, and optimization tasks
+
+---
+
+## 📬 Contact
+
+For questions, feedback or collaboration:
+
+**✉️ info@cesarepeli.com**
+
+</div>
