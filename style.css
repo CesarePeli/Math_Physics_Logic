@@ -1,36 +1,57 @@
-/* Titolo e sottotitolo homepage */
-.homepage-header {
-  text-align: center;
-  margin: 4rem auto 2rem;
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.3); /* layer neutro per migliorare leggibilità */
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+
+/* Contenuto centrale */
+.content-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  margin: 2rem auto;
   width: 90%;
   max-width: 850px;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
 }
 
-.homepage-title {
-  font-size: 3.2rem;
-  font-weight: bold;
+/* Titoli */
+h1, h2, h3 {
   color: #fff;
-  display: inline-block;
-  padding: 0.5rem 2rem;
-  border: 2px solid #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
 }
 
-.homepage-subtitle {
-  font-size: 1.4rem;
-  font-style: italic;
-  color: #eee;
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.25rem 1.5rem;
-  border: 1px solid #aaa;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 0.5rem;
+/* Link */
+a {
+  color: #aadfff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
-/* FIX per mobile: titolo e sottotitolo responsivi */
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Elenchi */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  margin: 4rem 0 2rem;
+}
+
+/* FIX per mobile: allarga tutto il contenitore e rimuove padding/margini extra */
 @media screen and (max-width: 600px) {
   main {
     width: 100vw;
@@ -53,16 +74,5 @@
     max-width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
-  }
-
-  .homepage-title {
-    font-size: 2rem;
-    padding: 0.4rem 1rem;
-  }
-
-  .homepage-subtitle {
-    font-size: 1.1rem;
-    padding: 0.25rem 1rem;
-    margin-top: 0.75rem;
   }
 }
