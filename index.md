@@ -7,6 +7,16 @@ background_image: "/images/spirale.png"
 description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3P4GLVFYWW');
+</script>
+
 <div class="homepage-header">
   <h1 class="homepage-title">Logic & Motion</h1>
   <p class="homepage-subtitle">Tools for students and teachers — grounded in reasoning and clarity.</p>
@@ -42,6 +52,7 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
   Find detailed solutions and conceptual materials for calculus, linear algebra, and more.
 
 - [**About**]({{ "/about/" | relative_url }})  
-  Discover the vision behind Logic & Motion — and the person who created it.
+  Learn more about the educational vision — and meet the people who shape Logic & Motion.
+
 
 </div>
