@@ -17,10 +17,10 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
   gtag('config', 'G-3P4GLVFYWW');
 
   <h1>The Odd Questions</h1>
-
+<p> Where curiosity meets contradiction. </p>
 
 <div class="content-box">
-_Where curiosity meets contradiction._
+
 
 
 Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
