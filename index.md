@@ -1,29 +1,38 @@
 ---
 layout: default
-title: Home
+title: Logic & Motion – Curated Science Resources
 permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
-description: "Curated resources for math, physics, and logic — driven by curiosity, reasoning, and the desire to understand."
+description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
 ---
 
-A curated collection of digital resources for students and teachers of mathematics and physics — focused on conceptual depth, visual reasoning, and structural coherence. Slides, exercises, assessments, and tools designed to make science education intellectually meaningful and aesthetically sharp.
+<div class="content-box">
 
-Rooted in curiosity, logic, and the pursuit of understanding, the project sees science as a way of thinking — through structure, inquiry, and ideas. Alongside structured teaching materials, you'll find free resources: summaries, formula sheets, theory guides, original papers, and science writing that invites reflection and discovery.
+A curated collection of digital resources for students and teachers of mathematics and physics — focused on conceptual depth, visual reasoning, and structural coherence. 
+
+At the heart of the project lies a clear didactic vision:  
+**Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence. We embrace logic and clarity over rote learning, even without unnecessary formalism.  
+**Physics**, in turn, is approached as the science of models: abstract principles expressed through mathematics, applied across diverse real-world contexts.
+
+The project bridges education and exploration — offering slides, guided exercises, printable summaries, and original writing that invite reflection as well as understanding.  
+Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees science as a structured way of thinking — intellectually rigorous, but always human and meaningful.
 
 ## Explore the Sections
 
 - [**The Odd Questions**]({{ "/odd-questions/" | relative_url }})  
-  Strange, fascinating, and conceptually rich questions at the edges of math and science — where logic meets paradox
+  Explore strange and thought-provoking problems at the edge of math and science — where logic meets paradox.
 
 - [**Scientific Insights**]({{ "/insights/" | relative_url }})  
-  Articles and reflections on how we understand and teach science
+  Read articles and essays on scientific understanding, pedagogy, and reflective science writing.
 
 - [**High School**]({{ "/high-school/" | relative_url }})  
-  Math and physics resources for high school students and teachers: explained slides, solved exercises, and printable formula sheets
+  Access explained slides, solved problems, and printable formula sheets in math and physics.
 
 - [**University**]({{ "/university/" | relative_url }})  
-  Materials for undergraduate students: explained slides and solved exercises covering calculus, linear algebra, and more
+  Find detailed solutions and conceptual materials for calculus, linear algebra, and more.
 
 - [**About**]({{ "/about/" | relative_url }})  
-  Learn more about the author and the educational vision
+  Discover the vision behind Logic & Motion — and the person who created it.
+
+</div>
