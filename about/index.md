@@ -26,11 +26,15 @@ It offers structured resources in mathematics and physics for high school and ea
 
 ## 👤 Author
 
+## 👤 Cesare Peli
+
 **Cesare Peli** is a tenured teacher of mathematics and physics at the secondary level.  
 He holds a degree in **Mathematics**, a **Master’s in Scientific Teaching and Communication**, and a **Master’s in Theatre and Multimedia Production**.
 
-He collaborates with Italian publishers as a scientific content editor, and has written historical-biographical essays.  
-He also works in **creative writing** and science communication.
+He has collaborated with several Italian publishing houses as a content editor and exercise reviewer, contributing to school textbooks and educational materials.  
+In addition to teaching, he has authored historical and biographical essays and is active in creative and scientific writing.
+
+
 
 </div>
 
