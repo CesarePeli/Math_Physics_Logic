@@ -7,9 +7,11 @@ background_image: "/images/spirale.png"
 description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
 ---
 
-<div class="content-box">
+# Logic & Motion
 
-A curated collection of digital resources for students and teachers of mathematics and physics — focused on conceptual depth, visual reasoning, and structural coherence. 
+**Tools for students and teachers — grounded in reasoning and clarity.**
+
+<div class="content-box">
 
 At the heart of the project lies a clear didactic vision:  
 **Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence. We embrace logic and clarity over rote learning, even without unnecessary formalism.  
