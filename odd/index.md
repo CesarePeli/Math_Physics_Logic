@@ -16,11 +16,11 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
 
   gtag('config', 'G-3P4GLVFYWW');
 
-# The Odd Questions
+  <h1>The Odd Questions</h1>
 
-_Where curiosity meets contradiction._
+
 <div class="content-box">
-
+_Where curiosity meets contradiction._
 
 
 Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
