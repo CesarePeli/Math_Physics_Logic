@@ -13,7 +13,7 @@ Rooted in curiosity, logic, and the pursuit of understanding, the project sees s
 
 ## Explore the Sections
 
-- [**The Odd Questions**]({{ "/odd-qestions/" | relative_url }})  
+- [**The Odd Questions**]({{ "/odd-questions/" | relative_url }})  
   Strange, fascinating, and conceptually rich questions at the edges of math and science — where logic meets paradox
 
 - [**Scientific Insights**]({{ "/insights/" | relative_url }})  
