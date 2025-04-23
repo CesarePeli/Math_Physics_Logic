@@ -5,7 +5,6 @@ permalink: /odd-questions/
 nav_exclude: false
 background_image: "/images/odd.png"
 description: "Strange questions, paradoxes and insights from the edges of mathematics and physics."
-raw: true
 ---
 
 <!-- Google tag (gtag.js) -->
