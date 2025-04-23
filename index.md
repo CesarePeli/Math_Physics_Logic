@@ -21,6 +21,9 @@ At the heart of the project lies a clear didactic vision:
 The project bridges education and exploration — offering slides, guided exercises, printable summaries, and original writing that invite reflection as well as understanding.  
 Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees science as a structured way of thinking — intellectually rigorous, but always human and meaningful.
 
+</div>
+
+<div class="content-box">
 ## Explore the Sections
 
 - [**The Odd Questions**]({{ "/odd-questions/" | relative_url }})  
