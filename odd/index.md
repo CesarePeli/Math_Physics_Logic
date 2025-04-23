@@ -8,9 +8,9 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
 ---
 
 <h1>The Odd Questions</h1>
-
+<pi<em> Where curiosity meets contradiction.<em></pi>
 <div class="content-box">
-  Where curiosity meets contradiction.
+  
 
   Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
   These are not just puzzles — they're doorways to deeper understanding.
