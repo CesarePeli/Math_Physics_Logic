@@ -16,12 +16,12 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
 
   gtag('config', 'G-3P4GLVFYWW');
 
-
-<div class="content-box">
-
 # The Odd Questions
 
 _Where curiosity meets contradiction._
+<div class="content-box">
+
+
 
 Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
 These are not just puzzles — they're doorways to deeper understanding.
