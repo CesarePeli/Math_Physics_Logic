@@ -6,14 +6,15 @@ background_image: "/images/university.png"
 description: "Solved exercises and concept-driven slides for university-level calculus, linear algebra, and more."
 ---
 
-<div class="content-box">
+
   <h1>University Math Materials</h1>
-  <p>
+
+<div class="content-box">
     Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.
-  </p>
-  <p>
-    At Logic & Motion, we believe that university-level math is not a collection of formulas, but a language for exploring structure, transformation, and abstraction. These materials are created to connect reasoning with application.
-  </p>
+
+
+ These materials are created to connect reasoning with application.
+
 </div>
 
 <div class="content-box">
