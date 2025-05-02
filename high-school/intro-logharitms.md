@@ -36,10 +36,10 @@ But a logarithm goes in the opposite direction:
 
 ## ⚠️ When is a Logarithm Defined?
 
-A logarithm like \( \log_a b \) is **only defined** under two conditions:
+A logarithm like $\log_a b$ is **only defined** under two conditions:
 
-1. The **base** \( a \) must be **positive** and **different from 1**
-2. The **argument** \( b \) must be **positive**
+1. The **base** $a$ must be **positive** and **different from 1**  
+2. The **argument** $b$ must be **positive**
 
 In symbols:
 
@@ -49,8 +49,8 @@ $$
 
 Why? Because:
 - We can't raise a negative base to arbitrary powers (e.g., roots)
-- \( a = 1 \) would always give the same result: \( 1^x = 1 \)
-- The result of an exponential function \( a^x \) is always **positive**, so the **inverse** (logarithm) is only defined for positive inputs
+- $a = 1$ would always give the same result: $1^x = 1$
+- The result of an exponential function $a^x$ is always **positive**, so the **inverse** (logarithm) is only defined for positive inputs
 
 </div>
 
@@ -72,7 +72,7 @@ $$
 x = \log_2 5
 $$
 
-This is a **precise** expression, just like \( \sqrt{2} \).  
+This is a **precise** expression, just like $\sqrt{2}$.  
 Its decimal approximation is:
 
 $$
@@ -88,7 +88,7 @@ This means:
 
 ## 🔁 Logarithms and Exponentials: Inverse Functions
 
-The **logarithm base \( a \)** is the inverse of the exponential function base \( a \):
+The **logarithm base $a$** is the inverse of the exponential function base $a$:
 
 - Exponential:  
   $$ f(x) = a^x $$
@@ -121,10 +121,10 @@ $$
 
 we know:
 
-- It is defined only for \( x > 0 \)
-- It passes through the point \( (1, 0) \), since  
+- It is defined only for $x > 0$
+- It passes through the point $(1, 0)$, since  
   $$ \log_a 1 = 0 $$
-- It increases if \( a > 1 \), and decreases if \( 0 < a < 1 \)
+- It increases if $a > 1$, and decreases if $0 < a < 1$
 - It grows slowly: logarithms increase very slowly for large values
 
 A classic example:
@@ -175,7 +175,7 @@ $$
 \log_a b = \frac{\log_c b}{\log_c a}
 $$
 
-Most often, we use \( \log_{10} \) or \( \ln \) (log base \( e \)).
+Most often, we use $\log_{10}$ or $\ln$ (log base $e$).
 
 </div>
 
@@ -205,7 +205,7 @@ This shows how multiple terms can be **condensed into a single logarithm**.
 
 Another common question:
 
-> What is \( \log_2 \sqrt[3]{16} \) ?
+> What is $\log_2 \sqrt[3]{16}$?
 
 We note:
 
@@ -235,7 +235,7 @@ Try proving these properties from the definition:
 
 - Why does the product rule work?
 - Can you explain why logarithms grow slowly?
-- Explore the graph of \( y = \log_a x \) for different values of \( a \)
+- Explore the graph of $y = \log_a x$ for different values of $a$
 
 And when you're ready...
 
