@@ -1,23 +1,34 @@
 ---
 title: "Introduction to Logarithms"
-meta-description: "A clear and simple introduction to logarithms with definitions, examples, and useful properties for students."
+meta-description: "A clear and simple introduction to logarithms with definitions, reasoning, and detailed examples for high school students."
 permalink: "/high-school/math/intro-logarithms/"
 background_image: "/images/hsex.png"
 ---
 
 <div class="content-box">
 
-## 📘 Introduction to Logarithms
+## 📘 What is a Logarithm?
 
-A **logarithm** answers the question:  
-**"To what exponent must we raise a number (called the base) to get another number?"**
+A **logarithm** answers a very specific question:
 
-If we know that  
-$$ a^x = b $$  
-then the logarithm tells us that  
-$$ x = \log_a b $$
+> *To what power must we raise a given base to obtain a certain number?*
 
-So, the logarithm is simply the **exponent** we need to give to the base \( a \) in order to obtain the number \( b \).
+This relationship is written:
+
+$$
+\log_a b = x \quad \Longleftrightarrow \quad a^x = b
+$$
+
+We are used to reading powers from left to right:
+- For example:  
+  $$ 2^3 = 8 $$
+
+But a logarithm goes in the opposite direction:
+- It asks:  
+  $$ \log_2 8 = ? $$  
+  and answers:  
+  $$ \log_2 8 = 3 $$  
+  because $$ 2^3 = 8 $$
 
 </div>
 
@@ -25,104 +36,209 @@ So, the logarithm is simply the **exponent** we need to give to the base \( a \)
 
 ## ⚠️ When is a Logarithm Defined?
 
-The logarithm \( \log_a b \) is defined when:
-- The base \( a \) is **positive** and **not equal to 1**
-- The argument \( b \) is **positive**
+A logarithm like \( \log_a b \) is **only defined** under two conditions:
+
+1. The **base** \( a \) must be **positive** and **different from 1**
+2. The **argument** \( b \) must be **positive**
+
+In symbols:
+
+$$
+a > 0,\quad a \neq 1,\quad b > 0
+$$
+
+Why? Because:
+- We can't raise a negative base to arbitrary powers (e.g., roots)
+- \( a = 1 \) would always give the same result: \( 1^x = 1 \)
+- The result of an exponential function \( a^x \) is always **positive**, so the **inverse** (logarithm) is only defined for positive inputs
 
 </div>
 
 <div class="content-box">
 
-## 🧠 Basic Examples
+## 🧠 A Step-by-Step Example
 
-- $$ \log_7 49 = 2 $$ because $$ 7^2 = 49 $$
-- $$ \log_2 \frac{1}{2} = -1 $$ because $$ 2^{-1} = \frac{1}{2} $$
+Let’s say we want to solve this exponential equation:
 
-What if we want to solve $$ 2^x = 3 $$?
-We write:
-$$ \log_2 3 \approx 1.5849... $$
-This gives a **precise symbolic expression**, just like using \( \sqrt{2} \) instead of its decimal approximation.
+$$
+2^x = 5
+$$
 
-</div>
+We ask: "What power of 2 gives 5?"
 
-<div class="content-box">
+There is **no integer** that works exactly, so we use logarithms:
 
-## 🔁 Logarithms and Exponentials are Inverses
+$$
+x = \log_2 5
+$$
 
-The **logarithmic function** is the inverse of the **exponential function**.
+This is a **precise** expression, just like \( \sqrt{2} \).  
+Its decimal approximation is:
 
-Let’s consider:
-- $$ f(x) = 2^x $$
-- $$ g(x) = \log_2 x $$
+$$
+\log_2 5 \approx 2.3219...
+$$
 
-If you compute values for \( f(x) \) and plug them into \( g(x) \), you'll get back the original \( x \).
-
-</div>
-
-<div class="content-box">
-
-## 📈 The Logarithmic Function
-
-The general form is:
-$$ y = \log_a x $$
-
-### Key Properties:
-- Domain: \( x > 0 \)
-- Passes through \( (1, 0) \) because $$ \log_a 1 = 0 $$
-- Increasing if $$ a > 1 $$, decreasing if $$ 0 < a < 1 $$
-
-Example:
-$$ \log_{1/2} 8 = -3 $$ because $$ (1/2)^{-3} = 8 $$
+This means:
+> “2 raised to the power 2.3219 is approximately 5.”
 
 </div>
 
 <div class="content-box">
 
-## 🧩 Quick Examples with Explanation
+## 🔁 Logarithms and Exponentials: Inverse Functions
 
-- $$ \log_5 \frac{1}{5} = -1 $$ since $$ 5^{-1} = \frac{1}{5} $$
-- $$ \log_{1/3} 3 = -1 $$ since $$ (1/3)^{-1} = 3 $$
-- $$ \log_2 \frac{1}{32} = -5 $$ since $$ 2^{-5} = \frac{1}{32} $$
-- $$ \log_6 1 = 0 $$ because $$ 6^0 = 1 $$
-- $$ \log_2 \sqrt[3]{16} = \frac{4}{3} $$ because $$ \sqrt[3]{16} = 2^{4/3} $$
+The **logarithm base \( a \)** is the inverse of the exponential function base \( a \):
+
+- Exponential:  
+  $$ f(x) = a^x $$
+- Logarithm:  
+  $$ g(x) = \log_a x $$
+
+These functions "undo" each other:
+
+$$
+\log_a (a^x) = x \qquad \text{and} \qquad a^{\log_a x} = x
+$$
+
+This is similar to how square roots and squaring are inverses:
+
+$$
+\sqrt{x^2} = x \qquad \text{and} \qquad (\sqrt{x})^2 = x
+$$
 
 </div>
 
 <div class="content-box">
 
-## 🔧 Logarithmic Properties
+## 📈 Graphical Features of the Logarithmic Function
+
+For the function:
+
+$$
+f(x) = \log_a x
+$$
+
+we know:
+
+- It is defined only for \( x > 0 \)
+- It passes through the point \( (1, 0) \), since  
+  $$ \log_a 1 = 0 $$
+- It increases if \( a > 1 \), and decreases if \( 0 < a < 1 \)
+- It grows slowly: logarithms increase very slowly for large values
+
+A classic example:
+
+$$
+\log_{10} 1000 = 3 \qquad \text{because} \qquad 10^3 = 1000
+$$
+
+But:
+
+$$
+\log_{10} 10000 = 4 \quad \Rightarrow \quad \text{just one unit more}
+$$
+
+So even multiplying by 10 gives only a small change in the logarithm.
+
+</div>
+
+<div class="content-box">
+
+## 🔧 Core Logarithmic Rules
+
+These rules are essential for simplifying logarithmic expressions:
 
 ### Product Rule
-$$ \log_a (bc) = \log_a b + \log_a c $$
+
+$$
+\log_a (bc) = \log_a b + \log_a c
+$$
 
 ### Quotient Rule
-$$ \log_a \left( \frac{b}{c} \right) = \log_a b - \log_a c $$
+
+$$
+\log_a \left( \frac{b}{c} \right) = \log_a b - \log_a c
+$$
 
 ### Power Rule
-$$ \log_a (b^c) = c \cdot \log_a b $$
 
-### Change of Base
-$$ \log_a b = \frac{\log_c b}{\log_c a} $$
+$$
+\log_a (b^n) = n \cdot \log_a b
+$$
+
+### Change of Base Formula
+
+To compute logarithms with a base you don’t have on your calculator:
+
+$$
+\log_a b = \frac{\log_c b}{\log_c a}
+$$
+
+Most often, we use \( \log_{10} \) or \( \ln \) (log base \( e \)).
+
+</div>
+
+<div class="content-box">
+
+## 📝 Practice: A Detailed Example
+
+Let’s simplify this expression:
+
+$$
+2 \log x + 3 \log y
+$$
+
+We apply the **power rule** first:
+
+$$
+= \log(x^2) + \log(y^3)
+$$
+
+Now the **product rule**:
+
+$$
+= \log(x^2 y^3)
+$$
+
+This shows how multiple terms can be **condensed into a single logarithm**.
+
+Another common question:
+
+> What is \( \log_2 \sqrt[3]{16} \) ?
+
+We note:
+
+$$
+\sqrt[3]{16} = 2^{4/3}
+$$
+
+So:
+
+$$
+\log_2(2^{4/3}) = \frac{4}{3}
+$$
+
+This uses the rule:
+
+$$
+\log_a (a^x) = x
+$$
 
 </div>
 
 <div class="content-box">
 
-## 📝 Practice Problems
+## 🔎 Want to Go Further?
 
-1. $$ 3 \log x + 2 \log y = \log(x^3 y^2) $$
-2. $$ 2 \log x - 3 \log y = \log \left( \frac{x^2}{y^3} \right) $$
-3. $$ \frac{1}{2} \log x + \frac{1}{2} \log y = \log(\sqrt{xy}) $$
-4. $$ 2 \log 2 - \frac{1}{2} \log 9 + \log 6 = \log 8 $$
-5. $$ 4 \log x - 3 \log x + \log(x+1) = \log(x(x+1)) $$
-6. Convert: $$ \log_3 4 = \frac{\log_2 4}{\log_2 3} $$
-7. Convert: $$ \log_4 6 = \frac{\log_2 6}{\log_2 4} $$
-8. Solve: $$ \log_3 x = 3 \Rightarrow x = 27 $$
-9. Solve: $$ \log_2 x = -4 \Rightarrow x = \frac{1}{16} $$
-10. Solve: $$ \log_4 (2x - 1) = -1 \Rightarrow x = \frac{5}{8} $$
+Try proving these properties from the definition:
 
-</div>
+- Why does the product rule work?
+- Can you explain why logarithms grow slowly?
+- Explore the graph of \( y = \log_a x \) for different values of \( a \)
 
-<div class="content-box">
+And when you're ready...
+
 <p><a href="/high-school/concepts-and-exercises/">⬅ Back to Concepts and Exercises</a></p>
+
 </div>
