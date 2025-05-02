@@ -30,6 +30,18 @@ description: "Articles, reflections, and conceptual explorations in mathematics 
     New content will be added periodically. You’re welcome to browse, reflect, and share with colleagues or students.
   </p>
 </div>
+<div class="content-box">
+  <h2>🌀 The Structure of the Lorenz Attractor</h2>
+  <p>
+    A geometric and topological overview of the Lorenz attractor, based on the formal 1979 model by R. F. Williams.
+    Includes a full animation of 50 diverging trajectories generated with Manim.
+  </p>
+  <p>
+    <a href="/insights/lorenz-attractor/" style="color:#aadfff; font-weight:bold;">
+      ➤ Read the article and watch the animation →
+    </a>
+  </p>
+</div>
 
 <div class="content-box">
   <h2>📚 Galileo and Parabolic Motion</h2>
