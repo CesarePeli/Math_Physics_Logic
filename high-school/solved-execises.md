@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Solved Exercises – High School
-permalink: /high-school/solved-exercises/
-background_image: "/images/exercises.png"
-description: "Math and physics exercises for high school with detailed step-by-step solutions. Great for test preparation and revision."
+title: "Concepts and Exercises – High School"
+permalink: /high-school/concepts-and-exercises/
+background_image: "/images/hsex.png"
+description: "Math and physics concepts for high school with solved exercises and guided reasoning. Ideal for practice, review and assignments."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -12,32 +12,44 @@ description: "Math and physics exercises for high school with detailed step-by-s
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-## Solved Exercises for High School
+<div class="block">
+  <h2>📘 Concepts and Exercises for High School</h2>
+  <p>A selection of materials combining short conceptual explanations with detailed step-by-step exercises.<br>
+  Great for studying, reviewing, and class use.</p>
+</div>
 
-Each exercise includes detailed steps and reasoning. Great for practicing at home, preparing for tests, or assigning in class.
+<div class="block">
+  <h3>👩‍🏫 Teachers</h3>
+  <ul>
+    <li>Use them as ready-to-go activities or assessments</li>
+    <li>Combine theory refreshers with applied practice</li>
+  </ul>
+</div>
 
-### 👩‍🏫 Teachers:
-- Ready-to-use exercises for worksheets or assessments  
-- Structured approach supports progressive understanding
+<div class="block">
+  <h3>🧑‍🎓 Students</h3>
+  <ul>
+    <li>Review key ideas before tackling exercises</li>
+    <li>Learn methods by example, with guided solutions</li>
+  </ul>
+</div>
 
-### 🧑‍🎓 Students:
-- Helpful for revising methods and problem-solving strategies  
-- Ideal for exam preparation and practice
+<div class="block">
+  <h3>📘 Available Sets</h3>
 
----
+  <p>👉 <strong><a href="/high-school/math/quadratic-equations-basics/">Basic Equations</a></strong><br>
+  Introduction to quadratic equations with complete explanations, solved examples and visual intuition.</p>
 
-### 📘 Available Sets
+  <p>👉 <strong><a href="/high-school/math/intro-to-limits/">Understanding Limits</a></strong><br>
+  A beginner-friendly guide to the concept of limit in calculus, with graphs, examples and downloadable PDF.</p>
 
-👉 [**Basic Equations**](/high-school/math/quadratic-equations-basics/):  
-Introduction to quadratic equations with complete explanations, solved examples and visual intuition.
+  <p>👉 <strong><a href="/high-school/math/intro-logarithms/">Introduction to Logarithms</a></strong><br>
+  Learn what logarithms are, how they work, and how to use them with practical examples and identities.</p>
+</div>
 
-👉 [**Understanding Limits**](/high-school/math/intro-to-limits/):  
-A beginner-friendly guide to the concept of limit in calculus, with graphs, examples and downloadable PDF.
-
----
-
-[Back to High School Materials](/high-school/)
+<div class="block">
+  <p><a href="/high-school/">⬅ Back to High School Materials</a></p>
+</div>
