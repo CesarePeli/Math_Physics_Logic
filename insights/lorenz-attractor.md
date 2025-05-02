@@ -94,7 +94,7 @@ They serve as symbolic fingerprints for each attractor, enabling classification 
 
 ## Zeta Functions and Annular Words
 
-To deepen the connection between geometry and algebra, Williams introduced a pre-zeta function \(\eta(x, y)\) that captures periodic orbits through combinatorial data:
+To deepen the connection between geometry and algebra, Williams introduced a pre-zeta function $\eta(x, y)$ that captures periodic orbits through combinatorial data:
 
 - Orbits are encoded as **annular words**, cyclic sequences in the fundamental group of the quotient space
 - $\eta(x, y)$ is constructed from these words and reflects the system’s homological and symbolic structure
