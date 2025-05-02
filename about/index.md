@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about/
 nav_exclude: false
-background_image: "/images/moon.png"
+background_image: "/images/about.png"
 ---
 
 <!-- Google tag (gtag.js) -->
