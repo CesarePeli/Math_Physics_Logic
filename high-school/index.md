@@ -15,12 +15,12 @@ description: "Teaching and study resources for high school mathematics and physi
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-<div class="block">
+<div class="content-box">
   <h2>📘 High School Math and Physics</h2>
   <p>A collection of digital resources designed for both teachers and students. Materials cover mathematics and physics topics typically taught in high school.</p>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>👩‍🏫 For Teachers</h3>
   <ul>
     <li>Ready-to-use slides for interactive whiteboards or projectors</li>
@@ -29,7 +29,7 @@ description: "Teaching and study resources for high school mathematics and physi
   </ul>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>🧑‍🎓 For Students</h3>
   <ul>
     <li>Clear explanations and visual aids</li>
@@ -38,7 +38,7 @@ description: "Teaching and study resources for high school mathematics and physi
   </ul>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>📂 Available Resources</h3>
 
   <p>📘 <strong><a href="/high-school/explained-slides/">Explained Slides</a></strong><br>

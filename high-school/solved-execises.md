@@ -15,13 +15,13 @@ description: "Math and physics concepts for high school with solved exercises an
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-<div class="block">
+<div class="content-box">
   <h2>📘 Concepts and Exercises for High School</h2>
   <p>A selection of materials combining short conceptual explanations with detailed step-by-step exercises.<br>
   Great for studying, reviewing, and class use.</p>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>👩‍🏫 Teachers</h3>
   <ul>
     <li>Use them as ready-to-go activities or assessments</li>
@@ -29,7 +29,7 @@ description: "Math and physics concepts for high school with solved exercises an
   </ul>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>🧑‍🎓 Students</h3>
   <ul>
     <li>Review key ideas before tackling exercises</li>
@@ -37,7 +37,7 @@ description: "Math and physics concepts for high school with solved exercises an
   </ul>
 </div>
 
-<div class="block">
+<div class="content-box">
   <h3>📘 Available Sets</h3>
 
   <p>👉 <strong><a href="/high-school/math/quadratic-equations-basics/">Basic Equations</a></strong><br>
@@ -50,6 +50,6 @@ description: "Math and physics concepts for high school with solved exercises an
   Learn what logarithms are, how they work, and how to use them with practical examples and identities.</p>
 </div>
 
-<div class="block">
+<div class="content-box">
   <p><a href="/high-school/">⬅ Back to High School Materials</a></p>
 </div>
