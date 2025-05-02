@@ -21,7 +21,7 @@ $$
 \end{aligned}
 $$
 
-With certain parameters (e.g. \(\sigma = 10\), \(\rho = 28\), \(\beta = 8/3\)), the system exhibits **chaotic behavior**. Even small differences in initial conditions lead to vastly different trajectories, a hallmark of deterministic chaos.
+With certain parameters (e.g. $\sigma = 10$, $\rho = 28$, $\beta = 8/3$), the system exhibits **chaotic behavior**. Even small differences in initial conditions lead to vastly different trajectories, a hallmark of deterministic chaos.
 
 </div>
 
@@ -97,7 +97,7 @@ They serve as symbolic fingerprints for each attractor, enabling classification 
 To deepen the connection between geometry and algebra, Williams introduced a pre-zeta function \(\eta(x, y)\) that captures periodic orbits through combinatorial data:
 
 - Orbits are encoded as **annular words**, cyclic sequences in the fundamental group of the quotient space
-- \(\eta(x, y)\) is constructed from these words and reflects the system’s homological and symbolic structure
+- $\eta(x, y)$ is constructed from these words and reflects the system’s homological and symbolic structure
 - It generalizes the notion of a classical zeta function from dynamical systems
 
 This approach ties the Lorenz attractor to tools from algebraic topology, especially branched coverings and cell complexes.
@@ -110,7 +110,7 @@ This approach ties the Lorenz attractor to tools from algebraic topology, especi
 
 Williams' work had profound consequences:
 
-- It provided a counterexample to René Thom’s \(\omega S\)-conjecture, disproving that all structurally stable systems have finitely many topological types of attractors
+- It provided a counterexample to René Thom’s $\omega S$-conjecture, disproving that all structurally stable systems have finitely many topological types of attractors
 - It connected chaotic flows with symbolic and algebraic tools, such as **zeta functions** and **Markov partitions**
 - It emphasized the idea that chaotic attractors can be **robust**, with well-defined topological invariants despite their geometric complexity
 - It inspired new methods in the study of turbulence, bifurcations, and dynamic classification
