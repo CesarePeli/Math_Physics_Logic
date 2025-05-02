@@ -1,6 +1,6 @@
 ---
 title: "The Structure of the Lorenz Attractor"
-meta-description: "A rigorous and geometric overview of the Lorenz attractor, based on R. F. Williams’ topological analysis."
+meta-description: "A geometric overview of the Lorenz attractor, based on R. F. Williams’ topological analysis."
 permalink: "/insights/lorenz-attractor/"
 background_image: "/images/lorenz.png"
 ---
@@ -38,11 +38,9 @@ The animation shows 50 trajectories starting from nearby initial conditions. Des
 
 Yet all orbits remain confined within a compact, folded region: the **Lorenz attractor**. The flow stretches and folds space, layering the trajectories into a laminated structure. What appears random is actually governed by strict topological rules.
 
+**The animation was created using Manim, a Python library for mathematical visualization.**
+
 </div>
-
-<div class="content-box">
-
-## From Numerical Chaos to Geometric Structure
 
 <div class="content-box">
 
@@ -60,23 +58,6 @@ Williams’ approach consists in:
 - Introducing a **cell complex structure** on the attractor and associating to it a **pre-zeta function** \(\eta(x, y)\) that encodes periodic orbits as words in a non-abelian monoid.
 
 These tools prove that there are **uncountably many non-homeomorphic Lorenz-like attractors**, refuting René Thom’s conjecture on the generic finiteness of topological types in dynamical systems.
-
-</div>
-
-<div class="content-box">
-
-## Visualizing Chaotic Confinement
-
-The animation below numerically integrates 50 nearby initial conditions in the Lorenz system:
-
-<video autoplay loop muted playsinline style="width:100%; border-radius:12px">
-  <source src="/materials/insights/lorenz-attractor-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-Each trajectory starts from a slightly different point. Despite the system's deterministic nature, their evolutions diverge rapidly—an illustration of **sensitive dependence on initial conditions**. However, all trajectories remain confined within a compact, folded region of space: the **Lorenz attractor**.
-
-The animation visualizes this paradoxical combination of **instability and structure**. The flow stretches and folds space like a baker’s map, layering trajectories into a laminated surface. What appears chaotic is actually governed by rigid topological constraints, as formalized by Williams' manifold model.
 
 </div>
 
