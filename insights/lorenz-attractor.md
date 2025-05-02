@@ -65,7 +65,7 @@ These tools prove that there are **uncountably many non-homeomorphic Lorenz-like
 
 ## The Branched Manifold Model
 
-Williams introduced a 2-dimensional branched manifold \(L\), homotopy equivalent to a figure-eight. The Lorenz attractor is then modeled as an inverse limit of \(L\) under a semiflow:
+Williams introduced a 2-dimensional branched manifold $L$, homotopy equivalent to a figure-eight. The Lorenz attractor is then modeled as an inverse limit of $L$ under a semiflow:
 
 - The system stretches, folds, and re-injects the manifold into itself
 - A return map is defined on a transversal section, producing symbolic dynamics
