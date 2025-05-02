@@ -19,18 +19,6 @@ description: "Articles, reflections, and conceptual explorations in mathematics 
 </div>
 
 <div class="content-box">
-  <h2>🧠 Sample Topics</h2>
-  <ul>
-    <li>Why does the quadratic formula look the way it does?</li>
-    <li>From Galileo to Newton: How physical laws became equations</li>
-    <li>What makes a mathematical explanation satisfying?</li>
-    <li>Geometry as a language: what we really mean by “shape”</li>
-  </ul>
-  <p>
-    New content will be added periodically. You’re welcome to browse, reflect, and share with colleagues or students.
-  </p>
-</div>
-<div class="content-box">
   <h2>🌀 The Structure of the Lorenz Attractor</h2>
   <p>
     A geometric and topological overview of the Lorenz attractor, based on the formal 1979 model by R. F. Williams.
