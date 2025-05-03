@@ -30,7 +30,7 @@ With certain parameters (e.g. $\sigma = 10$, $\rho = 28$, $\beta = 8/3$), the sy
 ## Visualizing Chaotic Confinement
 
 <video autoplay loop muted playsinline style="width:100%; border-radius:12px">
-  <source src="/materials/insights/lorenz-attractor-video.mp4" type="video/mp4">
+  <source src="/materials/insights/LorenzAttractor.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
