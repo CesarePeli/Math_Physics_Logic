@@ -29,10 +29,30 @@ With certain parameters (e.g. $\sigma = 10$, $\rho = 28$, $\beta = 8/3$), the sy
 
 ## Visualizing Chaotic Confinement
 
-<video autoplay loop muted playsinline style="width:100%; border-radius:12px">
+<video id="lorenz-video" autoplay loop muted playsinline preload="auto" style="width:100%; border-radius:12px">
   <source src="/materials/insights/LorenzAttractor.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("lorenz-video");
+    video.muted = true;
+    const tryPlay = () => {
+      video.play().catch(() => {
+        // If autoplay fails, try again on user interaction
+        const retry = () => {
+          video.play();
+          window.removeEventListener("click", retry);
+          window.removeEventListener("touchstart", retry);
+        };
+        window.addEventListener("click", retry);
+        window.addEventListener("touchstart", retry);
+      });
+    };
+    tryPlay();
+  });
+</script>
 
 The animation shows 50 trajectories starting from nearby initial conditions. Despite the system’s deterministic nature, their paths diverge rapidly—illustrating **sensitive dependence on initial conditions**. 
 
@@ -41,6 +61,7 @@ Yet all orbits remain confined within a compact, folded region: the **Lorenz att
 (The animation was created using Manim, a Python library for mathematical visualization.)
 
 </div>
+
 
 <div class="content-box">
 
