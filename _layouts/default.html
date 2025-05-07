@@ -6,6 +6,7 @@
   <title>{{ page.title }} | Logic & Motion</title>
   <meta name="description" content="{{ page.description | default: 'Logic & Motion – Math and Physics teaching materials' }}">
   <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.png" type="image/png">
 </head>
 <body style="
   background-image: url('{{ page.background_image }}');
@@ -17,7 +18,8 @@
 ">
 
   {% include header.html %}
-{% if page.title == "Home" %}
+
+  {% if page.title == "Home" %}
   <section class="hero" style="text-align: center; margin: 4rem auto 3rem; max-width: 1000px;">
     <h1 style="font-size: 8rem; font-weight: bold; color: #fff;
                text-shadow: -2px -2px 0 #000, 2px -2px 0 #000,
@@ -35,8 +37,7 @@
       Tools for students and teachers — grounded in reasoning and clarity.
     </p>
   </section>
-{% endif %}
-
+  {% endif %}
 
   <main style="margin-top: 2rem; width: 100vw; margin: 0; padding: 0;">
     {% if page.raw %}
