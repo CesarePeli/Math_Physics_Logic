@@ -3,21 +3,21 @@ layout: default
 title: What Is Infinity Plus One?  
 permalink: /odd/infinity-plus-one/  
 background_image: "/images/odd-infinity.png"  
-description: "What happens when you add one to infinity? A journey through mathematics, paradoxes, and the philosophy of number."
+description: "What happens when you add one to infinity? Discover the math, logic, and philosophy behind this paradox — from Hilbert’s Hotel to set theory."
 ---
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
 <div class="content-box">
 
-# What Is Infinity Plus One?
+<h1>What Is Infinity Plus One?</h1>
 
 At first glance, **infinity seems like the largest possible quantity**. So what happens if we add one to it? How is it possible to add anything to something that, by definition, never ends?
 
@@ -191,5 +191,9 @@ Not because there’s a clever trick — but because **that’s how the idea of 
 
 As so often happens in mathematics, a simple formula can carry **deep philosophical weight**.  
 And sometimes, that depth asks us not just to recalculate, but to **rethink the very way we understand ideas**.
+
+---
+
+🔙 Curious for more? Go back to the [Odd Questions](/odd-questions/) section.
 
 </div>
