@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Why You Can't Divide by Zero
+title: "Why You Can’t Divide by Zero – Explained Simply"
+author: Cesare Peli
 permalink: /odd/divide-by-zero/
 background_image: "/images/div.png"
-description: "It’s not a taboo or a glitch in the Matrix — it simply makes no mathematical sense."
+description: "Why is dividing by zero undefined? From integers to real numbers and abstract algebra, here’s the mathematical reason behind the error."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -12,7 +13,6 @@ description: "It’s not a taboo or a glitch in the Matrix — it simply makes n
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
@@ -20,9 +20,10 @@ description: "It’s not a taboo or a glitch in the Matrix — it simply makes n
 
 ## Why You Can't Divide by Zero
 
-Is dividing by zero just a weird taboo? A mathematical superstition? Actually, it’s much simpler than that: dividing by zero **just doesn’t mean anything**.
+Is dividing by zero just a weird taboo? A mathematical superstition?  
+Actually, it’s much simpler than that: dividing by zero **just doesn’t mean anything**.
 
-Let’s dig into why — first with integers, then with real numbers, and finally with a bit of abstract algebra.
+Let’s explore why — starting with integers, then moving to real numbers, and finally touching on abstract algebra.
 
 </div>
 
@@ -42,9 +43,9 @@ $$
 a = d \cdot q + r, \quad \text{with } 0 \leq r < |d|
 $$
 
-But now, what if we try to divide by zero?  
-Say:
+But what if we try to divide by zero?
 
+#### Example:
 $$
 7 \div 0 = ?
 $$
@@ -55,21 +56,22 @@ $$
 7 = 0 \cdot q + r
 $$
 
-But $0 \cdot q = 0$ always, so we get $7 = r$, which **violates** the condition $r < |0|$. In fact, $|0| = 0$, so $r < 0$, which is impossible.
+But $0 \cdot q = 0$ always, so $r = 7$, violating $r < |0|$.  
+In fact, $|0| = 0$, so $r < 0$, which is impossible.
 
-Even worse:
+Even worse is:
 
 $$
 0 \div 0
 $$
 
-Requires:
+Which requires:
 
 $$
 0 = 0 \cdot q + r \quad \text{with } 0 \leq r < 0
 $$
 
-That condition $r < 0$ makes **no sense**.
+But $r < 0$ makes **no sense**.
 
 </div>
 
@@ -83,10 +85,9 @@ $$
 a = d \cdot q
 $$
 
-So to compute $a \div d$, we ask: what number $q$ satisfies $a = d \cdot q$?
+So to compute $a \div d$, we ask: what number $q$ satisfies that?
 
-Example:
-
+#### Example:
 $$
 1 \div 2 = 0.5 \quad \text{because} \quad 1 = 2 \cdot 0.5
 $$
@@ -97,15 +98,15 @@ $$
 27 \div 0 = ?
 $$
 
-We need $q$ such that:
+We want $q$ such that:
 
 $$
 27 = 0 \cdot q
 $$
 
-But $0 \cdot q = 0$ for any $q$, and will **never** give 27.
+But $0 \cdot q = 0$ for any $q$, and that can **never** equal 27.
 
-What about:
+And:
 
 $$
 0 \div 0?
@@ -117,7 +118,7 @@ $$
 0 = 0 \cdot q
 $$
 
-This is true for **any** $q$ — so the operation isn’t **well-defined**.
+Which is true for **any** $q$ — so the operation is **not well-defined**.
 
 </div>
 
@@ -125,29 +126,22 @@ This is true for **any** $q$ — so the operation isn’t **well-defined**.
 
 ### Abstract Perspective: Multiplicative Inverses
 
-In abstract algebra, division is understood as multiplication by an inverse:
+In abstract algebra, division means multiplying by the inverse:
 
 $$
 a \div b = a \cdot \frac{1}{b}
 $$
 
-This works beautifully — as long as $b \neq 0$.  
+This works as long as $b \neq 0$.  
 To define $\frac{1}{b}$, we must find $x$ such that:
 
 $$
 b \cdot x = 1
 $$
 
-Example:
-
+#### Example:
 $$
-2 \cdot \frac{1}{2} = 1
-$$
-
-So:
-
-$$
-10 \div 2 = 10 \cdot \frac{1}{2} = 5
+2 \cdot \frac{1}{2} = 1 \Rightarrow 10 \div 2 = 5
 $$
 
 But for zero:
@@ -156,7 +150,8 @@ $$
 0 \cdot x = 1
 $$
 
-has **no solution**. Zero has **no multiplicative inverse**.
+has **no solution**.  
+Zero has **no multiplicative inverse**.
 
 </div>
 
@@ -169,5 +164,12 @@ But **zero has no inverse**. So $a \div 0$ is undefined — always.
 
 This isn’t a forbidden operation. It’s just **meaningless**.  
 Mathematics doesn’t deal in taboos — only in **definitions that work**.
+
+---
+
+📄 Prefer to read this offline or share it with students?  
+[Download the printable PDF version](/materials/odd/why-division-by-zero.pdf){:target="_blank"}
+
+👉 See more curious problems in the [Odd Questions](/odd-questions/) section.
 
 </div>
