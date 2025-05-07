@@ -1,19 +1,18 @@
 ---
 layout: default
-title: The Odd Questions
+title: Odd Questions in Math and Physics
 permalink: /odd-questions/
 nav_exclude: false
 background_image: "/images/odd.png"
-description: "Strange questions, paradoxes and insights from the edges of mathematics and physics."
+description: "Paradoxes, contradictions and curious questions from the edges of mathematics and physics — where logic meets mystery."
 ---
 
-<h1>The Odd Questions</h1>
-<pi><em> Where curiosity meets contradiction. </em></pi>
+<h1>Odd Questions in Math and Physics</h1>
+<p><em>Where curiosity meets contradiction — and every paradox hides a lesson.</em></p>
 
 <div class="content-box">
-   Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
+  Explore some of the most fascinating, strange, and brain-twisting questions from mathematics and physics.  
   These are not just puzzles — they're doorways to deeper understanding.
-
 </div>
 
 <div class="content-box">
@@ -29,6 +28,9 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
     Adding one to infinity still gives infinity — but not in the way arithmetic would suggest.  
     Through Hilbert’s Hotel and the logic of set theory, we discover that infinity is not a number, but a <strong>concept</strong> — one that changes meaning depending on the context.
   </p>
+  <p>
+    <a href="/odd/infinity-plus-one/">Read more →</a>
+  </p>
 </div>
 
 <div class="content-box">
@@ -38,6 +40,9 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
     Quantum mechanics says the cat exists in a <strong>superposition</strong> of states until a measurement collapses the wave function.  
     It’s weird, yes — but also foundational to modern physics.
   </p>
+  <p>
+    <a href="/odd/schrodinger-cat/">Read more →</a>
+  </p>
 </div>
 
 <div class="content-box">
@@ -45,6 +50,15 @@ description: "Strange questions, paradoxes and insights from the edges of mathem
   <p>
     This section will grow with more curious paradoxes, counterintuitive results, and surprising truths from math and science.
   </p>
+</div>
+
+<div class="content-box">
+  <h3>Featured Questions</h3>
+  <ul>
+    <li><a href="/odd/divide-by-zero/">Why can’t you divide by zero?</a></li>
+    <li><a href="/odd/infinity-plus-one/">What is infinity plus one?</a></li>
+    <li><a href="/odd/schrodinger-cat/">Is Schrödinger’s cat alive or dead?</a></li>
+  </ul>
 </div>
 
 <div class="content-box">
