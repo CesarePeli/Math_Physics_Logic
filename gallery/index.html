@@ -34,11 +34,17 @@ raw: true
 </div>
 
 <!-- Lightbox Modal -->
-<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
-  <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
-  <img id="lightbox-img" src="" alt="" class="max-w-5xl w-full h-auto rounded-lg">
-  <button onclick="prevImage()" class="absolute left-4 text-white text-3xl">&#10094;</button>
-  <button onclick="nextImage()" class="absolute right-4 text-white text-3xl">&#10095;</button>
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center hidden z-50">
+  <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+  <div class="text-center mb-4 text-white">
+    <h2 id="lightbox-title" class="text-2xl font-semibold"></h2>
+    <p id="lightbox-description" class="text-sm text-gray-300"></p>
+  </div>
+  <img id="lightbox-img" src="" alt="" class="max-w-4xl w-full h-auto rounded-lg">
+  <div class="absolute bottom-6 left-0 right-0 flex justify-between px-8">
+    <button onclick="prevImage()" class="text-white text-3xl">&#10094;</button>
+    <button onclick="nextImage()" class="text-white text-3xl">&#10095;</button>
+  </div>
 </div>
 
 <script>
@@ -46,7 +52,8 @@ raw: true
     {% for item in sorted_gallery %}
       {
         image: "{{ item.image }}",
-        title: "{{ item.title }}"
+        title: "{{ item.title }}",
+        description: "{{ item.description }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
@@ -57,6 +64,8 @@ raw: true
     currentIndex = index;
     const item = galleryItems[index];
     document.getElementById('lightbox-img').src = item.image;
+    document.getElementById('lightbox-title').textContent = item.title;
+    document.getElementById('lightbox-description').textContent = item.description;
     document.getElementById('lightbox').classList.remove('hidden');
 
     if (window.innerWidth < 768) {
