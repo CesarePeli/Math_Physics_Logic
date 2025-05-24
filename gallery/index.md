@@ -3,7 +3,9 @@ layout: default
 title: Scientific Gallery
 permalink: /gallery/
 meta_description: "Explore a visual gallery of AI-generated artworks inspired by mathematics and science."
+raw: true
 ---
+
 
 <style>
   body {
