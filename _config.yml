@@ -14,6 +14,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+collections:
+  gallery:
+    output: true
+
 kramdown:
   input: GFM
   parse_block_html: true
