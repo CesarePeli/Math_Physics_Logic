@@ -10,6 +10,10 @@ raw: true
   body {
     background-color: #1c1f2b;
   }
+  #lightbox img {
+    max-height: 80vh;
+    object-fit: contain;
+  }
 </style>
 
 <div class="relative h-96 flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: url('/gallery-images/header.jpg');">
@@ -21,11 +25,11 @@ raw: true
 </div>
 
 {% assign sorted_gallery = site.gallery | sort: "order" %}
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
+<div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
   {% for item in sorted_gallery %}
     <div class="overflow-hidden rounded-xl shadow-md bg-[#1f232f] p-2">
       <a href="#" onclick="openLightbox({{ forloop.index0 }}); return false;" data-index="{{ forloop.index0 }}">
-        <img src="{{ item.image }}" alt="{{ item.title }}" class="rounded-xl object-cover w-full h-48">
+        <img src="{{ item.image }}" alt="{{ item.title }}" class="rounded-xl object-cover w-full aspect-video">
       </a>
       <h2 class="text-white text-lg font-semibold mt-2">{{ item.title }}</h2>
       <p class="text-gray-400 text-sm">{{ item.description }}</p>
@@ -40,7 +44,7 @@ raw: true
     <h2 id="lightbox-title" class="text-2xl font-semibold"></h2>
     <p id="lightbox-description" class="text-sm text-gray-300"></p>
   </div>
-  <img id="lightbox-img" src="" alt="" class="max-w-4xl w-full h-auto rounded-lg">
+  <img id="lightbox-img" src="" alt="" class="rounded-lg object-contain max-h-[80vh]">
   <div class="absolute bottom-6 left-0 right-0 flex justify-between px-8">
     <button onclick="prevImage()" class="text-white text-3xl">&#10094;</button>
     <button onclick="nextImage()" class="text-white text-3xl">&#10095;</button>
@@ -80,6 +84,9 @@ raw: true
 
   function closeLightbox() {
     document.getElementById('lightbox').classList.add('hidden');
+    document.getElementById('lightbox-img').src = "";
+    document.getElementById('lightbox-title').textContent = "";
+    document.getElementById('lightbox-description').textContent = "";
     if (document.fullscreenElement) {
       document.exitFullscreen().catch(err => console.log("Exit fullscreen error:", err));
     }
