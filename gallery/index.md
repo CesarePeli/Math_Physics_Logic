@@ -7,7 +7,7 @@ meta_description: "Explore a visual gallery of AI-generated artworks inspired by
 
 <style>
   body {
-    background-color: #0b0c10;
+    background-color: #1c1f2b;
   }
 </style>
 
