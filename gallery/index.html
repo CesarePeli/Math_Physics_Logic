@@ -10,13 +10,16 @@ raw: true
   body {
     background-color: #1c1f2b;
   }
+
   #lightbox img {
     max-height: 80vh;
     object-fit: contain;
   }
 </style>
 
-<div class="relative h-96 flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: url('/gallery-images/header.jpg');">
+<!-- Hero header -->
+<div class="relative h-96 flex items-center justify-center text-center text-white bg-cover bg-center"
+     style="background-image: url('/gallery-images/header.jpg');">
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
   <div class="relative z-10">
     <h1 class="text-4xl font-bold mb-2">The Scientific Gallery</h1>
@@ -24,12 +27,14 @@ raw: true
   </div>
 </div>
 
+<!-- Image grid -->
 {% assign sorted_gallery = site.gallery | sort: "order" %}
 <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-10">
   {% for item in sorted_gallery %}
-    <div class="overflow-hidden rounded-xl shadow-md bg-[#1f232f] p-2">
+    <div class="overflow-hidden rounded-xl shadow-md bg-[#262c3d] p-2">
       <a href="#" onclick="openLightbox({{ forloop.index0 }}); return false;" data-index="{{ forloop.index0 }}">
-        <img src="{{ item.image }}" alt="{{ item.title }}" class="rounded-xl object-cover w-full aspect-video">
+        <img src="{{ item.image }}" alt="{{ item.title }}"
+             class="rounded-xl object-cover w-full max-h-60 aspect-video">
       </a>
       <h2 class="text-white text-lg font-semibold mt-2">{{ item.title }}</h2>
       <p class="text-gray-400 text-sm">{{ item.description }}</p>
