@@ -24,7 +24,7 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 
 <div class="content-box">
 
-Logic & Motion **began** from a simple idea: math and physics are not collections of facts, but languages to think with, and tools to see the world more clearly.
+Logic & Motion began from a simple idea: math and physics are not collections of facts, but languages to think with, and tools to see the world more clearly.
 
 **Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence. We embrace logic and clarity over rote learning, even without unnecessary formalism.  
 **Physics**, in turn, is approached as the science of models: abstract principles expressed through mathematics, applied across diverse real-world contexts.
@@ -40,8 +40,8 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
 - [**The Odd Questions**]({{ "/odd-questions/" | relative_url }})  
   Explore strange and thought-provoking problems at the edge of math and science — where logic meets paradox.
 
-- [**Scientific Insights**]({{ "/insights/" | relative_url }})  
-  Read articles and essays on scientific understanding, pedagogy, and reflective science writing.
+- [**In-Depth Articles**]({{ "/insights/" | relative_url }})  
+  Read rigorous, reflective essays on mathematical and physical theory — from foundational principles to structural analysis.
 
 - [**High School**]({{ "/high-school/" | relative_url }})  
   Access explained slides, solved problems, and printable formula sheets in math and physics.
@@ -49,10 +49,41 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
 - [**University**]({{ "/university/" | relative_url }})  
   Find detailed solutions and conceptual materials for calculus, linear algebra, and more.
 
-- [**The Scientific Gallery**]({{ "/gallery/" | relative_url }})  
+- [**Gallery**]({{ "/gallery/" | relative_url }})  
   A visual collection of generative artworks exploring mathematical and scientific structure.
 
 - [**About**]({{ "/about/" | relative_url }})  
   Learn more about the educational vision — and meet the people who shape Logic & Motion.
 
 </div>
+
+<nav style="text-align: center;
+            margin: 1.5rem auto;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 1rem;
+            max-width: 850px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);">
+{% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
+
+  {% assign current_url = page.url | replace: "/index.html", "/" %}
+  {% for item in nav_items %}
+    {% assign parts = item | split: ":" %}
+    {% assign slug = parts[0] %}
+    {% assign label = parts[1] %}
+    {% assign url = "/" %}
+    {% unless slug == "index" %}
+      {% assign url = "/" | append: slug | append: "/" %}
+    {% endunless %}
+    {% unless current_url == url %}
+      <a href="{{ url | relative_url }}"
+         style="margin: 0 0.5rem;
+                white-space: nowrap;
+                color: #aadfff;
+                text-decoration: none;
+                font-weight: 500;">
+        {{ label }}
+      </a>
+    {% endunless %}
+  {% endfor %}
+</nav>
