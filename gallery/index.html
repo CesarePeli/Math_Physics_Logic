@@ -46,9 +46,11 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
 
   .gallery-item img {
     width: 100%;
-    height: auto;
-    cursor: pointer;
+    height: 240px;
+    object-fit: cover;
     border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #1c1f2b;
   }
 
   .gallery-item h2 {
@@ -73,7 +75,9 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
 
   .lightbox-text {
     position: absolute;
-    top: 2rem;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     color: white;
     padding: 1rem 1.5rem;
@@ -83,14 +87,24 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
   }
 
   .lightbox-text h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: #fff;
   }
 
   .lightbox-text p {
-    font-size: 0.95rem;
-    color: #ddd;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .lightbox-text h2 {
+      font-size: 1rem;
+    }
+
+    .lightbox-text p {
+      font-size: 0.8rem;
+    }
   }
 
   .lightbox img {
@@ -170,11 +184,24 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     document.getElementById("lightbox-img").src = item.image;
     document.getElementById("lightbox-title").textContent = item.title;
     document.getElementById("lightbox-description").textContent = item.description;
-    document.getElementById("lightbox").classList.add("active");
+    const lightbox = document.getElementById("lightbox");
+    lightbox.classList.add("active");
+
+    // Attiva fullscreen su mobile
+    if (window.innerWidth < 768) {
+      if (lightbox.requestFullscreen) {
+        lightbox.requestFullscreen().catch(() => {});
+      } else if (lightbox.webkitRequestFullscreen) {
+        lightbox.webkitRequestFullscreen();
+      }
+    }
   }
 
   function closeLightbox() {
     document.getElementById("lightbox").classList.remove("active");
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    }
   }
 
   function nextImage() {
