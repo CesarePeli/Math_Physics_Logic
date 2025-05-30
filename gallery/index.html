@@ -1,67 +1,9 @@
----
-layout: default
-title: Scientific Gallery
-permalink: /gallery/
-meta_description: "Explore a visual gallery of AI-generated artworks inspired by mathematics and science."
----
-
 <style>
-  body {
-    background-color: #1c1f2b;
-    color: white;
-    margin: 0;
-    font-family: sans-serif;
-  }
-
-  .gallery-hero {
-    position: relative;
-    height: 24rem;
-    background: url('/gallery-images/header.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .gallery-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .gallery-hero-content {
-    position: relative;
-    z-index: 10;
-  }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-  }
-
-  .gallery-item {
-    background: #262c3d;
-    border-radius: 1rem;
-    overflow: hidden;
-    padding: 1rem;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-
   .lightbox {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.97);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -72,10 +14,30 @@ meta_description: "Explore a visual gallery of AI-generated artworks inspired by
     display: flex;
   }
 
+  .lightbox-text {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+  }
+
+  .lightbox-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .lightbox-text p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
   .lightbox img {
-    max-height: 80vh;
-    max-width: 90vw;
-    object-fit: contain;
+    width: 100vw;
+    height: auto;
+    max-height: 90vh;
+    object-fit: scale-down;
   }
 
   .lightbox-nav {
@@ -106,72 +68,3 @@ meta_description: "Explore a visual gallery of AI-generated artworks inspired by
     cursor: pointer;
   }
 </style>
-
-<!-- Hero -->
-<div class="gallery-hero">
-  <div class="gallery-hero-content">
-    <h1 class="text-4xl font-bold mb-2">The Scientific Gallery</h1>
-    <p class="text-lg">Images at the intersection of abstraction and form.</p>
-  </div>
-</div>
-
-<!-- Grid -->
-{% assign sorted_gallery = site.gallery | sort: "order" %}
-<div class="gallery-grid">
-  {% for item in sorted_gallery %}
-    <div class="gallery-item">
-      <img src="{{ item.image }}" alt="{{ item.title }}" onclick="openLightbox({{ forloop.index0 }})">
-      <h2 style="margin-top: 0.5rem;">{{ item.title }}</h2>
-      <p style="font-size: 0.9rem; color: #ccc;">{{ item.description }}</p>
-    </div>
-  {% endfor %}
-</div>
-
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <button class="close-btn" onclick="closeLightbox()">&times;</button>
-  <h2 id="lightbox-title" style="margin-bottom: 0.5rem;"></h2>
-  <p id="lightbox-description" style="font-size: 0.85rem; color: #aaa;"></p>
-  <img id="lightbox-img" src="" alt="">
-  <div class="lightbox-nav">
-    <button onclick="prevImage()">&#10094;</button>
-    <button onclick="nextImage()">&#10095;</button>
-  </div>
-</div>
-
-<script>
-  const galleryItems = [
-    {% for item in sorted_gallery %}
-      {
-        image: "{{ item.image }}",
-        title: "{{ item.title }}",
-        description: "{{ item.description }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-
-  let currentIndex = 0;
-
-  function openLightbox(index) {
-    currentIndex = index;
-    const item = galleryItems[index];
-    document.getElementById('lightbox-img').src = item.image;
-    document.getElementById('lightbox-title').textContent = item.title;
-    document.getElementById('lightbox-description').textContent = item.description;
-    document.getElementById('lightbox').classList.add('active');
-  }
-
-  function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('active');
-  }
-
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % galleryItems.length;
-    openLightbox(currentIndex);
-  }
-
-  function prevImage() {
-    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-    openLightbox(currentIndex);
-  }
-</script>
