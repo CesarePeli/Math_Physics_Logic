@@ -6,19 +6,13 @@ background_image: "/gallery-images/header.jpg"
 description: "Explore a visual gallery of AI-generated artworks inspired by mathematics and science."
 ---
 
-<h1>The Scientific Gallery</h1>
-<p><em> Images at the intersection of abstraction and form — blending visual intuition with conceptual structure. </em></p>
+<div class="content-box">
+  <h1>The Scientific Gallery</h1>
+  <p><em>Images at the intersection of abstraction and form — blending visual intuition with conceptual structure.</em></p>
+</div>
 
 <div class="content-box">
-  {% assign sorted_gallery = site.gallery | sort: "order" %}
-  <div class="gallery-grid">
-    {% for item in sorted_gallery %}
-      <div class="gallery-item">
-        <img src="{{ item.image }}" alt="{{ item.title }}" onclick="openLightbox({{ forloop.index0 }})">
-        <h2 style="margin-top: 0.5rem;">{{ item.title }}</h2>
-      </div>
-    {% endfor %}
-  </div>
+  <div class="gallery-grid" id="gallery-grid"></div>
 </div>
 
 <!-- Lightbox -->
@@ -48,6 +42,7 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     border-radius: 1rem;
     overflow: hidden;
     padding: 1rem;
+    text-align: center;
   }
 
   .gallery-item img {
@@ -56,6 +51,12 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     object-fit: cover;
     border-radius: 0.5rem;
     cursor: pointer;
+  }
+
+  .gallery-item h2 {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
   }
 
   .lightbox {
@@ -130,28 +131,44 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
 
 <script>
   const galleryItems = [
-    {% for item in sorted_gallery %}
-      {
-        image: "{{ item.image }}",
-        title: "{{ item.title }}",
-        description: "{{ item.description }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    {
+      image: "/gallery-images/cat.png",
+      title: "The Observed Has Left the Box",
+      description: "A cat, observed, sits at the heart of a geometric corridor. Presence replaces uncertainty."
+    },
+    {
+      image: "/gallery-images/emergent-line.png",
+      title: "Emergent Phenomenon",
+      description: "A minimal composition inspired by linear regression and geometric emergence."
+    }
+    // Aggiungi altri oggetti qui
   ];
+
+  const galleryGrid = document.getElementById("gallery-grid");
+
+  galleryItems.forEach((item, index) => {
+    const container = document.createElement("div");
+    container.className = "gallery-item";
+    container.innerHTML = `
+      <img src="${item.image}" alt="${item.title}" onclick="openLightbox(${index})">
+      <h2>${item.title}</h2>
+    `;
+    galleryGrid.appendChild(container);
+  });
 
   let currentIndex = 0;
 
   function openLightbox(index) {
     currentIndex = index;
     const item = galleryItems[index];
-    document.getElementById('lightbox-img').src = item.image;
-    document.getElementById('lightbox-title').textContent = item.title;
-    document.getElementById('lightbox-description').textContent = item.description;
-    document.getElementById('lightbox').classList.add('active');
+    document.getElementById("lightbox-img").src = item.image;
+    document.getElementById("lightbox-title").textContent = item.title;
+    document.getElementById("lightbox-description").textContent = item.description;
+    document.getElementById("lightbox").classList.add("active");
   }
 
   function closeLightbox() {
-    document.getElementById('lightbox').classList.remove('active');
+    document.getElementById("lightbox").classList.remove("active");
   }
 
   function nextImage() {
