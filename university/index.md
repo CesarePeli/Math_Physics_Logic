@@ -1,68 +1,166 @@
 ---
 layout: default
-title: University Materials
-permalink: /university/
-background_image: "/images/university.png"
-description: "Solved exercises and concept-driven slides for university-level calculus, linear algebra, and more."
+title: The Scientific Gallery
+permalink: /gallery/
+background_image: "/gallery-images/header.jpg"
+description: "Explore a visual gallery of AI-generated artworks inspired by mathematics and science."
 ---
 
-
- <h1>University Materials</h1>
- <p><em> Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.  </em></p>
-<div class="content-box">
-
-
- These materials are created to connect reasoning with application.
-
-</div>
+<h1>The Scientific Gallery</h1>
+<p><em> Images at the intersection of abstraction and form — blending visual intuition with conceptual structure. </em></p>
 
 <div class="content-box">
-  <h2>✍️ Solved Exercises</h2>
-  <p>
-    <a href="/university/solved-exercises/">Explore the collection</a> of fully solved problem sets with clean notation and structured reasoning.  
-    Exercises are chosen to reinforce theory, not just technique — helping you build confidence and clarity.
-  </p>
+  {% assign sorted_gallery = site.gallery | sort: "order" %}
+  <div class="gallery-grid">
+    {% for item in sorted_gallery %}
+      <div class="gallery-item">
+        <img src="{{ item.image }}" alt="{{ item.title }}" onclick="openLightbox({{ forloop.index0 }})">
+        <h2 style="margin-top: 0.5rem;">{{ item.title }}</h2>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
-<div class="content-box">
-  <h2>🧩 Slides (Coming Soon)</h2>
-  <p>
-    Explained and structured PDF slides on major topics in calculus and linear algebra.  
-    Designed to guide conceptual reasoning through examples, visuals, and step-by-step logic.  
-    Ideal for focused self-study or thoughtful classroom use.
-  </p>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-text">
+    <h2 id="lightbox-title"></h2>
+    <p id="lightbox-description"></p>
+  </div>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-nav">
+    <button onclick="prevImage()">&#10094;</button>
+    <button onclick="nextImage()">&#10095;</button>
+  </div>
+  <button class="close-btn" onclick="closeLightbox()">&times;</button>
 </div>
 
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
 
+  .gallery-item {
+    background: #262c3d;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+  }
 
-<div class="content-box">
-  <h2>📚 Core Topics</h2>
-  <ul>
-    <li><strong>Calculus</strong>: limits, continuity, derivatives, integrals, sequences, series</li>
-    <li><strong>Linear Algebra</strong>: vector spaces, matrices, determinants, systems, eigenvalues</li>
-    <li><strong>Mathematical Methods</strong>: reasoning strategies, symbolic manipulation, functional thinking</li>
-    <li><strong>Applications</strong>: modeling, geometric intuition, problem structure</li>
-  </ul>
-</div>
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
 
-<div class="content-box">
-  <h2>🎓 Philosophy of Use</h2>
-  <p>
-    These materials aim to:
-  </p>
-  <ul>
-    <li>Emphasize <strong>understanding over memorization</strong></li>
-    <li>Highlight <strong>connections between topics</strong></li>
-    <li>Provide <strong>models, not just solutions</strong></li>
-    <li>Foster a mindset of <strong>clarity, logic, and depth</strong></li>
-  </ul>
-  <p>
-    All content is screen-optimized and available in PDF format, suitable for tablets, laptops, and projection.
-  </p>
-</div>
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.97);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-<div class="content-box">
-  <p>
-    📎 For more resources, visit the <a href="/high-school/">High School</a> section or explore <a href="/odd-questions/">The Odd Questions</a> to challenge your intuition.
-  </p>
-</div>
+  .lightbox.active {
+    display: flex;
+  }
+
+  .lightbox-text {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+  }
+
+  .lightbox-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .lightbox-text p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  .lightbox img {
+    width: 100vw;
+    height: auto;
+    max-height: 90vh;
+    object-fit: scale-down;
+  }
+
+  .lightbox-nav {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .lightbox-nav button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  const galleryItems = [
+    {% for item in sorted_gallery %}
+      {
+        image: "{{ item.image }}",
+        title: "{{ item.title }}",
+        description: "{{ item.description }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const item = galleryItems[index];
+    document.getElementById('lightbox-img').src = item.image;
+    document.getElementById('lightbox-title').textContent = item.title;
+    document.getElementById('lightbox-description').textContent = item.description;
+    document.getElementById('lightbox').classList.add('active');
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+</script>
