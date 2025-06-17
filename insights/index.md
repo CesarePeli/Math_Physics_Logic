@@ -7,7 +7,7 @@ background_image: "/images/u7413423743_Square_image_with_inverted_stairs_in_the_
 description: "Articles, reflections, and conceptual explorations in mathematics and physics that go beyond traditional instruction."
 ---
 
-<h1>Scientific Insights</h1>
+<h1>In-Depth Articles</h1>
 <p><em>Articles, reflections, and conceptual explorations in mathematics and physics</em></p>
 
 <div class="content-box">
