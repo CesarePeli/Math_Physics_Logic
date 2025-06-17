@@ -11,7 +11,15 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
   <p style="color: #ccc;"><em>Images are the intersection of abstraction and form — blending visual intuition with conceptual structure.</em></p>
 </div>
 
-<div class="gallery-grid" id="gallery-grid"></div>
+<div class="gallery-grid">
+  {% assign artworks = site.gallery | sort: "order" %}
+  {% for art in artworks %}
+    <div class="gallery-item">
+      <img src="{{ art.image }}" alt="{{ art.title }}" onclick="openLightbox({{ forloop.index0 }})">
+      <h2>{{ art.title }}</h2>
+    </div>
+  {% endfor %}
+</div>
 
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" tabindex="0">
@@ -24,6 +32,57 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
   <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
   <button class="close-btn" onclick="closeLightbox()">&times;</button>
 </div>
+
+<script>
+  const galleryItems = [
+    {% assign artworks = site.gallery | sort: "order" %}
+    {% for art in artworks %}
+    {
+      image: "{{ art.image }}",
+      title: "{{ art.title | escape }}",
+      description: "{{ art.description | escape }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  const galleryImages = document.querySelectorAll(".gallery-item img");
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const item = galleryItems[index];
+    document.getElementById("lightbox-img").src = item.image;
+    document.getElementById("lightbox-title").textContent = item.title;
+    document.getElementById("lightbox-description").textContent = item.description;
+    document.getElementById("lightbox").classList.add("active");
+    document.getElementById("lightbox").focus();
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").classList.remove("active");
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    }
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+
+  document.addEventListener("keydown", function (event) {
+    const isOpen = document.getElementById("lightbox").classList.contains("active");
+    if (!isOpen) return;
+    if (event.key === "ArrowRight") nextImage();
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "Escape") closeLightbox();
+  });
+</script>
 
 <style>
   body {
@@ -107,16 +166,6 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     margin: 0;
   }
 
-  @media (max-width: 768px) {
-    .lightbox-text h2 {
-      font-size: 1rem;
-    }
-
-    .lightbox-text p {
-      font-size: 0.8rem;
-    }
-  }
-
   .nav-btn {
     position: absolute;
     top: 50%;
@@ -126,7 +175,7 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 20; /* inferiore all’immagine */
+    z-index: 20;
     padding: 0 1rem;
   }
 
@@ -150,78 +199,3 @@ description: "Explore a visual gallery of AI-generated artworks inspired by math
     z-index: 50;
   }
 </style>
-
-<script>
-  const galleryItems = [
-    {
-      image: "/gallery-images/cat.png",
-      title: "The Observed Has Left the Box",
-      description: "A cat, observed, sits at the heart of a geometric corridor. Presence replaces uncertainty."
-    },
-    {
-      image: "/gallery-images/emergent-line.png",
-      title: "Emergent Phenomenon",
-      description: "A minimal composition inspired by linear regression and geometric emergence."
-    }
-    // ➕ Aggiungi altri oggetti qui
-  ];
-
-  const galleryGrid = document.getElementById("gallery-grid");
-
-  galleryItems.forEach((item, index) => {
-    const container = document.createElement("div");
-    container.className = "gallery-item";
-    container.innerHTML = `
-      <img src="${item.image}" alt="${item.title}" onclick="openLightbox(${index})">
-      <h2>${item.title}</h2>
-    `;
-    galleryGrid.appendChild(container);
-  });
-
-  let currentIndex = 0;
-
-  function openLightbox(index) {
-    currentIndex = index;
-    const item = galleryItems[index];
-    document.getElementById("lightbox-img").src = item.image;
-    document.getElementById("lightbox-title").textContent = item.title;
-    document.getElementById("lightbox-description").textContent = item.description;
-    const lightbox = document.getElementById("lightbox");
-    lightbox.classList.add("active");
-    lightbox.focus();
-
-    if (window.innerWidth < 768) {
-      if (lightbox.requestFullscreen) {
-        lightbox.requestFullscreen().catch(() => {});
-      } else if (lightbox.webkitRequestFullscreen) {
-        lightbox.webkitRequestFullscreen();
-      }
-    }
-  }
-
-  function closeLightbox() {
-    document.getElementById("lightbox").classList.remove("active");
-    if (document.fullscreenElement) {
-      document.exitFullscreen().catch(() => {});
-    }
-  }
-
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % galleryItems.length;
-    openLightbox(currentIndex);
-  }
-
-  function prevImage() {
-    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-    openLightbox(currentIndex);
-  }
-
-  // Keyboard navigation
-  document.addEventListener("keydown", function (event) {
-    const isOpen = document.getElementById("lightbox").classList.contains("active");
-    if (!isOpen) return;
-    if (event.key === "ArrowRight") nextImage();
-    if (event.key === "ArrowLeft") prevImage();
-    if (event.key === "Escape") closeLightbox();
-  });
-</script>
