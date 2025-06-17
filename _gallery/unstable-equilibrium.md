@@ -1,7 +1,7 @@
 ---
 title: "Unstable Equilibrium"
 image: "/gallery-images/equilibrium.png"
-description: "A suspended sphere, delicately balanced above an inclined plane, explores the paradox between geometric control and gravitational inevitability."
+description: "A suspended sphere and an inclined plane in perfect tension.."
 meta_description: "A visual metaphor of instability and precision: a suspended sphere and an inclined plane in perfect tension. Midjourney artwork on physical balance and abstraction."
 topic: "Mechanics"
 tags: ["inclined plane", "equilibrium", "balance", "geometry", "gravity"]
