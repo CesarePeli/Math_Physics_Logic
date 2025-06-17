@@ -1,7 +1,7 @@
 ---
 title: "Logarithmic Spiral"
 image: "/gallery-images/spirale.png"
-description: "A modular and symbolic interpretation of the logarithmic spiral — a structure found in shells, galaxies, and the geometry of growth. Each segment unfolds like a chapter in the book of nature."
+description: "A modular and symbolic interpretation of the logarithmic spiral."
 meta_description: "AI-generated artwork inspired by the logarithmic spiral. Geometric abstraction meets natural structure in a composition that explores golden proportions and symbolic growth."
 topic: "Mathematics"
 tags: ["logarithmic spiral", "golden ratio", "geometry", "modularity", "mathematical structure"]
