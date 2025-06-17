@@ -18,7 +18,7 @@ layout: default
   "@type": "ImageObject",
   "contentUrl": "https://www.cesarepeli.com/gallery-images/spirale.png",
   "name": "Logarithmic Spiral",
-  "description": "A modular and symbolic interpretation of the logarithmic spiral — a structure found in shells, galaxies, and the geometry of growth. Each segment unfolds like a chapter in the book of nature.",
+  "description": "A modular and symbolic interpretation of the logarithmic spiral.",
   "author": {
     "@type": "Person",
     "name": "Cesare Peli"
