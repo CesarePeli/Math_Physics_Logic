@@ -13,26 +13,27 @@ description: "Free Algebra 2 resources on quadratics plus an optional premium sl
 
 <ul class="resource-list">
 
-  <li>
-    <strong>Quadratic Equations – Intro &amp; Solved Exercises</strong>
-    <span class="badge free">FREE</span>
-    — <a href="/high-school/math/algebra/quadratic-equations-intro/">Read / Download</a>
-  </li>
+<li>
+  <strong>Quadratic Equations – Intro &amp; Solved Exercises</strong>
+  <span class="badge free">FREE</span>
+  — <a href="./quadratic-equations-intro.pdf" target="_blank">Download PDF</a>
+</li>
 
-  <li>
-    <strong>Parabolic Motion – Demo Slide Deck</strong>
-    <span class="badge free">FREE</span>
-    <span class="badge inter">Interdisciplinary</span>
-    — <a href="/high-school/math/algebra/parabolic-motion-demo.pdf" target="_blank">Download PDF</a>
-  </li>
+<li>
+  <strong>Parabolic Motion – Demo Slide Deck</strong>
+  <span class="badge free">FREE</span> <span class="badge inter">Interdisciplinary</span>
+  — <a href="./parabolic-motion-demo.pdf" target="_blank">Download PDF</a>
+</li>
 
-  <li>
-    <strong>Quadratic Equations – Complete Slide Pack</strong>
-    <span class="badge premium">PREMIUM</span>
-    — <a href="https://gumroad.com/quad-pack" target="_blank">Buy on Gumroad</a>
-  </li>
+<li>
+  <strong>Quadratic Equations – Complete Slide Pack</strong>
+  <span class="badge premium">PREMIUM</span>
+  — <a href="https://gumroad.com/quad-pack" target="_blank">Buy on Gumroad</a>
+</li>
 
 </ul>
 
-<div cla
-::contentReference[oaicite:0]{index=0}
+<div class="content-box">
+  <p><span class="badge free">FREE</span> = instant download •
+     <span class="badge premium">PREMIUM</span> = full lesson deck on Gumroad.</p>
+</div>
