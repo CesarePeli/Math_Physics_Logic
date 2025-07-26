@@ -27,23 +27,23 @@ plus <strong class="badge premium">PREMIUM</strong> full slide decks when you ne
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-<a href="/high-school/math/"
-   class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+
+<a href="/high-school/math/" class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
   <h3 class="text-xl font-semibold">➗ Mathematics</h3>
   <p class="mt-2">Algebra, Calculus, Trigonometry, Pre-calculus…</p>
 </a>
 
-<a href="/high-school/physics/"
-   class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+<a href="/high-school/physics/" class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
   <h3 class="text-xl font-semibold">⚙️ Physics</h3>
   <p class="mt-2">Mechanics, Waves, Electricity — more coming soon.</p>
 </a>
+
 </div>
 
 <div class="content-box mt-8">
 <p>
 <span class="badge free">FREE</span> = immediate download. 
-<span class="badge premium">PREMIUM</span> = optional paid slide deck.
+<span class="badge premium">PREMIUM</span> = optional paid slide deck.<br>
 Everything lives in one list inside each topic, so you see it all at a glance.
 </p>
 </div>
