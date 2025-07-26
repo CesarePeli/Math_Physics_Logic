@@ -28,8 +28,9 @@ description: "Free Algebra 2 resources on quadratics plus an optional premium sl
 <li>
   <strong>Quadratic Equations – Complete Slide Pack</strong>
   <span class="badge premium">PREMIUM</span>
-  — <a href="https://gumroad.com/quad-pack" target="_blank">Buy on Gumroad</a>
+  — <a href="https://cesarepeli.gumroad.com/l/hoxus" target="_blank">Buy on Gumroad</a>
 </li>
+
 
 </ul>
 
