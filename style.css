@@ -51,7 +51,7 @@ footer {
   margin: 4rem 0 2rem;
 }
 
-/* FIX per mobile: allarga tutto il contenitore e rimuove padding/margini extra */
+/* FIX per mobile */
 @media screen and (max-width: 600px) {
   main {
     width: 100vw;
@@ -75,4 +75,53 @@ footer {
     padding: 0 1rem;
     box-sizing: border-box;
   }
-} 
+}
+
+/* ─────────────────────────────────────────────
+   ▸ AGGIUNTE PER LA NUOVA ARCHITETTURA
+   ──────────────────────────────────────────── */
+
+/* Badge Free / Premium / Interdisciplinary */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+.badge.free    { background: #4caf50; color: #fff; }
+.badge.premium { background: #ff9800; color: #fff; }
+.badge.inter   { background: #6aa2ff; color: #fff; }
+
+/* Discipline cards (Mathematics / Physics) */
+.discipline-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: left;
+  color: #fff;
+}
+
+.discipline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Griglia risorse (nelle pagine argomento) */
+.resource-list li {
+  margin-bottom: 1.2rem;
+  list-style-type: none;
+}
+
+.resource-list a {
+  color: #aadfff;
+}
+
+.resource-list .badge {
+  margin-left: 0.4rem;
+}

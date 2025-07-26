@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "High School Materials"
+title: "High-School Resources"
 permalink: /high-school/
 background_image: "/images/hs.png"
-description: "Teaching and study resources for high school mathematics and physics: slides, solved exercises and formula sheets."
+description: "Explore free math & physics materials — plus optional premium slide decks — organized by subject and topic for high-school classrooms."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -15,38 +15,40 @@ description: "Teaching and study resources for high school mathematics and physi
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-<div class="content-box">
-  <h2>📘 High School Math and Physics</h2>
-  <p>A collection of digital resources designed for both teachers and students. Materials cover mathematics and physics topics typically taught in high school.</p>
-</div>
+<div class="hs-landing">
 
-<div class="content-box">
-  <h3>👩‍🏫 For Teachers</h3>
-  <ul>
-    <li>Ready-to-use slides for interactive whiteboards or projectors</li>
-    <li>Structured exercises with solutions for class tests</li>
-    <li>Clean, printable formula sheets for student support</li>
-  </ul>
-</div>
+  <!-- Intro -->
+  <div class="content-box">
+    <h2>📘 High-School Math & Physics</h2>
+    <p>
+      A single hub for ready-made resources:
+      <strong class="badge free">FREE</strong> formula sheets, concept notes, and exercises —
+      plus <strong class="badge premium">PREMIUM</strong> full slide decks when you need a complete lesson.
+    </p>
+  </div>
 
-<div class="content-box">
-  <h3>🧑‍🎓 For Students</h3>
-  <ul>
-    <li>Clear explanations and visual aids</li>
-    <li>Solved exercises for test preparation</li>
-    <li>Concise and complete formula sheets</li>
-  </ul>
-</div>
+  <!-- Discipline cards -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+    <a href="/high-school/math/"
+       class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h3 class="text-xl font-semibold">➗ Mathematics</h3>
+      <p class="mt-2">Algebra, Calculus, Trigonometry, Pre-calculus…</p>
+    </a>
 
-<div class="content-box">
-  <h3>📂 Available Resources</h3>
+    <a href="/high-school/physics/"
+       class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+      <h3 class="text-xl font-semibold">⚙️ Physics</h3>
+      <p class="mt-2">Mechanics, Waves, Electricity — more coming soon.</p>
+    </a>
+  </div>
 
-  <p>📘 <strong><a href="/high-school/explained-slides/">Explained Slides</a></strong><br>
-  Visual introductions to key topics with clean, annotated slides for class use or self-study.</p>
+  <!-- Legend -->
+  <div class="content-box mt-8">
+    <p>
+      <span class="badge free">FREE</span> indicates an immediate free download.
+      <span class="badge premium">PREMIUM</span> marks an optional paid slide deck.
+      All materials stay in one list inside each topic so you see everything at a glance.
+    </p>
+  </div>
 
-  <p>✍️ <strong><a href="/high-school/concepts-and-exercises/">Concepts and Exercises</a></strong><br>
-  Short conceptual summaries followed by guided exercises with step-by-step solutions.</p>
-
-  <p>📑 <strong><a href="/high-school/formula-sheets/">Formula Sheets</a></strong><br>
-  Printable reference sheets summarizing essential formulas in a clear, student-friendly format.</p>
 </div>
