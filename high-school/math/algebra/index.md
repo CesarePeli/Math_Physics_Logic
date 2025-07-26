@@ -1,13 +1,13 @@
-math/algebra/index.md
 ---
 layout: default
 title: "Algebra – High School"
 permalink: /high-school/math/algebra/
-description: "Free Algebra 2 resources (quadratics) plus an optional premium slide deck."
+background_image: "/images/hs.png"
+description: "Free Algebra 2 resources on quadratics plus an optional premium slide deck."
 ---
 
 <div class="content-box">
-  <h2>➗ Algebra&nbsp;<span class="badge">topic</span></h2>
+  <h2>➗ Algebra <span class="badge">topic</span></h2>
   <p>Quadratic equations, factorisation, and cross-disciplinary links to physics.</p>
 </div>
 
@@ -23,7 +23,7 @@ description: "Free Algebra 2 resources (quadratics) plus an optional premium sli
     <strong>Parabolic Motion – Demo Slide Deck</strong>
     <span class="badge free">FREE</span>
     <span class="badge inter">Interdisciplinary</span>
-    — <a href="/high-school/math/algebra/parabolic-motion-demo/">Download PDF</a>
+    — <a href="/high-school/math/algebra/parabolic-motion-demo.pdf" target="_blank">Download PDF</a>
   </li>
 
   <li>
@@ -34,10 +34,5 @@ description: "Free Algebra 2 resources (quadratics) plus an optional premium sli
 
 </ul>
 
-<div class="content-box">
-  <p class="mt-4">
-    <span class="badge free">FREE</span> items are immediate downloads.<br>
-    <span class="badge premium">PREMIUM</span> links take you to Gumroad for the full lesson deck.
-  </p>
-</div>
-Add Algebra topic index
+<div cla
+::contentReference[oaicite:0]{index=0}
