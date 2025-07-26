@@ -28,15 +28,19 @@ plus <strong class="badge premium">PREMIUM</strong> full slide decks when you ne
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 
-<a href="/high-school/math/" class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
-  <h3 class="text-xl font-semibold">➗ Mathematics</h3>
+<div class="discipline-card block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+  <h3 class="text-xl font-semibold">
+    <a href="/high-school/math/">➗ Mathematics</a>
+  </h3>
   <p class="mt-2">Algebra, Calculus, Trigonometry, Pre-calculus…</p>
-</a>
+</div>
 
-<a href="/high-school/physics/" class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
-  <h3 class="text-xl font-semibold">⚙️ Physics</h3>
+<div class="discipline-card block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+  <h3 class="text-xl font-semibold">
+    <a href="/high-school/physics/">⚙️ Physics</a>
+  </h3>
   <p class="mt-2">Mechanics, Waves, Electricity — more coming soon.</p>
-</a>
+</div>
 
 </div>
 
