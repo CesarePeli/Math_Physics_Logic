@@ -9,46 +9,43 @@ description: "Explore free math & physics materials — plus optional premium sl
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3P4GLVFYWW');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-3P4GLVFYWW');
 </script>
 
 <div class="hs-landing">
 
-  <!-- Intro -->
-  <div class="content-box">
-    <h2>📘 High-School Math & Physics</h2>
-    <p>
-      A single hub for ready-made resources:
-      <strong class="badge free">FREE</strong> formula sheets, concept notes, and exercises —
-      plus <strong class="badge premium">PREMIUM</strong> full slide decks when you need a complete lesson.
-    </p>
-  </div>
+<div class="content-box">
+<h2>📘 High-School Math &amp; Physics</h2>
+<p>
+A single hub for ready-made resources:
+<strong class="badge free">FREE</strong> formula sheets, concept notes, and exercises —
+plus <strong class="badge premium">PREMIUM</strong> full slide decks when you need a complete lesson.
+</p>
+</div>
 
-  <!-- Discipline cards -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-    <a href="/high-school/math/"
-       class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
-      <h3 class="text-xl font-semibold">➗ Mathematics</h3>
-      <p class="mt-2">Algebra, Calculus, Trigonometry, Pre-calculus…</p>
-    </a>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+<a href="/high-school/math/"
+   class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+  <h3 class="text-xl font-semibold">➗ Mathematics</h3>
+  <p class="mt-2">Algebra, Calculus, Trigonometry, Pre-calculus…</p>
+</a>
 
-    <a href="/high-school/physics/"
-       class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
-      <h3 class="text-xl font-semibold">⚙️ Physics</h3>
-      <p class="mt-2">Mechanics, Waves, Electricity — more coming soon.</p>
-    </a>
-  </div>
+<a href="/high-school/physics/"
+   class="block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+  <h3 class="text-xl font-semibold">⚙️ Physics</h3>
+  <p class="mt-2">Mechanics, Waves, Electricity — more coming soon.</p>
+</a>
+</div>
 
-  <!-- Legend -->
-  <div class="content-box mt-8">
-    <p>
-      <span class="badge free">FREE</span> indicates an immediate free download.
-      <span class="badge premium">PREMIUM</span> marks an optional paid slide deck.
-      All materials stay in one list inside each topic so you see everything at a glance.
-    </p>
-  </div>
+<div class="content-box mt-8">
+<p>
+<span class="badge free">FREE</span> = immediate download. 
+<span class="badge premium">PREMIUM</span> = optional paid slide deck.
+Everything lives in one list inside each topic, so you see it all at a glance.
+</p>
+</div>
 
 </div>
