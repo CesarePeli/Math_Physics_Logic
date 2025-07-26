@@ -3,7 +3,7 @@ layout: default
 title: "High-School Resources"
 permalink: /high-school/
 background_image: "/images/hs.png"
-description: "Explore free math & physics materials — plus optional premium slide decks — organized by subject and topic for high-school classrooms."
+description: "Free math & physics notes, exercises, formula sheets — plus premium slide decks ready for interactive whiteboards."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -17,15 +17,23 @@ gtag('config', 'G-3P4GLVFYWW');
 
 <div class="hs-landing">
 
+<!-- ▸ INTRO ---------------------------------------------------------- -->
 <div class="content-box">
-<h2>📘 High-School Math &amp; Physics</h2>
+<h2>📘 High-School Math & Physics</h2>
+
+<p>Here you’ll find:</p>
+<ul>
+<li><strong class="badge premium">FULL SLIDE DECKS</strong> — ready to project on an <em>interactive whiteboard (IWB)</em> or use for self-study.</li>
+<li><strong class="badge free">FREE</strong> concept notes and worked-out exercises.</li>
+<li><strong class="badge free">FREE</strong> printable formula sheets for quick reference.</li>
+</ul>
+
 <p>
-A single hub for ready-made resources:
-<strong class="badge free">FREE</strong> formula sheets, concept notes, and exercises —
-plus <strong class="badge premium">PREMIUM</strong> full slide decks when you need a complete lesson.
+Resources are grouped by discipline and topic, all in a single list: you see at a glance what’s free to download and what’s a premium deck.
 </p>
 </div>
 
+<!-- ▸ DISCIPLINE CARDS --------------------------------------------- -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 
 <div class="discipline-card block p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
@@ -44,11 +52,11 @@ plus <strong class="badge premium">PREMIUM</strong> full slide decks when you ne
 
 </div>
 
+<!-- ▸ SINGLE LEGEND ------------------------------------------------- -->
 <div class="content-box mt-8">
 <p>
-<span class="badge free">FREE</span> = immediate download. 
-<span class="badge premium">PREMIUM</span> = optional paid slide deck.<br>
-Everything lives in one list inside each topic, so you see it all at a glance.
+<span class="badge free">FREE</span> = immediate download · 
+<span class="badge premium">PREMIUM</span> = optional paid deck (full lesson, teacher-ready).
 </p>
 </div>
 
