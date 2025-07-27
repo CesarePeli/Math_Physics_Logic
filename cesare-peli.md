@@ -1,4 +1,5 @@
 ---
+date: 2025-04-14
 layout: default
 title: Cesare Peli – Official Profile
 permalink: /cesare-peli/

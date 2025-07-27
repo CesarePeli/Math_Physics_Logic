@@ -1,4 +1,5 @@
 ---
+date: 2025-04-09
 layout: default
 title: In-Depht Articles
 permalink: /insights/

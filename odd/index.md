@@ -1,4 +1,5 @@
 ---
+date: 2025-04-09
 layout: default
 title: Odd Questions in Math and Physics
 permalink: /odd-questions/

@@ -1,4 +1,5 @@
 ---
+date: 2025-04-14
 layout: default
 title: Trigger Rebuild
 permalink: /rebuild-test/

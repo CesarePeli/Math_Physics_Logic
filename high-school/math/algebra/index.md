@@ -1,4 +1,5 @@
 ---
+date: 2025-07-26
 layout: default
 title: "Algebra – High School"
 permalink: /high-school/math/algebra/
