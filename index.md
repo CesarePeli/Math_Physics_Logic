@@ -16,6 +16,12 @@ description: "Explore curated, high-quality resources in math, physics, and logi
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
+<!-- ──────────── PAGE TITLE ──────────── -->
+<div class="homepage-header" style="text-align:center;margin:2rem auto;">
+  <h1 style="font-size:2.5rem;font-weight:bold;">Logic & Motion</h1>
+  <p style="font-size:1.2rem;margin-top:.5rem;">Tools for students and teachers — grounded in reasoning and clarity.</p>
+</div>
+
 <!-- ─────────  FEATURED  ───────── -->
 <section id="featured" style="margin:4rem auto;max-width:1000px;padding:0 1rem;">
 <h2 style="font-size:1.6rem;margin-bottom:1rem;">Featured</h2>
