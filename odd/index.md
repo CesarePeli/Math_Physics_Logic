@@ -34,17 +34,7 @@ description: "Paradoxes, contradictions and curious questions from the edges of 
   </p>
 </div>
 
-<div class="content-box">
-  <h2>🐱 Is Schrödinger’s Cat Alive or Dead?</h2>
-  <p>
-    Until you open the box... it’s both.  
-    Quantum mechanics says the cat exists in a <strong>superposition</strong> of states until a measurement collapses the wave function.  
-    It’s weird, yes — but also foundational to modern physics.
-  </p>
-  <p>
-    <a href="/odd/schrodinger-cat/">Read more →</a>
-  </p>
-</div>
+
 
 <div class="content-box">
   <h2>🔮 More to Come...</h2>
