@@ -49,16 +49,23 @@
     {% endif %}
   </main>
 
-<footer style="
-  background:#151515;         /* sfondo scuro */
-  border-top:4px solid #f5f5f5;/* bordo chiaro ben visibile */
-  color:#f5f5f5;              /* testo chiaro */
-  text-align:center;
-  padding:1.5rem 0;
-  font-size:.9rem;">
-  © {{ 'now' | date: '%Y' }} Logic &amp; Motion · Created by Cesare Peli
-</footer>
-
+  <footer style="
+    background: transparent;
+    border-top: 2px solid #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  ">
+    <img src="/images/logo.png" alt="Logic & Motion Logo" style="height: 20px;">
+    <span style="font-weight: 500;">
+      © {{ 'now' | date: '%Y' }} Logic &amp; Motion · Created by Cesare Peli
+    </span>
+  </footer>
 
   <script>
     window.MathJax = {
