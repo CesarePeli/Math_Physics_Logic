@@ -56,8 +56,6 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 </div>
 </section>
 <!-- ─────────────────────────────────────────────── -->
-</div>
-</section>
 
 <!-- ─────────────  INTRO  ───────────── -->
 <div class="content-box">
