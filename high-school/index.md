@@ -5,6 +5,7 @@ title: "High-School Resources"
 permalink: /high-school/
 background_image: "/images/hs.png"
 description: "Free math & physics notes, exercises, formula sheets — plus premium slide decks ready for interactive whiteboards."
+featured: true
 ---
 
 <!-- Google tag (gtag.js) -->

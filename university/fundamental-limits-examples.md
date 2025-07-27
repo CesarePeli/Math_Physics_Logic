@@ -4,6 +4,7 @@ title: "Worked Examples with Fundamental Limits"
 meta-description: "A collection of solved exercises using foundamental limits, with detailed step-by-step reasoning and key theoretical results. Perfect for students preparing for calculus."
 permalink: "/university/solved-exercises/fundamental-limits-examples/"
 background_image: "/images/exercises.png"
+featured: true
 ---
 
 **Prepared by Professor Antonino De Martino (Polytechnic University of Milan) and Dr. Luana Manfredini.**

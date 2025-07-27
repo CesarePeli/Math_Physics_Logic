@@ -4,6 +4,7 @@ title: "The Structure of the Lorenz Attractor"
 meta-description: "A geometric overview of the Lorenz attractor, based on R. F. Williams’ topological analysis."
 permalink: "/insights/lorenz-attractor/"
 background_image: "/images/lorenz.png"
+featured: true
 ---
 
 **Based on R. F. Williams, _The Structure of Lorenz Attractors_ (1979)**

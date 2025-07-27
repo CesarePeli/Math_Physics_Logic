@@ -6,6 +6,7 @@ author: Cesare Peli
 permalink: /odd/divide-by-zero/
 background_image: "/images/div.png"
 description: "Why is dividing by zero undefined? From integers to real numbers and abstract algebra, here’s the mathematical reason behind the error."
+featured: true
 ---
 
 <!-- Google tag (gtag.js) -->
