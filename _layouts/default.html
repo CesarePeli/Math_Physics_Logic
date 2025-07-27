@@ -50,8 +50,8 @@
   </main>
 
 <footer style="
-  background: transparent;
-  border-top: 4px solid #000;
+  background: rgba(0, 0, 0, 0.7); /* sfondo leggero semitrasparente nero */
+  border-top: none;               /* rimuove la linea orizzontale */
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -61,11 +61,19 @@
   align-items: center;
   gap: 0.5rem;
 ">
-  <span style="font-weight: 500;">
+  <span style="
+    font-weight: 500;
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,  
+      -1px  1px 0 #000,  
+       1px  1px 0 #000;
+  ">
     © {{ 'now' | date: '%Y' }} Logic &amp; Motion · Created by Cesare Peli
   </span>
-  <img src="/images/logo.png" alt="Logic & Motion Logo" style="height: 20px;">
+  <img src="/images/logo.png" alt="Logic & Motion Logo" style="height: 40px;">
 </footer>
+
 
 
   <script>
