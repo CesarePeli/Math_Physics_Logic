@@ -3,7 +3,7 @@ date: 2025-04-20
 title: "Worked Examples with Integrals"
 meta-description: "A curated collection of solved integrals, with theoretical summaries and detailed step-by-step reasoning. Ideal for students in calculus courses."
 permalink: "/university/solved-exercises/solved-integrals/"
-background_image: "/images/exercises.png"
+background_image: "/images/integrali.png"
 featured: true
 ---
 
