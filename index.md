@@ -31,34 +31,31 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 {%- assign docs = "" | split: "" -%}
 {%- assign roots = "odd-questions/,insights/,high-school/,university/" | split: "," -%}
 
-{%- for p in site.pages -%}
-{%-   for root in roots -%}
-{%-     if p.path contains root -%}
-{%-       assign docs = docs | push: p -%}
-{%-       break -%}
-{%-     endif -%}
-{%-   endfor -%}
-{%- endfor -%}
+{%- for p in site.pages -%}{%- for root in roots -%}{%- if p.path contains root -%}
+{%-   assign docs = docs | push: p -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
 
 {%- assign recent = docs | sort:"date" | reverse | slice:0,4 -%}
 
 {%- for item in recent -%}
-<a href="{{ item.url | relative_url }}" style="display:block; border-radius:1rem; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,.15); text-decoration:none; color:#fff;">
-  {% if item.header_image %}
-  <img src="{{ item.header_image | relative_url }}" alt="" style="width:100%; height:150px; object-fit:cover;">
-  {% else %}
-  <div style="width:100%; height:150px; background:#333;"></div>
-  {% endif %}
-  {%- assign section = item.path | split:'/' | first -%}
-  <div style="padding:1rem; background:rgba(0,0,0,.65);">
-    <h3 style="font-size:1.05rem; margin:0 0 .3rem;">{{ item.title }}</h3>
-    <span style="font-size:.75rem; opacity:.8;">
-      {{ item.date | date:"%d&nbsp;%b&nbsp;%Y" }} · {{ section | replace:"-"," " | capitalize }}
-    </span>
-  </div>
+<a href="{{ item.url | relative_url }}" style="display:block;border-radius:1rem;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.15);text-decoration:none;color:#fff;">
+{% if item.header_image %}
+<img src="{{ item.header_image | relative_url }}" alt="" style="width:100%;height:150px;object-fit:cover;">
+{% else %}
+<div style="width:100%;height:150px;background:#333;"></div>
+{% endif %}
+{%- assign section = item.path | split:'/' | first -%}
+<div style="padding:1rem;background:rgba(0,0,0,.65);">
+  <h3 style="font-size:1.05rem;margin:0 0 .3rem;">{{ item.title }}</h3>
+  <span style="font-size:.75rem;opacity:.8;">
+    {{ item.date | date:"%d&nbsp;%b&nbsp;%Y" }} · {{ section | replace:"-"," " | capitalize }}
+  </span>
+</div>
 </a>
 {%- endfor -%}
 
+</div>
+</section>
+<!-- ─────────────────────────────────────────────── -->
 </div>
 </section>
 
