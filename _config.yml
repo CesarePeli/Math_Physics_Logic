@@ -17,6 +17,14 @@ exclude:
 collections:
   gallery:
     output: true
+  odd-questions:
+    output: true
+  insights:
+    output: true
+  high-school:
+    output: true
+  university:
+    output: true
 
 kramdown:
   input: GFM
