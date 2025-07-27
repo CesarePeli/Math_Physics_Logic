@@ -22,31 +22,35 @@ description: "Explore curated, high-quality resources in math, physics, and logi
   <p class="homepage-subtitle">Tools for students and teachers — grounded in reasoning and clarity.</p>
 </div>
 
-<!-- ─────────  CONTENUTI IN EVIDENZA (featured: true) ───────── -->
+<!-- ─────────  FEATURED CONTENT  ───────── -->
 <section id="featured" style="margin:4rem auto;max-width:1000px;padding:0 1rem;">
-<h2 style="font-size:1.6rem;margin-bottom:1rem;">In evidenza</h2>
+<h2 style="font-size:1.6rem;margin-bottom:1rem;">Featured</h2>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;">
 
-{%- assign spotlight = site.pages | where_exp:"p","p.featured" -%}
+{% assign spotlight = site.pages | where_exp:"p","p.featured" | sort:"featured_rank" | slice: 0,4 %}
 
-{%- for item in spotlight limit:4 -%}
-{%- assign bg = item.header_image | default:"/images/placeholder.jpg" | relative_url -%}
-<a href="{{ item.url | relative_url }}" style="
-  display:flex;align-items:flex-end;justify-content:center;
-  height:180px;border-radius:1rem;overflow:hidden;
-  background:url('{{ bg }}') center/cover no-repeat, rgba(0,0,0,.55);
-  background-blend-mode:darken;text-decoration:none;color:#fff;">
+{% for item in spotlight %}
+  {% assign bg = item.header_image | default:"/images/placeholder.jpg" | relative_url %}
+  <div style="height:180px;border-radius:1rem;overflow:hidden;
+              background:url('{{ bg }}') center/cover no-repeat,rgba(0,0,0,.55);
+              background-blend-mode:darken;">
 
-  <h3 style="font-size:1rem;margin:0 1rem 1rem;font-weight:600;text-align:center;">
-    {{ item.title }}
-  </h3>
-</a>
-{%- endfor -%}
+    <a href="{{ item.url | relative_url }}" style="display:flex;
+              align-items:flex-end;justify-content:center;width:100%;height:100%;
+              text-decoration:none;color:#fff;">
+
+      <span style="font-size:1rem;font-weight:600;margin:0 1rem 1rem;text-align:center;display:block;width:100%;">
+        {{ item.title }}
+      </span>
+    </a>
+  </div>
+{% endfor %}
 
 </div>
 </section>
-<!-- ─────────────────────────────────────────────────────────── -->
+<!-- ────────────────────────────────────── -->
+
 
 
 <!-- ─────────────  INTRO  ───────────── -->
