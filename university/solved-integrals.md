@@ -4,6 +4,7 @@ title: "Worked Examples with Integrals"
 meta-description: "A curated collection of solved integrals, with theoretical summaries and detailed step-by-step reasoning. Ideal for students in calculus courses."
 permalink: "/university/solved-exercises/solved-integrals/"
 background_image: "/images/exercises.png"
+featured: true
 ---
 
 **Prepared by Professor Antonino De Martino (Polytechnic University of Milan) and Dr. Luana Manfredini.**

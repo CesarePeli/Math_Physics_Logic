@@ -5,6 +5,7 @@ title: "Algebra – High School"
 permalink: /high-school/math/algebra/
 background_image: "/images/hs.png"
 description: "Free Algebra 2 resources on quadratics plus an optional premium slide deck."
+featured: true
 ---
 
 <div class="content-box">
