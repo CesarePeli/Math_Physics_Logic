@@ -29,13 +29,28 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;">
 
 {% assign spotlight = site.pages | where_exp:"p","p.featured" | sort:"date" | reverse | slice:0,4 %}
+
 {% for item in spotlight %}
-{% assign bg = item.header_image | default:'/images/placeholder.jpg' | relative_url %}
-<a href="{{ item.url | relative_url }}" style="display:block;height:180px;border-radius:1rem;overflow:hidden;background:url('{{ bg }}') center/cover no-repeat,rgba(0,0,0,.55);background-blend-mode:darken;text-decoration:none;color:#fff;">
-  <span style="display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%;padding-bottom:1rem;font-size:1rem;font-weight:600;text-align:center;">
-    {{ item.title }}
-  </span>
-</a>
+  {%- assign bg = item.header_image | default:item.image -%}
+
+  {%- unless bg %}
+    {%- comment -%} estrai il primo src dal contenuto {%- endcomment -%}
+    {%- assign raw = item.content | split:'src="' | slice:1,1 | first -%}
+    {%- assign bg  = raw | split:'"' | first -%}
+  {%- endunless -%}
+
+  {%- unless bg %}{% assign bg = "/images/placeholder.jpg" %}{% endunless %}
+
+  <a href="{{ item.url | relative_url }}" style="display:block;height:180px;border-radius:1rem;
+     overflow:hidden;text-decoration:none;color:#fff;
+     background:url('{{ bg | relative_url }}') center/cover no-repeat,rgba(0,0,0,.55);
+     background-blend-mode:darken;">
+
+    <span style="display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%;
+          padding-bottom:1rem;font-size:1rem;font-weight:600;text-align:center;">
+      {{ item.title }}
+    </span>
+  </a>
 {% endfor %}
 
 </div>
