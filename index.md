@@ -20,7 +20,7 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 <section id="featured" style="margin:4rem auto;max-width:1000px;padding:0 1rem;">
 <h2 style="font-size:1.6rem;margin-bottom:1rem;">Featured</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;">
-{% assign spotlight = site.pages | where_exp:"p","p.featured" | sort:"date" | reverse | slice:0,4 %}
+{% assign spotlight = site.pages | where_exp:"p","p.featured" | sort:"date" | reverse | slice:0,6 %}
 {% for item in spotlight %}
 {% assign bg = item.background_image %}
 {% unless bg %}
@@ -28,11 +28,12 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 {% assign bg  = raw | split:'"' | first %}
 {% endunless %}
 {% unless bg %}{% assign bg = "/images/placeholder.jpg" %}{% endunless %}
-<a href="{{ item.url | relative_url }}" style="display:block;height:180px;border-radius:1rem;overflow:hidden;text-decoration:none;color:#fff;background:url('{{ bg | relative_url }}') center/cover no-repeat;"><span style="display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%;padding-bottom:1rem;font-size:1rem;font-weight:600;text-align:center;text-shadow:0 2px 4px rgba(0,0,0,0.7);">{{ item.title }}</span></a>
+<a href="{{ item.url | relative_url }}" style="display:block;height:180px;border-radius:1rem;overflow:hidden;text-decoration:none;color:#fff;background:url('{{ bg | relative_url }}') center/cover no-repeat;"><span style="display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%;padding-bottom:1rem;font-size:1rem;font-weight:600;text-align:center;text-shadow:0 2px 6px rgba(0,0,0,0.9);">{{ item.title }}</span></a>
 {% endfor %}
 </div>
 </section>
 <!-- ─────────────────────────────── -->
+
 
 
 
