@@ -1,9 +1,8 @@
 ---
-date: 2025-04-09
 layout: default
-title: Logic & Motion 
+title: Logic & Motion – Curated Science Resources
 permalink: /
-nav_exclude: false            # resta in nav: la voce “Home” è visibile
+nav_exclude: false
 background_image: "/images/spirale.png"
 description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
 ---
@@ -19,7 +18,7 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 
 <!-- ─────────────  HERO  ───────────── -->
 <div class="homepage-header">
-  <h1 class="homepage-title">Logic &amp; Motion <span style="font-size:1.1rem; opacity:.8;">· Home Page</span></h1>
+  <h1 class="homepage-title">Logic &amp; Motion</h1>
   <p class="homepage-subtitle">Tools for students and teachers — grounded in reasoning and clarity.</p>
 </div>
 
@@ -28,11 +27,11 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 
 Logic & Motion began from a simple idea: math and physics are not collections of facts, but languages to think with, and tools to see the world more clearly.  
 
-**Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence. We embrace logic and clarity over rote learning, even without unnecessary formalism.  
+**Mathematics** is not a list of formulas to memorize, but a way of thinking — grounded in reasoning, proof, and internal coherence.  
 **Physics**, in turn, is approached as the science of models: abstract principles expressed through mathematics, applied across diverse real-world contexts.
 
 The project bridges education and exploration — offering slides, guided exercises, printable summaries, and original writing that invite reflection as well as understanding.  
-Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees science as a structured way of thinking — intellectually rigorous, but always human and meaningful.
+Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees science as a structured way of thinking — intellectually rigorous, yet always human and meaningful.
 
 </div>
 
@@ -45,13 +44,13 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
   Explore strange and thought-provoking problems at the edge of math and science — where logic meets paradox.
 
 - [**In-Depth Articles**]({{ "/insights/" | relative_url }})  
-  Read rigorous, reflective essays on mathematical and physical theory — from foundational principles to structural analysis.
+  Rigorous, reflective essays on mathematical and physical theory — from foundational principles to structural analysis.
 
 - [**High School**]({{ "/high-school/" | relative_url }})  
-  Access explained slides, solved problems, and printable formula sheets in math and physics.
+  Explained slides, solved problems, and printable formula sheets in math and physics.
 
 - [**University**]({{ "/university/" | relative_url }})  
-  Find detailed solutions and conceptual materials for calculus, linear algebra, and more.
+  Detailed solutions and conceptual materials for calculus, linear algebra, and more.
 
 - [**Gallery**]({{ "/gallery/" | relative_url }})  
   A visual collection of generative artworks exploring mathematical and scientific structure.
@@ -70,11 +69,20 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
       grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
       gap:1.2rem;">
 
-    {%- assign docs  = site['odd-questions'].docs
-                      | concat: site.insights
-                      | concat: site['high-school'].docs
-                      | concat: site['university'].docs -%}
-    {%- assign recent = docs | sort: 'date' | reverse | slice: 0, 4 -%}
+    {%- comment -%} raccoglie le pagine nelle quattro directory chiave {%- endcomment -%}
+    {%- assign docs  = "" | split: "" -%}
+    {%- assign roots = "odd-questions/,insights/,high-school/,university/" | split: "," -%}
+
+    {%- for p in site.pages -%}
+      {%- for root in roots -%}
+        {%- if p.path contains root -%}
+          {%- assign docs = docs | push: p -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+
+    {%- assign recent = docs | sort: "date" | reverse | slice: 0, 4 -%}
 
     {%- for item in recent -%}
       <a href="{{ item.url | relative_url }}" style="
@@ -86,16 +94,18 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* sees sc
           color:#fff;">
 
         {% if item.header_image %}
-          <img src="{{ item.header_image | relative_url }}" alt="" style="width:100%; height:150px; object-fit:cover;">
+          <img src="{{ item.header_image | relative_url }}" alt=""
+               style="width:100%; height:150px; object-fit:cover;">
         {% else %}
           <div style="width:100%; height:150px; background:#333;"></div>
         {% endif %}
 
+        {%- assign section = item.path | split:'/' | first -%}
         <div style="padding:1rem; background:rgba(0,0,0,.65);">
           <h3 style="font-size:1.05rem; margin:0 0 .3rem;">{{ item.title }}</h3>
           <span style="font-size:.75rem; opacity:.8;">
             {{ item.date | date: "%d&nbsp;%b&nbsp;%Y" }}
-            · {{ item.collection | replace:"-"," " | capitalize }}
+            · {{ section | replace:"-"," " | capitalize }}
           </span>
         </div>
       </a>
