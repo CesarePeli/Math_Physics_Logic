@@ -49,9 +49,16 @@
     {% endif %}
   </main>
 
-  <footer style="text-align: center; font-size: 0.9rem; color: #aaa; margin: 4rem 0 2rem;">
-    © {{ "now" | date: "%Y" }} Logic & Motion · Created by Cesare Peli
-  </footer>
+<footer style="
+  background:#151515;         /* sfondo scuro */
+  border-top:4px solid #f5f5f5;/* bordo chiaro ben visibile */
+  color:#f5f5f5;              /* testo chiaro */
+  text-align:center;
+  padding:1.5rem 0;
+  font-size:.9rem;">
+  © {{ 'now' | date: '%Y' }} Logic &amp; Motion · Created by Cesare Peli
+</footer>
+
 
   <script>
     window.MathJax = {

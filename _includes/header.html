@@ -1,28 +1,49 @@
-<nav style="text-align: center;
-            margin: 1.5rem auto;
-            padding: 1rem;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 1rem;
-            max-width: 850px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);">
-{% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
+<nav class="site-nav" style="
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;      /* link centrati */
+  align-items:center;
+  gap:.5rem;
+  margin:1.5rem auto;
+  padding:1rem;
+  background:rgba(0,0,0,.5);
+  border-radius:1rem;
+  max-width:850px;
+  box-shadow:0 0 10px rgba(0,0,0,.4);
+">
 
+  <!-- brand -->
+  <a href="/" class="site-brand" style="
+    margin-right:auto;          /* lo spinge a sinistra */
+    font-weight:700;
+    font-size:1.25rem;
+    color:#fff;
+    text-decoration:none;">
+    Logic&nbsp;&amp;&nbsp;Motion
+    <span style="
+      display:block;
+      font-size:.65rem;
+      letter-spacing:.05em;
+      opacity:.8;">cesarepeli.com</span>
+  </a>
+
+  <!-- link di navigazione generati da Liquid -->
+  {% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
-    {% assign slug = parts[0] %}
+    {% assign slug  = parts[0] %}
     {% assign label = parts[1] %}
-    {% assign url = "/" %}
+    {% assign url   = "/" %}
     {% unless slug == "index" %}
       {% assign url = "/" | append: slug | append: "/" %}
     {% endunless %}
     {% unless current_url == url %}
-      <a href="{{ url | relative_url }}"
-         style="margin: 0 0.5rem;
-                white-space: nowrap;
-                color: #aadfff;
-                text-decoration: none;
-                font-weight: 500;">
+      <a href="{{ url | relative_url }}" style="
+        white-space:nowrap;
+        color:#aadfff;
+        text-decoration:none;
+        font-weight:500;">
         {{ label }}
       </a>
     {% endunless %}
