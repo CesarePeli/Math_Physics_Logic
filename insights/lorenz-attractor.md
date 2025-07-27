@@ -1,4 +1,5 @@
 ---
+date: 2025-05-02
 title: "The Structure of the Lorenz Attractor"
 meta-description: "A geometric overview of the Lorenz attractor, based on R. F. Williams’ topological analysis."
 permalink: "/insights/lorenz-attractor/"

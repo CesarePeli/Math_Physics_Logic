@@ -1,4 +1,5 @@
 ---
+date: 2025-04-10
 layout: default
 title: "Why You Can’t Divide by Zero – Explained Simply"
 author: Cesare Peli

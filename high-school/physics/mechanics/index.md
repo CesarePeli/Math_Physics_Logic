@@ -1,4 +1,5 @@
 ---
+date: 2025-07-26
 layout: default
 title: "Mechanics – High School Physics"
 permalink: /high-school/physics/mechanics/

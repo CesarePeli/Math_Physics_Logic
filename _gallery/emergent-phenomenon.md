@@ -1,4 +1,5 @@
 ---
+date: 2025-05-24
 title: "Emergent Phenomenon"
 image: "/gallery-images/emergent-line.png"
 description: "A minimal composition inspired by linear regression and geometric emergence."

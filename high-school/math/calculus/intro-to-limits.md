@@ -1,4 +1,5 @@
 ---
+date: 2025-04-17
 layout: default
 title: "Understanding Limits in Calculus"
 permalink: /high-school/math/intro-to-limits/

@@ -1,4 +1,5 @@
 ---
+date: 2025-05-02
 title: "Introduction to Logarithms"
 meta-description: "A clear and simple introduction to logarithms with definitions, reasoning, and detailed examples for high school students."
 permalink: "/high-school/math/intro-logarithms/"

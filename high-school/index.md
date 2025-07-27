@@ -1,4 +1,5 @@
 ---
+date: 2025-04-15
 layout: default
 title: "High-School Resources"
 permalink: /high-school/

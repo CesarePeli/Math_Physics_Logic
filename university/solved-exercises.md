@@ -1,4 +1,5 @@
 ---
+date: 2025-04-15
 layout: default
 title: Solved Exercises – University
 permalink: /university/solved-exercises/

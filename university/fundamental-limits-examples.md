@@ -1,4 +1,5 @@
 ---
+date: 2025-04-15
 title: "Worked Examples with Fundamental Limits"
 meta-description: "A collection of solved exercises using foundamental limits, with detailed step-by-step reasoning and key theoretical results. Perfect for students preparing for calculus."
 permalink: "/university/solved-exercises/fundamental-limits-examples/"

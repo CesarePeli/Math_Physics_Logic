@@ -1,4 +1,5 @@
 ---
+date: 2025-04-06
 layout: default
 title: "Pre-calculus – High School"
 permalink: /high-school/math/precalculus/
