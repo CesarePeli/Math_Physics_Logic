@@ -4,6 +4,7 @@ title: "Blackbody Radiation and the Quantum Revolution"
 meta-description: "A deep dive into the historical and conceptual journey from classical blackbody radiation to the foundations of quantum mechanics."
 permalink: "/insights/blackbody-quantum-revolution"
 background_image: "/images/body.png"
+featured: true
 ---
 
 <div class="content-box">
