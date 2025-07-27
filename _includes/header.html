@@ -1,7 +1,7 @@
 <nav class="site-nav" style="
   display:flex;
   flex-wrap:wrap;
-  justify-content:center;   /* link centrati */
+  justify-content:center;
   align-items:center;
   gap:.5rem;
   margin:1.5rem auto;
@@ -12,17 +12,12 @@
   box-shadow:0 0 10px rgba(0,0,0,.4);
 ">
 
-  <!-- brand -->
-  <a href="/" class="site-brand" style="
-    margin-right:auto;       /* lo spinge a sinistra */
-    font-weight:700;
-    font-size:1.4rem;
-    color:#fff;
-    text-decoration:none;">
-    Logic&nbsp;&amp;&nbsp;Motion
+  <!-- Logo -->
+  <a href="/" class="site-brand" style="margin-right:auto;">
+    <img src="/images/logo.png" alt="Logic & Motion" style="height:50px;">
   </a>
 
-  <!-- link di navigazione generati da Liquid -->
+  <!-- Link di navigazione -->
   {% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
   {% for item in nav_items %}
@@ -44,3 +39,4 @@
     {% endunless %}
   {% endfor %}
 </nav>
+
