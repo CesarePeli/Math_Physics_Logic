@@ -7,24 +7,24 @@ nav_order: 22
 background_image: /images/termodinamica.png
 ---
 
-# Ideal-Gas Processes — Work, $\\Delta U$ and $\\Delta S$
+# Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$
 
 <div class="content-box">
 
 ## Theoretical Background
 
 - **Equation of state:** $pV = nRT$.  
-- **Internal energy of an ideal gas:** $U = U(T)$, so $\\Delta U$ depends only on the temperature change.  
-- **Isothermal process:** $\\Delta U = 0$.  
+- **Internal energy of an ideal gas:** $U = U(T)$, so $\Delta U$ depends only on the temperature change.  
+- **Isothermal process:** $\Delta U = 0$.  
 - **Work in a reversible isothermal:**  
   $$
-  w = nRT \\ln\\!\\left( \\frac{V_2}{V_1} \\right).
+  w = nRT \ln\!\left( \frac{V_2}{V_1} \right).
   $$
 - **Entropy change (reversible):**  
   $$
-  \\Delta S = nR \\ln\\!\\left( \\frac{V_2}{V_1} \\right).
+  \Delta S = nR \ln\!\left( \frac{V_2}{V_1} \right).
   $$
-- **State vs path functions:** $\\Delta U$ and $\\Delta S$ depend only on initial and final states, while $w$ and $q$ depend on the path.
+- **State vs path functions:** $\Delta U$ and $\Delta S$ depend only on initial and final states, while $w$ and $q$ depend on the path.
 
 </div>
 
@@ -32,8 +32,8 @@ background_image: /images/termodinamica.png
 
 ## Exercise
 
-A sample of $n = 100\\,\\text{mol}$ of ideal hydrogen at $T = 300\\,\\text{K}$ is compressed from  
-$V_1 = 4.0\\,\\text{m}^3$ to $V_2 = 2.0\\,\\text{m}^3$.
+A sample of $n = 100\,\text{mol}$ of ideal hydrogen at $T = 300\,\text{K}$ is compressed from  
+$V_1 = 4.0\,\text{m}^3$ to $V_2 = 2.0\,\text{m}^3$.
 
 Calculate the work **on** the gas along three different reversible paths:  
 
@@ -41,7 +41,7 @@ Calculate the work **on** the gas along three different reversible paths:
 2. **(b)** Direct isothermal compression from $V_1$ to $V_2$.  
 3. **(c)** Isochoric heating to $p_2$, followed by isobaric compression at $p_2$.
 
-Then evaluate $\\Delta U$ and $\\Delta S$, and compare results.
+Then evaluate $\Delta U$ and $\Delta S$, and compare results.
 
 </div>
 
@@ -52,9 +52,9 @@ Then evaluate $\\Delta U$ and $\\Delta S$, and compare results.
 **Step 1. Calculate initial and final pressures**  
 From $pV = nRT$:
 $$
-p_1 = \\frac{nRT}{V_1}, \\quad p_2 = \\frac{nRT}{V_2}.
+p_1 = \frac{nRT}{V_1}, \qquad p_2 = \frac{nRT}{V_2}.
 $$
-With $nRT = 2.4942\\times 10^5\\,\\text{J}$,  
+With $nRT = 2.494\times 10^5\,\text{J}$,  
 $p_2 = 2p_1$.
 
 ---
@@ -63,28 +63,29 @@ $p_2 = 2p_1$.
 
 - **(a) Isobaric (at $p_1$):**  
   $$
-  w_a = p_1(V_2 - V_1) = nRT\\left(\\frac{V_2}{V_1} - 1\\right).
+  w_a = p_1(V_2 - V_1) = nRT\!\left(\frac{V_2}{V_1} - 1\right).
   $$
-  Numerically: $w_a = 1.247\\times 10^5\\,\\text{J}$.
+  Numerically: $w_a = 1.247\times 10^5\,\text{J}$.
 
 - **(b) Isothermal:**  
   $$
-  w_b = nRT \\ln\\!\\left( \\frac{V_2}{V_1} \\right) = 2.4942\\times10^5\\, \\ln(0.5).
+  w_b = nRT \ln\!\left( \frac{V_2}{V_1} \right) 
+       = 2.494\times10^5 \ln(0.5).
   $$
-  $w_b = 1.729\\times 10^5\\,\\text{J}$.
+  $w_b = 1.729\times 10^5\,\text{J}$.
 
 - **(c) Isobaric (at $p_2$):**  
   $$
   w_c = p_2(V_2 - V_1) = 2p_1(V_2 - V_1) = 2 w_a.
   $$
-  $w_c = 2.494\\times 10^5\\,\\text{J}$.
+  $w_c = 2.494\times 10^5\,\text{J}$.
 
 ---
 
 **Step 3. Internal energy change**  
 Since $T$ is the same at initial and final state:
 $$
-\\Delta U = 0.
+\Delta U = 0.
 $$
 
 ---
@@ -92,11 +93,11 @@ $$
 **Step 4. Entropy change**  
 Use the isothermal reference (reversible):
 $$
-\\Delta S = nR \\ln\\!\\left( \\frac{V_2}{V_1} \\right).
+\Delta S = nR \ln\!\left( \frac{V_2}{V_1} \right).
 $$
 Numerically:
 $$
-\\Delta S = 100(8.314)\\ln(0.5) = -5.76\\times 10^2\\,\\text{J K}^{-1}.
+\Delta S = 100(8.314)\ln(0.5) = -5.76\times 10^2\,\text{J K}^{-1}.
 $$
 
 </div>
@@ -114,8 +115,8 @@ $$
 - The **entropy** decreases, consistent with the system becoming more ordered upon compression.  
   This is a **state function**, so the same value emerges regardless of path.
 
-- **Important remark (Ruzzi):**  
-  Always check whether $\\Delta U=0$ holds:  
+- **Important remark:**  
+  Always check whether $\Delta U=0$ holds:  
   it is true here because the process is isothermal and the gas is ideal. For real gases this statement is **not exact**.
 
 </div>
