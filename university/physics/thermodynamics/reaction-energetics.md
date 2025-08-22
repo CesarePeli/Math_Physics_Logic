@@ -23,19 +23,19 @@ background_image: /images/termodinamica.png
   H = U + pV \;\Rightarrow\; \Delta H = \Delta U + \Delta(pV)
   $$
 
-- For reactions at constant \((T,p)\):  
+- For reactions at constant $(T,p)$:  
   $$
   \Delta H = q_p
   $$
 
-- Connection between \(\Delta H\) and \(\Delta U\) (ideal gases):  
+- Connection between $\Delta H$ and $\Delta U$ (ideal gases):  
   $$
-  \Delta H = \Delta U + (\Delta n_{\text{gas}})\,RT
+  \Delta H = \Delta U + (\Delta n_{\text{gas}})RT
   \qquad \Rightarrow \qquad
-  \Delta U = \Delta H - (\Delta n_{\text{gas}})\,RT
+  \Delta U = \Delta H - (\Delta n_{\text{gas}})RT
   $$
 
-where \(\Delta n_{\text{gas}}\) is the change in the number of moles of gas.
+where $\Delta n_{\text{gas}}$ is the change in the number of moles of gas.
 
 </div>
 
@@ -49,7 +49,7 @@ $$
 2\,\mathrm{CO}(g) + \mathrm{O}_2(g) \;\longrightarrow\; 2\,\mathrm{CO}_2(g)
 $$
 
-At \(T = 298\,\text{K}\) and \(p = 1\,\text{bar}\), the standard enthalpy of reaction is:
+At $T = 298\,\text{K}$ and $p = 1\,\text{bar}$, the standard enthalpy of reaction is:
 
 $$
 \Delta H^{\circ} = -566.0\,\text{kJ}\,\text{mol}^{-1}
@@ -57,8 +57,8 @@ $$
 
 **Tasks:**
 
-1. Calculate the standard internal energy change \(\Delta U^{\circ}\).  
-2. Explain the relation between \(\Delta U\) and \(\Delta H\) for reactions involving gases.
+1. Calculate the standard internal energy change $\Delta U^{\circ}$.  
+2. Explain the relation between $\Delta U$ and $\Delta H$ for reactions involving gases.
 
 </div>
 
@@ -67,8 +67,8 @@ $$
 ## Step-by-Step Solution
 
 **Step 1. Count moles of gas**  
-- Reactants: \(n_{\text{gas}} = 2 + 1 = 3\)  
-- Products: \(n_{\text{gas}} = 2\)  
+- Reactants: $n_{\text{gas}} = 2 + 1 = 3$  
+- Products: $n_{\text{gas}} = 2$  
 
 So:
 $$
@@ -77,20 +77,20 @@ $$
 
 ---
 
-**Step 2. Relation between \(\Delta H\) and \(\Delta U\)**  
+**Step 2. Relation between $\Delta H$ and $\Delta U$**  
 For ideal gases:
 $$
-\Delta H = \Delta U + (\Delta n_{\text{gas}})\,RT
+\Delta H = \Delta U + (\Delta n_{\text{gas}})RT
 $$
 Rearrange:
 $$
-\Delta U = \Delta H - (\Delta n_{\text{gas}})\,RT
+\Delta U = \Delta H - (\Delta n_{\text{gas}})RT
 $$
 
 ---
 
 **Step 3. Insert data**  
-With \(T = 298\,\text{K}\) and \(R = 8.314\,\text{J}\,\text{mol}^{-1}\,\text{K}^{-1}\):
+With $T = 298\,\text{K}$ and $R = 8.314\,\text{J}\,\text{mol}^{-1}\,\text{K}^{-1}$:
 $$
 (\Delta n_{\text{gas}})RT = (-1)(8.314)(298) = -2.48 \times 10^{3}\,\text{J} = -2.48\,\text{kJ}
 $$
@@ -105,9 +105,9 @@ $$
 ---
 
 **Answer:**  
-\[
+$$
 \Delta U^{\circ} = -563.5\,\text{kJ mol}^{-1}
-\]
+$$
 
 </div>
 
@@ -115,9 +115,9 @@ $$
 
 ## Notes
 
-- The difference between \(\Delta U\) and \(\Delta H\) is small because only **1 mol of gas disappears**.  
-- If \(\Delta n_{\text{gas}} = 0\), then \(\Delta H = \Delta U\).  
-- This correction \((\Delta n_{\text{gas}})RT\) becomes important at high \(T\) or when many gas moles change.  
-- **Pedagogical point:** \(\Delta H\) is often tabulated (easy to measure at constant \(p\)), but \(\Delta U\) is more fundamental in the First Law.
+- The difference between $\Delta U$ and $\Delta H$ is small because only **1 mol of gas disappears**.  
+- If $\Delta n_{\text{gas}} = 0$, then $\Delta H = \Delta U$.  
+- This correction $(\Delta n_{\text{gas}})RT$ becomes important at high $T$ or when many gas moles change.  
+- **Pedagogical point:** $\Delta H$ is often tabulated (easy to measure at constant $p$), but $\Delta U$ is more fundamental in the First Law.
 
 </div>
