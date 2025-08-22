@@ -20,10 +20,10 @@ background_image: /images/termodinamica.png
 
 - **Enthalpy definition:**  
   $$
-  H = U + pV \quad \Rightarrow \quad \Delta H = \Delta U + \Delta(pV)
+  H = U + pV \;\Rightarrow\; \Delta H = \Delta U + \Delta(pV)
   $$
 
-- For reactions at constant \(T\) and \(p\):  
+- For reactions at constant \((T,p)\):  
   $$
   \Delta H = q_p
   $$
@@ -69,6 +69,7 @@ $$
 **Step 1. Count moles of gas**  
 - Reactants: \(n_{\text{gas}} = 2 + 1 = 3\)  
 - Products: \(n_{\text{gas}} = 2\)  
+
 So:
 $$
 \Delta n_{\text{gas}} = n_{\text{prod}} - n_{\text{reag}} = 2 - 3 = -1
@@ -79,11 +80,11 @@ $$
 **Step 2. Relation between \(\Delta H\) and \(\Delta U\)**  
 For ideal gases:
 $$
-\Delta H = \Delta U + (\Delta n_{\text{gas}})RT
+\Delta H = \Delta U + (\Delta n_{\text{gas}})\,RT
 $$
 Rearrange:
 $$
-\Delta U = \Delta H - (\Delta n_{\text{gas}})RT
+\Delta U = \Delta H - (\Delta n_{\text{gas}})\,RT
 $$
 
 ---
@@ -104,7 +105,9 @@ $$
 ---
 
 **Answer:**  
-\(\Delta U^{\circ} = -563.5\,\text{kJ mol}^{-1}\)
+\[
+\Delta U^{\circ} = -563.5\,\text{kJ mol}^{-1}
+\]
 
 </div>
 
