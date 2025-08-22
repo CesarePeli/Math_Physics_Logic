@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Phase Transitions — Interpreting a Heating Curve"
+meta-description: "Interpret a heating curve across solid, liquid, and vapor. Identify latent heats and relate slopes to molar heat capacities."
+permalink: /university/physics/thermodynamics/phase-transitions-heating-curve/
+nav_order: 28
+background_image: /images/termodinamica.png
+---
+
+
+# Phase Transitions — Interpreting a Heating Curve
+
+
+<div class="content-box">
+
+
+## Exercise — Water from solid to vapor
+For a one‑mole sample at $p=1\,\text{bar}$, interpret the segments of a typical heating curve from ice to steam. Show that horizontal segments correspond to $\Delta H_{\text{fus}}^\circ$ and $\Delta H_{\text{vap}}^\circ$, and that the slopes in single‑phase regions are the reciprocals of $C_{p,m}$.
+
+
+**Solution (outline).** During phase changes $T=\text{const}\Rightarrow q=\Delta H$ at constant $p$, giving plateaus with lengths proportional to the molar latent heats. In single phases, $q=\int C_{p,m}\,dT$, hence $\Delta T = q/C_{p,m}$; plotting $T$ vs supplied heat shows slopes $dT/dq=1/C_{p,m}$ for solid, liquid, and vapor regions.
+
+
+</div>
