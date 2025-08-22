@@ -1,24 +1,108 @@
 ---
 layout: default
-title: "Phase Transitions — Interpreting a Heating Curve"
-meta-description: "Interpret a heating curve across solid, liquid, and vapor. Identify latent heats and relate slopes to molar heat capacities."
-permalink: /university/physics/thermodynamics/phase-transitions-heating-curve/
+title: "Phase Transitions — Heating Curve and Enthalpy Changes"
+meta-description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
+permalink: /university/physics/thermodynamics/phase-transitions/
 nav_order: 28
 background_image: /images/termodinamica.png
 ---
 
-
-# Phase Transitions — Interpreting a Heating Curve
-
+# Phase Transitions — Heating Curve and Enthalpy Changes
 
 <div class="content-box">
 
+## Theoretical Background
 
-## Exercise — Water from solid to vapor
-For a one‑mole sample at $p=1\,\text{bar}$, interpret the segments of a typical heating curve from ice to steam. Show that horizontal segments correspond to $\Delta H_{\text{fus}}^\circ$ and $\Delta H_{\text{vap}}^\circ$, and that the slopes in single‑phase regions are the reciprocals of $C_{p,m}$.
+- **Heat required for temperature change:**
+  $$
+  q = m c \Delta T
+  $$
 
+- **Heat required for phase transition:**
+  $$
+  q = n \Delta H_{trans}
+  $$
 
-**Solution (outline).** During phase changes $T=\text{const}\Rightarrow q=\Delta H$ at constant $p$, giving plateaus with lengths proportional to the molar latent heats. In single phases, $q=\int C_{p,m}\,dT$, hence $\Delta T = q/C_{p,m}$; plotting $T$ vs supplied heat shows slopes $dT/dq=1/C_{p,m}$ for solid, liquid, and vapor regions.
+- During a **phase transition**, $T$ remains constant while $q$ increases.  
+- The full **heating curve** combines sloped segments (heating) and plateaus (phase change).
 
+</div>
+
+<div class="content-box">
+
+## Exercise
+
+Calculate the total heat required to bring **50.0 g of ice** from **–10.0 °C** to liquid water at **25.0 °C**.  
+
+Given data:  
+- $c_{ice} = 2.09 \\, J g^{-1} K^{-1}$  
+- $c_{water} = 4.18 \\, J g^{-1} K^{-1}$  
+- $\\Delta H_{fus} = 6.01 \\, kJ mol^{-1}$  
+- Molar mass of $H_2O = 18.0 \\, g mol^{-1}$  
+
+</div>
+
+<div class="content-box">
+
+## Step-by-Step Solution
+
+**Step 1. Heating ice from –10 °C to 0 °C**  
+$$
+q_1 = m c_{ice} \Delta T = (50.0)(2.09)(10.0) = 1045 \\, J
+$$
+
+---
+
+**Step 2. Melting ice at 0 °C**  
+Moles of water:
+$$
+n = \frac{50.0}{18.0} = 2.78 \\, mol
+$$
+
+$$
+q_2 = n \Delta H_{fus} = (2.78)(6.01 \\, kJ) = 16.7 \\, kJ
+$$
+
+---
+
+**Step 3. Heating liquid water from 0 °C to 25 °C**  
+$$
+q_3 = m c_{water} \Delta T = (50.0)(4.18)(25.0) = 5225 \\, J
+$$
+
+---
+
+**Step 4. Total heat**  
+$$
+q_{tot} = q_1 + q_2 + q_3
+$$
+
+Convert to consistent units (kJ):  
+- $q_1 = 1.05 \\, kJ$  
+- $q_2 = 16.7 \\, kJ$  
+- $q_3 = 5.23 \\, kJ$
+
+$$
+q_{tot} = 1.05 + 16.7 + 5.23 = 23.0 \\, kJ
+$$
+
+---
+
+**Answer:**  
+The total heat required is:
+$$
+q_{tot} = 23.0 \\, kJ
+$$
+
+</div>
+
+<div class="content-box">
+
+## Notes
+
+- The heating curve has **three regions**: heating solid, phase transition plateau, heating liquid.  
+- The largest energy contribution comes from the **phase transition** (fusion).  
+- This example highlights the difference between **specific heat** (depends on $c$ and $\\Delta T$) and **latent heat** (depends only on amount of substance).  
+- Heating curves are fundamental to visualize **enthalpy changes** in phase transitions.
 
 </div>

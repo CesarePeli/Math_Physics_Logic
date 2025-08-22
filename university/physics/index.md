@@ -14,7 +14,7 @@ background_image: /images/euclide.png
 ## Topics curated by Prof. Ruzzi
 
 - [Thermodynamics](/university/physics/thermodynamics/)
-- [Quantum Mechanics](/university/physics/quantum-mechanics/)
+- [Quantum Mechanics](/university/physics/quantum-mechanics/) (coming soon)
 
 These pages combine conceptual rigor with step-by-step reasoning, reflecting both Prof. Ruzzi’s academic expertise and Logic & Motion’s educational vision.
 
