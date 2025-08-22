@@ -70,7 +70,7 @@ $$
 \Delta S_{\text{sys}} = R \ln\!\left( \frac{V_2}{V_1} \right) = 8.314 \ln 2 = 5.76\,\text{J K}^{-1}
 $$
 
-Surroundings are vacuum, so:
+Surroundings are vacuum, so:  
 $$
 \Delta S_{\text{surr}} = 0
 $$
@@ -102,3 +102,13 @@ $$
 - This is a textbook example that entropy is a **state function**, independent of path, but the *entropy production* distinguishes reversible vs irreversible paths.
 
 </div>
+
+---
+
+### Related topics  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  

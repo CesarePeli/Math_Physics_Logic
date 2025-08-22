@@ -52,7 +52,7 @@ $$
 At $T = 298\,\text{K}$ and $p = 1\,\text{bar}$, the standard enthalpy of reaction is:
 
 $$
-\Delta H^{\circ} = -566.0\,\text{kJ}\,\text{mol}^{-1}
+\Delta H^{\circ} = -566.0\,\text{kJ mol}^{-1}
 $$
 
 **Tasks:**
@@ -90,7 +90,7 @@ $$
 ---
 
 **Step 3. Insert data**  
-With $T = 298\,\text{K}$ and $R = 8.314\,\text{J}\,\text{mol}^{-1}\,\text{K}^{-1}$:
+With $T = 298\,\text{K}$ and $R = 8.314\,\text{J mol}^{-1}\text{K}^{-1}$:
 $$
 (\Delta n_{\text{gas}})RT = (-1)(8.314)(298) = -2.48 \times 10^{3}\,\text{J} = -2.48\,\text{kJ}
 $$
@@ -121,3 +121,13 @@ $$
 - **Pedagogical point:** $\Delta H$ is often tabulated (easy to measure at constant $p$), but $\Delta U$ is more fundamental in the First Law.
 
 </div>
+
+---
+
+### Related topics  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
+- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  

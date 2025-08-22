@@ -20,7 +20,7 @@ background_image: /images/termodinamica.png
 
 - **Heat required for phase transition:**
   $$
-  q = n \Delta H_{trans}
+  q = n \Delta H_{\text{trans}}
   $$
 
 - During a **phase transition**, $T$ remains constant while $q$ increases.  
@@ -35,10 +35,10 @@ background_image: /images/termodinamica.png
 Calculate the total heat required to bring **50.0 g of ice** from **–10.0 °C** to liquid water at **25.0 °C**.  
 
 Given data:  
-- $c_{ice} = 2.09 \\, J g^{-1} K^{-1}$  
-- $c_{water} = 4.18 \\, J g^{-1} K^{-1}$  
-- $\\Delta H_{fus} = 6.01 \\, kJ mol^{-1}$  
-- Molar mass of $H_2O = 18.0 \\, g mol^{-1}$  
+- $c_{\text{ice}} = 2.09 \, J\,g^{-1}\,K^{-1}$  
+- $c_{\text{water}} = 4.18 \, J\,g^{-1}\,K^{-1}$  
+- $\Delta H_{\text{fus}} = 6.01 \, kJ\,mol^{-1}$  
+- Molar mass of $H_2O = 18.0 \, g\,mol^{-1}$  
 
 </div>
 
@@ -48,7 +48,7 @@ Given data:
 
 **Step 1. Heating ice from –10 °C to 0 °C**  
 $$
-q_1 = m c_{ice} \Delta T = (50.0)(2.09)(10.0) = 1045 \\, J
+q_1 = m c_{\text{ice}} \Delta T = (50.0)(2.09)(10.0) = 1045 \, J
 $$
 
 ---
@@ -56,34 +56,34 @@ $$
 **Step 2. Melting ice at 0 °C**  
 Moles of water:
 $$
-n = \frac{50.0}{18.0} = 2.78 \\, mol
+n = \frac{50.0}{18.0} = 2.78 \, mol
 $$
 
 $$
-q_2 = n \Delta H_{fus} = (2.78)(6.01 \\, kJ) = 16.7 \\, kJ
+q_2 = n \Delta H_{\text{fus}} = (2.78)(6.01 \, kJ) = 16.7 \, kJ
 $$
 
 ---
 
 **Step 3. Heating liquid water from 0 °C to 25 °C**  
 $$
-q_3 = m c_{water} \Delta T = (50.0)(4.18)(25.0) = 5225 \\, J
+q_3 = m c_{\text{water}} \Delta T = (50.0)(4.18)(25.0) = 5225 \, J
 $$
 
 ---
 
 **Step 4. Total heat**  
 $$
-q_{tot} = q_1 + q_2 + q_3
+q_{\text{tot}} = q_1 + q_2 + q_3
 $$
 
 Convert to consistent units (kJ):  
-- $q_1 = 1.05 \\, kJ$  
-- $q_2 = 16.7 \\, kJ$  
-- $q_3 = 5.23 \\, kJ$
+- $q_1 = 1.05 \, kJ$  
+- $q_2 = 16.7 \, kJ$  
+- $q_3 = 5.23 \, kJ$
 
 $$
-q_{tot} = 1.05 + 16.7 + 5.23 = 23.0 \\, kJ
+q_{\text{tot}} = 1.05 + 16.7 + 5.23 = 23.0 \, kJ
 $$
 
 ---
@@ -91,7 +91,7 @@ $$
 **Answer:**  
 The total heat required is:
 $$
-q_{tot} = 23.0 \\, kJ
+q_{\text{tot}} = 23.0 \, kJ
 $$
 
 </div>
@@ -102,7 +102,17 @@ $$
 
 - The heating curve has **three regions**: heating solid, phase transition plateau, heating liquid.  
 - The largest energy contribution comes from the **phase transition** (fusion).  
-- This example highlights the difference between **specific heat** (depends on $c$ and $\\Delta T$) and **latent heat** (depends only on amount of substance).  
+- This example highlights the difference between **specific heat** (depends on $c$ and $\Delta T$) and **latent heat** (depends only on amount of substance).  
 - Heating curves are fundamental to visualize **enthalpy changes** in phase transitions.
 
 </div>
+
+---
+
+### Related topics  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  

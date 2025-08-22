@@ -108,7 +108,11 @@ Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\cir
 
 ---
 
-### Related topics  
+### Related topics
 - [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
 - [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
 - [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
+- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+

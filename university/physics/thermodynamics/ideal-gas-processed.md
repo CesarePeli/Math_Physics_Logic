@@ -39,7 +39,7 @@ Calculate the work **on** the gas along three different reversible paths:
 
 1. **(a)** Isobaric compression (at $p_1$) followed by isochoric cooling to the final state.  
 2. **(b)** Direct isothermal compression from $V_1$ to $V_2$.  
-3. **(c)** Isochoric heating to $p_2$, followed by isobaric compression at $p_2$.
+3. **(c)** Isochoric heating to $p_2$, followed by isobaric compression at $p_2$.  
 
 Then evaluate $\Delta U$ and $\Delta S$, and compare results.
 
@@ -70,13 +70,13 @@ $p_2 = 2p_1$.
 - **(b) Isothermal:**  
   $$
   w_b = nRT \ln\!\left( \frac{V_2}{V_1} \right) 
-       = 2.494\times10^5 \ln(0.5).
+       = 2.494\times 10^5 \ln(0.5).
   $$
   $w_b = 1.729\times 10^5\,\text{J}$.
 
 - **(c) Isobaric (at $p_2$):**  
   $$
-  w_c = p_2(V_2 - V_1) = 2p_1(V_2 - V_1) = 2 w_a.
+  w_c = p_2(V_2 - V_1) = 2p_1(V_2 - V_1) = 2w_a.
   $$
   $w_c = 2.494\times 10^5\,\text{J}$.
 
@@ -120,3 +120,13 @@ $$
   it is true here because the process is isothermal and the gas is ideal. For real gases this statement is **not exact**.
 
 </div>
+
+---
+
+### Related topics  
+- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
