@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "University — Exercises with Theory Recap"
-description: "University-level exercises with concise theory recalls, curated by professors from leading Italian universities. Mathematics and Physics tracks with rigorous notes and problem sets."
+description: "University-level exercises with concise theory recalls, curated by professors and researchers from leading Italian universities. Mathematics and Physics tracks with rigorous notes and problem sets."
 permalink: /university/
 nav_order: 5
 image: /images/euclide2.png
@@ -9,36 +9,17 @@ image: /images/euclide2.png
 
 # University
 
-![University cover](/images/university-bg.jpg){: .full-width }
-
-A curated collection of **university-level exercises** with concise **theory recalls**.  
-All materials are authored and reviewed by **university professors**, ensuring both scientific rigor and pedagogical clarity.
-
-## How it works
-- **Theory recap first:** short, essential reminders of definitions, theorems, and methods.  
-- **Exercises next:** graded problems (from fundamentals to exam-style), with clear, step-by-step reasoning.  
-- **Focus on structure:** ideas and logical flow come before rote procedures.
+Concise **theory recalls** followed by **graded exercises**, authored and reviewed by university lecturers and researchers.
 
 ## Tracks
 
-### Mathematics — curated by **Prof. De Martino**, Associate Professor at Politecnico di Milano
-Structured notes and problem sets for core undergraduate topics:
-- Complex Numbers
-- Notable Limits; Limits with Taylor; Limits with L’Hospital
-- Continuity & Differentiability
-- Integrals
-- Differential Equations
-- Series of Functions
+- **[University Mathematics](/university/math/)** — curated by **Prof. De Martino**, *Researcher in Mathematics at Politecnico di Milano* (Italy’s largest technical university, renowned for engineering, architecture, and applied sciences).
 
-→ Start here: **[University Mathematics](/university/math/)**
-
-### Physics — curated by **Prof. Dr. Marco Ruzzi**, Associate Professor at the University of Padua
-Exercises with theory recalls in:
-- **Thermodynamics**
-- **Quantum Mechanics**
-
-→ Start here: **[University Physics](/university/physics/)**
+- **[University Physics](/university/physics/)** — curated by **Prof. Dr. Marco Ruzzi**, *Associate Professor at the University of Padua* (one of Europe’s oldest universities, with a long-standing tradition in science and medicine).
 
 ---
 
-*Logic & Motion: clarity, structure, and intellectual elegance for science education.*
+### How to use these notes
+- **Read the short theory recap**, then attempt the problems in order.  
+- **Compare with step-by-step solutions** to check reasoning, not only results.  
+- **Follow cross-links** between topics when concepts overlap.
