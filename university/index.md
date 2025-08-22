@@ -1,69 +1,44 @@
 ---
-date: 2025-04-15
 layout: default
-title: University Materials
+title: "University — Exercises with Theory Recap"
+description: "University-level exercises with concise theory recalls, curated by professors from leading Italian universities. Mathematics and Physics tracks with rigorous notes and problem sets."
 permalink: /university/
-background_image: "/images/university.png"
-description: "Solved exercises and concept-driven slides for university-level calculus, linear algebra, and more."
+nav_order: 5
+image: /images/euclide2.png
 ---
 
+# University
 
- <h1>University Materials</h1>
- <p><em> Resources for university students in mathematics, physics, and engineering — designed to support deep understanding, not surface repetition.  </em></p>
-<div class="content-box">
+![University cover](/images/university-bg.jpg){: .full-width }
 
+A curated collection of **university-level exercises** with concise **theory recalls**.  
+All materials are authored and reviewed by **university professors**, ensuring both scientific rigor and pedagogical clarity.
 
- These materials are created to connect reasoning with application.
+## How it works
+- **Theory recap first:** short, essential reminders of definitions, theorems, and methods.  
+- **Exercises next:** graded problems (from fundamentals to exam-style), with clear, step-by-step reasoning.  
+- **Focus on structure:** ideas and logical flow come before rote procedures.
 
-</div>
+## Tracks
 
-<div class="content-box">
-  <h2>✍️ Solved Exercises</h2>
-  <p>
-    <a href="/university/solved-exercises/">Explore the collection</a> of fully solved problem sets with clean notation and structured reasoning.  
-    Exercises are chosen to reinforce theory, not just technique — helping you build confidence and clarity.
-  </p>
-</div>
+### Mathematics — curated by **Prof. De Martino**, Associate Professor at Politecnico di Milano
+Structured notes and problem sets for core undergraduate topics:
+- Complex Numbers
+- Notable Limits; Limits with Taylor; Limits with L’Hospital
+- Continuity & Differentiability
+- Integrals
+- Differential Equations
+- Series of Functions
 
-<div class="content-box">
-  <h2>🧩 Slides (Coming Soon)</h2>
-  <p>
-    Explained and structured PDF slides on major topics in calculus and linear algebra.  
-    Designed to guide conceptual reasoning through examples, visuals, and step-by-step logic.  
-    Ideal for focused self-study or thoughtful classroom use.
-  </p>
-</div>
+→ Start here: **[University Mathematics](/university/math/)**
 
+### Physics — curated by **Prof. Dr. Marco Ruzzi**, Associate Professor at the University of Padua
+Exercises with theory recalls in:
+- **Thermodynamics**
+- **Quantum Mechanics**
 
+→ Start here: **[University Physics](/university/physics/)**
 
-<div class="content-box">
-  <h2>📚 Core Topics</h2>
-  <ul>
-    <li><strong>Calculus</strong>: limits, continuity, derivatives, integrals, sequences, series</li>
-    <li><strong>Linear Algebra</strong>: vector spaces, matrices, determinants, systems, eigenvalues</li>
-    <li><strong>Mathematical Methods</strong>: reasoning strategies, symbolic manipulation, functional thinking</li>
-    <li><strong>Applications</strong>: modeling, geometric intuition, problem structure</li>
-  </ul>
-</div>
+---
 
-<div class="content-box">
-  <h2>🎓 Philosophy of Use</h2>
-  <p>
-    These materials aim to:
-  </p>
-  <ul>
-    <li>Emphasize <strong>understanding over memorization</strong></li>
-    <li>Highlight <strong>connections between topics</strong></li>
-    <li>Provide <strong>models, not just solutions</strong></li>
-    <li>Foster a mindset of <strong>clarity, logic, and depth</strong></li>
-  </ul>
-  <p>
-    All content is screen-optimized and available in PDF format, suitable for tablets, laptops, and projection.
-  </p>
-</div>
-
-<div class="content-box">
-  <p>
-    📎 For more resources, visit the <a href="/high-school/">High School</a> section or explore <a href="/odd-questions/">The Odd Questions</a> to challenge your intuition.
-  </p>
-</div>
+*Logic & Motion: clarity, structure, and intellectual elegance for science education.*
