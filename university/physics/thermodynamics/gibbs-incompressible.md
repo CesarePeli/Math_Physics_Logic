@@ -23,15 +23,17 @@ background_image: /images/termodinamica.png
   dG = V\,dp - S\,dT
   $$
 
-- For **isothermal processes** ($dT = 0$):
+- For an **isothermal process** ($dT = 0$):
   $$
   dG = V\,dp
   $$
 
-- If the substance is **incompressible**, $V$ is constant:
+- If the substance is **incompressible** (constant $V$):
   $$
   \Delta G = V\,(p_2 - p_1)
   $$
+
+👉 This shows that for liquids and solids, pressure has a **linear effect** on Gibbs free energy, unlike gases where the relation is logarithmic.
 
 </div>
 
@@ -48,6 +50,7 @@ For **1.00 L of liquid water** at $25^\circ C$, calculate the change in Gibbs fr
 ## Step-by-Step Solution
 
 **Step 1. Number of moles**  
+From the total volume and the molar volume:
 $$
 n = \frac{V}{V_m} = \frac{1.00 \times 10^{-3}\, m^3}{18.0 \times 10^{-6}\, m^3 mol^{-1}} = 55.6\, mol
 $$
@@ -59,30 +62,26 @@ $$
 \Delta p = p_2 - p_1 = (100 - 1)\, bar = 99\, bar
 $$
 
-Convert: $1\, bar = 10^5\, Pa$  
+Convert to SI units:  
 $$
-\Delta p = 99 \times 10^5 = 9.9 \times 10^6\, Pa
+1\, bar = 10^5\, Pa \quad \Rightarrow \quad \Delta p = 99 \times 10^5 = 9.9 \times 10^6\, Pa
 $$
 
 ---
 
 **Step 3. Gibbs free energy change**  
-$$
-\Delta G = n V_m \Delta p
-$$
-
-Insert values:  
+Use $\Delta G = n V_m \Delta p$:  
 $$
 \Delta G = (55.6)(18.0 \times 10^{-6})(9.9 \times 10^6)\, J
 $$
 
 $$
-\Delta G = 9900\, J = 9.9\, kJ
+\Delta G = 9900\, J \;\approx 9.9\, kJ
 $$
 
 ---
 
-**Answer:**  
+**Final Answer:**  
 $$
 \Delta G \approx 9.9\, kJ
 $$
@@ -93,12 +92,14 @@ $$
 
 ## Notes
 
-- The result shows that $\Delta G$ for liquids and solids is **linear in pressure**, since they are almost incompressible.  
-- For gases, the relation is logarithmic instead:
+- The calculation shows that for liquids, $\Delta G$ is proportional to the pressure change.  
+- Even a large increase in pressure (from 1 bar to 100 bar) only changes $\Delta G$ by **a few kJ** because the molar volume is small.  
+- For gases, the relation is instead:
   $$
   G = G^\circ + RT \ln \frac{p}{p^\circ}
   $$
-- This distinction is crucial in chemical thermodynamics: pressure effects on liquids are usually negligible compared to gases.  
+  which grows logarithmically with $p$.  
+- This distinction explains why **pressure strongly influences gas equilibria**, but has only minor effects on liquid or solid phases.  
 
 </div>
 
@@ -110,3 +111,4 @@ $$
 - [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
 - [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
 - [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  

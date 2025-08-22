@@ -26,6 +26,12 @@ background_image: /images/termodinamica.png
   $$
 - **State vs path functions:** $\Delta U$ and $\Delta S$ depend only on initial and final states, while $w$ and $q$ depend on the path.
 
+> **Sign convention reminder.**  
+> Here $w>0$ denotes work **on the gas**. Many textbooks adopt the opposite convention ($w<0$ for work on the system): always check the definition in use.
+
+> **Validity note.**  
+> The results assume an **ideal gas** and **reversible transformations**. For real gases or irreversible processes, the formulas must be corrected.
+
 </div>
 
 <div class="content-box">
@@ -70,7 +76,7 @@ $p_2 = 2p_1$.
 - **(b) Isothermal:**  
   $$
   w_b = nRT \ln\!\left( \frac{V_2}{V_1} \right) 
-       = 2.494\times 10^5 \ln(0.5).
+       = 2.494\times10^5 \ln(0.5).
   $$
   $w_b = 1.729\times 10^5\,\text{J}$.
 

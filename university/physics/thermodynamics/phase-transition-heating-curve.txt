@@ -23,8 +23,8 @@ background_image: /images/termodinamica.png
   q = n \Delta H_{\text{trans}}
   $$
 
-- During a **phase transition**, $T$ remains constant while $q$ increases.  
-- The full **heating curve** combines sloped segments (heating) and plateaus (phase change).
+- During a **phase transition**, $T$ remains constant while $q$ increases, because energy goes into breaking intermolecular bonds rather than raising kinetic energy.  
+- The full **heating curve** therefore combines *sloped segments* (heating at constant phase) and *plateaus* (phase changes).
 
 </div>
 
@@ -89,7 +89,6 @@ $$
 ---
 
 **Answer:**  
-The total heat required is:
 $$
 q_{\text{tot}} = 23.0 \, kJ
 $$
@@ -101,9 +100,11 @@ $$
 ## Notes
 
 - The heating curve has **three regions**: heating solid, phase transition plateau, heating liquid.  
-- The largest energy contribution comes from the **phase transition** (fusion).  
-- This example highlights the difference between **specific heat** (depends on $c$ and $\Delta T$) and **latent heat** (depends only on amount of substance).  
-- Heating curves are fundamental to visualize **enthalpy changes** in phase transitions.
+- The largest energy contribution comes from the **phase transition** (fusion), which requires far more heat than simply raising the temperature.  
+- This illustrates the difference between:  
+  - **specific heat** (energy per unit mass per degree, linked to temperature changes),  
+  - **latent heat** (energy associated with structural reorganization of matter).  
+- Heating curves are a visual tool to track **enthalpy changes** across phases.
 
 </div>
 

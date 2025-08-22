@@ -13,15 +13,29 @@ background_image: /images/termodinamica.png
 
 ## Theoretical background (quick recall)
 
-- Standard Gibbs criterion: $\,\Delta G_r^\circ = \Delta H_r^\circ - T\Delta S_r^\circ$.  
-- Link to equilibrium: $\,\Delta G_r^\circ = -RT\ln K \;\Rightarrow\; K=\exp\!\big[-\Delta G_r^\circ/(RT)\big]$.  
+- Standard Gibbs criterion:  
+  $$
+  \Delta G_r^\circ = \Delta H_r^\circ - T\Delta S_r^\circ
+  $$
+
+- Link to equilibrium:  
+  $$
+  \Delta G_r^\circ = -RT\ln K \;\;\Rightarrow\;\; K=\exp\!\left[-\frac{\Delta G_r^\circ}{RT}\right]
+  $$
+
 - For gas-phase reactions, the pressure-based constant (with $p_0=1\,\text{bar}$) is
   $$
   K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
   $$
   Equivalently, $K_p=K_c\,(RT)^{\Delta n_\text{gas}}$ with $\Delta n_\text{gas}=\sum\nu_\text{products}-\sum\nu_\text{reactants}$.  
+
 - Direction from standard conditions: if $\Delta G_r^\circ<0$ at $T$, the reaction is spontaneous toward products; if $K\gg1$, products strongly prevail at equilibrium.  
-- Temperature effect (van ’t Hoff): $\dfrac{d\ln K}{dT}=\dfrac{\Delta H_r^\circ}{RT^2}$. For exothermic reactions $(\Delta H_r^\circ<0)$, $K$ decreases as $T$ increases.
+
+- Temperature effect (van ’t Hoff):  
+  $$
+  \frac{d\ln K}{dT}=\frac{\Delta H_r^\circ}{RT^2}
+  $$
+  For exothermic reactions $(\Delta H_r^\circ<0)$, $K$ decreases as $T$ increases.
 
 </div>
 
@@ -51,7 +65,8 @@ Using partial pressures normalized by $p_0=1\,\text{bar}$:
 $$
 K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\!\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
 $$
-Here $\Delta n_\text{gas}=2-(2+1)=-1$, so $K_p=K_c\,(RT)^{-1}$.
+Here $\Delta n_\text{gas}=2-(2+1)=-1$, so $K_p=K_c\,(RT)^{-1}$.  
+> This means that when we pass from concentrations ($K_c$) to pressures ($K_p$), the units are corrected by a factor $(RT)^{\Delta n}$.
 
 ---
 
@@ -71,6 +86,7 @@ $$
 = -114.0 - (298.15)(-0.145)
 \approx -70.8\,\text{kJ mol}^{-1}.
 $$
+> Negative $\Delta G_r^\circ$ already indicates spontaneity toward products under standard conditions.
 
 ---
 
@@ -81,6 +97,7 @@ K_p=\exp\!\left[-\frac{\Delta G_r^\circ}{RT}\right]
 =\exp\!\left(\frac{70.8\times10^3}{(8.314)(298.15)}\right)
 =\exp(28.56)\approx 2.5\times10^{12}.
 $$
+> Such a huge $K_p$ means that, at equilibrium, the concentration of $\mathrm{NO}_2$ is overwhelmingly larger than that of $\mathrm{NO}$ and $\mathrm{O}_2$.
 
 ---
 
@@ -102,7 +119,8 @@ Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\cir
 - Why $\Delta S_r^\circ<0$ here? Gas-phase stoichiometry gives $\Delta n_\text{gas}=-1$: fewer gas moles at products generally implies lower entropy of the system.  
 - Standard formation data reminder: $\Delta H_f^\circ(\mathrm{O}_2,g)=0$ by convention; only $\mathrm{NO}$ and $\mathrm{NO_2}$ contribute to $\Delta H_r^\circ$.  
 - Large $K_p$ ($\sim10^{12}$ at $298\,\text{K}$) means that, at equilibrium, $p_{\text{NO}_2}$ dominates compared to $p_{\text{NO}}$ and $p_{\text{O}_2}$ under standard-state scaling.  
-- For different $T$, you may estimate $K_p(T)$ using the van ’t Hoff equation with (piecewise) constant $\Delta H_r^\circ$ in the temperature range of interest.
+- For different $T$, you may estimate $K_p(T)$ using the van ’t Hoff equation with (piecewise) constant $\Delta H_r^\circ$ in the temperature range of interest.  
+- **Pedagogical point:** Students should train to interpret both numbers ($\Delta G^\circ$, $K$) and signs ($\Delta H^\circ$, $\Delta S^\circ$) to predict spontaneity and temperature effects qualitatively, not only numerically.
 
 </div>
 
@@ -115,4 +133,3 @@ Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\cir
 - [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
 - [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
 - [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
-

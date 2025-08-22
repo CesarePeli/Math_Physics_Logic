@@ -13,17 +13,20 @@ background_image: /images/termodinamica.png
 
 ## Theoretical Background
 
-- **Colligative properties** depend only on the **number of solute particles**, not on their nature.  
+- **Colligative properties** depend only on the **number of solute particles** present in solution, not on their chemical identity.  
+- Typical colligative properties: vapor-pressure lowering, boiling-point elevation, freezing-point depression, osmotic pressure.  
+
 - For freezing point depression:  
   $$
-  \Delta T_f = K_f \, m
+  \Delta T_f = i K_f \, m
   $$
   where:  
   - $\Delta T_f$ = freezing point lowering  
-  - $K_f$ = cryoscopic constant of solvent  
+  - $i$ = van ’t Hoff factor (number of effective particles per solute unit)  
+  - $K_f$ = cryoscopic constant of the solvent  
   - $m$ = molality of solute  
 
-- **Molality**:  
+- **Molality** is defined as:  
   $$
   m = \frac{n_{\text{solute}}}{m_{\text{solvent}}(kg)}
   $$
@@ -63,7 +66,7 @@ $$
 ---
 
 **Step 3. van ’t Hoff factor**  
-NaCl dissociates into 2 ions ($Na^+, Cl^-$), so:  
+NaCl dissociates ideally into 2 ions ($Na^+, Cl^-$), so:  
 $$
 i = 2
 $$
@@ -91,9 +94,9 @@ $$
 
 ## Notes
 
-- The assumption of **complete dissociation** is an idealization; in reality the van ’t Hoff factor $i$ is slightly less than 2 due to ion pairing.  
-- Colligative properties are a key tool to estimate **molar masses** or **degree of dissociation** experimentally.  
-- This simple case illustrates how adding salt lowers the freezing point of water — the basis of antifreeze and de-icing processes.
+- The assumption of **complete dissociation** is an idealization; in real solutions the van ’t Hoff factor $i$ is slightly less than 2 due to **ion pairing**.  
+- Colligative properties provide a powerful experimental tool to determine **molar masses** of solutes or to estimate their **degree of dissociation**.  
+- This case illustrates why adding salt lowers the freezing point of water — the scientific basis of **road de-icing** in winter and of **antifreeze mixtures** in car engines.  
 
 </div>
 
@@ -104,3 +107,5 @@ $$
 - [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
 - [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
 - [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  

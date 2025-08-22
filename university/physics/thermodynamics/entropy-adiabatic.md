@@ -23,6 +23,10 @@ background_image: /images/termodinamica.png
   \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}}
   $$
 
+> **Important distinction.**  
+> $\Delta S_{\text{sys}}$ is always computed by comparing initial and final *equilibrium* states, even if the actual path is irreversible.  
+> $\Delta S_{\text{univ}}$ tells us whether the transformation is reversible ($=0$) or produces entropy ($>0$).
+
 </div>
 
 <div class="content-box">
@@ -99,7 +103,8 @@ $$
 
 - In a reversible adiabatic expansion, the gas cools as it expands, but the process is perfectly balanced: entropy remains constant.  
 - In the free expansion, the gas ends up occupying a larger volume at the same temperature, increasing disorder → entropy rises.  
-- This is a textbook example that entropy is a **state function**, independent of path, but the *entropy production* distinguishes reversible vs irreversible paths.
+- This is a textbook example that entropy is a **state function**, independent of path, but the *entropy production* distinguishes reversible vs irreversible paths.  
+- **Pedagogical reminder:** Free expansion is only *adiabatic and irreversible* in the idealized case of expansion into a vacuum. In real systems, some interactions with the surroundings are unavoidable.
 
 </div>
 

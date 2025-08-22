@@ -35,6 +35,12 @@ background_image: /images/termodinamica.png
   \Delta U = \Delta H - (\Delta n_{\text{gas}})RT
   $$
 
+> **Validity note (ideal-gas assumption).**  
+> The identities above use $pV = nRT$; the correction $(\Delta n_{\text{gas}})RT$ applies when the **gas phase behaves ideally**. For real gases, use an appropriate equation of state (the simple $RT\,\Delta n$ term no longer holds exactly).
+
+> **Sign convention used here.**  
+> $w>0$ = work **done on** the system (compression); $w<0$ = work **done by** the system (expansion). The First Law is written as $\Delta U = q + w$.
+  
 where $\Delta n_{\text{gas}}$ is the change in the number of moles of gas.
 
 </div>
@@ -80,10 +86,6 @@ $$
 **Step 2. Relation between $\Delta H$ and $\Delta U$**  
 For ideal gases:
 $$
-\Delta H = \Delta U + (\Delta n_{\text{gas}})RT
-$$
-Rearrange:
-$$
 \Delta U = \Delta H - (\Delta n_{\text{gas}})RT
 $$
 
@@ -99,7 +101,8 @@ $$
 
 **Step 4. Final value**  
 $$
-\Delta U^{\circ} = (-566.0\,\text{kJ}) - (-2.48\,\text{kJ}) = -563.5\,\text{kJ}
+\Delta U^{\circ} = (-566.0)\,\text{kJ mol}^{-1} - (-2.48)\,\text{kJ mol}^{-1}
+= -563.5\,\text{kJ mol}^{-1}.
 $$
 
 ---
@@ -115,10 +118,11 @@ $$
 
 ## Notes
 
-- The difference between $\Delta U$ and $\Delta H$ is small because only **1 mol of gas disappears**.  
+- The difference between $\Delta U$ and $\Delta H$ is small here because only **1 mol of gas disappears**.  
 - If $\Delta n_{\text{gas}} = 0$, then $\Delta H = \Delta U$.  
-- This correction $(\Delta n_{\text{gas}})RT$ becomes important at high $T$ or when many gas moles change.  
-- **Pedagogical point:** $\Delta H$ is often tabulated (easy to measure at constant $p$), but $\Delta U$ is more fundamental in the First Law.
+- The correction $(\Delta n_{\text{gas}})RT$ grows with $T$ and with large changes in gas moles.  
+- **Pedagogical point:** $\Delta H$ is often tabulated (easy to measure at constant $p$), while $\Delta U$ is the central state function in the First Law.  
+- **Real-gas reminder:** for non‑ideal gases the simple $RT\,\Delta n$ correction is only approximate; use the appropriate equation of state if accuracy is required.
 
 </div>
 
