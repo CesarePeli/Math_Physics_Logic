@@ -14,13 +14,13 @@ background_image: /images/termodinamica.png
 ## Theoretical Background
 
 - **Adiabatic process:** $q = 0$  
-- **First Law:** $\\Delta U = q + w \\; \\Rightarrow \\; \\Delta U = w$  
+- **First Law:** $\Delta U = q + w \;\Rightarrow\; \Delta U = w$  
 - For an **ideal gas**: $U = U(T)$  
-- **Reversible adiabatic:** $\\Delta S = 0$  
-- **Irreversible adiabatic:** $\\Delta S > 0$  
+- **Reversible adiabatic:** $\Delta S = 0$  
+- **Irreversible adiabatic:** $\Delta S > 0$  
 - **Entropy change of the universe:**  
   $$
-  \\Delta S_{univ} = \\Delta S_{sys} + \\Delta S_{surr}
+  \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}}
   $$
 
 </div>
@@ -29,7 +29,7 @@ background_image: /images/termodinamica.png
 
 ## Exercise
 
-A sample of **1 mol of ideal gas** expands adiabatically from $V_1 = 10.0\\,L$ to $V_2 = 20.0\\,L$.  
+A sample of **1 mol of ideal gas** expands adiabatically from $V_1 = 10.0\,\text{L}$ to $V_2 = 20.0\,\text{L}$.  
 
 1. Evaluate the entropy change of the system in the case of a **reversible adiabatic** expansion.  
 2. Repeat for an **irreversible adiabatic** free expansion against vacuum.  
@@ -45,39 +45,39 @@ A sample of **1 mol of ideal gas** expands adiabatically from $V_1 = 10.0\\,L$ t
 - By definition, $q_{rev} = 0$  
 - Entropy change of system:
   $$
-  \\Delta S_{sys} = \\int \\frac{dq_{rev}}{T} = 0
+  \Delta S_{\text{sys}} = \int \frac{dq_{rev}}{T} = 0
   $$
-- So: $\\Delta S_{sys} = 0$  
+- So: $\Delta S_{\text{sys}} = 0$  
 
 Entropy of the surroundings:  
 $$
-\\Delta S_{surr} = 0
+\Delta S_{\text{surr}} = 0
 $$
 
 Therefore:  
 $$
-\\Delta S_{univ} = 0
+\Delta S_{\text{univ}} = 0
 $$
 
 ---
 
 **Case 2 — Irreversible adiabatic free expansion**  
-- Still $q = 0$, so $\\Delta U = 0$ (no work done, no heat exchanged).  
+- Still $q = 0$, so $\Delta U = 0$ (no work done, no heat exchanged).  
 - For the **system entropy** we must compare initial and final equilibrium states.  
 
 For 1 mol ideal gas:
 $$
-\\Delta S_{sys} = R \\ln\\!\\left( \\frac{V_2}{V_1} \\right) = 8.314 \\ln 2 = 5.76\\, J K^{-1}
+\Delta S_{\text{sys}} = R \ln\!\left( \frac{V_2}{V_1} \right) = 8.314 \ln 2 = 5.76\,\text{J K}^{-1}
 $$
 
 Surroundings are vacuum, so:
 $$
-\\Delta S_{surr} = 0
+\Delta S_{\text{surr}} = 0
 $$
 
 Therefore:  
 $$
-\\Delta S_{univ} = +5.76\\, J K^{-1}
+\Delta S_{\text{univ}} = +5.76\,\text{J K}^{-1}
 $$
 
 ---
@@ -88,7 +88,7 @@ $$
 
 This illustrates the **Second Law**:  
 $$
-\\Delta S_{univ} \\ge 0
+\Delta S_{\text{univ}} \ge 0
 $$
 
 </div>
