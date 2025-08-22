@@ -1,15 +1,13 @@
 ---
 layout: default
-title: "University Physics curated by Prof. Dr. Marco Ruzzi"
-description: "The University Physics section of Logic & Motion is curated by Prof. Dr. Marco Ruzzi, Associate Professor at the University of Padua, specializing in Physical Chemistry, spectroscopy, and advanced materials."
+title: "University Physics — curated by Prof. Dr. Marco Ruzzi"
+meta-description: "University Physics curated by Prof. Dr. Marco Ruzzi (University of Padua): thermodynamics, quantum mechanics, spectroscopy, and advanced materials."
 permalink: /university/physics/
 nav_order: 10
-image: /images/serie.png
+background_image: /images/euclide2.png
 ---
 
 # University Physics
-
-![University Physics Background](/images/university-physics-bg.jpg){: .full-width }
 
 The **University Physics** section of *Logic & Motion* is curated by  
 **Prof. Dr. Marco Ruzzi**, Associate Professor at the Department of Chemical Sciences, University of Padua.
@@ -24,5 +22,3 @@ Alongside his scientific contributions, he has decades of teaching experience in
 
 - [Thermodynamics](/university/physics/thermodynamics/)  
 - [Quantum Mechanics](/university/physics/quantum-mechanics/)  
-
-These pages combine conceptual rigor with step-by-step reasoning, reflecting both his academic expertise and Logic & Motion’s educational vision.
