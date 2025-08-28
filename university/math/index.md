@@ -1,22 +1,42 @@
 ---
+---
 layout: default
-title: "University Mathematics — curated by Prof. De Martino"
-meta-description: "University Mathematics curated by Prof. De Martino (Politecnico di Milano): exercises with concise theory recalls in core undergraduate topics such as limits, continuity, integrals, differential equations, and series of functions."
-permalink: /university/math/
-nav_order: 10
-background_image: /images/euclide2.png
+title: "University Mathematics — Solved Exercises"
+meta-description: "A curated collection of solved exercises in university mathematics: from complex numbers and limits to integrals and differential equations."
+permalink: /university/solved-exercises/
+nav_order: 20
+background_image: /images/euclide.png
 ---
 
-# University Mathematics
+# University Mathematics — Solved Exercises
 
-The **University Mathematics** section of *Logic & Motion* is curated by  
-**Prof. De Martino**, *Researcher in Mathematics at Politecnico di Milano* — Italy’s largest technical university and a leading European institution in engineering, architecture, and applied sciences.
+<div class="content-box">
 
-This track offers **concise theory recalls** followed by **structured exercises**, covering the foundations of undergraduate mathematics with clarity and rigor.
+## Topics curated by Logic & Motion
 
----
+- [Complex Numbers](/university/solved-exercises/complex-numbers/)
+- [Notable Limits](/university/solved-exercises/notable-limits/)
+- [Limits with L’Hôpital’s Rule](/university/solved-exercises/limits-hopital/)
+- [Limits with Taylor Expansions](/university/solved-exercises/limits-taylor/)
+- [Sequences](/university/solved-exercises/sequences/)
+- [Series](/university/solved-exercises/series/)
+- [Continuity](/university/solved-exercises/continuity/)
+- [Differentiability](/university/solved-exercises/differentiability/)
+- [Integration by Parts](/university/solved-exercises/integration-by-parts/)
+- [Integration by Substitution](/university/solved-exercises/integration-substitution/)
+- [General ODEs](/university/solved-exercises/odes-general/)
+- [Cauchy Problems for ODEs](/university/solved-exercises/odes-cauchy/)
 
-## Topics curated by Prof. De Martino
+These pages present clear theory and step-by-step reasoning,  
+reflecting Logic & Motion’s educational vision.
 
-- [Complex Numbers](/university/math/complex-numbers/)  
-- [Notable Limit]()
+</div>
+
+<div class="content-box">
+
+## About Logic & Motion
+
+The **Solved Exercises** section of *Logic & Motion* is designed to support students in mathematics and physics at university level.  
+It combines conceptual depth with practical clarity, offering carefully selected problems with full solutions.
+
+</div>
