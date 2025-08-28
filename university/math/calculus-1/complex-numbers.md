@@ -3,7 +3,7 @@ layout: default
 date: 2025-04-20
 title: "Solved Exercises — Complex Numbers"
 meta-description: "A curated selection of solved exercises on complex numbers: algebraic form, trigonometric form, exponential representation, and basic properties."
-permalink: "/university/math/complex-numbers/"
+permalink: /university/math/calculus-1/complex-numbers/
 background_image: "/images/euclide.png"
 featured: true
 ---

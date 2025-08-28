@@ -13,7 +13,7 @@ background_image: /images/euclide.png
 
 ## Topics in Calculus I
 
-- [Complex Numbers](/university/math/calculus-1/complex-numbers/)  
+- [Complex Numbers]({{ "/university/math/calculus-1/complex-numbers/" | relative_url }})
 - [Notable Limits](/university/math/calculus-1/notable-limits/)  
 - [Limits with L’Hôpital’s Rule](/university/math/calculus-1/limits-hopital/)  
 - [Limits with Taylor Expansions](/university/math/calculus-1/limits-taylor/)  
