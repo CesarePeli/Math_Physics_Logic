@@ -15,8 +15,7 @@ background_image: /images/euclide.png
 
 - [Calculus I](/university/math/calculus-1/)
 - Linear Algebra (coming soon)
-- Calculus II (coming soon)
-- Probability and Statistics (coming soon)
+
 
 This section gathers worked examples, theoretical summaries, and notes designed for university-level mathematics students.
 
