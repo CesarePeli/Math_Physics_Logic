@@ -5,6 +5,7 @@ meta-description: "Thermodynamics exercises with concise theory recalls: ideal-g
 permalink: /university/physics/thermodynamics/
 nav_order: 21
 background_image: /images/termodinamica.png
+featured: true
 ---
 
 # Thermodynamics — Exercises & Theory Recap
