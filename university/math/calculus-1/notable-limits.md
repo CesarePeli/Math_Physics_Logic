@@ -4,7 +4,7 @@ date: 2025-04-21
 title: "Solved Exercises — Notable Limits"
 meta-description: "A curated selection of solved exercises on notable limits: fundamental indeterminate forms, exponential and trigonometric limits, and classical remarkable results."
 permalink: "/university/math/calculus-1/notable-limits/"
-background_image: "/images/euclide.png"
+background_image: "/images/limiti.png"
 featured: true
 ---
 

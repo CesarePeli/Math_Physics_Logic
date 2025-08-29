@@ -4,7 +4,7 @@ title: "University Mathematics"
 meta-description: "University Mathematics: structured collections of worked examples and theoretical notes in calculus and beyond."
 permalink: /university/math/
 nav_order: 10
-background_image: /images/euclide.png
+background_image: /images/grafi.png
 ---
 
 # University Mathematics
