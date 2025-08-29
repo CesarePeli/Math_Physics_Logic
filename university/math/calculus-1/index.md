@@ -4,7 +4,7 @@ title: "Calculus I — Worked Examples"
 meta-description: "Solved exercises and theoretical summaries in Calculus I: limits, sequences, series, continuity, differentiability, integrals, and differential equations."
 permalink: /university/math/calculus-1/
 nav_order: 1
-background_image: /images/euclide.png
+background_image: /images/grafi.png
 ---
 
 # Calculus I — Worked Examples
@@ -26,7 +26,7 @@ background_image: /images/euclide.png
 - [General ODEs](/university/math/calculus-1/odes-general/)  
 - [Cauchy Problems for ODEs](/university/math/calculus-1/odes-cauchy/)  
 
-These pages combine theoretical background and step-by-step worked examples, curated from *Eserciziario 2.1* and adapted for international students.
+These pages combine theoretical background and step-by-step worked examples.
 
 </div>
 

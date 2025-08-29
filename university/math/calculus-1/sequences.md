@@ -4,7 +4,7 @@ date: 2025-04-22
 title: "Solved Exercises — Sequences"
 meta-description: "Solved exercises on sequences: convergence, divergence, monotonicity, boundedness, and classical limits, with detailed step-by-step solutions."
 permalink: "/university/math/calculus-1/sequences/"
-background_image: "/images/euclide.png"
+background_image: "/images/serie.png"
 featured: true
 ---
 
