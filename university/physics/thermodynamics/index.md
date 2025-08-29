@@ -1,9 +1,9 @@
 ---
 layout: default
+date: 2025-08-30
 title: "Thermodynamics — Exercises & Theory Recap"
 meta-description: "Thermodynamics exercises with concise theory recalls: ideal-gas work and entropy, reaction energetics (ΔU vs ΔH), equilibrium and spontaneity (ΔG°, K), phase transitions, and colligative properties. Curated by Prof. Dr. Marco Ruzzi."
 permalink: /university/physics/thermodynamics/
-nav_order: 21
 background_image: /images/termodinamica.png
 featured: true
 ---
