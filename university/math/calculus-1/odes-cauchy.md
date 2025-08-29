@@ -5,7 +5,7 @@ title: "Solved Exercises — Cauchy Problems"
 meta-description: "Worked exercises on Cauchy problems: first- and second-order ODEs with initial conditions, solved step by step, including remarks from the original Italian text."
 permalink: "/university/math/calculus-1/odes-cauchy/"
 background_image: "/images/grafi.png"
-featured: true
+
 ---
 
 <div class="content-box">

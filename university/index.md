@@ -6,7 +6,7 @@ permalink: /university/
 nav_order: 5
 date: 2025-05-02
 background_image: /images/euclide.png
-featured: true
+
 ---
 
 # University
