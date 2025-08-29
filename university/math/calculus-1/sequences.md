@@ -4,8 +4,8 @@ date: 2025-08-29
 title: "Solved Exercises — Sequences"
 meta-description: "Solved exercises on sequences (explicit and recursive): full step-by-step solutions with monotonicity and boundedness proofs, subsequences analysis, and complete author arguments."
 permalink: "/university/math/calculus-1/sequences/"
-background_image: "/images/euclide.png"
-featured: true
+background_image: "/images/serie.png"
+
 ---
 
 <div class="content-box">

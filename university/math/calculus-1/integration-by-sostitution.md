@@ -5,7 +5,7 @@ title: "Solved Exercises — Integration by Substitution"
 meta-description: "Worked exercises on integration by substitution: change of variables, trigonometric substitutions, and rational simplifications with detailed step-by-step solutions."
 permalink: "/university/math/calculus-1/integration-by-substitution/"
 background_image: "/images/integrali.png"
-featured: true
+
 ---
 
 <div class="content-box">
