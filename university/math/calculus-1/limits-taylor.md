@@ -5,7 +5,7 @@ title: "Solved Exercises — Limits with Taylor Expansions"
 meta-description: "Step-by-step limits solved via Taylor polynomials: systematic expansions for exponential, logarithmic and trigonometric functions, with precise order tracking."
 permalink: "/university/math/calculus-1/limits-taylor/"
 background_image: "/images/limiti.png"
-featured: true
+
 ---
 
 <div class="content-box">
