@@ -4,7 +4,7 @@ date: 2025-08-28
 title: "Solved Exercises — Series"
 meta-description: "Solved exercises on infinite series: convergence tests, geometric and harmonic series, alternating series, and applications with detailed solutions."
 permalink: "/university/math/calculus-1/series/"
-background_image: "/images/series.png"
+background_image: "/images/serie.png"
 featured: true
 ---
 
