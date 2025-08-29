@@ -5,7 +5,7 @@ title: "Solved Exercises — Limits with L’Hôpital’s Rule"
 meta-description: "Step-by-step worked examples using L’Hôpital’s rule: indeterminate forms 0/0 and ∞/∞, repeated applications, logarithmic tricks, and mixed exponential–trigonometric cases."
 permalink: "/university/math/calculus-1/limits-hopital/"
 background_image: "/images/limiti.png"
-featured: true
+
 ---
 
 <div class="content-box">
