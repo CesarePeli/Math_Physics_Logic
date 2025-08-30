@@ -1,21 +1,21 @@
 ---
 date: 2025-04-09
 layout: default
-title: In-Depht Articles
+title: Scientific Essays
 permalink: /insights/
 nav_exclude: false
 background_image: "/images/u7413423743_Square_image_with_inverted_stairs_in_the_style_of_f71a0c2e-5d8f-4ed0-9bf2-06348857b5f2_3.png"
-description: "Articles, reflections, and conceptual explorations in mathematics and physics that go beyond traditional instruction."
+description: "Scientific essays on mathematics and physics — conceptual explorations of theory, models, and the history of science."
 ---
 
-<h1>In-Depth Articles</h1>
-<p><em>Articles, reflections, and conceptual explorations in mathematics and physics</em></p>
+<h1>Scientific Essays</h1>
+<p><em>Structured essays in mathematics and physics</em></p>
 
 <div class="content-box">
 
   <p>
-    This section features original reflections, brief articles, and conceptual explorations in mathematics and physics.  
-    The goal is not direct instruction, but to share perspectives, stimulate thought, and highlight interesting questions and structures that go beyond traditional teaching formats.
+    This section features scientific essays in mathematics and physics — structured like papers, yet written with an educational and exploratory spirit.  
+    They aim to present theories, models, and historical insights with rigor and clarity, offering perspectives that go beyond standard instruction.
   </p>
 </div>
 
