@@ -179,3 +179,21 @@ header nav a:hover,
   header nav a,
   .site-nav a { padding: 10px 14px; }
 }
+
+/* ─────────────────────────────────────────────
+   ▸ Giustificazione del testo (desktop vs mobile)
+   ──────────────────────────────────────────── */
+
+/* Desktop e tablet */
+.content-box p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Mobile: ritorna a sinistra per leggibilità */
+@media screen and (max-width: 600px) {
+  .content-box p {
+    text-align: left;
+    text-justify: auto;
+  }
+}
