@@ -125,3 +125,57 @@ footer {
 .resource-list .badge {
   margin-left: 0.4rem;
 }
+
+/* ─────────────────────────────────────────────
+   ▸ Header navigation – spaziatura e area clic
+   ──────────────────────────────────────────── */
+
+/* Se la nav usa una UL */
+header nav ul,
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;            /* distanza fra le voci */
+}
+
+/* Link del menu */
+header nav a,
+.site-nav a {
+  display: inline-block;
+  padding: 8px 12px;    /* area clic più comoda */
+  border-radius: .4rem;
+  letter-spacing: .01em;
+}
+
+/* Fallback nel caso NON fosse flex: gestisce <li> distanziandoli */
+header nav li,
+.site-nav li {
+  margin: 0 12px;
+}
+
+/* Hover leggero (coerente col tuo tema) */
+header nav a:hover,
+.site-nav a:hover {
+  background: rgba(255,255,255,.08);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  header nav ul,
+  .site-nav {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  header nav a,
+  .site-nav a {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header nav ul,
+  .site-nav { gap: 22px; }
+  header nav a,
+  .site-nav a { padding: 10px 14px; }
+}
