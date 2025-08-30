@@ -43,17 +43,26 @@ description: "Explore curated, high-quality resources in math, physics, and logi
 <!-- ─────────────  INTRO  ───────────── -->
 <div class="content-box">
 
-Mathematics is not mere calculation—at least, not only.  
-It is a form of thought, a structure of understanding, a language of precision. In a world that moves fast—chasing shortcuts and quick results—mathematics invites us to slow down, to think with order, and to separate the essential from the accidental. It teaches us to *see*: recurring patterns, possible transformations, hidden connections between ideas that at first seem distant.
+<p>
+Mathematics is not mere calculation — at least, not only.  
+It is a form of thought, a structure of understanding, a language of precision. In a world that moves fast, chasing shortcuts and quick results, mathematics teaches us to slow down: to think with order, to separate the essential from the accidental. Above all, it teaches us to <em>see</em> — recurring patterns, possible transformations, hidden connections between ideas that at first seem distant.
+</p>
 
-There is no single path to insight. Some minds see structure immediately, others begin with concrete examples, others imagine abstract relations. All of these approaches are valuable, because mathematics welcomes diverse styles of reasoning—deductive, inductive, analogical, abstract, visual—and in this variety lies its universality.
+<p>
+There is no single path to insight. Some minds grasp structure immediately, others begin with concrete examples, others imagine abstract relations. All of these approaches are valuable, because mathematics welcomes diverse styles of reasoning — deductive, inductive, analogical, abstract, visual. In this variety lies its universality.
+</p>
 
-In this spirit, **Mathematics** is not a list of formulas to memorize, but a way of thinking grounded in reasoning, proof, and internal coherence.  
-**Physics** is approached as the science of models: abstract principles expressed through mathematics and applied across diverse real-world contexts.
+<p>
+And just as mathematics provides the grammar of thought, <strong>physics</strong> brings this language into the world. It is the science of models: abstract principles expressed through mathematics, tested and applied across diverse contexts, from the fall of a stone to the expansion of the universe.
+</p>
 
-**Logic & Motion** bridges education and exploration — offering curated resources for students and teachers: slides, guided exercises, printable summaries, and original writing that invite reflection as well as understanding.
+<p>
+<strong>Logic & Motion</strong> was created at the intersection of these perspectives. It bridges education and exploration — offering curated resources for students and teachers: slides, guided exercises, printable summaries, and original essays that invite not only practice but also reflection.
+</p>
 
-Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* presents science as a structured way of thinking — intellectually rigorous, yet always human and meaningful.
+<p>
+Rooted in logic, inquiry, and the desire to understand, <em>Logic & Motion</em> presents science as a structured way of thinking — intellectually rigorous, yet always human and meaningful.
+</p>
 
 </div>
 
