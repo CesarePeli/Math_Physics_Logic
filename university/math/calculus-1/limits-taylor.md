@@ -1,10 +1,10 @@
 ---
 layout: default
-date: 2025-08-29
+date: 2025-08-30
 title: "Solved Exercises — Limits with Taylor Expansion"
 meta-description: "Worked examples on limits using Taylor expansion: expansions of exponential, logarithmic and trigonometric functions, with detailed author notes."
 permalink: "/university/math/calculus-1/limits-taylor/"
-background_image: "/images/euclide.png"
+background_image: "/images/limiti.png"
 
 ---
 
@@ -12,26 +12,34 @@ background_image: "/images/euclide.png"
 
 ## Theoretical Recall
 
-Taylor expansions near $x=0$ (Maclaurin series):
+Taylor expansion of a function $f$ at $x_0$:
 
 $$
-e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + o(x^3),
+f(x) = f(x_0) + \frac{f'(x_0)}{1!}(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)^2 + \dots +
+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n + o((x-x_0)^n).
 $$
 
-$$
-\log(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} + o(x^3),
-$$
+If $x_0=0$ we obtain the **Maclaurin expansion**.
 
-$$
-\sin x = x - \frac{x^3}{3!} + o(x^3), 
-\quad
-\cos x = 1 - \frac{x^2}{2} + o(x^2).
-$$
+**Rules for $o$-notation:**
 
-General principle:  
-to evaluate $\lim_{x\to0} f(x)$, expand numerator and denominator up to the order needed to cancel dominant terms.
+- $o(x^m)+o(x^m) = o(x^m)$  
+- $o(x^m)\cdot o(x^n) = o(x^{m+n})$  
+- $o(x^n)+o(x^m) = o(x^{\min\{m,n\}})$  
+- $x^n \cdot o(x^m) = o(x^{n+m})$  
+- $o(x^n + o(x^n)) = o(x^n)$  
 
-**Author’s note:** The expansions must be truncated only after ensuring that the order of approximation is sufficient to determine the limit. A frequent error is to truncate too early.
+**Maclaurin series (up to relevant order):**
+
+- $(1+x)^\alpha = 1+\alpha x+\tfrac{\alpha(\alpha-1)}{2!}x^2 + \dots + o(x^n)$  
+- $e^x = 1+x+\tfrac{x^2}{2!}+\tfrac{x^3}{3!}+o(x^3)$  
+- $\log(1+x)=x-\tfrac{x^2}{2}+\tfrac{x^3}{3}-\tfrac{x^4}{4}+o(x^4)$  
+- $\sin x = x-\tfrac{x^3}{3!}+\tfrac{x^5}{5!}+o(x^5)$  
+- $\cos x = 1-\tfrac{x^2}{2}+\tfrac{x^4}{4!}+o(x^4)$  
+- $\tan x = x+\tfrac{x^3}{3}+\tfrac{2}{15}x^5+o(x^5)$  
+
+**Author’s note:**  
+The expansions must be truncated only after ensuring the approximation order is sufficient to determine the limit. A common mistake is cutting the series too early.
 
 </div>
 
@@ -45,11 +53,12 @@ $$
 $$
 
 **Solution:**  
-$e^x=1+x+\tfrac{x^2}{2}+o(x^2)$. Then numerator $= \tfrac{x^2}{2}+o(x^2)$.  
+$e^x = 1+x+\tfrac{x^2}{2}+o(x^2)$.  
+Numerator $=\tfrac{x^2}{2}+o(x^2)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{e^x-1-x}{x^2} = \tfrac{1}{2}
+\frac{1}{2}
 $$
 
 ---
@@ -60,13 +69,12 @@ $$
 $$
 
 **Solution:**  
-$\log(1+x)=x-\tfrac{x^2}{2}+o(x^2)$. Numerator $=-\tfrac{x^2}{2}+o(x^2)$.  
-
-**Author’s note:** This is a classical limit where the second-order term of the Taylor expansion is essential.  
+$\log(1+x)=x-\tfrac{x^2}{2}+o(x^2)$.  
+Numerator $=-\tfrac{x^2}{2}+o(x^2)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{\log(1+x)-x}{x^2} = -\tfrac{1}{2}
+-\frac{1}{2}
 $$
 
 ---
@@ -77,11 +85,12 @@ $$
 $$
 
 **Solution:**  
-$\sin x = x-\tfrac{x^3}{6}+o(x^3)$. Numerator $=-\tfrac{x^3}{6}+o(x^3)$.  
+$\sin x = x-\tfrac{x^3}{6}+o(x^3)$.  
+Numerator $=-\tfrac{x^3}{6}+o(x^3)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{\sin x - x}{x^3} = -\tfrac{1}{6}
+-\frac{1}{6}
 $$
 
 ---
@@ -92,13 +101,12 @@ $$
 $$
 
 **Solution:**  
-$\cos x=1-\tfrac{x^2}{2}+o(x^2)$. Numerator $=\tfrac{x^2}{2}+o(x^2)$.  
-
-**Author’s note:** The Taylor expansion avoids the indeterminate $0/0$ and is often faster than applying L’Hôpital.  
+$\cos x=1-\tfrac{x^2}{2}+o(x^2)$.  
+Numerator $=\tfrac{x^2}{2}+o(x^2)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{1-\cos x}{x^2} = \tfrac{1}{2}
+\frac{1}{2}
 $$
 
 ---
@@ -109,11 +117,12 @@ $$
 $$
 
 **Solution:**  
-$e^{2x}=1+2x+2x^2+o(x^2)$. Numerator $=2x^2+o(x^2)$.  
+$e^{2x}=1+2x+2x^2+o(x^2)$.  
+Numerator $=2x^2+o(x^2)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{e^{2x}-1-2x}{x^2} = 2
+2
 $$
 
 ---
@@ -124,11 +133,12 @@ $$
 $$
 
 **Solution:**  
-$\tan x = x+\tfrac{x^3}{3}+o(x^3)$. Numerator $=\tfrac{x^3}{3}+o(x^3)$.  
+$\tan x = x+\tfrac{x^3}{3}+o(x^3)$.  
+Numerator $=\tfrac{x^3}{3}+o(x^3)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{\tan x - x}{x^3} = \tfrac{1}{3}
+\frac{1}{3}
 $$
 
 ---
@@ -141,15 +151,14 @@ $$
 **Solution:**  
 $\log(1+x)=x-\tfrac{x^2}{2}+\tfrac{x^3}{3}+o(x^3)$,  
 $\sin x = x-\tfrac{x^3}{6}+o(x^3)$.  
-Difference $=-\tfrac{x^2}{2}+\tfrac{x^3}{3}+\tfrac{x^3}{6}+o(x^3)=-\tfrac{x^2}{2}+\tfrac{x^3}{2}+o(x^3)$.  
-Dividing by $x^3$ gives divergence to $-\infty$.  
 
-**Author’s note:** The divergence highlights the importance of identifying the dominating term in the expansion.  
+Difference $=-\tfrac{x^2}{2}+\tfrac{x^3}{2}+o(x^3)$.  
+Dividing by $x^3$: $\sim -\tfrac{1}{2}\cdot \tfrac{1}{x}+\tfrac{1}{2}+o(1)$.  
 
-**Final Result:**
-$$
-\lim_{x\to0} \frac{\log(1+x)-\sin x}{x^3} = -\infty
-$$
+Thus, as $x\to0^+$, limit $\to -\infty$; as $x\to0^-$, limit $\to +\infty$.  
+
+**Final Result:**  
+The two-sided limit **does not exist**.
 
 ---
 
@@ -159,12 +168,14 @@ $$
 $$
 
 **Solution:**  
-$e^x=1+x+\tfrac{x^2}{2}+o(x^2)$, $\cos x=1-\tfrac{x^2}{2}+o(x^2)$.  
+$e^x=1+x+\tfrac{x^2}{2}+o(x^2)$,  
+$\cos x=1-\tfrac{x^2}{2}+o(x^2)$.  
+
 Numerator $=x+x^2+o(x^2)$. Divide by $x$: $1+x+o(x)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{e^x-\cos x}{x} = 1
+1
 $$
 
 ---
@@ -177,11 +188,12 @@ $$
 **Solution:**  
 $\sin x=x-\tfrac{x^3}{6}+o(x^3)$,  
 $\tan x=x+\tfrac{x^3}{3}+o(x^3)$.  
-Difference $=-\tfrac{x^3}{6}-\tfrac{x^3}{3}+o(x^3)=-\tfrac{x^3}{2}+o(x^3)$.  
+
+Difference $=-\tfrac{x^3}{2}+o(x^3)$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{\sin x - \tan x}{x^3} = -\tfrac{1}{2}
+-\frac{1}{2}
 $$
 
 ---
@@ -194,13 +206,13 @@ $$
 **Solution:**  
 $e^x=1+x+\tfrac{x^2}{2}+o(x^2)$,  
 $\sin x=x-\tfrac{x^3}{6}+o(x^3)$.  
-So numerator $=\tfrac{x^2}{2}+\tfrac{x^3}{6}+o(x^2)$. Divided by $x$: $\tfrac{x}{2}+o(x)\to0$.  
 
-**Author’s note:** The function is continuous at 0 with value $0$, the expansion confirms the limit.  
+Numerator $=\tfrac{x^2}{2}+\tfrac{x^3}{6}+o(x^2)$.  
+Divided by $x$: $\tfrac{x}{2}+o(x)\to0$.  
 
 **Final Result:**
 $$
-\lim_{x\to0} \frac{e^x-\sin x-1}{x} = 0
+0
 $$
 
 </div>

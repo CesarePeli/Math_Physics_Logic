@@ -1,289 +1,143 @@
 ---
 layout: default
-date: 2025-08-29
+date: 2025-08-30
 title: "Solved Exercises — Limits with L’Hôpital’s Rule"
-meta-description: "Step-by-step worked examples using L’Hôpital’s rule: indeterminate forms 0/0 and ∞/∞, repeated applications, logarithmic tricks, and mixed exponential–trigonometric cases."
+meta-description: "Ten fully worked examples solved strictly with L’Hôpital’s rule: 0/0 and ∞/∞ forms, repeated applications, and algebraic rewrites to quotients."
 permalink: "/university/math/calculus-1/limits-hopital/"
 background_image: "/images/limiti.png"
+---
+
+### Hôpital's Theorem
+Let $f$, $g$ be two functions defined in a neighborhood of $c$, except possibly at $c$, such that
+$$ \lim_{x \to c} f(x) = \lim_{x \to c} g(x) = L, $$
+with $L = 0$ or $L = +\infty$ or $L = -\infty$.  
+If $f$ and $g$ are differentiable in a neighborhood of $c$, except possibly at $c$, with $g' \neq 0$, and if the following limit exists (finite or infinite):
+$$ \lim_{x \to c} \frac{f'(x)}{g'(x)}, $$
+then also
+$$ \lim_{x \to c} \frac{f(x)}{g(x)} $$
+exists and equals the previous one.
 
 ---
 
-<div class="content-box">
+## Solved Exercises
 
-## Theoretical Recall
+### Exercise 1
+$$ \lim_{x \to 0}\frac{e^{x^{x}}-e}{x}. $$
 
-**L’Hôpital’s Rule (basic form).** Let $I$ be an open interval containing $a$ (possibly $\pm\infty$). Suppose $f$ and $g$ are differentiable on $I \setminus \{a\}$, and
-
-$$
-\lim_{x\to a} f(x) = \lim_{x\to a} g(x) = 0 \quad \text{or} \quad |f(x)|, |g(x)| \to +\infty.
-$$
-
-If $g'(x) \neq 0$ near $a$ and the limit $\displaystyle \lim_{x\to a} \frac{f'(x)}{g'(x)}$ exists (finite or infinite), then
-
-$$
-\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}.
-$$
-
-**Notes and cautions**
-- The rule applies **only** to $0/0$ or $\infty/\infty$.
-- It may be applied **repeatedly**, provided the hypotheses remain valid at each step.
-- Other indeterminate forms ($0\cdot\infty$, $\infty-\infty$, $1^{\infty}$, $0^0$, $\infty^0$) must be **algebraically transformed** into a quotient first.
-- Prefer simpler tools (factoring, rationalization, notable limits, Taylor) when they provide a shorter proof.
-
-</div>
-
-<div class="content-box">
-
-## Exercises
-
-### Exercise 1 — Triple application at 0
-$$
-\lim_{x\to 0} \frac{\sin x - x}{x^3}
-$$
-
-**Solution:**
-
-Indeterminate form $0/0$. Apply L’Hôpital repeatedly:
-
-$$
-\frac{\sin x - x}{x^3}
-\xrightarrow{(1)} \frac{\cos x - 1}{3x^2}
-\xrightarrow{(2)} \frac{-\sin x}{6x}
-\xrightarrow{(3)} \frac{-\cos x}{6}\Big|_{x=0} = -\frac{1}{6}.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to 0} \frac{\sin x - x}{x^3} = -\tfrac{1}{6}
-$$
+**Solution**  
+We have an indeterminate form $\tfrac{0}{0}$, so we apply Hôpital's rule.  
+$$(x^{x})' = (e^{x \log x})' = (\log x +1)x^{x}.$$  
+Thus
+$$ \lim_{x \to 0}\frac{e^{x^{x}}-e}{x} \overset{H}{=} \lim_{x \to 0} (\log x+1)x^{x} e^{x^x} = -\infty. $$  
+Indeed,
+$$ \lim_{x \to 0} x^x = \lim_{x \to 0} e^{x \log x} = e^0 = 1. $$
 
 ---
 
-### Exercise 2 — Twice at 0 (exponential)
-$$
-\lim_{x\to 0} \frac{e^x - 1 - x}{x^2}
-$$
+### Exercise 2
+$$ \lim_{x \to 0}\biggl(\frac{\sin x}{x}\biggr)^{\tfrac{1}{x^{2}}}. $$
 
-**Solution:**
-
-Form $0/0$. Differentiate numerator and denominator twice:
-
-$$
-\xrightarrow{(1)} \frac{e^x - 1}{2x}
-\xrightarrow{(2)} \frac{e^x}{2}\Big|_{x=0} = \frac{1}{2}.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to 0} \frac{e^x - 1 - x}{x^2} = \tfrac{1}{2}
-$$
+**Solution**  
+$$ \lim_{x \to 0}\biggl(\frac{\sin x}{x}\biggr)^{\tfrac{1}{x^{2}}}
+= \lim_{x \to 0} e^{\frac{\log(\sin x/x)}{x^2}}
+= e^{-1/6}. $$  
 
 ---
 
-### Exercise 3 — Growth comparison at $+\infty$
-$$
-\lim_{x\to +\infty} \frac{\log x}{\sqrt{x}}
-$$
+### Exercise 3
+$$ \lim_{x \to 0}\frac{e^{\sin x}-\cos x}{e^{\cos x}-e\log(x+e)}. $$
 
-**Solution:**
-
-Indeterminate $\infty/\infty$. One application suffices:
-
-$$
-\frac{\log x}{\sqrt{x}} \xrightarrow{(1)} \frac{1/x}{\tfrac{1}{2}x^{-1/2}} = \frac{2}{\sqrt{x}} \to 0.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to +\infty} \frac{\log x}{\sqrt{x}} = 0
-$$
+**Solution**  
+Indeterminate form $\tfrac{0}{0}$:  
+$$ \lim_{x \to 0}\frac{e^{\sin x}-\cos x}{e^{\cos x}-e\log(x+e)}
+\overset{H}{=} \lim_{x \to 0} \frac{\cos x \, e^{\sin x} + \sin x}{-\sin x \, e^{\cos x} - \tfrac{e}{x+e}} = -1. $$
 
 ---
 
-### Exercise 4 — Tangent vs. identity
-$$
-\lim_{x\to 0} \frac{\tan x - x}{x^3}
-$$
+### Exercise 4
+$$ \lim_{x \to -1}\frac{e^{\sqrt{1-3x}}-e^{\sqrt{3-x}}}{e^{x}-e^{2x+1}}. $$
 
-**Solution:**
-
-Form $0/0$. Differentiate three times:
-
-$$
-\xrightarrow{(1)} \frac{\sec^2 x - 1}{3x^2} = \frac{\tan^2 x}{3x^2}
-\xrightarrow{(2)} \frac{2\tan x\,\sec^2 x}{6x} = \frac{\tan x\,\sec^2 x}{3x}
-\xrightarrow{(3)} \frac{\sec^4 x + 2\tan^2 x\,\sec^2 x}{3}\Big|_{x=0} = \frac{1}{3}.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to 0} \frac{\tan x - x}{x^3} = \tfrac{1}{3}
-$$
+**Solution**  
+$$ \lim_{x \to -1}\frac{e^{\sqrt{1-3x}}-e^{\sqrt{3-x}}}{e^{x}-e^{2x+1}}
+\overset{H}{=} \frac{-\tfrac{3}{4}e^{2}+\tfrac{e^{2}}{4}}{\tfrac{1}{e}-\tfrac{2}{e}}
+= \frac{e^3}{2}. $$
 
 ---
 
-### Exercise 5 — Product $0\cdot\infty$ turned into a quotient
-$$
-\lim_{x\to 0^+} x\,\log\big((1+x)^{1/x}\big)
-$$
+### Exercise 5
+$$ \lim_{x \to 1^{-}} \log(x)\log(1-x). $$
 
-**Solution:**
-
-First evaluate the bounded factor:
-
-$$
-\log\big((1+x)^{1/x}\big) = \frac{\log(1+x)}{x} \to 1.
-$$
-
-Hence the product behaves like $x\cdot 1$ and tends to 0. (No L’Hôpital needed after the algebraic insight.)
-
-**Final Result:**
-
-$$
-\lim_{x\to 0^+} x\,\log\big((1+x)^{1/x}\big) = 0
-$$
+**Solution**  
+$$ \lim_{x \to 1^{-}} \log(x)\log(1-x) 
+= \lim_{x \to 1^{-}} \frac{\log(1-x)}{1/\log x}
+\overset{H}{=} \lim_{x \to 1^{-}} \frac{-\tfrac{1}{1-x}}{-1/(x \log^2 x)} = 0. $$
 
 ---
 
-### Exercise 6 — Logarithmic trick for $1^{\infty}$
-$$
-\lim_{x\to 0^+} \big(1+3x\big)^{\,2/x}
-$$
+### Exercise 6
+$$ \lim_{x \to 3^{+}}\frac{\sqrt{x}-\sqrt{3}+\sqrt{x-3}}{\sqrt{x^{2}-9}}. $$
 
-**Solution:**
+**Solution**  
+$$ \lim_{x \to 3^{+}}\frac{\sqrt{x}-\sqrt{3}+\sqrt{x-3}}{\sqrt{x^{2}-9}}
+= \frac{1}{\sqrt{6}}. $$  
 
-Set $y(x) = (1+3x)^{2/x}$. Work with logs:
-
-$$
-\log y(x) = \frac{2}{x}\,\log(1+3x).
-$$
-
-Indeterminate $0/0$. Apply L’Hôpital:
-
-$$
-\lim_{x\to 0^+} \frac{2\,\log(1+3x)}{x}
-= \lim_{x\to 0^+} 2\,\frac{\tfrac{3}{1+3x}}{1} = 6.
-$$
-
-Therefore $\log y(x) \to 6$ and
-
-**Final Result:**
-
-$$
-\lim_{x\to 0^+} (1+3x)^{2/x} = e^6
-$$
+Indeed,
+$$ \lim_{x \to 3^+} \frac{\sqrt{x}-\sqrt{3}}{\sqrt{x-3}}
+\overset{H}{=} \lim_{x \to 3^+} \frac{1/(2\sqrt{x})}{1/(2\sqrt{x-3})} = 0. $$
 
 ---
 
-### Exercise 7 — Classic $0\cdot\infty$ example
-$$
-\lim_{x\to 0^+} x\,\log x
-$$
+### Exercise 7
+$$ \lim_{x \to 0^{+}}\frac{x^{2}-\arctan(x^{2})}{x(1-\cos x)^{3}}. $$
 
-**Solution:**
-
-Rewrite as a quotient:
-
-$$
-\frac{\log x}{1/x} \quad (x\to 0^+).
-$$
-
-Form $-\infty/\infty$. L’Hôpital gives
-
-$$
-\lim_{x\to 0^+} \frac{1/x}{-1/x^2} = \lim_{x\to 0^+} -x = 0.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to 0^+} x\,\log x = 0
-$$
+**Solution**  
+$$ \lim_{x \to 0^{+}}\frac{x^{2}-\arctan(x^{2})}{x(1-\cos x)^{3}}
+\overset{H}{=}\lim_{x \to 0^+} \frac{2x - \tfrac{2x}{1+x^4}}{(1-\cos x)^3+3x(1-\cos x)^2\sin x} = +\infty. $$  
 
 ---
 
-### Exercise 8 — $\infty-\infty$ reduced by rationalization
-$$
-\lim_{x\to +\infty} \big(\sqrt{x^2+x} - x\big)
-$$
+### Exercise 8
+$$ \lim_{x \to 0}\frac{e^{x}-\cos x-\sin x}{e^{x^{2}}-e^{x^{3}}}. $$
 
-**Solution:**
+**Solution**  
+Using Taylor expansions near $0$:  
+$$ e^x = 1+x+\tfrac{x^2}{2}+\tfrac{x^3}{6}+o(x^3), \qquad 
+\cos x = 1-\tfrac{x^2}{2}+o(x^2), \qquad
+\sin x = x-\tfrac{x^3}{6}+o(x^3). $$  
 
-Multiply and divide by the conjugate:
-
-$$
-\sqrt{x^2+x} - x = \frac{x}{\sqrt{x^2+x}+x}.
-$$
-
-Now the limit is of type $\infty/\infty$. Apply L’Hôpital (or divide numerator/denominator by $x$):
-
-$$
-\lim_{x\to +\infty} \frac{x}{\sqrt{x^2+x}+x} = \lim_{x\to +\infty} \frac{1}{\sqrt{1+\tfrac{1}{x}}+1} = \tfrac{1}{2}.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to +\infty} (\sqrt{x^2+x} - x) = \tfrac{1}{2}
-$$
+So numerator $\sim x^2 + \tfrac{x^3}{6}$ and denominator $\sim x^2 - x^3$.  
+Hence limit $=1$.
 
 ---
 
-### Exercise 9 — Exponential vs. polynomial at $+\infty$
-$$
-\lim_{x\to +\infty} \frac{x^3}{e^{x}}
-$$
+### Exercise 9
+$$ \lim_{x \to 0}\frac{1-\cos x+\log(\cos x)}{x^{4}}. $$
 
-**Solution:**
+**Solution**  
+Expand:  
+$$ \cos x = 1-\tfrac{x^2}{2}+\tfrac{x^4}{24}+o(x^4), $$
+$$ \log(\cos x) = -\tfrac{x^2}{2} - \tfrac{x^4}{12}+o(x^4). $$  
 
-Form $\infty/\infty$. Apply L’Hôpital three times:
-
-$$
-\frac{x^3}{e^x} \xrightarrow{(1)} \frac{3x^2}{e^x} \xrightarrow{(2)} \frac{6x}{e^x} \xrightarrow{(3)} \frac{6}{e^x} \to 0.
-$$
-
-**Final Result:**
-
-$$
-\lim_{x\to +\infty} \frac{x^3}{e^x} = 0
-$$
+So numerator $\sim -\tfrac{1}{8}x^4$, thus
+$$ \lim_{x \to 0}\frac{1-\cos x+\log(\cos x)}{x^4} = -\tfrac{1}{8}. $$
 
 ---
 
-### Exercise 10 — Mixed exponent $1^{\infty}$ with trigonometric factor
-$$
-\lim_{x\to +\infty} \Big(1+\tfrac{1}{x}\Big)^{\,x\,\sin(1/x)}
-$$
+### Exercise 10
+$$ \lim_{x \to 0}\frac{e^{x^{2}}-\cos^{2}x}{\sin^{2}x}. $$
 
-**Solution:**
+**Solution (two methods)**  
 
-Let $y(x) = (1+1/x)^{x\sin(1/x)}$. Then
+**By Hôpital:**  
+$$ \lim_{x \to 0}\frac{e^{x^{2}}-\cos^{2}x}{\sin^{2}x}
+\overset{H}{=}\lim_{x \to 0}\frac{2xe^{x^2}+2\cos x \sin x}{2\cos x \sin x} 
+= \lim_{x \to 0} \frac{x}{\sin x}\cdot\frac{e^{x^2}}{\cos x} +1 = 2. $$
 
-$$
-\log y(x) = x\sin(1/x)\,\log\Big(1+\tfrac{1}{x}\Big).
-$$
+**By Taylor:**  
+$$ e^{x^2}=1+x^2+o(x^2),\qquad \cos^2 x = 1-x^2+o(x^2). $$  
+So numerator $\sim 2x^2$, denominator $\sim x^2$, ratio $=2$.  
 
-Use the expansions as $x\to+\infty$: $\sin(1/x)\sim 1/x$, $\log(1+1/x)\sim 1/x$. Hence
-
-$$
-\log y(x) \sim x\cdot \tfrac{1}{x}\cdot \tfrac{1}{x} = \tfrac{1}{x} \to 0.
-$$
-
-Therefore $\log y(x)\to 0$ and
-
-**Final Result:**
-
-$$
-\lim_{x\to +\infty} \Big(1+\tfrac{1}{x}\Big)^{x\sin(1/x)} = 1
-$$
-
-</div>
-
-
+---
 
 <div class="content-box">
 
@@ -302,4 +156,3 @@ $$
 - [Cauchy Problems for ODEs](/university/math/calculus-1/odes-cauchy/)  
 
 </div>
-

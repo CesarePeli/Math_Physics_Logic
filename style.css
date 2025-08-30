@@ -190,10 +190,12 @@ header nav a:hover,
   text-justify: inter-word;
 }
 
-/* Mobile: ritorna a sinistra per leggibilità */
+/* Mobile: ritorna a sinistra per leggibilità + più spazio tra paragrafi */
 @media screen and (max-width: 600px) {
   .content-box p {
     text-align: left;
     text-justify: auto;
+    margin-bottom: 1.2rem; /* respiro extra tra paragrafi */
   }
 }
+
