@@ -3,7 +3,7 @@ layout: default
 date: 2025-08-31
 title: "Solved Exercises — Sequences and Series of Functions"
 meta-description: "Uniform vs pointwise convergence, total convergence, power series radius and sums: 10 selected exercises with faithful solutions and author’s original remarks."
-permalink: "/university/math/calculus-1/sequences-and-series-of-functions/"
+permalink: "/university/math/calculus-1/series/"
 background_image: "/images/serie.png"
 featured: false
 ---
