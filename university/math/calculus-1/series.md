@@ -15,28 +15,28 @@ featured: false
 Let  
 
 $$
-A \subset \mathbb{R}, \qquad (f_n), \qquad f_n : A \to \mathbb{R}, \qquad f : A \to \mathbb{R}.
+A \subset \mathbb{R}, \qquad fₙ, \qquad fₙ : A \to \mathbb{R}, \qquad f : A \to \mathbb{R}.
 $$
 
 ---
-
 ### Pointwise convergence
-The sequence \(f_n\) converges **pointwise** to \(f\) on \(A\) if  
+The sequence fₙ converges **pointwise** to f on A if  
 
 $$
 \lim_{n \to \infty} f_n(x) = f(x), \qquad \forall x \in A.
 $$
 
-Equivalently: for every \(\varepsilon > 0\), there exists \(n_{\varepsilon,x}\) such that for all \(n > n_{\varepsilon,x}\),  
+Equivalently:  
 
 $$
-|f_n(x) - f(x)| < \varepsilon .
+\forall \varepsilon > 0, \ \exists n_{\varepsilon,x} : 
+\forall n > n_{\varepsilon,x}, \ |f_n(x)-f(x)| < \varepsilon .
 $$
 
 ---
 
 ### Uniform convergence
-The sequence \(f_n\) converges **uniformly** to \(f\) on \(A\) if  
+The sequence fₙ converges **uniformly** to f on A if  
 
 $$
 \forall \varepsilon > 0,\ \exists n_\varepsilon :\ 
@@ -58,9 +58,9 @@ $$
 ---
 
 ### Facts
-- Uniform convergence \(\Rightarrow\) pointwise convergence (not conversely).  
+- Uniform convergence ⇒ pointwise convergence (not conversely).  
 
-- If \( f_n \rightrightarrows f \) and each \( f_n \) is continuous on an interval \( I \), then \( f \) is continuous on \( I \).  
+- If fₙ ⇉ f and each fₙ is continuous on an interval I, then f is continuous on I.  
 
 - Limits commute with integrals:  
 
@@ -89,19 +89,19 @@ $$
 
 **Note.** When summing a power series, unless otherwise specified, sums are understood on intervals  
 $$
-[x_0 - \rho,\, x_0 + \rho], \quad 0 \leq \rho \leq r
+[x₀ - ρ,\, x₀ + ρ], \quad 0 \leq ρ \leq r
 $$  
-where \(r\) is the radius of convergence.
+where r is the radius of convergence.
 
 ---
 
-**Ex 1.** For \(x \in [0,1]\) and \(p \in \mathbb{R}\), consider  
+**Ex 1.** For x ∈ [0,1] and p ∈ ℝ, consider  
 
 $$
 f_n(x) = n^{p}\,x\,e^{-n x^{2}} .
 $$  
 
-Study pointwise and uniform convergence (as \(p\) varies).
+Study pointwise and uniform convergence (as p varies).
 
 **Solution:**  
 By comparison of infinitesimals,  
@@ -110,7 +110,7 @@ $$
 \lim_{n\to\infty} f_n(x) = 0 \quad \forall x \in [0,1],
 $$  
 
-so \( f_n \to 0 \) pointwise.  
+so fₙ → 0 pointwise.  
 
 For uniform convergence (the functions are continuous), compute the maximum:  
 
@@ -142,7 +142,7 @@ $$
 \end{cases}
 $$  
 
-**Observation:** The exponential decay dominates only if \(p < \tfrac12\).  
+**Observation:** The exponential decay dominates only if p < ½.  
 
 **Final Result:**  
 
@@ -153,7 +153,7 @@ $$
 
 ---
 
-**Ex 2.** For \(x \ge 0\),  
+**Ex 2.** For x ≥ 0,  
 
 $$
 f_n(x) = \sqrt[n]{\,n + x^{n}\,} .
@@ -172,23 +172,23 @@ x & x > 1 .
 \end{cases}
 $$  
 
-For uniform convergence on \([0,\infty)\):  
+For uniform convergence on [0,∞):  
 
-- On \([0,1]\):  
+- On [0,1]:  
 
 $$
 \alpha_{n,1} = \sup_{x\in[0,1]} |f_n(x)-1| 
 = \sqrt[n]{n+1}-1 \to 0 .
 $$  
 
-- On \([1,\infty)\):  
+- On [1,∞):  
 
 $$
 g_n(x) = (n+x^n)^{1/n} - x, \qquad 
 g_n'(x) = \left(\tfrac{n}{x^{n}}+1\right)^{\frac{1-n}{n}} - 1 < 0.
 $$  
 
-So \(g_n\) is decreasing and  
+So gₙ is decreasing and  
 
 $$
 \alpha_{n,2} = \sup_{x\in[1,\infty)} |f_n(x)-x|
@@ -201,7 +201,7 @@ $$
 \alpha_n = \sup_{x\in[0,\infty)} |f_n(x)-f(x)| \to 0 .
 $$  
 
-**Observation:** Uniform convergence holds globally, even though the pointwise limit function changes definition at \(x=1\).  
+**Observation:** Uniform convergence holds globally, even though the pointwise limit function changes definition at x=1.  
 
 **Final Result:**  
 
@@ -213,7 +213,7 @@ $$
 
 ---
 
-**Ex 3.** For \(x \in [0,1]\),  
+**Ex 3.** For x ∈ [0,1],  
 
 $$
 f_n(x) = n^{2} x^{n} (1-x^{4}) .
@@ -245,7 +245,7 @@ $$
 \;\to\; +\infty .
 $$  
 
-**Observation:** The growth of \(n^2\) prevents uniform convergence despite pointwise vanishing.  
+**Observation:** The growth of n² prevents uniform convergence despite pointwise vanishing.  
 
 **Final Result:**  
 
@@ -256,7 +256,7 @@ $$
 
 ---
 
-**Ex 4.** For \(x \in [0,1]\) and \(p \in \mathbb{R}\),  
+**Ex 4.** For x ∈ [0,1] and p ∈ ℝ,  
 
 $$
 f_n(x) = n^{p} x^{n} (1-x^{2}) .
@@ -298,7 +298,7 @@ $$
 \end{cases}
 $$  
 
-**Observation:** The balance between polynomial growth and exponential decay breaks precisely at \(p=1\).  
+**Observation:** The balance between polynomial growth and exponential decay breaks precisely at p=1.  
 
 **Final Result:**  
 
@@ -309,7 +309,7 @@ $$
 
 ---
 
-**Ex 5.** For \(x \in [0,1]\),  
+**Ex 5.** For x ∈ [0,1],  
 
 $$
 f_n(x) = \frac{\sin(nx)}{n} .
@@ -336,7 +336,7 @@ $$
 \alpha_n \le \frac{1}{n} \to 0 .
 $$  
 
-**Observation:** The sine oscillation, bounded by \(1\), ensures uniform convergence at the same rate as \(1/n\).  
+**Observation:** The sine oscillation, bounded by 1, ensures uniform convergence at the same rate as 1/n.  
 
 **Final Result:**  
 
@@ -347,7 +347,7 @@ $$
 
 ---
 
-**Ex 6.** For \(x \in \mathbb{R}\),  
+**Ex 6.** For x ∈ ℝ,  
 
 $$
 f_n(x) = \arctan(nx) .
@@ -365,9 +365,9 @@ $$
 \end{cases}
 $$  
 
-No uniform convergence on \(\mathbb{R}\) since the limit is discontinuous.  
+No uniform convergence on ℝ since the limit is discontinuous.  
 
-For any \(a > 0\):  
+For any a > 0:  
 
 $$
 \sup_{x \le -a} \left| f_n(x) + \frac{\pi}{2} \right|
@@ -379,7 +379,7 @@ $$
 = \frac{\pi}{2} - \arctan(na) \to 0 .
 $$  
 
-**Observation:** Uniform convergence holds only away from the discontinuity at \(x=0\).  
+**Observation:** Uniform convergence holds only away from the discontinuity at x=0.  
 
 **Final Result:**  
 
@@ -403,7 +403,7 @@ $$
 r = \infty ,
 $$  
 
-so absolute convergence for all \(x\).  
+so absolute convergence for all x.  
 
 Split:  
 
@@ -448,7 +448,7 @@ $$
 \qquad r = \tfrac13.
 $$  
 
-At \(x=\tfrac13\):  
+At x=⅓:  
 
 $$
 \sum \frac{2^{n}+3^{n}}{3^{n}}
@@ -456,7 +456,7 @@ $$
 
 diverges.  
 
-At \(x=-\tfrac13\):  
+At x=−⅓:  
 
 $$
 \sum \frac{2^{n}+3^{n}}{3^{n}}(-1)^{n}
@@ -487,7 +487,7 @@ $$
 r = 1, \qquad X = (-1,1).
 $$  
 
-For \(|x|<1\):  
+For |x|<1:  
 
 $$
 \sum_{n=1}^{\infty}(-1)^{n} n x^{2n-1}
@@ -529,7 +529,7 @@ $$
 = \frac{(1-x)\log(1-x)}{x^{2}} + \frac{1}{x}.
 $$  
 
-**Observation:** Double integration allows to reduce the denominator \((n+1)(n+2)\).  
+**Observation:** Double integration allows to reduce the denominator (n+1)(n+2).  
 
 **Final Result:**  
 
@@ -542,7 +542,6 @@ $$
 
 
 ---
-
 
 <div class="content-box">
 
