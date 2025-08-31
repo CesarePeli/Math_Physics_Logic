@@ -1,15 +1,5 @@
 ---
 layout: default
-date: 2025-08-29
-title: "Solved Exercises — Series"
-meta-description: "Solved exercises on numerical series with detailed solutions and original author’s remarks: geometric, harmonic, p-series, alternating, absolute, telescoping, integral, ratio, root, and power series."
-permalink: "/university/math/calculus-1/series/"
-background_image: "/images/serie.png"
-featured: true
----
-
----
-layout: default
 date: 2025-08-31
 title: "Solved Exercises — Sequences and Series of Functions"
 meta-description: "Uniform vs pointwise convergence, total convergence, power series radius and sums: 10 selected exercises with faithful solutions and author’s original remarks."
@@ -22,42 +12,73 @@ featured: false
 
 ## Theoretical Recall
 
-Let $A\subset\mathbb{R}$ and $(f_n)$ be a sequence of functions $f_n:A\to\mathbb{R}$, with $f:A\to\mathbb{R}$.
+Let $A \subset \mathbb{R}$ and $(f_n)$ be a sequence of functions $f_n:A\to\mathbb{R}$, with $f:A\to\mathbb{R}$.
 
-- **Pointwise convergence.** $f_n \to f$ pointwise on $A$ if for every $x\in A$,
-$$\lim_{n\to\infty} f_n(x)=f(x),$$
-i.e.
-$$\forall \varepsilon>0\ \exists n_{\varepsilon,x}:\ \forall n>n_{\varepsilon,x}\ |f_n(x)-f(x)|<\varepsilon.$$
+- **Pointwise convergence.**  
+  $f_n \to f$ pointwise on $A$ if  
+  $$
+  \forall x\in A:\ \lim_{n\to\infty} f_n(x)=f(x),
+  $$
+  i.e.  
+  $$
+  \forall \varepsilon>0,\ \exists n_{\varepsilon,x}:\ \forall n>n_{\varepsilon,x},\ |f_n(x)-f(x)|<\varepsilon.
+  $$
 
-- **Uniform convergence.** $f_n \rightrightarrows f$ on $A$ if
-$$\forall \varepsilon>0\ \exists n_\varepsilon:\ \forall n>n_\varepsilon,\ \forall x\in A,\ |f_n(x)-f(x)|<\varepsilon,$$
-equivalently, with $\alpha_n=\sup_{x\in A}|f_n(x)-f(x)|$, we have $\alpha_n\to 0$.
+- **Uniform convergence.**  
+  $f_n \rightrightarrows f$ on $A$ if  
+  $$
+  \forall \varepsilon>0,\ \exists n_\varepsilon:\ \forall n>n_\varepsilon,\ \forall x\in A,\ |f_n(x)-f(x)|<\varepsilon.
+  $$
 
-**Facts.** Uniform $\Rightarrow$ pointwise (not conversely). If $f_n \rightrightarrows f$ and each $f_n$ is continuous on an interval $I$, then $f$ is continuous on $I$; limits commute with integrals; if moreover $f_n\to f$ and $f'_n \rightrightarrows g$ with $f_n\in C^1(I)$, then $f\in C^1(I)$ and $f'=g$.
+Equivalently, setting $\alpha_n=\sup_{x\in A}|f_n(x)-f(x)|$, we have $\alpha_n\to0$.
+
+**Facts.** Uniform $\Rightarrow$ pointwise (not conversely).  
+If $f_n \rightrightarrows f$ and each $f_n$ is continuous on an interval $I$, then $f$ is continuous on $I$.  
+Limits commute with integrals.  
+If moreover $f_n \to f$ and $f'_n \rightrightarrows g$ with $f_n\in C^1(I)$, then $f\in C^1(I)$ and $f'=g$.
+
+---
 
 ### Series of functions
 
-Given $\sum_{n=0}^\infty f_n$, the partial sums are $s_N=\sum_{k=0}^N f_k$.  
-- **Pointwise convergence:** $s_N(x)\to s(x)$ for each $x$ in $B\subset A$.  
-- **Uniform convergence:** $\sup_{x\in B}|s_N(x)-s(x)|\to 0$.
+Given $\sum_{n=0}^\infty f_n$, the partial sums are $s_N=\sum_{k=0}^N f_k$.
 
-**Total convergence.** With $\beta_n=\sup_{x\in A}|f_n(x)|$, if $\sum \beta_n$ converges, then the series converges uniformly on $A$.
+- **Pointwise convergence:** $s_N(x)\to s(x)$ for each $x\in B\subset A$.  
+- **Uniform convergence:** $\sup_{x\in B}|s_N(x)-s(x)|\to0$.
+
+**Total convergence.**  
+With $\beta_n=\sup_{x\in A}|f_n(x)|$, if $\sum \beta_n$ converges, then the series converges uniformly on $A$.
+
+---
 
 ### Power series
 
-A power series has the form $\sum_{n=0}^\infty a_n(x-x_0)^n$. If the radius of convergence is $r$:
-1. $|x-x_0|<r \Rightarrow$ absolute convergence;
-2. $|x-x_0|>r \Rightarrow$ divergence;
-3. For any $0<\rho<r$, total (hence uniform) convergence on $[x_0-\rho,\,x_0+\rho]$.
-
-Root/ratio tests give $r$ via
+A power series has the form
 $$
-\limsup_{n\to\infty}\sqrt[n]{|a_n|}=L \quad\text{or}\quad \lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=L,\qquad
-r=\begin{cases}1/L & L\neq0,\\ \infty & L=0,\\ 0 & L=\infty.\end{cases}
+\sum_{n=0}^\infty a_n (x-x_0)^n.
+$$
+
+If the radius of convergence is $r$:
+
+1. $|x-x_0|<r \ \Rightarrow$ absolute convergence;  
+2. $|x-x_0|>r \ \Rightarrow$ divergence;  
+3. For any $0<\rho<r$, total (hence uniform) convergence holds on $[x_0-\rho,\,x_0+\rho]$.
+
+Root or ratio test give
+$$
+\limsup_{n\to\infty}\sqrt[n]{|a_n|}=L \quad\text{or}\quad
+\lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=L,
+$$
+with radius
+$$
+r=\begin{cases}
+1/L & L\neq0,\\
+\infty & L=0,\\
+0 & L=\infty.
+\end{cases}
 $$
 
 </div>
-
 <div class="content-box">
 
 ## Exercises
