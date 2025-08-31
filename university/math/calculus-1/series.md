@@ -81,271 +81,465 @@ f \in C^1(I), \qquad f' = g .
 $$
 
 </div>
+
+
 <div class="content-box">
 
 ## Exercises
 
-**Note.** When summing a power series, unless otherwise specified, sums are understood on intervals $[x_0-\rho,\,x_0+\rho]$ with $0\le \rho\le r$ (where $r$ is the radius of convergence).
+**Note.** When summing a power series, unless otherwise specified, sums are understood on intervals  
+$$
+[x_0 - \rho,\, x_0 + \rho], \quad 0 \leq \rho \leq r
+$$  
+where \(r\) is the radius of convergence.
 
 ---
 
-**Ex 1.** For $x\in[0,1]$ and $p\in\mathbb{R}$, consider
+**Ex 1.** For \(x \in [0,1]\) and \(p \in \mathbb{R}\), consider  
+
 $$
-f_n(x)=n^{p}\,x\,e^{-n x^{2}}.
-$$
-Study pointwise and uniform convergence (as $p$ varies).
+f_n(x) = n^{p}\,x\,e^{-n x^{2}} .
+$$  
+
+Study pointwise and uniform convergence (as \(p\) varies).
 
 **Solution:**  
-By comparison of infinitesimals, $\lim_{n\to\infty} f_n(x)=0$ for each $x\in[0,1]$, so $f_n\to 0$ pointwise. For uniform convergence (the functions are continuous), find the maximum:
+By comparison of infinitesimals,  
+
 $$
-f_n'(x)=n^{p}e^{-n x^{2}}(1-2n x^{2}).
+\lim_{n\to\infty} f_n(x) = 0 \quad \forall x \in [0,1],
+$$  
+
+so \( f_n \to 0 \) pointwise.  
+
+For uniform convergence (the functions are continuous), compute the maximum:  
+
 $$
-The maximum occurs at $x=\tfrac{1}{\sqrt{2n}}$, hence
+f_n'(x) = n^{p} e^{-n x^{2}} (1 - 2n x^{2}).
+$$  
+
+The maximum occurs at  
+
 $$
-\alpha_n=\sup_{x\in[0,1]}|f_n(x)|=\frac{e^{-1/2}}{\sqrt{2}}\,n^{\,p-\frac12},
+x = \frac{1}{\sqrt{2n}} ,
+$$  
+
+hence  
+
 $$
-so
+\alpha_n = \sup_{x \in [0,1]} |f_n(x)| 
+= \frac{e^{-1/2}}{\sqrt{2}} \, n^{\,p-\tfrac12}.
+$$  
+
+Therefore  
+
 $$
-\lim_{n\to\infty}\alpha_n=
+\lim_{n \to \infty} \alpha_n =
 \begin{cases}
-0 & p<\tfrac12,\\[2pt]
-\dfrac{e^{-1/2}}{\sqrt{2}} & p=\tfrac12,\\[6pt]
-+\infty & p>\tfrac12.
+0 & p < \tfrac12, \\[6pt]
+\dfrac{e^{-1/2}}{\sqrt{2}} & p = \tfrac12, \\[6pt]
++\infty & p > \tfrac12 .
 \end{cases}
-$$
+$$  
+
+**Observation:** The exponential decay dominates only if \(p < \tfrac12\).  
 
 **Final Result:**  
+
 $$
-\text{Pointwise: } f_n\to0.\quad \text{Uniform on }[0,1]\ \text{iff }p<\tfrac12.
+\text{Pointwise: } f_n \to 0. 
+\quad \text{Uniform on } [0,1] \ \text{iff } p < \tfrac12 .
 $$
 
 ---
 
-**Ex 2.** For $x\ge0$,
+**Ex 2.** For \(x \ge 0\),  
+
 $$
-f_n(x)=\sqrt[n]{\,n+x^{n}\,}.
-$$
+f_n(x) = \sqrt[n]{\,n + x^{n}\,} .
+$$  
+
 Study pointwise and uniform convergence.
 
 **Solution:**  
-Pointwise,
+Pointwise limit:  
+
 $$
-\lim_{n\to\infty}f_n(x)=
+\lim_{n\to\infty} f_n(x) =
 \begin{cases}
-1,& x\in[0,1],\\
-x,& x>1.
+1 & x \in [0,1], \\[6pt]
+x & x > 1 .
 \end{cases}
-$$
-For uniform convergence on $[0,\infty)$ split:
+$$  
 
-- On $[0,1]$, $f_n(x)-1$ is increasing, so
-$\alpha_{n,1}=\sup_{[0,1]}|f_n-1|=\sqrt[n]{n+1}-1\to0$.
+For uniform convergence on \([0,\infty)\):  
 
-- On $[1,\infty)$, with $g_n(x)=(n+x^n)^{1/n}-x$,
-$$
-g_n'(x)=\Bigl(\tfrac{n}{x^{n}}+1\Bigr)^{\!\frac{1-n}{n}}-1<0,
-$$
-so $g_n$ is decreasing and
-$\alpha_{n,2}=\sup_{[1,\infty)}|f_n-x|=\sqrt[n]{n+1}-1\to0$.
+- On \([0,1]\):  
 
-Thus $\alpha_n=\sup_{[0,\infty)}|f_n-f|\to0$.
+$$
+\alpha_{n,1} = \sup_{x\in[0,1]} |f_n(x)-1| 
+= \sqrt[n]{n+1}-1 \to 0 .
+$$  
+
+- On \([1,\infty)\):  
+
+$$
+g_n(x) = (n+x^n)^{1/n} - x, \qquad 
+g_n'(x) = \left(\tfrac{n}{x^{n}}+1\right)^{\frac{1-n}{n}} - 1 < 0.
+$$  
+
+So \(g_n\) is decreasing and  
+
+$$
+\alpha_{n,2} = \sup_{x\in[1,\infty)} |f_n(x)-x|
+= \sqrt[n]{n+1}-1 \to 0 .
+$$  
+
+Thus  
+
+$$
+\alpha_n = \sup_{x\in[0,\infty)} |f_n(x)-f(x)| \to 0 .
+$$  
+
+**Observation:** Uniform convergence holds globally, even though the pointwise limit function changes definition at \(x=1\).  
 
 **Final Result:**  
+
 $$
-\text{Pointwise: } f_n\to f,\ f(x)=\begin{cases}1,&x\in[0,1],\\ x,&x>1.\end{cases}
-\quad \text{Uniform on }[0,\infty).
+\text{Pointwise: } f_n \to f,\ 
+f(x) = \begin{cases} 1 & x \in [0,1], \\ x & x > 1. \end{cases} 
+\quad \text{Uniform on } [0,\infty) .
 $$
 
 ---
 
-**Ex 3.** For $x\in[0,1]$,
+**Ex 3.** For \(x \in [0,1]\),  
+
 $$
-f_n(x)=n^{2}x^{n}(1-x^{4}).
-$$
-Study pointwise and uniform convergence.
+f_n(x) = n^{2} x^{n} (1-x^{4}) .
+$$  
 
 **Solution:**  
-Clearly $f_n(x)\to0$ pointwise. For uniformity, maximize:
+Clearly  
+
 $$
-f_n'(x)=n^{2}x^{n-1}[n-(n+4)x^{4}],
+f_n(x) \to 0 \quad \forall x \in [0,1].
+$$  
+
+For uniform convergence,  
+
 $$
-with maximizer $x=\bigl(\tfrac{n}{n+4}\bigr)^{1/4}$. Then
+f_n'(x) = n^{2} x^{n-1} \bigl( n - (n+4)x^{4} \bigr).
+$$  
+
+The maximum is at  
+
 $$
-\alpha_n=n^{2}\Bigl(\frac{n}{n+4}\Bigr)^{\!n/4}\frac{4}{n+4}\to+\infty,
+x = \left(\frac{n}{n+4}\right)^{1/4},
+$$  
+
+hence  
+
 $$
-hence no uniform convergence.
+\alpha_n = n^{2} \left( \frac{n}{n+4} \right)^{n/4} \frac{4}{n+4}
+\;\to\; +\infty .
+$$  
+
+**Observation:** The growth of \(n^2\) prevents uniform convergence despite pointwise vanishing.  
 
 **Final Result:**  
+
 $$
-\text{Pointwise: } f_n\to0,\qquad \text{not uniform on }[0,1].
+\text{Pointwise: } f_n \to 0, 
+\qquad \text{Not uniform on } [0,1].
 $$
 
 ---
 
-**Ex 4.** For $x\in[0,1]$ and $p\in\mathbb{R}$,
+**Ex 4.** For \(x \in [0,1]\) and \(p \in \mathbb{R}\),  
+
 $$
-f_n(x)=n^{p}x^{n}(1-x^{2}).
-$$
-Study pointwise and uniform convergence as $p$ varies.
+f_n(x) = n^{p} x^{n} (1-x^{2}) .
+$$  
 
 **Solution:**  
-Pointwise $f_n(x)\to0$. For uniformity:
+Pointwise,  
+
 $$
-f_n'(x)=n^{p}x^{n-1}[\,n-(n+2)x^{2}\,],
+f_n(x) \to 0 .
+$$  
+
+Derivative:  
+
 $$
-maximum at $x=\sqrt{n/(n+2)}$, hence
+f_n'(x) = n^{p} x^{n-1} \bigl( n - (n+2)x^{2} \bigr).
+$$  
+
+Maximum at  
+
 $$
-\alpha_n=n^{p}\Bigl(\frac{n}{n+2}\Bigr)^{\!n/2}\frac{2}{n+2}\ \xrightarrow[n\to\infty]{}\ 
+x = \sqrt{\tfrac{n}{n+2}} .
+$$  
+
+So  
+
+$$
+\alpha_n = n^{p} \left(\frac{n}{n+2}\right)^{n/2} \frac{2}{n+2}.
+$$  
+
+Hence  
+
+$$
+\alpha_n \to
 \begin{cases}
-0,& p<1,\\[2pt]
-\dfrac{2}{e},& p=1,\\[4pt]
-+\infty,& p>1.
+0 & p < 1, \\[6pt]
+\dfrac{2}{e} & p = 1, \\[6pt]
++\infty & p > 1 .
 \end{cases}
-$$
+$$  
+
+**Observation:** The balance between polynomial growth and exponential decay breaks precisely at \(p=1\).  
 
 **Final Result:**  
+
 $$
-\text{Pointwise: } f_n\to0,\qquad \text{uniform on }[0,1]\ \text{iff }p<1.
+\text{Pointwise: } f_n \to 0, 
+\qquad \text{Uniform on } [0,1] \ \text{iff } p < 1 .
 $$
 
 ---
 
-**Ex 5.** For $x\in[0,1]$,
+**Ex 5.** For \(x \in [0,1]\),  
+
 $$
-f_n(x)=\frac{\sin(nx)}{n}.
-$$
-Study the behavior.
+f_n(x) = \frac{\sin(nx)}{n} .
+$$  
 
 **Solution:**  
-Using notable limits, $\lim_{n\to\infty}f_n(x)=0$ pointwise. For uniform convergence:
+By notable limits,  
+
 $$
-f_n'(x)=\cos(nx),
+\lim_{n\to\infty} f_n(x) = 0 ,
+$$  
+
+so pointwise convergence holds.  
+
+Since  
+
 $$
-and the (claimed) point of maximum is $x=n\pi$. Thus
+|f_n(x)| \le \frac{1}{n},
+$$  
+
+we have  
+
 $$
-\alpha_n=\frac{\sin(n^{2}\pi)}{n}\to0,
-$$
-hence uniform convergence.
+\alpha_n \le \frac{1}{n} \to 0 .
+$$  
+
+**Observation:** The sine oscillation, bounded by \(1\), ensures uniform convergence at the same rate as \(1/n\).  
 
 **Final Result:**  
+
 $$
-\text{Pointwise: } f_n\to0,\qquad \text{uniform on }[0,1].
+\text{Pointwise: } f_n \to 0, 
+\qquad \text{Uniform on } [0,1].
 $$
 
 ---
 
-**Ex 6.** For $x\in\mathbb{R}$,
+**Ex 6.** For \(x \in \mathbb{R}\),  
+
 $$
-f_n(x)=\arctan(nx).
-$$
-Study the behavior and uniform convergence on subsets.
+f_n(x) = \arctan(nx) .
+$$  
 
 **Solution:**  
-Pointwise,
+Pointwise limit:  
+
 $$
-\lim_{n\to\infty}f_n(x)=
+\lim_{n\to\infty} f_n(x) =
 \begin{cases}
-\frac{\pi}{2},& x>0,\\[2pt]
-0,& x=0,\\[2pt]
--\frac{\pi}{2},& x<0.
+\frac{\pi}{2} & x > 0, \\[6pt]
+0 & x = 0, \\[6pt]
+-\frac{\pi}{2} & x < 0 .
 \end{cases}
+$$  
+
+No uniform convergence on \(\mathbb{R}\) since the limit is discontinuous.  
+
+For any \(a > 0\):  
+
 $$
-Since $f_n$ are continuous and the limit is discontinuous, there is no uniform convergence on $\mathbb{R}$. The functions are odd and increasing:
+\sup_{x \le -a} \left| f_n(x) + \frac{\pi}{2} \right|
+= \frac{\pi}{2} - \arctan(na) \to 0 ,
+$$  
+
 $$
-f_n'(x)=\frac{n}{1+n^{2}x^{2}}>0.
-$$
-For any $a>0$,
-$$
-\sup_{x\le -a}\Bigl|f_n(x)+\frac{\pi}{2}\Bigr|=\frac{\pi}{2}-\arctan(na)\to0,\quad
-\sup_{x\ge a}\Bigl|f_n(x)-\frac{\pi}{2}\Bigr|=\frac{\pi}{2}-\arctan(na)\to0.
-$$
+\sup_{x \ge a} \left| f_n(x) - \frac{\pi}{2} \right|
+= \frac{\pi}{2} - \arctan(na) \to 0 .
+$$  
+
+**Observation:** Uniform convergence holds only away from the discontinuity at \(x=0\).  
 
 **Final Result:**  
+
 $$
-\text{No uniform convergence on }\mathbb{R},\ \text{but uniform on }[a,\infty)\ \text{and }(-\infty,-a]\ \forall a>0.
+\text{No uniform convergence on } \mathbb{R}, 
+\quad \text{Uniform on } [a,\infty),\ (-\infty,-a] \ \forall a>0 .
 $$
 
 ---
 
-**Ex 7.** Study convergence and compute the sum of
+**Ex 7.** Study convergence and compute the sum of  
+
 $$
 \sum_{n=1}^{\infty}\frac{n+1}{n!}\,x^{n},\qquad x\in\mathbb{R}.
-$$
+$$  
 
 **Solution:**  
-Ratio test gives radius $r=\infty$; absolute (and total on $[-p,p]$) convergence for all $x$. Split:
+Ratio test:  
+
 $$
-\sum_{n=1}^\infty \frac{n}{n!}x^{n}=x\sum_{n=1}^\infty\frac{x^{n-1}}{(n-1)!}=xe^{x},\qquad
-\sum_{n=1}^\infty \frac{x^{n}}{n!}=e^{x}-1.
+r = \infty ,
+$$  
+
+so absolute convergence for all \(x\).  
+
+Split:  
+
 $$
-Thus $s(x)=xe^{x}+e^{x}-1$. Alternatively, integrate termwise and differentiate back.
+\sum_{n=1}^\infty \frac{n}{n!} x^{n}
+= x \sum_{n=1}^\infty \frac{x^{n-1}}{(n-1)!}
+= x e^{x},
+$$  
+
+$$
+\sum_{n=1}^\infty \frac{x^{n}}{n!} = e^{x} - 1 .
+$$  
+
+Thus  
+
+$$
+s(x) = x e^{x} + e^{x} - 1 .
+$$  
+
+**Observation:** The manipulation uses termwise differentiation/integration of power series.  
 
 **Final Result:**  
+
 $$
-\sum_{n=1}^{\infty}\frac{(n+1)}{n!}\,x^{n}=e^{x}(1+x)-1.
+\sum_{n=1}^{\infty}\frac{n+1}{n!}\,x^{n} 
+= e^{x}(1+x) - 1 .
 $$
 
 ---
 
-**Ex 8.** Study the power series
+**Ex 8.** Study the series  
+
 $$
-\sum_{n=1}^{\infty}\bigl(2^{n}+3^{n}\bigr)\,x^{n}.
-$$
+\sum_{n=1}^{\infty}(2^{n}+3^{n})\,x^{n}.
+$$  
 
 **Solution:**  
-By ratio, $\lim\frac{a_{n+1}}{a_n}=3$, so $r=\tfrac13$.  
-At $x=\tfrac13$, $\sum \frac{2^{n}+3^{n}}{3^{n}}$ fails the necessary condition.  
-At $x=-\tfrac13$, $\sum \frac{2^{n}+3^{n}}{3^{n}}(-1)^{n}$ does not converge by Leibniz here (as stated in the source).
+Ratio test:  
+
+$$
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n} = 3,
+\qquad r = \tfrac13.
+$$  
+
+At \(x=\tfrac13\):  
+
+$$
+\sum \frac{2^{n}+3^{n}}{3^{n}}
+$$  
+
+diverges.  
+
+At \(x=-\tfrac13\):  
+
+$$
+\sum \frac{2^{n}+3^{n}}{3^{n}}(-1)^{n}
+$$  
+
+does not converge.  
+
+**Observation:** Even if the radius is finite, both endpoints fail here.  
 
 **Final Result:**  
+
 $$
-\text{Convergence set }X=\Bigl(-\tfrac13,\tfrac13\Bigr).
+\text{Convergence set } X = \Bigl(-\tfrac{1}{3},\tfrac{1}{3}\Bigr).
 $$
 
 ---
 
-**Ex 9.** Study and sum
+**Ex 9.** Study and sum  
+
 $$
 \sum_{n=1}^{\infty}(-1)^{n}\,n\,x^{2n-1}.
-$$
+$$  
 
 **Solution:**  
-Root test yields radius $1$; $X=(-1,1)$. For $|x|<1$,
-\[
-\sum_{n=1}^{\infty}(-1)^{n}n x^{2n-1}
+Root test:  
+
+$$
+r = 1, \qquad X = (-1,1).
+$$  
+
+For \(|x|<1\):  
+
+$$
+\sum_{n=1}^{\infty}(-1)^{n} n x^{2n-1}
 = D\!\left[\sum_{n=1}^{\infty}\frac{(-1)^{n}}{2}x^{2n}\right]
-= D\!\left[\frac12\sum_{n=0}^{\infty}(-x^{2})^{n}\right]
 = D\!\left[\frac{1}{2(1+x^{2})}\right]
-= -\frac{x}{(1+x^{2})^{2}}.
-\]
+= -\frac{x}{(1+x^{2})^{2}} .
+$$  
+
+**Observation:** Differentiating a simple geometric series is the key step.  
 
 **Final Result:**  
+
 $$
-\sum_{n=1}^{\infty}(-1)^{n}n x^{2n-1}=-\dfrac{x}{(1+x^{2})^{2}},\qquad |x|<1.
+\sum_{n=1}^{\infty}(-1)^{n}n x^{2n-1}
+= -\frac{x}{(1+x^{2})^{2}},\qquad |x|<1 .
 $$
 
 ---
 
-**Ex 10.** Study and sum
+**Ex 10.** Study and sum  
+
 $$
 \sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}.
-$$
+$$  
 
 **Solution:**  
-Root test gives radius $1$ and (per source) $X=[-1,1]$. For the sum, use double integration:
-\[
+Root test:  
+
+$$
+r = 1, \qquad X = [-1,1].
+$$  
+
+Use double integration:  
+
+$$
 \sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}
-=\frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\sum_{n=0}^{\infty}t^{n}\,dt\,dy
-=\frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\frac{1}{1-t}\,dt\,dy
-= \frac{(1-x)\log(1-x)}{x^{2}}+\frac{1}{x}.
-\]
+= \frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\sum_{n=0}^{\infty}t^{n}\,dt\,dy
+= \frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\frac{1}{1-t}\,dt\,dy
+= \frac{(1-x)\log(1-x)}{x^{2}} + \frac{1}{x}.
+$$  
+
+**Observation:** Double integration allows to reduce the denominator \((n+1)(n+2)\).  
 
 **Final Result:**  
+
 $$
-\sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}=\frac{(1-x)\,\log(1-x)}{x^{2}}+\frac{1}{x}.
+\sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}
+= \frac{(1-x)\,\log(1-x)}{x^{2}} + \frac{1}{x}.
 $$
 
 </div>
+
 
 ---
 
