@@ -8,49 +8,53 @@ background_image: "/images/serie.png"
 featured: true
 ---
 
+---
+layout: default
+date: 2025-08-31
+title: "Solved Exercises — Sequences and Series of Functions"
+meta-description: "Uniform vs pointwise convergence, total convergence, power series radius and sums: 10 selected exercises with faithful solutions and author’s original remarks."
+permalink: "/university/math/calculus-1/sequences-and-series-of-functions/"
+background_image: "/images/serie.png"
+featured: false
+---
+
 <div class="content-box">
 
 ## Theoretical Recall
 
-Given a sequence $(a_n)$, a **series** is the formal sum
+Let $A\subset\mathbb{R}$ and $(f_n)$ be a sequence of functions $f_n:A\to\mathbb{R}$, with $f:A\to\mathbb{R}$.
+
+- **Pointwise convergence.** $f_n \to f$ pointwise on $A$ if for every $x\in A$,
+$$\lim_{n\to\infty} f_n(x)=f(x),$$
+i.e.
+$$\forall \varepsilon>0\ \exists n_{\varepsilon,x}:\ \forall n>n_{\varepsilon,x}\ |f_n(x)-f(x)|<\varepsilon.$$
+
+- **Uniform convergence.** $f_n \rightrightarrows f$ on $A$ if
+$$\forall \varepsilon>0\ \exists n_\varepsilon:\ \forall n>n_\varepsilon,\ \forall x\in A,\ |f_n(x)-f(x)|<\varepsilon,$$
+equivalently, with $\alpha_n=\sup_{x\in A}|f_n(x)-f(x)|$, we have $\alpha_n\to 0$.
+
+**Facts.** Uniform $\Rightarrow$ pointwise (not conversely). If $f_n \rightrightarrows f$ and each $f_n$ is continuous on an interval $I$, then $f$ is continuous on $I$; limits commute with integrals; if moreover $f_n\to f$ and $f'_n \rightrightarrows g$ with $f_n\in C^1(I)$, then $f\in C^1(I)$ and $f'=g$.
+
+### Series of functions
+
+Given $\sum_{n=0}^\infty f_n$, the partial sums are $s_N=\sum_{k=0}^N f_k$.  
+- **Pointwise convergence:** $s_N(x)\to s(x)$ for each $x$ in $B\subset A$.  
+- **Uniform convergence:** $\sup_{x\in B}|s_N(x)-s(x)|\to 0$.
+
+**Total convergence.** With $\beta_n=\sup_{x\in A}|f_n(x)|$, if $\sum \beta_n$ converges, then the series converges uniformly on $A$.
+
+### Power series
+
+A power series has the form $\sum_{n=0}^\infty a_n(x-x_0)^n$. If the radius of convergence is $r$:
+1. $|x-x_0|<r \Rightarrow$ absolute convergence;
+2. $|x-x_0|>r \Rightarrow$ divergence;
+3. For any $0<\rho<r$, total (hence uniform) convergence on $[x_0-\rho,\,x_0+\rho]$.
+
+Root/ratio tests give $r$ via
 $$
-\sum_{n=1}^{\infty} a_n, \qquad S_N=\sum_{n=1}^{N} a_n.
+\limsup_{n\to\infty}\sqrt[n]{|a_n|}=L \quad\text{or}\quad \lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=L,\qquad
+r=\begin{cases}1/L & L\neq0,\\ \infty & L=0,\\ 0 & L=\infty.\end{cases}
 $$
-If $(S_N)$ converges to $S$, we say the series **converges** and write $\sum a_n=S$; otherwise it **diverges**.
-
-- **Necessary condition (Cauchy criterion):**  
-  A series $\sum a_n$ converges iff its partial sums $(S_N)$ form a Cauchy sequence:  
-  $$
-  \forall \varepsilon>0,\ \exists N:\ m>n\geq N \implies \left|\sum_{k=n+1}^m a_k\right| < \varepsilon.
-  $$
-  In particular, convergence implies $a_n \to 0$.
-
----
-
-### Main convergence tests
-
-- **Comparison test:** if $0\le a_n\le b_n$ and $\sum b_n$ converges, then $\sum a_n$ converges.  
-- **Limit comparison test:** if $\lim\frac{a_n}{b_n}=c\in(0,\infty)$, then $\sum a_n$ and $\sum b_n$ share the same nature.  
-- **Ratio test (d’Alembert):**  
-  $$
-  \rho=\limsup\left|\frac{a_{n+1}}{a_n}\right|
-  $$
-  $\rho<1\Rightarrow$ convergent, $\rho>1\Rightarrow$ divergent.  
-- **Root test:**  
-  $$
-  r=\limsup\sqrt[n]{|a_n|}
-  $$
-  $r<1\Rightarrow$ convergent, $r>1\Rightarrow$ divergent.  
-- **Integral test:** for decreasing $f(x)\ge0$, $\sum f(n)$ converges iff $\int f(x)dx$ converges.  
-- **Alternating series test (Leibniz):** if $b_n\downarrow0$, then $\sum (-1)^{n+1}b_n$ converges.  
-- **Telescoping series:** $\sum (b_n-b_{n+1})$ telescopes to $b_1-\lim b_n$.
-
----
-
-### Reference families
-
-- **Geometric:** $\sum ar^n$ converges iff $|r|<1$, sum $=\frac{a}{1-r}$.  
-- **$p$-series:** $\sum \frac{1}{n^p}$ converges iff $p>1$.
 
 </div>
 
@@ -58,157 +62,270 @@ If $(S_N)$ converges to $S$, we say the series **converges** and write $\sum a_n
 
 ## Exercises
 
-### Exercise 1 — Geometric series
-$\displaystyle \sum_{n=0}^{\infty}\left(\frac{1}{2}\right)^n$  
+**Note.** When summing a power series, unless otherwise specified, sums are understood on intervals $[x_0-\rho,\,x_0+\rho]$ with $0\le \rho\le r$ (where $r$ is the radius of convergence).
+
+---
+
+**Ex 1.** For $x\in[0,1]$ and $p\in\mathbb{R}$, consider
+$$
+f_n(x)=n^{p}\,x\,e^{-n x^{2}}.
+$$
+Study pointwise and uniform convergence (as $p$ varies).
 
 **Solution:**  
-Geometric with $r=\tfrac12<1$, sum $2$.  
-
-Observation: The simplest convergent series; it shows how a geometric decay ensures finite total.  
+By comparison of infinitesimals, $\lim_{n\to\infty} f_n(x)=0$ for each $x\in[0,1]$, so $f_n\to 0$ pointwise. For uniform convergence (the functions are continuous), find the maximum:
+$$
+f_n'(x)=n^{p}e^{-n x^{2}}(1-2n x^{2}).
+$$
+The maximum occurs at $x=\tfrac{1}{\sqrt{2n}}$, hence
+$$
+\alpha_n=\sup_{x\in[0,1]}|f_n(x)|=\frac{e^{-1/2}}{\sqrt{2}}\,n^{\,p-\frac12},
+$$
+so
+$$
+\lim_{n\to\infty}\alpha_n=
+\begin{cases}
+0 & p<\tfrac12,\\[2pt]
+\dfrac{e^{-1/2}}{\sqrt{2}} & p=\tfrac12,\\[6pt]
++\infty & p>\tfrac12.
+\end{cases}
+$$
 
 **Final Result:**  
 $$
-\sum_{n=0}^{\infty}\left(\tfrac{1}{2}\right)^n=2
+\text{Pointwise: } f_n\to0.\quad \text{Uniform on }[0,1]\ \text{iff }p<\tfrac12.
 $$
 
 ---
 
-### Exercise 2 — Harmonic series
-$\displaystyle \sum_{n=1}^{\infty}\frac{1}{n}$  
+**Ex 2.** For $x\ge0$,
+$$
+f_n(x)=\sqrt[n]{\,n+x^{n}\,}.
+$$
+Study pointwise and uniform convergence.
 
 **Solution:**  
-$p=1$, diverges (by integral test $\int 1/x$).  
+Pointwise,
+$$
+\lim_{n\to\infty}f_n(x)=
+\begin{cases}
+1,& x\in[0,1],\\
+x,& x>1.
+\end{cases}
+$$
+For uniform convergence on $[0,\infty)$ split:
 
-Observation: Terms vanish but too slowly; a fundamental counterexample reminding that $a_n\to0$ is not sufficient.  
+- On $[0,1]$, $f_n(x)-1$ is increasing, so
+$\alpha_{n,1}=\sup_{[0,1]}|f_n-1|=\sqrt[n]{n+1}-1\to0$.
+
+- On $[1,\infty)$, with $g_n(x)=(n+x^n)^{1/n}-x$,
+$$
+g_n'(x)=\Bigl(\tfrac{n}{x^{n}}+1\Bigr)^{\!\frac{1-n}{n}}-1<0,
+$$
+so $g_n$ is decreasing and
+$\alpha_{n,2}=\sup_{[1,\infty)}|f_n-x|=\sqrt[n]{n+1}-1\to0$.
+
+Thus $\alpha_n=\sup_{[0,\infty)}|f_n-f|\to0$.
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{1}{n}=\text{diverges}
+\text{Pointwise: } f_n\to f,\ f(x)=\begin{cases}1,&x\in[0,1],\\ x,&x>1.\end{cases}
+\quad \text{Uniform on }[0,\infty).
 $$
 
 ---
 
-### Exercise 3 — Convergent $p$-series
-$\displaystyle \sum_{n=1}^{\infty}\frac{1}{n^2}$  
+**Ex 3.** For $x\in[0,1]$,
+$$
+f_n(x)=n^{2}x^{n}(1-x^{4}).
+$$
+Study pointwise and uniform convergence.
 
 **Solution:**  
-$p=2>1$, converges.  
-
-Observation: A classical result due to Euler: the exact sum equals $\pi^2/6$, but convergence follows directly from $p>1$.  
+Clearly $f_n(x)\to0$ pointwise. For uniformity, maximize:
+$$
+f_n'(x)=n^{2}x^{n-1}[n-(n+4)x^{4}],
+$$
+with maximizer $x=\bigl(\tfrac{n}{n+4}\bigr)^{1/4}$. Then
+$$
+\alpha_n=n^{2}\Bigl(\frac{n}{n+4}\Bigr)^{\!n/4}\frac{4}{n+4}\to+\infty,
+$$
+hence no uniform convergence.
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{1}{n^2}\ \text{converges}
+\text{Pointwise: } f_n\to0,\qquad \text{not uniform on }[0,1].
 $$
 
 ---
 
-### Exercise 4 — Alternating harmonic (Leibniz test)
-$\displaystyle \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}$  
+**Ex 4.** For $x\in[0,1]$ and $p\in\mathbb{R}$,
+$$
+f_n(x)=n^{p}x^{n}(1-x^{2}).
+$$
+Study pointwise and uniform convergence as $p$ varies.
 
 **Solution:**  
-$b_n=1/n$ decreases to $0$, so by Leibniz the series converges. Not absolutely, since $\sum 1/n$ diverges.  
-
-Observation: Canonical example of conditional convergence; sign alternation “slows down” divergence.  
+Pointwise $f_n(x)\to0$. For uniformity:
+$$
+f_n'(x)=n^{p}x^{n-1}[\,n-(n+2)x^{2}\,],
+$$
+maximum at $x=\sqrt{n/(n+2)}$, hence
+$$
+\alpha_n=n^{p}\Bigl(\frac{n}{n+2}\Bigr)^{\!n/2}\frac{2}{n+2}\ \xrightarrow[n\to\infty]{}\ 
+\begin{cases}
+0,& p<1,\\[2pt]
+\dfrac{2}{e},& p=1,\\[4pt]
++\infty,& p>1.
+\end{cases}
+$$
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\ \text{converges conditionally}
+\text{Pointwise: } f_n\to0,\qquad \text{uniform on }[0,1]\ \text{iff }p<1.
 $$
 
 ---
 
-### Exercise 5 — Absolute convergence
-$\displaystyle \sum_{n=1}^{\infty}\frac{(-1)^n}{n^2}$  
+**Ex 5.** For $x\in[0,1]$,
+$$
+f_n(x)=\frac{\sin(nx)}{n}.
+$$
+Study the behavior.
 
 **Solution:**  
-Since $\sum 1/n^2$ converges, the alternating series converges absolutely.  
-
-Observation: When absolute convergence holds, conditional/alternating arguments are unnecessary.  
+Using notable limits, $\lim_{n\to\infty}f_n(x)=0$ pointwise. For uniform convergence:
+$$
+f_n'(x)=\cos(nx),
+$$
+and the (claimed) point of maximum is $x=n\pi$. Thus
+$$
+\alpha_n=\frac{\sin(n^{2}\pi)}{n}\to0,
+$$
+hence uniform convergence.
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{(-1)^n}{n^2}\ \text{converges absolutely}
+\text{Pointwise: } f_n\to0,\qquad \text{uniform on }[0,1].
 $$
 
 ---
 
-### Exercise 6 — Telescoping series
-$\displaystyle \sum_{n=1}^{\infty}\frac{1}{n(n+1)}$  
+**Ex 6.** For $x\in\mathbb{R}$,
+$$
+f_n(x)=\arctan(nx).
+$$
+Study the behavior and uniform convergence on subsets.
 
 **Solution:**  
-$\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1}$. The partial sums collapse: $S_N=1-\tfrac{1}{N+1}\to1$.  
-
-Observation: Telescoping structure is powerful; often the hardest step is spotting the decomposition.  
+Pointwise,
+$$
+\lim_{n\to\infty}f_n(x)=
+\begin{cases}
+\frac{\pi}{2},& x>0,\\[2pt]
+0,& x=0,\\[2pt]
+-\frac{\pi}{2},& x<0.
+\end{cases}
+$$
+Since $f_n$ are continuous and the limit is discontinuous, there is no uniform convergence on $\mathbb{R}$. The functions are odd and increasing:
+$$
+f_n'(x)=\frac{n}{1+n^{2}x^{2}}>0.
+$$
+For any $a>0$,
+$$
+\sup_{x\le -a}\Bigl|f_n(x)+\frac{\pi}{2}\Bigr|=\frac{\pi}{2}-\arctan(na)\to0,\quad
+\sup_{x\ge a}\Bigl|f_n(x)-\frac{\pi}{2}\Bigr|=\frac{\pi}{2}-\arctan(na)\to0.
+$$
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=1
+\text{No uniform convergence on }\mathbb{R},\ \text{but uniform on }[a,\infty)\ \text{and }(-\infty,-a]\ \forall a>0.
 $$
 
 ---
 
-### Exercise 7 — Integral test
-$\displaystyle \sum_{n=2}^{\infty}\frac{1}{n\ln n}$  
+**Ex 7.** Study convergence and compute the sum of
+$$
+\sum_{n=1}^{\infty}\frac{n+1}{n!}\,x^{n},\qquad x\in\mathbb{R}.
+$$
 
 **Solution:**  
-Compare with $\int \frac{dx}{x\ln x}$ from $2$ to $\infty$: diverges ($\ln(\ln x)$).  
-
-Observation: This is the borderline case “slower than harmonic”: terms vanish but divergence persists.  
+Ratio test gives radius $r=\infty$; absolute (and total on $[-p,p]$) convergence for all $x$. Split:
+$$
+\sum_{n=1}^\infty \frac{n}{n!}x^{n}=x\sum_{n=1}^\infty\frac{x^{n-1}}{(n-1)!}=xe^{x},\qquad
+\sum_{n=1}^\infty \frac{x^{n}}{n!}=e^{x}-1.
+$$
+Thus $s(x)=xe^{x}+e^{x}-1$. Alternatively, integrate termwise and differentiate back.
 
 **Final Result:**  
 $$
-\sum_{n=2}^{\infty}\frac{1}{n\ln n}=\text{diverges}
+\sum_{n=1}^{\infty}\frac{(n+1)}{n!}\,x^{n}=e^{x}(1+x)-1.
 $$
 
 ---
 
-### Exercise 8 — Ratio test
-$\displaystyle \sum_{n=1}^{\infty}\frac{n}{2^n}$  
+**Ex 8.** Study the power series
+$$
+\sum_{n=1}^{\infty}\bigl(2^{n}+3^{n}\bigr)\,x^{n}.
+$$
 
 **Solution:**  
-$\lim \frac{a_{n+1}}{a_n}=\tfrac12<1$, converges. In fact $\sum \frac{n}{2^n}=2$.  
-
-Observation: Ratio test is decisive when factorials or exponentials dominate.  
+By ratio, $\lim\frac{a_{n+1}}{a_n}=3$, so $r=\tfrac13$.  
+At $x=\tfrac13$, $\sum \frac{2^{n}+3^{n}}{3^{n}}$ fails the necessary condition.  
+At $x=-\tfrac13$, $\sum \frac{2^{n}+3^{n}}{3^{n}}(-1)^{n}$ does not converge by Leibniz here (as stated in the source).
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{n}{2^n}=2
+\text{Convergence set }X=\Bigl(-\tfrac13,\tfrac13\Bigr).
 $$
 
 ---
 
-### Exercise 9 — Root test
-$\displaystyle \sum_{n=1}^{\infty}\frac{n^3}{3^n}$  
+**Ex 9.** Study and sum
+$$
+\sum_{n=1}^{\infty}(-1)^{n}\,n\,x^{2n-1}.
+$$
 
 **Solution:**  
-$\sqrt[n]{n^3/3^n}\to 1/3<1$, converges.  
-
-Observation: Root test is well-suited for terms with $n$-th powers and exponentials.  
+Root test yields radius $1$; $X=(-1,1)$. For $|x|<1$,
+\[
+\sum_{n=1}^{\infty}(-1)^{n}n x^{2n-1}
+= D\!\left[\sum_{n=1}^{\infty}\frac{(-1)^{n}}{2}x^{2n}\right]
+= D\!\left[\frac12\sum_{n=0}^{\infty}(-x^{2})^{n}\right]
+= D\!\left[\frac{1}{2(1+x^{2})}\right]
+= -\frac{x}{(1+x^{2})^{2}}.
+\]
 
 **Final Result:**  
 $$
-\sum_{n=1}^{\infty}\frac{n^3}{3^n}\ \text{converges}
+\sum_{n=1}^{\infty}(-1)^{n}n x^{2n-1}=-\dfrac{x}{(1+x^{2})^{2}},\qquad |x|<1.
 $$
 
 ---
 
-### Exercise 10 — Power series
-$\displaystyle \sum_{n=1}^{\infty}\frac{x^n}{n}$  
+**Ex 10.** Study and sum
+$$
+\sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}.
+$$
 
 **Solution:**  
-Radius $R=1$ by ratio/root. At $x=1$: harmonic $\Rightarrow$ diverges. At $x=-1$: alternating harmonic $\Rightarrow$ converges conditionally.  
-
-Observation: Power series demand careful boundary checks; the interior is automatic.  
+Root test gives radius $1$ and (per source) $X=[-1,1]$. For the sum, use double integration:
+\[
+\sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}
+=\frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\sum_{n=0}^{\infty}t^{n}\,dt\,dy
+=\frac{1}{x^{2}}\int_{0}^{x}\int_{0}^{y}\frac{1}{1-t}\,dt\,dy
+= \frac{(1-x)\log(1-x)}{x^{2}}+\frac{1}{x}.
+\]
 
 **Final Result:**  
 $$
-R=1,\quad \text{converges for }|x|<1,\ \text{diverges at }x=1,\ \text{converges at }x=-1
+\sum_{n=0}^{\infty}\frac{x^{n}}{(n+1)(n+2)}=\frac{(1-x)\,\log(1-x)}{x^{2}}+\frac{1}{x}.
 $$
 
 </div>
 
 ---
+
 
 <div class="content-box">
 
