@@ -12,71 +12,71 @@ featured: false
 
 ## Theoretical Recall
 
-Let $A \subset \mathbb{R}$ and $(f_n)$ be a sequence of functions $f_n:A\to\mathbb{R}$, with $f:A\to\mathbb{R}$.
-
-- **Pointwise convergence.**  
-  $f_n \to f$ pointwise on $A$ if  
-  $$
-  \forall x\in A:\ \lim_{n\to\infty} f_n(x)=f(x),
-  $$
-  i.e.  
-  $$
-  \forall \varepsilon>0,\ \exists n_{\varepsilon,x}:\ \forall n>n_{\varepsilon,x},\ |f_n(x)-f(x)|<\varepsilon.
-  $$
-
-- **Uniform convergence.**  
-  $f_n \rightrightarrows f$ on $A$ if  
-  $$
-  \forall \varepsilon>0,\ \exists n_\varepsilon:\ \forall n>n_\varepsilon,\ \forall x\in A,\ |f_n(x)-f(x)|<\varepsilon.
-  $$
-
-Equivalently, setting $\alpha_n=\sup_{x\in A}|f_n(x)-f(x)|$, we have $\alpha_n\to0$.
-
-**Facts.** Uniform $\Rightarrow$ pointwise (not conversely).  
-If $f_n \rightrightarrows f$ and each $f_n$ is continuous on an interval $I$, then $f$ is continuous on $I$.  
-Limits commute with integrals.  
-If moreover $f_n \to f$ and $f'_n \rightrightarrows g$ with $f_n\in C^1(I)$, then $f\in C^1(I)$ and $f'=g$.
+Let \( A \subset \mathbb{R} \) and \( (f_n) \) be a sequence of functions  
+\( f_n : A \to \mathbb{R} \), with \( f : A \to \mathbb{R} \).
 
 ---
 
-### Series of functions
+### Pointwise convergence
+The sequence \( f_n \) converges **pointwise** to \( f \) on \( A \) if
 
-Given $\sum_{n=0}^\infty f_n$, the partial sums are $s_N=\sum_{k=0}^N f_k$.
+$$
+\lim_{n \to \infty} f_n(x) = f(x), \qquad \forall x \in A.
+$$
 
-- **Pointwise convergence:** $s_N(x)\to s(x)$ for each $x\in B\subset A$.  
-- **Uniform convergence:** $\sup_{x\in B}|s_N(x)-s(x)|\to0$.
+Equivalently: for every \( \varepsilon > 0 \), there exists  
+\( n_{\varepsilon,x} \) such that, for all \( n > n_{\varepsilon,x} \),
 
-**Total convergence.**  
-With $\beta_n=\sup_{x\in A}|f_n(x)|$, if $\sum \beta_n$ converges, then the series converges uniformly on $A$.
+$$
+|f_n(x) - f(x)| < \varepsilon .
+$$
 
 ---
 
-### Power series
+### Uniform convergence
+The sequence \( f_n \) converges **uniformly** to \( f \) on \( A \) if
 
-A power series has the form
 $$
-\sum_{n=0}^\infty a_n (x-x_0)^n.
+\forall \, \varepsilon > 0 \; \exists n_\varepsilon :
+\forall n > n_\varepsilon, \; \forall x \in A,
+\quad |f_n(x) - f(x)| < \varepsilon .
 $$
 
-If the radius of convergence is $r$:
+Equivalently, setting  
 
-1. $|x-x_0|<r \ \Rightarrow$ absolute convergence;  
-2. $|x-x_0|>r \ \Rightarrow$ divergence;  
-3. For any $0<\rho<r$, total (hence uniform) convergence holds on $[x_0-\rho,\,x_0+\rho]$.
+$$
+\alpha_n = \sup_{x \in A} |f_n(x) - f(x)| ,
+$$  
 
-Root or ratio test give
+we have  
+
 $$
-\limsup_{n\to\infty}\sqrt[n]{|a_n|}=L \quad\text{or}\quad
-\lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=L,
+\alpha_n \to 0 .
 $$
-with radius
+
+---
+
+### Facts
+- Uniform convergence \( \Rightarrow \) pointwise convergence (not conversely).  
+- If \( f_n \rightrightarrows f \) and each \( f_n \) is continuous on an interval \( I \), then \( f \) is continuous on \( I \).  
+- Limits commute with integrals:  
+
 $$
-r=\begin{cases}
-1/L & L\neq0,\\
-\infty & L=0,\\
-0 & L=\infty.
-\end{cases}
+\int_a^b f_n(x) \, dx \;\to\; \int_a^b f(x) \, dx .
 $$
+
+- If moreover \( f_n \to f \) and  
+
+$$
+f_n' \rightrightarrows g, \qquad f_n \in C^1(I),
+$$
+
+then  
+
+$$
+f \in C^1(I), \qquad f' = g .
+$$
+
 
 </div>
 <div class="content-box">
