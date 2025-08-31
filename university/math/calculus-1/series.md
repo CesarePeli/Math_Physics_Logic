@@ -12,20 +12,22 @@ featured: false
 
 ## Theoretical Recall
 
-Let \( A \subset \mathbb{R} \) and \( (f_n) \) be a sequence of functions  
-\( f_n : A \to \mathbb{R} \), with \( f : A \to \mathbb{R} \).
+Let  
+
+$$
+A \subset \mathbb{R}, \qquad (f_n), \qquad f_n : A \to \mathbb{R}, \qquad f : A \to \mathbb{R}.
+$$
 
 ---
 
 ### Pointwise convergence
-The sequence \( f_n \) converges **pointwise** to \( f \) on \( A \) if
+The sequence \(f_n\) converges **pointwise** to \(f\) on \(A\) if  
 
 $$
 \lim_{n \to \infty} f_n(x) = f(x), \qquad \forall x \in A.
 $$
 
-Equivalently: for every \( \varepsilon > 0 \), there exists  
-\( n_{\varepsilon,x} \) such that, for all \( n > n_{\varepsilon,x} \),
+Equivalently: for every \(\varepsilon > 0\), there exists \(n_{\varepsilon,x}\) such that for all \(n > n_{\varepsilon,x}\),  
 
 $$
 |f_n(x) - f(x)| < \varepsilon .
@@ -34,19 +36,18 @@ $$
 ---
 
 ### Uniform convergence
-The sequence \( f_n \) converges **uniformly** to \( f \) on \( A \) if
+The sequence \(f_n\) converges **uniformly** to \(f\) on \(A\) if  
 
 $$
-\forall \, \varepsilon > 0 \; \exists n_\varepsilon :
-\forall n > n_\varepsilon, \; \forall x \in A,
-\quad |f_n(x) - f(x)| < \varepsilon .
+\forall \varepsilon > 0,\ \exists n_\varepsilon :\ 
+\forall n > n_\varepsilon,\ \forall x \in A,\quad |f_n(x)-f(x)| < \varepsilon .
 $$
 
 Equivalently, setting  
 
 $$
 \alpha_n = \sup_{x \in A} |f_n(x) - f(x)| ,
-$$  
+$$
 
 we have  
 
@@ -57,26 +58,27 @@ $$
 ---
 
 ### Facts
-- Uniform convergence \( \Rightarrow \) pointwise convergence (not conversely).  
+- Uniform convergence \(\Rightarrow\) pointwise convergence (not conversely).  
+
 - If \( f_n \rightrightarrows f \) and each \( f_n \) is continuous on an interval \( I \), then \( f \) is continuous on \( I \).  
+
 - Limits commute with integrals:  
 
 $$
-\int_a^b f_n(x) \, dx \;\to\; \int_a^b f(x) \, dx .
+\int_a^b f_n(x)\,dx \;\to\; \int_a^b f(x)\,dx .
 $$
 
-- If moreover \( f_n \to f \) and  
+- If moreover  
 
 $$
-f_n' \rightrightarrows g, \qquad f_n \in C^1(I),
-$$
+f_n \to f, \qquad f_n' \rightrightarrows g, \qquad f_n \in C^1(I),
+$$  
 
 then  
 
 $$
 f \in C^1(I), \qquad f' = g .
 $$
-
 
 </div>
 <div class="content-box">
