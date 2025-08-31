@@ -13,29 +13,40 @@ featured: true
 ## Theoretical recalls
 
 - **Complex numbers** are defined as ordered pairs of real numbers, with algebraic form  
-  $$
-  z = a + ib, \quad i^2 = -1.
-  $$
+
+$$
+z = a + ib, \quad i^2 = -1 .
+$$
+
 - **Conjugate and modulus**:  
-  $$
-  \overline{z} = a - ib, \quad |z| = \sqrt{a^2+b^2}.
-  $$
+
+$$
+\overline{z} = a - ib, \quad |z| = \sqrt{a^2+b^2} .
+$$
+
 - **Polar and exponential form**:  
-  $$
-  z = r(\cos \theta + i\sin \theta) = re^{i\theta}, \quad r = |z|, \ \theta = \arg(z).
-  $$
+
+$$
+z = r(\cos \theta + i\sin \theta) = re^{i\theta}, \quad r = |z|, \ \theta = \arg(z) .
+$$
+
 - **De Moivre’s formula**:  
-  $$
-  (re^{i\theta})^n = r^n e^{in\theta}.
-  $$
+
+$$
+(re^{i\theta})^n = r^n e^{in\theta} .
+$$
+
 - **n-th roots of unity**:  
-  $$
-  z_k = e^{\frac{2k\pi i}{n}}, \quad k=0,1,\dots,n-1.
-  $$
+
+$$
+z_k = e^{\tfrac{2k\pi i}{n}}, \quad k=0,1,\dots,n-1 .
+$$
+
 - Useful relations:  
-  $$
-  |zw| = |z|\,|w|, \quad \overline{zw} = \overline{z}\,\overline{w}.
-  $$
+
+$$
+|zw| = |z|\,|w|, \quad \overline{zw} = \overline{z}\,\overline{w} .
+$$
 
 </div>
 
@@ -52,36 +63,42 @@ One of the most important theorems based on complex numbers is the **Fundamental
 Given z = x + i y ∈ ℂ, the most important formulas are:
 
 - **Modulus**  
-  $$
-  |z| = \sqrt{x^{2}+y^{2}}.
-  $$
+
+$$
+|z| = \sqrt{x^{2}+y^{2}} .
+$$
 
 - **Trigonometric form**  
-  $$
-  z = |z|(\cos \theta + i\sin \theta).
-  $$
+
+$$
+z = |z|(\cos \theta + i\sin \theta) .
+$$
 
 - **Euler’s formula**  
-  $$
-  e^{i\theta} = \cos\theta + i\sin\theta.
-  $$
+
+$$
+e^{i\theta} = \cos\theta + i\sin\theta .
+$$
 
 - **Exponential form**  
-  $$
-  z = |z|e^{i\theta}.
-  $$
+
+$$
+z = |z|e^{i\theta} .
+$$
 
 - **De Moivre’s formula**  
-  $$
-  z^{n} = \rho^{n}(\cos(n\theta)+i\sin(n\theta)).
-  $$
+
+$$
+z^{n} = \rho^{n}(\cos(n\theta)+i\sin(n\theta)) .
+$$
 
 - **n-th roots of a complex number**  
-  $$
-  w_{k} = \sqrt[n]{\rho}\left[\cos\!\left(\frac{\theta+2k\pi}{n}\right)
-  + i\sin\!\left(\frac{\theta+2k\pi}{n}\right)\right],
-  \quad k=0,1,\dots,n-1.
-  $$
+
+$$
+w_{k} = \sqrt[n]{\rho}\Bigl[\cos\!\Bigl(\tfrac{\theta+2k\pi}{n}\Bigr)
++ i\sin\!\Bigl(\tfrac{\theta+2k\pi}{n}\Bigr)\Bigr],
+\quad k=0,1,\dots,n-1 .
+$$
 
 </div>
 
@@ -93,124 +110,158 @@ Given z = x + i y ∈ ℂ, the most important formulas are:
 
 **Ex 1.** Sixth roots of −1.  
 
-**Solution.** Since |−1|=1 and arg(−1)=π, by the n-th roots formula:
+**Solution.** Since |−1|=1 and arg(−1)=π, by the n-th roots formula:  
+
 $$
-w_k=\sqrt[6]{1}\left[\cos\!\left(\frac{\pi+2k\pi}{6}\right)+i\sin\!\left(\frac{\pi+2k\pi}{6}\right)\right],\quad k=0,\dots,5.
+w_k=\sqrt[6]{1}\Bigl[\cos\!\Bigl(\tfrac{\pi+2k\pi}{6}\Bigr)+i\sin\!\Bigl(\tfrac{\pi+2k\pi}{6}\Bigr)\Bigr],\quad k=0,\dots,5 .
 $$
-Thus
-\[
-\frac{\sqrt{3}}{2}+\frac{i}{2},\ i,\ -\frac{\sqrt{3}}{2}+\frac{i}{2},\ -\frac{\sqrt{3}}{2}-\frac{i}{2},\ -i,\ \frac{\sqrt{3}}{2}-\frac{i}{2}.
-\]
+
+Thus  
+
+$$
+\frac{\sqrt{3}}{2}+\frac{i}{2},\quad i,\quad -\frac{\sqrt{3}}{2}+\frac{i}{2},\quad -\frac{\sqrt{3}}{2}-\frac{i}{2},\quad -i,\quad \frac{\sqrt{3}}{2}-\frac{i}{2}.
+$$
 
 **Final result**  
-$$ w=\left\{\tfrac{\sqrt{3}}{2}\pm\tfrac{i}{2},\ \pm i,\ -\tfrac{\sqrt{3}}{2}\pm\tfrac{i}{2}\right\}. $$
+
+$$
+w=\Bigl\{\tfrac{\sqrt{3}}{2}\pm\tfrac{i}{2},\ \pm i,\ -\tfrac{\sqrt{3}}{2}\pm\tfrac{i}{2}\Bigr\}.
+$$
 
 ---
 
 **Ex 2.** Solve |z| z̄ = 2i.  
 
-**Solution.** Take moduli on both sides:
-\[
-||z|\,\overline{z}|=|2i|\ \Rightarrow\ |z|\cdot|z|=2\ \Rightarrow\ |z|=\sqrt{2}.
-\]
-Back to the equation:
-\[
-\sqrt{2}\,z̄=2i\ \Rightarrow\ z̄=2i/\sqrt{2}\ \Rightarrow\ z=-2i/\sqrt{2}.
-\]
+**Solution.** Taking moduli:  
+
+$$
+||z|\,\overline{z}|=|2i| \ \Rightarrow\ |z|^2=2 \ \Rightarrow\ |z|=\sqrt{2} .
+$$
+
+Back to the equation:  
+
+$$
+\sqrt{2}\,z̄=2i \ \Rightarrow\ z̄=2i/\sqrt{2} \ \Rightarrow\ z=-\sqrt{2}\,i .
+$$
 
 **Final result**  
-$$ z=-\frac{2i}{\sqrt{2}}=-\sqrt{2}\,i. $$
+
+$$
+z=-\sqrt{2}\,i .
+$$
 
 ---
 
 **Ex 3.** Solve the system  
-\[
+
+$$
 \begin{cases}
-z^{2}+w^{4}=0\\
+z^{2}+w^{4}=0 \\[6pt]
 z^{3}\,\overline{w}^{\,5}=1
 \end{cases}
-\]
+$$
 
-**Solution.** Equivalent system:
-\[
+**Solution.** Equivalent system:  
+
+$$
 \begin{cases}
-z^{2}=-w^{4}\\
+z^{2}=-w^{4} \\[6pt]
 z^{6}\,\overline{w}^{\,10}=1
 \end{cases}
-\]
-From the first: z⁶=(z²)³=−w¹². Substitute into the second:
-\[
-w^{12}\,\overline{w}^{\,10}=-1\ \Rightarrow\ w^{2}|w|^{20}=-1.
-\]
-Take moduli:
-\[
-|w^{2}|\,|w|^{20}=1 \Rightarrow |w|^{22}=1 \Rightarrow |w|=1.
-\]
-Back to w²|w|²⁰=−1 gives w²=−1, hence w=±i. From z²=−w⁴=−1 we get z=±i.
+$$
 
-Checking the original system, the valid pairs are (z,w)=(i,−i) and (−i,i).
+From the first: z⁶=−w¹². Substitute:  
+
+$$
+w^{12}\,\overline{w}^{\,10}=-1 \ \Rightarrow\ w^{2}|w|^{20}=-1 .
+$$
+
+Taking moduli: |w|²²=1 ⇒ |w|=1. Then w²=−1 ⇒ w=±i. From z²=−1 ⇒ z=±i.  
+Valid solutions: (i,−i) and (−i,i).  
 
 **Final result**  
-$$ (z,w)\in\{(i,-i),\ (-i,i)\}. $$
+
+$$
+(z,w)\in\{(i,-i),\ (-i,i)\} .
+$$
 
 ---
 
 **Ex 4.** Solve z²+(i−1)z−i=0.  
 
-**Solution (1).** Discriminant:
-\[
-\Delta=(i-1)^{2}+4i=1+2i+i^{2}= (1+i)^{2}.
-\]
-Thus z₁=1, z₂=−i.
+**Solution.** Discriminant:  
 
-**Solution (2).** Factorization:
-\[
-z^{2}+iz-z-i=(z-1)(z+i)=0,
-\]
-so z=1 or z=−i.
+$$
+\Delta=(i-1)^{2}+4i=1+2i+i^{2}=(1+i)^{2} .
+$$
+
+Thus z₁=1, z₂=−i.  
+Factorization check: (z−1)(z+i)=0.  
 
 **Final result**  
-$$ z\in\{1,\ -i\}. $$
+
+$$
+z\in\{1,\ -i\}.
+$$
 
 ---
 
 **Ex 5.** Solve z⁴ = z̄³.  
 
-**Solution.** Multiply both sides by z³:
-\[
-z^{7}=|z|^{6}.
-\]
-Moduli: |z|⁴=|z|³ ⇒ |z|=0 or 1.  
-If |z|=1, then z⁷=1, so z are the seventh roots of unity.
+**Solution.** Multiply by z³:  
+
+$$
+z^{7}=|z|^{6} .
+$$
+
+Taking moduli: |z|⁴=|z|³ ⇒ z=0 or |z|=1.  
+If |z|=1, then z⁷=1 ⇒ z are 7th roots of unity.  
 
 **Final result**  
-$$ z=0\quad \text{or}\quad z=e^{2\pi i k/7},\ k=0,\dots,6. $$
+
+$$
+z=0 \quad \text{or} \quad z=e^{2\pi i k/7},\ k=0,\dots,6 .
+$$
 
 ---
 
 **Ex 6.** Solve z²+z z̄ = 1+i.  
 
 **Solution.** Let z=x+iy:  
-\[
+
+$$
 (x+iy)^{2}+(x+iy)(x-iy)=1+i
-\]
-\[
-2x^{2}+2ixy=1+i.
-\]
-Real and imaginary: x²=½, xy=½. So x=±√2/2, y=±√2/2 with same signs.  
+$$
+
+$$
+2x^{2}+2ixy=1+i .
+$$
+
+So x²=½, xy=½ ⇒ x=±√2/2, y=±√2/2 with same sign.  
 
 **Final result**  
-$$ z\in\left\{\tfrac{\sqrt{2}}{2}\pm i\,\tfrac{\sqrt{2}}{2}\right\}. $$
+
+$$
+z\in\Bigl\{\tfrac{\sqrt{2}}{2}\pm i\tfrac{\sqrt{2}}{2}\Bigr\}.
+$$
 
 ---
 
 **Ex 7.** Solve Re(z²)=z+i.  
 
-**Solution.** Equation: x²−y²=x+i(y+1). Then y=−1, and x²−(−1)²=x. ⇒ x²−1=x.  
-So x=(1±√5)/2.  
+**Solution.** Re(z²)=x²−y². Equation:  
+
+$$
+x^{2}-y^{2}=x+i(y+1) .
+$$
+
+So y=−1 and x²−(−1)²=x ⇒ x²−1=x ⇒ x=(1±√5)/2.  
 
 **Final result**  
-$$ z=\frac{1\pm\sqrt{5}}{2}-i. $$
+
+$$
+z=\tfrac{1\pm\sqrt{5}}{2}-i .
+$$
 
 ---
 
@@ -220,27 +271,47 @@ $$ z=\frac{1\pm\sqrt{5}}{2}-i. $$
 So z∈{0, −3/2±i√3/2}.  
 
 **Final result**  
-$$ z\in\left\{0,\ -\tfrac{3}{2}\pm i\,\tfrac{\sqrt{3}}{2}\right\}. $$
+
+$$
+z\in\Bigl\{0,\ -\tfrac{3}{2}\pm i\tfrac{\sqrt{3}}{2}\Bigr\}.
+$$
 
 ---
 
 **Ex 9.** Solve (z⁵ z̄² − 1)(z²+z+2)=0.  
 
-**Solution.** Branch 1: |z|=1 ⇒ z³=1 ⇒ z∈{1, −½±i√3/2}.  
-Branch 2: z²+z+2=0 ⇒ z=(−1±i√7)/2.  
+**Solution.** Case 1: |z|=1 ⇒ z³=1 ⇒ z∈{1, −½±i√3/2}.  
+Case 2: z²+z+2=0 ⇒ z=(−1±i√7)/2.  
 
 **Final result**  
-$$ z\in\left\{1,\ -\tfrac{1}{2}\pm i\,\tfrac{\sqrt{3}}{2},\ \tfrac{-1\pm i\sqrt{7}}{2}\right\}. $$
+
+$$
+z\in\Bigl\{1,\ -\tfrac{1}{2}\pm i\tfrac{\sqrt{3}}{2},\ \tfrac{-1\pm i\sqrt{7}}{2}\Bigr\}.
+$$
 
 ---
 
 **Ex 10.** Solve (2z−1)²(2z̄+1)=4z(2z−1).  
 
-**Solution.** Either 2z−1=0 ⇒ z=½, or expand: (2z−1)(2z̄+1)=4z. Let z=x+iy ⇒ x²+y²−x=¼.  
-That is circle centered at (½,0), radius √2/2.  
+**Solution.** Either 2z−1=0 ⇒ z=½, or:  
+
+$$
+(2z-1)(2z̄+1)=4z .
+$$
+
+Let z=x+iy:  
+
+$$
+x^{2}+y^{2}-x=\tfrac{1}{4} .
+$$
+
+That is circle centered at (½,0), radius √2/2, including z=½.  
 
 **Final result**  
-$$ z=\tfrac{1}{2}\ \ \text{or}\ \ x^{2}+y^{2}-x=\tfrac{1}{4}. $$
+
+$$
+z=\tfrac{1}{2}\ \ \text{or}\ \ x^{2}+y^{2}-x=\tfrac{1}{4}.
+$$
 
 </div>
 
