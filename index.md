@@ -71,7 +71,7 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* present
 
 ## Explore the Sections
 
-- [**The Odd Questions**]({{ "/odd-questions/" | relative_url }})  
+- [**The Odd Questions**]({{ "/odd/" | relative_url }})  
   Explore strange and thought-provoking problems at the edge of math and science — where logic meets paradox.
 
 - [**In-Depth Articles**]({{ "/insights/" | relative_url }})  
