@@ -5,7 +5,7 @@ permalink: /odd-questions/maxwells-demon/
 date: 2025-11-07
 keywords: [Maxwell's demon, entropy, second law of thermodynamics, information theory, statistical mechanics, Boltzmann, Gibbs, Shannon, Landauer, irreversibility, physics paradox, thermodynamics thought experiment]
 section: "Odd"
-background: /images/demon.png
+background_image: "/images/demon.png"
 image_alt: "Illustration of Maxwell's demon observing gas molecules through a tiny door"
 ---
 
