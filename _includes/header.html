@@ -12,9 +12,8 @@
   box-shadow:0 0 10px rgba(0,0,0,.4);
 ">
 
-
-  <!-- Link di navigazione -->
-  {% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
+  <!-- Navigation links -->
+  {% assign nav_items = "index:Home,odd:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
@@ -35,4 +34,3 @@
     {% endunless %}
   {% endfor %}
 </nav>
-
