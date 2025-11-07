@@ -13,7 +13,7 @@
 ">
 
   <!-- Navigation links -->
-  {% assign nav_items = "index:Home,odd:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
+  {% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
