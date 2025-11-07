@@ -2,7 +2,7 @@
 date: 2025-04-14
 layout: default  
 title: What Is Infinity Plus One?  
-permalink: /odd/infinity-plus-one/  
+permalink: /odd-questions/infinity-plus-one/  
 background_image: "/images/odd-infinity.png"  
 description: "What happens when you add one to infinity? Discover the math, logic, and philosophy behind this paradox — from Hilbert’s Hotel to set theory."
 ---
