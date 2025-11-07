@@ -1,7 +1,7 @@
 ---
 title: "Maxwell's Demon"
 description: "From cooked pizzas to information entropy: Maxwell’s demon and the deep link between thermodynamics, probability, and the arrow of time."
-permalink: /odd-quetions/maxwells-demon/
+permalink: /odd-questions/maxwells-demon/
 date: 2025-11-07
 keywords: [Maxwell's demon, entropy, second law of thermodynamics, information theory, statistical mechanics, Boltzmann, Gibbs, Shannon, Landauer, irreversibility, physics paradox, thermodynamics thought experiment]
 section: "Odd"
