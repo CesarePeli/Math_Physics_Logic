@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Logic & Motion – Curated Science Resources
+title: The Odd Questions — Paradoxes, Puzzles, and Edge Cases
 permalink: /odd-questions/
 nav_exclude: false
 background_image: "/images/spirale.png"
 description: "Strange and thought-provoking questions at the edge of math, physics, and logic."
-permalink: /odd-questions/"
 redirect_from:
   - /odd/
-
+featured: false
+date: 2025-11-07
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -20,77 +20,49 @@ redirect_from:
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-<!-- ──────────── PAGE TITLE ──────────── -->
 <div class="homepage-header" style="text-align:center;margin:2rem auto;">
-  <h1 style="font-size:2.5rem;font-weight:bold;">Logic & Motion</h1>
-  <p style="font-size:1.2rem;margin-top:.5rem;">Tools for students and teachers — grounded in reasoning and clarity.</p>
+  <h1 style="font-size:2.5rem;font-weight:bold;">The Odd Questions</h1>
+  <p style="font-size:1.2rem;margin-top:.5rem;">Paradoxes, contradictions, and curious edge cases that test the limits of definitions and models.</p>
 </div>
 
-<!-- ─────────  FEATURED  ───────── -->
-<section id="featured" style="margin:4rem auto;max-width:1000px;padding:0 1rem;">
-<h2 style="font-size:1.6rem;margin-bottom:1rem;">Featured</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;">
-{% assign spotlight = site.pages | where_exp:"p","p.featured" | sort:"date" | reverse | slice:0,6 %}
-{% for item in spotlight %}
-{% assign bg = item.background_image %}
-{% unless bg %}
-{% assign raw = item.content | split:'src="' | slice:1,1 | first %}
-{% assign bg  = raw | split:'"' | first %}
-{% endunless %}
-{% unless bg %}{% assign bg = "/images/placeholder.jpg" %}{% endunless %}
-<a href="{{ item.url | relative_url }}" style="display:block;height:180px;border-radius:1rem;overflow:hidden;text-decoration:none;color:#fff;background:url('{{ bg | relative_url }}') center/cover no-repeat;"><span style="display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%;padding-bottom:1rem;font-size:1rem;font-weight:600;text-align:center;text-shadow:0 2px 6px rgba(0,0,0,0.9);">{{ item.title }}</span></a>
-{% endfor %}
-</div>
-</section>
-<!-- ─────────────────────────────── -->
-
-<!-- ─────────────  INTRO  ───────────── -->
 <div class="content-box">
-
-<p>
-Mathematics is not mere calculation — at least, not only.  
-It is a form of thought, a structure of understanding, a language of precision. In a world that moves fast, chasing shortcuts and quick results, mathematics teaches us to slow down: to think with order, to separate the essential from the accidental. Above all, it teaches us to <em>see</em> — recurring patterns, possible transformations, hidden connections between ideas that at first seem distant.
-</p>
-
-<p>
-There is no single path to insight. Some minds grasp structure immediately, others begin with concrete examples, others imagine abstract relations. All of these approaches are valuable, because mathematics welcomes diverse styles of reasoning — deductive, inductive, analogical, abstract, visual. In this variety lies its universality.
-</p>
-
-<p>
-And just as mathematics provides the grammar of thought, <strong>physics</strong> brings this language into the world. It is the science of models: abstract principles expressed through mathematics, tested and applied across diverse contexts, from the fall of a stone to the expansion of the universe.
-</p>
-
-<p>
-<strong>Logic & Motion</strong> was created at the intersection of these perspectives. It bridges education and exploration — offering curated resources for students and teachers: slides, guided exercises, printable summaries, and original essays that invite not only practice but also reflection.
-</p>
-
-<p>
-Rooted in logic, inquiry, and the desire to understand, <em>Logic & Motion</em> presents science as a structured way of thinking — intellectually rigorous, yet always human and meaningful.
-</p>
-
+  <p>
+    Mathematics and physics are full of situations that appear paradoxical, but each one reveals something essential about how reasoning and abstraction truly work.
+    <br>
+    This section collects short, rigorous explorations of questions that challenge definitions and intuitions — designed for students, teachers, and anyone who enjoys the borderlands between logic and wonder.
+  </p>
 </div>
 
-<!-- ─────────────  SECTION LINKS  ───────────── -->
 <div class="content-box">
+  <h2>Browse the Questions</h2>
+  <ul>
+    <li>
+      <a href="{{ '/odd-questions/divide-by-zero/' | relative_url }}"><strong>Why You Can’t Divide by Zero – Explained Simply</strong></a><br>
+      Why dividing by zero isn’t “forbidden” — it’s meaningless, because zero has no multiplicative inverse.
+    </li>
+    <li>
+      <a href="{{ '/odd-questions/infinity-plus-one/' | relative_url }}"><strong>What Is Infinity Plus One?</strong></a><br>
+      From Hilbert’s Hotel to set theory — exploring why infinity can’t be treated like a number.
+    </li>
+    <li>
+      <a href="{{ '/odd-questions/maxwells-demon/' | relative_url }}"><strong>Maxwell’s Demon</strong></a><br>
+      The classic paradox linking entropy, probability, and the cost of information.
+    </li>
+  </ul>
+</div>
 
-## Explore the Sections
+<div class="content-box">
+  <h2>Format</h2>
+  <ol>
+    <li><strong>Theory recall</strong> — key principles and definitions.</li>
+    <li><strong>Worked reasoning</strong> — clear, step-by-step analysis.</li>
+    <li><strong>Author’s note</strong> — reflection on the conceptual meaning.</li>
+  </ol>
+</div>
 
-- [**Odd Questions**]({{ "/odd-questions/" | relative_url }})  
-  Paradoxes, contradictions, and curious questions from the edges of mathematics and physics — where logic meets mystery.
-
-- [**Scientific Essays**]({{ "/insights/" | relative_url }})  
-  Essays and reflections on mathematics and physics — exploring theory, structure, and the history of scientific thought.
-
-- [**High School**]({{ "/high-school/" | relative_url }})  
-  Slides, solved math and physics exercises, and printable formula sheets designed for high school learning and exam preparation.
-
-- [**University**]({{ "/university/" | relative_url }})  
-  Detailed calculus, linear algebra, and physics resources — complete solutions and conceptual notes for undergraduate students.
-
-- [**Gallery**]({{ "/gallery/" | relative_url }})  
-  A visual collection of generative art and mathematical structures, exploring the beauty of science through images.
-
-- [**About**]({{ "/about/" | relative_url }})  
-  Learn more about the educational vision of Logic & Motion — and meet the people who shape the project.
-
+<div class="content-box">
+  <p>
+    New “odd questions” are added periodically.  
+    If you’d like to propose one, reach out via the <a href="{{ '/about/' | relative_url }}">About page</a>.
+  </p>
 </div>
