@@ -3,7 +3,7 @@ date: 2025-04-10
 layout: default
 title: "Why You Can’t Divide by Zero – Explained Simply"
 author: Cesare Peli
-permalink: /odd/divide-by-zero/
+permalink: /odd-questions/divide-by-zero/
 background_image: "/images/div.png"
 description: "Why is dividing by zero undefined? From integers to real numbers and abstract algebra, here’s the mathematical reason behind the error."
 featured: true

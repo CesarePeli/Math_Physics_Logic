@@ -1,10 +1,14 @@
 ---
 layout: default
 title: Logic & Motion – Curated Science Resources
-permalink: /
+permalink: /odd-questions/
 nav_exclude: false
 background_image: "/images/spirale.png"
-description: "Explore curated, high-quality resources in math, physics, and logic — designed for conceptual clarity and intellectual exploration."
+description: "Strange and thought-provoking questions at the edge of math, physics, and logic."
+permalink: /odd-questions/"
+redirect_from:
+  - /odd/
+
 ---
 
 <!-- Google tag (gtag.js) -->
