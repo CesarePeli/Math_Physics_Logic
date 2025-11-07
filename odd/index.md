@@ -3,7 +3,7 @@ layout: default
 title: The Odd Questions — Paradoxes, Puzzles, and Edge Cases
 permalink: /odd-questions/
 nav_exclude: false
-background_image: "/images/spirale.png"
+background_image: "/images/odd.png"
 description: "Strange and thought-provoking questions at the edge of math, physics, and logic."
 redirect_from:
   - /odd/
