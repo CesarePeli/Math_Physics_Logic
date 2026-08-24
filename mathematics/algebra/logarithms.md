@@ -1,14 +1,24 @@
 ---
 date: 2025-05-02
+layout: default
 title: "Introduction to Logarithms"
-meta-description: "A clear and simple introduction to logarithms with definitions, reasoning, and detailed examples for high school students."
-permalink: "/high-school/math/intro-logarithms/"
+permalink: /mathematics/algebra/logarithms/
+redirect_from:
+  - /high-school/math/intro-logarithms/
 background_image: "/images/hsex.png"
+description: "Learn logarithms through definitions, domain conditions, inverse functions, logarithmic rules, graphs, and detailed examples."
+area: mathematics
+topic: algebra
+subtopic: logarithms
+level: high-school
+content_type: theory
 ---
 
 <div class="content-box">
 
-## 📘 What is a Logarithm?
+# Introduction to Logarithms
+
+## What Is a Logarithm?
 
 A **logarithm** answers a very specific question:
 
@@ -21,26 +31,43 @@ $$
 $$
 
 We are used to reading powers from left to right:
-- For example:  
-  $$ 2^3 = 8 $$
+
+- For example:
+
+$$
+2^3 = 8
+$$
 
 But a logarithm goes in the opposite direction:
-- It asks:  
-  $$ \log_2 8 = ? $$  
-  and answers:  
-  $$ \log_2 8 = 3 $$  
-  because $$ 2^3 = 8 $$
+
+- It asks:
+
+$$
+\log_2 8 = ?
+$$
+
+and answers:
+
+$$
+\log_2 8 = 3
+$$
+
+because
+
+$$
+2^3 = 8
+$$
 
 </div>
 
 <div class="content-box">
 
-## ⚠️ When is a Logarithm Defined?
+## When Is a Logarithm Defined?
 
-A logarithm like $\log_a b$ is **only defined** under two conditions:
+A logarithm like logₐ b is **only defined** under two conditions:
 
-1. The **base** $a$ must be **positive** and **different from 1**  
-2. The **argument** $b$ must be **positive**
+1. The **base** a must be **positive** and **different from 1**
+2. The **argument** b must be **positive**
 
 In symbols:
 
@@ -49,15 +76,16 @@ a > 0,\quad a \neq 1,\quad b > 0
 $$
 
 Why? Because:
-- We can't raise a negative base to arbitrary powers (e.g., roots)
-- $a = 1$ would always give the same result: $1^x = 1$
-- The result of an exponential function $a^x$ is always **positive**, so the **inverse** (logarithm) is only defined for positive inputs
+
+- We can't raise a negative base to arbitrary real powers in general
+- a = 1 would always give the same result: 1ˣ = 1
+- The result of an exponential function aˣ is always **positive**, so the **inverse** (logarithm) is only defined for positive inputs
 
 </div>
 
 <div class="content-box">
 
-## 🧠 A Step-by-Step Example
+## A Step-by-Step Example
 
 Let’s say we want to solve this exponential equation:
 
@@ -73,7 +101,8 @@ $$
 x = \log_2 5
 $$
 
-This is a **precise** expression, just like $\sqrt{2}$.  
+This is a **precise** expression, just like √2.
+
 Its decimal approximation is:
 
 $$
@@ -81,38 +110,70 @@ $$
 $$
 
 This means:
+
 > “2 raised to the power 2.3219 is approximately 5.”
 
 </div>
 
 <div class="content-box">
 
-## 🔁 Logarithms and Exponentials: Inverse Functions
+## Logarithms and Exponentials: Inverse Functions
 
-The **logarithm base $a$** is the inverse of the exponential function base $a$:
+The **logarithm base a** is the inverse of the exponential function base a:
 
-- Exponential:  
-  $$ f(x) = a^x $$
-- Logarithm:  
-  $$ g(x) = \log_a x $$
+- Exponential:
+
+$$
+f(x) = a^x
+$$
+
+- Logarithm:
+
+$$
+g(x) = \log_a x
+$$
 
 These functions "undo" each other:
 
 $$
-\log_a (a^x) = x \qquad \text{and} \qquad a^{\log_a x} = x
+\log_a (a^x) = x
 $$
 
-This is similar to how square roots and squaring are inverses:
+and
 
 $$
-\sqrt{x^2} = x \qquad \text{and} \qquad (\sqrt{x})^2 = x
+a^{\log_a x} = x
 $$
+
+A similar relationship exists between squaring and square roots, but with an important restriction.
+
+For every real number x:
+
+$$
+\sqrt{x^2} = |x|
+$$
+
+If we restrict the squaring function to x ≥ 0, then the square root is its inverse, and:
+
+$$
+\sqrt{x^2} = x
+$$
+
+for x ≥ 0.
+
+Likewise:
+
+$$
+(\sqrt{x})^2 = x
+$$
+
+for x ≥ 0.
 
 </div>
 
 <div class="content-box">
 
-## 📈 Graphical Features of the Logarithmic Function
+## Graphical Features of the Logarithmic Function
 
 For the function:
 
@@ -122,10 +183,14 @@ $$
 
 we know:
 
-- It is defined only for $x > 0$
-- It passes through the point $(1, 0)$, since  
-  $$ \log_a 1 = 0 $$
-- It increases if $a > 1$, and decreases if $0 < a < 1$
+- It is defined only for x > 0
+- It passes through the point (1, 0), since
+
+$$
+\log_a 1 = 0
+$$
+
+- It increases if a > 1, and decreases if 0 < a < 1
 - It grows slowly: logarithms increase very slowly for large values
 
 A classic example:
@@ -146,7 +211,7 @@ So even multiplying by 10 gives only a small change in the logarithm.
 
 <div class="content-box">
 
-## 🔧 Core Logarithmic Rules
+## Core Logarithmic Rules
 
 These rules are essential for simplifying logarithmic expressions:
 
@@ -176,13 +241,13 @@ $$
 \log_a b = \frac{\log_c b}{\log_c a}
 $$
 
-Most often, we use $\log_{10}$ or $\ln$ (log base $e$).
+Most often, we use log₁₀ or ln (log base e).
 
 </div>
 
 <div class="content-box">
 
-## 📝 Practice: A Detailed Example
+## Practice: A Detailed Example
 
 Let’s simplify this expression:
 
@@ -206,7 +271,7 @@ This shows how multiple terms can be **condensed into a single logarithm**.
 
 Another common question:
 
-> What is $\log_2 \sqrt[3]{16}$?
+> What is log₂ ∛16?
 
 We note:
 
@@ -230,16 +295,16 @@ $$
 
 <div class="content-box">
 
-## 🔎 Want to Go Further?
+## Want to Go Further?
 
 Try proving these properties from the definition:
 
 - Why does the product rule work?
 - Can you explain why logarithms grow slowly?
-- Explore the graph of $y = \log_a x$ for different values of $a$
+- Explore the graph of y = logₐ x for different values of a
 
-And when you're ready...
+---
 
-<p><a href="/high-school/concepts-and-exercises/">⬅ Back to Concepts and Exercises</a></p>
+[**← Back to Algebra**]({{ "/mathematics/algebra/" | relative_url }})
 
 </div>

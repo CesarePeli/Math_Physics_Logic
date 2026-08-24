@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | Logic & Motion</title>
-  <meta name="description" content="{{ page.description | default: 'Logic & Motion – Math and Physics teaching materials' }}">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/favicon.png" type="image/png">
+
+  <title>{% if page.title == "Home" %}Logic & Motion{% else %}{{ page.title }} | Logic & Motion{% endif %}</title>
+
+  <meta
+    name="description"
+    content="{{ page.description | default: 'Logic & Motion – Mathematics, physics, reasoning, language and intelligence.' }}"
+  >
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Cesare Peli",
+    "url": "https://www.cesarepeli.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/cesare-peli-b32a411a/",
+      "https://www.instagram.com/logicandmotion/"
+    ]
+  }
+  </script>
 </head>
+
 <body style="
   background-image: url('{{ page.background_image }}');
   background-size: cover;
@@ -20,26 +44,49 @@
   {% include header.html %}
 
   {% if page.title == "Home" %}
-  <section class="hero" style="text-align: center; margin: 4rem auto 3rem; max-width: 1000px;">
-    <h1 style="font-size: 8rem; font-weight: bold; color: #fff;
-               text-shadow: -2px -2px 0 #000, 2px -2px 0 #000,
-                            -2px  2px 0 #000, 2px  2px 0 #000;
-               margin: 0 auto;
-               display: block;">
+  <section class="hero" style="
+    text-align: center;
+    margin: 4rem auto 3rem;
+    max-width: 1000px;
+  ">
+    <h1 style="
+      font-size: 8rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+      margin: 0 auto;
+      display: block;
+    ">
       Logic & Motion
     </h1>
-    <p style="font-size: 2rem; font-style: italic; color: #ddd;
-              text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
-                           -1px  1px 0 #000, 1px  1px 0 #000;
-              margin: 1rem auto 0;
-              display: block;
-              max-width: 90%;">
+
+    <p style="
+      font-size: 2rem;
+      font-style: italic;
+      color: #ddd;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+      margin: 1rem auto 0;
+      display: block;
+      max-width: 90%;
+    ">
       Tools for students and teachers — grounded in reasoning and clarity.
     </p>
   </section>
   {% endif %}
 
-  <main style="margin-top: 2rem; width: 100vw; margin: 0; padding: 0;">
+  <main style="
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  ">
     {% if page.raw %}
       {{ content }}
     {% else %}
@@ -49,33 +96,37 @@
     {% endif %}
   </main>
 
-<footer style="
-  background: rgba(0, 0, 0, 0.7); /* sfondo leggero semitrasparente nero */
-  border-top: none;               /* rimuove la linea orizzontale */
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-">
-  <span style="
-    font-weight: 500;
-    text-shadow: 
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,  
-      -1px  1px 0 #000,  
-       1px  1px 0 #000;
+  <footer style="
+    background: rgba(0, 0, 0, 0.7);
+    border-top: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
   ">
-    © {{ 'now' | date: '%Y' }} Logic &amp; Motion 
-  </span>
-  <img src="/images/logo.png" alt="Logic & Motion Logo" style="height: 40px;">
-</footer>
+    <span style="
+      font-weight: 500;
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    ">
+      © {{ 'now' | date: '%Y' }} Logic &amp; Motion
+    </span>
 
+    <img
+      src="{{ '/images/logo.png' | relative_url }}"
+      alt="Logic & Motion Logo"
+      style="height: 40px;"
+    >
+  </footer>
 
-
+  <!-- MathJax -->
   <script>
     window.MathJax = {
       tex: {
@@ -96,7 +147,11 @@
       }
     };
   </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 
 </body>
 </html>
