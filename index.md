@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Logic & Motion — Mathematics, Physics, Logic and Philosophy"
+title: "Logic & Motion — Mathematics, Physics, Logic and Language"
 permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
-description: "Explore mathematics, physics, logic, language, and philosophy through clear educational resources, solved exercises, and conceptual investigations."
+description: "Explore mathematics, physics, logic, and language through clear educational resources, solved exercises, and conceptual investigations."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -20,27 +20,19 @@ description: "Explore mathematics, physics, logic, language, and philosophy thro
 
 # Logic & Motion
 
-**Mathematics, physics, logic and Language explored through structured educational resources and conceptual inquiry.**
-
 Mathematics is not mere calculation—at least, not only.
 
-It is a form of thought, a structure of understanding, and a language of precision. In a world that moves fast—chasing shortcuts and quick results—mathematics invites us to slow down, to think with order, and to separate the essential from the accidental.
+It is a form of thought, a structure of understanding, and a language of precision. In a world that moves quickly and often favors shortcuts, mathematics asks us to proceed carefully, distinguish assumptions from conclusions, and recognize patterns and relations that are not always immediately visible.
 
-It teaches us to *see*: recurring patterns, possible transformations, and hidden connections between ideas that at first seem distant.
+There is no single path to understanding. Some ideas become clear through formal reasoning, others through examples, diagrams, analogy, or computation.
 
-There is no single path to insight. Some minds see structure immediately, others begin with concrete examples, others imagine abstract relations.
+In this spirit, **Mathematics** is not treated as a list of formulas to memorize, but as a discipline grounded in reasoning, proof, structure, and problem solving.
 
-All of these approaches are valuable, because mathematics welcomes diverse styles of reasoning—deductive, inductive, analogical, abstract, visual—and in this variety lies its universality.
+**Physics** is approached through models: mathematical descriptions of natural phenomena, together with the assumptions and limits that make those models meaningful.
 
-In this spirit, **Mathematics** is not a list of formulas to memorize, but a way of thinking grounded in reasoning, proof, and internal coherence.
+**Logic & Language** explores logic, philosophy, language, meaning, knowledge, and the structures through which reasoning and representation become possible.
 
-**Physics** is approached as the science of models: abstract principles expressed through mathematics and tested against the structure of the natural world.
-
-**Logic & Language** explores logic, philosophy, language, meaning, knowledge, and the structures through which reasoning becomes expressible and ideas become intelligible.
-
-**Logic & Motion** bridges education and exploration, offering curated resources for students, teachers, and curious readers: theoretical notes, solved exercises, visual materials, and original writing that invite reflection as well as understanding.
-
-Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* presents knowledge as a structured way of thinking—intellectually rigorous, yet always human and meaningful.
+**Logic & Motion** brings these areas together through theoretical notes, solved exercises, conceptual articles, and visual material intended for students, teachers, and curious readers.
 
 </div>
 
@@ -80,7 +72,7 @@ A visual collection of generative artworks exploring mathematical, scientific, p
 
 ### About
 
-Learn more about the educational vision, cultural perspective, and ideas behind *Logic & Motion*.
+Learn more about the educational vision and the ideas behind *Logic & Motion*.
 
 [**About Logic & Motion →**]({{ "/about/" | relative_url }})
 
