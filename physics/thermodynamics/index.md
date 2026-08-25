@@ -1,3 +1,4 @@
+```markdown
 ---
 layout: default
 date: 2026-08-24
@@ -57,4 +58,45 @@ Thermodynamic equilibrium describes states in which macroscopic properties remai
 
 Gibbs free energy combines enthalpy, temperature, and entropy into a thermodynamic potential particularly useful for studying processes at constant temperature and pressure.
 
-[**Explore Gibbs Free Energy →**]({{
+[**Explore Gibbs Free Energy →**]({{ "/physics/thermodynamics/gibbs-free-energy/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Phase Transitions
+
+Phase transitions describe changes between different states of matter and provide a direct application of thermodynamic equilibrium, latent heat, entropy, and free energy.
+
+[**Explore Phase Transitions →**]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Colligative Properties and Freezing
+
+Colligative properties depend on the number of dissolved particles rather than their chemical identity.
+
+Explore freezing-point depression and its thermodynamic interpretation through worked problems.
+
+[**Explore Colligative Properties →**]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Reaction Energetics
+
+Thermodynamics provides the tools required to analyze energy changes associated with physical and chemical transformations.
+
+Enthalpy, entropy, and free-energy changes connect microscopic transformations with macroscopic criteria for equilibrium and spontaneity.
+
+[**Explore Reaction Energetics →**]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
+
+</div>
+
+---
+
+[**← Back to Physics**]({{ "/physics/" | relative_url }})
+```
