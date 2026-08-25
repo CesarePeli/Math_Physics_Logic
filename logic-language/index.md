@@ -1,5 +1,4 @@
 ---
-
 layout: default
 date: 2026-08-25
 title: "Logic & Language"
@@ -7,7 +6,9 @@ permalink: /logic-language/
 background_image: "/images/spirale.png"
 description: "Explore logic, language, meaning, knowledge, and reasoning through philosophy, formal analysis, and conceptual inquiry."
 area: logic-language
---------------------
+---
+
+<div class="content-box">
 
 # Logic & Language
 
@@ -16,6 +17,8 @@ area: logic-language
 Logic asks what makes an inference valid, how arguments are structured, and which principles allow conclusions to follow from premises. Language introduces another dimension: the relation between symbols and meaning, between what is said and what is understood, and between formal structures and human interpretation.
 
 Together, these fields open a space where mathematics, philosophy, linguistics, and the study of reasoning meet.
+
+</div>
 
 <div class="content-box">
 
@@ -65,8 +68,10 @@ The aim is not simply to introduce individual theories, but to examine the assum
 
 </div>
 
----
+<div class="content-box">
 
 Logic and language occupy a distinctive place in *Logic & Motion*: they concern not only what we know, but also **how thought becomes structured, expressed, and intelligible**.
 
 [**← Back to Home**]({{ "/" | relative_url }})
+
+</div>
