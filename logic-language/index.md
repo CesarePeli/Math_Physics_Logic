@@ -3,7 +3,7 @@ layout: default
 date: 2026-08-25
 title: "Logic & Language"
 permalink: /logic-language/
-background_image: "/images/spirale.png"
+background_image: "/images/euclide.png"
 description: "Explore logic, language, meaning, knowledge, and reasoning through philosophy, formal analysis, and conceptual inquiry."
 area: logic-language
 ---
