@@ -1,10 +1,11 @@
+```markdown
 ---
 layout: default
 title: "Logic & Motion — Mathematics, Physics, Logic and Philosophy"
 permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
-description: "Explore mathematics, physics, reasoning, language, and intelligence through clear educational resources, solved exercises, and in-depth exploration."
+description: "Explore mathematics, physics, logic, language, and philosophy through clear educational resources, solved exercises, and conceptual investigations."
 ---
 
 <!-- Google tag (gtag.js) -->
@@ -48,20 +49,29 @@ description: "Explore mathematics, physics, reasoning, language, and intelligenc
           overflow:hidden;
           text-decoration:none;
           color:#fff;
-          background:url('{{ bg | relative_url }}') center/cover no-repeat;
+          background-image:url('{{ bg | relative_url }}');
+          background-position:center;
+          background-size:cover;
+          background-repeat:no-repeat;
         "
       >
         <span style="
           display:flex;
           align-items:flex-end;
           justify-content:center;
+          box-sizing:border-box;
           height:100%;
           width:100%;
-          padding-bottom:1rem;
+          padding:1rem;
           font-size:1rem;
           font-weight:600;
           text-align:center;
           text-shadow:0 2px 6px rgba(0,0,0,0.9);
+          background:linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.05) 35%,
+            rgba(0,0,0,0.65) 100%
+          );
         ">
           {{ item.title }}
         </span>
@@ -75,7 +85,7 @@ description: "Explore mathematics, physics, reasoning, language, and intelligenc
 
 # Logic & Motion
 
-**Mathematics, physics, reasoning, language, and intelligence explored through structured educational resources and conceptual inquiry.**
+**Mathematics, physics, logic, language, and philosophy explored through structured educational resources and conceptual inquiry.**
 
 Mathematics is not mere calculation—at least, not only.  
 It is a form of thought, a structure of understanding, and a language of precision. In a world that moves fast—chasing shortcuts and quick results—mathematics invites us to slow down, to think with order, and to separate the essential from the accidental. It teaches us to *see*: recurring patterns, possible transformations, and hidden connections between ideas that at first seem distant.
@@ -86,7 +96,7 @@ In this spirit, **Mathematics** is not a list of formulas to memorize, but a way
 
 **Physics** is approached as the science of models: abstract principles expressed through mathematics and tested against the structure of the natural world.
 
-**Reason, Language & Intelligence** explores logic, philosophy, language, knowledge, and the forms of intelligence through which we interpret, represent, and transform reality.
+**Logic & Language** explores logic, philosophy, language, knowledge, and the structures through which we reason about, represent, and interpret reality.
 
 **Logic & Motion** bridges education and exploration, offering curated resources for students and teachers: theoretical notes, solved exercises, visual materials, and original writing that invite reflection as well as understanding.
 
@@ -107,15 +117,15 @@ Structures, patterns, abstraction, proof, and the formal language through which 
 
 ### Physics
 
-Models of nature, from motion and thermodynamics to the mathematical structure of physical theories.
+Models of nature, from thermodynamics and quantum physics to the mathematical structure of physical theories.
 
 [**Explore Physics →**]({{ "/physics/" | relative_url }})
 
-### Reason, Language & Intelligence
+### Logic & Language
 
-Logic, philosophy, linguistics, knowledge, reasoning, and artificial intelligence.
+Logic, philosophy, language, knowledge, meaning, and the structures of reasoning.
 
-[**Explore Reason, Language & Intelligence →**]({{ "/reason-language-intelligence/" | relative_url }})
+[**Explore Logic & Language →**]({{ "/logic-language/" | relative_url }})
 
 ### Gallery
 
@@ -130,3 +140,4 @@ Learn more about the educational vision and the ideas behind Logic & Motion.
 [**About Logic & Motion →**]({{ "/about/" | relative_url }})
 
 </div>
+```

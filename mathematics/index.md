@@ -1,9 +1,11 @@
+```markdown
 ---
 layout: default
 title: Mathematics
 permalink: /mathematics/
 background_image: "/images/spirale.png"
-description: "Explore mathematics through foundations, algebra, calculus, and dynamical systems, with theory, solved exercises, and conceptual investigations."
+description: "Explore mathematics through foundations, algebra, and calculus, with theory, solved exercises, and conceptual investigations."
+area: mathematics
 ---
 
 # Mathematics
@@ -50,20 +52,9 @@ Rather than separating topics into high-school and university sections, resource
 
 </div>
 
-<div class="content-box">
-
-## Dynamical Systems
-
-The study of mathematical systems that evolve over time, with particular attention to nonlinear behavior, stability, chaos, and the emergence of complex structures from deterministic laws.
-
-This area includes deeper investigations such as **The Structure of the Lorenz Attractor**, where geometry and dynamics meet in one of the most recognizable objects in chaos theory.
-
-[**Explore Dynamical Systems →**]({{ "/mathematics/dynamical-systems/" | relative_url }})
-
-</div>
-
 ---
 
 Mathematical understanding develops at different levels of depth. Some resources introduce an idea visually or intuitively; others develop its formal structure or apply it through detailed exercises.
 
 The aim is not to treat these as separate mathematical worlds, but as different ways of approaching the same underlying ideas.
+```

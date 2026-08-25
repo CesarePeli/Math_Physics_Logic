@@ -1,3 +1,4 @@
+```html
 <nav class="site-nav" style="
   display:flex;
   flex-wrap:wrap;
@@ -13,16 +14,19 @@
 ">
 
   <!-- Navigation links -->
-  {% assign nav_items = "index:Home,odd-questions:The Odd Questions,insights:In-Depth Articles,high-school:High School,university:University,gallery:Gallery,about:About" | split: "," %}
+  {% assign nav_items = "index:Home,mathematics:Mathematics,physics:Physics,logic-language:Logic & Language,gallery:Gallery,about:About" | split: "," %}
   {% assign current_url = page.url | replace: "/index.html", "/" %}
+
   {% for item in nav_items %}
     {% assign parts = item | split: ":" %}
     {% assign slug  = parts[0] %}
     {% assign label = parts[1] %}
     {% assign url   = "/" %}
+
     {% unless slug == "index" %}
       {% assign url = "/" | append: slug | append: "/" %}
     {% endunless %}
+
     {% unless current_url == url %}
       <a href="{{ url | relative_url }}" style="
         white-space:nowrap;
@@ -33,4 +37,6 @@
       </a>
     {% endunless %}
   {% endfor %}
+
 </nav>
+```
