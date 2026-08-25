@@ -4,7 +4,7 @@ date: 2026-08-25
 title: "Logic & Language"
 permalink: /logic-language/
 background_image: "/images/euclide.png"
-description: "Explore logic, language, meaning, knowledge, and reasoning through philosophy, formal analysis, and conceptual inquiry."
+description: "Articles and resources on logic, linguistics, language, reasoning, and artificial intelligence."
 area: logic-language
 ---
 
@@ -12,65 +12,59 @@ area: logic-language
 
 # Logic & Language
 
-**Logic & Language** explores the structures through which we reason, communicate, represent knowledge, and give meaning to the world.
+This section brings together articles and resources on **logic, linguistics, and artificial intelligence**.
 
-Logic asks what makes an inference valid, how arguments are structured, and which principles allow conclusions to follow from premises. Language introduces another dimension: the relation between symbols and meaning, between what is said and what is understood, and between formal structures and human interpretation.
+These fields approach reasoning and language from different perspectives. Logic studies inference and formal systems; linguistics studies the structure and use of language; artificial intelligence raises practical and theoretical questions about computation, reasoning, learning, and language processing.
 
-Together, these fields open a space where mathematics, philosophy, linguistics, and the study of reasoning meet.
-
-</div>
-
-<div class="content-box">
-
-## Logic and Reasoning
-
-Logic provides tools for examining the structure of arguments independently of their particular subject matter.
-
-Questions of **validity, implication, contradiction, consistency, and proof** reveal how conclusions depend on assumptions and how formal systems organize reasoning.
-
-Yet logic is not merely a collection of symbolic techniques. It also raises deeper questions about what it means for an argument to be valid, how formal reasoning relates to ordinary thought, and where the limits of formalization may lie.
+The section will develop as new articles and materials are added.
 
 </div>
 
 <div class="content-box">
 
-## Language and Meaning
+## Logic
 
-Language is more than a system for transmitting information.
+Logic studies the principles of valid reasoning and the structure of arguments.
 
-Words and symbols acquire meaning through relations, conventions, contexts, and interpretation. The same expression may therefore be examined syntactically, semantically, or pragmatically, depending on which aspect of language we wish to understand.
+Topics may include propositions, inference, validity, consistency, formal systems, proof, and the relation between formal logic and ordinary reasoning.
 
-The study of language leads naturally to questions about **reference, truth, ambiguity, interpretation, and representation**.
-
-</div>
-
-<div class="content-box">
-
-## Knowledge and Representation
-
-How can knowledge be represented?
-
-A mathematical equation, a logical proposition, a scientific model, and an ordinary sentence all represent something, but they do so in different ways.
-
-Investigating these differences helps clarify the relationship between **formal systems and the world they attempt to describe**, as well as the distinction between manipulating symbols and understanding what those symbols mean.
+Articles in this area will range from introductory explanations to more detailed discussions of particular logical problems and systems.
 
 </div>
 
 <div class="content-box">
 
-## Articles and Explorations
+## Linguistics
 
-This section will collect articles on logic, philosophy of language, reasoning, meaning, knowledge, and related conceptual questions.
+Linguistics studies human language: its structure, organization, use, and development.
 
-The aim is not simply to introduce individual theories, but to examine the assumptions behind them and the connections between different ways of describing thought and reality.
+Articles may address **syntax, semantics, pragmatics, phonetics, phonology, morphology**, and other areas of linguistic analysis, as well as broader questions about meaning and communication.
 
-*New articles will be added as the section develops.*
+Where useful, connections with logic, philosophy, mathematics, and computation will also be considered.
 
 </div>
 
 <div class="content-box">
 
-Logic and language occupy a distinctive place in *Logic & Motion*: they concern not only what we know, but also **how thought becomes structured, expressed, and intelligible**.
+## Artificial Intelligence
+
+Artificial intelligence provides a contemporary setting in which questions about reasoning, language, representation, and learning become concrete computational problems.
+
+This area will include articles on AI concepts and methods, with particular attention to language models, machine reasoning, representation, and the distinction between computational performance and the concepts we use to describe it.
+
+The aim is to examine these subjects clearly, without treating current AI systems either as mysterious objects or as simple analogues of human intelligence.
+
+</div>
+
+<div class="content-box">
+
+## Articles
+
+Articles will be added here as the section develops.
+
+</div>
+
+<div class="content-box">
 
 [**← Back to Home**]({{ "/" | relative_url }})
 
