@@ -20,7 +20,7 @@ description: "Explore mathematics, physics, logic, language, and philosophy thro
 
 # Logic & Motion
 
-**Mathematics, physics, logic, language, and philosophy explored through structured educational resources and conceptual inquiry.**
+**Mathematics, physics, logic and Language explored through structured educational resources and conceptual inquiry.**
 
 Mathematics is not mere calculation—at least, not only.
 
