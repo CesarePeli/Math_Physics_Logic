@@ -4,7 +4,7 @@ date: 2026-08-25
 title: "Physics"
 permalink: /physics/
 background_image: "/images/termodinamica.png"
-description: "Explore physics through mechanics, thermodynamics, and quantum physics, with theoretical explanations, worked problems, and conceptual explorations of physical phenomena."
+description: "Explore physics through mechanics, thermodynamics, dynamical systems, chaos, and quantum physics, with mathematical models, worked problems, and conceptual explorations."
 area: physics
 ---
 
@@ -12,7 +12,7 @@ area: physics
 
 **Physics** studies matter, energy, motion, interactions, and the fundamental laws that describe natural phenomena.
 
-It combines observation, mathematical reasoning, and conceptual models to understand how physical systems behave, from the motion of bodies and thermodynamic transformations to the phenomena that led to quantum physics.
+It combines observation, mathematical reasoning, and conceptual models to understand how physical systems behave, from the motion of bodies and thermodynamic transformations to nonlinear dynamics, chaos, and the phenomena that led to quantum physics.
 
 This section organizes the material by physical topic rather than by educational level.
 
@@ -37,6 +37,18 @@ Thermodynamics studies heat, work, energy, entropy, equilibrium, and the macrosc
 The resources in this section combine worked problems with conceptual explorations of entropy and the fundamental principles governing thermodynamic processes.
 
 [**Explore Thermodynamics →**]({{ "/physics/thermodynamics/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Dynamical Systems & Chaos
+
+Dynamical systems study how physical and mathematical systems evolve over time, with particular attention to nonlinear behavior, stability, and sensitivity to initial conditions.
+
+The Lorenz system provides one of the most influential examples of deterministic chaos: a simple system of differential equations capable of producing complex behavior and the celebrated Lorenz attractor.
+
+[**Explore Dynamical Systems & Chaos →**]({{ "/physics/dynamical-systems/" | relative_url }})
 
 </div>
 
