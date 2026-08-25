@@ -1,11 +1,10 @@
-
 ---
 layout: default
-date: 2026-08-24
+date: 2026-08-25
 title: "Physics"
 permalink: /physics/
-background_image: "/images/physics.png"
-description: "Explore physics through mechanics and thermodynamics, with theoretical explanations, worked problems, and connections between mathematical models and physical phenomena."
+background_image: "/images/termodinamica.png"
+description: "Explore physics through mechanics, thermodynamics, and quantum physics, with theoretical explanations, worked problems, and conceptual explorations of physical phenomena."
 area: physics
 ---
 
@@ -13,7 +12,7 @@ area: physics
 
 **Physics** studies matter, energy, motion, interactions, and the fundamental laws that describe natural phenomena.
 
-It combines observation, mathematical reasoning, and conceptual models to understand how physical systems behave, from the motion of bodies to transformations of energy and the thermodynamic evolution of matter.
+It combines observation, mathematical reasoning, and conceptual models to understand how physical systems behave, from the motion of bodies and thermodynamic transformations to the phenomena that led to quantum physics.
 
 This section organizes the material by physical topic rather than by educational level.
 
@@ -35,9 +34,21 @@ It connects kinematics, dynamics, energy, momentum, and mathematical models of m
 
 Thermodynamics studies heat, work, energy, entropy, equilibrium, and the macroscopic behavior of physical systems.
 
-The resources in this section explore thermodynamic transformations, ideal gases, entropy, phase transitions, equilibrium, and energy through theory and worked problems.
+The resources in this section combine worked problems with conceptual explorations of entropy and the fundamental principles governing thermodynamic processes.
 
 [**Explore Thermodynamics →**]({{ "/physics/thermodynamics/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Quantum Physics
+
+Quantum physics emerged from phenomena that classical physics could not adequately explain.
+
+The study of blackbody radiation provides one of the fundamental historical and conceptual paths toward Planck's quantum hypothesis and the development of quantum theory.
+
+[**Explore Quantum Physics →**]({{ "/physics/quantum-physics/" | relative_url }})
 
 </div>
 
@@ -52,6 +63,3 @@ This interaction between experiment, mathematical structure, and conceptual reas
 ---
 
 [**← Back to Home**]({{ "/" | relative_url }})
-```
-
-Dopo questo passiamo direttamente a **Mechanics**.
