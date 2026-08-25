@@ -16,130 +16,6 @@ description: "Explore mathematics, physics, logic, language, and philosophy thro
   gtag('config', 'G-3P4GLVFYWW');
 </script>
 
-<!-- ─────────────────────────────
-     FEATURED
-───────────────────────────── -->
-
-<section id="featured" style="
-  margin:4rem auto;
-  max-width:1000px;
-  padding:0 1rem;
-">
-
-  <h2 style="
-    font-size:1.6rem;
-    margin-bottom:1.2rem;
-  ">
-    Featured
-  </h2>
-
-  {% assign featured_math = site.pages
-    | where: "area", "mathematics"
-    | where: "featured", true
-  %}
-
-  {% assign featured_physics = site.pages
-    | where: "area", "physics"
-    | where: "featured", true
-  %}
-
-  {% assign featured_logic = site.pages
-    | where: "area", "logic-language"
-    | where: "featured", true
-  %}
-
-  {% assign spotlight = featured_math
-    | concat: featured_physics
-    | concat: featured_logic
-    | sort: "date"
-    | reverse
-    | slice: 0, 6
-  %}
-
-  {% if spotlight.size > 0 %}
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:1.2rem;
-  ">
-
-    {% for item in spotlight %}
-
-      {% if item.background_image %}
-        {% assign bg = item.background_image %}
-      {% else %}
-        {% assign bg = "/images/placeholder.jpg" %}
-      {% endif %}
-
-      <a
-        href="{{ item.url | relative_url }}"
-        aria-label="{{ item.title }}"
-        style="
-          position:relative;
-          display:block;
-          height:180px;
-          border-radius:1rem;
-          overflow:hidden;
-          text-decoration:none;
-          color:#fff;
-          background-image:url('{{ bg | relative_url }}');
-          background-position:center;
-          background-size:cover;
-          background-repeat:no-repeat;
-          box-shadow:0 4px 14px rgba(0,0,0,.35);
-        "
-      >
-
-        <span style="
-          position:absolute;
-          inset:0;
-          display:flex;
-          align-items:flex-end;
-          justify-content:center;
-          box-sizing:border-box;
-          padding:1rem;
-          background:linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.02) 25%,
-            rgba(0,0,0,0.20) 55%,
-            rgba(0,0,0,0.82) 100%
-          );
-        ">
-
-          <span style="
-            font-size:1rem;
-            font-weight:600;
-            line-height:1.35;
-            text-align:center;
-            text-shadow:0 2px 6px rgba(0,0,0,.9);
-          ">
-            {{ item.title }}
-          </span>
-
-        </span>
-
-      </a>
-
-    {% endfor %}
-
-  </div>
-
-  {% else %}
-
-  <p>
-    Featured articles will appear here as new resources are published.
-  </p>
-
-  {% endif %}
-
-</section>
-
-
-<!-- ─────────────────────────────
-     INTRODUCTION
-───────────────────────────── -->
-
 <div class="content-box">
 
 # Logic & Motion
@@ -168,11 +44,6 @@ Rooted in logic, inquiry, and the desire to understand, *Logic & Motion* present
 
 </div>
 
-
-<!-- ─────────────────────────────
-     MAIN AREAS
-───────────────────────────── -->
-
 <div class="content-box">
 
 ## Explore the Areas
@@ -185,7 +56,6 @@ The Mathematics area brings together **Foundations, Algebra, and Calculus**, com
 
 [**Explore Mathematics →**]({{ "/mathematics/" | relative_url }})
 
-
 ### Physics
 
 The study of natural phenomena through models, measurement, mathematical structure, and physical reasoning.
@@ -193,7 +63,6 @@ The study of natural phenomena through models, measurement, mathematical structu
 Current resources explore areas including **thermodynamics and quantum physics**, with theory, conceptual investigations, and worked problems.
 
 [**Explore Physics →**]({{ "/physics/" | relative_url }})
-
 
 ### Logic & Language
 
@@ -203,13 +72,11 @@ This area investigates how arguments are formed, how symbols acquire meaning, ho
 
 [**Explore Logic & Language →**]({{ "/logic-language/" | relative_url }})
 
-
 ### Gallery
 
 A visual collection of generative artworks exploring mathematical, scientific, philosophical, and conceptual structures.
 
 [**Explore the Gallery →**]({{ "/gallery/" | relative_url }})
-
 
 ### About
 
