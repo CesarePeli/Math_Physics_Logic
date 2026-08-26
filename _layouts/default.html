@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% if page.url == "/" %}Logic & Motion{% else %}{{ page.title }} | Logic & Motion{% endif %}</title>
+  <title>{% if page.permalink == "/" %}Logic & Motion{% else %}{{ page.title }} | Logic & Motion{% endif %}</title>
 
   <meta
     name="description"
-    content="{{ page.description | default: 'Logic & Motion – Mathematics, physics, logic, language and philosophy.' }}"
+    content="{{ page.description | default: 'Logic & Motion – Mathematics, physics, reasoning, language and intelligence.' }}"
   >
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -43,42 +43,28 @@
 
   {% include header.html %}
 
-  {% if page.url == "/" %}
+  {% if page.permalink == "/" %}
   <section class="hero" style="
     text-align: center;
-    margin: 4rem auto 3rem;
-    max-width: 1000px;
+    margin: 3rem auto 2.5rem;
+    padding: 0 1rem;
   ">
-    <h1 style="
-      font-size: 8rem;
-      font-weight: bold;
-      color: #fff;
-      text-shadow:
-        -2px -2px 0 #000,
-         2px -2px 0 #000,
-        -2px  2px 0 #000,
-         2px  2px 0 #000;
-      margin: 0 auto;
-      display: block;
-    ">
-      Logic & Motion
-    </h1>
 
-    <p style="
-      font-size: 2rem;
-      font-style: italic;
-      color: #ddd;
+    <h1 style="
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #fff;
       text-shadow:
         -1px -1px 0 #000,
          1px -1px 0 #000,
         -1px  1px 0 #000,
          1px  1px 0 #000;
-      margin: 1rem auto 0;
-      display: block;
-      max-width: 90%;
+      margin: 0;
     ">
-      Tools for students and teachers — grounded in reasoning and clarity.
-    </p>
+      Logic &amp; Motion
+    </h1>
+
   </section>
   {% endif %}
 
@@ -108,6 +94,7 @@
     align-items: center;
     gap: 0.5rem;
   ">
+
     <span style="
       font-weight: 500;
       text-shadow:
@@ -124,6 +111,7 @@
       alt="Logic & Motion Logo"
       style="height: 40px;"
     >
+
   </footer>
 
   <!-- MathJax -->
