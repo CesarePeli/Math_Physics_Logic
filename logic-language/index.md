@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-25
+date: 2026-08-27
 title: "Logic & Language"
 permalink: /logic-language/
 background_image: "/images/euclide.png"
@@ -60,7 +60,8 @@ The aim is to examine these subjects clearly, without treating current AI system
 
 ## Articles
 
-Articles will be added here as the section develops.
+- [**What Is a Proof?**]({{ "/logic-language/what-is-a-proof/" | relative_url }})  
+  An exploration of mathematical proof, from formal derivation and logical consequence to the historical development of demonstrative practices across mathematical traditions.
 
 </div>
 
