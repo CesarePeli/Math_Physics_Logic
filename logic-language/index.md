@@ -60,7 +60,7 @@ The aim is to examine these subjects clearly, without treating current AI system
 
 ## Articles
 
-- [**What Is a Proof?**]({{ "/logic-language/what-is-a-proof/" | relative_url }})  
+- [**What Is a Proof?**]({{ "/logic-language/proof/" | relative_url }})  
   An exploration of mathematical proof, from formal derivation and logical consequence to the historical development of demonstrative practices across mathematical traditions.
 
 </div>
