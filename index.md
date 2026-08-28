@@ -1,14 +1,17 @@
 ---
+
 layout: default
 title: "Logic & Motion — Mathematics, Physics, Logic and Language"
 permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
-description: "Explore mathematics, physics, logic, and language through clear educational resources, solved exercises, and conceptual investigations."
----
+description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 <!-- Google tag (gtag.js) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -20,19 +23,21 @@ description: "Explore mathematics, physics, logic, and language through clear ed
 
 # Logic & Motion
 
-Mathematics is not mere calculation—at least, not only.
+**Logic & Motion** brings together articles, notes, exercises, and visual materials on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence.
 
-It is a form of thought, a structure of understanding, and a language of precision. In a world that moves quickly and often favors shortcuts, mathematics asks us to proceed carefully, distinguish assumptions from conclusions, and recognize patterns and relations that are not always immediately visible.
+The site is built around the idea that understanding a subject involves more than learning definitions, formulas, or procedures. Concepts become clearer when their assumptions, structure, historical development, and applications are considered together.
 
-There is no single path to understanding. Some ideas become clear through formal reasoning, others through examples, diagrams, analogy, or computation.
+There is no single path to understanding. Some ideas become clear through formal reasoning, others through examples, diagrams, historical context, analogy, or computation.
 
-In this spirit, **Mathematics** is not treated as a list of formulas to memorize, but as a discipline grounded in reasoning, proof, structure, and problem solving.
+Mathematics, physics, logic, linguistics, and the study of formal systems meet here around common questions of reasoning, representation, and models. The material ranges from introductory explanations and worked problems to more technical discussions, depending on the subject and purpose of each article.
+
+**Mathematics** is approached through reasoning, proof, structure, and problem solving, alongside the techniques needed to work with them. The site includes material on foundations, algebra, and calculus, ranging from conceptual discussions to detailed solved exercises.
 
 **Physics** is approached through models: mathematical descriptions of natural phenomena, together with the assumptions and limits that make those models meaningful.
 
-**Logic & Language** explores logic, philosophy, language, meaning, knowledge, and the structures through which reasoning and representation become possible.
+**Logic & Language** brings together topics in logic, linguistics, formal systems, symbolic representation, and artificial intelligence, with particular attention to reasoning, meaning, computation, and the ways in which formal and natural systems represent information.
 
-**Logic & Motion** brings these areas together through theoretical notes, solved exercises, conceptual articles, and visual material intended for students, teachers, and curious readers.
+The site is intended for students, teachers, and readers interested in exploring these subjects at different levels of depth.
 
 </div>
 
@@ -42,37 +47,37 @@ In this spirit, **Mathematics** is not treated as a list of formulas to memorize
 
 ### Mathematics
 
-Structures, patterns, abstraction, proof, and the formal language through which mathematical thought becomes precise.
+Articles and resources on mathematical ideas, methods, and problems, from elementary questions to more advanced topics.
 
-The Mathematics area brings together **Foundations, Algebra, and Calculus**, combining conceptual explanations, theoretical material, and detailed solved exercises.
+The Mathematics area brings together **Foundations, Algebra, and Calculus**, with theoretical material, conceptual explanations, and detailed solved exercises.
 
 [**Explore Mathematics →**]({{ "/mathematics/" | relative_url }})
 
 ### Physics
 
-The study of natural phenomena through models, measurement, mathematical structure, and physical reasoning.
+Articles and resources on physical phenomena, mathematical models, and the concepts used to describe them.
 
-Current resources explore areas including **thermodynamics and quantum physics**, with theory, conceptual investigations, and worked problems.
+Current material includes **thermodynamics, dynamical systems, and quantum physics**, together with theoretical discussions and worked problems.
 
 [**Explore Physics →**]({{ "/physics/" | relative_url }})
 
 ### Logic & Language
 
-An exploration of logic, philosophy, language, meaning, knowledge, and the structures of reasoning.
+Articles on logic, linguistics, formal systems, symbolic representation, and artificial intelligence.
 
-This area investigates how arguments are formed, how symbols acquire meaning, how knowledge is represented, and how language shapes the ways in which ideas can be expressed and understood.
+Topics include proof, inference, meaning, computation, natural language, formal languages, and the relation between ordinary and formal reasoning.
 
 [**Explore Logic & Language →**]({{ "/logic-language/" | relative_url }})
 
 ### Gallery
 
-A visual collection of generative artworks exploring mathematical, scientific, philosophical, and conceptual structures.
+A collection of generative images inspired by mathematical, scientific, and conceptual themes.
 
 [**Explore the Gallery →**]({{ "/gallery/" | relative_url }})
 
 ### About
 
-Learn more about the educational vision and the ideas behind *Logic & Motion*.
+More about the site, its contents, and its author.
 
 [**About Logic & Motion →**]({{ "/about/" | relative_url }})
 

@@ -1,4 +1,5 @@
 ---
+
 layout: default
 title: "What Is a Proof?"
 author: Cesare Peli
@@ -8,7 +9,7 @@ background_image: /images/complessi2.png
 description: "What is a mathematical proof? Explore formal derivation, logical consequence, axiomatic systems, and the historical development of proof across mathematical traditions."
 area: logic-language
 content_type: article
----
+---------------------
 
 <div class="content-box">
 
@@ -28,13 +29,13 @@ A Proof in Formal Terms
 
 Before turning to history, let us pause over a more basic question: what is a proof in mathematics? To pose the question in the most general terms possible, we can begin from the point of view of formal logic. This perspective seems to involve the fewest assumptions, yet even here the answer is less self-contained than it first appears.
 
-In axiomatic mathematics, let (T) be a theory and (A) a statement. We want to establish that (A) follows from the axioms of (T). For example, (T) might contain the axioms of an ordered field together with a completeness principle, while (A) might be Rolle's theorem:
+In axiomatic mathematics, let T be a theory and A a statement. We want to establish that A follows from the axioms of T. For example, T might contain the axioms of an ordered field together with a completeness principle, while A might be Rolle's theorem:
 
-If a real-valued function (f) is continuous on a closed interval ([a,b]), differentiable on the open interval ((a,b)), and (f(a)=f(b)), then there exists at least one (c\in(a,b)) such that (f'(c)=0).
+If a real-valued function f is continuous on a closed interval [a,b], differentiable on the open interval (a,b), and f(a) = f(b), then there exists at least one c ∈ (a,b) such that f′(c) = 0.
 
 The compact formula does not carry its intended mathematical meaning by itself. A reader may know what function, continuity, differentiability, closed interval, and open interval mean, but those meanings must be supplied by definitions, by the language of the theory, and by an interpretation of its symbols. They are the result of mathematical construction, not of logical syntax alone.
 
-Consider a more elementary example. Let (T) be Euclidean geometry and (A) the Pythagorean theorem. We still need to know what triangle, square, right angle, and hypotenuse mean. Without the surrounding definitions and conventions, the proposition does not determine a unique mathematical claim. It acquires that meaning within a theory—or, in ordinary practice, within something as concrete as a geometry textbook.
+Consider a more elementary example. Let T be Euclidean geometry and A the Pythagorean theorem. We still need to know what triangle, square, right angle, and hypotenuse mean. Without the surrounding definitions and conventions, the proposition does not determine a unique mathematical claim. It acquires that meaning within a theory—or, in ordinary practice, within something as concrete as a geometry textbook.
 
 One could try to include every necessary definition and rule explicitly. Mathematical writing rarely does so. Practice does not reproduce the entire foundational architecture behind every theorem: it selects the level of detail appropriate to its readers and purpose. Mathematics, considered as a discipline rather than as a pure abstraction, is also a practice.
 
@@ -42,39 +43,39 @@ There is a deeper foundational problem. The usual formulation of Rolle's theorem
 
 The reason for using axiomatic set theory is not merely a preference for formal elegance. Unrestricted set formation leads to contradictions. If we define
 
-[
-R={x\mid x\notin x},
-]
+$$
+R=\{x\mid x\notin x\},
+$$
 
-then asking whether (R\in R) gives
+then asking whether R ∈ R gives
 
-[
+$$
 R\in R \Longleftrightarrow R\notin R.
-]
+$$
 
 This is Russell's paradox. Axiomatic systems such as Zermelo–Fraenkel set theory restrict the ways in which sets may be formed and make the foundational assumptions explicit. They also lead to delicate questions, including the status of the axiom of choice. None of this has to be reconstructed whenever Rolle's theorem is proved. Even in university mathematics, foundational work is usually left in the background so that attention can remain on the theory being studied.
 
 Derivability and Logical Consequence
 
-At this point a distinction is essential. If (A) can be obtained from the axioms of (T) by the rules of a formal calculus, we write
+At this point a distinction is essential. If A can be obtained from the axioms of T by the rules of a formal calculus, we write
 
-[
+$$
 T\vdash A.
-]
+$$
 
-This is a syntactic relation: there is a finite formal derivation of (A) from (T).
+This is a syntactic relation: there is a finite formal derivation of A from T.
 
-If (A) is true in every interpretation, or model, in which the axioms of (T) are true, we write
+If A is true in every interpretation, or model, in which the axioms of T are true, we write
 
-[
+$$
 T\models A.
-]
+$$
 
 This is a semantic relation. A sound deductive system guarantees that
 
-[
+$$
 T\vdash A \quad\Longrightarrow\quad T\models A.
-]
+$$
 
 In first-order logic, completeness also gives the converse. The two symbols therefore express connected ideas, but they do not mean the same thing: one concerns formal derivation, the other truth in models.
 
@@ -84,36 +85,46 @@ To state the truth about a domain of knowledge, it is necessary to use a languag
 
 Consider the familiar expression
 
-[
+$$
 2+2=4.
-]
+$$
 
-It is often invoked as the clearest possible example of mathematical certainty. Yet even this statement presupposes a domain and an interpretation of its symbols. In the natural numbers it is true; in the ring (\mathbb{Z}_4={0,1,2,3}), where addition is interpreted modulo four, (2+2=0).
+It is often invoked as the clearest possible example of mathematical certainty. Yet even this statement presupposes a domain and an interpretation of its symbols. In the natural numbers it is true. In the ring ℤ₄ = {0,1,2,3}, where addition is interpreted modulo four, the result of adding 2 and 2 is the equivalence class of 4, which coincides with the equivalence class of 0:
 
-There is no need to leave arithmetic in order to prove (2+2=4). Using (S) for the successor operation, define
+$$
+[2]+[2]=[4]=[0].
+$$
 
-[
+Using the customary representatives, this is often written simply as
+
+$$
+2+2=0 \pmod 4.
+$$
+
+There is no need to leave arithmetic in order to prove 2 + 2 = 4. Using S for the successor operation, define
+
+$$
 2=S(S(0)), \qquad 4=S(S(S(S(0)))),
-]
+$$
 
 and addition recursively by
 
-[
+$$
 x+0=x, \qquad x+S(y)=S(x+y).
-]
+$$
 
 Then
 
-[
+$$
 \begin{aligned}
 2+2
-&=2+S(S(0))\
-&=S(2+S(0))\
-&=S(S(2+0))\
-&=S(S(2))\
+&=2+S(S(0))\\
+&=S(2+S(0))\\
+&=S(S(2+0))\\
+&=S(S(2))\\
 &=4.
 \end{aligned}
-]
+$$
 
 The result follows formally once the language, axioms, and definitions have been fixed. Set theory can be used to construct a particular model of the natural numbers, but it is not required for this elementary derivation.
 
@@ -165,13 +176,19 @@ The dating of the Nine Chapters is complex. It is a composite work that took sha
   <figcaption>A rearrangement proof of the Pythagorean theorem.</figcaption>
 </figure>
 
-The second diagram contains four congruent right triangles. Let (c) be the hypotenuse of each triangle, (a) its longer leg, and (b) its shorter leg. The outer square has side (c), while the inner square has side (a-b). The four triangles have total area (2ab). Therefore
+The second diagram contains four congruent right triangles. Let c be the hypotenuse of each triangle, a its longer leg, and b its shorter leg. The outer square has side c, while the inner square has side a − b. The four triangles have total area 2ab. Therefore
 
-[
+$$
 c^2=2ab+(a-b)^2
+$$
+
+$$
 =2ab+a^2-2ab+b^2
+$$
+
+$$
 =a^2+b^2.
-]
+$$
 
 The argument proves the theorem through a geometrical decomposition. It is concise, general, and rigorous, although it does not belong to the axiomatic structure of Euclid's Elements.
 
