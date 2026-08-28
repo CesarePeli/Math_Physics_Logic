@@ -1,17 +1,14 @@
 ---
-
 layout: default
 title: "Logic & Motion — Mathematics, Physics, Logic and Language"
 permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
---------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 <!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
-
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,21 +20,19 @@ description: "Articles, notes, exercises, and resources on mathematics, physics,
 
 # Logic & Motion
 
-**Logic & Motion** brings together articles, notes, exercises, and visual materials on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence.
+Solving a mathematical problem involves more than obtaining the right result. It also means understanding why a method works, under what assumptions it applies, and how a particular result fits into a more general structure.
 
-The site is built around the idea that understanding a subject involves more than learning definitions, formulas, or procedures. Concepts become clearer when their assumptions, structure, historical development, and applications are considered together.
+Mathematics teaches us to *see*: recurring patterns, possible transformations, and connections between ideas that at first seem distant.
 
-There is no single path to understanding. Some ideas become clear through formal reasoning, others through examples, diagrams, historical context, analogy, or computation.
+There is no single path to insight. Some minds see structure immediately; others begin with concrete examples; others imagine abstract relations. Deductive reasoning, examples, diagrams, analogies, and computation serve different purposes, and several may be needed to understand the same problem.
 
-Mathematics, physics, logic, linguistics, and the study of formal systems meet here around common questions of reasoning, representation, and models. The material ranges from introductory explanations and worked problems to more technical discussions, depending on the subject and purpose of each article.
+The **Mathematics** section combines conceptual articles, theoretical notes, proofs, solved exercises, and visual explanations. It gives attention both to mathematical techniques and to the reasoning behind them.
 
-**Mathematics** is approached through reasoning, proof, structure, and problem solving, alongside the techniques needed to work with them. The site includes material on foundations, algebra, and calculus, ranging from conceptual discussions to detailed solved exercises.
+**Physics** is approached through models: mathematical descriptions of natural phenomena that connect physical quantities and yield predictions. Attention is given to the assumptions behind each model and to the conditions under which it applies.
 
-**Physics** is approached through models: mathematical descriptions of natural phenomena, together with the assumptions and limits that make those models meaningful.
+**Logic & Language** contains articles on logic, linguistics, and artificial intelligence. Logic is concerned with inference, proof, and formal systems. Linguistics examines the structure and use of language. Artificial intelligence raises questions about computation, reasoning, learning, and language processing.
 
-**Logic & Language** brings together topics in logic, linguistics, formal systems, symbolic representation, and artificial intelligence, with particular attention to reasoning, meaning, computation, and the ways in which formal and natural systems represent information.
-
-The site is intended for students, teachers, and readers interested in exploring these subjects at different levels of depth.
+The site offers theoretical notes, conceptual articles, solved exercises, and visual resources for students, teachers, and curious readers.
 
 </div>
 
