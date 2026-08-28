@@ -1,6 +1,5 @@
 ---
 layout: default
-raw: true
 title: "What Is a Proof?"
 author: Cesare Peli
 date: 2026-08-27
@@ -166,23 +165,9 @@ The publication in 1959 of the third volume of Joseph Needham's *Science and Civ
 
 The dating of the *Nine Chapters* is complex. It is a composite work that took shape over several centuries, contains material that may be considerably older than its received form, and was given its most famous commentary by Liu Hui in AD 263. It should therefore not be assigned a single early date with false precision.
 
-<img
-  src="{{ '/images/pit.jpg' | relative_url }}"
-  alt="The Chinese hsuan-thu diagram associated with the Pythagorean theorem"
-  style="display: block; max-width: 100%; height: auto; margin: 2rem auto 0;"
->
-<p style="margin: 0.6rem 0 2rem; text-align: center;">
-  <em>The diagram known in China as hsuan-thu.</em>
-</p>
+<p style="margin: 2rem 0; text-align: center;"><img src="{{ '/images/pit.jpg' | relative_url }}" alt="The Chinese hsuan-thu diagram associated with the Pythagorean theorem" style="display: block; max-width: 100%; height: auto; margin: 0 auto;"><span style="display: block; margin-top: 0.6rem; font-style: italic;">The diagram known in China as hsuan-thu.</span></p>
 
-<img
-  src="{{ '/images/quadrato.png' | relative_url }}"
-  alt="Four congruent right triangles arranged inside a square with an inner square"
-  style="display: block; max-width: 100%; height: auto; margin: 2rem auto 0;"
->
-<p style="margin: 0.6rem 0 2rem; text-align: center;">
-  <em>A rearrangement proof of the Pythagorean theorem.</em>
-</p>
+<p style="margin: 2rem 0; text-align: center;"><img src="{{ '/images/quadrato.png' | relative_url }}" alt="Four congruent right triangles arranged inside a square with an inner square" style="display: block; max-width: 100%; height: auto; margin: 0 auto;"><span style="display: block; margin-top: 0.6rem; font-style: italic;">A rearrangement proof of the Pythagorean theorem.</span></p>
 
 The second diagram contains four congruent right triangles. Let $c$ be the hypotenuse of each triangle, $a$ its longer leg, and $b$ its shorter leg. The outer square has side $c$, while the inner square has side $a-b$. The four triangles have total area $2ab$. Therefore
 

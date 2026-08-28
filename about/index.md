@@ -77,7 +77,6 @@ For questions, feedback or collaboration:
 For questions, feedback or collaboration:
 
 **✉️ Email**: info@cesarepeli.com  
-**📸 Instagram**: [@logicandmotion](https://www.instagram.com/logicandmotion/)  
 **💼 LinkedIn**: [Cesare Peli](https://www.linkedin.com/in/cesare-peli-b32a411a/)
 
 
