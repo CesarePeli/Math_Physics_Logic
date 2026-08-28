@@ -4,7 +4,7 @@ title: "What Is a Proof?"
 author: Cesare Peli
 date: 2026-08-27
 permalink: /logic-language/proof/
-background_image: /images/complessi2.png
+background_image: "/images/complessi2.png"
 description: "What is a mathematical proof? Explore formal derivation, logical consequence, axiomatic systems, and the historical development of proof across mathematical traditions."
 area: logic-language
 content_type: article
@@ -171,7 +171,7 @@ The dating of the *Nine Chapters* is complex. It is a composite work that took s
 </figure>
 
 <figure>
-  <img src="{{ '/images/quadrato.jpg' | relative_url }}" alt="Four congruent right triangles arranged inside a square with an inner square">
+  <img src="{{ '/images/quadrato.png' | relative_url }}" alt="Four congruent right triangles arranged inside a square with an inner square">
   <figcaption>A rearrangement proof of the Pythagorean theorem.</figcaption>
 </figure>
 
@@ -203,7 +203,6 @@ These reflections highlight the cultural dimension of proof, retrospectively cla
 
 ## References
 
-- Biot, Jean-Baptiste. Passage from 1841 quoted in Karine Chemla, *The History of Mathematical Proof in Ancient Traditions*, p. 6.
 
 - Chemla, Karine, ed. *The History of Mathematical Proof in Ancient Traditions*. Cambridge University Press, 2012.
 
