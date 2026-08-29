@@ -1,4 +1,4 @@
-```markdown
+
 ---
 layout: default
 date: 2026-08-24
