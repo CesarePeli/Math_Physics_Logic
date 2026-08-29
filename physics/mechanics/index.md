@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-08-29
 title: "Mechanics"
 permalink: /physics/mechanics/
 background_image: "/images/hs.png"
@@ -24,6 +24,18 @@ Projectile motion combines uniform horizontal motion with uniformly accelerated 
 Its trajectory provides a direct connection between physical laws, quadratic equations, and the geometry of parabolas.
 
 The available materials include a free demonstration and a complete lesson slide deck.
+
+</div>
+
+<div class="content-box">
+
+## Galileo, Proof, and Parabolic Motion
+
+My master's thesis examines the relationship between mathematics and physics education through the historical case of Galileo's demonstration of parabolic motion.
+
+It compares Galileo's geometric argument with a modern algebraic derivation, considering how different forms of proof describe the same physical phenomenon and perform different explanatory and educational functions. The thesis also presents a teaching module developed within the European IDENTITIES project and an analysis of its implementation with prospective mathematics and physics teachers.
+
+[**Read the complete thesis (PDF) →**]({{ "/downloads/galileo-thesis.pdf" | relative_url }})
 
 </div>
 
