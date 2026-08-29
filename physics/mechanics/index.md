@@ -23,7 +23,6 @@ Projectile motion combines uniform horizontal motion with uniformly accelerated 
 
 Its trajectory provides a direct connection between physical laws, quadratic equations, and the geometry of parabolas.
 
-
 </div>
 
 <div class="content-box">
