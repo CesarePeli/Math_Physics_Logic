@@ -1,13 +1,13 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-08-29
 original_date: 2025-08-30
-title: "Solved Exercises — Limits with Taylor Expansion"
+title: "Limits Using Taylor Expansions: Formulas and Solved Examples"
 permalink: /mathematics/calculus/limits/limits-taylor/
 redirect_from:
   - /university/math/calculus-1/limits-taylor/
 background_image: "/images/limiti.png"
-description: "Worked limit examples using Taylor expansions of exponential, logarithmic, and trigonometric functions, with detailed solutions and author notes."
+description: "Learn how to evaluate limits using Taylor and Maclaurin expansions, with essential formulas, little-o rules, and ten step-by-step solved examples."
 area: mathematics
 topic: calculus
 subtopic: limits
@@ -18,11 +18,15 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-# Solved Exercises — Limits with Taylor Expansion
+# Limits Using Taylor Expansions: Formulas and Solved Examples
 
-## Theoretical Recall
+Taylor expansions turn many indeterminate limits into algebraic calculations. The essential step is to expand each function far enough to identify the first nonzero term that remains after cancellation.
 
-Taylor expansion of a function f at x₀:
+This page collects the Maclaurin formulas most often used in limits, the main rules of little-o notation, and ten solved examples involving exponential, logarithmic, and trigonometric functions.
+
+## How to Evaluate Limits Using Taylor Expansions
+
+If $f$ is sufficiently differentiable near $x_0$, its Taylor expansion at $x_0$ is:
 
 $$
 f(x)
@@ -40,7 +44,7 @@ f(x_0)
 o((x-x_0)^n).
 $$
 
-If x₀ = 0 we obtain the **Maclaurin expansion**.
+If $x_0=0$, we obtain the **Maclaurin expansion**.
 
 ### Rules for o-notation
 
@@ -60,11 +64,13 @@ $$
 x^n\cdot o(x^m)=o(x^{n+m})
 $$
 
-$$
-o(x^n+o(x^n))=o(x^n)
-$$
+For any nonzero constant $C$,
 
-### Maclaurin Series
+$
+C\,o(x^n)=o(x^n).
+$
+
+### Taylor and Maclaurin Expansions Commonly Used in Limits
 
 Up to the relevant order:
 
@@ -117,7 +123,7 @@ The expansions must be truncated only after ensuring the approximation order is 
 
 <div class="content-box">
 
-## Exercises
+## Solved Limits Using Taylor Expansions
 
 ### Exercise 1
 
