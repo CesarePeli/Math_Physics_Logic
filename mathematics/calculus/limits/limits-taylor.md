@@ -46,7 +46,7 @@ $$
 
 If $x_0=0$, we obtain the **Maclaurin expansion**.
 
-### Rules for o-notation
+### Rules for Little-o Notation
 
 $$
 o(x^m)+o(x^m)=o(x^m)
@@ -64,11 +64,7 @@ $$
 x^n\cdot o(x^m)=o(x^{n+m})
 $$
 
-For any nonzero constant $C$,
-
-$
-C\,o(x^n)=o(x^n).
-$
+For any nonzero constant $C$, $C\\,o(x^n)=o(x^n)$.
 
 ### Taylor and Maclaurin Expansions Commonly Used in Limits
 
