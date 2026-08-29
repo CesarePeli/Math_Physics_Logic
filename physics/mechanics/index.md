@@ -35,6 +35,14 @@ My master's thesis examines the relationship between mathematics and physics edu
 
 It compares Galileo's geometric argument with a modern algebraic derivation, considering how different forms of proof describe the same physical phenomenon and perform different explanatory and educational functions. The thesis also presents a teaching module developed within the European IDENTITIES project and an analysis of its implementation with prospective mathematics and physics teachers.
 
+### Was Tartaglia Galileo's Teacher?
+
+Niccolò Tartaglia was not Galileo's teacher: Tartaglia died in 1557, seven years before Galileo was born. The connection is indirect. Galileo attended a course on Euclid taught by Ostilio Ricci, a former pupil of Tartaglia, and studied Euclid and Archimedes through Tartaglia's Italian translations.
+
+The thesis discusses Tartaglia's earlier representation of projectile motion as part of the historical background to Galileo's demonstration of the parabolic trajectory.
+
+For the biographical chronology and the connection through Ricci, see the MacTutor biographies of [Tartaglia](https://mathshistory.st-andrews.ac.uk/Biographies/Tartaglia/) and [Galileo](https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/).
+
 <a
   id="galileo-thesis-download"
   href="{{ '/downloads/galileo-thesis.pdf' | relative_url }}"
