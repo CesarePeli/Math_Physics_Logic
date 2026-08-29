@@ -1,9 +1,11 @@
 ---
 layout: default
-date: 2026-08-25
+date: 2026-08-29
 title: "Blackbody Radiation and the Quantum Revolution"
-description: "A deep dive into the historical and conceptual journey from classical blackbody radiation to Planck's quantum hypothesis and the foundations of quantum physics."
+description: "Blackbody radiation explained through Kirchhoff's law, the classical Rayleigh–Jeans prediction, the ultraviolet catastrophe, and Planck's quantum hypothesis."
 permalink: "/physics/quantum-physics/blackbody-quantum-revolution/"
+redirect_from:
+  - /insights/blackbody-quantum-revolution/
 background_image: "/images/body.png"
 featured: true
 area: physics
@@ -14,17 +16,17 @@ topic: quantum-physics
 
 <div class="content-box">
 
-## Introduction: A Tangled Dialogue Between Math and Physics
+## What Is Blackbody Radiation?
 
-The study of blackbody radiation is one of the most striking cases in the history of science. It shows that mathematics is not merely a descriptive tool but a critical lens capable of challenging physical theories. By the late 19th century, it was a formula that "screamed": something wasn’t adding up. Classical physics predicted an absurd outcome — infinite energy — and mathematics hinted at the need for a conceptual leap: quantization.
+Blackbody radiation is the thermal electromagnetic radiation associated with an ideal body that absorbs all incident radiation. At thermal equilibrium, its spectrum depends only on temperature, rather than on the material or shape of the body.
 
-Science, in this sense, advances not only by observing the world but also by observing its own equations. The case of blackbody radiation highlights the deep interconnection between mathematics and physics — no hierarchy, just a continuous dialogue where abstraction guides, challenges, and sharpens physical understanding.
+The effort to explain this spectrum exposed a limit of classical physics. The Rayleigh–Jeans law works at low frequencies but diverges at high frequencies, while Planck's law reproduces the observed spectrum by introducing discrete energy elements. The blackbody problem therefore became one of the foundations of quantum theory.
 
 </div>
 
 <div class="content-box">
 
-## Radiation and Early Empirical Observations
+## Early Observations and the History of Blackbody Radiation
 
 When a body is heated, internal electric dipole vibrations emit electromagnetic radiation. As early as the late 1700s, it was observed that during porcelain firing, different materials glowed red at the same temperature, regardless of their chemical composition.
 
@@ -100,7 +102,7 @@ $$
 
 <div class="content-box">
 
-## Kirchhoff and the Ideal Blackbody
+## Kirchhoff's Law, the Ideal Blackbody, and the Cavity Approximation
 
 A blackbody, theorized by Gustav Kirchhoff in 1859, is an ideal object that absorbs all incoming electromagnetic radiation — no reflection and no transmission. Thermodynamic equilibrium implies a universal relation between absorption and emission.
 
@@ -215,7 +217,7 @@ where b is Wien’s displacement constant.
 
 <div class="content-box">
 
-## Classical Prediction: Rayleigh–Jeans Law
+## Classical vs Quantum Blackbody Radiation
 
 Under classical assumptions, the spectral energy density is
 
@@ -255,7 +257,7 @@ The oscillator model allowed Planck to investigate the statistical distribution 
 
 <div class="content-box">
 
-## Planck’s Solution
+## Planck’s Quantum Hypothesis and Blackbody Law
 
 In 1900, Planck introduced the hypothesis that the energy associated with oscillators of frequency ν could take discrete values:
 
