@@ -35,7 +35,14 @@ My master's thesis examines the relationship between mathematics and physics edu
 
 It compares Galileo's geometric argument with a modern algebraic derivation, considering how different forms of proof describe the same physical phenomenon and perform different explanatory and educational functions. The thesis also presents a teaching module developed within the European IDENTITIES project and an analysis of its implementation with prospective mathematics and physics teachers.
 
-[**Read the complete thesis (PDF) →**]({{ "/downloads/galileo-thesis.pdf" | relative_url }})
+<a
+  id="galileo-thesis-download"
+  href="{{ '/downloads/galileo-thesis.pdf' | relative_url }}"
+  onclick="gtag('event', 'galileo_thesis_download', {
+    file_name: 'galileo-thesis.pdf',
+    link_url: this.href
+  });"
+><strong>Read the complete thesis (PDF) →</strong></a>
 
 </div>
 
