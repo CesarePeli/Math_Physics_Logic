@@ -1,41 +1,72 @@
 ---
 layout: default
-title: "Colligative Properties — Freezing Point Depression"
-meta-description: "Worked example on freezing point depression as a colligative property. Includes theoretical recalls, full calculation, and explanatory notes."
-permalink: /university/physics/thermodynamics/colligative-freezing/
+date: 2026-08-29
+title: "Freezing Point Depression — Formula and Solved Example"
+description: "Freezing point depression explained with ΔTf = iKfm: meaning of Kf, molality and the van ’t Hoff factor, validity conditions, and a solved NaCl example."
+permalink: /physics/thermodynamics/colligative-freezing/
+redirect_from:
+  - /university/physics/thermodynamics/colligative-freezing/
 nav_order: 26
 background_image: /images/termodinamica.png
+area: physics
+topic: thermodynamics
+content_type: solved-exercises
 ---
 
-# Colligative Properties — Freezing Point Depression
+# Freezing Point Depression: Formula and Solved Example
 
 <div class="content-box">
 
-## Theoretical Background
+## What Is Freezing Point Depression?
 
-- **Colligative properties** depend only on the **number of solute particles** present in solution, not on their chemical identity.  
-- Typical colligative properties: vapor-pressure lowering, boiling-point elevation, freezing-point depression, osmotic pressure.  
+Freezing point depression is the decrease in a solvent's freezing temperature when a solute is dissolved in it. It is a **colligative property** because, for a dilute ideal solution, the effect depends on the number of dissolved particles rather than on their chemical identity.
 
-- For freezing point depression:  
-  $$
-  \Delta T_f = i K_f \, m
-  $$
-  where:  
-  - $\Delta T_f$ = freezing point lowering  
-  - $i$ = van ’t Hoff factor (number of effective particles per solute unit)  
-  - $K_f$ = cryoscopic constant of the solvent  
-  - $m$ = molality of solute  
+Dissolved particles lower the chemical potential of the liquid solvent. Equilibrium between the liquid and solid phases is therefore reached at a lower temperature.
 
-- **Molality** is defined as:  
-  $$
-  m = \frac{n_{\text{solute}}}{m_{\text{solvent}}(kg)}
-  $$
+Other colligative properties include vapor-pressure lowering, boiling-point elevation, and osmotic pressure.
+
+### Freezing Point Depression Formula
+
+The magnitude of the freezing point depression is
+
+$$
+\Delta T_f = i K_f \, m
+$$
+
+where:
+
+- $\Delta T_f$ is the decrease in freezing temperature;
+- $i$ is the van ’t Hoff factor, representing the effective number of dissolved particles produced by each solute unit;
+- $K_f$ is the cryoscopic or molal freezing-point-depression constant of the solvent;
+- $m$ is the molality of the solute.
+
+For water,
+
+$$
+K_f = 1.86\,\mathrm{K\,kg\,mol^{-1}}.
+$$
+
+Molality is defined as
+
+$$
+m = \frac{n_{\text{solute}}}{m_{\text{solvent}}(\mathrm{kg})}.
+$$
+
+### When Does the Formula Apply?
+
+The relation $\Delta T_f=iK_fm$ is a dilute-solution approximation. It applies when:
+
+- the solute is effectively nonvolatile;
+- the solution is sufficiently dilute and behaves approximately ideally;
+- solvent and solute do not undergo a chemical reaction that changes the species present;
+- $K_f$ is the constant for the chosen solvent;
+- the factor $i$ represents the effective number of dissolved particles, including dissociation or association.
 
 </div>
 
 <div class="content-box">
 
-## Exercise
+## How to Calculate Freezing Point Depression: Solved Example
 
 A solution is prepared by dissolving **10.0 g of NaCl** in **200 g of water**.  
 
@@ -103,9 +134,11 @@ $$
 ---
 
 ### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  
+- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
+
+[**← Back to Thermodynamics**]({{ "/physics/thermodynamics/" | relative_url }})
