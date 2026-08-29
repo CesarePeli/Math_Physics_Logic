@@ -1,28 +1,24 @@
 ---
 layout: default
-date: 2026-08-25
+date: 2026-08-29
 title: "Physics"
 permalink: /physics/
 background_image: "/images/termodinamica.png"
-description: "Explore physics through mechanics, thermodynamics, dynamical systems, chaos, and quantum physics, with mathematical models, worked problems, and conceptual explorations."
+description: "Physics resources on mechanics, worked thermodynamics problems, dynamical systems, chaos, and quantum physics, with mathematical models and conceptual explanations."
 area: physics
 ---
 
 # Physics
 
-**Physics** studies matter, energy, motion, interactions, and the fundamental laws that describe natural phenomena.
+The physics area contains worked problems and conceptual material organized by topic. Mathematics is used to formulate models, derive results, and state the assumptions on which each treatment depends.
 
-It combines observation, mathematical reasoning, and conceptual models to understand how physical systems behave, from the motion of bodies and thermodynamic transformations to nonlinear dynamics, chaos, and the phenomena that led to quantum physics.
-
-This section organizes the material by physical topic rather than by educational level.
+Most of the current material concerns mechanics and thermodynamics, with additional pages on the Lorenz system and blackbody radiation. The format varies according to the subject: some sections are built around fully worked exercises, while others examine a mathematical model or a historical problem in greater detail.
 
 <div class="content-box">
 
 ## Mechanics
 
-Mechanics studies motion and the laws governing the behavior of bodies under the action of forces.
-
-It connects kinematics, dynamics, energy, momentum, and mathematical models of motion.
+The mechanics section contains problems and mathematical treatments involving kinematics, dynamics, energy, momentum, forces, and the principles used to describe motion.
 
 [**Explore Mechanics →**]({{ "/physics/mechanics/" | relative_url }})
 
@@ -32,11 +28,9 @@ It connects kinematics, dynamics, energy, momentum, and mathematical models of m
 
 ## Thermodynamics
 
-Thermodynamics studies heat, work, energy, entropy, equilibrium, and the macroscopic behavior of physical systems.
+This section is centered on worked thermodynamics problems, with step-by-step solutions involving ideal gases, entropy, adiabatic processes, equilibrium, Gibbs free energy, phase transitions, colligative properties, and reaction energetics.
 
-The resources in this section combine worked problems with conceptual explorations of entropy and the fundamental principles governing thermodynamic processes.
-
-[**Explore Thermodynamics →**]({{ "/physics/thermodynamics/" | relative_url }})
+[**Explore Thermodynamics Worked Problems →**]({{ "/physics/thermodynamics/" | relative_url }})
 
 </div>
 
@@ -44,9 +38,7 @@ The resources in this section combine worked problems with conceptual exploratio
 
 ## Dynamical Systems & Chaos
 
-Dynamical systems study how physical and mathematical systems evolve over time, with particular attention to nonlinear behavior, stability, and sensitivity to initial conditions.
-
-The Lorenz system provides one of the most influential examples of deterministic chaos: a simple system of differential equations capable of producing complex behavior and the celebrated Lorenz attractor.
+This section is currently centered on the Lorenz system and the Lorenz attractor. It examines how a relatively simple system of nonlinear differential equations can produce complex behavior and sensitivity to initial conditions.
 
 [**Explore Dynamical Systems & Chaos →**]({{ "/physics/dynamical-systems/" | relative_url }})
 
@@ -56,22 +48,24 @@ The Lorenz system provides one of the most influential examples of deterministic
 
 ## Quantum Physics
 
-Quantum physics emerged from phenomena that classical physics could not adequately explain.
-
-The study of blackbody radiation provides one of the fundamental historical and conceptual paths toward Planck's quantum hypothesis and the development of quantum theory.
+The quantum physics section begins with blackbody radiation and Planck's quantum hypothesis. The material follows the problem that placed classical models of thermal radiation in difficulty and explains how quantization entered its mathematical description.
 
 [**Explore Quantum Physics →**]({{ "/physics/quantum-physics/" | relative_url }})
 
 </div>
 
-## Why Physics Matters
+<div class="content-box">
 
-Physics is not merely a collection of formulas. It is a way of constructing models of reality.
+## Approach
 
-Physical theories identify measurable quantities, establish relations between them, and use mathematics to derive consequences that can be tested against observation.
+Formulas are introduced as parts of specific physical models. Attention is given to the quantities involved, the assumptions behind the model, and the steps required to solve a problem or follow a derivation.
 
-This interaction between experiment, mathematical structure, and conceptual reasoning makes physics one of the fundamental ways in which we investigate the natural world.
+The balance between exercises, mathematical development, and conceptual or historical discussion depends on the topic and on the material available in each section.
 
----
+</div>
+
+<div class="content-box">
 
 [**← Back to Home**]({{ "/" | relative_url }})
+
+</div>
