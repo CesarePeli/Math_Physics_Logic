@@ -1,14 +1,15 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-08-29
 original_date: 2025-04-15
-title: "Worked Examples with Fundamental Limits"
+title: "Notable Limits in Calculus — 10 Solved Examples"
 author: "Professor Antonino De Martino and Dr. Luana Manfredini"
 permalink: /mathematics/calculus/limits/fundamental-limits-examples/
 redirect_from:
   - /university/solved-exercises/fundamental-limits-examples/
+  - /university/math/calculus-1/notable-limits/
 background_image: "/images/exercises.png"
-description: "Solved exercises on fundamental limits with theoretical recalls, detailed reasoning, notable limits, the Squeeze Theorem, and step-by-step solutions."
+description: "Notable and remarkable limits in calculus: key formulas and 10 solved examples using logarithms, exponentials, substitutions, and the Squeeze Theorem."
 featured: true
 area: mathematics
 topic: calculus
@@ -21,13 +22,13 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-# Worked Examples with Fundamental Limits
+# Notable Limits in Calculus: 10 Solved Examples
 
-## Using Fundamental Limits
+## Notable and Remarkable Limits in Calculus
 
-### Theoretical Background
+### Fundamental Limit Formulas
 
-Here are the most important notable limits in calculus:
+The expressions below are commonly known as fundamental, notable, or remarkable limits in calculus:
 
 $$
 \lim_{x\to 0} \frac{\sin x}{x} = 1,
@@ -95,7 +96,7 @@ $$
 
 <div class="content-box">
 
-## Exercises
+## 10 Examples Using Notable Limits
 
 ### Example 1
 
@@ -161,7 +162,7 @@ $$
 
 <div class="content-box">
 
-## Solutions
+## Step-by-Step Solutions
 
 ### Exercise 1
 
