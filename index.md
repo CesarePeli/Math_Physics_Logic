@@ -7,14 +7,7 @@ background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3P4GLVFYWW');
-</script>
+
 
 <div class="content-box">
 
