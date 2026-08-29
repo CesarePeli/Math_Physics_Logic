@@ -64,7 +64,7 @@ $$
 x^n\cdot o(x^m)=o(x^{n+m})
 $$
 
-For any nonzero constant $C$, $C\\,o(x^n)=o(x^n)$.
+For any nonzero constant $C$, $C\,o(x^n)=o(x^n)$.
 
 ### Taylor and Maclaurin Expansions Commonly Used in Limits
 
