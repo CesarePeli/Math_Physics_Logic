@@ -1,10 +1,10 @@
 ---
 layout: default
 date: 2026-08-29
-title: "Mechanics"
+title: "Mechanics: Galileo and Parabolic Motion"
 permalink: /physics/mechanics/
 background_image: "/images/hs.png"
-description: "Explore mechanics through parabolic motion, connecting kinematics, trajectories, and the mathematical structure of projectile motion."
+description: "Explore Galileo's proof of parabolic motion, the historical connection between Tartaglia and Galileo, and a thesis comparing geometric and algebraic derivations."
 area: physics
 topic: mechanics
 ---
@@ -23,7 +23,6 @@ Projectile motion combines uniform horizontal motion with uniformly accelerated 
 
 Its trajectory provides a direct connection between physical laws, quadratic equations, and the geometry of parabolas.
 
-The available materials include a free demonstration and a complete lesson slide deck.
 
 </div>
 
