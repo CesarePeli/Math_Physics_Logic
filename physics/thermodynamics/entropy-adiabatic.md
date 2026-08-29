@@ -1,119 +1,290 @@
 ---
 layout: default
-title: "Entropy in Adiabatic Transformations"
-meta-description: "Worked example on entropy change in adiabatic processes, with theoretical recalls and full step-by-step solution."
-permalink: /university/physics/thermodynamics/entropy-adiabatic/
-nav_order: 24
-background_image: /images/termodinamica.png
+date: 2026-08-29
+title: "Is Entropy Constant in an Adiabatic Process?"
+author: Cesare Peli
+permalink: /physics/thermodynamics/entropy-adiabatic/
+redirect_from:
+  - /university/physics/thermodynamics/entropy-adiabatic/
+background_image: "/images/termodinamica.png"
+description: "Entropy is constant only in a reversible adiabatic process. Learn why irreversible adiabatic processes increase entropy, with a worked ideal-gas example."
+area: physics
+topic: thermodynamics
+content_type: solved-exercise
 ---
 
-# Entropy in Adiabatic Transformations
+# Is Entropy Constant in an Adiabatic Process?
+
+An adiabatic process has $q=0$, but this does not necessarily imply that $\Delta S=0$.
+
+Entropy remains constant only when the adiabatic process is **reversible**. In an irreversible adiabatic process, entropy is produced and the entropy of an isolated system increases.
 
 <div class="content-box">
 
-## Theoretical Background
+## Entropy in Reversible and Irreversible Adiabatic Processes
 
-- **Adiabatic process:** $q = 0$  
-- **First Law:** $\Delta U = q + w \;\Rightarrow\; \Delta U = w$  
-- For an **ideal gas**: $U = U(T)$  
-- **Reversible adiabatic:** $\Delta S = 0$  
-- **Irreversible adiabatic:** $\Delta S > 0$  
-- **Entropy change of the universe:**  
+An **adiabatic process** is a transformation in which no heat is exchanged with the surroundings:
+
+$$
+q=0.
+$$
+
+From the First Law of Thermodynamics,
+
+$$
+\Delta U=q+w,
+$$
+
+and therefore, for an adiabatic process,
+
+$$
+\Delta U=w.
+$$
+
+The absence of heat exchange does not by itself determine the entropy change:
+
+- **Reversible adiabatic process:** $\Delta S_{\text{sys}}=0$.
+- **Irreversible adiabatic process:** $\Delta S_{\text{sys}}>0$ for an isolated system.
+- **Entropy change of the universe:**
+
   $$
-  \Delta S_{\text{univ}} = \Delta S_{\text{sys}} + \Delta S_{\text{surr}}
+  \Delta S_{\text{univ}}
+  =
+  \Delta S_{\text{sys}}
+  +
+  \Delta S_{\text{surr}}.
   $$
+
+For a reversible process,
+
+$$
+\Delta S_{\text{univ}}=0,
+$$
+
+whereas an irreversible process produces entropy:
+
+$$
+\Delta S_{\text{univ}}>0.
+$$
 
 > **Important distinction.**  
-> $\Delta S_{\text{sys}}$ is always computed by comparing initial and final *equilibrium* states, even if the actual path is irreversible.  
-> $\Delta S_{\text{univ}}$ tells us whether the transformation is reversible ($=0$) or produces entropy ($>0$).
+> The entropy change of the system is calculated by comparing its initial and final equilibrium states, even when the actual transformation is irreversible. The entropy change of the universe indicates whether the transformation is reversible or irreversible.
 
 </div>
 
 <div class="content-box">
 
-## Exercise
+## Worked Example
 
-A sample of **1 mol of ideal gas** expands adiabatically from $V_1 = 10.0\,\text{L}$ to $V_2 = 20.0\,\text{L}$.  
+One mole of ideal gas expands adiabatically from
 
-1. Evaluate the entropy change of the system in the case of a **reversible adiabatic** expansion.  
-2. Repeat for an **irreversible adiabatic** free expansion against vacuum.  
-3. Discuss the entropy change of the universe in both cases.
+$$
+V_1=10.0\,\text{L}
+$$
+
+to
+
+$$
+V_2=20.0\,\text{L}.
+$$
+
+We will determine:
+
+1. the entropy change in a **reversible adiabatic expansion**;
+2. the entropy change in an **irreversible adiabatic free expansion**;
+3. the entropy change of the universe in both cases.
 
 </div>
 
 <div class="content-box">
 
-## Step-by-Step Solution
+## Reversible Adiabatic Expansion
 
-**Case 1 — Reversible adiabatic expansion**  
-- By definition, $q_{rev} = 0$  
-- Entropy change of system:
-  $$
-  \Delta S_{\text{sys}} = \int \frac{dq_{rev}}{T} = 0
-  $$
-- So: $\Delta S_{\text{sys}} = 0$  
+For a reversible transformation, the entropy change is defined by
 
-Entropy of the surroundings:  
 $$
-\Delta S_{\text{surr}} = 0
+\Delta S_{\text{sys}}
+=
+\int\frac{\delta q_{\text{rev}}}{T}.
 $$
 
-Therefore:  
+Since the process is both reversible and adiabatic,
+
 $$
-\Delta S_{\text{univ}} = 0
+\delta q_{\text{rev}}=0,
 $$
 
----
+and therefore
 
-**Case 2 — Irreversible adiabatic free expansion**  
-- Still $q = 0$, so $\Delta U = 0$ (no work done, no heat exchanged).  
-- For the **system entropy** we must compare initial and final equilibrium states.  
-
-For 1 mol ideal gas:
 $$
-\Delta S_{\text{sys}} = R \ln\!\left( \frac{V_2}{V_1} \right) = 8.314 \ln 2 = 5.76\,\text{J K}^{-1}
+\Delta S_{\text{sys}}=0.
 $$
 
-Surroundings are vacuum, so:  
+No heat is transferred to the surroundings, so
+
 $$
-\Delta S_{\text{surr}} = 0
+\Delta S_{\text{surr}}=0.
 $$
 
-Therefore:  
+Consequently,
+
 $$
-\Delta S_{\text{univ}} = +5.76\,\text{J K}^{-1}
+\Delta S_{\text{univ}}=0.
 $$
 
----
-
-**Case 3 — Discussion**  
-- Reversible adiabatic: entropy does not change (system and universe).  
-- Irreversible free expansion: entropy of the system increases, and so does that of the universe.  
-
-This illustrates the **Second Law**:  
-$$
-\Delta S_{\text{univ}} \ge 0
-$$
+A reversible adiabatic process is therefore also called an **isentropic process**.
 
 </div>
 
 <div class="content-box">
 
-## Notes
+## Irreversible Adiabatic Free Expansion
 
-- In a reversible adiabatic expansion, the gas cools as it expands, but the process is perfectly balanced: entropy remains constant.  
-- In the free expansion, the gas ends up occupying a larger volume at the same temperature, increasing disorder → entropy rises.  
-- This is a textbook example that entropy is a **state function**, independent of path, but the *entropy production* distinguishes reversible vs irreversible paths.  
-- **Pedagogical reminder:** Free expansion is only *adiabatic and irreversible* in the idealized case of expansion into a vacuum. In real systems, some interactions with the surroundings are unavoidable.
+Suppose that the gas expands freely into a vacuum.
+
+The process is adiabatic:
+
+$$
+q=0.
+$$
+
+Since the gas expands against zero external pressure, no work is performed:
+
+$$
+w=0.
+$$
+
+It follows that
+
+$$
+\Delta U=0.
+$$
+
+For an ideal gas, internal energy depends only on temperature. Therefore,
+
+$$
+\Delta T=0.
+$$
+
+The entropy change of one mole of ideal gas between the initial and final equilibrium states is
+
+$$
+\Delta S_{\text{sys}}
+=
+R\ln\left(\frac{V_2}{V_1}\right).
+$$
+
+Substituting the given volumes,
+
+$$
+\Delta S_{\text{sys}}
+=
+8.314\ln\left(\frac{20.0}{10.0}\right)
+=
+8.314\ln 2.
+$$
+
+Thus,
+
+$$
+\Delta S_{\text{sys}}
+=
+5.76\,\text{J K}^{-1}.
+$$
+
+No heat is exchanged with the surroundings, so
+
+$$
+\Delta S_{\text{surr}}=0.
+$$
+
+Therefore,
+
+$$
+\Delta S_{\text{univ}}
+=
+5.76\,\text{J K}^{-1}.
+$$
+
+The transformation is adiabatic, but its entropy increases because the process is irreversible.
+
+</div>
+
+<div class="content-box">
+
+## Why Can Entropy Increase When $q=0$?
+
+The relation
+
+$$
+dS=\frac{\delta q_{\text{rev}}}{T}
+$$
+
+refers to a **reversible path** connecting two equilibrium states.
+
+In a reversible adiabatic process, the actual path is reversible and $\delta q_{\text{rev}}=0$, so the entropy remains constant.
+
+During an irreversible free expansion, the actual process cannot be used directly in the integral that defines entropy change. A hypothetical reversible path must be considered between the same initial and final equilibrium states. Along that path, the entropy change is
+
+$$
+\Delta S_{\text{sys}}
+=
+R\ln\left(\frac{V_2}{V_1}\right)>0.
+$$
+
+Thus, $q=0$ does not imply $\Delta S=0$. It implies constant entropy only when the adiabatic transformation is also reversible.
+
+</div>
+
+<div class="content-box">
+
+## Results
+
+For the reversible adiabatic expansion,
+
+$$
+\Delta S_{\text{sys}}
+=
+\Delta S_{\text{surr}}
+=
+\Delta S_{\text{univ}}
+=
+0.
+$$
+
+For the irreversible adiabatic free expansion,
+
+$$
+\Delta S_{\text{sys}}
+=
+\Delta S_{\text{univ}}
+=
+5.76\,\text{J K}^{-1},
+$$
+
+while
+
+$$
+\Delta S_{\text{surr}}=0.
+$$
+
+This example illustrates the Second Law of Thermodynamics:
+
+$$
+\Delta S_{\text{univ}}\geq 0.
+$$
+
+Equality holds for a reversible process; a strict inequality characterizes an irreversible process.
 
 </div>
 
 ---
 
-### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+### Related Topics
+
+- [Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$]({{ "/university/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
+- [Reaction Energetics — Internal Energy and Enthalpy]({{ "/university/physics/thermodynamics/reaction-energetics/" | relative_url }})
+- [Equilibrium and Spontaneity — $\Delta G^\circ$, $K$ and Temperature]({{ "/university/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
+- [Colligative Properties — Freezing-Point Depression]({{ "/university/physics/thermodynamics/colligative-freezing/" | relative_url }})
+- [Gibbs Free Energy for Incompressible Substances]({{ "/university/physics/thermodynamics/gibbs-incompressible/" | relative_url }})
+- [Phase Transitions — Heating Curve and Enthalpy Changes]({{ "/university/physics/thermodynamics/phase-transitions/" | relative_url }})
