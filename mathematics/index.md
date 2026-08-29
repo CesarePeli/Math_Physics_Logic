@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: default
 title: Mathematics
@@ -57,4 +56,3 @@ Rather than separating topics into high-school and university sections, resource
 Mathematical understanding develops at different levels of depth. Some resources introduce an idea visually or intuitively; others develop its formal structure or apply it through detailed exercises.
 
 The aim is not to treat these as separate mathematical worlds, but as different ways of approaching the same underlying ideas.
-```
