@@ -29,9 +29,13 @@ background_image: /images/termodinamica.png
   $$
   K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
   $$
-  Equivalently, $K_p=K_c\,(RT)^{\Delta n_\text{gas}}$ with $\Delta n_\text{gas}=\sum\nu_\text{products}-\sum\nu_\text{reactants}$.  
+  Because each pressure is divided by the standard pressure, this definition of $K_p$ is dimensionless.
 
-- Direction from standard conditions: if $\Delta G_r^\circ<0$ at $T$, the reaction is spontaneous toward products; if $K\gg1$, products strongly prevail at equilibrium.  
+- For a system with reaction quotient $Q$,
+  $
+  \Delta G_r=\Delta G_r^\circ+RT\ln Q.
+  $
+  Thus, $\Delta G_r^\circ<0$ implies spontaneous progress toward products when $Q=1$; it does not determine the direction for every possible composition. If $K\gg1$, equilibrium is strongly product-favored.  
 
 - Temperature effect (van ’t Hoff):  
   $$
@@ -67,8 +71,7 @@ Using partial pressures normalized by $p_0=1\,\text{bar}$:
 $$
 K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\!\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
 $$
-Here $\Delta n_\text{gas}=2-(2+1)=-1$, so $K_p=K_c\,(RT)^{-1}$.  
-> This means that when we pass from concentrations ($K_c$) to pressures ($K_p$), the units are corrected by a factor $(RT)^{\Delta n}$.
+Since every partial pressure is divided by $p_0$, the value of $K_p$ obtained from this expression is dimensionless.
 
 ---
 
@@ -88,7 +91,7 @@ $$
 = -114.0 - (298.15)(-0.145)
 \approx -70.8\,\text{kJ mol}^{-1}.
 $$
-> Negative $\Delta G_r^\circ$ already indicates spontaneity toward products under standard conditions.
+> Since standard-state conditions correspond to $Q=1$, the negative value of $\Delta G_r^\circ$ indicates spontaneous progress toward products from that composition.
 
 ---
 
@@ -99,18 +102,18 @@ K_p=\exp\!\left[-\frac{\Delta G_r^\circ}{RT}\right]
 =\exp\!\left(\frac{70.8\times10^3}{(8.314)(298.15)}\right)
 =\exp(28.56)\approx 2.5\times10^{12}.
 $$
-> Such a huge $K_p$ means that, at equilibrium, the concentration of $\mathrm{NO}_2$ is overwhelmingly larger than that of $\mathrm{NO}$ and $\mathrm{O}_2$.
+> Such a large $K_p$ means that equilibrium is strongly product-favored. The individual equilibrium partial pressures still depend on the initial composition and the total pressure.
 
 ---
 
 **5) Direction from standard conditions.**  
-Because $\Delta G_r^\circ<0$ and $K_p\gg1$, the reaction is spontaneous toward **products** from standard-state reactants; equilibrium lies far to the side of $\mathrm{NO}_2$.
+Because $\Delta G_r^\circ<0$, the forward reaction is spontaneous when $Q=1$. Since $K_p\gg1$, equilibrium is strongly shifted toward $\mathrm{NO}_2$.
 
 ---
 
 **6) Temperature effect (sign analysis).**  
 Here $\Delta H_r^\circ<0$ (exothermic) and $\Delta S_r^\circ<0$ (gas moles decrease: $3\to2$).  
-Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\circ$ becomes **less negative** (eventually positive at high $T$): the reaction is **less favorable** as temperature increases, and $K_p$ decreases with $T$ (consistent with van ’t Hoff and Le Châtelier).
+Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\circ$ becomes less negative. If $\Delta H_r^\circ$ and $\Delta S_r^\circ$ are treated as approximately constant, it becomes positive above about $786\,\text{K}$. The decrease of $K_p$ with temperature is consistent with the van ’t Hoff equation.
 
 </div>
 
@@ -118,20 +121,20 @@ Increasing $T$ makes $-T\Delta S_r^\circ$ more **positive**, so $\Delta G_r^\cir
 
 ## Conceptual notes
 
-- Why $\Delta S_r^\circ<0$ here? Gas-phase stoichiometry gives $\Delta n_\text{gas}=-1$: fewer gas moles at products generally implies lower entropy of the system.  
+- The negative value of $\Delta S_r^\circ$ is consistent with the decrease from three to two moles of gas. The change in gas-mole count is a useful qualitative guide, while the numerical value comes from standard molar entropies.  
 - Standard formation data reminder: $\Delta H_f^\circ(\mathrm{O}_2,g)=0$ by convention; only $\mathrm{NO}$ and $\mathrm{NO_2}$ contribute to $\Delta H_r^\circ$.  
-- Large $K_p$ ($\sim10^{12}$ at $298\,\text{K}$) means that, at equilibrium, $p_{\text{NO}_2}$ dominates compared to $p_{\text{NO}}$ and $p_{\text{O}_2}$ under standard-state scaling.  
+- The value $K_p\sim10^{12}$ at $298\,\text{K}$ shows that equilibrium is strongly product-favored; it does not by itself determine each equilibrium partial pressure.  
 - For different $T$, you may estimate $K_p(T)$ using the van ’t Hoff equation with (piecewise) constant $\Delta H_r^\circ$ in the temperature range of interest.  
-- **Pedagogical point:** Students should train to interpret both numbers ($\Delta G^\circ$, $K$) and signs ($\Delta H^\circ$, $\Delta S^\circ$) to predict spontaneity and temperature effects qualitatively, not only numerically.
+- A complete interpretation uses both numerical values ($\Delta G^\circ$, $K$) and the signs of $\Delta H^\circ$ and $\Delta S^\circ$, while distinguishing standard-state spontaneity from the direction at an arbitrary composition.
 
 </div>
 
 ---
 
 ### Related topics
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  
