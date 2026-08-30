@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-27
+date: 2026-08-30
 title: "Logic & Language"
 permalink: /logic-language/
 background_image: "/images/euclide.png"
@@ -28,6 +28,9 @@ The material ranges from introductory explanations to more technical or historic
 
 - [**What Is a Proof?**]({{ "/logic-language/proof/" | relative_url }})  
   An examination of mathematical proof, from formal derivation and logical consequence to the historical development of demonstrative practices.
+
+- [**Choice and Infinity: The Axiom of Choice**]({{ "/logic-language/axiom-of-choice/" | relative_url }})  
+  An examination of the axiom of choice, from Cantor’s transfinite cardinals and Zermelo’s well-ordering theorem to Zorn’s lemma, vector-space bases, and non-measurable sets.
 
 </div>
 
