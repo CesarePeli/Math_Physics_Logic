@@ -2,7 +2,9 @@
 layout: default
 title: "Equilibrium & Spontaneity — ΔG°, K, Temperature"
 meta-description: "From ΔH° and ΔS° to ΔG° and K: compute Kp at 298 K, decide the reaction direction from standard conditions, and discuss temperature effects."
-permalink: /university/physics/thermodynamics/equilibrium-and-spontaneity/
+permalink: /physics/thermodynamics/equilibrium-and-spontaneity/
+redirect_from:
+  - /university/physics/thermodynamics/equilibrium-and-spontaneity/
 nav_order: 25
 background_image: /images/termodinamica.png
 ---
