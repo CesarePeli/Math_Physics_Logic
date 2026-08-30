@@ -124,11 +124,14 @@ $$
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1 — Linear Substitution
 
@@ -192,7 +195,10 @@ $$
 \frac{(2x+1)^6}{12}+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2 — Logarithmic Substitution
 
@@ -248,7 +254,10 @@ $$
 \log(\log x)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3 — Substitution in a Rational Expression
 
@@ -308,7 +317,10 @@ $$
 \frac12\log(1+x^2)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4 — Trigonometric Substitution
 
@@ -388,7 +400,10 @@ $$
 \arcsin x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5 — Tangent Substitution
 
@@ -450,7 +465,10 @@ $$
 \arctan x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6 — Radical of a Sum of Squares
 
@@ -559,7 +577,10 @@ $$
 \log\left|x+\sqrt{x^2+4}\right|+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7 — Exponential Substitution
 
@@ -621,7 +642,10 @@ $$
 \arctan(e^x)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8 — Hyperbolic Substitution
 
@@ -717,7 +741,10 @@ $$
 \log\left(x+\sqrt{x^2-1}\right)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9 — Hyperbolic Substitution with a Radical
 
@@ -857,7 +884,10 @@ x\sqrt{1+x^2}
 +C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10 — Secant Substitution
 
@@ -950,9 +980,11 @@ $$
 \operatorname{arcsec}(x)+C
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 
