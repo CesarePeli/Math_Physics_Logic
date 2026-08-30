@@ -82,6 +82,8 @@ Compositions of continuous functions are continuous wherever the composition is 
 
 ## Exercises
 
+</div>
+
 <div class="content-box exercise-box" markdown="1">
 
 ### Exercise 1 — Removable Discontinuity
@@ -670,7 +672,7 @@ $$
 
 </div>
 
-</div>
+
 
 ---
 
