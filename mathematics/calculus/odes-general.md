@@ -412,6 +412,8 @@ $$
 
 > **Scope note.** This page excludes Cauchy problems, or initial-value problems. Those are treated separately.
 
+</div>
+
 <div class="content-box exercise-box" markdown="1">
 
 ### Exercise 1
@@ -1597,7 +1599,7 @@ $$
 
 </div>
 
-</div>
+
 
 <div class="content-box">
 
