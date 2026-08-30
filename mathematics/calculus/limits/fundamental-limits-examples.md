@@ -164,6 +164,8 @@ $$
 
 ## Step-by-Step Solutions
 
+</div>
+
 <div class="content-box exercise-box" markdown="1">
 
 ### Exercise 1
@@ -868,7 +870,7 @@ $$
 
 </div>
 
-</div>
+
 
 <div class="content-box">
 
