@@ -166,7 +166,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 1
 
@@ -208,7 +208,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 2
 
@@ -268,7 +268,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 3
 
@@ -328,7 +328,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 4
 
@@ -411,7 +411,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 5
 
@@ -482,7 +482,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 6
 
@@ -535,7 +535,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 7
 
@@ -615,7 +615,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 8
 
@@ -700,7 +700,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 9
 
@@ -798,7 +798,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 10
 
