@@ -1,9 +1,9 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-08-29
 original_date: 2025-08-31
 title: "Ordinary Differential Equations — Theory and Solved Exercises"
-description: "Learn ordinary differential equations through theory and solved exercises on first-order ODEs, constant-coefficient equations, undetermined coefficients, and variation of parameters."
+description: "Learn how to find general solutions of ordinary differential equations through theory and 10 solved ODE exercises using trial solutions and variation of parameters."
 permalink: /mathematics/calculus/ordinary-differential-equations/
 redirect_from:
   - /university/math/calculus-1/odes-general/
@@ -18,11 +18,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-# Ordinary Differential Equations
+# Ordinary Differential Equations: Theory and Solved Exercises
 
-## Theoretical Recall
+## ODE Topics and General Solution Methods
 
-> *“The universe is a differential equation.”* — H. Poincaré
+This page explains how to find general solutions of ordinary differential equations and includes 10 solved ODE exercises. The methods covered include first-order linear equations, constant-coefficient equations, trial solutions, separable equations, and variation of parameters.
 
 Differential equations are a fundamental tool for modeling real phenomena.
 
@@ -51,7 +51,7 @@ For a = 0.02, this model matches the growth of the human population between 1700
 
 <div class="content-box">
 
-## Linear First-Order ODEs
+## How to Solve Linear First-Order ODEs
 
 A linear first-order differential equation has the form
 
@@ -217,7 +217,7 @@ can be solved by two main methods:
 - **method of undetermined coefficients (similarity)**;
 - **variation of parameters**.
 
-### Method of Similarity
+### Method of Undetermined Coefficients (Trial Solution Method)
 
 #### 1. Polynomial forcing term
 
@@ -408,7 +408,7 @@ $$
 
 <div class="content-box">
 
-## Exercises
+## ODE Exercises with Solutions
 
 > **Scope note.** This page excludes Cauchy problems, or initial-value problems. Those are treated separately.
 
