@@ -18,25 +18,23 @@ content_type: article
 
 ## Introduction
 
-Zermelo–Fraenkel set theory is an axiomatic framework in which sets are the basic objects used to define mathematical structures. When the axiom of choice is added, the resulting theory is called ZFC. The axiom states that, given a family of nonempty sets, there exists a function that assigns to each of them one of its elements.
+Choosing an element from a nonempty set seems entirely obvious. If there are only finitely many sets, we can consider them one after another and take one element from each. Some infinite cases are also simple: from every nonempty subset of the natural numbers, for example, we can choose the least number.
 
-If the family is finite, such a function can be constructed by making one choice after another. Even for an infinite family, the axiom is unnecessary when a common rule is available. From every nonempty subset of $\mathbb N$, for example, we can choose its least element.
+The axiom of choice concerns the passage to the most general case. Consider a possibly infinite family of nonempty sets. We know that each of them contains at least one element, and we want to collect all the choices in a single function, called a choice function. This function must assign to each set in the family one of its elements.
 
-The problem concerns an arbitrary infinite family of nonempty sets when no criterion distinguishes one element from the others. The axiom guarantees the existence of a choice function even in this case.
+The axiom of choice states that such a function always exists.
 
-It is used, explicitly or implicitly, in many parts of mathematics. It allows us to prove that every set can be well-ordered, that any two sets are comparable in cardinality, and that every vector space has a basis.
+The statement may seem almost trivial. If every set contains something, why should it be impossible to choose an element from each? The logical point is that these are two different claims. To say that every set contains at least one element is to assert separately the existence of many elements; to say that a choice function exists is to assert the existence of a single mathematical object that makes all the choices simultaneously. For a finite family, the second claim follows from the first. For an arbitrary infinite family, this passage requires an additional principle.
 
-The last result shows that the issue extends beyond set theory. A basis of a vector space is a linearly independent set of vectors in terms of which every vector in the space can be expressed. In a finitely generated vector space, a basis can be extracted from a finite set of generators. For an arbitrary vector space, no comparable finite procedure is necessarily available. The universal statement that every vector space has a basis is equivalent, over ZF, to the axiom of choice: without assuming it, the other Zermelo–Fraenkel axioms do not guarantee the result in full generality.
+Zermelo–Fraenkel set theory, abbreviated ZF, lays down through a number of basic axioms how sets may be formed and related. Since numbers, functions, and many other mathematical structures can be represented in terms of sets, ZF is one of the most widely used foundations of modern mathematics. The axioms of ZF alone do not prove that a choice function exists for every family of nonempty sets. When the axiom of choice is added, the resulting theory is called ZFC.
 
-The axiom also leads to consequences far removed from geometric intuition. The best-known example is the Banach–Tarski paradox: a solid ball can be divided into finitely many parts and reassembled, using rigid motions, into two balls with the same radius as the original. Ordinary volume cannot be assigned to the pieces in the decomposition, and their construction requires a form of the principle of choice.
+The choice between ZF and ZFC has far-reaching consequences. Assuming the axiom of choice, one can prove that every set admits an ordering in which each nonempty subset has a first element, and that any two sets can always be compared in size. Without the axiom, these results are not guaranteed. In some theories without suitable forms of choice, even the union of a sequence of countable sets need not be countable.
 
-Results of this kind contributed to the resistance that the axiom encountered in the mathematical community. Its origin, however, predates the Banach–Tarski paradox and lies in Cantor's programme of classifying infinite sets.
+Gödel and Cohen proved that the axiom of choice can be neither proved nor refuted from the other axioms of ZF, provided that ZF is consistent. It is therefore possible to develop a set theory in which the axiom of choice holds and another in which it does not. The two theories share a vast part of mathematics, but diverge on fundamental results concerning infinite sets and the objects whose existence can be proved.
 
-Cantor had shown that infinite sets can have different cardinalities and had introduced the transfinite cardinals, denoted by the Hebrew letter $\aleph$. It remained to prove that any two sets were comparable and that every set could be placed within the hierarchy of the alephs.
+The historical origin of the axiom lies in Cantor's study of infinity. Cantor had shown that infinite sets can have different sizes and had attempted to arrange them in a hierarchy. In 1904 Zermelo explicitly introduced the axiom of choice to prove that every set can be ordered so that each of its nonempty subsets has a first element. A principle that, considered in isolation, appears almost self-evident thus made it possible to solve one of the central problems of set theory.
 
-This problem led to the well-ordering theorem. Well-ordered sets can be compared by means of ordinals; if every set admitted a well-ordering, comparability would therefore be universal. In 1904 Zermelo proved that every set can be well-ordered by explicitly using the axiom of choice.
-
-The axiom of choice, the well-ordering theorem, the comparability of cardinalities, and Zorn's lemma are equivalent formulations of the same principle. Their equivalence helps explain both the origin of the axiom and the role it plays in many mathematical proofs.
+To understand the scope of the axiom, we must therefore clarify how infinite sets are compared, what it means to order them, and how many simultaneous choices can be represented by a function. From these concepts emerge both the equivalent formulations of the axiom and the consequences that distinguish mathematics developed with the axiom of choice from mathematics developed without it.
 
 </div>
 
