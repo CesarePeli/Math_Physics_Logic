@@ -18,7 +18,7 @@ content_type: article
 
 ## Introduction
 
-The axiom of choice is one of the axioms of ZFC set theory. It states that, given a family of nonempty sets, there exists a function that assigns to each of them one of its elements.
+Zermelo–Fraenkel set theory is an axiomatic framework in which sets are the basic objects used to define mathematical structures. When the axiom of choice is added, the resulting theory is called ZFC. The axiom states that, given a family of nonempty sets, there exists a function that assigns to each of them one of its elements.
 
 If the family is finite, such a function can be constructed by making one choice after another. Even for an infinite family, the axiom is unnecessary when a common rule is available. From every nonempty subset of $\mathbb N$, for example, we can choose its least element.
 
