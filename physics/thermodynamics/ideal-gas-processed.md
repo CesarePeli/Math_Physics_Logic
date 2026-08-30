@@ -2,7 +2,9 @@
 layout: default
 title: "Ideal-Gas Processes — Work, ΔU and ΔS"
 meta-description: "Compare work, internal energy, and entropy for compressions of an ideal gas along different reversible paths. Includes theoretical recalls and full solution with notes."
-permalink: /university/physics/thermodynamics/ideal-gas-processes/
+permalink: /physics/thermodynamics/ideal-gas-processes/
+redirect_from:
+  - /university/physics/thermodynamics/ideal-gas-processes/
 nav_order: 22
 background_image: /images/termodinamica.png
 ---
