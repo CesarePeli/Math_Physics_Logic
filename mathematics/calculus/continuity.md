@@ -83,7 +83,7 @@ Compositions of continuous functions are continuous wherever the composition is 
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 1 — Removable Discontinuity
 
@@ -149,7 +149,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 2 — Jump Discontinuity
 
@@ -186,7 +186,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 3 — Infinite Discontinuity
 
@@ -225,7 +225,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 4 — Extending a Function Continuously
 
@@ -279,7 +279,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 5 — Continuity by the Squeeze Theorem
 
@@ -353,7 +353,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 6 — Continuity of a Piecewise Function
 
@@ -412,7 +412,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 7 — Continuity and Domain
 
@@ -468,7 +468,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 8 — Oscillatory Discontinuity
 
@@ -553,7 +553,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 9 — Piecewise Jump Discontinuity
 
@@ -610,7 +610,7 @@ $$
 
 </div>
 
-<div class="content-box exercise-box" markdown="1">
+<div class="content-box">
 
 ### Exercise 10 — Parameters in a Piecewise Function
 
