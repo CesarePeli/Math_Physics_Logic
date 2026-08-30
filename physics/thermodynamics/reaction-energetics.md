@@ -2,7 +2,9 @@
 layout: default
 title: "Reaction Energetics — Internal Energy and Enthalpy"
 meta-description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
-permalink: /university/physics/thermodynamics/reaction-energetics/
+permalink: /physics/thermodynamics/reaction-energetics/
+redirect_from:
+  - /university/physics/thermodynamics/reaction-energetics/
 nav_order: 23
 background_image: /images/termodinamica.png
 ---
