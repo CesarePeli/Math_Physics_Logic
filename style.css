@@ -245,20 +245,6 @@ header nav a:hover,
     margin-top: 1.25rem;
   }
 
-  /* Quando la pagina contiene riquadri interni, il contenitore generale
-     non deve formare una superficie scura continua. */
-  .topic-calculus main > .content-box:has(> .content-box) {
-    background: transparent;
-    box-shadow: none;
-    backdrop-filter: none;
-  }
-
-  .topic-calculus main > .content-box:has(> .content-box) > .content-box {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background: rgba(0, 0, 0, 0.68);
-  }
-
   .content-box p {
     margin-top: 0;
     margin-bottom: 1.15em;
@@ -325,14 +311,6 @@ header nav a:hover,
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .topic-calculus mjx-container[display="true"] {
-    scrollbar-width: none;
-  }
-
-  .topic-calculus mjx-container[display="true"]::-webkit-scrollbar {
-    display: none;
   }
 
   .site-nav {
