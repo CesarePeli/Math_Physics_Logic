@@ -7,7 +7,7 @@ background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
 ---
 
-
+# Logic & Motion
 
 Solving a mathematical problem involves more than obtaining the right result. It also means understanding why a method works, under what assumptions it applies, and how a particular result fits into a more general structure.
 
