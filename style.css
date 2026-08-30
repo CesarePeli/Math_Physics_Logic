@@ -199,3 +199,113 @@ header nav a:hover,
   }
 }
 
+/* ─────────────────────────────────────────────
+   ▸ Lettura su smartphone
+   ──────────────────────────────────────────── */
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 1.0625rem;
+    line-height: 1.72;
+    background-attachment: scroll !important;
+    overflow-wrap: break-word;
+  }
+
+  main {
+    width: 100% !important;
+  }
+
+  .content-box {
+    width: calc(100% - 1rem);
+    margin: 0.75rem auto 1rem;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .content-box > :first-child {
+    margin-top: 0;
+  }
+
+  .content-box p {
+    margin-top: 0;
+    margin-bottom: 1.15em;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+    line-height: 1.28;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin-top: 1.5rem;
+    margin-bottom: 0.65rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.3rem;
+  }
+
+  li {
+    margin-bottom: 0.45rem;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre,
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  mjx-container {
+    max-width: 100%;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav {
+    width: auto;
+    margin: 0.75rem 0.5rem !important;
+    padding: 0.65rem !important;
+    gap: 0.25rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  .site-nav a {
+    padding: 0.45rem 0.6rem !important;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+}
