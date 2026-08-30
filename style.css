@@ -210,8 +210,8 @@ header nav a:hover,
   }
 
   body {
-    font-size: 1.0625rem;
-    line-height: 1.72;
+    font-size: 1.125rem;
+    line-height: 1.75;
     background-attachment: scroll !important;
     overflow-wrap: break-word;
   }
