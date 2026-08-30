@@ -11,16 +11,12 @@ background_image: "/images/about.png"
 
 # About
 
-<div class="content-box">
-
 **Logic & Motion** is an independent educational project curated by Cesare Peli.  
 It offers structured resources in mathematics and physics for high school and early university level.
 
+<div class="content-box">
 
-
-## 👤 Author
-
-## 👤 Cesare Peli
+## Author
 
 **Cesare Peli** is a tenured teacher of mathematics and physics at the secondary level.  
 He holds a degree in **Mathematics**, a **Master’s in Scientific Teaching and Communication**, and a **Master’s in Theatre and Multimedia Production**.
@@ -34,7 +30,7 @@ In addition to teaching, he has authored historical and biographical essays and 
 
 <div class="content-box">
 
-## 👥 Collaborators
+## Collaborators
 
 **Prof. Marco Ruzzi**  
 Physicist and Associate Professor at the **University of Padua**, Department of Chemistry  
@@ -48,7 +44,7 @@ Researcher in Mathematics at **Polytechnic University of Milan**
 
 <div class="content-box">
 
-## 🛠️ Tools and Workflow
+## Tools and Workflow
 
 All didactic materials on the site — slides, diagrams, illustrations, animations — are created using:
 
@@ -60,12 +56,7 @@ All didactic materials on the site — slides, diagrams, illustrations, animatio
 
 <div class="content-box">
 
-## 📬 Contact
-
-For questions, feedback or collaboration:
-
-## 📬 Contact
-
+## Contact
 
 For questions, feedback or collaboration:
 
