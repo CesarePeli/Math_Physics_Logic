@@ -2,7 +2,9 @@
 layout: default
 title: "Reaction Energetics — Internal Energy and Enthalpy"
 meta-description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
-permalink: /university/physics/thermodynamics/reaction-energetics/
+permalink: /physics/thermodynamics/reaction-energetics/
+redirect_from:
+  - /university/physics/thermodynamics/reaction-energetics/
 nav_order: 23
 background_image: /images/termodinamica.png
 ---
@@ -23,25 +25,26 @@ background_image: /images/termodinamica.png
   H = U + pV \;\Rightarrow\; \Delta H = \Delta U + \Delta(pV)
   $$
 
-- For reactions at constant $(T,p)$:  
-  $$
-  \Delta H = q_p
-  $$
+- At constant pressure, when the only mechanical work is pressure–volume work:
+  $
+  \Delta H=q_p.
+  $
 
-- Connection between $\Delta H$ and $\Delta U$ (ideal gases):  
-  $$
-  \Delta H = \Delta U + (\Delta n_{\text{gas}})RT
-  \qquad \Rightarrow \qquad
-  \Delta U = \Delta H - (\Delta n_{\text{gas}})RT
-  $$
+- For an ideal-gas reaction at a fixed temperature:
+  $
+  \Delta_r H^\circ
+  =\Delta_r U^\circ+\Delta\nu_{\text{gas}}RT,
+  \qquad
+  \Delta_r U^\circ
+  =\Delta_r H^\circ-\Delta\nu_{\text{gas}}RT,
+  $
+  where $\Delta\nu_{\text{gas}}$ is the sum of the gaseous stoichiometric coefficients of the products minus that of the reactants.
 
-> **Validity note (ideal-gas assumption).**  
-> The identities above use $pV = nRT$; the correction $(\Delta n_{\text{gas}})RT$ applies when the **gas phase behaves ideally**. For real gases, use an appropriate equation of state (the simple $RT\,\Delta n$ term no longer holds exactly).
+> **Validity note.**  
+> The relation containing $\Delta\nu_{\text{gas}}RT$ follows from the ideal-gas equation for the gaseous species. It is exact for the all-gas ideal reaction considered below. Real gases require an appropriate equation of state.
 
 > **Sign convention used here.**  
-> $w>0$ = work **done on** the system (compression); $w<0$ = work **done by** the system (expansion). The First Law is written as $\Delta U = q + w$.
-  
-where $\Delta n_{\text{gas}}$ is the change in the number of moles of gas.
+> $w>0$ denotes work done on the system, while $w<0$ denotes work done by the system. With this convention, the First Law is $\Delta U=q+w$.
 
 </div>
 
@@ -58,12 +61,12 @@ $$
 At $T = 298\,\text{K}$ and $p = 1\,\text{bar}$, the standard enthalpy of reaction is:
 
 $$
-\Delta H^{\circ} = -566.0\,\text{kJ mol}^{-1}
+\Delta_r H^{\circ} = -566.0\,\text{kJ mol}^{-1}
 $$
 
 **Tasks:**
 
-1. Calculate the standard internal energy change $\Delta U^{\circ}$.  
+1. Calculate the standard molar internal-energy change $\Delta_r U^{\circ}$.  
 2. Explain the relation between $\Delta U$ and $\Delta H$ for reactions involving gases.
 
 </div>
@@ -78,7 +81,9 @@ $$
 
 So:
 $$
-\Delta n_{\text{gas}} = n_{\text{prod}} - n_{\text{reag}} = 2 - 3 = -1
+\Delta\nu_{\text{gas}}
+= \sum\nu_{\text{products}}-\sum\nu_{\text{reactants}}
+=2-(2+1)=-1
 $$
 
 ---
@@ -86,7 +91,8 @@ $$
 **Step 2. Relation between $\Delta H$ and $\Delta U$**  
 For ideal gases:
 $$
-\Delta U = \Delta H - (\Delta n_{\text{gas}})RT
+\Delta_r U^\circ
+=\Delta_r H^\circ-\Delta\nu_{\text{gas}}RT
 $$
 
 ---
@@ -94,22 +100,27 @@ $$
 **Step 3. Insert data**  
 With $T = 298\,\text{K}$ and $R = 8.314\,\text{J mol}^{-1}\text{K}^{-1}$:
 $$
-(\Delta n_{\text{gas}})RT = (-1)(8.314)(298) = -2.48 \times 10^{3}\,\text{J} = -2.48\,\text{kJ}
+\Delta\nu_{\text{gas}}RT
+=(-1)(8.314)(298)
+=-2.48 \times 10^{3}\,\text{J mol}^{-1}
+=-2.48\,\text{kJ mol}^{-1}
 $$
 
 ---
 
 **Step 4. Final value**  
 $$
-\Delta U^{\circ} = (-566.0)\,\text{kJ mol}^{-1} - (-2.48)\,\text{kJ mol}^{-1}
-= -563.5\,\text{kJ mol}^{-1}.
+\Delta_r U^{\circ}
+=(-566.0)\,\text{kJ mol}^{-1}
+-(-2.48)\,\text{kJ mol}^{-1}
+=-563.5\,\text{kJ mol}^{-1}.
 $$
 
 ---
 
 **Answer:**  
 $$
-\Delta U^{\circ} = -563.5\,\text{kJ mol}^{-1}
+\Delta_r U^{\circ} = -563.5\,\text{kJ mol}^{-1}
 $$
 
 </div>
@@ -118,20 +129,20 @@ $$
 
 ## Notes
 
-- The difference between $\Delta U$ and $\Delta H$ is small here because only **1 mol of gas disappears**.  
-- If $\Delta n_{\text{gas}} = 0$, then $\Delta H = \Delta U$.  
-- The correction $(\Delta n_{\text{gas}})RT$ grows with $T$ and with large changes in gas moles.  
-- **Pedagogical point:** $\Delta H$ is often tabulated (easy to measure at constant $p$), while $\Delta U$ is the central state function in the First Law.  
-- **Real-gas reminder:** for non‑ideal gases the simple $RT\,\Delta n$ correction is only approximate; use the appropriate equation of state if accuracy is required.
+- The difference between $\Delta_r U^\circ$ and $\Delta_r H^\circ$ is small here because $\Delta\nu_{\text{gas}}=-1$.  
+- If $\Delta\nu_{\text{gas}}=0$ for an ideal-gas reaction, then $\Delta_r H^\circ=\Delta_r U^\circ$.  
+- The magnitude of the correction $\Delta\nu_{\text{gas}}RT$ grows with temperature and with the change in gaseous stoichiometric coefficients.  
+- Standard reaction enthalpies are commonly tabulated, while the First Law is written directly in terms of internal energy.  
+- For non-ideal gases, the simple $RT\Delta\nu_{\text{gas}}$ correction is only approximate.
 
 </div>
 
 ---
 
 ### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  

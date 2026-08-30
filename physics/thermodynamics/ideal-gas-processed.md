@@ -2,7 +2,9 @@
 layout: default
 title: "Ideal-Gas Processes — Work, ΔU and ΔS"
 meta-description: "Compare work, internal energy, and entropy for compressions of an ideal gas along different reversible paths. Includes theoretical recalls and full solution with notes."
-permalink: /university/physics/thermodynamics/ideal-gas-processes/
+permalink: /physics/thermodynamics/ideal-gas-processes/
+redirect_from:
+  - /university/physics/thermodynamics/ideal-gas-processes/
 nav_order: 22
 background_image: /images/termodinamica.png
 ---
@@ -16,17 +18,19 @@ background_image: /images/termodinamica.png
 - **Equation of state:** $pV=nRT$
 - **Internal energy of an ideal gas:** $U=U(T)$, so $\Delta U$ depends only on the temperature change.
 - **Isothermal process:** $\Delta U=0$
-- **Work in a reversible isothermal:**
-  $$
-  w=nRT\,\ln\!\left(\frac{V_2}{V_1}\right)
-  $$
+- **Work done on the gas in a reversible isothermal process:**
+  $
+  w_{\mathrm{on}}
+  =-nRT\,\ln\!\left(\frac{V_2}{V_1}\right)
+  =nRT\,\ln\!\left(\frac{V_1}{V_2}\right)
+  $
 - **Entropy change (reversible):**
   $$
   \Delta S=nR\,\ln\!\left(\frac{V_2}{V_1}\right)
   $$
 - **State vs path functions:** $\Delta U$ and $\Delta S$ depend only on initial and final states, while $w$ and $q$ depend on the path.
 
-> **Sign convention reminder.** Here $w>0$ denotes work **on the gas**. Many textbooks adopt the opposite convention ($w<0$ for work on the system): always check the definition in use.
+> **Sign convention reminder.** Here $w_{\mathrm{on}}>0$ denotes work done on the gas, so compression gives positive work. Texts that define work as work done by the gas use the opposite sign.
 
 > **Validity note.** The results assume an **ideal gas** and **reversible transformations**. For real gases or irreversible processes, the formulas must be corrected.
 
@@ -40,7 +44,7 @@ A sample of $n=100\,\text{mol}$ of ideal hydrogen at $T=300\,\text{K}$ is compre
 
 Calculate the work **on** the gas along three different reversible paths:
 
-1. **(a)** Isobaric compression (at $p_1$) followed by isochoric cooling to the final state.  
+1. **(a)** Isobaric compression (at $p_1$) followed by isochoric heating to the final state.  
 2. **(b)** Direct isothermal compression from $V_1$ to $V_2$.  
 3. **(c)** Isochoric heating to $p_2$, followed by isobaric compression at $p_2$.
 
@@ -65,20 +69,22 @@ With $nRT=2.494\times10^5\,\text{J}$, we have $p_2=2p_1$.
 
 - **(a) Isobaric (at $p_1$):**
   $$
-  w_a=p_1(V_2-V_1)=nRT\!\left(\frac{V_2}{V_1}-1\right)
+  w_a=-p_1(V_2-V_1)=p_1(V_1-V_2)
+  =nRT\!\left(1-\frac{V_2}{V_1}\right)
   $$
   Numerically: $w_a=1.247\times10^5\,\text{J}$.
 
 - **(b) Isothermal:**
   $$
-  w_b=nRT\,\ln\!\left(\frac{V_2}{V_1}\right)
-       =2.494\times10^5\,\ln(0.5)
+  w_b=-nRT\,\ln\!\left(\frac{V_2}{V_1}\right)
+       =nRT\,\ln\!\left(\frac{V_1}{V_2}\right)
+       =2.494\times10^5\,\ln 2
   $$
   $w_b=1.729\times10^5\,\text{J}$.
 
 - **(c) Isobaric (at $p_2$):**
   $$
-  w_c=p_2(V_2-V_1)=2p_1(V_2-V_1)=2w_a
+  w_c=-p_2(V_2-V_1)=p_2(V_1-V_2)=2w_a
   $$
   $w_c=2.494\times10^5\,\text{J}$.
 
@@ -110,17 +116,17 @@ $$
 
 - The **work** depends on the path: $w_a<w_b<w_c$. This illustrates that work is **path-dependent**.
 - The **internal energy** change is zero for all cases because $U$ of an ideal gas depends only on $T$.
-- The **entropy** decreases, consistent with the system becoming more ordered upon compression. This is a **state function**, so the same value emerges regardless of path.
-- **Important remark:** Always check whether $\Delta U=0$ holds: it is true here because the process is isothermal and the gas is ideal. For real gases this statement is **not exact**.
+- The **entropy** decreases because the gas reaches the same temperature in a smaller volume. Entropy is a **state function**, so the same value is obtained for all three paths.
+- **Important remark:** Here $\Delta U=0$ because the initial and final temperatures are equal and the gas is ideal. Only path (b) is isothermal throughout; paths (a) and (c) pass through intermediate temperatures.
 
 </div>
 
 ---
 
 ### Related topics
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)
+- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)

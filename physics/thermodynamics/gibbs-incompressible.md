@@ -2,7 +2,9 @@
 layout: default
 title: "Gibbs Free Energy for Incompressible Substances"
 meta-description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
-permalink: /university/physics/thermodynamics/gibbs-incompressible/
+permalink: /physics/thermodynamics/gibbs-free-energy/
+redirect_from:
+  - /university/physics/thermodynamics/gibbs-incompressible/
 nav_order: 27
 background_image: /images/termodinamica.png
 ---
@@ -18,7 +20,7 @@ background_image: /images/termodinamica.png
   G = H - TS
   $$
 
-- Differential form:
+- Differential form for a closed system of fixed composition:
   $$
   dG = V\,dp - S\,dT
   $$
@@ -28,12 +30,12 @@ background_image: /images/termodinamica.png
   dG = V\,dp
   $$
 
-- If the substance is **incompressible** (constant $V$):
+- For a fixed amount of an **incompressible** substance (constant total volume $V$):
   $$
   \Delta G = V\,(p_2 - p_1)
   $$
 
-👉 This shows that for liquids and solids, pressure has a **linear effect** on Gibbs free energy, unlike gases where the relation is logarithmic.
+For a fixed amount of an incompressible substance at constant temperature, the Gibbs free-energy change is therefore proportional to the pressure change.
 
 </div>
 
@@ -72,7 +74,10 @@ $$
 **Step 3. Gibbs free energy change**  
 Use $\Delta G = n V_m \Delta p$:  
 $$
-\Delta G = (55.6)(18.0 \times 10^{-6})(9.9 \times 10^6)\, J
+\Delta G
+= (55.6\,\mathrm{mol})
+  (18.0 \times 10^{-6}\,\mathrm{m^3\,mol^{-1}})
+  (9.9 \times 10^6\,\mathrm{Pa})
 $$
 
 $$
@@ -93,22 +98,22 @@ $$
 ## Notes
 
 - The calculation shows that for liquids, $\Delta G$ is proportional to the pressure change.  
-- Even a large increase in pressure (from 1 bar to 100 bar) only changes $\Delta G$ by **a few kJ** because the molar volume is small.  
-- For gases, the relation is instead:
-  $$
-  G = G^\circ + RT \ln \frac{p}{p^\circ}
-  $$
-  which grows logarithmically with $p$.  
-- This distinction explains why **pressure strongly influences gas equilibria**, but has only minor effects on liquid or solid phases.  
+- Increasing the pressure from 1 bar to 100 bar changes $G$ by about $9.9\,\text{kJ}$ for one litre of water; the change per mole is only about $0.18\,\text{kJ mol}^{-1}$ because the molar volume is small.  
+- For a pure ideal gas, the molar Gibbs free energy, or chemical potential, is
+  $
+  \mu(T,p)=\mu^\circ(T)+RT\ln\!\left(\frac{p}{p^\circ}\right).
+  $
+  Its pressure dependence is logarithmic.  
+- Pressure enters gas chemical potentials explicitly. For liquids and solids, the pressure contribution is usually much smaller because their molar volumes are small.  
 
 </div>
 
 ---
 
 ### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/university/physics/thermodynamics/phase-transitions/)  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
+- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  

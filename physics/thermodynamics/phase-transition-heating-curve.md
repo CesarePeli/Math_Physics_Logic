@@ -2,7 +2,9 @@
 layout: default
 title: "Phase Transitions — Heating Curve and Enthalpy Changes"
 meta-description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
-permalink: /university/physics/thermodynamics/phase-transitions/
+permalink: /physics/thermodynamics/phase-transitions/
+redirect_from:
+  - /university/physics/thermodynamics/phase-transitions/
 nav_order: 28
 background_image: /images/termodinamica.png
 ---
@@ -18,13 +20,13 @@ background_image: /images/termodinamica.png
   q = m c \Delta T
   $$
 
-- **Heat required for phase transition:**
+- **Heat absorbed in a phase transition at constant pressure:**
   $$
   q = n \Delta H_{\text{trans}}
   $$
 
-- During a **phase transition**, $T$ remains constant while $q$ increases, because energy goes into breaking intermolecular bonds rather than raising kinetic energy.  
-- The full **heating curve** therefore combines *sloped segments* (heating at constant phase) and *plateaus* (phase changes).
+- During an equilibrium phase transition of a pure substance at fixed pressure, the temperature remains constant while heat changes the phase and reorganizes intermolecular interactions.  
+- Under these conditions, a heating curve combines *sloped segments* within a single phase and *plateaus* during phase changes.
 
 </div>
 
@@ -60,7 +62,9 @@ n = \frac{50.0}{18.0} = 2.78 \, mol
 $$
 
 $$
-q_2 = n \Delta H_{\text{fus}} = (2.78)(6.01 \, kJ) = 16.7 \, kJ
+q_2 = n \Delta H_{\text{fus}}
+= (2.78\,\mathrm{mol})(6.01\,\mathrm{kJ\,mol^{-1}})
+= 16.7\,\mathrm{kJ}
 $$
 
 ---
@@ -99,21 +103,21 @@ $$
 
 ## Notes
 
-- The heating curve has **three regions**: heating solid, phase transition plateau, heating liquid.  
+- Over the temperature interval considered, the heating curve has three regions: heating the solid, the melting plateau, and heating the liquid.  
 - The largest energy contribution comes from the **phase transition** (fusion), which requires far more heat than simply raising the temperature.  
 - This illustrates the difference between:  
   - **specific heat** (energy per unit mass per degree, linked to temperature changes),  
   - **latent heat** (energy associated with structural reorganization of matter).  
-- Heating curves are a visual tool to track **enthalpy changes** across phases.
+- At constant pressure, the supplied heat equals the enthalpy change, so a heating curve represents how enthalpy is added within and between phases.
 
 </div>
 
 ---
 
 ### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/university/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/university/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/university/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/university/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/university/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/university/physics/thermodynamics/gibbs-incompressible/)  
+- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
+- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
+- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
+- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
+- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
+- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  

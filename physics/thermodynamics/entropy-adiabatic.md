@@ -17,7 +17,7 @@ content_type: solved-exercise
 
 An adiabatic process has $q=0$, but this does not necessarily imply that $\Delta S=0$.
 
-Entropy remains constant only when the adiabatic process is **reversible**. In an irreversible adiabatic process, entropy is produced and the entropy of an isolated system increases.
+For a closed system, entropy remains constant only when the adiabatic process is **reversible**. An irreversible adiabatic process generates entropy, so the entropy of the system increases.
 
 <div class="content-box">
 
@@ -44,7 +44,7 @@ $$
 The absence of heat exchange does not by itself determine the entropy change:
 
 - **Reversible adiabatic process:** $\Delta S_{\text{sys}}=0$.
-- **Irreversible adiabatic process:** $\Delta S_{\text{sys}}>0$ for an isolated system.
+- **Irreversible adiabatic process in a closed system:** $\Delta S_{\text{sys}}>0$.
 - **Entropy change of the universe:**
 
   $$
@@ -282,9 +282,9 @@ Equality holds for a reversible process; a strict inequality characterizes an ir
 
 ### Related Topics
 
-- [Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$]({{ "/university/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
-- [Reaction Energetics — Internal Energy and Enthalpy]({{ "/university/physics/thermodynamics/reaction-energetics/" | relative_url }})
-- [Equilibrium and Spontaneity — $\Delta G^\circ$, $K$ and Temperature]({{ "/university/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
-- [Colligative Properties — Freezing-Point Depression]({{ "/university/physics/thermodynamics/colligative-freezing/" | relative_url }})
-- [Gibbs Free Energy for Incompressible Substances]({{ "/university/physics/thermodynamics/gibbs-incompressible/" | relative_url }})
-- [Phase Transitions — Heating Curve and Enthalpy Changes]({{ "/university/physics/thermodynamics/phase-transitions/" | relative_url }})
+- [Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
+- [Reaction Energetics — Internal Energy and Enthalpy]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
+- [Equilibrium and Spontaneity — $\Delta G^\circ$, $K$ and Temperature]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
+- [Colligative Properties — Freezing-Point Depression]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
+- [Gibbs Free Energy for Incompressible Substances]({{ "/physics/thermodynamics/gibbs-free-energy/" | relative_url }})
+- [Phase Transitions — Heating Curve and Enthalpy Changes]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})
