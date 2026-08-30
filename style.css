@@ -221,10 +221,10 @@ header nav a:hover,
   }
 
   .content-box {
-    width: calc(100% - 1rem);
-    margin: 0.75rem auto 1rem;
-    padding: 1.25rem;
-    border-radius: 0.75rem;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0;
   }
 
   .content-box > :first-child {
@@ -281,7 +281,17 @@ header nav a:hover,
     -webkit-overflow-scrolling: touch;
   }
 
-  mjx-container {
+  /* Le formule in linea devono restare nella frase. */
+  mjx-container:not([display="true"]) {
+    display: inline;
+    max-width: none;
+    padding: 0;
+    overflow: visible;
+  }
+
+  /* Solo le formule centrate possono scorrere orizzontalmente. */
+  mjx-container[display="true"] {
+    display: block;
     max-width: 100%;
     padding: 0;
     overflow-x: auto;
