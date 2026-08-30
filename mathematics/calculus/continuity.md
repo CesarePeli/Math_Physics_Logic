@@ -76,7 +76,6 @@ Compositions of continuous functions are continuous wherever the composition is 
 
 </div>
 
----
 
 <div class="content-box">
 
@@ -672,9 +671,6 @@ $$
 
 </div>
 
-
-
----
 
 <div class="content-box">
 
