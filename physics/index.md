@@ -3,7 +3,7 @@ layout: default
 date: 2026-08-29
 title: "Physics"
 permalink: /physics/
-background_image: "/images/termodinamica.png"
+background_image: "/images/quantistica.png"
 description: "Physics resources on mechanics, worked thermodynamics problems, dynamical systems, chaos, and quantum physics, with mathematical models and conceptual explanations."
 area: physics
 ---
