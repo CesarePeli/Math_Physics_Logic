@@ -2,7 +2,9 @@
 layout: default
 title: "Gibbs Free Energy for Incompressible Substances"
 meta-description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
-permalink: /university/physics/thermodynamics/gibbs-incompressible/
+permalink: /physics/thermodynamics/gibbs-free-energy/
+redirect_from:
+  - /university/physics/thermodynamics/gibbs-incompressible/
 nav_order: 27
 background_image: /images/termodinamica.png
 ---
