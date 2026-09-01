@@ -412,6 +412,10 @@ $$
 
 > **Scope note.** This page excludes Cauchy problems, or initial-value problems. Those are treated separately.
 
+</div>
+
+<div class="content-box">
+
 ### Exercise 1
 
 Solve
@@ -531,7 +535,10 @@ c_1+c_2x+c_3e^{-3x}
 +\frac12x^3-\frac12x^2.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -641,7 +648,10 @@ x
 \right)e^{-x}.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -790,7 +800,10 @@ c_2e^{3x/2}
 \frac{1}{25}\sin(2x).
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -916,7 +929,10 @@ e^x
 \right].
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -998,7 +1014,10 @@ c>0,
 x<\log c.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -1082,7 +1101,10 @@ c_3xe^x
 \frac14x^2e^x.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -1195,7 +1217,10 @@ c_2xe^x
 \frac18e^{-x}.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -1294,7 +1319,10 @@ c_1+c_2x+c_3x^2+c_4e^x
 \frac{1}{20}\sin(2x).
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -1414,7 +1442,10 @@ c_1+c_2x+c_3e^x+c_4xe^x
 \frac16x^3+x^2.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -1565,7 +1596,10 @@ x\sin x,
 \cos x\neq0.
 $$
 
+
 </div>
+
+
 
 <div class="content-box">
 

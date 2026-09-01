@@ -71,11 +71,14 @@ The theorem also applies to suitable one-sided limits and limits at infinity.
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1
 
@@ -168,7 +171,10 @@ $$
 -\infty
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -301,7 +307,10 @@ $$
 e^{-1/6}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -350,7 +359,10 @@ $$
 -1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -426,7 +438,10 @@ $$
 \frac{e^3}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -500,7 +515,10 @@ $$
 0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -592,7 +610,10 @@ $$
 \frac1{\sqrt6}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -715,7 +736,10 @@ $$
 +\infty
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -796,7 +820,10 @@ $$
 1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -905,7 +932,10 @@ $$
 -\frac18
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -1035,9 +1065,11 @@ $$
 2
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

@@ -62,7 +62,6 @@ $$
 
 The index n depends both on ε and on the chosen point x.
 
----
 
 ### Uniform Convergence
 
@@ -96,7 +95,6 @@ $$
 \alpha_n\to0.
 $$
 
----
 
 ### Fundamental Facts
 
@@ -143,7 +141,6 @@ $$
 
 </div>
 
----
 
 <div class="content-box">
 
@@ -159,7 +156,9 @@ $$
 
 where r is the radius of convergence.
 
----
+</div>
+
+<div class="content-box">
 
 ### Exercise 1
 
@@ -266,7 +265,10 @@ f_n\to0
 \text{ uniformly iff }p<\frac12.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -435,7 +437,10 @@ x, & x>1.
 \end{cases}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -536,7 +541,10 @@ f_n\to0
 \text{the convergence is not uniform}.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -637,7 +645,10 @@ f_n\to0
 \text{ uniformly iff }p<1.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -702,7 +713,10 @@ f_n\to0
 \text{ uniformly on }[0,1].
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -802,7 +816,10 @@ $$
 \text{ for every }a>0.
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -892,7 +909,10 @@ $$
 e^x(1+x)-1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -983,7 +1003,10 @@ X=
 \right)
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -1050,7 +1073,10 @@ $$
 |x|<1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -1212,9 +1238,11 @@ $$
 \end{cases}
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

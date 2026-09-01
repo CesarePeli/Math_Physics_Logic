@@ -121,6 +121,10 @@ The expansions must be truncated only after ensuring the approximation order is 
 
 ## Solved Limits Using Taylor Expansions
 
+</div>
+
+<div class="content-box">
+
 ### Exercise 1
 
 $$
@@ -159,7 +163,10 @@ $$
 \frac{1}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -199,7 +206,10 @@ $$
 -\frac{1}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -239,7 +249,10 @@ $$
 -\frac{1}{6}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -279,7 +292,10 @@ $$
 \frac{1}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -327,7 +343,10 @@ $$
 2
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -367,7 +386,10 @@ $$
 \frac{1}{3}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -449,7 +471,10 @@ $$
 \text{The two-sided limit does not exist.}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -503,7 +528,10 @@ $$
 1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -563,7 +591,10 @@ $$
 -\frac{1}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -630,7 +661,10 @@ $$
 0
 $$
 
+
 </div>
+
+
 
 <div class="content-box">
 

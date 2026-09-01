@@ -8,8 +8,6 @@ description: "Articles on logic, linguistics, and artificial intelligence."
 area: logic-language
 ---
 
-<div class="content-box">
-
 # Logic & Language
 
 This section contains articles on logic, linguistics, formal systems, and artificial intelligence.
@@ -19,8 +17,6 @@ Topics include mathematical proof, validity and inference, axiomatic systems, fo
 Mathematics is an important point of reference, especially in discussions of proof, formalization, and symbolic representation. Other articles may focus on linguistic analysis or on specific questions raised by artificial intelligence.
 
 The material ranges from introductory explanations to more technical or historical studies. Each article develops a particular problem in the detail it requires, using definitions, formal notation, examples, or historical sources where appropriate.
-
-</div>
 
 <div class="content-box">
 

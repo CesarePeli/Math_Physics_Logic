@@ -90,11 +90,14 @@ This is a guideline rather than a theorem: the best choice is always the one tha
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1
 
@@ -152,7 +155,10 @@ $$
 (x-1)e^x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -208,7 +214,10 @@ $$
 x\sin x+\cos x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -258,7 +267,10 @@ $$
 -x\cos x+\sin x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -334,7 +346,10 @@ $$
 \left(\frac{x}{2}-\frac14\right)e^{2x}+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -406,7 +421,10 @@ $$
 x\ln x-x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -494,7 +512,10 @@ $$
 (x^2-2x+2)e^x+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -571,7 +592,10 @@ $$
 \frac{x^2}{2}\ln x-\frac{x^2}{4}+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -693,7 +717,10 @@ $$
 \frac12e^x(\sin x+\cos x)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -805,7 +832,10 @@ $$
 \frac12e^x(\sin x-\cos x)+C
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -929,9 +959,11 @@ $$
 (x^3-3x^2+6x-6)e^x+C
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

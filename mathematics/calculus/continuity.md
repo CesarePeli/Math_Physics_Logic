@@ -1,8 +1,3 @@
-Qui farei la stessa migrazione che stiamo applicando alle altre pagine: **nessuna ragione per eliminarla**. Il contenuto è coerente; correggo soprattutto struttura, notazione inline secondo le regole del sito, metadata, URL e linking interno. Inoltre rendo alcune soluzioni un po' più esplicite senza cambiare gli esercizi.
-
-File: **`mathematics/calculus/continuity.md`**
-
-```markdown
 ---
 layout: default
 date: 2026-08-24
@@ -81,11 +76,14 @@ Compositions of continuous functions are continuous wherever the composition is 
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1 — Removable Discontinuity
 
@@ -148,7 +146,10 @@ $$
 c=2
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2 — Jump Discontinuity
 
@@ -182,7 +183,10 @@ $$
 \text{Jump discontinuity at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3 — Infinite Discontinuity
 
@@ -218,7 +222,10 @@ $$
 \text{Infinite discontinuity at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4 — Extending a Function Continuously
 
@@ -269,7 +276,10 @@ $$
 f\text{ is continuous on }\mathbb{R}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5 — Continuity by the Squeeze Theorem
 
@@ -340,7 +350,10 @@ $$
 f\text{ is continuous at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6 — Continuity of a Piecewise Function
 
@@ -396,7 +409,10 @@ $$
 2a+b=4
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7 — Continuity and Domain
 
@@ -449,7 +465,10 @@ f\text{ is continuous on }
 (-\infty,-2)\cup(2,+\infty)
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8 — Oscillatory Discontinuity
 
@@ -531,7 +550,10 @@ $$
 \text{Oscillatory discontinuity at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9 — Piecewise Jump Discontinuity
 
@@ -585,7 +607,10 @@ $$
 \text{Jump discontinuity at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10 — Parameters in a Piecewise Function
 
@@ -643,9 +668,9 @@ a=1,
 b\in\mathbb{R}
 $$
 
+
 </div>
 
----
 
 <div class="content-box">
 
@@ -663,8 +688,3 @@ $$
 [**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>
-```
-
-Una correzione importante rispetto all'originale è l'**Exercise 8**: non mi limito a dire che `sin(1/x)` oscilla, ma mostro effettivamente due successioni che tendono a zero e producono rispettivamente 1 e −1. È una dimostrazione molto più appropriata per una pagina universitaria.
-
-Per l'immagine lascerei **`grafi.png`**: è già esistente e semanticamente è adatta alla continuità, quindi qui non vedo motivo di cambiarla.

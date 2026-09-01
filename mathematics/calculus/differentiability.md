@@ -122,11 +122,14 @@ means that f is infinitely differentiable.
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1 — Continuous but Not Differentiable
 
@@ -239,7 +242,10 @@ f\in C^0(\mathbb{R}),
 f\notin C^1(\mathbb{R})
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2 — Absolute Value and Radical
 
@@ -333,7 +339,10 @@ $$
 f\in C^1(\mathbb{R})
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3 — A Smooth Absolute-Value Power
 
@@ -425,7 +434,10 @@ $$
 f\in C^1(\mathbb{R})
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4 — Endpoint and Vertical Tangent
 
@@ -509,7 +521,10 @@ $$
 f\text{ is not differentiable at }x=1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5 — Failure of Continuity
 
@@ -576,7 +591,10 @@ $$
 f\text{ is neither continuous nor differentiable at }x=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6 — Differentiability of a Piecewise Function
 
@@ -657,7 +675,10 @@ a=0,
 b=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7 — Smoothness of Absolute Powers
 
@@ -751,7 +772,10 @@ a\in2\mathbb{N}
 a>k
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8 — Matching Derivatives
 
@@ -823,7 +847,10 @@ b=1,
 a\in\mathbb{R}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9 — The Absolute Value Function
 
@@ -893,7 +920,10 @@ f\in C^0(\mathbb{R}),
 f\notin C^1(\mathbb{R})
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10 — A C² Piecewise Function
 
@@ -1009,9 +1039,11 @@ b=0,
 c=1
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

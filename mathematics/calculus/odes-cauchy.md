@@ -65,11 +65,14 @@ has a **unique local solution**.
 
 </div>
 
----
 
 <div class="content-box">
 
 ## Exercises
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 1
 
@@ -126,7 +129,10 @@ $$
 y(x)=e^x
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -177,7 +183,10 @@ $$
 y(x)=3e^{-2x}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -222,7 +231,10 @@ $$
 y(x)=\frac{x^2}{2}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -340,7 +352,10 @@ $$
 y(x)=\cosh x
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -430,7 +445,10 @@ $$
 y(x)=\sin x
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -523,7 +541,10 @@ $$
 y(x)=xe^x
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -607,7 +628,10 @@ $$
 y(x)=2\cos(2x)
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -719,7 +743,10 @@ $$
 y(x)=e^x
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -817,7 +844,10 @@ $$
 y(x)=1-e^{-x}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -900,9 +930,11 @@ $$
 y(x)=e^{\sin x}
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

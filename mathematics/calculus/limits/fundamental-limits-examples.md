@@ -164,6 +164,10 @@ $$
 
 ## Step-by-Step Solutions
 
+</div>
+
+<div class="content-box">
+
 ### Exercise 1
 
 $$
@@ -201,7 +205,10 @@ $$
 1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -258,7 +265,10 @@ $$
 -1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -315,7 +325,10 @@ $$
 e^4
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -395,7 +408,10 @@ $$
 -1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5
 
@@ -463,7 +479,10 @@ $$
 0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -513,7 +532,10 @@ $$
 -1
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7
 
@@ -590,7 +612,10 @@ $$
 0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -672,7 +697,10 @@ $$
 e^4
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -767,7 +795,10 @@ $$
 e
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -836,7 +867,10 @@ $$
 2
 $$
 
+
 </div>
+
+
 
 <div class="content-box">
 

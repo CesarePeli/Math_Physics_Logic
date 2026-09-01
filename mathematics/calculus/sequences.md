@@ -55,7 +55,6 @@ Unlike explicit formulas, here each term depends on the previous ones; behavior 
 
 </div>
 
----
 
 <div class="content-box">
 
@@ -68,7 +67,9 @@ Below are ten selected recursive sequences. Each solution shows:
 - passage to the limit via the fixed-point equation,
 - final result isolated.
 
----
+</div>
+
+<div class="content-box">
 
 ### Exercise 1
 
@@ -222,7 +223,10 @@ $$
 \lim_{n\to\infty}a_n=-2
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 2
 
@@ -311,7 +315,10 @@ $$
 \lim_{n\to\infty}a_n=4
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 3
 
@@ -432,7 +439,10 @@ $$
 \lim_{n\to\infty}a_n=\frac12
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 4
 
@@ -503,7 +513,10 @@ $$
 \lim_{n\to\infty}a_n=0
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 5 — Parameter a > 0
 
@@ -697,7 +710,10 @@ $$
 \end{cases}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 6
 
@@ -814,7 +830,10 @@ $$
 \lim_{n\to\infty}a_n=\sqrt2
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 7 — Parameter α > 0
 
@@ -921,7 +940,10 @@ $$
 \end{cases}
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 8
 
@@ -1066,7 +1088,10 @@ $$
 \lim_{n\to\infty}a_n=2-\sqrt3
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 9
 
@@ -1175,7 +1200,10 @@ $$
 \lim_{n\to\infty}a_n=+\infty
 $$
 
----
+
+</div>
+
+<div class="content-box">
 
 ### Exercise 10
 
@@ -1240,9 +1268,11 @@ $$
 \lim_{n\to\infty}a_n=0
 $$
 
+
 </div>
 
----
+
+
 
 <div class="content-box">
 

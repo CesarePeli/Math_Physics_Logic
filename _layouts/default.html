@@ -14,7 +14,7 @@
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/style.css?v=20260830-mobile-5' | relative_url }}">
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
 
   <!-- Google Analytics -->
@@ -59,31 +59,6 @@
 ">
 
   {% include header.html %}
-
-  {% if page.permalink == "/" %}
-  <section class="hero" style="
-    text-align: center;
-    margin: 3rem auto 2.5rem;
-    padding: 0 1rem;
-  ">
-
-    <h1 style="
-      font-size: clamp(2.8rem, 6vw, 4.5rem);
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: #fff;
-      text-shadow:
-        -1px -1px 0 #000,
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-      margin: 0;
-    ">
-      Logic &amp; Motion
-    </h1>
-
-  </section>
-  {% endif %}
 
   <main style="
     width: 100vw;

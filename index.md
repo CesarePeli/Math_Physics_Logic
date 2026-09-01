@@ -7,10 +7,6 @@ background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
 ---
 
-
-
-<div class="content-box">
-
 # Logic & Motion
 
 Solving a mathematical problem involves more than obtaining the right result. It also means understanding why a method works, under what assumptions it applies, and how a particular result fits into a more general structure.
@@ -26,8 +22,6 @@ The **Mathematics** section combines conceptual articles, theoretical notes, pro
 **Logic & Language** contains articles on logic, linguistics, and artificial intelligence. Logic is concerned with inference, proof, and formal systems. Linguistics examines the structure and use of language. Artificial intelligence raises questions about computation, reasoning, learning, and language processing.
 
 The site offers theoretical notes, conceptual articles, solved exercises, and visual resources for students, teachers, and curious readers.
-
-</div>
 
 <div class="content-box">
 
