@@ -14,7 +14,7 @@ content_type: article
 
 ## Do Large Language Models Learn Grammar?
 
-*By Andrea Padovan, University of Verona*
+*By Andrea Padovan*
 
 Who among us is unfamiliar with large language models? Whether ChatGPT, Claude, Gemini, Llama, DeepSeek, or others, most people have interacted with these systems at least once. Calling them “chatbots” would be reductive, since this label does not reflect their remarkable internal complexity or the variety and accuracy of their responses.
 
@@ -49,5 +49,13 @@ The relationship between LLMs and grammar has prompted a heated debate within th
 - Piantadosi, S. 2024. “Modern Language Models Refute Chomsky’s Approach to Language.” In *From Fieldwork to Linguistic Theory*, 353–414. Language Science Press. [https://doi.org/10.5281/zenodo.12665933](https://doi.org/10.5281/zenodo.12665933).
 
 - Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. “Attention Is All You Need.” In *Advances in Neural Information Processing Systems 30*, 5998–6008.
+
+</div>
+
+<div class="content-box">
+
+## About the Author
+
+**Andrea Padovan** is Associate Professor of German Language, Translation and Linguistics at the University of Verona. His research interests include language learning and processing, theoretical linguistics, and computational linguistics.
 
 </div>
