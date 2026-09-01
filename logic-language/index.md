@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-30
+date: 2026-09-01
 title: "Logic & Language"
 permalink: /logic-language/
 background_image: "/images/euclide.png"
@@ -21,6 +21,9 @@ The material ranges from introductory explanations to more technical or historic
 <div class="content-box">
 
 ## Articles
+
+- [**Do Large Language Models Learn Grammar?**]({{ "/logic-language/large-language-models-grammar/" | relative_url }})  
+  A comparison of how large language models process tokens, embeddings, and grammatical relations with the way children acquire human language.
 
 - [**What Is a Proof?**]({{ "/logic-language/proof/" | relative_url }})  
   An examination of mathematical proof, from formal derivation and logical consequence to the historical development of demonstrative practices.
