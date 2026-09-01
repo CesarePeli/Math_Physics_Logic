@@ -4,7 +4,7 @@ date: 2026-09-01
 title: "Do Large Language Models Learn Grammar?"
 author: Andrea Padovan
 permalink: /logic-language/large-language-models-grammar/
-background_image: "/images/AI.png"
+background_image: "/images/LLM.png"
 description: "How do large language models learn grammar? A comparison of LLM tokenization, embeddings, attention, and human language acquisition."
 area: logic-language
 content_type: article
