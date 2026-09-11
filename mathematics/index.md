@@ -9,17 +9,13 @@ area: mathematics
 
 # Mathematics
 
-Mathematics is the study of **structure, relation, abstraction, and proof** — a language through which patterns become intelligible and reasoning becomes precise.
-
-At Logic & Motion, mathematical topics are organized by subject rather than by educational level. Introductory resources, university-level theory, solved exercises, and deeper investigations can therefore be explored within the same conceptual framework.
+This section contains theoretical notes, conceptual explanations, proofs, and worked exercises. Resources are organized by subject, with their level indicated within the individual materials.
 
 <div class="content-box">
 
 ## Foundations
 
-The fundamental ideas that shape mathematical reasoning: numbers, operations, definitions, infinity, and the limits of familiar mathematical procedures.
-
-Current explorations include questions such as **division by zero** and **infinity plus one**, where apparently simple expressions reveal deeper issues about mathematical definitions and structures.
+Numbers, operations, definitions, infinity, and the limits of familiar mathematical procedures.
 
 [**Explore Foundations →**]({{ "/mathematics/foundations/" | relative_url }})
 
@@ -29,9 +25,7 @@ Current explorations include questions such as **division by zero** and **infini
 
 ## Algebra
 
-The study of equations, functions, symbolic relations, and number systems.
-
-Resources range from **quadratic equations and logarithms** to **complex numbers**, connecting elementary techniques with ideas that later become essential throughout higher mathematics.
+Equations, functions, logarithms, complex numbers, and symbolic relations, from elementary techniques to more advanced applications.
 
 [**Explore Algebra →**]({{ "/mathematics/algebra/" | relative_url }})
 
@@ -41,18 +35,8 @@ Resources range from **quadratic equations and logarithms** to **complex numbers
 
 ## Calculus
 
-The mathematics of limits, variation, accumulation, and continuous change.
-
-This area brings together material on **limits, sequences, series, continuity, differentiability, integration, and differential equations**, including theoretical foundations and detailed solved exercises.
-
-Rather than separating topics into high-school and university sections, resources remain connected to the mathematical ideas they develop, with their level indicated within the individual materials.
+Limits, sequences, series, continuity, differentiation, integration, and differential equations, with theoretical material and worked exercises.
 
 [**Explore Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>
-
----
-
-Mathematical understanding develops at different levels of depth. Some resources introduce an idea visually or intuitively; others develop its formal structure or apply it through detailed exercises.
-
-The aim is not to treat these as separate mathematical worlds, but as different ways of approaching the same underlying ideas.
