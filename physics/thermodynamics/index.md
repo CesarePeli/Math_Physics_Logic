@@ -12,7 +12,7 @@ topic: thermodynamics
 
 # Thermodynamics Worked Problems
 
-**By Prof. Marco Ruzzi.**
+**The worked problems in this section are by Prof. Marco Ruzzi.**
 
 **Thermodynamics** connects a small number of fundamental principles with a remarkably wide range of physical phenomena.
 
@@ -43,6 +43,16 @@ Practice problems involving **entropy changes, the second law of thermodynamics,
 The solutions emphasize both the calculation of thermodynamic quantities and their physical interpretation.
 
 [**Explore Entropy and Adiabatic Problems →**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Maxwell’s Demon
+
+An article by **Cesare Peli** on Maxwell’s thought experiment, the statistical meaning of the Second Law, and the relation between entropy and information.
+
+[**Read Maxwell’s Demon →**]({{ "/physics/thermodynamics/maxwells-demon/" | relative_url }})
 
 </div>
 
