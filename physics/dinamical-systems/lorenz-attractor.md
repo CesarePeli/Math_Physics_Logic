@@ -23,25 +23,25 @@ content_type: article
 
 In 1963 Edward Lorenz introduced a simplified model of atmospheric convection. Starting from equations for fluid motion and heat transfer, he retained three modes and obtained the nonlinear system
 
-\[
+$$
 \begin{aligned}
 \frac{dx}{dt} &= \sigma(y-x),\\
 \frac{dy}{dt} &= x(\rho-z)-y,\\
 \frac{dz}{dt} &= xy-\beta z.
 \end{aligned}
-\]
+$$
 
-The variables do not represent the full state of the atmosphere. They are amplitudes in a truncated model: \(x\) is associated with convective motion, while \(y\) and \(z\) describe aspects of the temperature distribution. The parameters \(\sigma\), \(\rho\), and \(\beta\) depend on the physical setting from which the approximation is derived.
+The variables do not represent the full state of the atmosphere. They are amplitudes in a truncated model: $x$ is associated with convective motion, while $y$ and $z$ describe aspects of the temperature distribution. The parameters $\sigma$, $\rho$, and $\beta$ depend on the physical setting from which the approximation is derived.
 
 For the standard values
 
-\[
+$$
 \sigma=10,
 \qquad
 \rho=28,
 \qquad
 \beta=\frac83,
-\]
+$$
 
 numerical solutions approach a bounded region with two lobes and continue to move within it without settling into an equilibrium or a periodic orbit. This region is the Lorenz attractor.
 
@@ -51,9 +51,9 @@ numerical solutions approach a bounded region with two lobes and continue to mov
 
 <h2>Equilibria and Dissipation</h2>
 
-The origin is an equilibrium for every choice of parameters. When \(\rho>1\), two further equilibria appear:
+The origin is an equilibrium for every choice of parameters. When $\rho>1$, two further equilibria appear:
 
-\[
+$$
 C_\pm
 =
 \left(
@@ -61,25 +61,25 @@ C_\pm
 \pm\sqrt{\beta(\rho-1)},
 \rho-1
 \right).
-\]
+$$
 
 The two lobes of the attractor develop around these points, although a chaotic trajectory does not converge to either of them.
 
 The vector field has constant divergence
 
-\[
+$$
 \nabla\cdot F
 =
 -\sigma-1-\beta.
-\]
+$$
 
-For positive \(\sigma\) and \(\beta\), this quantity is negative. If a small volume of initial conditions is transported by the flow, its volume decreases exponentially:
+For positive $\sigma$ and $\beta$, this quantity is negative. If a small volume of initial conditions is transported by the flow, its volume decreases exponentially:
 
-\[
+$$
 V(t)
 =
 V(0)e^{-(\sigma+1+\beta)t}.
-\]
+$$
 
 The system is therefore dissipative. Trajectories may separate in one direction while volumes contract overall. This combination helps explain how sensitive dependence on initial conditions can coexist with confinement to a bounded attractor.
 
@@ -91,22 +91,22 @@ The system is therefore dissipative. Trajectories may separate in one direction 
 
 The equations determine a unique trajectory once an initial condition has been fixed. The difficulty of long-term prediction comes from the growth of small uncertainties. For nearby initial states, the separation may behave approximately as
 
-\[
+$$
 \delta(t)
 \approx
 \delta_0e^{\lambda t},
-\]
+$$
 
-where a positive largest Lyapunov exponent \(\lambda\) indicates exponential divergence along at least one direction.
+where a positive largest Lyapunov exponent $\lambda$ indicates exponential divergence along at least one direction.
 
-If the initial uncertainty is \(\delta_0\), a finite prediction threshold \(\Delta\) is reached after a time of order
+If the initial uncertainty is $\delta_0$, a finite prediction threshold $\Delta$ is reached after a time of order
 
-\[
+$$
 t
 \approx
 \frac{1}{\lambda}
 \ln\left(\frac{\Delta}{\delta_0}\right).
-\]
+$$
 
 Improving the initial measurement extends the useful prediction interval only logarithmically. Determinism specifies the evolution law; it does not guarantee indefinitely accurate prediction from measurements of finite precision.
 
@@ -156,11 +156,11 @@ A three-dimensional flow can be studied by recording where trajectories cross a 
 
 For the Lorenz flow, the stable manifold of the equilibrium at the origin separates trajectories that pass around the left lobe from those that pass around the right lobe. After contraction along one direction, the return map can be reduced to a one-dimensional map with two branches and a discontinuity corresponding to the stable manifold.
 
-This reduction preserves the alternation between the lobes. A passage through the left side may be represented by \(L\), and a passage through the right side by \(R\). A trajectory then determines an itinerary such as
+This reduction preserves the alternation between the lobes. A passage through the left side may be represented by $L$, and a passage through the right side by $R$. A trajectory then determines an itinerary such as
 
-\[
+$$
 LRRLLR\ldots
-\]
+$$
 
 The sequence does not record the exact coordinates of the orbit. It records the order in which the orbit visits dynamically distinguished regions.
 
@@ -184,7 +184,7 @@ Williams showed that Lorenz attractors have a relative two-dimensional manifold 
 
 <h2>Symbolic Dynamics and Kneading Data</h2>
 
-The \(L\) and \(R\) itineraries convert part of the dynamics into a symbolic system. Periodic symbolic words correspond to periodic patterns in the return map, while non-periodic sequences describe more complicated recurrence.
+The $L$ and $R$ itineraries convert part of the dynamics into a symbolic system. Periodic symbolic words correspond to periodic patterns in the return map, while non-periodic sequences describe more complicated recurrence.
 
 The two branches are constrained by the behavior of the return map near its discontinuity. Kneading sequences record the itineraries of the limiting or critical orbits and determine which symbolic sequences are admissible. They provide more information than the visible butterfly shape: attractors with a similar appearance may have different symbolic dynamics.
 
