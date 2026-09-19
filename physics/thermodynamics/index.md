@@ -2,6 +2,7 @@
 layout: default
 date: 2026-08-29
 title: "Thermodynamics Worked Problems"
+author: Marco Ruzzi
 permalink: /physics/thermodynamics/
 background_image: "/images/termodinamica.png"
 description: "Thermodynamics worked problems with step-by-step solutions on ideal gases, entropy, adiabatic processes, Gibbs free energy, phase transitions, equilibrium, colligative properties, and reaction energetics."
@@ -10,6 +11,8 @@ topic: thermodynamics
 ---
 
 # Thermodynamics Worked Problems
+
+**By Prof. Marco Ruzzi.**
 
 **Thermodynamics** connects a small number of fundamental principles with a remarkably wide range of physical phenomena.
 
