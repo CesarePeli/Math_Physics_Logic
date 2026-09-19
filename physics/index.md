@@ -28,9 +28,11 @@ The mechanics section contains problems and mathematical treatments involving ki
 
 ## Thermodynamics
 
-This section is centered on worked thermodynamics problems, with step-by-step solutions involving ideal gases, entropy, adiabatic processes, equilibrium, Gibbs free energy, phase transitions, colligative properties, and reaction energetics. The distinction between reversible and irreversible adiabatic transformations is developed in [**Is Entropy Constant in an Adiabatic Process?**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }}).
+This section contains worked problems by Prof. Marco Ruzzi on ideal gases, entropy, adiabatic processes, equilibrium, Gibbs free energy, phase transitions, colligative properties, and reaction energetics. The distinction between reversible and irreversible adiabatic transformations is developed in [**Is Entropy Constant in an Adiabatic Process?**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }}).
 
-[**Explore Thermodynamics Worked Problems →**]({{ "/physics/thermodynamics/" | relative_url }})
+The section also includes [**Maxwell’s Demon**]({{ "/physics/thermodynamics/maxwells-demon/" | relative_url }}), an article by Cesare Peli on the statistical meaning of the Second Law and the relation between entropy and information.
+
+[**Explore Thermodynamics →**]({{ "/physics/thermodynamics/" | relative_url }})
 
 </div>
 
