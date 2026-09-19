@@ -2,7 +2,7 @@
 layout: default
 date: 2026-08-29
 title: "Is Entropy Constant in an Adiabatic Process?"
-author: Cesare Peli
+author: Marco Ruzzi
 permalink: /physics/thermodynamics/entropy-adiabatic/
 redirect_from:
   - /university/physics/thermodynamics/entropy-adiabatic/
@@ -14,6 +14,8 @@ content_type: solved-exercise
 ---
 
 # Is Entropy Constant in an Adiabatic Process?
+
+**By Prof. Marco Ruzzi.**
 
 An adiabatic process has $q=0$, but this does not necessarily imply that $\Delta S=0$.
 
