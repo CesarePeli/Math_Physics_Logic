@@ -6,207 +6,233 @@ permalink: /mathematics/foundations/infinity-plus-one/
 redirect_from:
   - /odd-questions/infinity-plus-one/
 background_image: "/images/odd-infinity.png"
-description: "What happens when you add one to infinity? Explore Hilbert’s Hotel, limits, cardinality, set theory, and the mathematical meaning of infinity."
+description: "What does infinity plus one mean? Compare limits, extended real numbers, cardinal arithmetic, and ordinal arithmetic."
 area: mathematics
 topic: foundations
 content_type: article
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3P4GLVFYWW');
-</script>
-
 <div class="content-box">
 
 <h1>What Is Infinity Plus One?</h1>
 
-At first glance, **infinity seems like the largest possible quantity**. So what happens if we add one to it? How is it possible to add anything to something that, by definition, never ends?
+The expression \(\infty+1\) does not have a single mathematical meaning. Its value depends on the object represented by the infinity symbol and on the operation being used. In a limit, \(+\infty\) describes unbounded behavior; in the extended real numbers it is an added element with restricted arithmetic rules; in set theory, infinite cardinal and ordinal numbers are genuine mathematical objects, but they answer different questions.
 
-A seemingly simple question reveals a deeper one:  
-**Is infinity really a number?**  
-And, for that matter, **are numbers really quantities?**
+The distinction matters because the same notation can lead to different results. For cardinal numbers, adding one element to a countably infinite set does not change its cardinality. For ordinal numbers, placing one element after an infinite sequence produces a new order type.
 
 </div>
 
 <div class="content-box">
 
-## A Hotel with Infinite Rooms
+<h2>Countability and Hilbert's Hotel</h2>
 
-To explore this question, let’s start with a famous thought experiment by mathematician David Hilbert: the **Hilbert Hotel paradox**.
+Hilbert's Hotel gives a concrete representation of countable infinity. Suppose that the rooms are indexed by the natural numbers
 
-Imagine a hotel with **rooms numbered 1 to ∞**, and all of them are occupied.  
-Now a new guest arrives. It seems there’s no room... but the receptionist has a clever idea: each guest **moves to the next room**. Room 1 to 2, room 2 to 3, and so on.
+\[
+\mathbb N=\{0,1,2,3,\ldots\}
+\]
 
-Room 1 is now free — and the new guest can check in.
+and that every room is occupied. A new guest can be accommodated by moving the guest in room \(n\) to room \(n+1\). The map
 
-</div>
+\[
+f(n)=n+1
+\]
 
-<div class="content-box">
+pairs the original guests with the rooms \(1,2,3,\ldots\), leaving room \(0\) available.
 
-## When Infinitely Many New Guests Arrive: The Even Room Trick
+The mathematical point is the existence of a bijection. If a new element \(a\) is added to \(\mathbb N\), the set
 
-Now suppose **an infinite number of new guests** arrive — each assigned a number: 1, 2, 3, ...
+\[
+\mathbb N\cup\{a\}
+\]
 
-Again, the hotel is full. What now?
+can still be placed in one-to-one correspondence with \(\mathbb N\): assign \(a\) to \(0\) and \(n\) to \(n+1\). The two sets therefore have the same cardinality even though one is a proper subset of the other.
 
-Here’s the trick:
+The same construction can accommodate a countably infinite collection of new guests. Represent the original and new guests by the disjoint union
 
-- Each current guest moves to the room **twice their current number**: 1 to 2, 2 to 4, 3 to 6, and so on.
-- This frees up **all the odd-numbered rooms**: 1, 3, 5, ...
-- The new guests can now move into those odd-numbered rooms in order.
+\[
+\mathbb N\times\{0,1\}.
+\]
 
-Result:
+The map
 
-- Old guests occupy the **even rooms**
-- New guests occupy the **odd rooms**
+\[
+(n,0)\longmapsto 2n,
+\qquad
+(n,1)\longmapsto 2n+1
+\]
 
-**The hotel is still full — but it has welcomed infinitely many new guests.**  
-In the world of infinity, **there’s always room for more**.
-
-</div>
-
-<div class="content-box">
-
-## Infinity Plus One... Still Infinity?
-
-From a formal standpoint, mathematics gives us a crisp answer:
-
-$$
-\infty + 1 = \infty
-$$
-
-But then — if we subtract ∞ from both sides, do we get:
-
-$$
-\infty + 1 - \infty = \infty - \infty \Rightarrow 1 = 0?
-$$
-
-Of course not.  
-This only highlights a key point: **we can’t treat infinity like an ordinary number**.  
-Some operations — like ∞ − ∞ — **aren’t defined**, because infinity isn’t a concrete value.
-
-So what *is* infinity, really?
+is a bijection from this union to \(\mathbb N\). The even rooms receive one group and the odd rooms the other.
 
 </div>
 
 <div class="content-box">
 
-## Infinity as a Concept
+<h2>Cardinal Addition</h2>
 
-The idea of infinity is ancient — from **Zeno’s paradoxes** in Greek philosophy to theological and metaphysical debates in the Middle Ages.
+Cardinal numbers describe the size of sets without recording an order among their elements. The cardinality of \(\mathbb N\) is denoted by
 
-But the symbol ∞ is quite modern.  
-It was introduced by **John Wallis** in 1655, possibly inspired by the shape of a sideways “8” — a loop that can be traced forever.
+\[
+\aleph_0.
+\]
 
-With Newton and Leibniz, infinity became central to **calculus**, as a way of expressing endlessly growing quantities or infinitesimal values approaching zero.
+Cardinal addition is defined through disjoint unions. The bijections above establish
 
-Over time, mathematics developed **multiple meanings of infinity**, each within its own structured context.
+\[
+\aleph_0+1=\aleph_0
+\]
 
-</div>
+and
 
-<div class="content-box">
+\[
+\aleph_0+\aleph_0=\aleph_0.
+\]
 
-## Numbers Are Not Quantities
+These equalities do not say that one has disappeared. They say that the resulting sets can be paired element by element with the natural numbers. Finite intuition fails because an infinite set can have the same cardinality as one of its proper subsets.
 
-To truly grasp what's going on, we must distinguish two fundamental ideas:
+The result extends to every finite natural number \(n\):
 
-- **Quantity**: something measurable (3 apples, 5 liters)
-- **Number**: an abstract symbol that can describe quantity, position, order, or identity
+\[
+\aleph_0+n=\aleph_0.
+\]
 
-For instance, the number **3** might mean:
-
-- Three oranges → **a quantity**
-- Page 3 → **a position**
-- Jersey number 3 → **an identifier**
-
-> Numbers **are not** quantities — but they can be used **to describe** quantities.
-
-They’re **abstract tools**, created to model aspects of the world.  
-Zero, negative numbers, imaginary and complex numbers, even infinite ones — all are **conceptual extensions** introduced to meet the evolving needs of mathematics.
+It also extends to the addition of any two countably infinite sets. None of these formulas licenses the unrestricted manipulation of a generic infinity symbol; they belong specifically to cardinal arithmetic.
 
 </div>
 
 <div class="content-box">
 
-## Infinity Means Different Things in Different Contexts
+<h2>Ordinal Addition</h2>
 
-Infinity — like numbers — **does not have a single meaning**. It takes on different forms depending on the domain in which it’s used.
+Ordinal numbers describe positions and order types. The ordinal
 
-Let’s look at a few examples:
+\[
+\omega
+\]
 
-### 🧮 Extended Arithmetic
+is the order type of the natural numbers in their usual order:
 
-$$
-\infty + 1 = \infty
-$$
+\[
+0<1<2<3<\cdots.
+\]
 
-This is treated as a **symbolic statement**, expressing the idea that “adding one to infinity changes nothing.”  
-But beware: expressions like ∞ − ∞ **are undefined**.
+If one new element is placed after all natural numbers, the resulting order has type
+
+\[
+\omega+1.
+\]
+
+It contains a greatest element, whereas \(\omega\) does not. The two orders cannot therefore be isomorphic:
+
+\[
+\omega+1\ne\omega.
+\]
+
+They nevertheless have the same cardinality:
+
+\[
+|\omega+1|=|\omega|=\aleph_0.
+\]
+
+Placing the new element before the natural numbers gives a different result. The order
+
+\[
+a<0<1<2<3<\cdots
+\]
+
+has type \(1+\omega\), and it is order-isomorphic to \(\omega\). Consequently,
+
+\[
+1+\omega=\omega,
+\qquad
+\omega+1>\omega.
+\]
+
+Ordinal addition is not commutative. The position of the added part affects the order type, even when it does not affect cardinality. Thus the formula infinity plus one remains infinity is correct for \(\aleph_0+1\), but false for \(\omega+1\).
+
+</div>
+
+<div class="content-box">
+
+<h2>Infinity in Limits</h2>
+
+In elementary calculus, the statement
+
+\[
+\lim_{x\to+\infty}(x+1)=+\infty
+\]
+
+does not treat \(+\infty\) as a real number. It means that \(x+1\) eventually exceeds every prescribed real bound. More precisely, for every real number \(M\), there exists a number \(N\) such that
+
+\[
+x>N\quad\Longrightarrow\quad x+1>M.
+\]
+
+Adding one does not change the fact that the function is unbounded. The notation summarizes a pattern of behavior; it is not an equation obtained by substituting a number called infinity for \(x\).
+
+This also explains why subtracting infinity from both sides is invalid. Expressions such as
+
+\[
++\infty-\infty
+\]
+
+are indeterminate in limit calculations. Different functions may both tend to \(+\infty\), while their difference tends to a finite number, to either infinity, or has no limit.
+
+</div>
+
+<div class="content-box">
+
+<h2>The Extended Real Numbers</h2>
+
+Analysis sometimes enlarges the real line by adjoining two elements:
+
+\[
+\overline{\mathbb R}
+=
+\mathbb R\cup\{-\infty,+\infty\}.
+\]
+
+Within this extended system, useful conventions include
+
+\[
++\infty+a=+\infty
+\]
+
+for every real \(a\), and
+
+\[
+\frac{1}{+\infty}=0
+\]
+
+when the latter notation is understood as a convention reflecting limiting behavior.
+
+The extension is not a field. Several operations must remain undefined, including
+
+\[
++\infty+(-\infty),\qquad
+0\cdot\infty,\qquad
+\frac{\infty}{\infty}.
+\]
+
+The restrictions prevent the ordinary algebra of real numbers from being applied where its hypotheses no longer hold.
+
+</div>
+
+<div class="content-box">
+
+<h2>Four Different Statements</h2>
+
+The notation can now be separated into four mathematically different claims:
+
+- In cardinal arithmetic, \(\aleph_0+1=\aleph_0\).
+- In ordinal arithmetic, \(\omega+1\ne\omega\), although \(1+\omega=\omega\).
+- In a limit, \(x+1\to+\infty\) states that \(x+1\) is unbounded.
+- In the extended real numbers, \(+\infty+1=+\infty\) is an adopted arithmetic rule within a structure that does not satisfy all the field axioms.
+
+The symbol \(\infty\) acquires meaning from the mathematical structure in which it occurs. Specifying that structure is therefore part of the calculation.
 
 ---
 
-### 📐 Calculus and Limits
-
-$$
-\lim_{x \to \infty}(x + 1) = \infty
-$$
-
-Here, infinity represents **asymptotic behavior**, not a fixed value.  
-Adding 1 doesn’t change the *trend* toward infinity.
-
----
-
-### 🔢 Set Theory and Cardinality
-
-The set of natural numbers ℕ has cardinality ℵ₀.  
-Adding a single element doesn’t change its size:
-
-$$
-\aleph_0 + 1 = \aleph_0
-$$
-
-Even adding **another countably infinite set** still gives ℵ₀.
-
----
-
-### 🧠 Philosophy of Mathematics
-
-In this broader view, "infinity plus one" becomes **a conceptual statement**:
-
-> Infinity cannot be completed, counted, or exceeded by one.  
-> It is a **mental construct** to express the absence of limit.
-
-</div>
-
-<div class="content-box">
-
-## Conclusion: Infinity Plus One Is Not a Calculation — It's an Idea
-
-When we say
-
-$$
-\infty + 1 = \infty
-$$
-
-we’re not solving an equation.  
-We’re recognizing the **conceptual nature of infinity**.
-
-> Infinity isn’t measured, summed, or exhausted.  
-> It is **thought**.
-
-And from that perspective, our original question is answered not by arithmetic, but by insight.  
-Not because there’s a clever trick — but because **that’s how the idea of infinity works**.
-
-As so often happens in mathematics, a simple formula can carry **deep philosophical weight**.  
-And sometimes, that depth asks us not just to recalculate, but to **rethink the very way we understand ideas**.
-
----
-
-[**← Back to Foundations of Mathematics**]({{ "/mathematics/foundations/" | relative_url }})
+[← Back to Foundations of Mathematics]({{ "/mathematics/foundations/" | relative_url }})
 
 </div>
