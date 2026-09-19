@@ -2,10 +2,14 @@
 title: "Maxwell's Demon"
 author: Cesare Peli
 description: "From cooked pizzas to information entropy: Maxwell’s demon and the deep link between thermodynamics, probability, and the arrow of time."
-permalink: /odd-questions/maxwells-demon/
+permalink: /physics/thermodynamics/maxwells-demon/
+redirect_from:
+  - /odd-questions/maxwells-demon/
 date: 2025-11-07
 keywords: [Maxwell's demon, entropy, second law of thermodynamics, information theory, statistical mechanics, Boltzmann, Gibbs, Shannon, Landauer, irreversibility, physics paradox, thermodynamics thought experiment]
-section: "Odd"
+area: physics
+topic: thermodynamics
+content_type: article
 background_image: "/images/demon.png"
 image_alt: "Illustration of Maxwell's demon observing gas molecules through a tiny door"
 ---
