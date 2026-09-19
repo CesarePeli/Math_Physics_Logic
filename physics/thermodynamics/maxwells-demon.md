@@ -14,8 +14,6 @@ background_image: "/images/demon.png"
 image_alt: "Illustration of Maxwell's demon observing gas molecules through a tiny door"
 ---
 
-# Maxwell's Demon
-
 **By Cesare Peli.**
 
 <div class="content-box">
