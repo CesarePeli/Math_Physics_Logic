@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Gibbs Free Energy for Incompressible Substances"
+author: Marco Ruzzi
 meta-description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
 permalink: /physics/thermodynamics/gibbs-free-energy/
 redirect_from:
@@ -10,6 +11,8 @@ background_image: /images/termodinamica.png
 ---
 
 # Gibbs Free Energy for Incompressible Substances
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
