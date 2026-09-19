@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Ideal-Gas Processes — Work, ΔU and ΔS"
+author: Marco Ruzzi
 meta-description: "Compare work, internal energy, and entropy for compressions of an ideal gas along different reversible paths. Includes theoretical recalls and full solution with notes."
 permalink: /physics/thermodynamics/ideal-gas-processes/
 redirect_from:
@@ -10,6 +11,8 @@ background_image: /images/termodinamica.png
 ---
 
 # Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
