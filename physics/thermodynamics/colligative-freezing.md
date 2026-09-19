@@ -2,6 +2,7 @@
 layout: default
 date: 2026-08-29
 title: "Freezing Point Depression — Formula and Solved Example"
+author: Marco Ruzzi
 description: "Freezing point depression explained with ΔTf = iKfm: meaning of Kf, molality and the van ’t Hoff factor, validity conditions, and a solved NaCl example."
 permalink: /physics/thermodynamics/colligative-freezing/
 redirect_from:
@@ -14,6 +15,8 @@ content_type: solved-exercises
 ---
 
 # Freezing Point Depression: Formula and Solved Example
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
