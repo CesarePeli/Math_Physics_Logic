@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Phase Transitions — Heating Curve and Enthalpy Changes"
+author: Marco Ruzzi
 meta-description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
 permalink: /physics/thermodynamics/phase-transitions/
 redirect_from:
@@ -10,6 +11,8 @@ background_image: /images/termodinamica.png
 ---
 
 # Phase Transitions — Heating Curve and Enthalpy Changes
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
