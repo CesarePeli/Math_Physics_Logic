@@ -23,7 +23,7 @@ This section organizes the material by mathematical topic, combining theoretical
 
 Limits describe the behavior of functions as a variable approaches a particular value or tends toward infinity.
 
-The resources in this section explore fundamental limits, indeterminate forms, L’Hôpital’s rule, and Taylor expansions through theory and worked examples.
+The resources in this section explore fundamental limits, indeterminate forms, L’Hôpital’s rule, and Taylor expansions through theory and worked examples. [**Limits Using Taylor Expansions: Formulas and Solved Examples**]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }}) gives the principal expansions, the rules for truncating them, and ten complete applications.
 
 [**Explore Limits →**]({{ "/mathematics/calculus/limits/" | relative_url }})
 
