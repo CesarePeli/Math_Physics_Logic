@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Equilibrium & Spontaneity — ΔG°, K, Temperature"
+author: Marco Ruzzi
 meta-description: "From ΔH° and ΔS° to ΔG° and K: compute Kp at 298 K, decide the reaction direction from standard conditions, and discuss temperature effects."
 permalink: /physics/thermodynamics/equilibrium-and-spontaneity/
 redirect_from:
@@ -10,6 +11,8 @@ background_image: /images/termodinamica.png
 ---
 
 # Equilibrium & Spontaneity — $\Delta G^\circ$, $K$, Temperature
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
