@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Reaction Energetics — Internal Energy and Enthalpy"
+author: Marco Ruzzi
 meta-description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
 permalink: /physics/thermodynamics/reaction-energetics/
 redirect_from:
@@ -10,6 +11,8 @@ background_image: /images/termodinamica.png
 ---
 
 # Reaction Energetics — Internal Energy and Enthalpy
+
+**By Prof. Marco Ruzzi.**
 
 <div class="content-box">
 
