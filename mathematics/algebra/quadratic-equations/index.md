@@ -54,30 +54,6 @@ This interdisciplinary demo explores the connection between quadratic mathematic
 
 <div class="content-box">
 
-## Quadratic Equations – Complete Slide Pack
-
-The complete lesson deck develops quadratic equations in greater depth, including different types of quadratic equations and the principal methods used to solve them.
-
-Topics include:
-
-- pure and incomplete quadratic equations
-- the Zero Product Property
-- perfect-square equations
-- partial factoring
-- special trinomials
-- completing the square
-- the general quadratic formula
-- discriminant cases
-- step-by-step exercises and solutions
-
-<span class="badge premium">PREMIUM</span>
-
-[**View the complete slide pack →**](https://cesarepeli.gumroad.com/l/quadratic-slide-pack){:target="_blank"}
-
-</div>
-
-<div class="content-box">
-
 ## Why Quadratic Equations Matter
 
 Quadratic equations are more than a standard algebraic technique. They provide an early example of how different mathematical representations can describe the same structure.
