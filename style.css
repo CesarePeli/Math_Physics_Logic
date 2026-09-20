@@ -81,7 +81,7 @@ footer {
    ▸ AGGIUNTE PER LA NUOVA ARCHITETTURA
    ──────────────────────────────────────────── */
 
-/* Badge Free / Premium / Interdisciplinary */
+/* Badge Free / Interdisciplinary */
 .badge {
   display: inline-block;
   padding: 0.15rem 0.6rem;
@@ -94,7 +94,6 @@ footer {
 }
 
 .badge.free    { background: #4caf50; color: #fff; }
-.badge.premium { background: #ff9800; color: #fff; }
 .badge.inter   { background: #6aa2ff; color: #fff; }
 
 /* Discipline cards (Mathematics / Physics) */
