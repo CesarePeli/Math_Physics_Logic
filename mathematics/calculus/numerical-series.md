@@ -352,7 +352,7 @@ $$
 =\lim_{n\to\infty}\frac{\sqrt[n]n}{x^2}=\frac1{x^2}.
 $$
 
-If |x| > 1, the limit is less than 1 and the series converges. If 0 < |x| < 1, it is greater than 1 and the series diverges. For x = ±1, substitution gives the divergent series with terms n.
+If ∣x∣ > 1, the limit is less than 1 and the series converges. If 0 < ∣x∣ < 1, it is greater than 1 and the series diverges. For x = ±1, substitution gives the divergent series with terms n.
 
 **Final Result**
 
