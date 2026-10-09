@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-10-09
 date: 2026-08-24
 original_date: 2025-08-29
 title: "Solved Exercises — Continuity"
@@ -682,8 +683,8 @@ $$
 - [Differentiability]({{ "/mathematics/calculus/differentiability/" | relative_url }})
 - [Integration by Parts]({{ "/mathematics/calculus/integration-by-parts/" | relative_url }})
 - [Integration by Substitution]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
-- [Ordinary Differential Equations]({{ "/mathematics/calculus/odes-general/" | relative_url }})
-- [Cauchy Problems]({{ "/mathematics/calculus/odes-cauchy/" | relative_url }})
+- [Ordinary Differential Equations]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
+- [Cauchy Problems]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
 
 [**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
 
