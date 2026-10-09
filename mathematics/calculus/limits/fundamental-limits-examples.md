@@ -1,15 +1,16 @@
 ---
 layout: default
+last_modified_at: 2026-10-09
 date: 2026-08-29
 original_date: 2025-04-15
-title: "Notable Limits in Calculus — 10 Solved Examples"
+title: "Notable Limits in Calculus — 14 Solved Examples"
 author: "Professor Antonino De Martino and Dr. Luana Manfredini"
 permalink: /mathematics/calculus/limits/fundamental-limits-examples/
 redirect_from:
   - /university/solved-exercises/fundamental-limits-examples/
   - /university/math/calculus-1/notable-limits/
 background_image: "/images/exercises.png"
-description: "Notable and remarkable limits in calculus: key formulas and 10 solved examples using logarithms, exponentials, substitutions, and the Squeeze Theorem."
+description: "Notable and remarkable limits: key formulas and 14 solved examples using rationalization, substitutions, logarithms and parameters."
 featured: true
 area: mathematics
 topic: calculus
@@ -22,7 +23,7 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-# Notable Limits in Calculus: 10 Solved Examples
+# Notable Limits in Calculus: 14 Solved Examples
 
 ## Notable and Remarkable Limits in Calculus
 
@@ -871,6 +872,152 @@ $$
 </div>
 
 
+
+
+<div class="content-box">
+
+## Further Notable Limits from the Exercise Book
+
+These additional exercises and their solutions are translated from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. No new exercise statements have been introduced.
+
+</div>
+
+<div class="content-box">
+
+### Exercise 11 — Rationalization and a cosine limit
+
+$$
+\lim_{x\to0}\frac{\sqrt{1+x+x^2}-\sqrt{1+x}}{1-\cos(2x)}.
+$$
+
+**Solution.**
+
+Multiply numerator and denominator by the conjugate:
+
+$$
+\frac{(\sqrt{1+x+x^2}-\sqrt{1+x})(\sqrt{1+x+x^2}+\sqrt{1+x})}
+{(1-\cos(2x))(\sqrt{1+x+x^2}+\sqrt{1+x})}
+$$
+
+$$
+=\frac{1+x+x^2-1-x}{(1-\cos(2x))(\sqrt{1+x+x^2}+\sqrt{1+x})}
+=\frac{x^2}{(1-\cos(2x))(\sqrt{1+x+x^2}+\sqrt{1+x})}.
+$$
+
+Normalize the cosine term using its argument 2x:
+
+$$
+\frac{x^2/(4x^2)}{[(1-\cos(2x))/(4x^2)](\sqrt{1+x+x^2}+\sqrt{1+x})}
+\longrightarrow\frac{1/4}{(1/2)\cdot2}.
+$$
+
+**Final Result**
+
+$$
+\frac14
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 12 — A logarithmic limit at x = 1
+
+$$
+\lim_{x\to1}\frac{\log x}{x^3-1}.
+$$
+
+**Solution.**
+
+Set y = x³−1, so that x is the cube root of 1+y. The logarithm becomes:
+
+$$
+\log x=\frac13\log(1+y).
+$$
+
+The notable logarithmic limit gives:
+
+$$
+\lim_{y\to0}\frac{(1/3)\log(1+y)}y=\frac13.
+$$
+
+**Final Result**
+
+$$
+\frac13
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 13 — A power with a parameter
+
+$$
+\lim_{x\to0}\frac{(1+x)^\alpha-1}{x},\qquad\alpha>0.
+$$
+
+**Solution.**
+
+Multiply and divide by log(1+x):
+
+$$
+\frac{(1+x)^\alpha-1}{x}
+=\frac{(1+x)^\alpha-1}{\log(1+x)}\frac{\log(1+x)}x.
+$$
+
+Set y = (1+x)ᵅ−1. Then:
+
+$$
+(1+x)^\alpha=1+y,
+\qquad\log(1+x)=\frac{\log(1+y)}\alpha.
+$$
+
+Therefore the limit is:
+
+$$
+\lim_{y\to0}\alpha\frac y{\log(1+y)}
+\cdot\lim_{x\to0}\frac{\log(1+x)}x=\alpha.
+$$
+
+**Final Result**
+
+$$
+\alpha
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 14 — Two parameters and three cases
+
+$$
+\lim_{x\to0}\frac{\sin(|x|^\alpha)}{|x|^\beta},\qquad\alpha,\beta>0.
+$$
+
+**Solution.**
+
+Multiply and divide by ∣x∣ᵅ:
+
+$$
+\frac{\sin(|x|^\alpha)}{|x|^\beta}
+=\frac{\sin(|x|^\alpha)}{|x|^\alpha}|x|^{\alpha-\beta}.
+$$
+
+The first factor tends to 1 by the sine notable limit. The second factor tends to zero for α > β, equals 1 for α = β, and tends to +∞ for α < β. These are all three cases stated in the source.
+
+**Final Result**
+
+$$
+\begin{cases}
+0,&\alpha>\beta,\\
+1,&\alpha=\beta,\\
++\infty,&\alpha<\beta.
+\end{cases}
+$$
+
+</div>
 
 <div class="content-box">
 
