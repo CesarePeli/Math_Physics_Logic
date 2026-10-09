@@ -2,6 +2,8 @@
 layout: default
 date: 2026-08-29
 title: "Is Entropy Constant in an Adiabatic Process?"
+seo_title: "Is Entropy Constant in an Adiabatic Process? Explained"
+last_modified_at: 2026-10-09
 author: Marco Ruzzi
 permalink: /physics/thermodynamics/entropy-adiabatic/
 redirect_from:
@@ -75,6 +77,38 @@ $$
 </div>
 
 <div class="content-box">
+
+## Adiabatic vs Isentropic: A Quick Comparison
+
+The following comparison concerns a closed system with no mass transfer.
+
+| Process | Heat exchanged | Entropy generation | System entropy change |
+| --- | --- | --- | --- |
+| Reversible adiabatic | None | None | Zero |
+| Irreversible adiabatic | None | Positive | Positive |
+
+**Adiabatic** describes heat transfer; **isentropic** describes constant entropy. For a closed adiabatic system, constant entropy requires zero entropy generation. Do not infer constant entropy from thermal insulation alone.
+
+## Check Your Understanding
+
+Two moles of ideal gas expand freely into a vacuum in an insulated container, doubling their volume. Before reading the answer, decide whether the temperature and entropy remain constant.
+
+<details>
+<summary>Show the solution</summary>
+
+There is no heat transfer and no boundary work. Internal energy therefore remains constant. For an ideal gas, this implies constant temperature. Entropy nevertheless increases:
+
+$$
+\Delta S = nR\ln(V_2/V_1)=2R\ln 2.
+$$
+
+The transformation is adiabatic but irreversible.
+
+$$
+\Delta S \approx 11.53\,\mathrm{J\,K^{-1}}
+$$
+
+</details>
 
 ## Worked Example
 

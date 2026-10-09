@@ -79,6 +79,12 @@ This section studies convergence and divergence, fundamental convergence criteri
 
 <div class="content-box">
 
+## Immediate Integrals
+
+Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Three worked examples introduce the patterns used in more advanced integration methods.
+
+[**Immediate Integrals: Formulas and Worked Examples →**]({{ "/mathematics/calculus/immediate-integrals/" | relative_url }})
+
 ## Integration by Parts
 
 Integration by parts transforms integrals of products by reversing the product rule for derivatives.
@@ -109,7 +115,7 @@ Ordinary differential equations describe relationships between an unknown functi
 
 This section introduces fundamental solution methods for first- and second-order differential equations and explores how differential equations model mathematical and physical processes.
 
-[**Explore Ordinary Differential Equations →**]({{ "/mathematics/calculus/odes-general/" | relative_url }})
+[**Explore Ordinary Differential Equations →**]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
 
 </div>
 
@@ -121,7 +127,7 @@ Cauchy problems combine differential equations with initial conditions that sele
 
 The worked exercises include first- and second-order equations, separable and linear equations, characteristic equations, and the determination of constants from initial data.
 
-[**Explore Cauchy Problems →**]({{ "/mathematics/calculus/odes-cauchy/" | relative_url }})
+[**Explore Cauchy Problems →**]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
 
 </div>
 
