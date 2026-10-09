@@ -13,6 +13,13 @@ Logic & Motion is an independent educational project devoted to mathematics, phy
 
 <div class="content-box">
 
+## Start with These Resources
+
+- [**Limits Using Taylor Expansions**]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }}) — essential formulas, choosing the expansion order, and ten solved examples.
+- [**Is Entropy Constant in an Adiabatic Process?**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }}) — compare reversible and irreversible processes through a worked example.
+- [**Lorenz Attractor Explained**]({{ "/physics/dynamical-systems/lorenz-attractor/" | relative_url }}) — watch nearby trajectories separate, then explore the equations and topology.
+- [**Immediate Integrals**]({{ "/mathematics/calculus/immediate-integrals/" | relative_url }}) — basic antiderivatives, worked examples, and a downloadable formula sheet.
+
 ## Explore the Areas
 
 ### Mathematics

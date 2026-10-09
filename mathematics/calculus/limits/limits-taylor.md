@@ -3,6 +3,7 @@ layout: default
 date: 2026-08-29
 original_date: 2025-08-30
 title: "Limits Using Taylor Expansions: Formulas and Solved Examples"
+last_modified_at: 2026-10-09
 permalink: /mathematics/calculus/limits/limits-taylor/
 redirect_from:
   - /university/math/calculus-1/limits-taylor/
@@ -118,6 +119,48 @@ The expansions must be truncated only after ensuring the approximation order is 
 </div>
 
 <div class="content-box">
+
+## How Many Taylor Terms Do You Need?
+
+Start from the denominator's order, then check which numerator terms cancel. Expand far enough that the remainder, after division, tends to zero. A zero coefficient is a reason to continue the expansion, not evidence that the limit is zero.
+
+For example, first-order approximations alone cannot determine this limit:
+
+$$
+\lim_{x\to0}\frac{e^x-1-x}{x^2}.
+$$
+
+Keep the quadratic term and a remainder smaller than x²:
+
+$$
+e^x-1-x=\frac{x^2}{2}+o(x^2).
+$$
+
+After division, the remainder tends to zero:
+
+$$
+\frac{e^x-1-x}{x^2}=\frac12+o(1).
+$$
+
+$$
+\frac12
+$$
+
+### Taylor or L'Hôpital?
+
+For the same quotient, both numerator and denominator tend to zero. The functions are differentiable near zero and the denominator derivatives used below are nonzero on a punctured neighborhood. Two applications of L'Hôpital's rule give:
+
+$$
+\lim_{x\to0}\frac{e^x-1-x}{x^2}
+=\lim_{x\to0}\frac{e^x-1}{2x}
+=\lim_{x\to0}\frac{e^x}{2}.
+$$
+
+$$
+\frac12
+$$
+
+Taylor makes the cancellation and surviving order explicit. L'Hôpital can be shorter when successive differentiation simplifies the quotient. Check its hypotheses before applying it; it is not a rule for arbitrary quotients.
 
 ## Solved Limits Using Taylor Expansions
 
