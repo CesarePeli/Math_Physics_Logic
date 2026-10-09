@@ -86,7 +86,7 @@ For pointwise and uniform convergence, power series, and sums of function series
 
 ## Immediate Integrals
 
-Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Three worked examples introduce the patterns used in more advanced integration methods.
+Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Six worked examples include three exercises from Eserciziario 2.1, together with its complete integration recall.
 
 [**Immediate Integrals: Formulas and Worked Examples →**]({{ "/mathematics/calculus/immediate-integrals/" | relative_url }})
 
