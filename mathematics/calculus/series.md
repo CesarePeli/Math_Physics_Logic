@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-10-09
 date: 2026-08-24
 original_date: 2025-08-31
 title: "Solved Exercises — Sequences and Series of Functions"
@@ -102,7 +103,7 @@ $$
 
 - If fₙ converges uniformly to f and every fₙ is continuous on an interval I, then f is continuous on I.
 
-- On a compact interval [a,b], uniform convergence allows the limit to commute with integration:
+- If every fₙ is Riemann integrable on the compact interval [a,b], uniform convergence allows the limit to commute with integration:
 
 $$
 \lim_{n\to\infty}
@@ -144,6 +145,8 @@ $$
 
 <div class="content-box">
 
+For series of real numbers and convergence tests, see [Numerical Series]({{ "/mathematics/calculus/numerical-series/" | relative_url }}).
+
 ## Worked Exercises
 
 **Note.** When summing a power series, unless otherwise specified, sums are understood on intervals:
@@ -151,10 +154,10 @@ $$
 $$
 [x_0-\rho,x_0+\rho],
 \qquad
-0\le\rho\le r,
+0\le\rho<r,
 $$
 
-where r is the radius of convergence.
+where r is the radius of convergence. Convergence at the boundary points x₀ ± r must be checked separately; no general convergence assertion is made there.
 
 </div>
 

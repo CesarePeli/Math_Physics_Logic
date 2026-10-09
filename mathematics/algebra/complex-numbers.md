@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-10-09
 date: 2026-08-24
 original_date: 2025-04-20
 title: "Solved Exercises on Complex Numbers"
@@ -189,7 +190,7 @@ z^{3}\,\overline{w}^{\,5}=1
 \end{cases}
 $$
 
-**Solution.** Equivalent system:
+**Solution.** Squaring the second equation gives a necessary condition. The resulting system may have extra solutions, so candidates must be checked in the original equations:
 
 $$
 \begin{cases}
@@ -270,7 +271,7 @@ So x² = ½, xy = ½ ⇒ x = ±√2/2, y = ±√2/2 with same sign.
 **Final result**
 
 $$
-z\in\Bigl\{\tfrac{\sqrt{2}}{2}\pm i\tfrac{\sqrt{2}}{2}\Bigr\}.
+z\in\Bigl\{\tfrac{1+i}{\sqrt{2}},\ -\tfrac{1+i}{\sqrt{2}}\Bigr\}.
 $$
 
 ---
@@ -333,7 +334,7 @@ $$
 x^{2}+y^{2}-x=\tfrac{1}{4} .
 $$
 
-That is circle centered at (½, 0), radius √2/2, including z = ½.
+This is a circle centered at (½, 0), with radius √2/2. The solution z = ½ is an additional isolated point: it is the center of the circle and does not lie on its circumference.
 
 **Final result**
 

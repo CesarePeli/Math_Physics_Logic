@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-10-09
 date: 2026-08-24
 title: "Calculus"
 permalink: /mathematics/calculus/
@@ -73,7 +74,11 @@ Infinite series extend the idea of finite addition to sequences of partial sums.
 
 This section studies convergence and divergence, fundamental convergence criteria, and the behavior of important classes of numerical series.
 
-[**Explore Series →**]({{ "/mathematics/calculus/series/" | relative_url }})
+[**Numerical Series: Convergence Tests and Solved Exercises →**]({{ "/mathematics/calculus/numerical-series/" | relative_url }})
+
+For pointwise and uniform convergence, power series, and sums of function series:
+
+[**Sequences and Series of Functions →**]({{ "/mathematics/calculus/series/" | relative_url }})
 
 </div>
 
