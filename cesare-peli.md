@@ -12,7 +12,9 @@ last_modified_at: 2026-10-10
 
 # Cesare Peli
 
-Cesare Peli is a mathematics and physics teacher and the curator of Logic & Motion. The site publishes worked exercises, theoretical explanations, historical discussions, and downloadable teaching materials. Contributions by other authors are credited on their respective pages.
+**Cesare Peli** is a mathematics and physics teacher and founder of the educational project [Logic & Motion](https://www.cesarepeli.com). His academic background combines Mathematics and Arts (DAMS).
+
+This site hosts original resources for students and teachers, including LaTeX-based presentations, guided exercises, theoretical maps, and epistemological reflections. Contributions by other authors are credited on their respective pages.
 
 ## Sections
 
@@ -21,6 +23,10 @@ Cesare Peli is a mathematics and physics teacher and the curator of Logic & Moti
 - [Logic & Language](/logic-language/): proof, set theory, and language models.
 - [Gallery](/gallery/): illustrations inspired by scientific themes.
 
-Biographical details, collaborators and contact information are available on the [About page](/about/).
+## References
+
+- Website: [www.cesarepeli.com](https://www.cesarepeli.com).
+- Biographical details, collaborators and contact information: [About](/about/).
+- Instagram: [@logicandmotion](https://www.instagram.com/logicandmotion/).
 
 </div>

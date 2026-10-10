@@ -17,7 +17,7 @@ last_modified_at: 2026-10-10
 
 *By Cesare Peli*
 
-In this article, we will mention some major historical developments through which proof entered mathematics and, later, science. A formal proof has a precise definition relative to a specified deductive system. The standards by which an informal argument is accepted also depend on a historical and disciplinary context; these two claims must be distinguished. Many theologians, for example, have claimed to prove the existence of God while also arguing that the proofs offered before theirs were invalid.
+In this article, we will mention some major historical developments through which proof entered mathematics and, later, science. It should emerge, among other things, that there is no absolute definition of what a proof is. The standards by which a proof is accepted have always depended on a historical and disciplinary context. Many theologians, for example, have claimed to prove the existence of God while also arguing that the proofs offered before theirs were invalid.
 
 Any discussion of proof therefore needs to be historicized. An exhaustive account would require many separate and complex analyses, far beyond the scope of a single article. Here we will focus on two questions: what formal logic tells us about mathematical proof, and whether the birth of proof can really be described as a uniquely Greek achievement.
 
@@ -190,7 +190,7 @@ Chemla's broader point is that proof must be studied within the activities, goal
 
 The history of proof becomes distorted when all these practices are ranked according to a single inherited model.
 
-These reflections highlight the cultural dimension of proof, retrospectively claimed as the defining achievement of a civilization. Must an argument belong to a structured axiomatic theory in order to count as a proof, or is demonstrating the validity of an algorithm enough? Asking whether an algorithm is valid already places us fully within mathematics. A historical comparison should therefore examine what an argument establishes, which assumptions it uses, and how its intended readers could check it. Deduction from stated axioms and demonstration of an algorithm’s correctness are distinct forms of mathematical justification.
+These reflections highlight the cultural dimension of proof, retrospectively claimed as the defining achievement of a civilization. Must an argument belong to a structured axiomatic theory in order to count as a proof, or is demonstrating the validity of an algorithm enough? Asking whether an algorithm is valid already places us fully within mathematics. Proof is therefore neither a neutral label nor a final destination: it is the beginning of a construction.
 
 </div>
 

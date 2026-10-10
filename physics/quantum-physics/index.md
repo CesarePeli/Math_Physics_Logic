@@ -16,7 +16,7 @@ last_modified_at: 2026-10-10
 
 At the end of the nineteenth century, several physical phenomena revealed limits in the classical description of matter and radiation. Among them, the problem of **blackbody radiation** played a decisive role: attempts to describe its spectrum ultimately led Max Planck to introduce the idea that energy exchange occurs in discrete quantities.
 
-The current section consists of an article on blackbody radiation.
+This section examines blackbody radiation and the physical and mathematical ideas behind Planck’s quantum hypothesis.
 
 <div class="content-box">
 

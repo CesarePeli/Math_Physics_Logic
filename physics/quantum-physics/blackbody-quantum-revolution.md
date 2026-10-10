@@ -163,7 +163,7 @@ The plotted curves use the same physical units and no relative scaling. In wavel
 
 <h2>Planck's Hypothesis</h2>
 
-Planck introduced energy elements proportional to frequency in 1900. The full Rayleigh–Jeans derivation followed in 1905, so the order of explanation here is conceptual rather than chronological. The following calculation is a modern statistical presentation of the thermal energy levels of a resonator of frequency ν:
+Planck modeled the exchange of energy between the electromagnetic field and resonators in the cavity walls. In 1900 he introduced energy elements proportional to frequency. The following modern statistical calculation uses discrete thermal energy levels for a resonator of frequency ν:
 
 $$
 E_n=nh\nu,
@@ -171,7 +171,7 @@ E_n=nh\nu,
 n=0,1,2,\ldots,
 $$
 
-where h is Planck’s constant, k in the formulas below is Boltzmann’s constant, and c is the speed of light in vacuum. A quantum harmonic oscillator also has a zero-point contribution hν/2. That constant offset is excluded here because these formulas describe the thermal radiation energy.
+where h is Planck’s constant, k is Boltzmann’s constant, and c is the speed of light in vacuum. The levels are measured relative to the ground state, so the calculation gives the thermal energy.
 
 The Boltzmann factor assigns the level Eₙ a weight proportional to
 
