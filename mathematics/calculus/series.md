@@ -21,13 +21,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Sequences and Series of Functions: Complete Theory and Exercises
-
-
 
 
 <div class="content-box">
@@ -81,7 +79,7 @@ Total convergence implies uniform convergence. Starting the sum at 1, as the boo
 $$
 f_n(x)=a_n(x-x_0)^n,\qquad \sum_{n=0}^\infty a_n(x-x_0)^n.
 $$
-**Editorial correction:** the defining formula in the source omits the exponent n. If X is the convergence set, its radius is
+If X is the convergence set, its radius is
 $$
 r=\sup\{|x-x_0|:x\in X\}.
 $$
@@ -111,7 +109,7 @@ $$
 $$
 b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(nx)\,dx\quad(n\ge1).
 $$
-**Editorial correction:** the source starts the trigonometric sum at n=0 despite already writing a₀/2. Starting at n=1 avoids counting the constant term twice. These formulas define the coefficients; they alone do not guarantee pointwise or uniform convergence to f.
+These formulas define the coefficients; they alone do not guarantee pointwise or uniform convergence to f.
 
 </div>
 <div class="content-box">
@@ -1196,8 +1194,6 @@ $$
 
 
 </div>
-
-
 
 
 <div class="content-box">

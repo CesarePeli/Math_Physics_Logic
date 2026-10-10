@@ -17,7 +17,7 @@ author: "Antonino De Martino and Luana Manfredini"
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
@@ -84,7 +84,6 @@ $$
 \end{cases}
 $$
 
-**Editorial correction:** The source starts this sum at n = 0. Its terms are undefined at n = 0 and n = 1; the correct starting index is n = 2.
 
 ### Linearity
 

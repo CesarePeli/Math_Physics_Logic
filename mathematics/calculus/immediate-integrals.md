@@ -14,7 +14,7 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
@@ -63,7 +63,7 @@ Integration is linear: integrate sums term by term and take constant factors out
 
 ## Complete Integration Recall
 
-The following recall preserves all formulas, methods and improper-integral cases in the source introduction. Constants and domain restrictions omitted in the source are made explicit. Here C is arbitrary on each interval where the integrand is defined.
+Here C is arbitrary on each interval where the integrand is defined.
 
 $$
 \int k\,dx=kx+C.
@@ -257,7 +257,6 @@ $$
 \sqrt{4-x^2}=2\sqrt{1-(x/2)^2}.
 $$
 
-**Editorial correction:** The corresponding line in the source omits the square on x/2. The exercise statement and its final result are unchanged.
 
 Set t = x/2, so dx = 2 dt, and use the evenness of the integrand:
 
@@ -314,7 +313,6 @@ $$
 
 Substitute back into the original integral.
 
-**Editorial correction:** The source's last line accidentally repeats the statement of the preceding definite integral. Its antiderivative belongs to the exercise displayed here.
 
 **Final Result**
 
@@ -354,7 +352,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Multiply numerator and denominator by sin x and use sin²x=1−cos²x:
@@ -384,7 +381,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Rationalize the integrand:
@@ -411,7 +407,6 @@ Evaluate the integral:
 $$
 \int x e^{4 x^{2}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -444,7 +439,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
@@ -473,7 +467,6 @@ Evaluate the integral:
 $$
 \int \frac{\cos x (1+\sin x)}{\sqrt{\sin x}} \, dx.
 $$
-
 
 
 **Solution.**

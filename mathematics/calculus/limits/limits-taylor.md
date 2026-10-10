@@ -20,13 +20,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Limits Using Taylor Expansions: Original Solved Exercises
-
-
 
 
 <div class="content-box">
@@ -129,7 +127,6 @@ $$
 +\cdots+\frac{x^{2n}}{(2n)!}+o(x^{2n+1}).
 $$
 
-**Editorial corrections.** The source prints 17/325 in the tangent expansion; the coefficient is 17/315. In the inverse-sine coefficient, the denominator is (n!)². All nonconstant terms in the inverse-cosine expansion have negative signs. These corrections preserve the original formulas' intended order and scope.
 
 ### L'Hôpital's Theorem
 
@@ -145,7 +142,7 @@ $$
 \lim_{x\to c}\frac{f(x)}{g(x)}=L.
 $$
 
-The theorem also applies to one-sided limits and limits at infinity under the corresponding hypotheses. **Editorial correction:** the conclusion need not be finite; the source's wording accidentally excludes its own infinite-limit case.
+The theorem also applies to one-sided limits and limits at infinity under the corresponding hypotheses. 
 
 [**Original exercises using L'Hôpital →**]({{ "/mathematics/calculus/limits/limits-hopital/" | relative_url }})
 
@@ -170,7 +167,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 0}\frac{\sin x -\frac{1}{2}x+x^{3}}{\tan x -1+ \cos x}.
 $$
-
 
 
 **Solution.**
@@ -208,7 +204,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The linear terms cancel:
@@ -242,7 +237,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Use the quadratic terms before taking the fourth power:
@@ -259,7 +253,6 @@ $$
 =\frac{6^4x^8+o(x^8)}{x^2(1-x^2/2+o(x^2))}\longrightarrow0.
 $$
 
-**Editorial correction.** The coefficient of x⁴ in log(1+x²) is −1/2, not −1/3 as printed in the solution.
 
 **Final result**
 
@@ -280,7 +273,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 0}(\log(1+x)+\cos ^{2}x)^{\frac{1}{x}}
 $$
-
 
 
 **Solution.**
@@ -322,7 +314,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Set h = x − 1 > 0. Expand the two radicals to the same order:
@@ -345,7 +336,6 @@ $$
 =\frac{\sqrt h}{12}+o(\sqrt h)\longrightarrow0.
 $$
 
-**Editorial correction.** The source has inconsistent remainder exponents in its last lines; both numerator remainders are o(h³ᐟ²).
 
 **Final result**
 
@@ -366,7 +356,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 0}\frac{\sin (2x) e^{-x}-\log(1+2x)}{x^{3}}.
 $$
-
 
 
 **Solution.**
@@ -409,7 +398,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 0}\frac{e^{x-x^{2}}-\log(1+x)-1}{x-\sin x}.
 $$
-
 
 
 **Solution.**
@@ -455,7 +443,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Factor the constant exponential and use the tangent expansion:
@@ -491,7 +478,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 0}\frac{x^{2}-\sin^{2} x}{x^{3}(e^{x}-\cos x)}.
 $$
-
 
 
 **Solution.**
@@ -530,7 +516,6 @@ Evaluate the following limit:
 $$
 \lim_{x \to 1}\biggl(\frac{x}{x-1}-\frac{1}{\log x}\biggl).
 $$
-
 
 
 **Solution.**

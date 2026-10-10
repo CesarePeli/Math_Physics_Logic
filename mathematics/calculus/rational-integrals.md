@@ -15,13 +15,11 @@ last_modified_at: 2026-10-10
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Rational Integrals and Partial Fractions: Original Exercises
-
-
 
 
 <div class="content-box">
@@ -43,7 +41,6 @@ Evaluate the integral:
 $$
 \int \frac{1}{x^{3}-1} \, dx.
 $$
-
 
 
 **Solution.**
@@ -102,7 +99,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Start with polynomial division:
@@ -143,7 +139,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The denominator factors as:
@@ -176,7 +171,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 4
@@ -188,7 +182,6 @@ Solve the following exercise:
 $$
 \int \frac{\tan^{3} x + \tan x}{\tan x+4} \, dx
 $$
-
 
 
 **Solution.**
@@ -216,7 +209,6 @@ Solve the following exercise:
 $$
 \int_{4}^{16} \frac{1}{(x-\sqrt{x})^2} \, dx.
 $$
-
 
 
 **Solution.**
@@ -249,7 +241,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Set t=tan x, so dx=dt/(1+t²), sin²x=t²/(1+t²) and cos²x=1/(1+t²). The resulting rational integral is
@@ -265,7 +256,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 7
@@ -277,7 +267,6 @@ Evaluate the integral:
 $$
 \int \frac{1}{x^{3}+1} \, dx.
 $$
-
 
 
 **Solution.**
@@ -308,7 +297,6 @@ Evaluate the integral:
 $$
 \int \frac{x-1}{x^{2}-4x+5} \, dx.
 $$
-
 
 
 **Solution.**

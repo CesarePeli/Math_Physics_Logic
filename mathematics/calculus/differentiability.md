@@ -19,13 +19,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Differentiability: Original Exercises and Parameter Cases
-
-
 
 
 <div class="content-box">
@@ -115,7 +113,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 Away from zero both branches are smooth. On the left:
@@ -165,7 +162,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 Away from zero the branches are smooth. At zero the right-hand limit is zero. For the left-hand limit:
@@ -209,7 +205,6 @@ f(x)=
 		1 \qquad x \leq 0
 	\end{cases}
 $$
-
 
 
 **Solution.**
@@ -257,7 +252,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 The only joining point is one. The branch limits are:
@@ -299,7 +293,6 @@ f(x)=
 		x^{2}+a \qquad x <0\\
 	\end{cases}
 $$
-
 
 
 **Solution.**
@@ -354,7 +347,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 The branches are smooth away from zero. Continuity at zero requires:
@@ -399,7 +391,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 The branches are smooth away from zero. Their limits agree with f(0) = 0 exactly when c = 0. Under that condition:
@@ -417,7 +408,6 @@ f''_+(0)=-1,\qquad f''_-(0)=2a.
 $$
 They agree if a = −1/2. In this case f″ is continuous at zero, but the third derivatives are two on the right and zero on the left.
 
-**Editorial correction.** The source assigns f′(0) = 0 after computing the difference-quotient limit as one. This leads to an incorrect C⁰-only conclusion. The original function and all parameter cases are retained; the derivative and subsequent regularity classification are corrected.
 
 **Final result**
 
@@ -426,7 +416,6 @@ k_{\max}=\begin{cases}\text{none},&c\ne0,\\0,&c=0,\ b\ne1,\\1,&c=0,\ b=1,\ a\ne-
 $$
 
 </div>
-
 
 
 <div class="content-box">
@@ -440,7 +429,6 @@ Determine whether the function is differentiable at x=1:
 $$
 f(x)=\sqrt{x^{4}-(x^{2}+x|x|)+\frac{x}{|x|}},
 $$
-
 
 
 **Solution.**

@@ -15,13 +15,11 @@ last_modified_at: 2026-10-10
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Improper Integrals: Original Convergence and Evaluation Exercises
-
-
 
 
 <div class="content-box">
@@ -72,7 +70,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The integrand has an interior logarithmic singularity at x = 1. Split there:
@@ -114,7 +111,6 @@ f(x)=\frac{\sin x}{x\sqrt{x+1}}.
 $$
 
 
-
 **Solution.**
 
 Use absolute comparison, as in the source:
@@ -124,7 +120,6 @@ $$
 $$
 The last inequality uses √(x+1) ≥ √x. The comparison integral converges because 3/2 > 1. Therefore the original function is integrable in the improper sense, in fact absolutely.
 
-**Editorial correction.** The source writes a non-strict threshold; convergence at infinity requires p > 1, not p ≥ 1.
 
 **Final result**
 
@@ -147,7 +142,6 @@ f(x)=\frac1{\sqrt{1-x^3}}.
 $$
 
 
-
 **Solution.**
 
 Factor the radicand:
@@ -162,7 +156,6 @@ $$
 $$
 The inequality uses √(1+x+x²) ≥ 1. The comparison integral at the endpoint converges since 1/2 < 1.
 
-**Editorial correction.** The source reverses the inequality √(1+x+x²) ≥ 1 in its prose. The intended comparison displayed there is retained and justified correctly.
 
 **Final result**
 
@@ -183,7 +176,6 @@ Prove convergence and evaluate the integral:
 $$
 \int_{2}^{+\infty} \frac{1}{x \sqrt{x^{2}-1}} \,dx.
 $$
-
 
 
 **Solution.**
@@ -216,7 +208,6 @@ I=2\lim_{b\to\infty}\left[\arctan t\right]_{\sqrt3-2}^{\sqrt{b^2-1}-b}
 $$
 Since √3 − 2 = −tan(π/12), the result is π/6.
 
-**Editorial correction.** The original infinite upper bound is restored. The source drops the factor two in an intermediate primitive and has inconsistent endpoint notation; the Euler substitution, convergence argument and complete endpoint evaluation are retained.
 
 **Final result**
 
@@ -237,7 +228,6 @@ Prove convergence:
 $$
 \int_{0}^{1} \frac{\log(1+\sqrt[4]{x})}{e^{x}-1} \, dx
 $$
-
 
 
 **Solution.**
@@ -270,7 +260,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The integrand is continuous for x ≥ 3. Compute the primitive by Hermite decomposition:
@@ -298,7 +287,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 7
@@ -310,7 +298,6 @@ Solve the following exercise:
 $$
 \int_{1}^{+\infty} \frac{1}{(x+1)(x+2)x^{2}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -340,7 +327,6 @@ Solve the following exercise:
 $$
 \int_{-1}^{1} \frac{1}{(x-4) \sqrt{|x|}} \, dx.
 $$
-
 
 
 **Solution.**

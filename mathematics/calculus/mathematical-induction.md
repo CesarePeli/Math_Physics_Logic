@@ -15,13 +15,11 @@ last_modified_at: 2026-10-10
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Mathematical Induction: Proofs and Original Exercises
-
-
 
 
 <div class="content-box">
@@ -50,7 +48,6 @@ Prove:
 $$
 2^n\le(n+1)!\quad(n\ge0)
 $$
-
 
 
 **Solution.**
@@ -82,7 +79,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 For n=0 both sides are 1. Since 1+a≥0, multiplication preserves the induction hypothesis:
@@ -112,7 +108,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 For n=0 both sides vanish. Assume the identity through n, and add the next summand:
@@ -130,7 +125,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 4
@@ -143,7 +137,6 @@ $$
 \label{3}
 		3^{n} \geq 2^{n+1} \qquad \forall n \geq 2.
 $$
-
 
 
 **Solution.**
@@ -172,7 +165,6 @@ $$
 \label{5}
 		\sum_{k=1}^{n}k^{2}=\frac{n(n+1)(2n+1)}{6} \qquad n \geq 1.
 $$
-
 
 
 **Solution.**
@@ -205,12 +197,11 @@ $$
 $$
 
 
-
 **Solution.**
 
 For n=1 both sides equal one. Using the finite-sum identity established earlier, assume the sum of cubes through n equals n²(n+1)²/4. Then
 $$\sum_{k=1}^{n+1}k^3=\frac{n^2(n+1)^2}4+(n+1)^3=\frac{(n+1)^2(n^2+4n+4)}4=\frac{(n+1)^2(n+2)^2}4.$$
-The final expression is the square of the sum of the first n+1 integers. The source's cross-reference to the sum-of-squares identity should instead refer to the sum-of-integers identity.
+The final expression is the square of the sum of the first n+1 integers. 
 
 **Final result**
 
@@ -232,7 +223,6 @@ $$
 \label{8}
 		4^{n}+15n-1 \qquad \forall n\geq 1,
 $$
-
 
 
 **Solution.**
@@ -261,7 +251,6 @@ $$
 \label{9}
 		\sum_{k=1}^{n}(2k-1)=n^{2} \qquad  \forall n\geq 1.
 $$
-
 
 
 **Solution.**

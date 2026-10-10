@@ -19,13 +19,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Continuity: Original Piecewise and Discontinuity Exercises
-
-
 
 
 <div class="content-box">
@@ -88,7 +86,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 Each branch is continuous away from the joining points. The possible exceptional points are:
@@ -117,7 +114,6 @@ $$
 $$
 This is a jump.
 
-**Editorial correction.** The source calls the function continuous at π/6 although the statement excludes that point. The original intervals are retained and the missing value is identified as a removable hole.
 
 **Final result**
 
@@ -143,7 +139,6 @@ f(x)=
 		\frac{\sin x \log(1+x)}{x^{2}} \qquad x>0
 	\end{cases}
 $$
-
 
 
 **Solution.**
@@ -187,7 +182,6 @@ f(x)=\frac{1}{2-e^{\frac{1}{x}}}.
 $$
 
 
-
 **Solution.**
 
 The domain excludes zero and the zero of the denominator:
@@ -227,7 +221,6 @@ f(x)= \frac{\log(x^{2})-1}{\log(x^{2})+1}.
 $$
 
 
-
 **Solution.**
 
 The logarithm requires x ≠ 0. The denominator vanishes when log(x²) = −1:
@@ -255,7 +248,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 5
@@ -271,7 +263,6 @@ f(x)=
 		1 \qquad x=1
 	\end{cases}
 $$
-
 
 
 **Solution.**
@@ -307,7 +298,6 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 The left limit at zero is −4; the assigned right-hand value is 1−b. Continuity requires −4=1−b, so b=5. Under this condition, the one-sided difference quotients are
@@ -339,14 +329,12 @@ f(x)=
 $$
 
 
-
 **Solution.**
 
 The nested square roots require x+1≥0 and √(x+1)≤2; thus −1≤x≤3. The denominator excludes x=1; x=0 is defined by its separate branch. Therefore
 $$D=[-1,1)\cup(1,3].$$
 As x→0, the radical quotient tends to 1 and 2⁻¹⁄ˣ² tends to 0, giving f(0)=1. At x=1 the numerator tends to √(2−√2)>0, so the limits are +∞ from the left and −∞ from the right. Elsewhere the function is continuous, including relative continuity at the endpoints −1 and 3.
 
-**Editorial correction.** The source domain omits the valid endpoint −1 and the assigned point 0. Both are included here.
 
 **Final result**
 
@@ -371,7 +359,6 @@ f(x)=
 			(2x+b)(ax-1) \qquad x \geq 1.
 		\end{cases}
 $$
-
 
 
 **Solution.**

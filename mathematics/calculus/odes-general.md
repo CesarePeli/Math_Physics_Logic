@@ -23,7 +23,7 @@ last_modified_at: 2026-10-10
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
@@ -1611,7 +1611,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ## Explore More Topics in Calculus
@@ -1632,13 +1631,7 @@ $$
 </div>
 
 
-
-
-
 ## Cauchy Problems
-
-
-
 
 
 <div class="content-box">
@@ -1715,7 +1708,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The characteristic equation is λ²−1=0, so the complementary solution is c₁eˣ+c₂e⁻ˣ. The exponential forcing is resonant: substitute Axeˣ; its second derivative minus itself is 2Aeˣ, hence A=1/2. For the cosine forcing, B cos x gives −2B cos x, hence B=−1/2.
@@ -1748,7 +1740,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Separate the variables on an interval where y is nonzero:
@@ -1757,7 +1748,6 @@ y\,dy=e^x\,dx,\qquad \frac{y^2}{2}=e^x+C.
 $$
 At x=0, y=1 gives C=−1/2. The initial value selects the positive square root. The radicand is positive exactly when x>−log 2. At the left endpoint y vanishes and the differential equation is undefined.
 
-**Editorial correction.** The source unnecessarily excludes x=0 from the solution interval, although the initial condition is prescribed there. The interval above includes it.
 
 **Final result**
 
@@ -1783,7 +1773,6 @@ $$
 		y''(0)= \frac{9}{2}
 	\end{cases}
 $$
-
 
 
 **Solution.**
@@ -1829,7 +1818,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The characteristic roots are 1, −1, i, −i. The complementary solution is c₁eˣ+c₂e⁻ˣ+c₃ sin x+c₄ cos x. Substitution of eˣ(A cos x+B sin x) into y⁽⁴⁾−y multiplies this expression by −5, so A=B=−1/5.
@@ -1870,7 +1858,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Use sin x and cos x as a fundamental pair and vary their coefficients. The equations for their derivatives are
@@ -1890,6 +1877,5 @@ y(x)=-\cos x+\frac{\cos^2x}{\sin x},\qquad0<x<\pi
 $$
 
 </div>
-
 
 

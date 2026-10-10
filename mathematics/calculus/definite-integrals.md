@@ -15,13 +15,11 @@ last_modified_at: 2026-10-10
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Definite Integrals: Original Solved Exercises
-
-
 
 
 <div class="content-box">
@@ -43,7 +41,6 @@ Evaluate the definite integral:
 $$
 \int_{-1}^{1} \sqrt{1-x^{2}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -78,7 +75,6 @@ Evaluate the definite integral:
 $$
 \int_{-2}^{2} \sqrt{4-x^{2}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -116,7 +112,6 @@ Evaluate the definite integral:
 $$
 \int_{2}^{4} | \log (x-2) | \, dx.
 $$
-
 
 
 **Solution.**
@@ -166,7 +161,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Rewrite the variable power and substitute t = log x:
@@ -192,7 +186,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 5
@@ -204,7 +197,6 @@ Solve the following exercise:
 $$
 \int_{0}^{1} \frac{x^{2}}{\sqrt{1-x^{2}}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -234,7 +226,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Set t=sin x, dt=cos x dx. The bounds become 1/√2 and 1:
@@ -262,7 +253,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Interpret the numerator exactly as log((1+sin x)ˢⁱⁿ ˣ)=sin x log(1+sin x). Since 1/tan x=cos x/sin x, the sine factors cancel. Set t=1+sin x and dt=cos x dx:
@@ -288,7 +278,6 @@ Solve the following exercise:
 $$
 \int_{\frac{1}{2}}^{\frac{1}{\sqrt{2}}} \frac{\sqrt{1-x^{2}}}{x^{2}} \, dx
 $$
-
 
 
 **Solution.**

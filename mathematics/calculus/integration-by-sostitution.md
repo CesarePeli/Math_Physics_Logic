@@ -19,14 +19,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Integration by Substitution: Original University Exercises
-
-
-
 
 
 <div class="content-box">
@@ -166,7 +163,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 The real domain is x < 0 or x > 2. Use the source's Euler substitution:
@@ -212,7 +208,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 First find a primitive. Set t = sin x, with dt = cos x dx, and use cos²x = 1 − sin²x:
@@ -246,7 +241,6 @@ Evaluate the integral:
 $$
 \int_{\frac{\pi}{4}}^{\frac{\pi}{2}} \frac{\cos x}{\sin^{2} x-2 \sin x} \, dx.
 $$
-
 
 
 **Solution.**
@@ -291,7 +285,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Factor x² as x¹ᐟ² x³ᐟ² and put t = x³ᐟ²:
@@ -329,7 +322,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 For −1 < x < 1 choose x = sin t with −π/2 < t < π/2, so cos t > 0 and dx = cos t dt:
@@ -347,7 +339,6 @@ $$
 =-\frac{(2+x^2)\sqrt{1-x^2}}3+C.
 $$
 
-**Editorial correction.** The intermediate factor is 1 − x², not 1 + x² as printed in the source. Its final simplified primitive is correct.
 
 **Final result**
 
@@ -368,7 +359,6 @@ Evaluate the integral:
 $$
 \int_{0}^{\frac{\pi}{2}} \cos x \log(1+\sin x) \, dx.
 $$
-
 
 
 **Solution.**
@@ -402,7 +392,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 7
@@ -414,7 +403,6 @@ Solve the following exercise:
 $$
 \int x^{3} (1+x^{2})^{\frac{1}{3}} \, dx.
 $$
-
 
 
 **Solution.**
@@ -442,7 +430,6 @@ Solve the following exercise:
 $$
 \int \frac{1}{x^{4} \sqrt{x^{3}+1}} \, dx.
 $$
-
 
 
 **Solution.**

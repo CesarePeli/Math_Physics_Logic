@@ -20,14 +20,11 @@ featured: true
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
 
 </div>
 
 # Integration by Parts: Original University Exercises
-
-
-
 
 
 <div class="content-box">
@@ -132,7 +129,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Integrate by parts twice, as in the source:
@@ -167,7 +163,6 @@ Evaluate the integral:
 $$
 \int_{1}^{e} \sin( \log x) \, dx
 $$
-
 
 
 **Solution.**
@@ -209,7 +204,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Put t = eˣ, with dx = dt/t; the bounds become one and e:
@@ -231,7 +225,6 @@ I=\frac{e^2}{2}\log(1+e)-\frac{\log2}{2}
 -\frac12\left[\frac{t^2}{2}-t+\log(1+t)\right]_1^e.
 $$
 
-**Editorial correction.** The source prints 1/(t+1) in a primitive where log(1+t) is required; its final evaluated expression uses the logarithm correctly.
 
 **Final result**
 
@@ -252,7 +245,6 @@ Evaluate the integral:
 $$
 \int _{0}^{\frac{\pi}{2}}x \sin^{2} x \, dx.
 $$
-
 
 
 **Solution.**
@@ -290,7 +282,6 @@ Evaluate the integral:
 $$
 \int_{0}^{1} x^{2} \log \sqrt{1-x} \, dx.
 $$
-
 
 
 **Solution.**
@@ -336,7 +327,6 @@ $$
 $$
 
 
-
 **Solution.**
 
 Split the logarithm, retaining the source's link with the preceding exercise:
@@ -370,7 +360,6 @@ $$
 </div>
 
 
-
 <div class="content-box">
 
 ### Exercise 7
@@ -382,7 +371,6 @@ Solve the following exercise:
 $$
 \int_{1}^{2} \log(2x^{2}-3x+1) \, dx
 $$
-
 
 
 **Solution.**
@@ -412,7 +400,6 @@ Solve the following exercise:
 $$
 \int_{0}^{1} \log \frac{2-x^{2}}{x^{2}+3} \, dx
 $$
-
 
 
 **Solution.**
