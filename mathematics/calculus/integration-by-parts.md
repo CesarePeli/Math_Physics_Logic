@@ -8,7 +8,7 @@ permalink: /mathematics/calculus/integration-by-parts/
 redirect_from:
   - /university/math/calculus-1/integration-by-parts/
 background_image: "/images/integrali.png"
-description: "Six original solved integrals combining integration by parts, substitutions, definite bounds and logarithmic endpoint singularities."
+description: "Eight solved integrals combining integration by parts, substitutions, definite bounds and logarithmic endpoint singularities."
 area: mathematics
 topic: calculus
 subtopic: integration-by-parts
@@ -110,7 +110,7 @@ This is a guideline rather than a theorem: the best choice is always the one tha
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
 These retain the definite and improper bounds in the original statements. C denotes an arbitrary integration constant on each interval of definition.
 

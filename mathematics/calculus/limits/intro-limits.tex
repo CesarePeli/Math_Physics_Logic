@@ -1,0 +1,377 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{beamerthemeCopenhagen}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{appendixnumberbeamer}
+\usepackage{relsize}
+\usepackage{graphics}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{booktabs}
+\setbeamercovered{transparent}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+
+\pgfplotsset{compat=1.18}
+	\title{An Informal Introduction to Function Limits}
+	\author{Cesare Peli}
+	\date{}
+	
+	\begin{document}
+		
+		\begin{frame}
+			\maketitle
+		\end{frame}
+
+	
+	\begin{frame}{Finite limit as \( x \) approaches a finite value}
+		
+		\begin{block}{Intuitive Definition}
+			The limit of a function \( f(x) \) at a point \( x = x_0 \) describes the value that the function approaches as \( x \) gets closer to \( x_0 \).
+			
+			If \( f(x) \) gets closer and closer to a value \( L \) as \( x \) approaches \( x_0 \) \textbf{from both sides}, then we say that the limit of \( f(x) \) as \( x \) approaches \( x_0 \) is \( L \), and we write:
+			
+			\[
+			\lim_{x \to x_0} f(x) = L
+			\]
+		\end{block}
+		
+	\end{frame}
+	
+	\begin{frame}{Finite limit as \( x \) approaches a finite value}
+		
+		\begin{block}{Example}
+			Consider the function \( f(x) = \frac{2x}{x+1} \).
+			\[
+			\lim_{x \to 1} f(x) = \frac{2 \cdot 1}{1+1} = \frac{2}{2} = 1
+			\]
+			Here, the function approaches the value \( 1 \) as \( x \) gets close to \( 1 \).
+		\end{block}
+		
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		
+		\begin{block}{Graphical Interpretation}
+			Looking at the graph of \( f(x) = \frac{2x}{x+1} \), we can visually see that the function gets closer to the value \( 1 \) as \( x \) approaches \( 1 \).
+			
+			\begin{center}
+				\begin{tikzpicture}[scale=0.8]
+					\begin{axis}[
+						height=4.2cm,
+						axis lines = middle,
+						xlabel = $x$,
+						ylabel = {$f(x)$},
+						xmin=-2, xmax=4,
+						ymin=-1, ymax=3,
+						xtick={-2, -1, 0, 1, 2, 3, 4},
+						ytick={-1, 0, 1, 2, 3},
+						domain=-2:4,
+						samples=100,
+						]
+						\addplot[domain=-2:-1.05, samples=100, thick, color=blue] {2*x/(x+1)};
+\addplot[domain=-0.95:4, samples=100, thick, color=blue] {2*x/(x+1)};
+						\addplot[mark=*, only marks, color=red] coordinates {(1,1)};
+					\end{axis}
+				\end{tikzpicture}
+			\end{center}
+		\end{block}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Limit and Continuity at a Point}
+		
+		Let \(f(x)=x+1\) for \(x\ne2\), and let \(f(2)=1\). The graph has a hole at \((2,3)\) and includes the point \((2,1)\). The function is discontinuous at \(x=2\).
+		
+		\begin{center}
+			\begin{tikzpicture}
+				\begin{axis}[
+					height=4.2cm,
+					axis lines = middle,
+					xlabel = $x$,
+					ylabel = {$f(x)$},
+					xmin=-2.5, xmax=4,
+					ymin=-1, ymax=4,
+					xtick={-2, -1, 0, 1, 2, 3, 4},
+					ytick={0, 1, 2, 3, 4},
+					domain=-2.5:4,
+					samples=100,
+					]
+					\addplot[domain=-2.5:4, samples=100, thick] {x + 1};
+					\fill[white] (axis cs:2,3) circle (2pt);
+					\draw[black, thick] (axis cs:2,3) circle (2pt);
+					\fill[black] (axis cs:2,1) circle (2pt);
+				\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		
+		\begin{block}{Limit Evaluation}
+			\begin{itemize}
+				\item \( \lim_{x \to -1} f(x) = \ ? \)
+				\item \( \lim_{x \to 0} f(x) = \ ? \)
+				\item \( \lim_{x \to 2} f(x) = \ ? \)
+			\end{itemize}
+		\end{block}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Limit and Continuity at a Point}
+		
+		\begin{center}
+			\begin{tikzpicture}[scale=0.75]
+				\begin{axis}[
+					height=5cm,
+					axis lines = middle,
+					xlabel = $x$,
+					ylabel = {$f(x)$},
+					xmin=-2.5, xmax=4,
+					ymin=-1, ymax=4,
+					xtick={-2, -1, 0, 1, 2, 3, 4},
+					ytick={0, 1, 2, 3, 4},
+					domain=-2.5:4,
+					samples=100,
+					]
+					\addplot[domain=-2.5:4, samples=100, thick] {x + 1};
+					\fill[white] (axis cs:2,3) circle (2pt);
+					\draw[black, thick] (axis cs:2,3) circle (2pt);
+					\fill[black] (axis cs:2,1) circle (2pt);
+				\end{axis}
+			\end{tikzpicture}
+		\end{center}
+		
+		\begin{block}{Limit Results}
+			\begin{itemize}
+				\item \( \lim_{x \to -1} f(x) = 0 \)
+				\item \( \lim_{x \to 0} f(x) = 1 \)
+				\item \( \lim_{x \to 2} f(x) = 3 \)
+			\end{itemize}
+		\end{block}
+		
+		\setbeamercolor{block title}{fg=black, bg=blue!20}
+		\setbeamercolor{block body}{fg=black, bg=blue!10}
+		
+		\begin{block}{Important Note}
+			We are not asking for the value of the function at \( x = 2 \), but for the value the function \textbf{approaches} as \( x \) gets infinitely close to 2.
+		\end{block}
+		
+	\end{frame}
+\begin{frame}{Left-hand and Right-hand Limits}
+	\fontsize{9}{1}
+	Let’s consider the function \( f(x) \), which is defined piecewise:
+	\[
+	f(x) =
+	\begin{cases}
+		-\frac{1}{2}(x - 3)^2 + 1 & \text{if } x \leq 3, \\
+		\frac{1}{2}(x - 3)^2 + 4 & \text{if } x > 3.
+	\end{cases}
+	\]
+	
+	\begin{center}
+		\fontsize{9}{1}
+		\begin{tikzpicture}
+			\begin{axis}[
+				height=4.5cm,
+				axis lines = middle,
+				xlabel = $x$,
+				ylabel = {$f(x)$},
+				xmin=0, xmax=5,
+				ymin=0, ymax=5,
+				xtick={0, 1, 2, 3, 4, 5},
+				ytick={0, 1, 2, 3, 4, 5},
+				domain=0:5,
+				samples=100,
+				]
+				\addplot[domain=0:3, samples=100, thick] {-0.5*(x-3)^2 + 1};
+				\addplot[domain=3:5, samples=100, thick] {0.5*(x-3)^2 + 4};
+\addplot[mark=*,only marks] coordinates {(3,1)};
+\addplot[mark=o,only marks,mark options={fill=white}] coordinates {(3,4)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+	\setbeamercolor{block title}{fg=black, bg=blue!20}
+	\setbeamercolor{block body}{fg=black, bg=blue!10}
+	
+	\begin{block}{Limit Evaluation}
+		\begin{itemize}
+			\item \( \lim_{x \to 3^-} f(x) = \ ? \)
+			\item \( \lim_{x \to 3^+} f(x) = \ ? \)
+			\item \( \lim_{x \to 3} f(x) = \ ? \)
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Left-hand and Right-hand Limits}
+	\begin{block}{Limit Evaluation}
+		\begin{itemize}
+			\item \( \lim_{x \to 3^-} f(x) = 1 \)
+			\item \( \lim_{x \to 3^+} f(x) = 4 \)
+		\end{itemize}
+	\end{block}
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				height=4.5cm,
+				axis lines = middle,
+				xlabel = $x$,
+				ylabel = {$f(x)$},
+				xmin=0, xmax=5,
+				ymin=0, ymax=5,
+				xtick={0, 1, 2, 3, 4, 5},
+				ytick={0, 1, 2, 3, 4, 5},
+				domain=0:5,
+				samples=100,
+				]
+				\addplot[domain=0:3, samples=100, thick] {-0.5*(x-3)^2 + 1};
+				\addplot[domain=3:5, samples=100, thick] {0.5*(x-3)^2 + 4};
+\addplot[mark=*,only marks] coordinates {(3,1)};
+\addplot[mark=o,only marks,mark options={fill=white}] coordinates {(3,4)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+	\setbeamercolor{block title}{fg=black, bg=blue!20}
+	\setbeamercolor{block body}{fg=black, bg=blue!10}
+	
+	\begin{block}{The Limit Does Not Exist}
+		The limit \( \lim_{x\to 3} f(x) \) does not exist, because by definition \textbf{a limit exists at a point only if the left-hand and right-hand limits are equal}. This is another example of a discontinuity.
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}{Vertical Asymptotes}
+	\fontsize{9}{11}
+	Let’s consider the function \( f(x) = \frac{1}{x - 2} \), which has a vertical asymptote at \( x = 2 \).
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.5]
+			\begin{axis}[
+				height=5.8cm,
+				axis lines = middle,
+				xlabel = $x$,
+				ylabel = {$f(x)$},
+				xmin=0, xmax=4,
+				ymin=-10, ymax=10,
+				xtick={0, 1, 2, 3, 4},
+				ytick={-10, -5, 0, 5, 10},
+				domain=0.5:3.5,
+				samples=200,
+				clip=false
+				]
+				\addplot[domain=0.5:1.95, thick, color=blue] {1/(x-2)};
+				\addplot[domain=2.05:3.5, thick, color=blue] {1/(x-2)};
+				\draw[dashed, color=red] (axis cs:2,-10) -- (axis cs:2,10);
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+	\setbeamercolor{block title}{fg=black, bg=blue!20}
+	\setbeamercolor{block body}{fg=black, bg=blue!10}
+	
+	\begin{block}{Limit Evaluation}
+		\begin{itemize}
+			\item \( \lim_{x\to 2^-} f(x) = -\infty \)
+			\item \( \lim_{x\to 2^+} f(x) = +\infty \)
+			\item Therefore, \( \lim_{x\to 2} f(x) \) does not exist.
+		\end{itemize}
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}{Intro to Limit Arithmetic: Infinite Limits}
+	
+	\fontsize{8.5}{11}
+	
+	\begin{block}{What happens when a denominator grows without bound?}
+		Imagine dividing a constant, such as \( 1 \) or \( 5 \), by increasingly large numbers, like \( 1000 \), \( 1000000 \), or \( 1000000000 \). As the denominator increases, the result gets smaller:
+		
+		\[
+		\frac{1}{1000} = 0.001, \quad \frac{1}{1000000} = 0.000001, \quad \text{and so on.}
+		\]
+		
+		Eventually, as the denominator tends to infinity, the result gets arbitrarily close to \( 0 \). For every fixed real constant \(k\), this is expressed by \(\lim_{x\to+\infty}k/x=0\). This is a limit, not division by a real number called infinity.
+	\end{block}
+	
+	\setbeamercolor{block title}{fg=black, bg=blue!20}
+	\setbeamercolor{block body}{fg=black, bg=blue!10}
+	
+	\begin{block}{What happens as a positive denominator approaches zero?}
+		Now imagine dividing a constant, like \( 1 \), by smaller and smaller numbers: \( 0.1 \), \( 0.01 \), \( 0.001 \), etc. As the denominator gets closer to zero, the result grows rapidly:
+		
+		\[
+		\frac{1}{0.1} = 10, \quad \frac{1}{0.01} = 100, \quad \frac{1}{0.001} = 1000, \quad \text{and so on.}
+		\]
+		
+		As the denominator becomes extremely small, the result becomes extremely large, tending to \( +\infty \) (if the numerator is positive) or \( -\infty \) (if negative). For \(k>0\), \(\lim_{x\to0^+}k/x=+\infty\) and \(\lim_{x\to0^-}k/x=-\infty\). Division by zero is undefined.
+	\end{block}
+	
+\end{frame}
+\begin{frame}{Infinity in Limit Notation}
+\begin{block}{Unbounded Behavior}
+The symbols \(+\infty\) and \(-\infty\) are not real numbers. In a limit, they describe values that eventually exceed every real bound, or fall below every real bound.
+\end{block}
+\begin{block}{Different Mathematical Contexts}
+Arithmetic with extended real values has specific rules and undefined forms. Cardinal and ordinal arithmetic use different notions of infinity. For example, adding one need not have the same meaning in those two settings.
+\end{block}
+\begin{block}{Division by Zero}
+A limit involving a denominator approaching zero must be evaluated using its numerator, sign and rate of approach. It does not define division by zero.
+\end{block}
+\end{frame}
+
+\begin{frame}{Vertical and Horizontal Asymptotes}
+	
+	An asymptote describes limiting behavior of a graph. Here we consider vertical and horizontal asymptotes; oblique asymptotes are another possibility. A graph can cross a horizontal or oblique asymptote.
+	
+	\begin{block}{Vertical Asymptotes}
+		Vertical asymptotes occur when a function tends toward \( +\infty \) or \( -\infty \) as it approaches a specific point \( x = c \). We saw this with the function \( f(x) = \frac{1}{x - 2} \), which has a vertical asymptote at \( x = 2 \).
+	\end{block}
+	
+	\setbeamercolor{block title}{fg=black, bg=blue!20}
+	\setbeamercolor{block body}{fg=black, bg=blue!10}
+	
+	\begin{block}{Horizontal Asymptotes}
+		Horizontal asymptotes describe how a function behaves as \( x \) approaches \( +\infty \) or \( -\infty \). A horizontal asymptote exists when \( \lim_{x \to \pm\infty} f(x) \) equals a finite value.
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}{Horizontal and Vertical Asymptotes}
+	\fontsize{8.5}{11}
+	Consider the function \( f(x) = 2 - \dfrac{1}{x} \).
+	
+	\begin{center}
+		\begin{tikzpicture}[scale=0.75]
+			\begin{axis}[
+				height=6.5cm,
+				axis lines = middle,
+				xlabel = $x$,
+				ylabel = {$f(x)$},
+				xmin=-14, xmax=14,
+				ymin=-5, ymax=10,
+				xtick={-14, -10, -5, 0, 5, 10, 14},
+				ytick={-5, 0, 2, 5, 10},
+				domain=-14:14,
+				samples=200,
+				clip=false
+				]
+				\addplot[domain=-14:-0.1, thick, color=blue] {2 - 1/x};
+				\addplot[domain=0.1:14, thick, color=blue] {2 - 1/x};
+				\draw[dashed, color=red] (axis cs:-14,2) -- (axis cs:14,2);
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	
+	\[
+	\lim_{x\to -\infty} f(x) = \ ? \quad \text{and} \quad \lim_{x\to +\infty} f(x) = \ ?
+	\]
+	\[
+	\lim_{x\to 0^+} f(x) = \ ? \quad \text{and} \quad \lim_{x\to 0^-} f(x) = \ ?
+	\]
+	
+\end{frame}
+\end{document}

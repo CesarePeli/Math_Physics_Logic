@@ -2,12 +2,13 @@
 layout: default
 title: "Phase Transitions — Heating Curve and Enthalpy Changes"
 author: Marco Ruzzi
-meta-description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
+description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
 permalink: /physics/thermodynamics/phase-transitions/
 redirect_from:
   - /university/physics/thermodynamics/phase-transitions/
 nav_order: 28
 background_image: /images/termodinamica.png
+last_modified_at: 2026-10-10
 ---
 
 # Phase Transitions — Heating Curve and Enthalpy Changes
@@ -37,13 +38,15 @@ background_image: /images/termodinamica.png
 
 ## Exercise
 
+Use approximately atmospheric pressure, neglect heat losses, and treat the quoted specific heats as constant over the respective temperature intervals.
+
 Calculate the total heat required to bring **50.0 g of ice** from **–10.0 °C** to liquid water at **25.0 °C**.  
 
 Given data:  
-- $c_{\text{ice}} = 2.09 \, J\,g^{-1}\,K^{-1}$  
-- $c_{\text{water}} = 4.18 \, J\,g^{-1}\,K^{-1}$  
-- $\Delta H_{\text{fus}} = 6.01 \, kJ\,mol^{-1}$  
-- Molar mass of $H_2O = 18.0 \, g\,mol^{-1}$  
+- c<sub>ice</sub> = 2.09   J g⁻¹ K⁻¹  
+- c<sub>water</sub> = 4.18   J g⁻¹ K⁻¹  
+- ΔH<sub>fus</sub> = 6.01   kJ mol⁻¹  
+- Molar mass of H₂O = 18.0   g mol⁻¹  
 
 </div>
 
@@ -85,9 +88,9 @@ q_{\text{tot}} = q_1 + q_2 + q_3
 $$
 
 Convert to consistent units (kJ):  
-- $q_1 = 1.05 \, kJ$  
-- $q_2 = 16.7 \, kJ$  
-- $q_3 = 5.23 \, kJ$
+- q₁ = 1.05   kJ  
+- q₂ = 16.7   kJ  
+- q₃ = 5.23   kJ
 
 $$
 q_{\text{tot}} = 1.05 + 16.7 + 5.23 = 23.0 \, kJ

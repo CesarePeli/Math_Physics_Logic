@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-10-10
 original_date: 2025-08-30
 title: "Solved Exercises — Limits with L’Hôpital’s Rule"
 permalink: /mathematics/calculus/limits/limits-hopital/
@@ -194,20 +194,11 @@ $$
 
 **Solution.**
 
-Let
+The base sin x/x is positive near zero. First establish the limit of its logarithm divided by x²:
+
 
 $$
-L=
-\lim_{x\to0}
-\left(
-\frac{\sin x}{x}
-\right)^{1/x^2}.
-$$
-
-Take logarithms:
-
-$$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -222,7 +213,7 @@ This is a 0/0 form.
 Apply L’Hôpital:
 
 $$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -243,7 +234,7 @@ $$
 Therefore
 
 $$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -258,7 +249,7 @@ This is again 0/0.
 Apply L’Hôpital:
 
 $$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -271,7 +262,7 @@ $$
 Simplifying by x,
 
 $$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -284,7 +275,7 @@ $$
 We still have 0/0, so apply L’Hôpital once more:
 
 $$
-\log L
+\ell
 =
 \lim_{x\to0}
 \frac{
@@ -297,13 +288,13 @@ $$
 Thus
 
 $$
-\log L=-\frac16.
+\ell=-\frac16.
 $$
 
-Exponentiating,
+The logarithmic limit exists and is finite. Continuity of the exponential therefore gives the original limit:
 
 $$
-L=e^{-1/6}.
+L=e^{\ell}=e^{-1/6}.
 $$
 
 **Final Result**

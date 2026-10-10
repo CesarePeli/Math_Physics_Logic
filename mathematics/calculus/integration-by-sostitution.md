@@ -144,9 +144,9 @@ $$
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
-Original bounds and combined methods are retained. The previous indefinite-only version of the improper integral is replaced by the complete problem on the Improper Integrals page.
+The exercises retain their integration bounds and combine substitution with other methods where needed. Integrals with singular endpoints are also treated on the Improper Integrals page.
 
 </div>
 

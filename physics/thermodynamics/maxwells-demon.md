@@ -1,7 +1,7 @@
 ---
 title: "Maxwell's Demon"
 author: Cesare Peli
-description: "From cooked pizzas to information entropy: Maxwell’s demon and the deep link between thermodynamics, probability, and the arrow of time."
+description: "Maxwell’s demon, statistical entropy and memory erasure: what the second law requires when measurement and feedback are included."
 permalink: /physics/thermodynamics/maxwells-demon/
 redirect_from:
   - /odd-questions/maxwells-demon/
@@ -12,152 +12,120 @@ topic: thermodynamics
 content_type: article
 background_image: "/images/demon.png"
 image_alt: "Illustration of Maxwell's demon observing gas molecules through a tiny door"
+layout: default
+last_modified_at: 2026-10-10
 ---
-
-**By Cesare Peli.**
 
 <div class="content-box">
 
-### Why doesn’t a cooked pizza become raw again?
-Why doesn’t a can of green paint separate back into yellow and blue?  
-Why doesn’t the bathwater, after giving heat to the air and the tiles, start warming itself again?
+# Maxwell’s Demon
 
-These questions lead to the **Second Law of Thermodynamics**: in the processes we observe, heat redistributes, differences fade, and the energy available to do work decreases.  
-Kelvin phrased it as the impossibility of a cyclic engine producing work when interacting with a single thermal reservoir.  
-Clausius expressed it more succinctly: *heat does not spontaneously flow from a colder body to a hotter one*.  
-But why?
+*By Cesare Peli.*
 
----
+## A Temperature Difference without Work?
 
-### From molecules to statistics: Maxwell’s insight
+Hot water cools in a colder room. The reverse process is compatible with energy conservation, but it does not occur spontaneously on the macroscopic scale. The second law supplies the additional restriction: the entropy of an isolated system does not decrease in a macroscopic process. In the Clausius formulation, heat cannot pass from a colder body to a hotter one without some accompanying change. A refrigerator does transfer heat in that direction, but requires work.
 
-In *Illustration of the Dynamical Theory of Gases* (1860), **James Clerk Maxwell** described a gas as a huge ensemble of particles whose velocities follow a statistical law.  
-Temperature does not describe a single molecule; it represents the *average kinetic energy* of all particles.
+Maxwell’s thought experiment asks whether molecular information could evade this restriction. Imagine two gas chambers connected by a small door. An observer lets unusually fast molecules pass from A to B and unusually slow molecules pass from B to A. If the sorting worked without any other change, it could produce a temperature difference from an initially equilibrated gas. That difference could then be used to extract work.
 
-This leads to his famous 1871 thought experiment (*Theory of Heat*).  
-Imagine two identical chambers, **A** and **B**, connected by a tiny door.  
-A perfect observer — the *demon* — can measure the velocity of each molecule and applies a rule:
-
-- let fast molecules from A pass to B;  
-- let slow molecules from B pass to A.
-
-Since temperature depends on average kinetic energy, region **B** heats up and **A** cools down — seemingly creating a temperature difference without work.  
-The experiment illustrates that **the arrow of time is not in the mechanical equations**, but in the *collective behavior* of many particles.
-
----
-
-### Boltzmann: order, multiplicity, and entropy
-
-**Ludwig Boltzmann** made the “collective” explicit.  
-Each measurable state — a *macrostate* with a given pressure, volume, temperature — corresponds to countless *microstates* of positions and velocities.  
-Entropy measures the size of this multiplicity:
+Temperature is a property of an equilibrium state, not of an individual molecule. For a classical ideal gas in three dimensions, its relation to mean translational kinetic energy is
 
 $$
-S = k_B \ln W
+\langle K_{\mathrm{trans}}\rangle=\frac32 k_B T.
 $$
 
-where *W* is the number of microstates compatible with the macrostate.
+This relation explains the proposed sorting. It is not a universal definition of temperature for every physical system.
 
-States representing **mixing, diffusion, and thermal equilibrium** occupy enormous regions of phase space;  
-states representing **separation and reconstruction** occupy tiny ones.  
-A system evolves naturally toward the larger regions of its possibilities.  
+</div>
 
-That’s why:
-- the “cooked pizza” macrostate vastly outnumbers the “raw pizza” one;  
-- mixed paint corresponds to more microstates than separated pigments;  
-- heat dispersed into the room almost never reconcentrates spontaneously.
+<div class="content-box">
 
----
+## Macrostates and Statistical Entropy
 
-### Gibbs and the probability of states
-
-**Josiah Willard Gibbs** connected entropy with probabilities:
+A macrostate specifies a limited set of observable quantities. Many microscopic configurations are compatible with it. In a discrete description, Boltzmann’s entropy is
 
 $$
-S = -k_B \sum_i P_i \ln P_i
+S_B=k_B\ln W,
 $$
 
-If all microstates are equally likely (*Pₖ = 1/W*), the formula reduces to Boltzmann’s.  
-This clarifies a key point: when differences fade, energy has not disappeared — it is merely **redistributed** among configurations that, for the vast majority, **cannot yield usable work** under the current conditions.
+where W counts compatible microstates with the relevant constraints fixed. For a classical gas, positions and momenta form a continuous phase space; a corresponding coarse-grained phase-space volume replaces a literal finite count.
 
----
+Consider a gas initially confined to half an insulated container. After the partition is removed, states with molecules distributed throughout the container occupy a much larger part of the accessible phase space than states with all molecules in the original half. Under suitable initial conditions, typical microscopic evolutions therefore lead to the equilibrium macrostate. This statistical explanation concerns macroscopic behavior and allows fluctuations; it does not make every microscopic trajectory irreversible.
 
-### The demon meets information theory
+The time-reversal symmetry of an isolated classical Hamiltonian model does not imply that a prepared gas will visibly retrace its evolution. Reversing a trajectory would require reversing the appropriate microscopic momenta, not simply waiting.
 
-At first glance, Maxwell’s demon seems to escape the Second Law by continuously selecting rare microstates.  
-But to operate, the demon must *measure*, *decide*, and *store* information.  
-Replacing it with a robot clarifies the cost:  
-each “open/close” decision requires sensing, classification, and memory.
+Chemical changes such as cooking, or the mixing of real paints, require additional information about composition and interactions. Their irreversibility cannot be established by asserting, without a model, that the final material has more microstates.
 
-Here enters **Claude Shannon**.  
-The informational entropy of a source measures the average number of bits required to encode its outcomes:
+Gibbs’ ensemble entropy is
 
 $$
-H = -\sum_i P_i \log_2 P_i
+S_G=-k_B\sum_i P_i\ln P_i.
 $$
 
-If the demon’s gate decisions are binary with probabilities *p* and *1−p*, each decision processes *H(p)* bits on average.  
-Over *N* events, at least *N H(p)* bits must eventually be erased to keep the device cyclic.
+For W equally probable discrete states, it equals k_B ln W. The distinction between this probability description and a macrostate description matters: fine-grained Gibbs entropy is conserved by isolated Hamiltonian evolution. Macroscopic entropy increase requires attention to preparation, coarse graining, or interaction with an environment; it does not follow merely by writing the Gibbs formula.
 
----
+</div>
 
-### Landauer’s principle: the cost of erasure
+<div class="content-box">
 
-**Rolf Landauer** (1961) established that erasing one bit of information in any physical system has a minimum thermal cost:
+## Information, Feedback and a Complete Cycle
+
+The observer’s information is correlated with the gas. Selecting molecules on that basis is a form of feedback. A thermodynamic analysis must include the gas, the memory, the mechanism controlling the door, and any reservoirs with which they interact.
+
+Shannon entropy measures uncertainty in a probability distribution:
 
 $$
-Q_{\text{min}} = k_B T \ln 2 \text{ per bit.}
+H=-\sum_i P_i\log_2 P_i.
 $$
 
-Erasing *N H(p)* bits dissipates at least *k_B T ln 2 × N H(p)* of heat.  
-Hence, when the demon resets its memory, the total entropy of the combined system — gas, robot, and environment — **increases**.  
+For independent binary records with outcome probabilities p and 1−p,
 
-The paradox dissolves not through prohibition, but through **a complete accounting that includes information**.
+$$
+H(p)=-p\log_2 p-(1-p)\log_2(1-p).
+$$
 
----
+For long strings of such records, optimal lossless coding approaches H(p) bits per record on average. This is an asymptotic coding statement, not a claim that each physical decision occupies exactly H(p) bits. Correlations and accessible side information can change the amount of information that must be reset.
 
-### Classical limits and quantum corrections
+Measurement need not itself incur a universal dissipation of k_B T ln 2. Bennett showed why measurement can, in principle, be implemented reversibly. Resetting a reusable memory is a distinct operation: after a complete cycle, the memory must return to its original state rather than retain the record of all previous cycles.
 
-Microscopic theory provides two classical results:
+</div>
 
-- temperature is proportional to the *mean kinetic energy*;  
-- the **equipartition theorem** assigns an average energy  
-  $$ \bar{ϵ_i} = \tfrac{1}{2} k_B T $$  
-  to each active degree of freedom.
+<div class="content-box">
 
-However, classical mechanics failed to predict the correct ratio of specific heats,  
-$$ \gamma = c_p / c_V, $$
-for many gases.  
-**Quantum mechanics** resolved this by showing that rotational and vibrational degrees of freedom can be *inactive* at low temperatures.
+## What Landauer’s Bound Says
 
----
+In the standard idealized erasure process, an initially equiprobable classical bit is reset to a fixed logical state while coupled to a reservoir at temperature T. If the two logical states have equal free energies, the mean heat delivered to the reservoir obeys
 
-### The complete picture
+$$
+\langle Q_{\mathrm{bath}}\rangle\ge k_B T\ln 2.
+$$
 
-The **Second Law** describes the direction of processes in systems with many degrees of freedom because *most microstates correspond to mixed and redistributed configurations*.  
-Entropy measures the actual breadth of those possibilities.  
+The bound can be approached in a reversible limit. It is not a universal heat cost for every measurement, calculation, or manipulation of a bit. Unequal initial probabilities, different logical-state free energies, correlations with other systems, and additional resources require a more general thermodynamic balance.
 
-Maxwell’s thought experiment shows where reversal might be attempted: *selection*.  
-Shannon quantifies the information required to maintain it;  
-Landauer ties that information to a **thermal cost**.  
+For N independent binary records, under the same assumptions and with no usable side information, the entropy removed from the memory is N k_B ln 2 H(p). Resetting it requires at least that much entropy to be transferred elsewhere. Feedback may lower the gas entropy, but that decrease cannot be considered separately from the resources and correlations used by the controller. Over a complete cycle, the total entropy production is nonnegative; it need not be strictly positive in an ideal reversible limit.
 
-Thus the pizza doesn’t uncook, the paint doesn’t separate, and the bathwater doesn’t heat itself —  
-not because the reverse is logically forbidden,  
-but because it occupies a microscopic corner of configuration space,  
-and the information required to sustain it *is part of the world’s energy bookkeeping*.
+The conclusion concerns a complete process. A device that has sorted molecules but has not restored its memory and other resources has not completed the proposed cycle.
 
----
+</div>
 
-### Essential References
+<div class="content-box">
 
-- **J. C. Maxwell**, *Illustration of the Dynamical Theory of Gases* (1860); *Theory of Heat* (1871).  
-- **L. Boltzmann**, *Vorlesungen über Gastheorie* (1896–1898).  
-- **J. W. Gibbs**, *Elementary Principles in Statistical Mechanics* (1902).  
-- **C. E. Shannon**, “A Mathematical Theory of Communication”, *Bell System Technical Journal* (1948).  
-- **R. Landauer**, “Irreversibility and Heat Generation in the Computing Process”, *IBM Journal of Research and Development* (1961).  
-- **F. Reif**, *Fundamentals of Statistical and Thermal Physics* (1965/1985).  
-- **A. Bettini**, *Meccanica e Termodinamica* (1995).  
-- **L. Geymonat (ed.)**, *Storia del pensiero filosofico e scientifico* (1970).  
-- **M. Schwartz**, *Statistical Mechanics* (lecture notes, 2019).
+## Equipartition and Its Limits
+
+In classical equilibrium statistical mechanics, each independent quadratic term in the energy contributes k_B T/2 to the mean energy. A three-dimensional translational motion has three such terms. A harmonic vibrational mode has both a kinetic and a potential quadratic term and contributes k_B T in the classical limit.
+
+When thermal energy is small relative to the spacing of quantum energy levels, classical equipartition no longer describes that mode. Rotational and vibrational contributions to a gas’s heat capacity can consequently become small at low temperatures. This qualification is needed when relating molecular motion, temperature and the ratio of heat capacities.
+
+## References
+
+- J. C. Maxwell, *Theory of Heat* (1871), chapter XXII.
+- J. W. Gibbs, *Elementary Principles in Statistical Mechanics* (1902).
+- C. E. Shannon, “A Mathematical Theory of Communication”, *Bell System Technical Journal* 27 (1948), 379–423 and 623–656.
+- R. Landauer, [“Irreversibility and Heat Generation in the Computing Process”](https://doi.org/10.1147/rd.53.0183), *IBM Journal of Research and Development* 5 (1961), 183–191.
+- C. H. Bennett, [“The Thermodynamics of Computation—a Review”](https://doi.org/10.1007/BF02084158), *International Journal of Theoretical Physics* 21 (1982), 905–940.
+- T. Sagawa and M. Ueda, [“Generalized Jarzynski Equality under Nonequilibrium Feedback Control”](https://arxiv.org/abs/0907.4914), *Physical Review Letters* 104 (2010), 090602.
+- F. Reif, *Fundamentals of Statistical and Thermal Physics* (1965).
+
+[← Back to Thermodynamics]({{ "/physics/thermodynamics/" | relative_url }})
 
 </div>

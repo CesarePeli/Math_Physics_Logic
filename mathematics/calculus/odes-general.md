@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-29
+date: 2026-10-10
 original_date: 2025-08-31
 title: "Differential Equations and Cauchy Problems: 15 Solved Exercises"
 description: "Learn how to find general solutions of ordinary differential equations through theory and 15 original solved exercises, including five Cauchy problems using trial solutions and variation of parameters."
@@ -52,7 +52,7 @@ $$
 y(t)=x_0 e^{a(t-t_0)}.
 $$
 
-For a = 0.02, this model matches the growth of the human population between 1700 and 1961.
+If time is measured in years, a = 0.02 represents a constant net per-capita growth rate of 0.02 per year. This is a model assumption, not a fit to historical population data. The model neglects changes in that rate and resource constraints.
 
 </div>
 
@@ -417,7 +417,7 @@ $$
 
 ## ODE Exercises with Solutions
 
-> **Scope note.** This page excludes Cauchy problems, or initial-value problems. Those are treated separately.
+
 
 </div>
 
@@ -1607,24 +1607,7 @@ $$
 </div>
 
 
-<div class="content-box">
 
-## Explore More Topics in Calculus
-
-- [Fundamental and Notable Limits]({{ "/mathematics/calculus/limits/fundamental-limits-examples/" | relative_url }})
-- [Limits with L’Hôpital’s Rule]({{ "/mathematics/calculus/limits/limits-hopital/" | relative_url }})
-- [Limits with Taylor Expansions]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }})
-- [Sequences]({{ "/mathematics/calculus/sequences/" | relative_url }})
-- [Series]({{ "/mathematics/calculus/series/" | relative_url }})
-- [Continuity]({{ "/mathematics/calculus/continuity/" | relative_url }})
-- [Differentiability]({{ "/mathematics/calculus/differentiability/" | relative_url }})
-- [Integration by Parts]({{ "/mathematics/calculus/integration-by-parts/" | relative_url }})
-- [Integration by Substitution]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
-- [Cauchy Problems for Ordinary Differential Equations]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
-
-[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
-
-</div>
 
 
 ## Cauchy Problems
@@ -1658,7 +1641,7 @@ y'(x_0)=y_1.
 \end{cases}
 $$
 
-More generally, an ordinary differential equation of order k requires k independent initial conditions to determine a particular solution from the general solution.
+For an equation in normal form y⁽ᵏ⁾ = F(x,y,…,y⁽ᵏ⁻¹⁾), one prescribes k initial values. A unique local solution follows under appropriate continuity and local Lipschitz hypotheses on F; counting initial values alone does not establish existence or uniqueness.
 
 ### Picard–Lindelöf Theorem
 
@@ -1874,4 +1857,21 @@ $$
 
 </div>
 
+<div class="content-box">
 
+## Related Calculus Topics
+
+- [Fundamental and Notable Limits]({{ "/mathematics/calculus/limits/fundamental-limits-examples/" | relative_url }})
+- [Limits with L’Hôpital’s Rule]({{ "/mathematics/calculus/limits/limits-hopital/" | relative_url }})
+- [Limits with Taylor Expansions]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }})
+- [Sequences]({{ "/mathematics/calculus/sequences/" | relative_url }})
+- [Series]({{ "/mathematics/calculus/series/" | relative_url }})
+- [Continuity]({{ "/mathematics/calculus/continuity/" | relative_url }})
+- [Differentiability]({{ "/mathematics/calculus/differentiability/" | relative_url }})
+- [Integration by Parts]({{ "/mathematics/calculus/integration-by-parts/" | relative_url }})
+- [Integration by Substitution]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
+
+
+[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+
+</div>

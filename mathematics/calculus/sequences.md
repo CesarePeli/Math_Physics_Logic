@@ -1,6 +1,6 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-10-10
 original_date: 2025-08-31
 title: "Solved Exercises — Recursively Defined Sequences"
 permalink: /mathematics/calculus/sequences/

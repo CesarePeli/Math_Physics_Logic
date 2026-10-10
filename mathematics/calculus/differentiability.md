@@ -8,7 +8,7 @@ permalink: /mathematics/calculus/differentiability/
 redirect_from:
   - /university/math/calculus-1/differentiability/
 background_image: "/images/grafi.png"
-description: "Original university exercises on difference quotients, piecewise functions, parameters and Ck regularity, preserving the exercise-book difficulty."
+description: "Original university exercises on difference quotients, piecewise functions, parameters and Ck regularity, with step-by-step solutions."
 area: mathematics
 topic: calculus
 subtopic: differentiability
@@ -56,7 +56,7 @@ $$
 
 ### Cusps: Both Sign Configurations
 
-The one-sided difference quotients are infinite with opposite signs:
+For a function continuous at x₀, the one-sided difference quotients are infinite with opposite signs:
 
 $$
 f'_-(x_0)=-\infty,\qquad f'_+(x_0)=+\infty,
@@ -70,7 +70,7 @@ $$
 
 ### Vertical Tangents: Both Sign Configurations
 
-The one-sided difference quotients may instead be infinite with the same sign:
+For a function continuous at x₀, the one-sided difference quotients may instead be infinite with the same sign:
 
 $$
 f'_-(x_0)=f'_+(x_0)=+\infty,
@@ -82,7 +82,7 @@ $$
 f'_-(x_0)=f'_+(x_0)=-\infty.
 $$
 
-The source calls this case an inflection point with a vertical tangent. A vertical tangent follows from these limits; an inflection additionally requires a change of concavity and must be checked separately.
+These limits establish a vertical tangent. An inflection additionally requires a change of concavity, which must be checked separately.
 
 ### Piecewise Functions and Higher Regularity
 
@@ -92,7 +92,7 @@ At a joining point, calculate the one-sided difference quotients using the actua
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
 </div>
 
@@ -102,7 +102,7 @@ At a joining point, calculate the one-sided difference quotients using the actua
 
 <!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4683. -->
 
-Study continuity and differentiability, including all parameter cases:
+Study continuity and differentiability:
 
 $$
 f(x)=
@@ -151,7 +151,7 @@ $$
 
 <!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4705. -->
 
-Study continuity and differentiability, including all parameter cases:
+Study continuity and differentiability:
 
 $$
 f(x)=
@@ -180,7 +180,7 @@ $$
 $$
 f'_-(0)=\lim_{x\to0^-}\frac{\cos x-\cos3x}{x^2}=4.
 $$
-The source concludes that zero is a corner.
+The distinct finite one-sided derivatives establish a corner at zero.
 
 **Final result**
 
@@ -196,7 +196,7 @@ $$
 
 <!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4773. -->
 
-Study continuity and differentiability, including all parameter cases:
+Study continuity and differentiability:
 
 $$
 f(x)=

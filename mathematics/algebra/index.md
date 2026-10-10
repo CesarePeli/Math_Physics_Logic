@@ -6,6 +6,7 @@ background_image: "/images/equazioni_secondo.png"
 description: "Explore algebra through quadratic equations, logarithms, complex numbers, functions, symbolic reasoning, and solved mathematical problems."
 area: mathematics
 topic: algebra
+last_modified_at: 2026-10-10
 ---
 
 # Algebra
@@ -52,13 +53,6 @@ They play a fundamental role in algebra, calculus, differential equations, physi
 
 </div>
 
-## Why Algebra Matters
-
-Algebra is not merely a collection of symbolic techniques. It is a way of representing structure.
-
-Equations describe constraints, functions describe relationships, and algebraic transformations allow the same mathematical object to be viewed from different perspectives.
-
-This flexibility makes algebra one of the central languages connecting elementary mathematics with calculus, geometry, physics, and more advanced mathematical theories.
 
 ---
 

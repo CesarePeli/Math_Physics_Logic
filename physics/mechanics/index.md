@@ -7,6 +7,7 @@ background_image: "/images/hs.png"
 description: "Explore Galileo's proof of parabolic motion, the historical connection between Tartaglia and Galileo, and a thesis comparing geometric and algebraic derivations."
 area: physics
 topic: mechanics
+last_modified_at: 2026-10-10
 ---
 
 # Mechanics
@@ -19,9 +20,9 @@ The current resources focus on **parabolic motion**, an important example of how
 
 ## Parabolic Motion
 
-Projectile motion combines uniform horizontal motion with uniformly accelerated vertical motion.
+In a uniform gravitational field with air resistance neglected, projectile motion combines uniform horizontal motion with uniformly accelerated vertical motion.
 
-Its trajectory provides a direct connection between physical laws, quadratic equations, and the geometry of parabolas.
+With nonzero horizontal velocity, eliminating time gives a parabolic trajectory. A purely vertical launch is the limiting case of motion along a straight vertical line, although its height is still a quadratic function of time.
 
 </div>
 
@@ -52,13 +53,6 @@ For the biographical chronology and the connection through Ricci, see the MacTut
 
 </div>
 
-## Mathematics and Motion
-
-Parabolic motion is a particularly clear example of the relationship between mathematics and physics.
-
-A quadratic equation is not only an abstract algebraic object: under appropriate physical assumptions, the same mathematical structure describes the trajectory of a projectile.
-
-This connection illustrates one of the central ideas of mathematical physics — different ways of describing a phenomenon can reveal the same underlying structure.
 
 ---
 

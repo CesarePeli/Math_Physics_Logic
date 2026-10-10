@@ -7,6 +7,7 @@ background_image: "/images/grafi.png"
 description: "Explore dynamical systems, nonlinear dynamics, deterministic chaos, sensitivity to initial conditions, and the Lorenz attractor through mathematical and physical reasoning."
 area: physics
 topic: dynamical-systems
+last_modified_at: 2026-10-10
 ---
 
 # Dynamical Systems & Chaos
@@ -79,7 +80,7 @@ $$
 0
 $$
 
-nearby trajectories separate exponentially, producing sensitivity to initial conditions.
+infinitesimal perturbations grow exponentially along the trajectory being analyzed. A positive exponent alone is not a definition or proof of chaos: an unstable linear system can have one. Bounded recurrent dynamics and the relevant invariant set also need to be examined.
 
 This phenomenon is often associated with the **butterfly effect**: arbitrarily small differences in the initial state can eventually lead to macroscopically different evolutions.
 
@@ -103,27 +104,13 @@ Depending on the system, an attractor may be:
 - a periodic orbit;
 - a more complicated geometric structure.
 
-Chaotic systems may possess **strange attractors**, characterized by bounded but non-periodic trajectories and intricate geometric structure.
+Chaotic systems may possess attractors with intricate geometric structure and typical non-periodic trajectories. Such an attractor can also contain exceptional periodic orbits and equilibria.
 
 The Lorenz attractor is the canonical example.
 
 </div>
 
-<div class="content-box">
 
-## Why Chaos Matters
-
-Chaos theory changed the way deterministic physical systems are understood.
-
-Classical determinism can suggest that sufficiently precise knowledge of the present should allow indefinitely precise prediction of the future. Chaotic dynamics shows why this conclusion does not generally follow.
-
-The governing equations may be completely deterministic while long-term prediction becomes practically impossible because small uncertainties in the initial conditions grow rapidly.
-
-This distinction has consequences far beyond a single mathematical model. Nonlinear and chaotic behavior appears in atmospheric dynamics, fluid systems, oscillations, population models, celestial mechanics, and many other areas of science.
-
-The study of chaos therefore lies at an important intersection of **mathematics, physics, computation, and the philosophy of prediction**.
-
-</div>
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 last_modified_at: 2026-10-10
-date: 2026-10-09
+date: 2026-10-10
 title: "Numerical Series: Convergence Tests and 10 Solved Exercises"
 description: "Learn comparison, ratio, root, condensation and alternating-series tests with complete theory and ten solved numerical-series exercises, including parameters."
 permalink: /mathematics/calculus/numerical-series/
@@ -21,7 +21,7 @@ author: "Antonino De Martino and Luana Manfredini"
 
 *Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
-This page translates the complete theoretical introduction to numerical series and the first ten worked exercises in *Eserciziario 2.1*, by Antonino De Martino and Luana Manfredini. The English adaptation corrects indexing and positivity slips explicitly noted below and adds a check for absolute convergence in Exercise 10.
+The theoretical introduction covers convergence, necessary conditions, and the principal tests for numerical series. Ten worked exercises apply these tests, including conditional and absolute convergence.
 
 Numerical series concern sums of real numbers. For pointwise and uniform convergence of functions, see [Sequences and Series of Functions]({{ "/mathematics/calculus/series/" | relative_url }}).
 
@@ -50,7 +50,7 @@ $$
 \lim_{n\to\infty}a_n=0.
 $$
 
-**Warning from the source:** This condition is only necessary. When it holds, the series may converge or diverge; a convergence test is still required. When the terms do not tend to zero, the series cannot converge.
+**Necessary condition:** This condition is only necessary. When it holds, the series may converge or diverge; a convergence test is still required. When the terms do not tend to zero, the series cannot converge.
 
 ### Geometric Series
 
@@ -182,7 +182,7 @@ Then the alternating series converges. This test alone does not establish absolu
 | Alternating signs | Leibniz, then a separate absolute-convergence check |
 | A fixed quantity raised to n | Geometric series |
 
-**Source note:** In the worked examples, the necessary condition is understood to hold unless its failure is explicitly identified. Unless indicated otherwise, the series have nonnegative terms. Here the wording includes zero terms at the starting index.
+**Convention:** Unless indicated otherwise, the following series have nonnegative terms. Before applying a convergence test, check that their terms tend to zero.
 
 </div>
 

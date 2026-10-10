@@ -5,6 +5,7 @@ title: About
 permalink: /about/
 nav_exclude: false
 background_image: "/images/about.png"
+last_modified_at: 2026-10-10
 ---
 
 
@@ -38,7 +39,13 @@ Physicist and Associate Professor at the **University of Padua**, Department of 
 
 **Prof. Antonino De Martino**  
 Researcher in Mathematics at **Polytechnic University of Milan**
-→ Supports the development of university-level calculus exercises and mathematical accuracy
+→ Co-editor, with Dr. Luana Manfredini, of *Eserciziario 2.1*, which supplies the credited exercises and theory.
+
+**Dr. Luana Manfredini**  
+Co-editor of *Eserciziario 2.1*.
+
+**Andrea Padovan**  
+Author of the article on large language models and grammar.
 
 </div>
 
@@ -46,11 +53,11 @@ Researcher in Mathematics at **Polytechnic University of Milan**
 
 ## Tools and Workflow
 
-All didactic materials on the site — slides, diagrams, illustrations, animations — are created using:
+Tools used to prepare the site’s teaching materials include:
 
 - **LaTeX** for professional typesetting and structure  
 - **Python** for simulations, plots, and code-based models  
-- **Artificial Intelligence** for formatting, generation, and optimization tasks
+- **Artificial Intelligence** for assistance with drafting and formatting, and for the illustrations identified as AI-generated
 
 </div>
 

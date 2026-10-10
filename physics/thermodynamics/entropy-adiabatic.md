@@ -3,7 +3,7 @@ layout: default
 date: 2026-08-29
 title: "Is Entropy Constant in an Adiabatic Process?"
 seo_title: "Is Entropy Constant in an Adiabatic Process? Explained"
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-10
 author: Marco Ruzzi
 permalink: /physics/thermodynamics/entropy-adiabatic/
 redirect_from:
@@ -19,7 +19,7 @@ content_type: solved-exercise
 
 *By Prof. Marco Ruzzi.*
 
-An adiabatic process has $q=0$, but this does not necessarily imply that $\Delta S=0$.
+In an adiabatic process, there is no heat transfer at any stage. Hence q = 0, but ΔS need not vanish. Zero net heat alone would not establish that a process is adiabatic: heat received and released at different stages could cancel.
 
 For a closed system, entropy remains constant only when the adiabatic process is **reversible**. An irreversible adiabatic process generates entropy, so the entropy of the system increases.
 
@@ -27,13 +27,13 @@ For a closed system, entropy remains constant only when the adiabatic process is
 
 ## Entropy in Reversible and Irreversible Adiabatic Processes
 
-An **adiabatic process** is a transformation in which no heat is exchanged with the surroundings:
+An **adiabatic process** is a transformation in which no heat is exchanged with the surroundings at any stage:
 
 $$
 q=0.
 $$
 
-From the First Law of Thermodynamics,
+For a closed system, using w > 0 for work done on the system, the first law gives
 
 $$
 \Delta U=q+w,
@@ -47,8 +47,8 @@ $$
 
 The absence of heat exchange does not by itself determine the entropy change:
 
-- **Reversible adiabatic process:** $\Delta S_{\text{sys}}=0$.
-- **Irreversible adiabatic process in a closed system:** $\Delta S_{\text{sys}}>0$.
+- **Reversible adiabatic process:** ΔS<sub>sys</sub>=0.
+- **Irreversible adiabatic process in a closed system:** ΔS<sub>sys</sub>>0.
 - **Entropy change of the universe:**
 
   $$
@@ -248,7 +248,7 @@ The transformation is adiabatic, but its entropy increases because the process i
 
 <div class="content-box">
 
-## Why Can Entropy Increase When $q=0$?
+## Why Can Entropy Increase When q=0?
 
 The relation
 
@@ -258,7 +258,7 @@ $$
 
 refers to a **reversible path** connecting two equilibrium states.
 
-In a reversible adiabatic process, the actual path is reversible and $\delta q_{\text{rev}}=0$, so the entropy remains constant.
+In a reversible adiabatic process, the actual path is reversible and δ q<sub>rev</sub>=0, so the entropy remains constant.
 
 During an irreversible free expansion, the actual process cannot be used directly in the integral that defines entropy change. A hypothetical reversible path must be considered between the same initial and final equilibrium states. Along that path, the entropy change is
 
@@ -268,7 +268,7 @@ $$
 R\ln\left(\frac{V_2}{V_1}\right)>0.
 $$
 
-Thus, $q=0$ does not imply $\Delta S=0$. It implies constant entropy only when the adiabatic transformation is also reversible.
+Thus, q=0 does not imply ΔS=0. It implies constant entropy only when the adiabatic transformation is also reversible.
 
 </div>
 
@@ -318,9 +318,9 @@ Equality holds for a reversible process; a strict inequality characterizes an ir
 
 ### Related Topics
 
-- [Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
+- [Ideal-Gas Processes — Work, ΔU and ΔS]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
 - [Reaction Energetics — Internal Energy and Enthalpy]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
-- [Equilibrium and Spontaneity — $\Delta G^\circ$, $K$ and Temperature]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
+- [Equilibrium and Spontaneity — ΔG°, K and Temperature]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
 - [Colligative Properties — Freezing-Point Depression]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
 - [Gibbs Free Energy for Incompressible Substances]({{ "/physics/thermodynamics/gibbs-free-energy/" | relative_url }})
 - [Phase Transitions — Heating Curve and Enthalpy Changes]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})

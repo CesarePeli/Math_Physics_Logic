@@ -8,6 +8,7 @@ background_image: "/images/assioma.png"
 description: "Explore the axiom of choice through choice functions, well-ordering, cardinality, Zorn's lemma, vector-space bases, and non-measurable sets."
 area: logic-language
 content_type: article
+last_modified_at: 2026-10-10
 ---
 
 <div class="content-box">
@@ -44,7 +45,7 @@ To understand the scope of the axiom, we must therefore clarify how infinite set
 
 To compare two finite sets, we count their elements. With infinite sets, this process cannot be completed in the same way. The comparison is instead made by matching the elements of one set with those of the other.
 
-Two sets $A$ and $B$ are called **equipotent** when there is a one-to-one correspondence, or bijection, between them. This means that each element of $A$ is associated with exactly one element of $B$, distinct elements of $A$ have distinct images, and no element of $B$ is left out.
+Two sets A and B are called **equipotent** when there is a one-to-one correspondence, or bijection, between them. This means that each element of A is associated with exactly one element of B, distinct elements of A have distinct images, and no element of B is left out.
 
 In symbols, we write
 
@@ -58,7 +59,7 @@ $$
 \lvert A\rvert=\lvert B\rvert.
 $$
 
-The symbol $\lvert A\rvert$ denotes the cardinality of the set $A$. Therefore, if two sets are equipotent, their cardinalities are equal.
+The symbol | A| denotes the cardinality of the set A. Therefore, if two sets are equipotent, their cardinalities are equal.
 
 Consider the set of natural numbers
 
@@ -86,7 +87,7 @@ $$
 \lvert\mathbb N\rvert=\lvert P\rvert.
 $$
 
-The set of even numbers is a proper subset of $\mathbb N$, since it does not contain the odd numbers, yet it has the same cardinality as $\mathbb N$. The possibility that a set may be equipotent to one of its proper subsets is a fundamental feature of infinite sets.
+The set of even numbers is a proper subset of ℕ, since it does not contain the odd numbers, yet it has the same cardinality as ℕ. The possibility that a set may be equipotent to one of its proper subsets is a fundamental feature of infinite sets.
 
 Infinite sets do not all have the same cardinality. Cantor proved that the set of real numbers is not equipotent to the set of natural numbers. There is therefore no sequence
 
@@ -94,7 +95,7 @@ $$
 x_0,x_1,x_2,\ldots
 $$
 
-that contains every real number. The set $\mathbb N$ is countable, whereas $\mathbb R$ is not.
+that contains every real number. The set ℕ is countable, whereas ℝ is not.
 
 To compare sets that may have different cardinalities, we use injective functions. A function
 
@@ -102,7 +103,7 @@ $$
 f:A\longrightarrow B
 $$
 
-is injective when distinct elements of $A$ have distinct images in $B$. The existence of an injection from $A$ to $B$ shows that the elements of $A$ can be placed in $B$ without overlap.
+is injective when distinct elements of A have distinct images in B. The existence of an injection from A to B shows that the elements of A can be placed in B without overlap.
 
 In this case, we write
 
@@ -110,16 +111,16 @@ $$
 \lvert A\rvert\leq \lvert B\rvert.
 $$
 
-The formula means that there is an injection from $A$ into $B$.
+The formula means that there is an injection from A into B.
 
-The Cantor–Schröder–Bernstein theorem states that if there is an injection from $A$ into $B$ and also an injection from $B$ into $A$, then the two sets are equipotent:
+The Cantor–Schröder–Bernstein theorem states that if there is an injection from A into B and also an injection from B into A, then the two sets are equipotent:
 
 $$
 \lvert A\rvert\leq \lvert B\rvert \quad\text{and}\quad \lvert B\rvert\leq \lvert A\rvert
 \quad\Longrightarrow\quad \lvert A\rvert=\lvert B\rvert.
 $$
 
-For finite sets, two cardinalities are always comparable. Given two sets $A$ and $B$, one of them has no more elements than the other. For infinite sets, the comparison is expressed by the question
+For finite sets, two cardinalities are always comparable. Given two sets A and B, one of them has no more elements than the other. For infinite sets, the comparison is expressed by the question
 
 $$
 \lvert A\rvert\leq \lvert B\rvert \quad\text{or}\quad \lvert B\rvert\leq \lvert A\rvert?
@@ -145,13 +146,13 @@ This order is total: given any two distinct natural numbers, one precedes the ot
 
 A totally ordered set is **well-ordered** when each of its nonempty subsets has a least element.
 
-The set $\mathbb N$, with its usual order, is well-ordered. Consider, for example, the subset of natural numbers greater than $10$:
+The set ℕ, with its usual order, is well-ordered. Consider, for example, the subset of natural numbers greater than 10:
 
 $$
 \{11,12,13,\ldots\}.
 $$
 
-Its least element is $11$. The same property holds for every nonempty subset of $\mathbb N$.
+Its least element is 11. The same property holds for every nonempty subset of ℕ.
 
 The set of integers
 
@@ -159,9 +160,9 @@ $$
 \mathbb Z=\{\ldots,-2,-1,0,1,2,\ldots\}
 $$
 
-is not well-ordered by the usual relation. The set $\mathbb Z$ itself has no least element: for every integer $n$, the integer $n-1$ is smaller.
+is not well-ordered by the usual relation. The set ℤ itself has no least element: for every integer n, the integer n-1 is smaller.
 
-This does not prevent us from assigning a different order to $\mathbb Z$. We can arrange the integers in the sequence
+This does not prevent us from assigning a different order to ℤ. We can arrange the integers in the sequence
 
 $$
 0,1,-1,2,-2,3,-3,\ldots
@@ -169,21 +170,21 @@ $$
 
 and declare that one integer precedes another when it appears earlier in the sequence.
 
-With respect to this new order, $\mathbb Z$ is well-ordered. Every nonempty subset of the integers contains an element that appears first in the list.
+With respect to this new order, ℤ is well-ordered. Every nonempty subset of the integers contains an element that appears first in the list.
 
 The same set can therefore be ordered in different ways. Being well-ordered is a property of a set together with the order relation assigned to it.
 
-The usual order on $\mathbb R$ is not a well-order either. The subset
+The usual order on ℝ is not a well-order either. The subset
 
 $$
 (0,1)=\{x\in\mathbb R:0<x<1\}
 $$
 
-has no least element. Given any $x\in(0,1)$, the number $x/2$ also belongs to the interval and is smaller than $x$.
+has no least element. Given any x∈(0,1), the number x/2 also belongs to the interval and is smaller than x.
 
-To say that $\mathbb R$ can be well-ordered does not mean that the usual numerical order is a well-order. It means that there is another relation, which we may denote by $\prec$, with respect to which every nonempty subset of the real numbers has a first element.
+To say that ℝ can be well-ordered does not mean that the usual numerical order is a well-order. It means that there is another relation, which we may denote by ≺, with respect to which every nonempty subset of the real numbers has a first element.
 
-For $\mathbb Z$, we explicitly exhibited a well-order. For $\mathbb R$, the axiom of choice guarantees the existence of a well-order without providing a comparably explicit description of it.
+For ℤ, we explicitly exhibited a well-order. For ℝ, the axiom of choice guarantees the existence of a well-order without providing a comparably explicit description of it.
 
 </div>
 
@@ -191,7 +192,7 @@ For $\mathbb Z$, we explicitly exhibited a well-order. For $\mathbb R$, the axio
 
 ## Isomorphisms and ordinals
 
-Two ordered sets have the same **order type** when their elements occupy the same relative positions. More precisely, an order isomorphism between $A$ and $B$ is a bijection
+Two ordered sets have the same **order type** when their elements occupy the same relative positions. More precisely, an order isomorphism between A and B is a bijection
 
 $$
 f:A\to B
@@ -277,7 +278,7 @@ $$
 \aleph_0,\aleph_1,\aleph_2,\ldots
 $$
 
-and, more generally, $\aleph_\alpha$ for every ordinal $\alpha$.
+and, more generally, ℵ<sub>α</sub> for every ordinal α.
 
 Cantor proved that the real numbers are uncountable. Their cardinality is called the **cardinality of the continuum** and is written
 
@@ -299,11 +300,11 @@ Before that question can be placed inside the aleph hierarchy, however, one must
 
 ## The problem left open by Cantor
 
-The hierarchy of the alephs describes the cardinalities of well-orderable sets. If a set $A$ can be well-ordered, it can be associated with an ordinal, and the least ordinal equipotent to $A$ can be identified. The cardinality of this ordinal is an aleph.
+The hierarchy of the alephs describes the cardinalities of well-orderable sets. If a set A can be well-ordered, it can be associated with an ordinal, and the least ordinal equipotent to A can be identified. The cardinality of this ordinal is an aleph.
 
 It remained to prove that every set was well-orderable.
 
-Without this result, one could not conclude that every cardinality belonged to the sequence of the alephs. Nor could one assert that, given arbitrary sets $A$ and $B$, there was always an injection from one into the other.
+Without this result, one could not conclude that every cardinality belonged to the sequence of the alephs. Nor could one assert that, given arbitrary sets A and B, there was always an injection from one into the other.
 
 The point can be summarized as follows:
 
@@ -326,7 +327,7 @@ $$
 \mathcal A=\{A_i\}_{i\in I}
 $$
 
-be a family of sets indexed by a set $I$. The family may be finite or infinite. A **choice function** for this family is a function
+be a family of sets indexed by a set I. The family may be finite or infinite. A **choice function** for this family is a function
 
 $$
 f:I\to \bigcup_{i\in I}A_i
@@ -338,15 +339,15 @@ $$
 f(i)\in A_i
 $$
 
-for every $i\in I$.
+for every i∈ I.
 
-If the family is finite, one can make the choices one after another. Some infinite families also come with a natural rule. For example, if every $A_i$ is a nonempty subset of $\mathbb N$, one may set
+If the family is finite, one can make the choices one after another. Some infinite families also come with a natural rule. For example, if every Aᵢ is a nonempty subset of ℕ, one may set
 
 $$
 f(i)=\min A_i.
 $$
 
-For a completely arbitrary infinite family, no such rule need be given. The statement $A_i\neq\varnothing$ tells us, separately for each index $i$, that at least one element exists in $A_i$. It does not by itself produce a single function that makes all those choices simultaneously.
+For a completely arbitrary infinite family, no such rule need be given. The statement Aᵢ≠∅ tells us, separately for each index i, that at least one element exists in Aᵢ. It does not by itself produce a single function that makes all those choices simultaneously.
 
 The axiom of choice asserts exactly that this simultaneous selection is always possible:
 
@@ -357,7 +358,7 @@ $$
 }
 $$
 
-This is an existence statement. It does not say how to define $f$, calculate its values, or describe the selected elements.
+This is an existence statement. It does not say how to define f, calculate its values, or describe the selected elements.
 
 There is a compact notation for the same idea. The **Cartesian product** of the family is defined by
 
@@ -371,7 +372,13 @@ f(i)\in A_i\text{ for every }i\in I
 \right\}.
 $$
 
-Thus the elements of $\prod_{i\in I}A_i$ are precisely the choice functions for the family. Saying that every $A_i$ is nonempty does not, in ZF alone, guarantee that this product is nonempty. The axiom of choice is equivalent to the statement
+Thus the elements of 
+
+$$
+\prod_{i\in I}A_i
+$$
+
+ are precisely the choice functions for the family. Saying that every Aᵢ is nonempty does not, in ZF alone, guarantee that this product is nonempty. The axiom of choice is equivalent to the statement
 
 $$
 \boxed{
@@ -397,23 +404,23 @@ $$
 
 This is the **well-ordering theorem**.
 
-Here is the idea of the implication from choice to well-ordering. Let $X$ be any set. Apply the axiom of choice to the family of all nonempty subsets of $X$. We obtain a function $c$ such that
+Here is the idea of the implication from choice to well-ordering. Let X be any set. Apply the axiom of choice to the family of all nonempty subsets of X. We obtain a function c such that
 
 $$
 c(S)\in S
 $$
 
-whenever $S\subseteq X$ and $S\neq\varnothing$.
+whenever S⊆ X and S≠∅.
 
-Use $c$ first on $X$, then on the set of elements not yet selected, and continue choosing from what remains. For an arbitrary set, “continue” may require more than finitely or countably many stages. A complete proof formalizes the continuation by indexing successive choices with ordinals. A basic theorem of set theory guarantees that the process cannot keep choosing distinct elements of $X$ through every ordinal stage; it must eventually exhaust $X$. Order the elements of $X$ by the stage at which they were selected. Every nonempty subset then has a first selected element, so this order is a well-order.
+Use c first on X, then on the set of elements not yet selected, and continue choosing from what remains. For an arbitrary set, “continue” may require more than finitely or countably many stages. A complete proof formalizes the continuation by indexing successive choices with ordinals. A basic theorem of set theory guarantees that the process cannot keep choosing distinct elements of X through every ordinal stage; it must eventually exhaust X. Order the elements of X by the stage at which they were selected. Every nonempty subset then has a first selected element, so this order is a well-order.
 
-The reverse implication is shorter. Suppose every set can be well-ordered, and let $\{A_i\}_{i\in I}$ be a family of nonempty sets. Well-order the union
+The reverse implication is shorter. Suppose every set can be well-ordered, and let {Aᵢ}<sub>i∈ I</sub> be a family of nonempty sets. Well-order the union
 
 $$
 X=\bigcup_{i\in I}A_i.
 $$
 
-Each $A_i$ now has a least element in that order. Defining $f(i)$ to be that least element gives a choice function.
+Each Aᵢ now has a least element in that order. Defining f(i) to be that least element gives a choice function.
 
 Therefore
 
@@ -439,7 +446,7 @@ $$
 \lvert A\rvert\le \lvert B\rvert
 $$
 
-means that there is an injective function from $A$ to $B$. The **comparability principle** says that for all sets $A$ and $B$,
+means that there is an injective function from A to B. The **comparability principle** says that for all sets A and B,
 
 $$
 \lvert A\rvert\le \lvert B\rvert
@@ -447,23 +454,23 @@ $$
 \lvert B\rvert\le \lvert A\rvert.
 $$
 
-Assume the axiom of choice. By the well-ordering theorem, both $A$ and $B$ can be well-ordered. Their order types are ordinals, and any two ordinals are comparable. This yields an injection in one direction, so their cardinalities are comparable.
+Assume the axiom of choice. By the well-ordering theorem, both A and B can be well-ordered. Their order types are ordinals, and any two ordinals are comparable. This yields an injection in one direction, so their cardinalities are comparable.
 
-The converse needs one additional result that is provable in ZF, without the axiom of choice. **Hartogs's theorem** says that for every set $A$ there is an ordinal $h(A)$ for which no injection
+The converse needs one additional result that is provable in ZF, without the axiom of choice. **Hartogs's theorem** says that for every set A there is an ordinal h(A) for which no injection
 
 $$
 h(A)\to A
 $$
 
-exists. Informally, $h(A)$ is a well-ordered set that is too large to fit injectively inside $A$.
+exists. Informally, h(A) is a well-ordered set that is too large to fit injectively inside A.
 
-Now assume that all cardinalities are comparable. Applied to $A$ and $h(A)$, comparability gives an injection in one of the two directions. The direction $h(A)\to A$ is impossible by Hartogs's theorem, so there must be an injection
+Now assume that all cardinalities are comparable. Applied to A and h(A), comparability gives an injection in one of the two directions. The direction h(A)→ A is impossible by Hartogs's theorem, so there must be an injection
 
 $$
 A\to h(A).
 $$
 
-Because $h(A)$ is well-ordered, this injection allows us to order the elements of $A$ according to the positions of their images. Hence $A$ can be well-ordered. Since $A$ was arbitrary, the well-ordering theorem holds, and therefore so does the axiom of choice.
+Because h(A) is well-ordered, this injection allows us to order the elements of A according to the positions of their images. Hence A can be well-ordered. Since A was arbitrary, the well-ordering theorem holds, and therefore so does the axiom of choice.
 
 Thus
 
@@ -485,29 +492,29 @@ $$
 
 A common way to use the axiom of choice is to replace it with an equivalent principle called **Zorn's lemma**.
 
-Zorn's lemma concerns a **partially ordered set**: a set $P$ equipped with a relation $\le$ that is reflexive, antisymmetric, and transitive. Unlike a total order, a partial order does not require every pair of elements to be comparable. For example, subsets of a set can be ordered by inclusion; two subsets need not contain one another.
+Zorn's lemma concerns a **partially ordered set**: a set P equipped with a relation ≤ that is reflexive, antisymmetric, and transitive. Unlike a total order, a partial order does not require every pair of elements to be comparable. For example, subsets of a set can be ordered by inclusion; two subsets need not contain one another.
 
-A **chain** in $P$ is a subset whose elements are mutually comparable. An element $u\in P$ is an **upper bound** of a chain $C$ if
+A **chain** in P is a subset whose elements are mutually comparable. An element u∈ P is an **upper bound** of a chain C if
 
 $$
 x\le u
 $$
 
-for every $x\in C$.
+for every x∈ C.
 
-An element $m\in P$ is **maximal** if there is no element strictly above it. This is not the same as being a **maximum**: a maximum lies above every element of $P$, whereas a partially ordered set may have several incomparable maximal elements.
+An element m∈ P is **maximal** if there is no element strictly above it. This is not the same as being a **maximum**: a maximum lies above every element of P, whereas a partially ordered set may have several incomparable maximal elements.
 
 Zorn's lemma states:
 
 > **Zorn's lemma.** If every chain in a nonempty partially ordered set has an upper bound in that set, then the set contains a maximal element.
 
-Why does this imply the axiom of choice? Given a family $\{A_i\}_{i\in I}$ of nonempty sets, consider all **partial choice functions**: functions that choose an element from $A_i$ only for indices in some subset of $I$. Order these functions by extension. The union of a chain of compatible partial choice functions is again a partial choice function, so every chain has an upper bound.
+Why does this imply the axiom of choice? Given a family {Aᵢ}<sub>i∈ I</sub> of nonempty sets, consider all **partial choice functions**: functions that choose an element from Aᵢ only for indices in some subset of I. Order these functions by extension. The union of a chain of compatible partial choice functions is again a partial choice function, so every chain has an upper bound.
 
-Zorn's lemma therefore gives a maximal partial choice function $f$. If its domain omitted an index $j$, the fact that $A_j\neq\varnothing$ would let us choose one element of that single set and extend $f$ to $j$. That would contradict maximality. Hence the domain of $f$ is all of $I$, and $f$ is a choice function.
+Zorn's lemma therefore gives a maximal partial choice function f. If its domain omitted an index j, the fact that A<sub>j</sub>≠∅ would let us choose one element of that single set and extend f to j. That would contradict maximality. Hence the domain of f is all of I, and f is a choice function.
 
-For the reverse implication, assume the axiom of choice. By the well-ordering theorem, the elements of $P$ can be well-ordered. Scan them in that order, adding an element whenever it remains comparable with every element already accepted. The formal construction proceeds through the ordinal stages of the well-order and produces a maximal chain $C$.
+For the reverse implication, assume the axiom of choice. By the well-ordering theorem, the elements of P can be well-ordered. Scan them in that order, adding an element whenever it remains comparable with every element already accepted. The formal construction proceeds through the ordinal stages of the well-order and produces a maximal chain C.
 
-By hypothesis, $C$ has an upper bound $u\in P$. If some $v$ satisfied $u<v$, then every element of $C$ would also lie below $v$, so $C\cup\{v\}$ would be a larger chain. This contradicts the maximality of $C$. Therefore $u$ is a maximal element of $P$.
+By hypothesis, C has an upper bound u∈ P. If some v satisfied u<v, then every element of C would also lie below v, so C∪{v} would be a larger chain. This contradicts the maximality of C. Therefore u is a maximal element of P.
 
 Consequently,
 
@@ -525,16 +532,16 @@ $$
 
 ## Why every vector space has a basis
 
-A **basis** of a vector space $V$ is a set of vectors that satisfies two conditions:
+A **basis** of a vector space V is a set of vectors that satisfies two conditions:
 
 1. it is linearly independent;
-2. every vector in $V$ is a finite linear combination of vectors from that set.
+2. every vector in V is a finite linear combination of vectors from that set.
 
-The second condition says that the set **spans** $V$.
+The second condition says that the set **spans** V.
 
 For a finite-dimensional vector space, a basis can be found by starting from a finite generating list and removing redundant vectors. For an arbitrary vector space, however, there may be no finite or countable generating list to start from. The problem is to prove that a linearly independent set can be enlarged until it spans the whole space, even when that enlargement may require arbitrarily many stages.
 
-Let $\mathcal L$ be the collection of all linearly independent subsets of $V$, ordered by inclusion. It is nonempty because the empty set is linearly independent.
+Let ℒ be the collection of all linearly independent subsets of V, ordered by inclusion. It is nonempty because the empty set is linearly independent.
 
 Consider a chain
 
@@ -542,23 +549,23 @@ $$
 L_1\subseteq L_2\subseteq\cdots
 $$
 
-in $\mathcal L$, or more generally any chain not necessarily indexed by the natural numbers. Its union
+in ℒ, or more generally any chain not necessarily indexed by the natural numbers. Its union
 
 $$
 L=\bigcup_\alpha L_\alpha
 $$
 
-is still linearly independent. Indeed, a linear dependence relation involves only finitely many vectors. Since the sets form a chain, all those vectors already lie together in one member $L_\alpha$, where they are independent.
+is still linearly independent. Indeed, a linear dependence relation involves only finitely many vectors. Since the sets form a chain, all those vectors already lie together in one member L<sub>α</sub>, where they are independent.
 
-Thus every chain in $\mathcal L$ has an upper bound in $\mathcal L$. By Zorn's lemma, $\mathcal L$ has a maximal element $B$.
+Thus every chain in ℒ has an upper bound in ℒ. By Zorn's lemma, ℒ has a maximal element B.
 
-Suppose $B$ did not span $V$. Then some vector $v\in V$ would not be a linear combination of vectors in $B$. In that case,
+Suppose B did not span V. Then some vector v∈ V would not be a linear combination of vectors in B. In that case,
 
 $$
 B\cup\{v\}
 $$
 
-would still be linearly independent, contradicting the maximality of $B$. Therefore $B$ spans $V$, so $B$ is a basis.
+would still be linearly independent, contradicting the maximality of B. Therefore B spans V, so B is a basis.
 
 The axiom of choice enters through Zorn's lemma. It proves that a maximal independent set exists; it does not provide a procedure for listing its vectors.
 
@@ -570,7 +577,7 @@ The axiom of choice enters through Zorn's lemma. It proves that a maximal indepe
 
 The axiom of choice also allows one to select a representative from every class of an equivalence relation.
 
-On the interval $[0,1]$, define
+On the interval [0,1], define
 
 $$
 x\sim y
@@ -582,21 +589,21 @@ $$
 x-y\in\mathbb Q.
 $$
 
-This relation divides $[0,1]$ into disjoint equivalence classes. The class of $x$ consists of all points of $[0,1]$ that differ from $x$ by a rational number.
+This relation divides [0,1] into disjoint equivalence classes. The class of x consists of all points of [0,1] that differ from x by a rational number.
 
-Using the axiom of choice, select exactly one point from each class and call the resulting set $V$. This is a **Vitali set**.
+Using the axiom of choice, select exactly one point from each class and call the resulting set V. This is a **Vitali set**.
 
-For each rational number $q\in[-1,1]$, consider the translate
+For each rational number q∈[-1,1], consider the translate
 
 $$
 V+q=\{v+q:v\in V\}.
 $$
 
-These translates are pairwise disjoint. Their union contains $[0,1]$ and is contained in $[-1,2]$.
+These translates are pairwise disjoint. Their union contains [0,1] and is contained in [-1,2].
 
-Suppose $V$ had a Lebesgue measure. Translation invariance would give every $V+q$ the same measure. If that measure were zero, their countable union would have measure zero, although it contains $[0,1]$. If it were positive, the union would have infinite measure, although it is contained in the bounded interval $[-1,2]$. Both conclusions are impossible.
+Suppose V had a Lebesgue measure. Translation invariance would give every V+q the same measure. If that measure were zero, their countable union would have measure zero, although it contains [0,1]. If it were positive, the union would have infinite measure, although it is contained in the bounded interval [-1,2]. Both conclusions are impossible.
 
-Therefore $V$ is not Lebesgue measurable. The contradiction is not in the real numbers or in measure theory; it arises only from assuming that this specially selected set has a measure.
+Therefore V is not Lebesgue measurable. The contradiction is not in the real numbers or in measure theory; it arises only from assuming that this specially selected set has a measure.
 
 </div>
 
@@ -604,11 +611,11 @@ Therefore $V$ is not Lebesgue measurable. The contradiction is not in the real n
 
 ## The Banach–Tarski paradox
 
-The Banach–Tarski theorem concerns an ideal mathematical ball: the set of all points at distance at most $1$ from a center in three-dimensional space. It states that this set can be partitioned into finitely many disjoint subsets. By moving those subsets only with rotations and translations, one can arrange them into two balls, each congruent to the original.
+The Banach–Tarski theorem concerns an ideal mathematical ball: the set of all points at distance at most 1 from a center in three-dimensional space. It states that this set can be partitioned into finitely many disjoint subsets. By moving those subsets only with rotations and translations, one can arrange them into two balls, each congruent to the original.
 
 This does **not** describe cutting a physical ball into ordinary solid pieces. The subsets are extremely scattered sets of points, not chunks bounded by surfaces, and they cannot all be assigned a Lebesgue volume.
 
-That fact removes the apparent contradiction. Rotations and translations preserve the volume of measurable sets, and the volume of finitely many disjoint measurable pieces is the sum of their volumes. If the Banach–Tarski pieces were measurable, one ball of volume $V$ could not become two balls of total volume $2V$. But the pieces have no Lebesgue volume, so the rule being invoked simply does not apply to them.
+That fact removes the apparent contradiction. Rotations and translations preserve the volume of measurable sets, and the volume of finitely many disjoint measurable pieces is the sum of their volumes. If the Banach–Tarski pieces were measurable, one ball of volume V could not become two balls of total volume 2V. But the pieces have no Lebesgue volume, so the rule being invoked simply does not apply to them.
 
 Where does choice enter? In the standard construction, certain rotations are applied repeatedly to points on a sphere. Two points are placed in the same class, called an **orbit**, when one can be reached from the other by a finite sequence of those rotations and their inverses. There are uncountably many such orbits. The proof needs a set containing one representative from each orbit, much as the Vitali construction selects one representative from each equivalence class. A suitable form of the axiom of choice supplies that simultaneous selection.
 
@@ -630,9 +637,9 @@ $$
 
 A **model** of an axiomatic theory is a mathematical structure in which all the axioms of that theory are true. Independence results compare different models rather than deciding the axiom of choice from the other ZF axioms.
 
-In 1938, Kurt Gödel showed that if ZF is consistent, then ZF together with the axiom of choice is also consistent. He did this by constructing a model known as the **constructible universe**, in which choice holds.
+In 1938, Kurt Gödel showed that if ZF is consistent, then ZF together with the axiom of choice is also consistent. Within a model of ZF, its **constructible universe** L is an inner class model satisfying choice. This yields a relative consistency result, not an unconditional proof that ZF is consistent.
 
-In 1963, Paul Cohen developed the method of **forcing** and used it, together with related model constructions, to show that if ZF is consistent, then ZF together with the negation of the axiom of choice is also consistent.
+Cohen’s 1963–1964 work developed **forcing**; the independence of choice also uses a symmetric submodel construction. These methods show that if ZF is consistent, then ZF together with the negation of the axiom of choice is also consistent.
 
 Consequently, assuming ZF itself is consistent,
 
@@ -664,13 +671,13 @@ $$
 A_0,A_1,A_2,\ldots.
 $$
 
-The **axiom of dependent choice** concerns a nonempty set $X$ with a relation $R$ such that every element has an $R$-successor. It guarantees a sequence
+The **axiom of dependent choice** concerns a nonempty set X with a relation R such that every element has an R-successor. It guarantees a sequence
 
 $$
 x_0,x_1,x_2,\ldots
 $$
 
-for which $x_n R x_{n+1}$ at every step. Each choice may therefore depend on the element chosen immediately before it.
+for which xₙ R xₙ₊₁ at every step. Each choice may therefore depend on the element chosen immediately before it.
 
 These principles suffice for many results in analysis and do not imply the full axiom of choice over ZF.
 
@@ -716,7 +723,7 @@ Finally, Gödel's and Cohen's independence results show that ZF does not decide 
 
 - Cantor, Georg. *Contributions to the Founding of the Theory of Transfinite Numbers*. Translated and edited by Philip E. B. Jourdain. Chicago: Open Court, 1915.
 
-- Cohen, Paul J. “The Independence of the Continuum Hypothesis.” *Proceedings of the National Academy of Sciences of the United States of America* 50, no. 6 (1963): 1143–1148. [https://doi.org/10.1073/pnas.50.6.1143](https://doi.org/10.1073/pnas.50.6.1143).
+- Cohen, Paul J. “The Independence of the Continuum Hypothesis.” *Proceedings of the National Academy of Sciences* 50 (1963): 1143–1148; [part II](https://doi.org/10.1073/pnas.51.1.105), 51 (1964): 105–110. The second paper includes the independence of the axiom of choice.
 
 - Gödel, Kurt. *The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis with the Axioms of Set Theory*. Annals of Mathematics Studies 3. Princeton, NJ: Princeton University Press, 1940.
 

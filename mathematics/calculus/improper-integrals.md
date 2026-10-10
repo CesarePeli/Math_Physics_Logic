@@ -7,7 +7,7 @@ content_type: solved-exercises
 background_image: "/images/limiti.png"
 permalink: /mathematics/calculus/improper-integrals/
 title: "Improper Integrals: Original Convergence and Evaluation Exercises"
-description: "Six original improper-integral problems with endpoint and interior singularities, absolute comparison, asymptotic comparison and infinite bounds."
+description: "Eight improper-integral problems with endpoint and interior singularities, absolute comparison, asymptotic comparison and infinite bounds."
 date: 2026-10-10
 last_modified_at: 2026-10-10
 ---
@@ -193,7 +193,7 @@ $$
 dx=-\frac{t^2-1}{2t^2}\,dt,
 \qquad\sqrt{x^2-1}=\frac{t^2-1}{2t}.
 $$
-Both denominator factors are negative multiples of the displayed expressions, so their product cancels the minus sign in dx:
+Substitute the displayed expressions for x, the square root, and dx. The negative sign in x cancels the negative sign in dx, while the factors t²−1 and 2t cancel algebraically:
 $$
 \int\frac{dx}{x\sqrt{x^2-1}}=2\int\frac{dt}{1+t^2}=2\arctan t+C.
 $$

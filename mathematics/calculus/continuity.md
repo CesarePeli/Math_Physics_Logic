@@ -56,13 +56,13 @@ $$
 \lim_{x\to x_0^-}f(x)=\lim_{x\to x_0^+}f(x)=L\ne f(x_0).
 $$
 
-The source classifies excluded domain points using the language of discontinuities. Strictly, continuity at a point requires that it belong to the domain; at an excluded point we classify the limiting behavior or ask whether the function admits a continuous extension.
+Continuity at a point requires that it belong to the domain. At an excluded point, we classify the limiting behavior or ask whether the function admits a continuous extension.
 
 </div>
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
 </div>
 

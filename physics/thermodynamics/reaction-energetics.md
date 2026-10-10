@@ -2,12 +2,13 @@
 layout: default
 title: "Reaction Energetics — Internal Energy and Enthalpy"
 author: Marco Ruzzi
-meta-description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
+description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
 permalink: /physics/thermodynamics/reaction-energetics/
 redirect_from:
   - /university/physics/thermodynamics/reaction-energetics/
 nav_order: 23
 background_image: /images/termodinamica.png
+last_modified_at: 2026-10-10
 ---
 
 # Reaction Energetics — Internal Energy and Enthalpy
@@ -28,26 +29,34 @@ background_image: /images/termodinamica.png
   H = U + pV \;\Rightarrow\; \Delta H = \Delta U + \Delta(pV)
   $$
 
-- At constant pressure, when the only mechanical work is pressure–volume work:
-  $
-  \Delta H=q_p.
-  $
+- At constant pressure, when the only work exchanged is pressure–volume work:
+  
+
+$$
+\Delta H=q_p.
+$$
+
+
 
 - For an ideal-gas reaction at a fixed temperature:
-  $
-  \Delta_r H^\circ
+  
+
+$$
+\Delta_r H^\circ
   =\Delta_r U^\circ+\Delta\nu_{\text{gas}}RT,
   \qquad
   \Delta_r U^\circ
   =\Delta_r H^\circ-\Delta\nu_{\text{gas}}RT,
-  $
-  where $\Delta\nu_{\text{gas}}$ is the sum of the gaseous stoichiometric coefficients of the products minus that of the reactants.
+$$
+
+
+  where Δν<sub>gas</sub> is the sum of the gaseous stoichiometric coefficients of the products minus that of the reactants.
 
 > **Validity note.**  
-> The relation containing $\Delta\nu_{\text{gas}}RT$ follows from the ideal-gas equation for the gaseous species. It is exact for the all-gas ideal reaction considered below. Real gases require an appropriate equation of state.
+> The relation containing Δν<sub>gas</sub>RT follows from the ideal-gas equation for the gaseous species. It is exact for the all-gas ideal reaction considered below. Real gases require an appropriate equation of state.
 
 > **Sign convention used here.**  
-> $w>0$ denotes work done on the system, while $w<0$ denotes work done by the system. With this convention, the First Law is $\Delta U=q+w$.
+> w>0 denotes work done on the system, while w<0 denotes work done by the system. With this convention, the First Law is ΔU=q+w.
 
 </div>
 
@@ -61,7 +70,7 @@ $$
 2\,\mathrm{CO}(g) + \mathrm{O}_2(g) \;\longrightarrow\; 2\,\mathrm{CO}_2(g)
 $$
 
-At $T = 298\,\text{K}$ and $p = 1\,\text{bar}$, the standard enthalpy of reaction is:
+At T = 298 K and p = 1 bar, the standard enthalpy of reaction is:
 
 $$
 \Delta_r H^{\circ} = -566.0\,\text{kJ mol}^{-1}
@@ -69,8 +78,8 @@ $$
 
 **Tasks:**
 
-1. Calculate the standard molar internal-energy change $\Delta_r U^{\circ}$.  
-2. Explain the relation between $\Delta U$ and $\Delta H$ for reactions involving gases.
+1. Calculate the standard molar internal-energy change Δ<sub>r</sub> U°.  
+2. Explain the relation between ΔU and ΔH for reactions involving gases.
 
 </div>
 
@@ -79,8 +88,8 @@ $$
 ## Step-by-Step Solution
 
 **Step 1. Count moles of gas**  
-- Reactants: $n_{\text{gas}} = 2 + 1 = 3$  
-- Products: $n_{\text{gas}} = 2$  
+- Reactants: n<sub>gas</sub> = 2 + 1 = 3  
+- Products: n<sub>gas</sub> = 2  
 
 So:
 $$
@@ -91,7 +100,7 @@ $$
 
 ---
 
-**Step 2. Relation between $\Delta H$ and $\Delta U$**  
+**Step 2. Relation between ΔH and ΔU**  
 For ideal gases:
 $$
 \Delta_r U^\circ
@@ -101,7 +110,7 @@ $$
 ---
 
 **Step 3. Insert data**  
-With $T = 298\,\text{K}$ and $R = 8.314\,\text{J mol}^{-1}\text{K}^{-1}$:
+With T = 298 K and R = 8.314 J mol⁻¹K⁻¹:
 $$
 \Delta\nu_{\text{gas}}RT
 =(-1)(8.314)(298)
@@ -132,11 +141,11 @@ $$
 
 ## Notes
 
-- The difference between $\Delta_r U^\circ$ and $\Delta_r H^\circ$ is small here because $\Delta\nu_{\text{gas}}=-1$.  
-- If $\Delta\nu_{\text{gas}}=0$ for an ideal-gas reaction, then $\Delta_r H^\circ=\Delta_r U^\circ$.  
-- The magnitude of the correction $\Delta\nu_{\text{gas}}RT$ grows with temperature and with the change in gaseous stoichiometric coefficients.  
+- The difference between Δ<sub>r</sub> U° and Δ<sub>r</sub> H° is small here because Δν<sub>gas</sub>=-1.  
+- If Δν<sub>gas</sub>=0 for an ideal-gas reaction, then Δ<sub>r</sub> H°=Δ<sub>r</sub> U°.  
+- The magnitude of the correction Δν<sub>gas</sub>RT grows with temperature and with the change in gaseous stoichiometric coefficients.  
 - Standard reaction enthalpies are commonly tabulated, while the First Law is written directly in terms of internal energy.  
-- For non-ideal gases, the simple $RT\Delta\nu_{\text{gas}}$ correction is only approximate.
+- For non-ideal gases, the simple RTΔν<sub>gas</sub> correction is only approximate.
 
 </div>
 

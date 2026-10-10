@@ -29,9 +29,9 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-## Complete Taylor and Maclaurin Recall
+## Taylor and Maclaurin Expansions
 
-Taylor expansions are useful because they replace transcendental functions by polynomial expressions, with a remainder that records the approximation order. For a function with the required derivatives near x₀, Taylor's formula with Peano remainder is:
+Taylor expansions are useful because they replace transcendental functions by polynomial expressions, with a remainder that records the approximation order. A sufficient hypothesis is that f belongs to Cⁿ on a neighborhood of x₀. As x → x₀, Taylor’s formula with Peano remainder is:
 
 $$
 f(x)=f(x_0)+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2
@@ -41,6 +41,8 @@ $$
 At x₀ = 0 this is called a Maclaurin expansion.
 
 ### Algebra of Little-o Terms
+
+The following relations concern x → 0; logarithms are natural, and trigonometric arguments are in radians.
 
 $$
 o(x^m)+o(x^m)=o(x^m).
@@ -64,7 +66,7 @@ $$
 
 The last identity is the composition rule used when the argument of a remainder itself has an asymptotic expansion.
 
-### All Maclaurin Formulas in the Source
+### Maclaurin Formulas
 
 $$
 (1+x)^\alpha=1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2
@@ -150,9 +152,9 @@ The theorem also applies to one-sided limits and limits at infinity under the co
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
-The first ten exercises below replace the earlier elementary substitutes. The five source exercises added previously are retained.
+Fifteen worked exercises apply Taylor expansions to limits with cancellations at different orders.
 
 </div>
 
@@ -593,7 +595,7 @@ $$
 
 **Solution.**
 
-Use the expansions in the source:
+Use the expansions:
 
 $$
 \arcsin x=x+\frac{x^3}{6}+o(x^3).
@@ -642,7 +644,7 @@ $$
 
 **Solution.**
 
-Expand each factor to the order used in the source:
+Expand each factor to the required order:
 
 $$
 \sin(3x)=3x-\frac{27}{6}x^3+o(x^3).
@@ -718,7 +720,7 @@ $$
 
 **Solution.**
 
-Apply the exponential and binomial expansions exactly as in the source:
+Apply the exponential and binomial expansions:
 
 $$
 e^{2x^3}=1+2x^3+o(x^3).

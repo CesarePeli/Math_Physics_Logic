@@ -24,20 +24,11 @@ last_modified_at: 2026-10-10
 ---
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3P4GLVFYWW');
-</script>
-
 <div class="content-box">
 
 # Understanding Limits in Calculus
 
-**By Cesare Peli.**
+*By Cesare Peli.*
 
 What does it mean to “approach” a number?  
 This page offers an intuitive introduction to the concept of **limit**, a central idea in calculus.
@@ -48,13 +39,13 @@ We avoid the technicalities of epsilon-delta definitions and instead focus on:
 - **Simple, concrete examples**
 - **Visual intuition**
 
-Whether you're a high school student or a curious learner, this resource is designed to help you build a **solid conceptual foundation**.
+The lesson distinguishes the value of a function from its limit, compares one-sided limits, and introduces vertical and horizontal asymptotes.
 
 </div>
 
 <div class="content-box">
 
-## Free Download
+## Lesson PDF
 
 You can download the full PDF version of this lesson here:
 
@@ -64,7 +55,7 @@ You can download the full PDF version of this lesson here:
 
 <div class="content-box">
 
-## Continue Exploring Limits
+## Further Limits Topics
 
 Once the intuitive meaning of a limit is clear, you can move on to fundamental limits, notable limits, indeterminate forms, and more advanced techniques.
 

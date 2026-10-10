@@ -8,15 +8,16 @@ background_image: "/images/complessi2.png"
 description: "What is a mathematical proof? Explore formal derivation, logical consequence, axiomatic systems, and the historical development of proof across mathematical traditions."
 area: logic-language
 content_type: article
+last_modified_at: 2026-10-10
 ---
 
 <div class="content-box">
 
-## What Is a Proof?
+# What Is a Proof?
 
 *By Cesare Peli*
 
-In this article, we will mention some major historical developments through which proof entered mathematics and, later, science. It should emerge, among other things, that there is no absolute definition of what a proof is. The standards by which a proof is accepted have always depended on a historical and disciplinary context. Many theologians, for example, have claimed to prove the existence of God while also arguing that the proofs offered before theirs were invalid.
+In this article, we will mention some major historical developments through which proof entered mathematics and, later, science. A formal proof has a precise definition relative to a specified deductive system. The standards by which an informal argument is accepted also depend on a historical and disciplinary context; these two claims must be distinguished. Many theologians, for example, have claimed to prove the existence of God while also arguing that the proofs offered before theirs were invalid.
 
 Any discussion of proof therefore needs to be historicized. An exhaustive account would require many separate and complex analyses, far beyond the scope of a single article. Here we will focus on two questions: what formal logic tells us about mathematical proof, and whether the birth of proof can really be described as a uniquely Greek achievement.
 
@@ -28,13 +29,13 @@ Any discussion of proof therefore needs to be historicized. An exhaustive accoun
 
 Before turning to history, let us pause over a more basic question: what is a proof in mathematics? To pose the question in the most general terms possible, we can begin from the point of view of formal logic. This perspective seems to involve the fewest assumptions, yet even here the answer is less self-contained than it first appears.
 
-In axiomatic mathematics, let $T$ be a theory and $A$ a statement. We want to establish that $A$ follows from the axioms of $T$. For example, $T$ might contain the axioms of an ordered field together with a completeness principle, while $A$ might be Rolle's theorem:
+In axiomatic mathematics, let T be a theory and A a statement. We want to establish that A follows from the axioms of T. For example, T might contain the axioms of an ordered field together with a completeness principle, while A might be Rolle's theorem:
 
-> If a real-valued function $f$ is continuous on a closed interval $[a,b]$, differentiable on the open interval $(a,b)$, and $f(a)=f(b)$, then there exists at least one $c\in(a,b)$ such that $f'(c)=0$.
+> If a real-valued function f is continuous on a closed interval [a,b] with a < b, differentiable on the open interval (a,b), and f(a)=f(b), then there exists at least one c∈(a,b) such that f'(c)=0.
 
 The compact formula does not carry its intended mathematical meaning by itself. A reader may know what function, continuity, differentiability, closed interval, and open interval mean, but those meanings must be supplied by definitions, by the language of the theory, and by an interpretation of its symbols. They are the result of mathematical construction, not of logical syntax alone.
 
-Consider a more elementary example. Let $T$ be Euclidean geometry and $A$ the Pythagorean theorem. We still need to know what triangle, square, right angle, and hypotenuse mean. Without the surrounding definitions and conventions, the proposition does not determine a unique mathematical claim. It acquires that meaning within a theory—or, in ordinary practice, within something as concrete as a geometry textbook.
+Consider a more elementary example. Let T be Euclidean geometry and A the Pythagorean theorem. We still need to know what triangle, square, right angle, and hypotenuse mean. Without the surrounding definitions and conventions, the proposition does not determine a unique mathematical claim. It acquires that meaning within a theory—or, in ordinary practice, within something as concrete as a geometry textbook.
 
 One could try to include every necessary definition and rule explicitly. Mathematical writing rarely does so. Practice does not reproduce the entire foundational architecture behind every theorem: it selects the level of detail appropriate to its readers and purpose. Mathematics, considered as a discipline rather than as a pure abstraction, is also a practice.
 
@@ -46,7 +47,7 @@ $$
 R=\{x\mid x\notin x\},
 $$
 
-then asking whether $R\in R$ gives
+then asking whether R∈ R gives
 
 $$
 R\in R \Longleftrightarrow R\notin R.
@@ -56,15 +57,15 @@ This is Russell's paradox. Axiomatic systems such as Zermelo–Fraenkel set theo
 
 ### Derivability and Logical Consequence
 
-At this point a distinction is essential. If $A$ can be obtained from the axioms of $T$ by the rules of a formal calculus, we write
+At this point a distinction is essential. If A can be obtained from the axioms of T by the rules of a formal calculus, we write
 
 $$
 T\vdash A.
 $$
 
-This is a syntactic relation: there is a finite formal derivation of $A$ from $T$.
+This is a syntactic relation: there is a finite formal derivation of A from T.
 
-If $A$ is true in every interpretation, or model, in which the axioms of $T$ are true, we write
+If A is true in every interpretation, or model, in which the axioms of T are true, we write
 
 $$
 T\models A.
@@ -88,7 +89,7 @@ $$
 2+2=4.
 $$
 
-It is often invoked as the clearest possible example of mathematical certainty. Yet even this statement presupposes a domain and an interpretation of its symbols. In the natural numbers it is true. In the ring $\mathbb{Z}_4=\{0,1,2,3\}$, where addition is interpreted modulo four, the result of adding $2$ and $2$ is the equivalence class of $4$, which coincides with the equivalence class of $0$:
+It is often invoked as the clearest possible example of mathematical certainty. Yet even this statement presupposes a domain and an interpretation of its symbols. In the natural numbers it is true. In the ring ℤ₄={0,1,2,3}, where addition is interpreted modulo four, the result of adding 2 and 2 is the equivalence class of 4, which coincides with the equivalence class of 0:
 
 $$
 [2]+[2]=[4]=[0].
@@ -100,7 +101,7 @@ $$
 2+2=0 \pmod 4.
 $$
 
-There is no need to leave arithmetic in order to prove $2+2=4$. Using $S$ for the successor operation, define
+There is no need to leave arithmetic in order to prove 2+2=4. Using S for the successor operation, define
 
 $$
 2=S(S(0)), \qquad 4=S(S(S(S(0)))),
@@ -169,7 +170,7 @@ The dating of the *Nine Chapters* is complex. It is a composite work that took s
 
 <p style="margin: 2rem 0; text-align: center;"><img src="{{ '/images/quadrato.png' | relative_url }}" alt="Four congruent right triangles arranged inside a square with an inner square" style="display: block; max-width: 100%; height: auto; margin: 0 auto;"><span style="display: block; margin-top: 0.6rem; font-style: italic;">A rearrangement proof of the Pythagorean theorem.</span></p>
 
-The second diagram contains four congruent right triangles. Let $c$ be the hypotenuse of each triangle, $a$ its longer leg, and $b$ its shorter leg. The outer square has side $c$, while the inner square has side $a-b$. The four triangles have total area $2ab$. Therefore
+The second diagram contains four congruent right triangles. Let c be the hypotenuse of each triangle, a its longer leg, and b its shorter leg. The outer square has side c, while the inner square has side a-b. The four triangles have total area 2ab. Therefore
 
 $$
 \begin{aligned}
@@ -189,7 +190,7 @@ Chemla's broader point is that proof must be studied within the activities, goal
 
 The history of proof becomes distorted when all these practices are ranked according to a single inherited model.
 
-These reflections highlight the cultural dimension of proof, retrospectively claimed as the defining achievement of a civilization. Must an argument belong to a structured axiomatic theory in order to count as a proof, or is demonstrating the validity of an algorithm enough? Asking whether an algorithm is valid already places us fully within mathematics. Proof is therefore neither a neutral label nor a final destination: it is the beginning of a construction.
+These reflections highlight the cultural dimension of proof, retrospectively claimed as the defining achievement of a civilization. Must an argument belong to a structured axiomatic theory in order to count as a proof, or is demonstrating the validity of an algorithm enough? Asking whether an algorithm is valid already places us fully within mathematics. A historical comparison should therefore examine what an argument establishes, which assumptions it uses, and how its intended readers could check it. Deduction from stated axioms and demonstration of an algorithm’s correctness are distinct forms of mathematical justification.
 
 </div>
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 last_modified_at: 2026-10-10
-date: 2026-08-29
+date: 2026-10-10
 original_date: 2025-04-15
 title: "Notable Limits in Calculus — 14 Solved Examples"
 author: "Professor Antonino De Martino and Dr. Luana Manfredini"
@@ -31,7 +31,7 @@ content_type: solved-exercises
 
 ### Fundamental Limit Formulas
 
-The expressions below are commonly known as fundamental, notable, or remarkable limits in calculus:
+The following formulas use natural logarithms and trigonometric arguments measured in radians:
 
 $$
 \lim_{x\to 0} \frac{\sin x}{x} = 1,
@@ -67,7 +67,7 @@ $$
 
 #### Theorem: Non-Existence via Sequences
 
-If there exist two sequences aₙ → c and bₙ → c such that:
+Let c be an accumulation point of the domain. If two sequences aₙ → c and bₙ → c lie in that domain, satisfy aₙ ≠ c and bₙ ≠ c for every n, and have existing but distinct image limits:
 
 $$
 \lim_{n \to \infty} f(a_n) \ne \lim_{n \to \infty} f(b_n),
@@ -93,72 +93,6 @@ then:
 
 $$
 \lim_{x \to c} g(x) = L.
-$$
-
-</div>
-
-<div class="content-box">
-
-## 10 Examples Using Notable Limits
-
-### Example 1
-
-$$
-\lim_{x \to +\infty} \left( \sqrt{x^2 + x + 1} - \sqrt{x^2 - x + 1} \right)
-$$
-
-### Example 2
-
-$$
-\lim_{x \to \infty} x \log\left(\frac{x + 4}{x + 5}\right)
-$$
-
-### Example 3
-
-$$
-\lim_{x \to \infty} \left(\frac{2x+9}{2x+1}\right)^x
-$$
-
-### Example 4
-
-$$
-\lim_{x \to \infty} x \log\left(\frac{x^2 + 1}{x^2 + x}\right)
-$$
-
-### Example 5
-
-$$
-\lim_{x \to \infty} \frac{\log(x^3 + 1)}{x}
-$$
-
-### Example 6
-
-$$
-\lim_{x \to \infty} \frac{\sin x - x}{\cos x + \sqrt{1 + x^2}}
-$$
-
-### Example 7
-
-$$
-\lim_{x \to \infty} \sin x \cdot \left[ \log(\sqrt{x} + 1) - \log(\sqrt{x + 1}) \right]
-$$
-
-### Example 8
-
-$$
-\lim_{x \to \infty} \left(\frac{x + 3}{x - 1}\right)^{x + 1}
-$$
-
-### Example 9
-
-$$
-\lim_{x \to 0^+} x^{1/\log(3x)}
-$$
-
-### Example 10
-
-$$
-\lim_{x \to 0} \frac{e^x - e^{-x}}{x}
 $$
 
 </div>
@@ -1005,7 +939,7 @@ $$
 =\frac{\sin(|x|^\alpha)}{|x|^\alpha}|x|^{\alpha-\beta}.
 $$
 
-The first factor tends to 1 by the sine notable limit. The second factor tends to zero for α > β, equals 1 for α = β, and tends to +∞ for α < β. These are all three cases stated in the source.
+The first factor tends to 1 by the sine notable limit. The second factor tends to zero for α > β, equals 1 for α = β, and tends to +∞ for α < β. These exhaust the three possible parameter comparisons.
 
 **Final Result**
 

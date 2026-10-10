@@ -10,6 +10,7 @@ background_image: "/images/body.png"
 featured: true
 area: physics
 topic: quantum-physics
+last_modified_at: 2026-10-10
 ---
 
 # Blackbody Radiation and the Quantum Revolution
@@ -28,13 +29,13 @@ During the nineteenth century, this universality made blackbody radiation a cent
 
 <h2>Kirchhoff's Law and the Cavity Model</h2>
 
-For a body at temperature $T$, let $e_\nu$ denote its spectral emissive power and $a_\nu$ its absorptivity at frequency $\nu$. Kirchhoff showed that, at thermal equilibrium, the ratio
+For a body at temperature T, let e<sub>ν</sub> denote its spectral emissive power and a<sub>ν</sub> its absorptivity at frequency ν. Kirchhoff showed that, at thermal equilibrium, the ratio
 
 $$
 \frac{e_\nu}{a_\nu}
 $$
 
-is a universal function of $\nu$ and $T$. A perfect absorber has $a_\nu=1$, so its emission provides the universal equilibrium spectrum directly.
+is a universal function of ν and T. A perfect absorber has a<sub>ν</sub>=1, so its emission provides the universal equilibrium spectrum directly.
 
 A physical approximation is obtained with a cavity whose walls are maintained at a fixed temperature and which communicates with the exterior through a small hole. Radiation entering the hole undergoes many reflections and has a high probability of being absorbed. The radiation emerging from the same hole is determined mainly by the equilibrium field inside the cavity. This construction separates the universal spectrum from the properties of a particular surface.
 
@@ -44,7 +45,7 @@ A physical approximation is obtained with a cavity whose walls are maintained at
 
 <h2>Energy Density and Spectral Distribution</h2>
 
-Let $u(T)$ be the electromagnetic energy per unit volume inside the cavity. The spectral energy density per unit frequency, denoted by $u_\nu(T)$, is defined by
+Let u(T) be the electromagnetic energy per unit volume inside the cavity. The spectral energy density per unit frequency, denoted by u<sub>ν</sub>(T), is defined by
 
 $$
 du=u_\nu(T)\,d\nu.
@@ -89,7 +90,7 @@ u_\nu(T)\left|\frac{d\nu}{d\lambda}\right|
 u_\nu(T).
 $$
 
-This factor is essential. A spectral density is defined relative to an interval, and equal intervals of frequency do not correspond to equal intervals of wavelength. The maximum of $u_\nu$ therefore does not transform into the maximum of $u_\lambda$ simply through $\nu=c/\lambda$.
+This factor is essential. A spectral density is defined relative to an interval, and equal intervals of frequency do not correspond to equal intervals of wavelength. The maximum of u<sub>ν</sub> therefore does not transform into the maximum of u<sub>λ</sub> simply through ν=c/λ.
 
 </div>
 
@@ -97,13 +98,13 @@ This factor is essential. A spectral density is defined relative to an interval,
 
 <h2>Wien's and Stefan-Boltzmann Laws</h2>
 
-Before Planck's complete formula, thermodynamics already imposed important restrictions on the spectrum. Wien's displacement law states that the wavelength at which $u_\lambda(T)$ reaches its maximum satisfies
+Before Planck's complete formula, thermodynamics already imposed important restrictions on the spectrum. Wien's displacement law states that the wavelength at which u<sub>λ</sub>(T) reaches its maximum satisfies
 
 $$
 \lambda_{\max}T=b,
 $$
 
-where $b$ is Wien's displacement constant. Increasing the temperature shifts the maximum of the wavelength spectrum toward shorter wavelengths.
+where b is Wien's displacement constant. Increasing the temperature shifts the maximum of the wavelength spectrum toward shorter wavelengths.
 
 The total energy density is proportional to the fourth power of the absolute temperature:
 
@@ -111,7 +112,7 @@ $$
 u(T)=aT^4.
 $$
 
-For the radiant exitance $M$, the corresponding Stefan-Boltzmann law is
+For the radiant exitance M, the corresponding Stefan-Boltzmann law is
 
 $$
 M=\sigma T^4.
@@ -125,7 +126,7 @@ These results describe the position of the maximum and the total emitted energy,
 
 <h2>The Classical Prediction</h2>
 
-Electromagnetic waves in a cavity can be decomposed into normal modes. The number of modes per unit volume in the interval between $\nu$ and $\nu+d\nu$ is
+Electromagnetic waves in a cavity can be decomposed into normal modes. The number of modes per unit volume in the interval between ν and ν+dν is
 
 $$
 g(\nu)\,d\nu
@@ -133,7 +134,7 @@ g(\nu)\,d\nu
 \frac{8\pi\nu^2}{c^3}\,d\nu.
 $$
 
-Classical statistical mechanics assigns an average energy $kT$ to each mode through the equipartition theorem. Multiplying the density of modes by this average energy gives the Rayleigh-Jeans law:
+Classical statistical mechanics assigns an average energy kT to each mode through the equipartition theorem. Multiplying the density of modes by this average energy gives the Rayleigh-Jeans law:
 
 $$
 u_\nu^{\mathrm{RJ}}(T)
@@ -141,7 +142,7 @@ u_\nu^{\mathrm{RJ}}(T)
 \frac{8\pi\nu^2kT}{c^3}.
 $$
 
-At low frequencies this formula agrees with observation. At high frequencies it grows as $\nu^2$. Integrating it over all frequencies gives
+At low frequencies this formula agrees with observation. At high frequencies it grows as ν². Integrating it over all frequencies gives
 
 $$
 \int_0^\infty
@@ -152,7 +153,9 @@ $$
 
 The divergence became known as the ultraviolet catastrophe. It does not describe an experimentally observed release of infinite energy; it shows that the combination of classical mode counting and equipartition cannot represent the equilibrium spectrum at all frequencies.
 
-![Comparison between the Rayleigh-Jeans law and Planck's law]({{ "/images/plank.png" | relative_url }}){: width="600px" .center}
+![Planck and Rayleigh–Jeans spectral energy densities per wavelength at 5000 K, in physical units]({{ "/images/plank.png" | relative_url }}){: width="900px" .center}
+
+The plotted curves use the same physical units and no relative scaling. In wavelength form the classical expression is uλ = 8πkT/λ⁴. It is everywhere greater than Planck’s expression and approaches it in the long-wavelength limit.
 
 </div>
 
@@ -160,7 +163,7 @@ The divergence became known as the ultraviolet catastrophe. It does not describe
 
 <h2>Planck's Hypothesis</h2>
 
-Planck modeled the exchange of energy between the electromagnetic field and resonators in the cavity walls. For a resonator of frequency $\nu$, he introduced discrete energy values
+Planck introduced energy elements proportional to frequency in 1900. The full Rayleigh–Jeans derivation followed in 1905, so the order of explanation here is conceptual rather than chronological. The following calculation is a modern statistical presentation of the thermal energy levels of a resonator of frequency ν:
 
 $$
 E_n=nh\nu,
@@ -168,9 +171,9 @@ E_n=nh\nu,
 n=0,1,2,\ldots,
 $$
 
-where $h$ is Planck's constant.
+where h is Planck’s constant, k in the formulas below is Boltzmann’s constant, and c is the speed of light in vacuum. A quantum harmonic oscillator also has a zero-point contribution hν/2. That constant offset is excluded here because these formulas describe the thermal radiation energy.
 
-The Boltzmann factor assigns the level $E_n$ a weight proportional to
+The Boltzmann factor assigns the level Eₙ a weight proportional to
 
 $$
 e^{-E_n/(kT)}
@@ -209,7 +212,7 @@ $$
 {e^{h\nu/(kT)}-1}.
 $$
 
-Unlike the classical value $kT$, this average energy decreases exponentially when $h\nu$ is large compared with $kT$. High-frequency modes are consequently suppressed.
+Unlike the classical value kT, this average energy decreases exponentially when hν is large compared with kT. High-frequency modes are consequently suppressed.
 
 </div>
 
@@ -237,7 +240,7 @@ u_\lambda(T)
 {e^{hc/(\lambda kT)}-1}.
 $$
 
-The two formulas describe the same radiation field through different spectral variables. Their graphs have different maxima because the density changes under the transformation from $\nu$ to $\lambda$.
+The two formulas describe the same radiation field through different spectral variables. Their graphs have different maxima because the density changes under the transformation from ν to λ.
 
 Planck's constant is
 
@@ -285,7 +288,7 @@ $$
 h\nu\gg kT,
 $$
 
-the denominator is approximately $e^{h\nu/(kT)}$, and
+the denominator is approximately e<sup>hν/(kT)</sup>, and
 
 $$
 u_\nu(T)
@@ -302,15 +305,19 @@ This is Wien's high-frequency form. Planck's expression therefore contains the s
 
 <h2>From a Spectral Problem to Quantum Theory</h2>
 
-The blackbody problem did not arise because classical physics lacked equations for radiation. The difficulty came from applying classical statistical assumptions to the electromagnetic modes of a cavity. Mode counting produced the factor $\nu^2$; equipartition assigned the same mean energy $kT$ to every mode; together they led to a divergent spectrum.
+The blackbody problem did not arise because classical physics lacked equations for radiation. The difficulty came from applying classical statistical assumptions to the electromagnetic modes of a cavity. Mode counting produced the factor ν²; equipartition assigned the same mean energy kT to every mode; together they led to a divergent spectrum.
 
-Planck changed the statistical distribution of energy by introducing the scale $h\nu$. The agreement with the observed spectrum showed that this modification could not be confined to a numerical correction. It required a different account of the relation between matter, radiation, and energy exchange, which subsequent developments transformed into quantum theory.
+Planck changed the statistical distribution of energy by introducing the scale hν. The agreement with the observed spectrum showed that this modification could not be confined to a numerical correction. It required a different account of the relation between matter, radiation, and energy exchange, which subsequent developments transformed into quantum theory.
 
 </div>
 
 <div class="content-box">
 
-<h2>Explore Quantum Physics</h2>
+<h2>References</h2>
+
+- M. Planck, [“Ueber das Gesetz der Energieverteilung im Normalspectrum”](https://doi.org/10.1002/andp.19013090310), *Annalen der Physik* 4 (1901), 553–563.
+- A. Einstein, [“Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt”](https://doi.org/10.1002/andp.19053220607), *Annalen der Physik* 17 (1905), 132–148.
+
 
 [← Back to Quantum Physics]({{ "/physics/quantum-physics/" | relative_url }})
 
