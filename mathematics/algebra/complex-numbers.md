@@ -79,7 +79,7 @@ $$
 ## Theoretical Recalls
 
 The idea of complex numbers began to emerge around the 16th century, when Italian algebraists attempted to solve algebraic equations.  
-Rafael Bombelli’s *L’Algebra* (1572) gave systematic rules for calculating with square roots of negative numbers. The designation *imaginary* appears later in Descartes’ *La Géométrie* (1637). The algebraic calculations and their geometric interpretation developed over different stages; introducing a name did not itself supply a foundation.  
+Rafael Bombelli’s *L’Algebra* (1572) gave systematic rules for calculating with square roots of negative numbers. The designation *imaginary* appears later in Descartes’ *La Géométrie* (1637). Their geometric interpretation was developed further in the late eighteenth and early nineteenth centuries.  
 One of the most important theorems based on complex numbers is the **Fundamental Theorem of Algebra**.
 
 Given z = x + iy ∈ ℂ, the most important formulas are:
