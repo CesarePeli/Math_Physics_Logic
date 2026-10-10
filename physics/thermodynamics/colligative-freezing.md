@@ -129,9 +129,9 @@ $$
 
 ## Notes
 
-- Complete dissociation gives the ideal estimate i = 2. At the calculated molality, 0.855 mol kg⁻¹, the solution is not in the very dilute limit, so −3.2 °C is an estimate rather than a measured freezing point. Deviations depend on solvent activity and ionic interactions; they cannot be attributed to ion pairing alone.  
-- In sufficiently dilute solutions, colligative measurements can be used to estimate molar masses or dissociation, provided the relevant solution model is justified.  
-- Sodium chloride is used for road de-icing within a limited temperature range. Engine coolants generally use glycol–water mixtures; the same dilute-solution formula does not describe every coolant composition.  
+- Complete dissociation gives the ideal estimate i = 2. In real solutions, ionic interactions can change the effective van ’t Hoff factor.  
+- Colligative measurements can be used to estimate molar masses or the degree of dissociation in dilute solutions.  
+- Salt lowers the freezing point of water, which is the basis of road de-icing. Engine antifreeze generally uses glycol–water mixtures.  
 
 </div>
 

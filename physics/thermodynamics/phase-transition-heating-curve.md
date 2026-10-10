@@ -38,8 +38,6 @@ last_modified_at: 2026-10-10
 
 ## Exercise
 
-Use approximately atmospheric pressure, neglect heat losses, and treat the quoted specific heats as constant over the respective temperature intervals.
-
 Calculate the total heat required to bring **50.0 g of ice** from **–10.0 °C** to liquid water at **25.0 °C**.  
 
 Given data:  

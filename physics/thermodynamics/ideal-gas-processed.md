@@ -40,11 +40,7 @@ $$
 
 > **Sign convention reminder.** Here wₒₙ>0 denotes work done on the gas, so compression gives positive work. Texts that define work as work done by the gas use the opposite sign.
 
-> **Validity conditions.** The equation of state and internal-energy statement assume an ideal gas. The stated work formula requires a reversible isothermal path. The entropy formula requires equal initial and final temperatures; because entropy is a state function, that value also applies to an irreversible path with the same endpoints. For unequal endpoint temperatures, a thermal contribution must be included:
-
-$$
-\Delta S=n\int_{T_1}^{T_2}\frac{C_{V,m}(T)}{T}\,dT+nR\ln\!\left(\frac{V_2}{V_1}\right).
-$$
+> **Validity conditions.** The work formula applies to a reversible isothermal path. The entropy formula applies to ideal-gas states at the same temperature, regardless of the path between them.
 
 </div>
 
