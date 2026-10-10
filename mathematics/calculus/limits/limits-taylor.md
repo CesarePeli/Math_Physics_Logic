@@ -1,14 +1,14 @@
 ---
 layout: default
-date: 2026-08-29
+date: 2026-10-10
 original_date: 2025-08-30
-title: "Limits Using Taylor Expansions: Formulas and Solved Examples"
-last_modified_at: 2026-10-09
+title: "Limits Using Taylor Expansions: Original Solved Exercises"
+last_modified_at: 2026-10-10
 permalink: /mathematics/calculus/limits/limits-taylor/
 redirect_from:
   - /university/math/calculus-1/limits-taylor/
 background_image: "/images/limiti.png"
-description: "Evaluate limits using Taylor and Maclaurin expansions: formulas, little-o rules and 15 solved examples, including fourth- and eighth-order cancellations."
+description: "Complete Taylor and Maclaurin theory with fifteen original university-level limits, composite expansions, cancellation and parameters."
 area: mathematics
 topic: calculus
 subtopic: limits
@@ -17,152 +17,142 @@ level: university
 content_type: solved-exercises
 ---
 
+# Limits Using Taylor Expansions: Original Solved Exercises
+
+
 <div class="content-box">
 
-# Limits Using Taylor Expansions: Formulas and Solved Examples
-
-Taylor expansions turn many indeterminate limits into algebraic calculations. The essential step is to expand each function far enough to identify the first nonzero term that remains after cancellation.
-
-This page collects the Maclaurin formulas most often used in limits, the main rules of little-o notation, and fifteen solved examples involving exponential, logarithmic, and trigonometric functions.
-
-## How to Evaluate Limits Using Taylor Expansions
-
-If $f$ is sufficiently differentiable near $x_0$, its Taylor expansion at $x_0$ is:
-
-$$
-f(x)
-=
-f(x_0)
-+
-\frac{f'(x_0)}{1!}(x-x_0)
-+
-\frac{f''(x_0)}{2!}(x-x_0)^2
-+
-\dots
-+
-\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n
-+
-o((x-x_0)^n).
-$$
-
-If $x_0=0$, we obtain the **Maclaurin expansion**.
-
-### Rules for Little-o Notation
-
-$$
-o(x^m)+o(x^m)=o(x^m)
-$$
-
-$$
-o(x^m)\cdot o(x^n)=o(x^{m+n})
-$$
-
-$$
-o(x^n)+o(x^m)=o(x^{\min\{m,n\}})
-$$
-
-$$
-x^n\cdot o(x^m)=o(x^{n+m})
-$$
-
-For any nonzero constant $C$, $C\,o(x^n)=o(x^n)$.
-
-### Taylor and Maclaurin Expansions Commonly Used in Limits
-
-Up to the relevant order:
-
-$$
-(1+x)^\alpha
-=
-1+\alpha x
-+
-\frac{\alpha(\alpha-1)}{2!}x^2
-+
-\dots
-+
-o(x^n)
-$$
-
-$$
-e^x
-=
-1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)
-$$
-
-$$
-\log(1+x)
-=
-x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+o(x^4)
-$$
-
-$$
-\sin x
-=
-x-\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)
-$$
-
-$$
-\cos x
-=
-1-\frac{x^2}{2}+\frac{x^4}{4!}+o(x^4)
-$$
-
-$$
-\tan x
-=
-x+\frac{x^3}{3}+\frac{2}{15}x^5+o(x^5)
-$$
-
-**Author’s note:**  
-The expansions must be truncated only after ensuring the approximation order is sufficient to determine the limit. A common mistake is cutting the series too early.
+The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
 
 </div>
 
 <div class="content-box">
 
-## How Many Taylor Terms Do You Need?
+## Complete Taylor and Maclaurin Recall
 
-Start from the denominator's order, then check which numerator terms cancel. Expand far enough that the remainder, after division, tends to zero. A zero coefficient is a reason to continue the expansion, not evidence that the limit is zero.
-
-For example, first-order approximations alone cannot determine this limit:
+Taylor expansions are useful because they replace transcendental functions by polynomial expressions, with a remainder that records the approximation order. For a function with the required derivatives near x₀, Taylor's formula with Peano remainder is:
 
 $$
-\lim_{x\to0}\frac{e^x-1-x}{x^2}.
+f(x)=f(x_0)+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2
++\cdots+\frac{f^{(n)}(x_0)}{n!}(x-x_0)^n+o((x-x_0)^n).
 $$
 
-Keep the quadratic term and a remainder smaller than x²:
+At x₀ = 0 this is called a Maclaurin expansion.
+
+### Algebra of Little-o Terms
 
 $$
-e^x-1-x=\frac{x^2}{2}+o(x^2).
-$$
-
-After division, the remainder tends to zero:
-
-$$
-\frac{e^x-1-x}{x^2}=\frac12+o(1).
+o(x^m)+o(x^m)=o(x^m).
 $$
 
 $$
-\frac12
-$$
-
-### Taylor or L'Hôpital?
-
-For the same quotient, both numerator and denominator tend to zero. The functions are differentiable near zero and the denominator derivatives used below are nonzero on a punctured neighborhood. Two applications of L'Hôpital's rule give:
-
-$$
-\lim_{x\to0}\frac{e^x-1-x}{x^2}
-=\lim_{x\to0}\frac{e^x-1}{2x}
-=\lim_{x\to0}\frac{e^x}{2}.
+o(x^m)o(x^n)=o(x^{m+n}).
 $$
 
 $$
-\frac12
+o(x^n)+o(x^m)=o(x^{\min\{m,n\}}).
 $$
 
-Taylor makes the cancellation and surviving order explicit. L'Hôpital can be shorter when successive differentiation simplifies the quotient. Check its hypotheses before applying it; it is not a rule for arbitrary quotients.
+$$
+x^n o(x^m)=o(x^{n+m}).
+$$
 
-## Solved Limits Using Taylor Expansions
+$$
+o(x^n+o(x^n))=o(x^n).
+$$
+
+The last identity is the composition rule used when the argument of a remainder itself has an asymptotic expansion.
+
+### All Maclaurin Formulas in the Source
+
+$$
+(1+x)^\alpha=1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2
++\cdots+\binom{\alpha}{n}x^n+o(x^n).
+$$
+
+$$
+e^x=1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n).
+$$
+
+For a > 0:
+
+$$
+a^x=1+x\log a+\frac{x^2}{2!}\log^2 a
++\cdots+\frac{x^n}{n!}\log^n a+o(x^n).
+$$
+
+$$
+\log(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}
++\cdots+(-1)^{n+1}\frac{x^n}{n}+o(x^n).
+$$
+
+$$
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}
++\cdots+(-1)^n\frac{x^{2n+1}}{(2n+1)!}+o(x^{2n+2}).
+$$
+
+$$
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}
++\cdots+(-1)^n\frac{x^{2n}}{(2n)!}+o(x^{2n+1}).
+$$
+
+$$
+\tan x=x+\frac{x^3}{3}+\frac{2x^5}{15}
++\frac{17x^7}{315}+\frac{62x^9}{2835}+o(x^{10}).
+$$
+
+$$
+\arctan x=x-\frac{x^3}{3}+\frac{x^5}{5}
++\cdots+(-1)^n\frac{x^{2n+1}}{2n+1}+o(x^{2n+2}).
+$$
+
+$$
+\arcsin x=x+\frac{x^3}{6}+\frac{3x^5}{40}
++\cdots+\frac{(2n)!}{4^n(n!)^2(2n+1)}x^{2n+1}+o(x^{2n+2}).
+$$
+
+$$
+\arccos x=\frac\pi2-x-\frac{x^3}{6}-\frac{3x^5}{40}
+-\cdots-\frac{(2n)!}{4^n(n!)^2(2n+1)}x^{2n+1}+o(x^{2n+2}).
+$$
+
+$$
+\sinh x=x+\frac{x^3}{3!}+\frac{x^5}{5!}
++\cdots+\frac{x^{2n+1}}{(2n+1)!}+o(x^{2n+2}).
+$$
+
+$$
+\cosh x=1+\frac{x^2}{2!}+\frac{x^4}{4!}
++\cdots+\frac{x^{2n}}{(2n)!}+o(x^{2n+1}).
+$$
+
+**Editorial corrections.** The source prints 17/325 in the tangent expansion; the coefficient is 17/315. In the inverse-sine coefficient, the denominator is (n!)². All nonconstant terms in the inverse-cosine expansion have negative signs. These corrections preserve the original formulas' intended order and scope.
+
+### L'Hôpital's Theorem
+
+Let f and g be defined on a punctured neighborhood of c. Suppose both tend to zero, or both are infinite, and both are differentiable there with g′ nonzero. If the following limit exists, finite or infinite:
+
+$$
+\lim_{x\to c}\frac{f'(x)}{g'(x)}=L,
+$$
+
+then:
+
+$$
+\lim_{x\to c}\frac{f(x)}{g(x)}=L.
+$$
+
+The theorem also applies to one-sided limits and limits at infinity under the corresponding hypotheses. **Editorial correction:** the conclusion need not be finite; the source's wording accidentally excludes its own infinite-limit case.
+
+[**Original exercises using L'Hôpital →**]({{ "/mathematics/calculus/limits/limits-hopital/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Original Worked Exercises
+
+The first ten exercises below replace the earlier elementary substitutes. The five source exercises added previously are retained.
 
 </div>
 
@@ -170,42 +160,35 @@ Taylor makes the cancellation and surviving order explicit. L'Hôpital can be sh
 
 ### Exercise 1
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2899. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{e^x-1-x}{x^2}
+\lim_{x \to 0}\frac{\sin x -\frac{1}{2}x+x^{3}}{\tan x -1+ \cos x}.
 $$
+
+
 
 **Solution.**
 
-Using the Maclaurin expansion:
-
+Expand numerator and denominator to third order:
 $$
-e^x
-=
-1+x+\frac{x^2}{2}+o(x^2).
+\sin x-\frac x2+x^3=\frac x2+\frac56x^3+o(x^3).
 $$
-
-Therefore:
-
 $$
-e^x-1-x
-=
-\frac{x^2}{2}+o(x^2).
+\tan x-1+\cos x=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3).
+$$
+Factor x in both expressions:
+$$
+\frac{\frac12+\frac56x^2+o(x^2)}{1-\frac x2+\frac{x^2}{3}+o(x^2)}\longrightarrow\frac12.
 $$
 
-Dividing by x²:
+**Final result**
 
 $$
-\frac{e^x-1-x}{x^2}
-=
-\frac{1}{2}+o(1).
+\frac12
 $$
-
-**Final Result**
-
-$$
-\frac{1}{2}
-$$
-
 
 </div>
 
@@ -213,42 +196,33 @@ $$
 
 ### Exercise 2
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2907. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{\log(1+x)-x}{x^2}
+\lim_{x \to 0}\frac{\sinh x -\sin x}{x^{3}}.
 $$
+
+
 
 **Solution.**
 
-Using:
-
+The linear terms cancel:
 $$
-\log(1+x)
-=
-x-\frac{x^2}{2}+o(x^2),
+\sinh x-\sin x
+=\left(x+\frac{x^3}{6}+o(x^3)\right)
+-\left(x-\frac{x^3}{6}+o(x^3)\right).
 $$
-
-we obtain:
-
 $$
-\log(1+x)-x
-=
--\frac{x^2}{2}+o(x^2).
+\frac{\sinh x-\sin x}{x^3}=\frac{x^3/3+o(x^3)}{x^3}\longrightarrow\frac13.
 $$
 
-Therefore:
+**Final result**
 
 $$
-\frac{\log(1+x)-x}{x^2}
-=
--\frac{1}{2}+o(1).
+\frac13
 $$
-
-**Final Result**
-
-$$
--\frac{1}{2}
-$$
-
 
 </div>
 
@@ -256,42 +230,39 @@ $$
 
 ### Exercise 3
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2930. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{\sin x-x}{x^3}
+\lim_{x \to 0}\frac{(2+\cos(3x)-3 \cosh x)^{4}}{\log(1+x^{2})}.
 $$
+
+
 
 **Solution.**
 
-Using:
-
+Use the quadratic terms before taking the fourth power:
 $$
-\sin x
-=
-x-\frac{x^3}{6}+o(x^3),
+2+\cos(3x)-3\cosh x
+=2+1-\frac92x^2-3-\frac32x^2+o(x^2)
+=-6x^2+o(x^2).
 $$
-
-we obtain:
-
 $$
-\sin x-x
-=
--\frac{x^3}{6}+o(x^3).
+\log(1+x^2)=x^2-\frac{x^4}{2}+o(x^4).
+$$
+$$
+\frac{(-6x^2+o(x^2))^4}{x^2-x^4/2+o(x^4)}
+=\frac{6^4x^8+o(x^8)}{x^2(1-x^2/2+o(x^2))}\longrightarrow0.
 $$
 
-Therefore:
+**Editorial correction.** The coefficient of x⁴ in log(1+x²) is −1/2, not −1/3 as printed in the solution.
+
+**Final result**
 
 $$
-\frac{\sin x-x}{x^3}
-=
--\frac{1}{6}+o(1).
+0
 $$
-
-**Final Result**
-
-$$
--\frac{1}{6}
-$$
-
 
 </div>
 
@@ -299,42 +270,39 @@ $$
 
 ### Exercise 4
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2946. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{1-\cos x}{x^2}
+\lim_{x \to 0}(\log(1+x)+\cos ^{2}x)^{\frac{1}{x}}
 $$
+
+
 
 **Solution.**
 
-Using:
-
+The base is positive near zero. Write the expression as an exponential:
 $$
-\cos x
-=
-1-\frac{x^2}{2}+o(x^2),
+(\log(1+x)+\cos^2x)^{1/x}
+=\exp\!\left(\frac{\log(\log(1+x)+\cos^2x)}{x}\right).
 $$
-
-we obtain:
-
 $$
-1-\cos x
-=
-\frac{x^2}{2}+o(x^2).
+\log(1+x)+\cos^2x=1+x+o(x).
 $$
-
-Therefore:
-
+The composition rule for little-o terms gives:
 $$
-\frac{1-\cos x}{x^2}
-=
-\frac{1}{2}+o(1).
+\log(1+x+o(x))=x+o(x)+o(x+o(x))=x+o(x).
+$$
+$$
+\frac{\log(\log(1+x)+\cos^2x)}x\longrightarrow1.
 $$
 
-**Final Result**
+**Final result**
 
 $$
-\frac{1}{2}
+e
 $$
-
 
 </div>
 
@@ -342,50 +310,45 @@ $$
 
 ### Exercise 5
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2966. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{e^{2x}-1-2x}{x^2}
+\lim_{x \to 1^{+}}\frac{\sin (\sqrt{x-1})-\sqrt{\log x}}{x-1}.
 $$
+
+
 
 **Solution.**
 
-Using the exponential expansion with argument 2x:
-
+Set h = x − 1 > 0. Expand the two radicals to the same order:
 $$
-e^{2x}
-=
-1+2x+\frac{(2x)^2}{2}+o(x^2).
+\sin\sqrt h=\sqrt h-\frac{h^{3/2}}6+o(h^{3/2}).
 $$
-
-Hence:
-
 $$
-e^{2x}
-=
-1+2x+2x^2+o(x^2).
+\log(1+h)=h-\frac{h^2}{2}+o(h^2).
 $$
-
-Therefore:
-
 $$
-e^{2x}-1-2x
-=
-2x^2+o(x^2).
+\sqrt{\log(1+h)}=\sqrt h\left(1-\frac h2+o(h)\right)^{1/2}.
+$$
+$$
+\sqrt{\log(1+h)}=\sqrt h\left(1-\frac h4+o(h)\right)
+=\sqrt h-\frac{h^{3/2}}4+o(h^{3/2}).
+$$
+$$
+\frac{\sin\sqrt h-\sqrt{\log(1+h)}}h
+=\frac{h^{3/2}/12+o(h^{3/2})}h
+=\frac{\sqrt h}{12}+o(\sqrt h)\longrightarrow0.
 $$
 
-Dividing by x²:
+**Editorial correction.** The source has inconsistent remainder exponents in its last lines; both numerator remainders are o(h³ᐟ²).
+
+**Final result**
 
 $$
-\frac{e^{2x}-1-2x}{x^2}
-=
-2+o(1).
+0
 $$
-
-**Final Result**
-
-$$
-2
-$$
-
 
 </div>
 
@@ -393,42 +356,42 @@ $$
 
 ### Exercise 6
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2985. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{\tan x-x}{x^3}
+\lim_{x \to 0}\frac{\sin (2x) e^{-x}-\log(1+2x)}{x^{3}}.
 $$
+
+
 
 **Solution.**
 
-Using:
-
+Expand both factors and the logarithm to third order:
 $$
-\tan x
-=
-x+\frac{x^3}{3}+o(x^3),
+\sin(2x)=2x-\frac43x^3+o(x^3).
 $$
-
-we obtain:
-
 $$
-\tan x-x
-=
-\frac{x^3}{3}+o(x^3).
+e^{-x}=1-x+\frac{x^2}{2}-\frac{x^3}{6}+o(x^3).
 $$
-
-Therefore:
-
 $$
-\frac{\tan x-x}{x^3}
-=
-\frac{1}{3}+o(1).
+\log(1+2x)=2x-2x^2+\frac83x^3+o(x^3).
+$$
+$$
+\sin(2x)e^{-x}=2x-2x^2+x^3-\frac43x^3+o(x^3).
+$$
+Subtracting cancels the first two orders:
+$$
+\frac{\sin(2x)e^{-x}-\log(1+2x)}{x^3}
+=\frac{-3x^3+o(x^3)}{x^3}\longrightarrow-3.
 $$
 
-**Final Result**
+**Final result**
 
 $$
-\frac{1}{3}
+-3
 $$
-
 
 </div>
 
@@ -436,84 +399,43 @@ $$
 
 ### Exercise 7
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 2995. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{\log(1+x)-\sin x}{x^3}
+\lim_{x \to 0}\frac{e^{x-x^{2}}-\log(1+x)-1}{x-\sin x}.
 $$
+
+
 
 **Solution.**
 
-Use the expansions:
-
+Expand the exponential at the composite argument x − x²:
 $$
-\log(1+x)
-=
-x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3),
+e^{x-x^2}=1+x-x^2+\frac{(x-x^2)^2}{2}+\frac{(x-x^2)^3}{6}+o(x^3).
 $$
-
-and:
-
 $$
-\sin x
-=
-x-\frac{x^3}{6}+o(x^3).
+e^{x-x^2}=1+x-\frac{x^2}{2}-\frac56x^3+o(x^3).
 $$
-
-Subtracting:
-
 $$
-\log(1+x)-\sin x
-=
--\frac{x^2}{2}
-+
-\frac{x^3}{2}
-+
-o(x^3).
+\log(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3).
+$$
+$$
+e^{x-x^2}-\log(1+x)-1=-\frac76x^3+o(x^3).
+$$
+$$
+x-\sin x=\frac{x^3}{6}+o(x^3).
+$$
+$$
+\frac{-7x^3/6+o(x^3)}{x^3/6+o(x^3)}\longrightarrow-7.
 $$
 
-Dividing by x³:
+**Final result**
 
 $$
-\frac{\log(1+x)-\sin x}{x^3}
-=
--\frac{1}{2x}
-+
-\frac{1}{2}
-+
-o(1).
+-7
 $$
-
-As x → 0⁺:
-
-$$
--\frac{1}{2x}
-+
-\frac{1}{2}
-+
-o(1)
-\to
--\infty.
-$$
-
-As x → 0⁻:
-
-$$
--\frac{1}{2x}
-+
-\frac{1}{2}
-+
-o(1)
-\to
-+\infty.
-$$
-
-The two one-sided limits are different.
-
-**Final Result**
-
-$$
-\text{The two-sided limit does not exist.}
-$$
-
 
 </div>
 
@@ -521,56 +443,37 @@ $$
 
 ### Exercise 8
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 3014. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{e^x-\cos x}{x}
+\lim_{x \to 0}\frac{5^{1+\tan^{2}x}-5}{1-\cos x}.
 $$
+
+
 
 **Solution.**
 
-Use:
-
+Factor the constant exponential and use the tangent expansion:
 $$
-e^x
-=
-1+x+\frac{x^2}{2}+o(x^2),
+5^{1+\tan^2x}-5=5\left(e^{(\log5)\tan^2x}-1\right).
 $$
-
-and:
-
 $$
-\cos x
-=
-1-\frac{x^2}{2}+o(x^2).
+e^{(\log5)\tan^2x}-1=(\log5)\tan^2x+o(\tan^2x).
+$$
+$$
+\tan^2x=x^2+o(x^2),\qquad1-\cos x=\frac{x^2}{2}+o(x^2).
+$$
+$$
+\frac{5(\log5)x^2+o(x^2)}{x^2/2+o(x^2)}\longrightarrow10\log5.
 $$
 
-Subtracting:
+**Final result**
 
 $$
-e^x-\cos x
-=
-x+x^2+o(x^2).
+10\log5
 $$
-
-Dividing by x:
-
-$$
-\frac{e^x-\cos x}{x}
-=
-1+x+o(x).
-$$
-
-Therefore:
-
-$$
-1+x+o(x)\to1.
-$$
-
-**Final Result**
-
-$$
-1
-$$
-
 
 </div>
 
@@ -578,62 +481,38 @@ $$
 
 ### Exercise 9
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 3023. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{\sin x-\tan x}{x^3}
+\lim_{x \to 0}\frac{x^{2}-\sin^{2} x}{x^{3}(e^{x}-\cos x)}.
 $$
+
+
 
 **Solution.**
 
-Use:
-
+Square the sine expansion before subtracting:
 $$
-\sin x
-=
-x-\frac{x^3}{6}+o(x^3),
+\sin^2x=\left(x-\frac{x^3}{6}+o(x^3)\right)^2
+=x^2-\frac{x^4}{3}+o(x^4).
 $$
-
-and:
-
 $$
-\tan x
-=
-x+\frac{x^3}{3}+o(x^3).
+e^x-\cos x
+=1+x+\frac{x^2}{2}+o(x^2)-1+\frac{x^2}{2}+o(x^2)
+=x+x^2+o(x^2).
 $$
-
-Subtracting:
-
 $$
-\sin x-\tan x
-=
--\frac{x^3}{6}
--
-\frac{x^3}{3}
-+
-o(x^3).
+\frac{x^2-\sin^2x}{x^3(e^x-\cos x)}
+=\frac{x^4/3+o(x^4)}{x^4+x^5+o(x^5)}\longrightarrow\frac13.
 $$
 
-Hence:
+**Final result**
 
 $$
-\sin x-\tan x
-=
--\frac{x^3}{2}+o(x^3).
+\frac13
 $$
-
-Therefore:
-
-$$
-\frac{\sin x-\tan x}{x^3}
-=
--\frac{1}{2}+o(1).
-$$
-
-**Final Result**
-
-$$
--\frac{1}{2}
-$$
-
 
 </div>
 
@@ -641,80 +520,40 @@ $$
 
 ### Exercise 10
 
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 3129. -->
+
+Evaluate the following limit:
+
 $$
-\lim_{x\to0} \frac{e^x-\sin x-1}{x}
+\lim_{x \to 1}\biggl(\frac{x}{x-1}-\frac{1}{\log x}\biggl).
 $$
+
+
 
 **Solution.**
 
-Use:
-
+Put y = x − 1, so x = 1 + y:
 $$
-e^x
-=
-1+x+\frac{x^2}{2}+\frac{x^3}{6}+o(x^3),
+\frac{x}{x-1}-\frac1{\log x}
+=\frac{(1+y)\log(1+y)-y}{y\log(1+y)}.
 $$
-
-and:
-
 $$
-\sin x
-=
-x-\frac{x^3}{6}+o(x^3).
+\log(1+y)=y-\frac{y^2}{2}+o(y^2).
 $$
-
-Therefore:
-
 $$
-e^x-\sin x-1
-=
-\frac{x^2}{2}
-+
-\frac{x^3}{3}
-+
-o(x^3).
+(1+y)\log(1+y)-y
+=y+y^2-\frac{y^2}{2}+o(y^2)-y
+=\frac{y^2}{2}+o(y^2).
+$$
+$$
+\frac{y^2/2+o(y^2)}{y^2(1-y/2+o(y))}\longrightarrow\frac12.
 $$
 
-Dividing by x:
+**Final result**
 
 $$
-\frac{e^x-\sin x-1}{x}
-=
-\frac{x}{2}
-+
-\frac{x^2}{3}
-+
-o(x^2).
+\frac12
 $$
-
-As x → 0:
-
-$$
-\frac{x}{2}
-+
-\frac{x^2}{3}
-+
-o(x^2)
-\to0.
-$$
-
-**Final Result**
-
-$$
-0
-$$
-
-
-</div>
-
-
-
-
-<div class="content-box">
-
-## Further Taylor Limits from the Exercise Book
-
-These additional exercises and their solutions are translated from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. No new exercise statements have been introduced.
 
 </div>
 
@@ -917,20 +756,9 @@ $$
 
 </div>
 
+
 <div class="content-box">
 
-## Continue Exploring Limits
-
-Taylor expansions are particularly useful when several terms cancel and the dominant order of an expression is not immediately visible.
-
-The key is to expand each function **far enough to identify the first nonzero term that survives the cancellation**.
-
-[**Explore all Limits resources →**]({{ "/mathematics/calculus/limits/" | relative_url }})
-
-[**Fundamental and Notable Limits →**]({{ "/mathematics/calculus/limits/fundamental-limits-examples/" | relative_url }})
-
-[**Limits with L’Hôpital’s Rule →**]({{ "/mathematics/calculus/limits/limits-hopital/" | relative_url }})
-
-[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>

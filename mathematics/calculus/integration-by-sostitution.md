@@ -1,14 +1,14 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
-date: 2026-08-24
+last_modified_at: 2026-10-10
+date: 2026-10-10
 original_date: 2025-08-29
-title: "Solved Exercises — Integration by Substitution"
+title: "Integration by Substitution: Original University Exercises"
 permalink: /mathematics/calculus/integration-by-substitution/
 redirect_from:
   - /university/math/calculus-1/integration-by-substitution/
 background_image: "/images/integrali.png"
-description: "Solved integration by substitution exercises with step-by-step changes of variables, including logarithmic, trigonometric, and hyperbolic substitutions."
+description: "Six original university exercises using Euler and trigonometric substitutions, partial fractions and integration by parts, with original bounds."
 area: mathematics
 topic: calculus
 subtopic: integration-by-substitution
@@ -16,9 +16,18 @@ level: university
 content_type: solved-exercises
 ---
 
+# Integration by Substitution: Original University Exercises
+
+
 <div class="content-box">
 
-# Integration by Substitution — Theory and Solved Exercises
+The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+
+</div>
+
+
+<div class="content-box">
+
 
 ## Theoretical Recall
 
@@ -132,874 +141,266 @@ $$
 
 </div>
 
+
 <div class="content-box">
 
-### Exercise 1 — Linear Substitution
+## Original Worked Exercises
 
-Evaluate:
-
-$$
-\int(2x+1)^5\,dx.
-$$
-
-**Solution.**
-
-Set:
-
-$$
-u=2x+1.
-$$
-
-Then:
-
-$$
-du=2\,dx.
-$$
-
-Therefore:
-
-$$
-dx=\frac12\,du.
-$$
-
-Substituting:
-
-$$
-\int(2x+1)^5\,dx
-=
-\frac12\int u^5\,du.
-$$
-
-Integrating:
-
-$$
-\frac12\int u^5\,du
-=
-\frac12\frac{u^6}{6}+C.
-$$
-
-Thus:
-
-$$
-\frac{u^6}{12}+C.
-$$
-
-Returning to x:
-
-$$
-\frac{(2x+1)^6}{12}+C.
-$$
-
-**Final Result**
-
-$$
-\frac{(2x+1)^6}{12}+C
-$$
-
+Original bounds and combined methods are retained. The previous indefinite-only version of the improper integral is replaced by the complete problem on the Improper Integrals page.
 
 </div>
 
 <div class="content-box">
 
-### Exercise 2 — Logarithmic Substitution
+### Exercise 1
 
-Evaluate, for x > 1:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6062. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{1}{x\log x}\,dx.
+\int \frac{1}{\sqrt{x^{2}-2x}} \, dx.
 $$
+
+
 
 **Solution.**
 
-Set:
-
+The real domain is x < 0 or x > 2. Use the source's Euler substitution:
 $$
-u=\log x.
+\sqrt{x^2-2x}=x+t.
 $$
-
-Then:
-
+Squaring and solving for x gives:
 $$
-du=\frac1x\,dx.
+x=-\frac{t^2}{2(1+t)},\qquad
+dx=-\frac{t^2+2t}{2(1+t)^2}\,dt.
 $$
-
-The integral becomes:
-
 $$
-\int\frac1u\,du.
+\sqrt{x^2-2x}=\frac{t^2+2t}{2(1+t)}.
 $$
-
-Therefore:
-
+Substitute both factors:
 $$
-\int\frac1u\,du
-=
-\log|u|+C.
+\int\frac{dx}{\sqrt{x^2-2x}}
+=-\int\frac{2(1+t)}{t^2+2t}\frac{t^2+2t}{2(1+t)^2}\,dt
+=-\int\frac{dt}{1+t}.
+$$
+$$
+-\int\frac{dt}{1+t}=-\log|1+t|+C.
 $$
 
-Since x > 1:
+**Final result**
 
 $$
-\log x>0.
+-\log|1+\sqrt{x^2-2x}-x|+C
 $$
-
-Thus the absolute value can be omitted:
-
-$$
-\log(\log x)+C.
-$$
-
-**Final Result**
-
-$$
-\log(\log x)+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 3 — Substitution in a Rational Expression
+### Exercise 2
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6130. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{x}{1+x^2}\,dx.
+\int_{0}^{\frac{\pi}{3}} \frac{2 \cos x}{5-4 \cos^{2} x} \, dx.
 $$
+
+
 
 **Solution.**
 
-Set:
-
+First find a primitive. Set t = sin x, with dt = cos x dx, and use cos²x = 1 − sin²x:
 $$
-u=1+x^2.
+\int\frac{2\cos x}{5-4\cos^2x}\,dx
+=2\int\frac{dt}{1+4t^2}
+=\arctan(2t)+C.
 $$
-
-Then:
-
+Restore the variable and evaluate the original bounds:
 $$
-du=2x\,dx.
-$$
-
-Therefore:
-
-$$
-x\,dx=\frac12\,du.
+\left[\arctan(2\sin x)\right]_0^{\pi/3}
+=\arctan\sqrt3-\arctan0.
 $$
 
-The integral becomes:
+**Final result**
 
 $$
-\frac12\int\frac1u\,du.
+\frac\pi3
 $$
-
-Hence:
-
-$$
-\frac12\log|u|+C.
-$$
-
-Since:
-
-$$
-1+x^2>0
-$$
-
-for every real x, we obtain:
-
-$$
-\frac12\log(1+x^2)+C.
-$$
-
-**Final Result**
-
-$$
-\frac12\log(1+x^2)+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 4 — Trigonometric Substitution
+### Exercise 3
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6154. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{1}{\sqrt{1-x^2}}\,dx.
+\int_{\frac{\pi}{4}}^{\frac{\pi}{2}} \frac{\cos x}{\sin^{2} x-2 \sin x} \, dx.
 $$
+
+
 
 **Solution.**
 
-Use the substitution:
-
+Set t = sin x. First integrate the transformed rational function:
 $$
-x=\sin t.
+\int\frac{\cos x}{\sin^2x-2\sin x}\,dx
+=\int\frac{dt}{t(t-2)}.
 $$
-
-Then:
-
+Use partial fractions:
 $$
-dx=\cos t\,dt.
+\frac1{t(t-2)}=\frac At+\frac B{t-2},
+\qquad A+B=0,\quad-2A=1.
 $$
-
-Moreover:
-
 $$
-\sqrt{1-x^2}
-=
-\sqrt{1-\sin^2t}.
+A=-\frac12,\quad B=\frac12,
+\qquad F(t)=-\frac12\log|t|+\frac12\log|t-2|.
 $$
-
-Using:
-
+The bounds in t are √2/2 and one:
 $$
-1-\sin^2t=\cos^2t,
+I=\left[-\frac12\log|\sin x|+\frac12\log|\sin x-2|\right]_{\pi/4}^{\pi/2}.
 $$
 
-and choosing t in the standard range of arcsin, we have:
+**Final result**
 
 $$
-\sqrt{1-\sin^2t}
-=
-\cos t.
+\frac12\log\left(\frac{\sqrt2}{4-\sqrt2}\right)
 $$
-
-Therefore:
-
-$$
-\int
-\frac{\cos t}{\cos t}
-\,dt
-=
-\int1\,dt.
-$$
-
-Thus:
-
-$$
-t+C.
-$$
-
-Since:
-
-$$
-t=\arcsin x,
-$$
-
-we obtain:
-
-$$
-\arcsin x+C.
-$$
-
-**Final Result**
-
-$$
-\arcsin x+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 5 — Tangent Substitution
+### Exercise 4
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6203. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{1}{1+x^2}\,dx.
+\int_{0}^{1} x^{2} e^{x^{\frac{3}{2}}} \,dx.
 $$
+
+
 
 **Solution.**
 
-Set:
-
+Factor x² as x¹ᐟ² x³ᐟ² and put t = x³ᐟ²:
 $$
-x=\tan t.
+dt=\frac32\sqrt x\,dx,
+\qquad I=\frac23\int_0^1te^t\,dt.
 $$
-
-Then:
-
+Integration by parts gives:
 $$
-dx=\sec^2t\,dt.
+\frac23\int te^t\,dt=\frac23\left(te^t-\int e^t\,dt\right)
+=\frac23e^t(t-1)+C.
 $$
-
-Using the identity:
-
 $$
-1+\tan^2t=\sec^2t,
+I=\left[\frac23e^{x^{3/2}}(x^{3/2}-1)\right]_0^1=\frac23.
 $$
 
-the integral becomes:
+**Final result**
 
 $$
-\int
-\frac{\sec^2t}{\sec^2t}
-\,dt.
+\frac23
 $$
-
-Therefore:
-
-$$
-\int1\,dt=t+C.
-$$
-
-Since:
-
-$$
-t=\arctan x,
-$$
-
-we obtain:
-
-$$
-\arctan x+C.
-$$
-
-**Final Result**
-
-$$
-\arctan x+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 6 — Radical of a Sum of Squares
+### Exercise 5
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6214. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{1}{\sqrt{x^2+4}}\,dx.
+\int \frac{x^{3}}{\sqrt{1-x^{2}}} \, dx
 $$
+
+
 
 **Solution.**
 
-Set:
-
+For −1 < x < 1 choose x = sin t with −π/2 < t < π/2, so cos t > 0 and dx = cos t dt:
 $$
-x=2\tan t.
+\int\frac{x^3}{\sqrt{1-x^2}}\,dx
+=\int\frac{\sin^3t}{\cos t}\cos t\,dt
+=\int(1-\cos^2t)\sin t\,dt.
 $$
-
-Then:
-
 $$
-dx=2\sec^2t\,dt.
+\int\sin t\,dt+\int\cos^2t(-\sin t)\,dt
+=-\cos t+\frac{\cos^3t}{3}+C.
 $$
-
-The radical becomes:
-
 $$
-\sqrt{x^2+4}
-=
-\sqrt{4\tan^2t+4}.
+-\sqrt{1-x^2}+\frac{(1-x^2)^{3/2}}3+C
+=-\frac{(2+x^2)\sqrt{1-x^2}}3+C.
 $$
 
-Factor out 4:
+**Editorial correction.** The intermediate factor is 1 − x², not 1 + x² as printed in the source. Its final simplified primitive is correct.
+
+**Final result**
 
 $$
-\sqrt{x^2+4}
-=
-2\sqrt{1+\tan^2t}.
+-\frac{(2+x^2)\sqrt{1-x^2}}3+C
 $$
-
-Using:
-
-$$
-1+\tan^2t=\sec^2t,
-$$
-
-we obtain:
-
-$$
-\sqrt{x^2+4}=2\sec t.
-$$
-
-Therefore:
-
-$$
-\int
-\frac{2\sec^2t}{2\sec t}
-\,dt
-=
-\int\sec t\,dt.
-$$
-
-Recall that:
-
-$$
-\int\sec t\,dt
-=
-\log|\sec t+\tan t|+C.
-$$
-
-From:
-
-$$
-\tan t=\frac{x}{2},
-$$
-
-we have:
-
-$$
-\sec t
-=
-\sqrt{1+\tan^2t}
-=
-\frac{\sqrt{x^2+4}}{2}.
-$$
-
-Therefore:
-
-$$
-\log\left|
-\frac{\sqrt{x^2+4}+x}{2}
-\right|
-+C.
-$$
-
-The constant factor 1/2 inside the logarithm contributes only an additive constant, which can be absorbed into C.
-
-Hence the standard form is:
-
-$$
-\log\left|x+\sqrt{x^2+4}\right|+C.
-$$
-
-**Final Result**
-
-$$
-\log\left|x+\sqrt{x^2+4}\right|+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 7 — Exponential Substitution
+### Exercise 6
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6326. -->
+
+Evaluate the integral:
 
 $$
-\int\frac{e^x}{1+e^{2x}}\,dx.
+\int_{0}^{\frac{\pi}{2}} \cos x \log(1+\sin x) \, dx.
 $$
+
+
 
 **Solution.**
 
-Set:
-
+First integrate by parts:
 $$
-u=e^x.
+I=\left[\sin x\log(1+\sin x)\right]_0^{\pi/2}
+-\int_0^{\pi/2}\frac{\sin x\cos x}{1+\sin x}\,dx.
 $$
-
-Then:
-
+For the remaining primitive put t = sin x:
 $$
-du=e^x\,dx.
+\int\frac{\sin x\cos x}{1+\sin x}\,dx
+=\int\frac t{1+t}\,dt=t-\log|1+t|+C.
 $$
-
-Moreover:
-
 $$
-e^{2x}=u^2.
+I=\left[\sin x\log(1+\sin x)-\sin x+\log(1+\sin x)\right]_0^{\pi/2}.
 $$
 
-Therefore the integral becomes:
+**Final result**
 
 $$
-\int\frac{1}{1+u^2}\,du.
+\log4-1
 $$
-
-Using the standard antiderivative:
-
-$$
-\int\frac{1}{1+u^2}\,du
-=
-\arctan u+C,
-$$
-
-we obtain:
-
-$$
-\arctan u+C.
-$$
-
-Returning to x:
-
-$$
-\arctan(e^x)+C.
-$$
-
-**Final Result**
-
-$$
-\arctan(e^x)+C
-$$
-
 
 </div>
 
 <div class="content-box">
 
-### Exercise 8 — Hyperbolic Substitution
-
-Evaluate, for x > 1:
-
-$$
-\int\frac{1}{\sqrt{x^2-1}}\,dx.
-$$
-
-**Solution.**
-
-Set:
-
-$$
-x=\cosh t.
-$$
-
-Then:
-
-$$
-dx=\sinh t\,dt.
-$$
-
-Using the hyperbolic identity:
-
-$$
-\cosh^2t-\sinh^2t=1,
-$$
-
-we obtain:
-
-$$
-x^2-1
-=
-\cosh^2t-1
-=
-\sinh^2t.
-$$
-
-For the relevant values of t:
-
-$$
-\sqrt{x^2-1}
-=
-\sinh t.
-$$
-
-Therefore:
-
-$$
-\int
-\frac{\sinh t}{\sinh t}
-\,dt
-=
-\int1\,dt.
-$$
-
-Thus:
-
-$$
-t+C.
-$$
-
-Since:
-
-$$
-x=\cosh t,
-$$
-
-we have:
-
-$$
-t=\operatorname{arcosh}(x).
-$$
-
-The inverse hyperbolic cosine satisfies:
-
-$$
-\operatorname{arcosh}(x)
-=
-\log\left(x+\sqrt{x^2-1}\right).
-$$
-
-Therefore:
-
-$$
-\log\left(x+\sqrt{x^2-1}\right)+C.
-$$
-
-**Final Result**
-
-$$
-\log\left(x+\sqrt{x^2-1}\right)+C
-$$
-
+[**Complete improper integral from 2 to infinity →**]({{ "/mathematics/calculus/improper-integrals/" | relative_url }})
 
 </div>
-
-<div class="content-box">
-
-### Exercise 9 — Hyperbolic Substitution with a Radical
-
-Evaluate:
-
-$$
-\int\sqrt{1+x^2}\,dx.
-$$
-
-**Solution.**
-
-Set:
-
-$$
-x=\sinh t.
-$$
-
-Then:
-
-$$
-dx=\cosh t\,dt.
-$$
-
-Using:
-
-$$
-1+\sinh^2t=\cosh^2t,
-$$
-
-we obtain:
-
-$$
-\sqrt{1+x^2}
-=
-\cosh t.
-$$
-
-Therefore:
-
-$$
-\int\sqrt{1+x^2}\,dx
-=
-\int\cosh^2t\,dt.
-$$
-
-Use the identity:
-
-$$
-\cosh^2t
-=
-\frac{1+\cosh(2t)}{2}.
-$$
-
-Hence:
-
-$$
-\int\cosh^2t\,dt
-=
-\frac12\int1\,dt
-+
-\frac12\int\cosh(2t)\,dt.
-$$
-
-Therefore:
-
-$$
-\int\cosh^2t\,dt
-=
-\frac{t}{2}
-+
-\frac{\sinh(2t)}{4}
-+
-C.
-$$
-
-Using:
-
-$$
-\sinh(2t)=2\sinh t\cosh t,
-$$
-
-we obtain:
-
-$$
-\frac{t}{2}
-+
-\frac12\sinh t\cosh t
-+
-C.
-$$
-
-Now:
-
-$$
-\sinh t=x,
-$$
-
-and:
-
-$$
-\cosh t=\sqrt{1+x^2}.
-$$
-
-Moreover:
-
-$$
-t=\operatorname{arsinh}(x).
-$$
-
-Thus:
-
-$$
-\frac12x\sqrt{1+x^2}
-+
-\frac12\operatorname{arsinh}(x)
-+
-C.
-$$
-
-Equivalently:
-
-$$
-\operatorname{arsinh}(x)
-=
-\log\left(x+\sqrt{1+x^2}\right).
-$$
-
-**Final Result**
-
-$$
-\frac12
-\left(
-x\sqrt{1+x^2}
-+
-\operatorname{arsinh}(x)
-\right)
-+C
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 10 — Secant Substitution
-
-Evaluate, for x > 1:
-
-$$
-\int\frac{1}{x\sqrt{x^2-1}}\,dx.
-$$
-
-**Solution.**
-
-Set:
-
-$$
-x=\sec t.
-$$
-
-Then:
-
-$$
-dx=\sec t\tan t\,dt.
-$$
-
-Moreover:
-
-$$
-x^2-1
-=
-\sec^2t-1.
-$$
-
-Using:
-
-$$
-\sec^2t-1=\tan^2t,
-$$
-
-we obtain:
-
-$$
-\sqrt{x^2-1}
-=
-\tan t
-$$
-
-in the relevant range.
-
-The integral becomes:
-
-$$
-\int
-\frac{\sec t\tan t}
-{\sec t\tan t}
-\,dt.
-$$
-
-Therefore:
-
-$$
-\int1\,dt=t+C.
-$$
-
-Since:
-
-$$
-x=\sec t,
-$$
-
-we have:
-
-$$
-t=\operatorname{arcsec}(x).
-$$
-
-Thus:
-
-$$
-\operatorname{arcsec}(x)+C.
-$$
-
-For x > 1, this can also be written as:
-
-$$
-\arccos\left(\frac1x\right)+C.
-$$
-
-**Final Result**
-
-$$
-\operatorname{arcsec}(x)+C
-$$
-
-
-</div>
-
-
 
 
 <div class="content-box">
 
-## Explore More Topics in Calculus
-
-- [Limits]({{ "/mathematics/calculus/limits/" | relative_url }})
-- [Sequences]({{ "/mathematics/calculus/sequences/" | relative_url }})
-- [Series]({{ "/mathematics/calculus/series/" | relative_url }})
-- [Continuity]({{ "/mathematics/calculus/continuity/" | relative_url }})
-- [Differentiability]({{ "/mathematics/calculus/differentiability/" | relative_url }})
-- [Integration by Parts]({{ "/mathematics/calculus/integration-by-parts/" | relative_url }})
-- [Ordinary Differential Equations]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
-- [Cauchy Problems]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
-
-[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>

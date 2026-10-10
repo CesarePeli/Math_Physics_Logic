@@ -1,23 +1,33 @@
 ---
 layout: default
-date: 2026-08-24
+date: 2026-10-10
 original_date: 2025-08-29
-title: "Cauchy Problems for ODEs — Theory and Solved Exercises"
+title: "Cauchy Problems: Original Worked Exercises"
 permalink: /mathematics/calculus/cauchy-problems/
 redirect_from:
   - /university/math/calculus-1/odes-cauchy/
 background_image: "/images/grafi.png"
-description: "Solved Cauchy problems for ordinary differential equations, including first- and second-order ODEs, initial conditions, linear equations, and separable equations."
+description: "Original initial-value problems of first, second, third and fourth order, with detailed solutions and maximal intervals."
 area: mathematics
 topic: calculus
 subtopic: ordinary-differential-equations
 content_type: solved-exercises
 level: university
+last_modified_at: 2026-10-10
 ---
+
+# Cauchy Problems: Original Worked Exercises
+
 
 <div class="content-box">
 
-# Cauchy Problems for Ordinary Differential Equations
+The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+
+</div>
+
+
+<div class="content-box">
+
 
 ## Theoretical Recall
 
@@ -72,63 +82,38 @@ has a **unique local solution**.
 
 </div>
 
+
 <div class="content-box">
 
 ### Exercise 1
 
-Solve the Cauchy problem:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 8172. -->
+
+Solve the following initial-value problem:
 
 $$
 \begin{cases}
-y'=y,\\
-y(0)=1.
-\end{cases}
+		y''(x)-y(x)= e^{x}+ \cos x\\
+		y(0)=0\\
+		y'(0)=1.
+	\end{cases}
 $$
+
+
 
 **Solution.**
 
-The differential equation is:
+The characteristic equation is λ²−1=0, so the complementary solution is c₁eˣ+c₂e⁻ˣ. The exponential forcing is resonant: substitute Axeˣ; its second derivative minus itself is 2Aeˣ, hence A=1/2. For the cosine forcing, B cos x gives −2B cos x, hence B=−1/2.
+$$
+y=c_1e^x+c_2e^{-x}+\frac{x e^x}{2}-\frac{\cos x}{2}.
+$$
+The initial data give c₁+c₂=1/2 and c₁−c₂=1/2. Thus c₁=1/2 and c₂=0.
+
+**Final result**
 
 $$
-y'=y.
+y(x)=\frac{(1+x)e^x-\cos x}{2}
 $$
-
-Its general solution is:
-
-$$
-y(x)=Ce^x.
-$$
-
-Apply the initial condition:
-
-$$
-y(0)=1.
-$$
-
-Therefore:
-
-$$
-1=Ce^0.
-$$
-
-Since:
-
-$$
-e^0=1,
-$$
-
-we obtain:
-
-$$
-C=1.
-$$
-
-**Final Result**
-
-$$
-y(x)=e^x
-$$
-
 
 </div>
 
@@ -136,53 +121,34 @@ $$
 
 ### Exercise 2
 
-Solve:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 8280. -->
+
+Solve the following initial-value problem:
 
 $$
 \begin{cases}
-y'=-2y,\\
-y(0)=3.
-\end{cases}
+		y'(x)= \frac{e^{x}}{y(x)}\\
+		y(0)=1
+	\end{cases}
 $$
+
+
 
 **Solution.**
 
-The general solution of:
+Separate the variables on an interval where y is nonzero:
+$$
+y\,dy=e^x\,dx,\qquad \frac{y^2}{2}=e^x+C.
+$$
+At x=0, y=1 gives C=−1/2. The initial value selects the positive square root. The radicand is positive exactly when x>−log 2. At the left endpoint y vanishes and the differential equation is undefined.
+
+**Editorial correction.** The source unnecessarily excludes x=0 from the solution interval, although the initial condition is prescribed there. The interval above includes it.
+
+**Final result**
 
 $$
-y'=-2y
+y(x)=\sqrt{2e^x-1},\qquad x\in(-\log2,+\infty)
 $$
-
-is:
-
-$$
-y(x)=Ce^{-2x}.
-$$
-
-Using:
-
-$$
-y(0)=3,
-$$
-
-we obtain:
-
-$$
-3=Ce^0.
-$$
-
-Hence:
-
-$$
-C=3.
-$$
-
-**Final Result**
-
-$$
-y(x)=3e^{-2x}
-$$
-
 
 </div>
 
@@ -190,47 +156,42 @@ $$
 
 ### Exercise 3
 
-Solve:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 8337. -->
+
+Solve the following initial-value problem:
 
 $$
 \begin{cases}
-y'=x,\\
-y(0)=0.
-\end{cases}
+		y'''(x)-3y'(x)-2y(x)=x^{3}+2\\
+		y(0)= \frac{61}{8}\\
+		y'(0)=- \frac{27}{4}\\
+		y''(0)= \frac{9}{2}
+	\end{cases}
 $$
+
+
 
 **Solution.**
 
-Integrate both sides:
+The characteristic polynomial factors as
+$$
+\lambda^3-3\lambda-2=(\lambda+1)^2(\lambda-2).
+$$
+Consequently the complementary solution is (c₁+c₂x)e⁻ˣ+c₃e²ˣ. For a cubic particular solution p=Ax³+Bx²+Cx+D, equate coefficients in p‴−3p′−2p=x³+2:
+$$
+-2A=1,\quad-9A-2B=0,\quad-6B-2C=0,\quad6A-3C-2D=2.
+$$
+This yields A=−1/2, B=9/4, C=−27/4, D=61/8. Its values p(0), p′(0), p″(0) already equal the three initial data. The complementary constants therefore satisfy
+$$
+c_1+c_3=0,\quad-c_1+c_2+2c_3=0,\quad c_1-2c_2+4c_3=0,
+$$
+whose only solution is c₁=c₂=c₃=0.
+
+**Final result**
 
 $$
-y' = x.
+y(x)=-\frac{x^3}{2}+\frac{9x^2}{4}-\frac{27x}{4}+\frac{61}{8}
 $$
-
-Therefore:
-
-$$
-y(x)=\frac{x^2}{2}+C.
-$$
-
-Apply the initial condition:
-
-$$
-y(0)=0.
-$$
-
-Hence:
-
-$$
-0=C.
-$$
-
-**Final Result**
-
-$$
-y(x)=\frac{x^2}{2}
-$$
-
 
 </div>
 
@@ -238,120 +199,42 @@ $$
 
 ### Exercise 4
 
-Solve:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 8513. -->
+
+Solve the following initial-value problem:
 
 $$
 \begin{cases}
-y''-y=0,\\
-y(0)=1,\\
-y'(0)=0.
-\end{cases}
+		y^{IV}(x)-y(x)=e^{x}( \cos x+ \sin x)\\
+		y(0)=0\\
+		y'(0)=0\\
+		y''(0)=0\\
+		y'''(0)=0
+	\end{cases}
 $$
+
+
 
 **Solution.**
 
-The characteristic polynomial is:
+The characteristic roots are 1, −1, i, −i. The complementary solution is c₁eˣ+c₂e⁻ˣ+c₃ sin x+c₄ cos x. Substitution of eˣ(A cos x+B sin x) into y⁽⁴⁾−y multiplies this expression by −5, so A=B=−1/5.
+$$
+y_p=-\frac{e^x(\sin x+\cos x)}5,
+\quad y_p'=-\frac{2e^x\cos x}5,
+\quad y_p''=\frac{2e^x(\sin x-\cos x)}5,
+\quad y_p^{(3)}=\frac{4e^x\sin x}5.
+$$
+The four zero initial conditions become
+$$
+\begin{cases}c_1+c_2+c_4=1/5,\\c_1-c_2+c_3=2/5,\\c_1+c_2-c_4=2/5,\\c_1-c_2-c_3=0.\end{cases}
+$$
+Solving gives c₁=1/4, c₂=1/20, c₃=1/5, c₄=−1/10.
+
+**Final result**
 
 $$
-r^2-1=0.
+y(x)=\frac{e^x}{4}+\frac{e^{-x}}{20}+\frac{\sin x}{5}-\frac{\cos x}{10}-\frac{e^x(\sin x+\cos x)}5
 $$
-
-Factorizing:
-
-$$
-(r-1)(r+1)=0.
-$$
-
-The roots are:
-
-$$
-r_1=1,
-$$
-
-and:
-
-$$
-r_2=-1.
-$$
-
-Therefore the general solution is:
-
-$$
-y(x)=C_1e^x+C_2e^{-x}.
-$$
-
-Differentiate:
-
-$$
-y'(x)
-=
-C_1e^x-C_2e^{-x}.
-$$
-
-Apply:
-
-$$
-y(0)=1.
-$$
-
-Thus:
-
-$$
-C_1+C_2=1.
-$$
-
-Now apply:
-
-$$
-y'(0)=0.
-$$
-
-Hence:
-
-$$
-C_1-C_2=0.
-$$
-
-Therefore:
-
-$$
-C_1=C_2.
-$$
-
-Combining the two equations:
-
-$$
-2C_1=1.
-$$
-
-Thus:
-
-$$
-C_1=C_2=\frac12.
-$$
-
-Hence:
-
-$$
-y(x)
-=
-\frac12e^x+\frac12e^{-x}.
-$$
-
-Using the definition of the hyperbolic cosine:
-
-$$
-\cosh x
-=
-\frac{e^x+e^{-x}}{2}.
-$$
-
-**Final Result**
-
-$$
-y(x)=\cosh x
-$$
-
 
 </div>
 
@@ -359,595 +242,43 @@ $$
 
 ### Exercise 5
 
-Solve:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 8606. -->
+
+Solve the following initial-value problem:
 
 $$
 \begin{cases}
-y''+y=0,\\
-y(0)=0,\\
-y'(0)=1.
-\end{cases}
+		y''(x)+y(x)= \frac{2}{ \sin^{3} x}\\
+		y \bigl( \frac{\pi}{2} \bigl)=0\\
+		y' \bigl( \frac{\pi}{2} \bigl)=1
+	\end{cases}
 $$
+
+
 
 **Solution.**
 
-The characteristic equation is:
-
-$$
-r^2+1=0.
-$$
-
-Its roots are:
-
-$$
-r=\pm i.
-$$
-
-Therefore the general real solution is:
-
-$$
-y(x)
-=
-C_1\cos x
-+
-C_2\sin x.
-$$
-
-Apply:
-
-$$
-y(0)=0.
-$$
-
-Since:
-
-$$
-\cos0=1,
-$$
-
-and:
-
-$$
-\sin0=0,
-$$
-
-we obtain:
-
-$$
-C_1=0.
-$$
-
-Differentiate:
-
-$$
-y'(x)
-=
--C_1\sin x
-+
-C_2\cos x.
-$$
-
-Now:
-
-$$
-y'(0)=1.
-$$
-
-Thus:
-
-$$
-C_2=1.
-$$
-
-**Final Result**
-
-$$
-y(x)=\sin x
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 6
-
-Solve:
-
-$$
-\begin{cases}
-y'-y=e^x,\\
-y(0)=0.
-\end{cases}
-$$
-
-**Solution.**
-
-This is a linear first-order ODE:
-
-$$
-y'-y=e^x.
-$$
-
-The integrating factor is:
-
-$$
-\mu(x)=e^{-x}.
-$$
-
-Multiply the equation by the integrating factor:
-
-$$
-e^{-x}y'
--
-e^{-x}y
-=
-1.
-$$
-
-The left-hand side is:
-
-$$
-\left(
-ye^{-x}
-\right)'.
-$$
-
-Therefore:
-
-$$
-\left(
-ye^{-x}
-\right)'
-=
-1.
-$$
-
-Integrating:
-
-$$
-ye^{-x}=x+C.
-$$
-
-Multiply by eˣ:
-
-$$
-y(x)
-=
-(x+C)e^x.
-$$
-
-Apply:
-
-$$
-y(0)=0.
-$$
-
-Thus:
-
-$$
-0=(0+C)e^0.
-$$
-
-Therefore:
-
-$$
-C=0.
-$$
-
-**Final Result**
-
-$$
-y(x)=xe^x
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 7
-
-Solve:
-
-$$
-\begin{cases}
-y''+4y=0,\\
-y(0)=2,\\
-y'(0)=0.
-\end{cases}
-$$
-
-**Solution.**
-
-The characteristic equation is:
-
-$$
-r^2+4=0.
-$$
-
-Its roots are:
-
-$$
-r=\pm2i.
-$$
-
-Therefore:
-
-$$
-y(x)
-=
-C_1\cos(2x)
-+
-C_2\sin(2x).
-$$
-
-Apply:
-
-$$
-y(0)=2.
-$$
-
-Hence:
-
-$$
-C_1=2.
-$$
-
-Differentiate:
-
-$$
-y'(x)
-=
--2C_1\sin(2x)
-+
-2C_2\cos(2x).
-$$
-
-Using:
-
-$$
-y'(0)=0,
-$$
-
-we obtain:
-
-$$
-2C_2=0.
-$$
-
-Therefore:
-
-$$
-C_2=0.
-$$
-
-**Final Result**
-
-$$
-y(x)=2\cos(2x)
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 8
-
-Solve:
-
-$$
-\begin{cases}
-y''-3y'+2y=0,\\
-y(0)=1,\\
-y'(0)=1.
-\end{cases}
-$$
-
-**Solution.**
-
-The characteristic polynomial is:
-
+Use sin x and cos x as a fundamental pair and vary their coefficients. The equations for their derivatives are
 $$
-r^2-3r+2.
+\begin{cases}u'\sin x+v'\cos x=0,\\u'\cos x-v'\sin x=2/\sin^3x.\end{cases}
 $$
-
-Factorizing:
-
-$$
-(r-1)(r-2)=0.
-$$
-
-Therefore the roots are:
-
-$$
-r_1=1,
-$$
-
-and:
-
-$$
-r_2=2.
-$$
-
-The general solution is:
-
-$$
-y(x)
-=
-C_1e^x
-+
-C_2e^{2x}.
-$$
-
-From:
-
-$$
-y(0)=1,
-$$
-
-we obtain:
-
-$$
-C_1+C_2=1.
-$$
-
-Differentiate:
-
-$$
-y'(x)
-=
-C_1e^x
-+
-2C_2e^{2x}.
-$$
-
-Using:
-
-$$
-y'(0)=1,
-$$
-
-we obtain:
-
-$$
-C_1+2C_2=1.
-$$
-
-Subtracting:
-
-$$
-(C_1+2C_2)
--
-(C_1+C_2)
-=
-0.
-$$
-
-Therefore:
-
-$$
-C_2=0.
-$$
-
-Hence:
-
-$$
-C_1=1.
-$$
-
-**Final Result**
-
-$$
-y(x)=e^x
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 9
-
-Solve:
-
-$$
-\begin{cases}
-y''+y'=0,\\
-y(0)=0,\\
-y'(0)=1.
-\end{cases}
-$$
-
-**Solution.**
-
-The characteristic equation is:
-
-$$
-r^2+r=0.
-$$
-
-Factorizing:
-
-$$
-r(r+1)=0.
-$$
-
-Therefore the roots are:
-
-$$
-r_1=0,
-$$
-
-and:
-
-$$
-r_2=-1.
-$$
-
-The general solution is:
-
-$$
-y(x)
-=
-C_1+C_2e^{-x}.
-$$
-
-Differentiate:
-
-$$
-y'(x)
-=
--C_2e^{-x}.
-$$
-
-Using:
-
-$$
-y(0)=0,
-$$
-
-we obtain:
-
-$$
-C_1+C_2=0.
-$$
-
-Using:
-
-$$
-y'(0)=1,
-$$
-
-we obtain:
-
-$$
--C_2=1.
-$$
-
-Therefore:
-
-$$
-C_2=-1.
-$$
-
-Hence:
-
-$$
-C_1=1.
-$$
-
-**Final Result**
-
-$$
-y(x)=1-e^{-x}
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 10
-
-Solve:
-
-$$
-\begin{cases}
-y'=y\cos x,\\
-y(0)=1.
-\end{cases}
-$$
-
-**Solution.**
-
-The equation is separable:
-
-$$
-y'=y\cos x.
-$$
-
-For nonzero y:
-
-$$
-\frac{dy}{y}
-=
-\cos x\,dx.
-$$
-
-Integrating:
-
-$$
-\log|y|
-=
-\sin x+C.
-$$
-
-Exponentiating:
-
-$$
-|y|
-=
-e^Ce^{\sin x}.
+Thus u′=2 cos x/sin³x and v′=−2/sin²x. Integrating gives u=−1/sin²x and v=2 cot x, so a particular solution is cos(2x)/sin x. The general solution is
 $$
-
-Absorbing the sign and the positive factor into an arbitrary nonzero constant:
-
-$$
-y(x)
-=
-Ce^{\sin x}.
-$$
-
-Now apply:
-
-$$
-y(0)=1.
-$$
-
-Since:
-
+y=c_1\sin x+c_2\cos x+\frac{\cos2x}{\sin x}.
 $$
-\sin0=0,
-$$
-
-we obtain:
-
-$$
-1=Ce^0.
-$$
+At π/2 the particular solution is −1 and its derivative is 0. The initial conditions imply c₁=1 and c₂=−1. Combining sin x with cos(2x)/sin x gives cos²x/sin x. The maximal interval containing π/2 is (0,π), since the forcing is singular at both endpoints.
 
-Therefore:
+**Final result**
 
 $$
-C=1.
+y(x)=-\cos x+\frac{\cos^2x}{\sin x},\qquad0<x<\pi
 $$
-
-**Final Result**
-
-$$
-y(x)=e^{\sin x}
-$$
-
 
 </div>
 
 
-
-
 <div class="content-box">
 
-## Ordinary Differential Equations and Initial Conditions
-
-The examples above illustrate the role of initial conditions in selecting a unique solution from the family produced by a differential equation.
-
-For linear equations, the general solution contains arbitrary constants corresponding to the order of the equation. The initial conditions determine those constants.
-
-For nonlinear equations, existence and uniqueness require additional hypotheses, such as those appearing in the Picard–Lindelöf theorem.
-
-[**Ordinary Differential Equations — Theory and Solved Exercises →**]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
-
-[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>

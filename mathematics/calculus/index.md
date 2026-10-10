@@ -1,6 +1,6 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-10
 date: 2026-08-24
 title: "Calculus"
 permalink: /mathematics/calculus/
@@ -24,7 +24,7 @@ This section organizes the material by mathematical topic, combining theoretical
 
 Limits describe the behavior of functions as a variable approaches a particular value or tends toward infinity.
 
-The resources in this section explore fundamental limits, indeterminate forms, L’Hôpital’s rule, and Taylor expansions through theory and worked examples. [**Limits Using Taylor Expansions: Formulas and Solved Examples**]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }}) gives the principal expansions, the rules for truncating them, and ten complete applications.
+The resources in this section explore fundamental limits, indeterminate forms, L’Hôpital’s rule, and Taylor expansions through theory and worked examples. [**Limits Using Taylor Expansions: Formulas and Solved Examples**]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }}) gives the principal expansions, the rules for truncating them, and fifteen original applications.
 
 [**Explore Limits →**]({{ "/mathematics/calculus/limits/" | relative_url }})
 
@@ -48,7 +48,7 @@ The exercises examine the definition of continuity, removable and jump discontin
 
 Differentiability describes the local rate of change of a function and provides the foundation for differential calculus.
 
-The worked problems explore differentiability at critical points, one-sided derivatives, piecewise functions, absolute values, radicals, and conditions for higher-order smoothness.
+The worked problems explore differentiability at critical points, one-sided derivatives, piecewise functions, and conditions for higher-order smoothness.
 
 [**Explore Differentiability →**]({{ "/mathematics/calculus/differentiability/" | relative_url }})
 
@@ -86,7 +86,7 @@ For pointwise and uniform convergence, power series, and sums of function series
 
 ## Immediate Integrals
 
-Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Six worked examples include three exercises from Eserciziario 2.1, together with its complete integration recall.
+Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Three original worked exercises from Eserciziario 2.1 are included, together with its complete integration recall.
 
 [**Immediate Integrals: Formulas and Worked Examples →**]({{ "/mathematics/calculus/immediate-integrals/" | relative_url }})
 
@@ -106,7 +106,7 @@ The worked exercises include polynomial-exponential products, trigonometric func
 
 Integration by substitution simplifies integrals through an appropriate change of variable.
 
-The examples include algebraic, logarithmic, trigonometric, and hyperbolic substitutions, with detailed transformations and final results.
+The examples include algebraic, logarithmic, trigonometric, and Euler substitutions, with detailed transformations and final results.
 
 [**Explore Integration by Substitution →**]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
 
@@ -130,9 +130,70 @@ This section introduces fundamental solution methods for first- and second-order
 
 Cauchy problems combine differential equations with initial conditions that select a particular solution.
 
-The worked exercises include first- and second-order equations, separable and linear equations, characteristic equations, and the determination of constants from initial data.
+The worked exercises include first- through fourth-order equations, separable and linear equations, characteristic equations, and the determination of constants from initial data.
 
 [**Explore Cauchy Problems →**]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
+
+</div>
+
+
+<div class="content-box">
+
+## Mathematical Induction
+
+The principle of induction, Peano’s axiom, well-ordering, Bernoulli’s inequality and original proofs.
+
+[**Explore Mathematical Induction →**]({{ "/mathematics/calculus/mathematical-induction/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Function Analysis
+
+The complete study of three original functions: domain, sign, extrema, asymptotes and convexity, with the original diagrams.
+
+[**Explore Function Analysis →**]({{ "/mathematics/calculus/function-analysis/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Rational Integrals
+
+Polynomial division, partial fractions, repeated roots and irreducible quadratic factors.
+
+[**Explore Rational Integrals →**]({{ "/mathematics/calculus/rational-integrals/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Definite Integrals
+
+Original integrals with bounds, symmetry, absolute values and changes of variable.
+
+[**Explore Definite Integrals →**]({{ "/mathematics/calculus/definite-integrals/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Improper Integrals
+
+Endpoint singularities, infinite intervals, comparison and convergence tests, with six original exercises.
+
+[**Explore Improper Integrals →**]({{ "/mathematics/calculus/improper-integrals/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Fourier Series
+
+The complete coefficient formulas from the exercise book’s theoretical introduction.
+
+[**Explore Fourier Series →**]({{ "/mathematics/calculus/fourier-series/" | relative_url }})
 
 </div>
 
