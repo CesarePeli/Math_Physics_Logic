@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Phase Transitions — Heating Curve and Enthalpy Changes"
+title: "Phase Transitions — Water Heating Curve"
 author: Marco Ruzzi
-description: "Worked example on phase transitions: enthalpy changes during heating and melting of ice. Includes theoretical recalls, calculations, and explanatory notes."
+description: "Read a water heating curve: melting and vaporization enthalpies, phase coexistence and the relation between curve slopes and heat capacities."
 permalink: /physics/thermodynamics/phase-transitions/
 redirect_from:
   - /university/physics/thermodynamics/phase-transitions/
@@ -11,117 +11,64 @@ background_image: /images/termodinamica.png
 last_modified_at: 2026-10-10
 ---
 
-# Phase Transitions — Heating Curve and Enthalpy Changes
+# Phase Transitions — Water Heating Curve
+
+<div class="content-box">
 
 *By Prof. Marco Ruzzi.*
 
-<div class="content-box">
+## Theoretical background
 
-## Theoretical Background
+At constant pressure, heating a single phase gives dq=C<sub>p</sub>dT. On a graph of temperature against supplied heat:
 
-- **Heat required for temperature change:**
-  $$
-  q = m c \Delta T
-  $$
+$$
+\frac{dT}{dq}=\frac{1}{C_p}.
+$$
 
-- **Heat absorbed in a phase transition at constant pressure:**
-  $$
-  q = n \Delta H_{\text{trans}}
-  $$
-
-- During an equilibrium phase transition of a pure substance at fixed pressure, the temperature remains constant while heat changes the phase and reorganizes intermolecular interactions.  
-- Under these conditions, a heating curve combines *sloped segments* within a single phase and *plateaus* during phase changes.
+For one mole this becomes 1/C<sub>p,m</sub>. During melting or vaporization of a pure substance at a fixed pressure, the two phases coexist at a constant transition temperature.
 
 </div>
 
 <div class="content-box">
 
-## Exercise
+## Exercise 5 — Interpret the heating curve
 
-Calculate the total heat required to bring **50.0 g of ice** from **–10.0 °C** to liquid water at **25.0 °C**.  
+The graph shows the temperature of a quantity of water as it passes from the solid to the gaseous state. Explain the physical meaning of its five segments. Identify the conditions under which the plateau widths represent standard molar transition enthalpies and the slopes determine molar heat capacities.
 
-Given data:  
-- c<sub>ice</sub> = 2.09   J g⁻¹ K⁻¹  
-- c<sub>water</sub> = 4.18   J g⁻¹ K⁻¹  
-- ΔH<sub>fus</sub> = 6.01   kJ mol⁻¹  
-- Molar mass of H₂O = 18.0   g mol⁻¹  
+<a href="{{ '/images/ruzzi/water-heating-curve.gif' | relative_url }}"><img src="{{ '/images/ruzzi/water-heating-curve.gif' | relative_url }}" alt="Water heating curve: segments 1, 3 and 5 warm ice, liquid water and vapor; segments 2 and 4 are melting and boiling plateaus" style="display:block;width:100%;max-width:780px;height:auto;margin:1.2rem auto;background:#fff;padding:12px;box-sizing:border-box;"></a>
+
+[View the graph at full size]({{ '/images/ruzzi/water-heating-curve.gif' | relative_url }}).
+
+### Solution
+
+**Melting plateau.** For one mole of water at the standard pressure of 1 bar, the heat absorbed during melting is its standard molar enthalpy of fusion. The transition temperatures in this schematic graph are shown approximately as 0 °C and 100 °C.
+
+**Vaporization plateau.** Segment 4 represents the liquid–gas transition: the two phases coexist while the temperature remains constant.
+
+**Slope of segment 1.** Segment 1 describes the **solid**. For one mole its slope is the reciprocal of the molar heat capacity of ice at constant pressure, rather than that of liquid water.
+
+### Observations on melting and vaporization
+
+The system absorbs heat during melting. For one mole at 1 bar, the horizontal width of segment 2 represents Δ<sub>fus</sub>H°. Melting is isothermal at T<sub>fus</sub>: the absorbed energy changes the intermolecular structure of the crystalline solid rather than increasing its temperature. In ice this concerns the hydrogen-bond network.
+
+The same reasoning applies to vaporization. For one mole under standard-pressure conditions, the horizontal width of segment 4 represents Δ<sub>vap</sub>H°, at the constant vaporization temperature T<sub>vap</sub>.
+
+Segments 1, 3 and 5 represent heating of the solid, liquid and vapor, respectively. Their slopes are:
+
+$$
+m_1=\frac{1}{C_{p,\mathrm{solid}}}.
+$$
+
+$$
+m_3=\frac{1}{C_{p,\mathrm{liquid}}}.
+$$
+
+$$
+m_5=\frac{1}{C_{p,\mathrm{gas}}}.
+$$
+
+These heat capacities are molar heat capacities when the amount is one mole. The stated geometrical interpretation of the **standard molar** transition enthalpies requires both one mole of pure substance and a pressure of 1 bar. For another amount, the plateau width represents the total heat required by that amount.
 
 </div>
 
-<div class="content-box">
-
-## Step-by-Step Solution
-
-**Step 1. Heating ice from –10 °C to 0 °C**  
-$$
-q_1 = m c_{\text{ice}} \Delta T = (50.0)(2.09)(10.0) = 1045 \, J
-$$
-
----
-
-**Step 2. Melting ice at 0 °C**  
-Moles of water:
-$$
-n = \frac{50.0}{18.0} = 2.78 \, mol
-$$
-
-$$
-q_2 = n \Delta H_{\text{fus}}
-= (2.78\,\mathrm{mol})(6.01\,\mathrm{kJ\,mol^{-1}})
-= 16.7\,\mathrm{kJ}
-$$
-
----
-
-**Step 3. Heating liquid water from 0 °C to 25 °C**  
-$$
-q_3 = m c_{\text{water}} \Delta T = (50.0)(4.18)(25.0) = 5225 \, J
-$$
-
----
-
-**Step 4. Total heat**  
-$$
-q_{\text{tot}} = q_1 + q_2 + q_3
-$$
-
-Convert to consistent units (kJ):  
-- q₁ = 1.05   kJ  
-- q₂ = 16.7   kJ  
-- q₃ = 5.23   kJ
-
-$$
-q_{\text{tot}} = 1.05 + 16.7 + 5.23 = 23.0 \, kJ
-$$
-
----
-
-**Answer:**  
-$$
-q_{\text{tot}} = 23.0 \, kJ
-$$
-
-</div>
-
-<div class="content-box">
-
-## Notes
-
-- Over the temperature interval considered, the heating curve has three regions: heating the solid, the melting plateau, and heating the liquid.  
-- The largest energy contribution comes from the **phase transition** (fusion), which requires far more heat than simply raising the temperature.  
-- This illustrates the difference between:  
-  - **specific heat** (energy per unit mass per degree, linked to temperature changes),  
-  - **latent heat** (energy associated with structural reorganization of matter).  
-- At constant pressure, the supplied heat equals the enthalpy change, so a heating curve represents how enthalpy is added within and between phases.
-
-</div>
-
----
-
-### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
+[← Thermodynamics worked problems]({{ '/physics/thermodynamics/' | relative_url }})

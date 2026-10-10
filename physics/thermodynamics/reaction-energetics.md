@@ -2,7 +2,7 @@
 layout: default
 title: "Reaction Energetics — Internal Energy and Enthalpy"
 author: Marco Ruzzi
-description: "Worked example on the energetics of a chemical reaction: relation between ΔU and ΔH, step-by-step calculations, and key thermodynamic notes."
+description: "Calculate the standard internal-energy change for oxidation of NO from formation enthalpies and the ideal-gas pressure-volume correction."
 permalink: /physics/thermodynamics/reaction-energetics/
 redirect_from:
   - /university/physics/thermodynamics/reaction-energetics/
@@ -13,148 +13,98 @@ last_modified_at: 2026-10-10
 
 # Reaction Energetics — Internal Energy and Enthalpy
 
+<div class="content-box">
+
 *By Prof. Marco Ruzzi.*
 
-<div class="content-box">
+## Theoretical background
 
-## Theoretical Background
-
-- **First Law of Thermodynamics:**  
-  $$
-  \Delta U = q + w
-  $$
-
-- **Enthalpy definition:**  
-  $$
-  H = U + pV \;\Rightarrow\; \Delta H = \Delta U + \Delta(pV)
-  $$
-
-- At constant pressure, when the only work exchanged is pressure–volume work:
-  
-
-$$
-\Delta H=q_p.
-$$
-
-
-
-- For an ideal-gas reaction at a fixed temperature:
-  
-
-$$
-\Delta_r H^\circ
-  =\Delta_r U^\circ+\Delta\nu_{\text{gas}}RT,
-  \qquad
-  \Delta_r U^\circ
-  =\Delta_r H^\circ-\Delta\nu_{\text{gas}}RT,
-$$
-
-
-  where Δν<sub>gas</sub> is the sum of the gaseous stoichiometric coefficients of the products minus that of the reactants.
-
-> **Validity note.**  
-> The relation containing Δν<sub>gas</sub>RT follows from the ideal-gas equation for the gaseous species. It is exact for the all-gas ideal reaction considered below. Real gases require an appropriate equation of state.
-
-> **Sign convention used here.**  
-> w>0 denotes work done on the system, while w<0 denotes work done by the system. With this convention, the First Law is ΔU=q+w.
-
-</div>
-
-<div class="content-box">
-
-## Exercise
-
-Consider the combustion of carbon monoxide:
-
-$$
-2\,\mathrm{CO}(g) + \mathrm{O}_2(g) \;\longrightarrow\; 2\,\mathrm{CO}_2(g)
-$$
-
-At T = 298 K and p = 1 bar, the standard enthalpy of reaction is:
-
-$$
-\Delta_r H^{\circ} = -566.0\,\text{kJ mol}^{-1}
-$$
-
-**Tasks:**
-
-1. Calculate the standard molar internal-energy change Δ<sub>r</sub> U°.  
-2. Explain the relation between ΔU and ΔH for reactions involving gases.
-
-</div>
-
-<div class="content-box">
-
-## Step-by-Step Solution
-
-**Step 1. Count moles of gas**  
-- Reactants: n<sub>gas</sub> = 2 + 1 = 3  
-- Products: n<sub>gas</sub> = 2  
-
-So:
-$$
-\Delta\nu_{\text{gas}}
-= \sum\nu_{\text{products}}-\sum\nu_{\text{reactants}}
-=2-(2+1)=-1
-$$
-
----
-
-**Step 2. Relation between ΔH and ΔU**  
 For ideal gases:
+
 $$
-\Delta_r U^\circ
-=\Delta_r H^\circ-\Delta\nu_{\text{gas}}RT
+H=U+pV=U+nRT.
 $$
 
----
+At fixed temperature, the change in gaseous amount gives:
 
-**Step 3. Insert data**  
-With T = 298 K and R = 8.314 J mol⁻¹K⁻¹:
 $$
-\Delta\nu_{\text{gas}}RT
-=(-1)(8.314)(298)
-=-2.48 \times 10^{3}\,\text{J mol}^{-1}
-=-2.48\,\text{kJ mol}^{-1}
+dH=dU+d(nRT)=dU+RT\,dn.
 $$
 
----
-
-**Step 4. Final value**  
 $$
-\Delta_r U^{\circ}
-=(-566.0)\,\text{kJ mol}^{-1}
--(-2.48)\,\text{kJ mol}^{-1}
-=-563.5\,\text{kJ mol}^{-1}.
+\Delta H=\Delta U+RT\Delta n.
 $$
 
----
+For molar reaction quantities, use Δν<sub>gas</sub>, the gaseous stoichiometric coefficients of products minus those of reactants:
 
-**Answer:**  
 $$
-\Delta_r U^{\circ} = -563.5\,\text{kJ mol}^{-1}
+\Delta_rU^\circ=\Delta_rH^\circ-RT\Delta\nu_{\mathrm{gas}}.
 $$
 
 </div>
 
 <div class="content-box">
 
-## Notes
+## Exercise 2 — Oxidation of nitric oxide
 
-- The difference between Δ<sub>r</sub> U° and Δ<sub>r</sub> H° is small here because Δν<sub>gas</sub>=-1.  
-- If Δν<sub>gas</sub>=0 for an ideal-gas reaction, then Δ<sub>r</sub> H°=Δ<sub>r</sub> U°.  
-- The magnitude of the correction Δν<sub>gas</sub>RT grows with temperature and with the change in gaseous stoichiometric coefficients.  
-- Standard reaction enthalpies are commonly tabulated, while the First Law is written directly in terms of internal energy.  
-- For non-ideal gases, the simple RTΔν<sub>gas</sub> correction is only approximate.
+Consider the reaction under standard conditions at T=298 K:
+
+$$
+2\mathrm{NO}(g)+\mathrm{O}_2(g)\longrightarrow2\mathrm{NO}_2(g).
+$$
+
+The standard formation enthalpies are +90.2 kJ mol⁻¹ for NO(g) and +33.2 kJ mol⁻¹ for NO₂(g). Calculate the standard molar internal-energy change of the reaction.
+
+### 1. Change in gaseous amount
+
+$$
+\Delta\nu_{\mathrm{gas}}=2-(2+1)=-1.
+$$
+
+Thus:
+
+$$
+\Delta_rU^\circ=\Delta_rH^\circ+RT.
+$$
+
+### 2. Reaction enthalpy
+
+Use formation enthalpies, taking products minus reactants. Oxygen in its standard elemental reference state has zero standard formation enthalpy by convention:
+
+$$
+\begin{aligned}
+\Delta_rH^\circ={}&2\Delta_fH^\circ(\mathrm{NO}_2)\\
+&-2\Delta_fH^\circ(\mathrm{NO})\\
+&-\Delta_fH^\circ(\mathrm{O}_2).
+\end{aligned}
+$$
+
+$$
+\Delta_rH^\circ=2(33.2)-2(90.2)-0.
+$$
+
+$$
+\Delta_rH^\circ=-114\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+### 3. Internal-energy change
+
+With R=8.314 J mol⁻¹ K⁻¹:
+
+$$
+\Delta_rU^\circ=-114\times10^3+(8.314)(298)\ \mathrm{J\,mol^{-1}}.
+$$
+
+$$
+\Delta_rU^\circ=-111522.428\ \mathrm{J\,mol^{-1}}.
+$$
+
+$$
+\Delta_rU^\circ\simeq-111.5\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+The enthalpy change must be distinguished from the internal-energy change.
 
 </div>
 
----
-
-### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
-- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  
+[← Thermodynamics worked problems]({{ '/physics/thermodynamics/' | relative_url }})

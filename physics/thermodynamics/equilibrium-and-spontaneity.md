@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Equilibrium & Spontaneity — ΔG°, K, Temperature"
+title: "Chemical Equilibrium — Gibbs Energy, Temperature and Chemical Potentials"
 author: Marco Ruzzi
-description: "From ΔH° and ΔS° to ΔG° and K: compute Kp at 298 K, decide the reaction direction from standard conditions, and discuss temperature effects."
+description: "Worked NO oxidation and copper carbonate equilibrium exercises: reaction Gibbs energy, equilibrium constants, temperature effects and chemical potentials."
 permalink: /physics/thermodynamics/equilibrium-and-spontaneity/
 redirect_from:
   - /university/physics/thermodynamics/equilibrium-and-spontaneity/
@@ -11,138 +11,217 @@ background_image: /images/termodinamica.png
 last_modified_at: 2026-10-10
 ---
 
-# Equilibrium & Spontaneity — ΔG°, K, Temperature
+# Chemical Equilibrium — Gibbs Energy, Temperature and Chemical Potentials
+
+<div class="content-box">
 
 *By Prof. Marco Ruzzi.*
 
-<div class="content-box">
+## Theoretical background
 
-## Theoretical background (quick recall)
-
-- Standard Gibbs criterion:  
-  $$
-  \Delta G_r^\circ = \Delta H_r^\circ - T\Delta S_r^\circ
-  $$
-
-- Link to equilibrium:  
-  $$
-  \Delta G_r^\circ = -RT\ln K \;\;\Rightarrow\;\; K=\exp\!\left[-\frac{\Delta G_r^\circ}{RT}\right]
-  $$
-
-- For gas-phase reactions, the pressure-based constant (with p₀=1 bar) is
-  $$
-  K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
-  $$
-  Because each pressure is divided by the standard pressure, this definition of K<sub>p</sub> is dimensionless.
-
-- For a system with reaction quotient Q,
-  
+At fixed temperature and pressure, the sign of the reaction Gibbs energy determines the direction of thermodynamic progress:
 
 $$
-\Delta G_r=\Delta G_r^\circ+RT\ln Q.
+\Delta_rG=\Delta_rG^\circ+RT\ln Q.
 $$
 
+$$
+\Delta_rG^\circ=\Delta_rH^\circ-T\Delta_rS^\circ.
+$$
 
-  Thus, ΔG<sub>r</sub>°<0 implies spontaneous progress toward products when Q=1; it does not determine the direction for every possible composition. If K≫1, equilibrium is strongly product-favored.  
+At equilibrium Q=K and Δ<sub>r</sub>G=0, hence:
 
-- Temperature effect (van ’t Hoff):  
-  $$
-  \frac{d\ln K}{dT}=\frac{\Delta H_r^\circ}{RT^2}
-  $$
-  For exothermic reactions (ΔH<sub>r</sub>°<0), K decreases as T increases.
+$$
+\Delta_rG^\circ=-RT\ln K.
+$$
+
+$$
+K=\exp\left(-\frac{\Delta_rG^\circ}{RT}\right).
+$$
 
 </div>
 
 <div class="content-box">
 
-## Exercise — Oxidation of NO: K<sub>p</sub> and direction of spontaneity
+## Exercise 6 — Exothermic oxidation and temperature
 
-For
-$$
-2\,\mathrm{NO}(g)+\mathrm{O}_2(g)\;\rightleftharpoons\;2\,\mathrm{NO}_2(g)
-$$
-at T=298.15 K, use  
-ΔH<sub>f</sub>°(NO)=+90.2 kJ mol⁻¹,  
-ΔH<sub>f</sub>°(NO₂)=+33.2 kJ mol⁻¹, and  
-ΔS<sub>r</sub>°=-145.0 J mol⁻¹ K⁻¹  
+Discuss how temperature affects the spontaneity, from standard conditions, of the following exothermic reaction:
 
-to evaluate ΔG<sub>r</sub>°, then K<sub>p</sub>. State the spontaneous direction from standard conditions and discuss the effect of increasing temperature.
+$$
+2\mathrm{NO}(g)+\mathrm{O}_2(g)\rightleftharpoons2\mathrm{NO}_2(g).
+$$
+
+### Solution
+
+We compare the reaction under standard conditions, where Q=1. Δ<sub>r</sub>H°<0 because the reaction is exothermic. Δ<sub>r</sub>S°<0 for this reaction, consistently with the reduction from three moles of gaseous reactants to two moles of gaseous products.
+
+**High temperatures.** In the constant-ΔH°, constant-ΔS° approximation, sufficiently high T makes the positive contribution −TΔ<sub>r</sub>S° dominate:
+
+$$
+\Delta_rG^\circ\simeq-T\Delta_rS^\circ>0.
+$$
+
+The forward reaction is then unfavorable from standard conditions; raising T makes it less favorable.
+
+**Low temperatures.** At sufficiently low T the negative enthalpic contribution dominates:
+
+$$
+\Delta_rG^\circ\simeq\Delta_rH^\circ<0.
+$$
+
+The forward reaction is favorable from standard conditions when the magnitude of the negative enthalpy contribution exceeds the opposing entropy term:
+
+$$
+|\Delta_rH^\circ|>|T\Delta_rS^\circ|.
+$$
+
+Within this approximation, that inequality is more marked at lower temperature.
+
+### Observations
+
+If oxygen were liquid, the sign of the reaction entropy could not be inferred merely from the phases indicated in the reaction equation. To calculate Δ<sub>r</sub>S° and establish its sign, the standard molar entropies of **all** participating substances would be required: NO(g), NO₂(g) and O₂(l).
+
+Likewise, if the exercise did not state that the reaction is exothermic, its enthalpy change would have to be calculated from the formation enthalpies of NO(g) and NO₂(g). For O₂(g) in its elemental standard reference state, the standard formation enthalpy is zero.
 
 </div>
 
 <div class="content-box">
 
-## Step-by-step solution (with explanations)
+## Exercise 7 — Copper carbonate and chemical potentials
 
-**1) Write K<sub>p</sub> (definition).**  
-Using partial pressures normalized by p₀=1 bar:
-$$
-K_p=\frac{\left(\dfrac{p_{\text{NO}_2}}{p_0}\right)^2}{\left(\dfrac{p_{\text{NO}}}{p_0}\right)^2\!\left(\dfrac{p_{\text{O}_2}}{p_0}\right)}.
-$$
-Since every partial pressure is divided by p₀, the value of K<sub>p</sub> obtained from this expression is dimensionless.
+The reaction:
 
----
-
-**2) Compute ΔH<sub>r</sub>° from formation enthalpies.**  
-Remember ΔH<sub>f</sub>°(O₂,g)=0:
 $$
-\Delta H_r^\circ=2\,\Delta H_f^\circ(\mathrm{NO}_2)-\big[2\,\Delta H_f^\circ(\mathrm{NO})+1\cdot\Delta H_f^\circ(\mathrm{O}_2)\big]
-=2(33.2)-2(90.2)= -114.0\,\text{kJ mol}^{-1}.
+\mathrm{CuCO}_3(s)\rightleftharpoons\mathrm{CuO}(s)+\mathrm{CO}_2(g)
 $$
 
----
+has K<sub>p</sub>=50. A reaction mixture has a CO₂ pressure of 50 bar. Determine whether it is at equilibrium and write the resulting relation between the chemical potentials of its components.
 
-**3) Compute ΔG<sub>r</sub>° at 298.15 K.**  
-Use ΔS<sub>r</sub>°=-145.0 J mol⁻¹ K⁻¹=-0.145 kJ mol⁻¹ K⁻¹:
+Define the chemical-potential difference:
+
 $$
-\Delta G_r^\circ=\Delta H_r^\circ-T\Delta S_r^\circ
-= -114.0 - (298.15)(-0.145)
-\approx -70.8\,\text{kJ mol}^{-1}.
+D=\mu_{\mathrm{CuO}(s)}+\mu_{\mathrm{CO}_2(g)}-\mu_{\mathrm{CuCO}_3(s)}.
 $$
-> Since standard-state conditions correspond to Q=1, the negative value of ΔG<sub>r</sub>° indicates spontaneous progress toward products from that composition.
 
----
+### Solution
 
-**4) Convert ΔG<sub>r</sub>° into K<sub>p</sub>.**  
-With R=8.314 J mol⁻¹K⁻¹:
+For pure solid phases, their activities are one. Using the pressure-based ideal-gas expression, with p°=1 bar:
+
 $$
-K_p=\exp\!\left[-\frac{\Delta G_r^\circ}{RT}\right]
-=\exp\!\left(\frac{70.8\times10^3}{(8.314)(298.15)}\right)
-=\exp(28.56)\approx 2.5\times10^{12}.
+Q_p=\frac{p_{\mathrm{CO}_2}}{p^\circ}=50=K_p.
 $$
-> Such a large K<sub>p</sub> means that equilibrium is strongly product-favored. The individual equilibrium partial pressures still depend on the initial composition and the total pressure.
 
----
+The mixture is therefore at equilibrium. In general, the equilibrium condition on chemical potentials is:
 
-**5) Direction from standard conditions.**  
-Because ΔG<sub>r</sub>°<0, the forward reaction is spontaneous when Q=1. Since K<sub>p</sub>≫1, equilibrium is strongly shifted toward NO₂.
+$$
+\begin{aligned}
+\Delta_rG={}&\sum_{\mathrm{products}}\nu_i\mu_i\\
+&-\sum_{\mathrm{reactants}}\nu_i\mu_i=0.
+\end{aligned}
+$$
 
----
+For this reaction:
 
-**6) Temperature effect (sign analysis).**  
-Here ΔH<sub>r</sub>°<0 (exothermic) and ΔS<sub>r</sub>°<0 (gas moles decrease: 3→2).  
-Increasing T makes -TΔS<sub>r</sub>° more **positive**, so ΔG<sub>r</sub>° becomes less negative. If ΔH<sub>r</sub>° and ΔS<sub>r</sub>° are treated as approximately constant, assuming constant ΔH° and ΔS°, it becomes positive above about 786 K. The decrease of K<sub>p</sub> with temperature is consistent with the van ’t Hoff equation.
+$$
+\mu_{\mathrm{CuO}(s)}+\mu_{\mathrm{CO}_2(g)}-\mu_{\mathrm{CuCO}_3(s)}=0.
+$$
 
 </div>
 
 <div class="content-box">
 
-## Conceptual notes
+## Problem — NO oxidation and its equilibrium constant
 
-- The negative value of ΔS<sub>r</sub>° is consistent with the decrease from three to two moles of gas. The change in gas-mole count is a useful qualitative guide, while the numerical value comes from standard molar entropies.  
-- Standard formation data reminder: ΔH<sub>f</sub>°(O₂,g)=0 by convention; only NO and NO₂ contribute to ΔH<sub>r</sub>°.  
-- The value K<sub>p</sub>∼10¹² at 298 K shows that equilibrium is strongly product-favored; it does not by itself determine each equilibrium partial pressure.  
-- For different T, you may estimate K<sub>p</sub>(T) using the van ’t Hoff equation with (piecewise) constant ΔH<sub>r</sub>° in the temperature range of interest.  
-- A complete interpretation uses both numerical values (ΔG°, K) and the signs of ΔH° and ΔS°, while distinguishing standard-state spontaneity from the direction at an arbitrary composition.
+Consider:
+
+$$
+2\mathrm{NO}(g)+\mathrm{O}_2(g)\rightleftharpoons2\mathrm{NO}_2(g).
+$$
+
+At T=298.15 K, the formation enthalpies are +90.2 kJ mol⁻¹ for NO(g) and +33.2 kJ mol⁻¹ for NO₂(g). The standard reaction entropy is −145.0 J mol⁻¹ K⁻¹.
+
+1. Write the expression for K<sub>p</sub>.
+2. Calculate the equilibrium constant at 298.15 K.
+3. Starting from standard conditions, determine the direction in which the reaction moves toward equilibrium.
+4. What is Δ<sub>r</sub>G at equilibrium?
+5. Describe the effect of increasing temperature on the equilibrium.
+
+### 1. Reaction quotient and equilibrium constant
+
+For ideal gases, normalize each partial pressure by p°=1 bar:
+
+$$
+Q=\frac{(p_{\mathrm{NO}_2}/p^\circ)^2}{(p_{\mathrm{NO}}/p^\circ)^2(p_{\mathrm{O}_2}/p^\circ)}.
+$$
+
+Equivalently:
+
+$$
+Q=\frac{p_{\mathrm{NO}_2}^2p^\circ}{p_{\mathrm{NO}}^2p_{\mathrm{O}_2}}.
+$$
+
+At equilibrium the partial pressures no longer change and K<sub>p</sub>=Q evaluated at those pressures. The constant is dimensionless.
+
+### 2. Numerical value of the equilibrium constant
+
+At equilibrium:
+
+$$
+0=\Delta_rG^\circ+RT\ln K_p.
+$$
+
+Thus Δ<sub>r</sub>G°=−RT ln K<sub>p</sub>, and calculating K<sub>p</sub> requires the standard reaction Gibbs energy.
+
+First calculate the enthalpy from the formation data:
+
+$$
+\begin{aligned}
+\Delta_rH^\circ={}&2\Delta_fH^\circ(\mathrm{NO}_2)\\
+&-2\Delta_fH^\circ(\mathrm{NO})\\
+&-\Delta_fH^\circ(\mathrm{O}_2).
+\end{aligned}
+$$
+
+$$
+\Delta_rH^\circ=2(33.2)-2(90.2)-0=-114\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+The entropy is supplied directly: −145.0 J mol⁻¹ K⁻¹, or −0.1450 kJ mol⁻¹ K⁻¹. Hence:
+
+$$
+\Delta_rG^\circ=-114-(298.15)(-0.1450)\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+$$
+\Delta_rG^\circ\simeq-70.8\ \mathrm{kJ\,mol^{-1}}.
+$$
+
+Using R=8.314 J mol⁻¹ K⁻¹ and the rounded Gibbs energy:
+
+$$
+-\frac{\Delta_rG^\circ}{RT}\simeq\frac{70.8\times10^3}{(8.314)(298.15)}\simeq28.56.
+$$
+
+$$
+K_p=e^{28.56}\simeq2.5\times10^{12}.
+$$
+
+### 3. Direction from standard conditions
+
+The standard conditions give Q=1. Since Δ<sub>r</sub>G°≈−70.8 kJ mol⁻¹, the reaction proceeds toward the products.
+
+### 4. Gibbs energy at equilibrium
+
+The **reaction** Gibbs energy vanishes at equilibrium:
+
+$$
+\Delta_rG=0.
+$$
+
+### 5. Effect of temperature
+
+Here Δ<sub>r</sub>H°=−114 kJ mol⁻¹ and Δ<sub>r</sub>S°=−145.0 J mol⁻¹ K⁻¹. The term TΔ<sub>r</sub>S° is negative; its magnitude grows with temperature, so its contribution **−TΔ<sub>r</sub>S°** to the Gibbs energy is increasingly positive. Raising the temperature favors the reactants in this exothermic equilibrium.
 
 </div>
 
----
-
-### Related topics
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
-- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
-- [Gibbs Free Energy for Incompressible Substances](/physics/thermodynamics/gibbs-free-energy/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  
+[← Thermodynamics worked problems]({{ '/physics/thermodynamics/' | relative_url }})
