@@ -8,7 +8,7 @@ permalink: /mathematics/calculus/limits/limits-taylor/
 redirect_from:
   - /university/math/calculus-1/limits-taylor/
 background_image: "/images/limiti.png"
-description: "Complete Taylor and Maclaurin theory with fifteen original university-level limits, composite expansions, cancellation and parameters."
+description: "Evaluate limits using Taylor and Maclaurin expansions with little-o notation, cancellation techniques and 15 fully worked university-level exercises."
 area: mathematics
 topic: calculus
 subtopic: limits
