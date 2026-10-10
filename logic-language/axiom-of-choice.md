@@ -5,7 +5,7 @@ title: "Choice and Infinity: The Axiom of Choice"
 author: Cesare Peli
 permalink: /logic-language/axiom-of-choice/
 background_image: "/images/assioma.png"
-description: "Explore the axiom of choice through choice functions, well-ordering, cardinality, Zorn's lemma, vector-space bases, and non-measurable sets."
+description: "How does the axiom of choice shape infinity? Explore its role in Zermelo-Fraenkel set theory (ZF and ZFC), well-ordering and infinite sets."
 area: logic-language
 content_type: article
 last_modified_at: 2026-10-10
