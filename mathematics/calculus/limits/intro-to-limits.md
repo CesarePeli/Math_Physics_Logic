@@ -1,6 +1,7 @@
 ---
 date: 2025-04-17
 layout: default
+author: Cesare Peli
 title: "Understanding Limits in Calculus"
 permalink: /mathematics/calculus/limits/intro-to-limits/
 redirect_from:
@@ -23,12 +24,6 @@ last_modified_at: 2026-10-10
 ---
 
 
-<div class="content-box">
-
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
-
-</div>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
 <script>
@@ -41,6 +36,8 @@ last_modified_at: 2026-10-10
 <div class="content-box">
 
 # Understanding Limits in Calculus
+
+**By Cesare Peli.**
 
 What does it mean to “approach” a number?  
 This page offers an intuitive introduction to the concept of **limit**, a central idea in calculus.
@@ -61,7 +58,7 @@ Whether you're a high school student or a curious learner, this resource is desi
 
 You can download the full PDF version of this lesson here:
 
-[**Download the PDF →**](/materials/high-school/math/intro-limits.pdf){:target="_blank"}
+[**Download the PDF →**]({{ "/mathematics/calculus/limits/intro-limits.pdf" | relative_url }}){:target="_blank"}
 
 </div>
 

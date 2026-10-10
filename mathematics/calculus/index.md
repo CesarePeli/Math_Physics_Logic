@@ -11,15 +11,13 @@ topic: calculus
 ---
 
 
-<div class="content-box">
-
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
-
-</div>
-
 # Calculus
 
-Calculus studies change, approximation, accumulation and the behavior of functions. Choose a topic below to explore its theory and original worked exercises.
+**Calculus** studies change, approximation, accumulation, and the behavior of functions.
+
+It provides the mathematical language needed to describe limits, continuity, derivatives, integrals, sequences, series, and differential equations. These ideas form a central bridge between elementary mathematics and the mathematical structures used throughout physics, engineering, and the sciences.
+
+This section organizes the material by mathematical topic, combining theoretical ideas with detailed worked exercises.
 
 <div class="content-box">
 
