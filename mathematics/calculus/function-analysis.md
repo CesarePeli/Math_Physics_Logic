@@ -32,7 +32,9 @@ An even function has symmetry about the vertical axis; an odd function has symme
 $$
 f(-x)=f(x)\quad\text{(even)},\qquad f(-x)=-f(x)\quad\text{(odd)}.
 $$
-The authors ask whether a function graph can have symmetry about the horizontal axis. For a single-valued real function this requires every ordinate to equal its negative, so the function must be zero. Periodicity means that the domain is invariant under translation by a positive number T and f(x+T)=f(x) for every x in the domain. Even and odd symmetry require the domain to be invariant under x ↦ −x.
+Can there be symmetry about the x-axis?
+
+Periodicity means that the domain is invariant under translation by a positive number T and f(x+T)=f(x) for every x in the domain. Even and odd symmetry require the domain to be invariant under x ↦ −x.
 
 A vertical asymptote x=x₀ occurs on a side where the corresponding limit is infinite:
 $$
@@ -61,13 +63,13 @@ An absolute maximum or minimum satisfies the respective inequality for every dom
 $$
 f(x)\le f(x_0)\quad\text{(maximum)},\qquad f(x)\ge f(x_0)\quad\text{(minimum)}.
 $$
-Suppose f is continuous on [a,b] and differentiable on (a,b) (the source additionally assumes a continuous derivative). The four monotonicity cases are
+Suppose f is continuous on [a,b] and continuously differentiable on (a,b). The four monotonicity cases are
 $$
 \begin{array}{c|c}f'\ge0&\text{nondecreasing}\\f'>0&\text{strictly increasing}\\f'\le0&\text{nonincreasing}\\f'<0&\text{strictly decreasing}.\end{array}
 $$
 In practice: calculate f′; find its zeros; solve f′>0 and determine the other signs; read the monotonicity intervals. Increasing then decreasing gives a local maximum; decreasing then increasing gives a local minimum. Also examine domain endpoints and points where the derivative fails to exist when seeking extrema.
 
-For a twice differentiable function on (a,b), the source's convexity criteria are
+For a twice differentiable function on (a,b), the convexity criteria are
 $$
 f\text{ convex}\iff f''(x)\ge0\ \forall x\in(a,b),\qquad
 f\text{ concave}\iff f''(x)\le0\ \forall x\in(a,b).
@@ -225,6 +227,10 @@ $$
 
 Set t = x²−1. The numerator’s bracket is q(t) = (t+2) log t+2t+2. Its derivative is log t+3+2/t, which has its minimum at t = 2 and is positive there. Thus q is strictly increasing, from −∞ to +∞, and has one zero t₀ ≈ 0.32043. Let r = √(1+t₀) ≈ 1.14910. The graph is convex for 1 < |x| < r and concave for |x| > r on each domain interval; ±√2 remain excluded. The two inflection abscissae are ±r.
 
+Original diagram:
+
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/log-absolute-log-x-squared-minus-one.png" | relative_url }}" alt="Graph of log of the absolute value of log of x squared minus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
+
 **Final result**
 
 $$
@@ -253,6 +259,10 @@ $$\lim_{x\to\pm\infty}\frac{f(x)}x=1,\qquad\lim_{x\to\pm\infty}(f(x)-x)=1,$$
 the bilateral oblique asymptote is y=x+1. The derivatives are
 $$f'(x)=e^{1/(x+1)}\frac{x^2+x+1}{(x+1)^2}>0,\qquad f''(x)=-e^{1/(x+1)}\frac{x+2}{(x+1)^4}.$$
 The numerator x²+x+1=(x+1/2)²+3/4 is positive. The function therefore increases on each domain interval and has no extrema. It is convex on (−∞,−2), concave on (−2,−1) and (−1,∞); the inflection point is (−2,−2/e).
+
+Original diagram:
+
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/x-exp-one-over-x-plus-one.png" | relative_url }}" alt="Graph of x times exp of one divided by x plus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
@@ -283,6 +293,10 @@ For 0<x≤1 positivity is immediate; for x>1 use log x<x−1<x²+1. Thus f is in
 $$f''(x)=\frac{2\log x-3}{x^3}.$$
 It is concave on (0,e³ᐟ²) and convex on (e³ᐟ²,∞), with inflection ordinate e³ᐟ²+(3/2)e⁻³ᐟ².
 
+
+Original diagram:
+
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/x-plus-log-x-over-x.png" | relative_url }}" alt="Graph of x plus log x divided by x" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
@@ -318,6 +332,10 @@ $$
 Its sign changes at a = (2−√6)/3 and b = (2+√6)/3. The graph is convex on (−∞,a) and (b,∞), and concave on (a,0) and (0,b). Both a and b are inflection abscissae. The cusp at zero is not an inflection point, since concavity is negative on both sides.
 
 
+Original diagram:
+
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/exp-minus-x-cube-root-x-squared.png" | relative_url }}" alt="Graph of exp minus x times the real cube root of x squared" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
+
 **Final result**
 
 $$
@@ -346,6 +364,10 @@ $$f'(x)=\frac{1-x^2}{(1+x^2)^2},\qquad f''(x)=\frac{2x(x^2-3)}{(1+x^2)^3}.$$
 The function decreases on (−∞,−1), increases on (−1,1) and decreases on (1,∞). Hence f(−1)=3/2 is the absolute minimum and f(1)=5/2 the absolute maximum. The second derivative is negative on (−∞,−√3), positive on (−√3,0), negative on (0,√3), and positive on (√3,∞). All three sign-changing zeros give inflections:
 $$(-\sqrt3,2-\sqrt3/4),\qquad(0,2),\qquad(\sqrt3,2+\sqrt3/4).$$
 
+
+Original diagram:
+
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/quadratic-ratio-two-plus-x-over-x-squared-plus-one.png" | relative_url }}" alt="Graph of two plus x divided by x squared plus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
