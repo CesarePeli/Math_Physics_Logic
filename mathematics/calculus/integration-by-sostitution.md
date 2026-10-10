@@ -8,7 +8,7 @@ permalink: /mathematics/calculus/integration-by-substitution/
 redirect_from:
   - /university/math/calculus-1/integration-by-substitution/
 background_image: "/images/integrali.png"
-description: "Six original university exercises using Euler and trigonometric substitutions, partial fractions and integration by parts, with original bounds."
+description: "Eight original university exercises using Euler and trigonometric substitutions, partial fractions and integration by parts, with original bounds."
 area: mathematics
 topic: calculus
 subtopic: integration-by-substitution
@@ -16,14 +16,17 @@ level: university
 content_type: solved-exercises
 ---
 
-# Integration by Substitution: Original University Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Integration by Substitution: Original University Exercises
+
+
+
 
 
 <div class="content-box">
@@ -399,8 +402,68 @@ $$
 </div>
 
 
+
 <div class="content-box">
 
-[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6314. -->
+
+Solve the following exercise:
+
+$$
+\int x^{3} (1+x^{2})^{\frac{1}{3}} \, dx.
+$$
+
+
+
+**Solution.**
+
+Put t=1+x², so dt=2x dx and x³dx=(t−1)dt/2. The transformed integral is
+$$\frac12\int(t-1)t^{1/3}\,dt=\frac12\int(t^{4/3}-t^{1/3})\,dt.$$
+Integrate the two powers and replace t by 1+x².
+
+**Final result**
+
+$$
+\frac3{14}(1+x^2)^{7/3}-\frac38(1+x^2)^{4/3}+C
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6095. -->
+
+Solve the following exercise:
+
+$$
+\int \frac{1}{x^{4} \sqrt{x^{3}+1}} \, dx.
+$$
+
+
+
+**Solution.**
+
+Set t=√(x³+1), so 2t dt=3x²dx and x³=t²−1. The integrand transforms to
+$$\int\frac{dx}{x^4\sqrt{x^3+1}}=\frac23\int\frac{dt}{(t^2-1)^2}.$$
+Resolve the repeated factors:
+$$\frac1{(t^2-1)^2}=\frac14\left(\frac1{(t-1)^2}+\frac1{(t+1)^2}-\frac1{t-1}+\frac1{t+1}\right).$$
+Integrating yields −t/[3(t²−1)]+(1/6)log|(t+1)/(t−1)|. Substitute t back. The real integrand requires x>−1 and x≠0.
+
+**Final result**
+
+$$
+-\frac{\sqrt{x^3+1}}{3x^3}+\frac16\log\left|\frac{\sqrt{x^3+1}+1}{\sqrt{x^3+1}-1}\right|+C
+$$
+
+</div>
+
+
+<div class="content-box">
+
+[**← Back to Integrals**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>

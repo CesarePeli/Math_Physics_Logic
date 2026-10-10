@@ -12,14 +12,17 @@ date: 2026-10-10
 last_modified_at: 2026-10-10
 ---
 
-# Improper Integrals: Original Convergence and Evaluation Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Improper Integrals: Original Convergence and Evaluation Exercises
+
+
+
 
 <div class="content-box">
 
@@ -295,8 +298,70 @@ $$
 </div>
 
 
+
 <div class="content-box">
 
-[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6647. -->
+
+Solve the following exercise:
+
+$$
+\int_{1}^{+\infty} \frac{1}{(x+1)(x+2)x^{2}} \, dx.
+$$
+
+
+
+**Solution.**
+
+The integrand is continuous and positive on [1,∞) and behaves as x⁻⁴ at infinity, so comparison establishes convergence. Its partial fractions are
+$$\frac1{x^2(x+1)(x+2)}=-\frac3{4x}+\frac1{2x^2}+\frac1{x+1}-\frac1{4(x+2)}.$$
+An antiderivative is
+$$F(x)=-\frac34\log x-\frac1{2x}+\log(x+1)-\frac14\log(x+2).$$
+The logarithmic leading terms cancel at infinity, so F(∞)=0. At 1 it is −1/2+log 2−(log 3)/4. Subtract this endpoint value.
+
+**Final result**
+
+$$
+\frac12-\log2+\frac14\log3
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6375. -->
+
+Solve the following exercise:
+
+$$
+\int_{-1}^{1} \frac{1}{(x-4) \sqrt{|x|}} \, dx.
+$$
+
+
+
+**Solution.**
+
+The only interior singularity is zero and behaves as a constant times |x|⁻¹ᐟ², so both one-sided integrals converge. Put t=√x on (0,1] and t=√(−x) on [−1,0). Each half becomes
+$$I_+=2\int_0^1\frac{dt}{t^2-4},\qquad I_-=-2\int_0^1\frac{dt}{t^2+4}.$$
+Integrate with partial fractions and the arctangent:
+$$I_+=\frac12\left[\log\left|\frac{t-2}{t+2}\right|\right]_0^1=-\frac12\log3,\qquad I_-=-[\arctan(t/2)]_0^1.$$
+Add the convergent contributions.
+
+**Final result**
+
+$$
+-\frac12\log3-\arctan\frac12
+$$
+
+</div>
+
+
+<div class="content-box">
+
+[**← Back to Integrals**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>

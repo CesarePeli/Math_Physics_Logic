@@ -17,14 +17,17 @@ content_type: solved-exercises
 featured: true
 ---
 
-# Integration by Parts: Original University Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Integration by Parts: Original University Exercises
+
+
+
 
 
 <div class="content-box">
@@ -367,8 +370,73 @@ $$
 </div>
 
 
+
 <div class="content-box">
 
-[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6283. -->
+
+Solve the following exercise:
+
+$$
+\int_{1}^{2} \log(2x^{2}-3x+1) \, dx
+$$
+
+
+
+**Solution.**
+
+Factor the logarithm argument: 2x²−3x+1=(x−1)(2x−1). On (1,2] both factors are positive, so split the logarithm into log(x−1)+log(2x−1). Each term is integrated by parts after a linear substitution:
+$$\int\log t\,dt=t\log t-t.$$
+For the first integral use t=x−1 with bounds 0 and 1; the limit t log t→0 gives −1. For the second use u=2x−1 with bounds 1 and 3:
+$$\frac12\int_1^3\log u\,du=\frac12[u\log u-u]_1^3=\frac32\log3-1.$$
+The singularity at x=1 is logarithmic and integrable. Add the two values.
+
+**Final result**
+
+$$
+\frac32\log3-2
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6577. -->
+
+Solve the following exercise:
+
+$$
+\int_{0}^{1} \log \frac{2-x^{2}}{x^{2}+3} \, dx
+$$
+
+
+
+**Solution.**
+
+Split the logarithm into log(2−x²)−log(x²+3). Both arguments are positive on [0,1]. Applying integration by parts to each gives
+$$\int\log(2-x^2)\,dx=x\log(2-x^2)+2\int\frac{x^2}{2-x^2}\,dx,$$
+$$\int\log(x^2+3)\,dx=x\log(x^2+3)-2\int\frac{x^2}{x^2+3}\,dx.$$
+Divide the rational terms:
+$$\frac{x^2}{2-x^2}=-1+\frac2{2-x^2},\qquad\frac{x^2}{x^2+3}=1-\frac3{x^2+3}.$$
+The linear terms cancel in the difference. A primitive for the original integrand on [0,1] is
+$$F(x)=x\log\frac{2-x^2}{x^2+3}+\sqrt2\log\frac{\sqrt2+x}{\sqrt2-x}-2\sqrt3\arctan\frac{x}{\sqrt3}.$$
+Here F(0)=0. Evaluate at x=1 and use arctan(1/√3)=π/6.
+
+**Final result**
+
+$$
+-\log4+\sqrt2\log\frac{\sqrt2+1}{\sqrt2-1}-\frac\pi{\sqrt3}
+$$
+
+</div>
+
+
+<div class="content-box">
+
+[**← Back to Integrals**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>

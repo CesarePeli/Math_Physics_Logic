@@ -17,14 +17,17 @@ level: university
 content_type: solved-exercises
 ---
 
-# Limits Using Taylor Expansions: Original Solved Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Limits Using Taylor Expansions: Original Solved Exercises
+
+
+
 
 <div class="content-box">
 
