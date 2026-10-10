@@ -27,7 +27,7 @@ The problems cover ideal gases, entropy, adiabatic transformations, thermodynami
 
 ## Ideal-Gas Processes
 
-Compare the work along three reversible compression paths between the same two ideal-gas states. The example distinguishes path-dependent work from changes in internal energy and entropy.
+Analyze reversible and irreversible isothermal expansion, work at constant external pressure, and three compression paths between the same ideal-gas states.
 
 [**Ideal Gas →**]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
 
@@ -37,7 +37,7 @@ Compare the work along three reversible compression paths between the same two i
 
 ## Entropy and Adiabatic Processes
 
-Distinguish an adiabatic process from an isentropic one. A free-expansion example shows why an insulated ideal gas can increase its entropy without changing its temperature.
+Distinguish an adiabatic process from an isentropic one. The entropy balance explains why a reversible adiabatic process is isentropic and why an irreversible adiabatic process reaches a different final state.
 
 [**Entropy and Adiabatic →**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }})
 
@@ -57,7 +57,7 @@ An article by **Cesare Peli** on Maxwell’s thought experiment, the statistical
 
 ## Equilibrium and Spontaneity
 
-Calculate the standard reaction Gibbs energy and the equilibrium constant from ΔH° and ΔS°. Distinguish standard conditions from an arbitrary reaction mixture.
+Study NO oxidation and the effect of temperature; calculate its equilibrium constant and interpret copper carbonate equilibrium through chemical potentials.
 
 [**Equilibrium and Spontaneity →**]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
 
@@ -75,9 +75,9 @@ Calculate the pressure contribution to the Gibbs free-energy change of liquid wa
 
 <div class="content-box">
 
-## Heating and Melting
+## Water Heating Curve
 
-Calculate the heat required to warm ice, melt it, and warm the resulting water. Distinguish specific heat from latent heat.
+Read the original water heating curve: phase coexistence, melting and vaporization enthalpies, and heat capacities from the slopes.
 
 [**Phase Transition →**]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})
 
@@ -87,7 +87,7 @@ Calculate the heat required to warm ice, melt it, and warm the resulting water. 
 
 ## Freezing-Point Depression
 
-Estimate the freezing-point depression of a sodium chloride solution. The calculation states the dilute ideal-solution approximation and its limits.
+Calculate the freezing point of a solution containing 25.0 g of glucose in 250.0 g of water, using molality and the cryoscopic constant.
 
 [**Colligative Property →**]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
 
@@ -100,6 +100,16 @@ Estimate the freezing-point depression of a sodium chloride solution. The calcul
 Relate the reaction changes in internal energy and enthalpy for ideal gases. Calculate the pressure–volume correction from the gaseous stoichiometric coefficients.
 
 [**Reaction Energetics →**]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+## Stoichiometry and Reaction Mechanisms
+
+Distinguish a formal decomposition of acetylene-to-benzene conversion from a mechanism of elementary steps, using the kinetic data.
+
+[**Reaction Mechanisms →**]({{ '/physics/thermodynamics/reaction-mechanisms/' | relative_url }})
 
 </div>
 

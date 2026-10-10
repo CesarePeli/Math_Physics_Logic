@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Gibbs Free Energy for Incompressible Substances"
+title: "Gibbs Free Energy — Pressure and Incompressible Water"
 author: Marco Ruzzi
-description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
+description: "Use the fundamental thermodynamic equation to calculate the Gibbs-energy change of 2 kg of incompressible water when pressure increases from 1 to 3 atm."
 permalink: /physics/thermodynamics/gibbs-free-energy/
 redirect_from:
   - /university/physics/thermodynamics/gibbs-incompressible/
@@ -11,117 +11,68 @@ background_image: /images/termodinamica.png
 last_modified_at: 2026-10-10
 ---
 
-# Gibbs Free Energy for Incompressible Substances
+# Gibbs Free Energy — Pressure and Incompressible Water
+
+<div class="content-box">
 
 *By Prof. Marco Ruzzi.*
 
-<div class="content-box">
+## Theoretical background
 
-## Theoretical Background
+The fundamental equation for Gibbs energy is:
 
-- **Definition of Gibbs free energy:**
-  $$
-  G = H - TS
-  $$
+$$
+dG=V\,dp-S\,dT+\sum_i\mu_i\,dn_i.
+$$
 
-- Differential form for a closed system of fixed composition:
-  $$
-  dG = V\,dp - S\,dT
-  $$
-
-- For an **isothermal process** (dT = 0):
-  $$
-  dG = V\,dp
-  $$
-
-- For a fixed amount of an **incompressible** substance (constant total volume V):
-  $$
-  \Delta G = V\,(p_2 - p_1)
-  $$
-
-For a fixed amount of an incompressible substance at constant temperature, the Gibbs free-energy change is therefore proportional to the pressure change.
+For a closed system with constant composition undergoing an isothermal change, dT=0 and dn<sub>i</sub>=0. Therefore dG=Vdp.
 
 </div>
 
 <div class="content-box">
 
-## Exercise
+## Exercise 10 — Increasing the pressure on liquid water
 
-For **1.00 L of liquid water** at 25° C, calculate the change in Gibbs free energy when pressure increases from **1 bar to 100 bar**, assuming water is incompressible with molar volume V<sub>m</sub> = 18.0 × 10⁻⁶  m³ mol⁻¹.
+The pressure on a 2 kg sample of water increases from 1.00 to 3.00 atm at constant temperature. Assume a constant liquid volume (incompressible water), with density 1 kg L⁻¹. Use 1 L atm=101.325 J.
+
+**Hint:** use the fundamental thermodynamic equation.
+
+Calculate the Gibbs-energy change.
+
+### 1. Reduce the fundamental equation
+
+The system is closed and its composition is constant. For water alone:
+
+$$
+dG=V\,dp-S\,dT+\mu_{\mathrm{H_2O}}\,dn_{\mathrm{H_2O}}.
+$$
+
+Since dT=0 and dn<sub>H₂O</sub>=0:
+
+$$
+dG=V\,dp.
+$$
+
+### 2. Integrate at constant volume
+
+$$
+\Delta G=V(p_f-p_i)=\frac{m}{\rho}(p_f-p_i).
+$$
+
+$$
+V=\frac{2\ \mathrm{kg}}{1\ \mathrm{kg\,L^{-1}}}=2\ \mathrm{L}.
+$$
+
+$$
+\Delta G=(2\ \mathrm{L})(2\ \mathrm{atm})=4\ \mathrm{L\,atm}.
+$$
+
+$$
+\Delta G=4(101.325)\ \mathrm{J}=+405.3\ \mathrm{J}.
+$$
+
+
 
 </div>
 
-<div class="content-box">
-
-## Step-by-Step Solution
-
-**Step 1. Number of moles**  
-From the total volume and the molar volume:
-$$
-n = \frac{V}{V_m} = \frac{1.00 \times 10^{-3}\, m^3}{18.0 \times 10^{-6}\, m^3 mol^{-1}} = 55.6\, mol
-$$
-
----
-
-**Step 2. Pressure change**  
-$$
-\Delta p = p_2 - p_1 = (100 - 1)\, bar = 99\, bar
-$$
-
-Convert to SI units:  
-$$
-1\, bar = 10^5\, Pa \quad \Rightarrow \quad \Delta p = 99 \times 10^5 = 9.9 \times 10^6\, Pa
-$$
-
----
-
-**Step 3. Gibbs free energy change**  
-Use ΔG = n V<sub>m</sub> Δ p:  
-$$
-\Delta G
-= (55.6\,\mathrm{mol})
-  (18.0 \times 10^{-6}\,\mathrm{m^3\,mol^{-1}})
-  (9.9 \times 10^6\,\mathrm{Pa})
-$$
-
-$$
-\Delta G = 9900\, J \;\approx 9.9\, kJ
-$$
-
----
-
-**Final Answer:**  
-$$
-\Delta G \approx 9.9\, kJ
-$$
-
-</div>
-
-<div class="content-box">
-
-## Notes
-
-- The calculation shows that for liquids, ΔG is proportional to the pressure change.  
-- Increasing the pressure from 1 bar to 100 bar changes G by about 9.9 kJ for one litre of water; the change per mole is only about 0.18 kJ mol⁻¹ because the molar volume is small.  
-- For a pure ideal gas, the molar Gibbs free energy, or chemical potential, is
-  
-
-$$
-\mu(T,p)=\mu^\circ(T)+RT\ln\!\left(\frac{p}{p^\circ}\right).
-$$
-
-
-  Its pressure dependence is logarithmic.  
-- Pressure enters gas chemical potentials explicitly. For liquids and solids, the pressure contribution is usually much smaller because their molar volumes are small.  
-
-</div>
-
----
-
-### Related topics  
-- [Ideal-Gas Processes — Work, ΔU and ΔS](/physics/thermodynamics/ideal-gas-processes/)  
-- [Reaction Energetics — Internal Energy and Enthalpy](/physics/thermodynamics/reaction-energetics/)  
-- [Entropy in Adiabatic Transformations](/physics/thermodynamics/entropy-adiabatic/)  
-- [Equilibrium & Spontaneity — ΔG°, K, Temperature](/physics/thermodynamics/equilibrium-and-spontaneity/)  
-- [Colligative Properties — Freezing Point Depression](/physics/thermodynamics/colligative-freezing/)  
-- [Phase Transitions — Heating Curve and Enthalpy Changes](/physics/thermodynamics/phase-transitions/)  
+[← Thermodynamics worked problems]({{ '/physics/thermodynamics/' | relative_url }})
