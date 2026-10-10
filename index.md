@@ -5,17 +5,12 @@ permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
-raw: true
 last_modified_at: 2026-10-10
 ---
-
-<div class="content-box">
 
 # Logic & Motion
 
 Logic & Motion is an independent educational project devoted to mathematics, physics, logic, language, and artificial intelligence. It brings together conceptual articles, theoretical notes, proofs, worked exercises, and visual material for students, teachers, and interested readers.
-
-</div>
 
 <div class="content-box">
 
