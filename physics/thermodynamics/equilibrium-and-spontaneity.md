@@ -121,7 +121,7 @@ Because ΔG<sub>r</sub>°<0, the forward reaction is spontaneous when Q=1. Since
 
 **6) Temperature effect (sign analysis).**  
 Here ΔH<sub>r</sub>°<0 (exothermic) and ΔS<sub>r</sub>°<0 (gas moles decrease: 3→2).  
-Increasing T makes -TΔS<sub>r</sub>° more **positive**, so ΔG<sub>r</sub>° becomes less negative. If ΔH<sub>r</sub>° and ΔS<sub>r</sub>° are treated as approximately constant, the constant-ΔH° and constant-ΔS° extrapolation predicts a sign change at about 786 K. This large extrapolation from 298 K is not a reliable prediction of the actual crossing temperature without heat-capacity data and a check of the phases present. The decrease of K<sub>p</sub> with temperature is consistent with the van ’t Hoff equation.
+Increasing T makes -TΔS<sub>r</sub>° more **positive**, so ΔG<sub>r</sub>° becomes less negative. If ΔH<sub>r</sub>° and ΔS<sub>r</sub>° are treated as approximately constant, assuming constant ΔH° and ΔS°, it becomes positive above about 786 K. The decrease of K<sub>p</sub> with temperature is consistent with the van ’t Hoff equation.
 
 </div>
 

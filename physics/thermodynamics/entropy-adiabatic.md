@@ -19,7 +19,7 @@ content_type: solved-exercise
 
 *By Prof. Marco Ruzzi.*
 
-In an adiabatic process, there is no heat transfer at any stage. Hence q = 0, but ΔS need not vanish. Zero net heat alone would not establish that a process is adiabatic: heat received and released at different stages could cancel.
+In an adiabatic process, no heat is exchanged with the surroundings. Hence q = 0, but ΔS need not vanish.
 
 For a closed system, entropy remains constant only when the adiabatic process is **reversible**. An irreversible adiabatic process generates entropy, so the entropy of the system increases.
 

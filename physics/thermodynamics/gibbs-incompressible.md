@@ -24,7 +24,7 @@ last_modified_at: 2026-10-10
   G = H - TS
   $$
 
-- Differential form for a simple compressible closed system of fixed composition, with pressure–volume work as the only work mode:
+- Differential form for a closed system of fixed composition:
   $$
   dG = V\,dp - S\,dT
   $$
