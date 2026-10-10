@@ -1,10 +1,10 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
-date: 2026-08-24
+last_modified_at: 2026-10-10
+date: 2026-10-10
 original_date: 2025-04-20
 title: "Solved Exercises on Complex Numbers"
-author: Cesare Peli
+author: "Antonino De Martino and Luana Manfredini"
 permalink: /mathematics/algebra/complex-numbers/
 redirect_from:
   - /university/math/calculus-1/complex-numbers/
@@ -18,18 +18,11 @@ level: university
 content_type: solved-exercises
 ---
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P4GLVFYWW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3P4GLVFYWW');
-</script>
-
 <div class="content-box">
 
 # Solved Exercises on Complex Numbers
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 This collection develops the main techniques used to work with **complex numbers**, from algebraic and exponential representations to modulus, conjugation, powers, roots, and equations in the complex plane.
 
@@ -53,13 +46,13 @@ $$
 \overline{z} = a - ib, \quad |z| = \sqrt{a^2+b^2} .
 $$
 
-- **Polar and exponential form**:
+- **Polar and exponential form**: for z ≠ 0, the argument θ is defined modulo 2π. Zero has modulus zero but no defined argument.
 
 $$
 z = r(\cos \theta + i\sin \theta) = re^{i\theta}, \quad r = |z|, \ \theta = \arg(z) .
 $$
 
-- **De Moivre’s formula**:
+- **De Moivre’s formula**: n is an integer; for negative n, z must be nonzero.
 
 $$
 (re^{i\theta})^n = r^n e^{in\theta} .
@@ -86,7 +79,7 @@ $$
 ## Theoretical Recalls
 
 The idea of complex numbers began to emerge around the 16th century, when Italian algebraists attempted to solve algebraic equations.  
-The term *imaginary number* was introduced by Bombelli (1572), while a more rigorous foundation was given by Gauss in the early 19th century.  
+Rafael Bombelli’s *L’Algebra* (1572) gave systematic rules for calculating with square roots of negative numbers. The designation *imaginary* appears later in Descartes’ *La Géométrie* (1637). The algebraic calculations and their geometric interpretation developed over different stages; introducing a name did not itself supply a foundation.  
 One of the most important theorems based on complex numbers is the **Fundamental Theorem of Algebra**.
 
 Given z = x + iy ∈ ℂ, the most important formulas are:
@@ -121,7 +114,7 @@ $$
 z^{n} = \rho^{n}(\cos(n\theta)+i\sin(n\theta)) .
 $$
 
-- **n-th roots of a complex number**
+- **n-th roots of a complex number**: let n be a positive integer, ρ = |z| > 0, and θ an argument of z. The n roots are distinct. If z = 0, the only root is 0.
 
 $$
 w_{k} = \sqrt[n]{\rho}\Bigl[\cos\!\Bigl(\tfrac{\theta+2k\pi}{n}\Bigr)
@@ -309,7 +302,7 @@ $$
 
 ### Exercise 9 — Solve (z⁵z̄² − 1)(z² + z + 2) = 0
 
-**Solution.** Case 1: |z| = 1 ⇒ z³ = 1 ⇒ z ∈ {1, −½ ± i√3/2}.  
+**Solution.** Case 1: z⁵z̄² = 1. Taking moduli gives |z|⁷ = 1, hence |z| = 1. Thus z̄ = 1/z and z⁵z̄² = z³, so z³ = 1 and z ∈ {1, −½ ± i√3/2}.  
 Case 2: z² + z + 2 = 0 ⇒ z = (−1 ± i√7)/2.
 
 **Final result**
@@ -348,7 +341,7 @@ $$
 
 <div class="content-box">
 
-## Continue Exploring Algebra
+## Related Algebra Topics
 
 Complex numbers connect algebraic equations with geometry, trigonometry, and exponential representations.
 

@@ -141,7 +141,7 @@ For real powers, use intervals where the expressions are real and differentiable
 
 ### Half-Angle Identities
 
-As the source notes, the following formulas are applications of half-angle identities:
+The following formulas are applications of half-angle identities:
 
 $$
 \cos^2x=\frac{1+\cos(2x)}2.
@@ -165,7 +165,7 @@ $$
 \int f(x)\,dx=\int f(g(t))g\prime(t)\,dt.
 $$
 
-### Notable Improper Integrals: All Source Cases
+### Notable Improper Integrals: Convergence Conditions
 
 For α > 0:
 
@@ -201,7 +201,7 @@ $$
 
 <div class="content-box">
 
-## Original Worked Exercises
+## Worked Exercises
 
 These additional exercises and their solutions are translated from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. No new exercise statements have been introduced.
 
@@ -411,7 +411,7 @@ $$
 
 **Solution.**
 
-This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
 
 Recognize the inner derivative: d(4x²)=8x dx. With u=4x²,
 $$\int xe^{4x^2}\,dx=\frac18\int e^u\,du=\frac18e^u+C.$$
@@ -441,7 +441,7 @@ $$
 
 **Solution.**
 
-This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
 
 Use 1+cos 2x=2 cos²x and u=tan x, du=sec²x dx:
 $$\int\frac{3^{\tan x}}{1+\cos2x}\,dx=\frac12\int3^u\,du.$$
@@ -471,7 +471,7 @@ $$
 
 **Solution.**
 
-This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
 
 On intervals with sin x>0 put u=sin x, du=cos x dx. Then
 $$\int\frac{(1+u)}{\sqrt u}\,du=\int(u^{-1/2}+u^{1/2})\,du=2\sqrt u+\frac23u^{3/2}+C.$$

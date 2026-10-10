@@ -2,14 +2,15 @@
 title: "Logarithmic Spiral"
 image: "/gallery-images/spirale.png"
 description: "A modular and symbolic interpretation of the logarithmic spiral."
-meta_description: "AI-generated artwork inspired by the logarithmic spiral. Geometric abstraction meets natural structure in a composition that explores golden proportions and symbolic growth."
+meta_description: "AI-generated artwork inspired by the logarithmic spiral. A visual interpretation of spiral geometry; no specific growth ratio is asserted."
 topic: "Mathematics"
-tags: ["logarithmic spiral", "golden ratio", "geometry", "modularity", "mathematical structure"]
+tags: ["logarithmic spiral", "geometry", "modularity", "mathematical structure"]
 model: "Midjourney v6"
 author: "Cesare Peli"
 order: 9
 date: 2025-06-17
 layout: default
+last_modified_at: 2026-10-10
 ---
 
 <script type="application/ld+json">

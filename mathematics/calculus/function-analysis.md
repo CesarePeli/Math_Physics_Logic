@@ -26,13 +26,13 @@ last_modified_at: 2026-10-10
 
 ## Complete Function-Analysis Recall
 
-Follow the exercise book's six stages: determine the domain; check symmetry and periodicity; study the sign; find asymptotes; study the first derivative; study the second derivative when possible.
+Follow six stages: determine the domain; check symmetry and periodicity; study the sign; find asymptotes; study the first derivative; study the second derivative when possible.
 
 An even function has symmetry about the vertical axis; an odd function has symmetry about the origin:
 $$
 f(-x)=f(x)\quad\text{(even)},\qquad f(-x)=-f(x)\quad\text{(odd)}.
 $$
-The authors ask whether a function graph can have symmetry about the horizontal axis. For a single-valued real function this requires every ordinate to equal its negative, so the function must be zero. Periodicity means f(x+T)=f(x), for a positive period T and all applicable domain points.
+The authors ask whether a function graph can have symmetry about the horizontal axis. For a single-valued real function this requires every ordinate to equal its negative, so the function must be zero. Periodicity means that the domain is invariant under translation by a positive number T and f(x+T)=f(x) for every x in the domain. Even and odd symmetry require the domain to be invariant under x ↦ −x.
 
 A vertical asymptote x=x₀ occurs on a side where the corresponding limit is infinite:
 $$
@@ -217,7 +217,13 @@ For the nested logarithms, require x²−1>0 and log(x²−1)≠0. Thus |x|>1 an
 $$x=\pm\sqrt{1+e^{-1}},\qquad x=\pm\sqrt{1+e}.$$
 There is no vertical-axis intercept. On x>1, the function is positive on (1,√(1+e⁻¹)) and (√(1+e),∞); negative between these zeros, with the excluded point √2 splitting that interval. Reflect the signs to x<−1. The limits at 1 from the right and at −1 from the left are +∞; both limits at each of ±√2 are −∞. These four lines are vertical asymptotes. At either infinity f tends to +∞, so there are no horizontal asymptotes; f/x tends to zero, so there is no nonzero-slope oblique asymptote. Differentiate:
 $$f'(x)=\frac{2x}{(x^2-1)\log(x^2-1)}.$$
-For x>1 it is negative on (1,√2) and positive on (√2,∞); evenness reverses these signs on the reflected intervals. The derivative never vanishes in the domain, so there are no extrema. The source leaves the second derivative optional.
+For x>1 it is negative on (1,√2) and positive on (√2,∞); evenness reverses these signs on the reflected intervals. The derivative never vanishes in the domain, so there are no extrema. The second derivative is
+
+$$
+f''(x)=-\frac{2\left[(x^2+1)\log(x^2-1)+2x^2\right]}{(x^2-1)^2\log^2(x^2-1)}.
+$$
+
+Set t = x²−1. The numerator’s bracket is q(t) = (t+2) log t+2t+2. Its derivative is log t+3+2/t, which has its minimum at t = 2 and is positive there. Thus q is strictly increasing, from −∞ to +∞, and has one zero t₀ ≈ 0.32043. Let r = √(1+t₀) ≈ 1.14910. The graph is convex for 1 < |x| < r and concave for |x| > r on each domain interval; ±√2 remain excluded. The two inflection abscissae are ±r.
 
 **Final result**
 
@@ -303,7 +309,13 @@ $$
 
 The real cube root makes the domain all ℝ. The function is nonnegative, neither even nor odd, and has its only intercept at the origin. At −∞ it tends to +∞; at +∞ it tends to zero, giving the right horizontal asymptote y=0. There is no vertical asymptote and no finite-slope oblique asymptote at −∞. For x≠0,
 $$f'(x)=e^{-x}\left(\frac{2}{3\sqrt[3]x}-\sqrt[3]{x^2}\right)=\frac{e^{-x}(2-3x)}{3\sqrt[3]x}.$$
-It is negative for x<0, positive for 0<x<2/3, and negative for x>2/3. At zero the left and right difference quotients tend respectively to −∞ and +∞; the origin is a cusp and the absolute minimum. The point at x=2/3 is a local maximum, with value e⁻²ᐟ³(4/9)¹ᐟ³. There is no absolute maximum because of the unbounded behavior at −∞. The source leaves the second derivative optional.
+It is negative for x<0, positive for 0<x<2/3, and negative for x>2/3. At zero the left and right difference quotients tend respectively to −∞ and +∞; the origin is a cusp and the absolute minimum. The point at x=2/3 is a local maximum, with value e⁻²ᐟ³(4/9)¹ᐟ³. There is no absolute maximum because of the unbounded behavior at −∞. The second derivative, for x ≠ 0, is
+
+$$
+f''(x)=\frac{e^{-x}}{|x|^{4/3}}\left(x^2-\frac43x-\frac29\right).
+$$
+
+Its sign changes at a = (2−√6)/3 and b = (2+√6)/3. The graph is convex on (−∞,a) and (b,∞), and concave on (a,0) and (0,b). Both a and b are inflection abscissae. The cusp at zero is not an inflection point, since concavity is negative on both sides.
 
 
 **Final result**

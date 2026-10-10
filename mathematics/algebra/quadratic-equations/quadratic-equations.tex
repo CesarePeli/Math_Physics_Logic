@@ -1,0 +1,788 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{beamerthemeCopenhagen}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{appendixnumberbeamer}
+\usepackage{relsize}
+\usepackage{graphics}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{booktabs}
+\usecolortheme{beaver}
+\setbeamercovered{transparent}
+\definecolor{formula}{rgb}{0.1, 0.1, 0.7}
+\setbeamertemplate{navigation symbols}{}
+\title{Quadratic Equations}
+
+\author{}
+\date{}
+
+\begin{document}
+	
+	\frame{\titlepage}
+\begin{frame}
+	\frametitle{Lessons Overview}
+	
+	\setbeamercolor{block title}{bg=red!30, fg=black}
+	\setbeamercolor{block body}{bg=red!10, fg=black}
+	
+	\begin{block}{}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item \textbf{Introduction to Quadratic Equations}
+					\item \textbf{Types of Equations:}
+					\begin{itemize}
+						\item Pure
+						\item Incomplete
+						\item Perfect Squares
+						\item Special Trinomials
+					\end{itemize}
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item \textbf{Solving Techniques:}
+					\begin{itemize}
+						\item Factoring (ZPP)
+						\item Completing the Square
+						\item General Formula
+					\end{itemize}
+					\item \textbf{Discriminant Cases}
+					\item \textbf{Step-by-step Exercises}
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
+\end{frame}
+
+
+
+	
+	\begin{frame}
+		\frametitle{Quadratic Equations}
+		
+		\begin{block}{Standard Form Equation}
+			A quadratic equation in standard form is written as:
+			\[
+			ax^2 + bx + c = 0.
+			\]
+			\begin{itemize}
+				\item \(a\), \(b\), and \(c\) are real numbers, with \(a \neq 0\) (otherwise it wouldn't be a quadratic equation).
+				\item “Standard form” simply means the terms are ordered by degree.
+			\end{itemize}
+		\end{block}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Example}
+			\begin{enumerate}
+				\item What is the standard form of \(4 + x = -x^2\)?
+				\item Is \(x^2 + 2 = 0\) in standard form?
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Roots of an Equation}
+		
+		\begin{block}{Roots of an Equation}
+			To a quadratic equation like \(ax^2 + bx + c = 0\), we can associate the polynomial \(P(x) = ax^2 + bx + c\).
+			
+			\textit{A solution \(x_0\) is a value that, when substituted into \(P(x)\), makes the polynomial equal to zero.}
+		\end{block}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Example}
+			Let’s consider the equation \(x^2 - 4 = 0\), with associated polynomial \(P(x) = x^2 - 4\).
+			
+			Substituting \(x = 2\):
+			\[
+			P(2) = 2^2 - 4 = 4 - 4 = 0
+			\]
+			Since \(P(2) = 0\), \(x = 2\) is a solution of the equation \(x^2 - 4 = 0\).
+			
+			\bigskip
+			\textbf{Question:} What are the solutions to \(x^2 + 2 = 0\)?
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Square Roots and Quadratic Equation Solutions}
+		
+		\begin{block}{Square Root}
+			The square root of a number, such as \(\sqrt{9}\), is defined as the nonnegative value whose square gives the original number. For example, \(\sqrt{9} = 3\), since \(3^2 = 9\). Yet, note that \((-3)^2 = 9\) as well.
+			
+			The principal square root is nonnegative; it is zero when the radicand is zero.
+		\end{block}
+		
+		\setbeamercolor{block title}{fg=black, bg=blue!20}
+		\setbeamercolor{block body}{fg=black, bg=blue!10}
+		\begin{block}{Solving Quadratic Equations}
+			When solving an equation like \(x^2 = 9\), we look for all numbers whose square is 9.
+			
+			In this case, there are two solutions: \(x = 3\) and \(x = -3\), since both \(3^2\) and \((-3)^2\) equal 9. Unlike the square root, we consider both the positive and negative roots.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Square Roots of Negative Numbers and No Real Solutions}
+		
+		\begin{block}{No Real Square Root of Negative Numbers}
+			The square root of a number, such as \(\sqrt{81}\), is a number that squared gives the radicand.
+			
+			However, there is no real square root of a negative number like \(\sqrt{-81}\), since no real number squared can yield a negative result.
+		\end{block}
+		
+		\setbeamercolor{block title}{fg=black, bg=blue!20}
+		\setbeamercolor{block body}{fg=black, bg=blue!10}
+		\begin{block}{Quadratic Equations Without Solutions}
+			This means that some quadratic equations have no real solution. For example, the equation \(x^2 + 2 = 0\) has no real solutions, because solving it would require computing the square root of \(-2\), which is not a real number.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Number of Solutions of a Quadratic Equation}
+		
+		\begin{block}{Number of Solutions}
+			A quadratic equation can have 0, 1, or 2 real solutions:
+			\begin{itemize}
+				\item 0 if the equation has no real roots,
+				\item 1 if it has a double root,
+				\item 2 if the discriminant is positive.
+			\end{itemize}
+		\end{block}
+		
+		\begin{alertblock}{Exercise}
+			Determine how many solutions each equation has:
+			\begin{enumerate}
+				\item \(x^2 = 64\)
+				\item \(x^2 = -7\)
+				\item \((x + 3)^2 = 0\)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Quadratic Equations with One Solution}
+		\fontsize{9}{11}
+		
+		\begin{block}{Perfect Square and Single Solution}
+			A real quadratic equation has a unique real solution when its polynomial is a nonzero constant multiple of a binomial square. For a monic polynomial this takes the form:
+			\[
+			(x + a)^2
+			\]
+			The formula is:
+			\[
+			(x + a)^2 = x^2 + 2ax + a^2
+			\]
+			If a quadratic is of this form, it has one solution.
+		\end{block}
+		
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		\begin{block}{Example}
+			Consider the equation \(x^2 + 4x + 4 = 0\).
+			\begin{itemize}
+				\item This polynomial is the square of \((x + 2)\), since:
+				\[
+				x^2 + 4x + 4 = (x + 2)^2
+				\]
+				\item Since \((x + 2)^2 = 0\), the only solution is \(x = -2\).
+				\item The solution is the value that makes the binomial vanish.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\fontsize{8.5}{11}
+		\frametitle{Pure Quadratic Equations}
+		
+		\begin{block}{What Are Pure Quadratic Equations?}
+			Pure quadratic equations are a special type of quadratic equation where the linear term is missing. They have the form:
+			\[
+			ax^2 + c = 0
+			\]
+			In these equations, the variable appears only as a square. To solve them, isolate \(x^2=-c/a\), with \(a\ne0\). There are two real solutions if \(-c/a>0\), one if \(-c/a=0\), and none if \(-c/a<0\).
+		\end{block}
+		
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		\begin{block}{Example: Solving \(2x^2 - 8 = 0\)}
+			\begin{itemize}
+				\item First, isolate \(x^2\): \[2x^2 = 8\]
+				\item Then, divide both sides by 2: \[x^2 = 4\]
+				\item Finally, find the two numbers whose square is 4: \[x = -2 \vee x = 2 \quad (x = \pm 2)\]
+			\end{itemize}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Exercises on Quadratic Equations}
+		
+		\begin{alertblock}{Exercises}
+			Solve the following equations:
+			\begin{enumerate}
+				\item \(x^2 - 5 = 0\)
+				\item \(4x^2 - 1 = 0\)
+				\item \(x^2 + \sqrt{2} - \sqrt{3} = 0\)
+				\item \(x^2 - \sqrt{2} + \sqrt{3} = 0\)
+				\item \(4x^2 - x(2 - x) + 2(x - 1) = 3\)
+				\item \((x - 1)^2 + (x + 1)^2 = (x + 1)(x - 1) + 5\)
+				\item Which real numbers are equal to their own square?
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solutions to the Exercises}
+		\fontsize{9}{11}
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \(x^2 - 5 = 0\) \\ Solution: \(x = \pm \sqrt{5}\)
+				\item \(4x^2 - 1 = 0\) \\ Solution: \(x = \pm \frac{1}{2}\)
+				\item \(x^2 + \sqrt{2} - \sqrt{3} = 0\) \\ Solution: \(x = \pm \sqrt{\sqrt{3} - \sqrt{2}}\)
+				\item \(x^2 - \sqrt{2} + \sqrt{3} = 0\) \\ No real solution, since \(x^2 = \sqrt{2} - \sqrt{3}\) is a square equal to a negative number.
+				\item \(4x^2 - x(2 - x) + 2(x - 1) = 3\) \\ Simplifies to: \(5x^2 - 2 = 3 \Rightarrow 5x^2 = 5 \Rightarrow x = \pm 1\)
+				\item \((x - 1)^2 + (x + 1)^2 = (x + 1)(x - 1) + 5\) \\ Expands to: \(2x^2 + 2 = x^2 + 4 \Rightarrow x^2 = 2\) \\ Solution: \(x = \pm \sqrt{2}\)
+				\item Answer: \(0\) and \(1\) are the only real numbers equal to their own square.
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{ZPP – Zero Product Property}
+		\fontsize{9.5}{11}
+		\begin{block}{Proposition}
+			If the product of two numbers is zero, then at least one of the two numbers is zero:
+			\[
+			ab = 0 \Leftrightarrow a = 0 \vee b = 0
+			\]
+		\end{block}
+		
+		\setbeamercolor{block title}{fg=black, bg=blue!20}
+		\setbeamercolor{block body}{fg=black, bg=blue!10}
+		\begin{block}{Proof}
+			Proof by contradiction: if denying the statement leads to a contradiction, then the statement is true.
+			
+			Suppose \(a \neq 0\) and \(b \neq 0\), and
+			\[
+			a \cdot b = 0
+			\]
+			
+			Divide both sides by \(a\):
+			\[
+			\frac{1}{a} \cdot a \cdot b = \frac{1}{a} \cdot 0
+			\Rightarrow b = 0
+			\]
+			
+			But we assumed \(b \neq 0\), which is a contradiction. \(\square\)
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Incomplete Quadratic Equations}
+		
+		\begin{block}{What Are Incomplete Quadratic Equations?}
+			Incomplete quadratic equations are equations where the constant term \(c\) is missing. They have the form:
+			\[
+			ax^2 + bx = 0
+			\]
+			To solve them, we factor out \(x\) and apply the ZPP (Zero Product Property).
+		\end{block}
+		
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		\begin{block}{Example}
+			\(x^2 - 4x = 0\)
+			
+			Factor out \(x\):
+			\[
+			x(x - 4) = 0
+			\]
+			
+			Using ZPP:
+			\[
+			x = 0 \quad \text{or} \quad x = 4
+			\]
+		\end{block}
+	\end{frame}
+	
+	
+	
+	\begin{frame}
+		\frametitle{Exercises – Incomplete Quadratic Equations}
+		
+		\begin{alertblock}{Exercises}
+			Solve the following incomplete quadratic equations:
+			\begin{enumerate}
+				\item \(x^2 - 9x = 0\)
+				\item \(2x^2 + 6x = 0\)
+				\item \(x(x - 5) = 0\)
+				\item \(4x^2 - 16x = 0\)
+				\item \(x^2 - 2x = 0\)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Solutions to the Exercises}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \(x^2 - 9x = 0\) \\ Solution: \(x(x - 9) = 0 \Rightarrow x = 0\) or \(x = 9\) \textcolor{formula}{[\(x = 0, 9\)]}
+				
+				\item \(2x^2 + 6x = 0\) \\ Solution: \(2x(x + 3) = 0 \Rightarrow x = 0\) or \(x = -3\) \textcolor{formula}{[\(x = 0, -3\)]}
+				
+				\item \(x(x - 5) = 0\) \\ Solution: \(x = 0\) or \(x = 5\) \textcolor{formula}{[\(x = 0, 5\)]}
+				
+				\item \(4x^2 - 16x = 0\) \\ Solution: \(4x(x - 4) = 0 \Rightarrow x = 0\) or \(x = 4\) \textcolor{formula}{[\(x = 0, 4\)]}
+				
+				\item \(x^2 - 2x = 0\) \\ Solution: \(x(x - 2) = 0 \Rightarrow x = 0\) or \(x = 2\) \textcolor{formula}{[\(x = 0, 2\)]}
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Quadratic Equation Exercises}
+		
+		\begin{alertblock}{Exercises}
+			Solve the following quadratic equations:
+			\begin{enumerate}
+				\item \(x^2 + 2x + 1 = 0\)
+				\item \(x^2 + 6x + 9 = 0\)
+				\item \(x^2 + 12x + 36 = 0\)
+				\item \(x^2 - 16x + 64 = 0\)
+				\item \(4x^2 + 20x + 25 = 0\)
+				\item \(9x^2 - 54x + 81 = 0\)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solutions to the Exercises}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \(x^2 + 2x + 1 = 0\) \textcolor{formula}{\((x + 1)^2 = 0 \Rightarrow x = -1\)}
+				\item \(x^2 + 6x + 9 = 0\) \textcolor{formula}{\((x + 3)^2 = 0 \Rightarrow x = -3\)}
+				\item \(x^2 + 12x + 36 = 0\) \textcolor{formula}{\((x + 6)^2 = 0 \Rightarrow x = -6\)}
+				\item \(x^2 - 16x + 64 = 0\) \textcolor{formula}{\((x - 8)^2 = 0 \Rightarrow x = 8\)}
+				\item \(4x^2 + 20x + 25 = 0\) \textcolor{formula}{\((2x + 5)^2 = 0 \Rightarrow x = -\frac{5}{2}\)}
+				\item \(9x^2 - 54x + 81 = 0\) \textcolor{formula}{\((3x - 9)^2 = 0 \Rightarrow x = 3\)}
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	
+	
+	
+	
+	\begin{frame}
+		\frametitle{Partial Factoring}\footnotesize
+		
+		\begin{block}{\footnotesize Partial Factoring}
+			\footnotesize In a polynomial, we group two pairs of terms and factor each group separately:
+			\[
+			ax + ay + bx + by = x(a + b) + y(a + b)
+			\]
+			Then we factor out the common binomial:
+			\[
+			(a + b)(x + y)
+			\]
+		\end{block}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{\footnotesize Example}
+			\footnotesize Let's solve the equation \(2x^2 + 4x + 3x + 6 = 0\) using partial factoring and the Zero Product Property (ZPP):
+			\[
+			2x(x + 2) + 3(x + 2) = 0
+			\]
+			Factor \((x + 2)\):
+			\[
+			(2x + 3)(x + 2) = 0
+			\]
+			Apply ZPP:
+			\[
+			2x + 3 = 0 \quad \text{or} \quad x + 2 = 0
+			\]
+			The solutions are:
+			$
+			x = -\frac{3}{2} \quad \text{or} \quad x = -2
+			$
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Special Trinomials}
+		
+		\begin{block}{Special Trinomial}
+			A polynomial \(P(x) = ax^2 + bx + c\) such that \(a = 1\), \(b = n_1 + n_2\), and \(c = n_1 n_2\), with \(n_1, n_2 \in \mathbb{Z}\), is called a special trinomial and can be written as:
+			\[
+			P(x) = (x + n_1)(x + n_2)
+			\]
+		\end{block}
+		
+		\setbeamercolor{block body}{fg=black, bg=green!20}
+		\begin{block}{Example}
+			An equation containing this type of polynomial can be solved using the Zero Product Property. For example, the equation \(x^2 + 7x + 12 = 0\) becomes:
+			\[
+			(x + 3)(x + 4) = 0
+			\]
+			From which the solutions are \(x = -3\) and \(x = -4\).
+		\end{block}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Proof of the Special Trinomial Formula}
+		
+		\begin{block}{Where the Formula Comes From}
+			\small Let's consider a special trinomial of the form \(P(x) = x^2 + sx + p\), where \(s = a + b\) and \(p = a \cdot b\). We can factor this trinomial using partial factoring.
+			
+			Start by writing the trinomial as a sum of four terms:
+			\[
+			P(x) = x^2 + ax + bx + ab
+			\]
+			Now group the terms into two pairs and factor each group:
+			\[
+			x(x + a) + b(x + a)
+			\]
+			Notice that both expressions contain the common factor \((x + a)\), which we can factor out:
+			\[
+			(x + a)(x + b)
+			\]
+			This proves that the special trinomial \(x^2 + sx + p\) can be factored as the product of \((x + a)\) and \((x + b)\).
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Special Trinomial Exercises}
+		\begin{alertblock}{Exercises}
+			Solve the following quadratic equations:
+			\begin{enumerate}
+				\item \(x^2 + 3x + 2 = 0\)
+				\item \(x^2 + 5x + 6 = 0\)
+				\item \(x^2 - 7x + 12 = 0\)
+				\item \(x^2 - 2x - 15 = 0\)
+				\item \(x^2 + 6x - 16 = 0\)
+				\item \(x^2 - 5x - 24 = 0\)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Special Trinomial Exercises - Solutions}
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \(x^2 + 3x + 2 = 0\) \quad {\color{blue} \(x_1 = -1, \, x_2 = -2\)}
+				\item \(x^2 + 5x + 6 = 0\) \quad {\color{blue} \(x_1 = -2, \, x_2 = -3\)}
+				\item \(x^2 - 7x + 12 = 0\) \quad {\color{blue} \(x_1 = 3, \, x_2 = 4\)}
+				\item \(x^2 - 2x - 15 = 0\) \quad {\color{blue} \(x_1 = 5, \, x_2 = -3\)}
+				\item \(x^2 + 6x - 16 = 0\) \quad {\color{blue} \(x_1 = 2, \, x_2 = -8\)}
+				\item \(x^2 - 5x - 24 = 0\) \quad {\color{blue} \(x_1 = 8, \, x_2 = -3\)}
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Methods for Solving Quadratic Equations}
+		\setbeamercolor{block title}{bg=yellow!30, fg=black}
+		\setbeamercolor{block body}{bg=yellow!10, fg=black}
+		\fontsize{9.5}{11}
+		\begin{block}{Summary of Methods Covered So Far}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\textbf{Equation Type} & \textbf{Solving Method} & \textbf{Example} \\
+				\hline
+				Pure Quadratics & \begin{tabular}[c]{@{}c@{}}Isolate \(x^2\) and \\ extract the square root \\ to get \textbf{two} solutions.\end{tabular} & \begin{tabular}[c]{@{}c@{}}\(2x^2 = 18\) \\ \(\Rightarrow x^2 = 9\) \\ \(\Rightarrow x = \pm 3\)\end{tabular} \\
+				\hline
+				Spurious Quadratics & \begin{tabular}[c]{@{}c@{}}Factoring \\ and ZPP.\end{tabular} & \begin{tabular}[c]{@{}c@{}}\(x^2 - 5x = 0\) \\ \(x(x - 5) = 0\) \\ \(\Rightarrow x = 0 \, \text{or} \, x = 5\)\end{tabular} \\
+				\hline
+				Binomial Square & \begin{tabular}[c]{@{}c@{}}Recognize the square \\ of a binomial and solve.\\ Has \textbf{one} solution.\end{tabular} & \begin{tabular}[c]{@{}c@{}}\(x^2 + 8x + 16\)\\\((x + 4)^2 = 0\) \\ \(\Rightarrow x = -4\)\end{tabular} \\
+				\hline
+				Special Trinomial & \begin{tabular}[c]{@{}c@{}}Factoring \\ and ZPP.\end{tabular} & \begin{tabular}[c]{@{}c@{}}\(x^2 + x - 6 = 0\) \\ \((x + 3)(x - 2) = 0\) \\ \(\Rightarrow x = -3 \, \text{or} \, x = 2\)\end{tabular} \\
+				\hline
+			\end{tabular}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solving \((3x - 5)^2 = 16\)}
+		\fontsize{9}{11}
+		\begin{block}{Step-by-Step Solution}
+			\begin{enumerate}
+				\item Start by taking the square root of both sides:
+				\[
+				(3x - 5)^2 = 16 \Rightarrow 3x - 5 = \pm \sqrt{16} = \pm 4
+				\]
+				\item Solve both resulting equations:
+				\[
+				1. \ 3x - 5 = 4 \quad \text{and} \quad 2. \ 3x - 5 = -4
+				\]
+				\textbf{First:}
+				\[
+				3x = 9 \Rightarrow x = 3
+				\]
+				\textbf{Second:}
+				\[
+				3x = 1 \Rightarrow x = \frac{1}{3}
+				\]
+				\item Final solutions:
+				\[
+				x_1 = 3 \quad \text{and} \quad x_2 = \frac{1}{3}
+				\]
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Exercises}
+		\begin{alertblock}{Solve the following equations:}
+			\begin{enumerate}
+				\item \((3x - 5)^2 = 16\)
+				\item \((x + 7)^2 = 9\)
+				\item \(\left(\frac{1}{3} - \frac{1}{2}x\right)^2 = \frac{1}{4}\)
+				\item \((\sqrt{2}x - 1)^2 - 32 = 0\)
+				\item \(\left(-5x - \frac{2}{3}\right)^2 = \frac{1}{9}\)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solutions}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \((3x - 5)^2 = 16 \Rightarrow x = 3\) or \(x = \frac{1}{3}\)
+				\item \((x + 7)^2 = 9 \Rightarrow x = -4\) or \(x = -10\)
+				\item \(\left(\frac{1}{3} - \frac{1}{2}x\right)^2 = \frac{1}{4} \Rightarrow x = -\frac{1}{3}\) or \(x = \frac{5}{3}\)
+				\item \((\sqrt{2}x - 1)^2 = 32 \Rightarrow \sqrt{2}x-1=\pm4\sqrt{2}\) \\ \(x=\frac{1}{\sqrt{2}}\pm4\)
+				\item \(\left(-5x - \frac{2}{3}\right)^2 = \frac{1}{9} \Rightarrow x = -\frac{1}{5}\) or \(x = -\frac{1}{15}\)
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Completing the Square}
+		
+		\fontsize{9}{11}
+		\begin{block}{How do we solve \(x^2 + 4x - 6 = 0\)?}
+			The goal is to transform the equation \(x^2 + 4x - 6 = 0\) into a solvable form by completing the square, that is, rewriting \(x^2 + 4x\) as a perfect square.
+			
+			\begin{enumerate}
+				\item Identify the constant needed to complete the square. For \(x^2 + 4x\), we need \(4\):
+				\[
+				(x + 2)^2 = x^2 + 4x + 4
+				\]
+				\item Add and subtract \(4\) within the equation:
+				\[
+				x^2 + 4x - 6 = (x^2 + 4x + 4) - 4 - 6 = (x + 2)^2 - 10
+				\]
+				\item Solve:
+				\[
+				(x + 2)^2 = 10 \Rightarrow x + 2 = \pm \sqrt{10}
+				\]
+				\[
+				x = -2 \pm \sqrt{10}
+				\]
+			\end{enumerate}
+			
+			Final solutions: \(x = -2 + \sqrt{10}\) and \(x = -2 - \sqrt{10}\)
+		\end{block}
+	\end{frame}
+	
+	
+	\begin{frame}
+		\frametitle{General Completing the Square Formula}\footnotesize
+		
+		\begin{block}{Formula}
+			In general, to complete the square for an expression of the form \( x^2 + bx \), we add and subtract \( \left( \frac{b}{2} \right)^2 \):
+			\[
+			x^2 + bx + \left( \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2 = \left( x + \frac{b}{2} \right)^2 - \left( \frac{b}{2} \right)^2
+			\]
+		\end{block}
+		
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Example: Solve \( x^2 + 6x + 1 = 0 \) by completing the square}
+			Identify the coefficient of \( x \), which is \( 6 \). Complete the square by adding and subtracting \( \left( \frac{6}{2} \right)^2 = 9 \):
+			\[
+			x^2 + 6x + 1 = (x^2 + 6x + 9) - 9 + 1 = (x + 3)^2 - 8
+			\]
+			So:
+			\[
+			(x + 3)^2 - 8 = 0 \quad \Rightarrow \quad (x + 3)^2 = 8
+			\]
+			\[
+			x + 3 = \pm \sqrt{8} \quad \Rightarrow \quad x = -3 \pm \sqrt{8}
+			\]
+			Final solutions:
+			\[
+			x = -3 + \sqrt{8} \quad \text{or} \quad x = -3 - \sqrt{8}
+			\]
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Exercises – Completing the Square}
+		\begin{alertblock}{Exercises}
+			Solve the equations by completing the square:
+			\begin{enumerate}
+				\item \( x^2 + 6x + 2 = 0 \)
+				\item \( x^2 - 4x - 5 = 0 \)
+				\item \( x^2 + 8x + 3 = 0 \)
+				\item \( x^2 - 10x + 4 = 0 \)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solutions – Completing the Square}
+		\setbeamercolor{block body}{bg=green!20, fg=black}
+		\begin{block}{Solutions}
+			\begin{enumerate}
+				\item \( x^2 + 6x + 2 = 0 \) \\
+				{\color{blue} \( (x+3)^2 - 7 = 0 \)} \quad \( \Rightarrow x = -3 \pm \sqrt{7} \)
+				
+				\item \( x^2 - 4x - 5 = 0 \) \\
+				{\color{blue} \( (x-2)^2 - 9 = 0 \)} \quad \( \Rightarrow x = 2 \pm 3 \Rightarrow x = 5, -1 \)
+				
+				\item \( x^2 + 8x + 3 = 0 \) \\
+				{\color{blue} \( (x+4)^2 - 13 = 0 \)} \quad \( \Rightarrow x = -4 \pm \sqrt{13} \)
+				
+				\item \( x^2 - 10x + 4 = 0 \) \\
+				{\color{blue} \( (x-5)^2 - 21 = 0 \)} \quad \( \Rightarrow x = 5 \pm \sqrt{21} \)
+			\end{enumerate}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{From Completing the Square to the General Formula}
+		\begin{block}{Introduction}
+			We’ve learned how to solve a quadratic equation by completing the square. Now let’s see how this method leads to a general formula that works for any quadratic equation of the form \( ax^2 + bx + c = 0 \).
+		\end{block}
+		
+		\setbeamercolor{block title}{fg=black, bg=blue!20}
+		\setbeamercolor{block body}{fg=black, bg=blue!10}
+		\begin{block}{General Formula}
+			By completing the square, we derive the general formula to solve any quadratic equation:
+			\[
+			x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+			\]
+			This is the \textbf{quadratic formula}, which gives the solutions of \( ax^2 + bx + c = 0 \).
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{The General Formula}
+		\begin{block}{}
+			Consider the equation \( ax^2 + bx + c = 0 \), with \( a \neq 0 \). Divide by \( a \):
+			\[
+			x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+			\]
+			Complete the square:
+			\[
+			x^2 + \frac{b}{a}x + \left(\frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2 + \frac{c}{a} = 0
+			\]
+			\[
+			\Rightarrow \left(x + \frac{b}{2a}\right)^2 = \frac{\textcolor{blue}{b^2 - 4ac}}{4a^2}
+			\]
+			Before taking the square root, we analyze the right side. Since \( 4a^2 > 0 \), we focus on the term \( \textcolor{blue}{b^2 - 4ac} \), which is called the \textbf{discriminant} and denoted by \( \Delta \).
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{The General Formula: The Discriminant and Solutions}
+		\begin{block}{}
+			Now let’s examine the discriminant \( \Delta = b^2 - 4ac \) and the resulting cases:
+			
+			\begin{itemize}
+				\item \textbf{If} \( \Delta > 0 \): The equation has two distinct real solutions.
+				\[
+				x_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a}
+				\]
+				
+				\item \textbf{If} \( \Delta = 0 \): The equation has one real (repeated) solution.
+				\[
+				x = -\frac{b}{2a}
+				\]
+				
+				\item \textbf{If} \( \Delta < 0 \): The equation has no real solutions.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Exercises}
+		\begin{alertblock}{Solve the following equations:}
+			\begin{enumerate}
+				\item \( 2x^2 + 3x = -1 \)
+				\item \( -x^2 = x - 12 \)
+				\item \( 2x^2 - 5 = -4x \)
+				\item \( 2(x - 1) = 3x^2 \)
+				\item \( x(x - 2) = 15 \)
+				\item \( x(x - 5) = 24 \)
+				\item \( 2(x + 3)(x + 1) = x + 15 \)
+			\end{enumerate}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solutions}
+		\begin{exampleblock}{Solutions}
+			\begin{enumerate}
+				\item \( \{-\frac{1}{2}, -1\} \)
+				\item \( \{-4, 3\} \)
+				\item \( \left\{-1 \pm \frac{\sqrt{14}}{2}\right\} \)
+				\item No real solutions
+				\item \( \{-3, 5\} \)
+				\item \( \{-3, 8\} \)
+				\item \( \left\{-\frac{9}{2}, 1\right\} \)
+			\end{enumerate}
+		\end{exampleblock}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{alertblock}{Advanced Equation}
+			\[
+			x^2 - (\sqrt{3} - \sqrt{2})x - \sqrt{6} = 0
+			\]
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Solving the Equation}
+		\fontsize{9}{10}
+		\begin{exampleblock}{Solution}
+			Given:
+			\[
+			x^2 - (\sqrt{3} - \sqrt{2})x - \sqrt{6} = 0
+			\]
+			with \(a = 1\), \(b = -(\sqrt{3} - \sqrt{2})\), \(c = -\sqrt{6}\)
+			
+			Compute the discriminant:
+			\[
+			\Delta = b^2 - 4ac = (\sqrt{3} - \sqrt{2})^2 + 4\sqrt{6}
+			\]
+			\[
+			b^2 = 3 + 2 - 2\sqrt{6}, \quad -4ac = 4\sqrt{6}
+			\]
+			\[
+			\Delta = 5 - 2\sqrt{6} + 4\sqrt{6} = 5 + 2\sqrt{6} = \textcolor{blue}{(\sqrt{3} + \sqrt{2})^2}
+			\]
+			
+			So:
+			\[
+			x = \frac{-b \pm \sqrt{\Delta}}{2} = \frac{\sqrt{3} - \sqrt{2} \pm \textcolor{blue}{(\sqrt{3} + \sqrt{2})}}{2}
+			\]
+			Thus:
+			\[
+			x_1 = \sqrt{3}, \quad x_2 = -\sqrt{2}
+			\]
+		\end{exampleblock}
+	\end{frame}
+	
+	
+	
+\end{document}

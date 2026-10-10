@@ -145,7 +145,7 @@ The denominator factors as:
 $$
 x^3-4x^2+5x-2=(x-1)^2(x-2).
 $$
-**Author's observation:** one strategy is to find the most immediate root of the cubic and then solve the remaining quadratic equation. The repeated factor requires a second-order term. Use the source's derivative form:
+**Author's observation:** one strategy is to find the most immediate root of the cubic and then solve the remaining quadratic equation. The repeated factor requires a second-order term. Use the following derivative form:
 $$
 \frac{x^2+1}{(x-1)^2(x-2)}
 =\frac A{x-1}+\frac B{x-2}+\frac d{dx}\left(\frac C{x-1}\right).
@@ -271,7 +271,7 @@ $$
 
 **Solution.**
 
-This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
 
 Factor x³+1=(x+1)(x²−x+1) and determine coefficients:
 $$\frac1{x^3+1}=\frac1{3(x+1)}+\frac{-x+2}{3(x^2-x+1)}.$$
@@ -301,7 +301,7 @@ $$
 
 **Solution.**
 
-This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
 
 Write the denominator as (x−2)²+1, and split x−1=(x−2)+1. Then
 $$\int\frac{x-1}{(x-2)^2+1}\,dx=\int\frac{x-2}{(x-2)^2+1}\,dx+\int\frac{dx}{(x-2)^2+1}.$$

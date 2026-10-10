@@ -8,13 +8,14 @@ background_image: "/images/termodinamica.png"
 description: "Thermodynamics worked problems with step-by-step solutions on ideal gases, entropy, adiabatic processes, Gibbs free energy, phase transitions, equilibrium, colligative properties, and reaction energetics."
 area: physics
 topic: thermodynamics
+last_modified_at: 2026-10-10
 ---
 
 # Thermodynamics Worked Problems
 
 *The worked problems in this section are by Prof. Marco Ruzzi.*
 
-**Thermodynamics** connects a small number of fundamental principles with a remarkably wide range of physical phenomena.
+**Thermodynamics** studies energy exchange, equilibrium, and the constraints on physical and chemical transformations.
 
 This section collects **worked thermodynamics problems** designed to develop both calculation skills and physical understanding.
 
@@ -24,25 +25,21 @@ The problems cover ideal gases, entropy, adiabatic transformations, thermodynami
 
 <div class="content-box">
 
-## Ideal Gas Processes — Worked Problems
+## Ideal-Gas Processes
 
-Solve problems involving **ideal gases and thermodynamic transformations**, with applications of the ideal gas law and the first law of thermodynamics.
+Compare the work along three reversible compression paths between the same two ideal-gas states. The example distinguishes path-dependent work from changes in internal energy and entropy.
 
-The exercises connect pressure, volume, temperature, work, heat, and internal energy in different thermodynamic processes.
-
-[**Explore Ideal Gas Problems →**]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
+[**Ideal Gas →**]({{ "/physics/thermodynamics/ideal-gas-processes/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Entropy and Adiabatic Processes — Worked Problems
+## Entropy and Adiabatic Processes
 
-Practice problems involving **entropy changes, the second law of thermodynamics, and adiabatic transformations**.
+Distinguish an adiabatic process from an isentropic one. A free-expansion example shows why an insulated ideal gas can increase its entropy without changing its temperature.
 
-The solutions emphasize both the calculation of thermodynamic quantities and their physical interpretation.
-
-[**Explore Entropy and Adiabatic Problems →**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }})
+[**Entropy and Adiabatic →**]({{ "/physics/thermodynamics/entropy-adiabatic/" | relative_url }})
 
 </div>
 
@@ -58,61 +55,51 @@ An article by **Cesare Peli** on Maxwell’s thought experiment, the statistical
 
 <div class="content-box">
 
-## Equilibrium and Spontaneity — Worked Problems
+## Equilibrium and Spontaneity
 
-Solve problems concerning **thermodynamic equilibrium and spontaneous processes**.
+Calculate the standard reaction Gibbs energy and the equilibrium constant from ΔH° and ΔS°. Distinguish standard conditions from an arbitrary reaction mixture.
 
-The exercises explore how thermodynamic quantities and potentials can be used to determine equilibrium conditions and the direction in which a process can evolve.
-
-[**Explore Equilibrium and Spontaneity Problems →**]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
+[**Equilibrium and Spontaneity →**]({{ "/physics/thermodynamics/equilibrium-and-spontaneity/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Gibbs Free Energy — Worked Problems
+## Gibbs Free Energy
 
-Practice the calculation and interpretation of **Gibbs free energy** in thermodynamic processes.
+Calculate the pressure contribution to the Gibbs free-energy change of liquid water at constant temperature, using the incompressible approximation.
 
-The problems connect enthalpy, entropy, and temperature with the conditions for spontaneity and equilibrium, particularly for transformations at constant temperature and pressure.
-
-[**Explore Gibbs Free Energy Problems →**]({{ "/physics/thermodynamics/gibbs-free-energy/" | relative_url }})
+[**Gibbs Free Energy →**]({{ "/physics/thermodynamics/gibbs-free-energy/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Phase Transitions — Worked Problems
+## Heating and Melting
 
-Solve thermodynamics problems involving **phase transitions and phase equilibrium**.
+Calculate the heat required to warm ice, melt it, and warm the resulting water. Distinguish specific heat from latent heat.
 
-The exercises examine quantities such as latent heat, entropy, temperature, pressure, and free energy in transformations between different phases of matter.
-
-[**Explore Phase Transition Problems →**]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})
+[**Phase Transition →**]({{ "/physics/thermodynamics/phase-transitions/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Colligative Properties and Freezing — Worked Problems
+## Freezing-Point Depression
 
-Practice problems involving **colligative properties and freezing-point depression**.
+Estimate the freezing-point depression of a sodium chloride solution. The calculation states the dilute ideal-solution approximation and its limits.
 
-The solutions connect the behavior of solutions with thermodynamic concepts and phase equilibrium, showing how dissolved particles modify freezing conditions.
-
-[**Explore Colligative Property Problems →**]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
+[**Colligative Property →**]({{ "/physics/thermodynamics/colligative-freezing/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Reaction Energetics — Worked Problems
+## Reaction Energetics
 
-Solve problems on the **energetics of physical and chemical transformations**.
+Relate the reaction changes in internal energy and enthalpy for ideal gases. Calculate the pressure–volume correction from the gaseous stoichiometric coefficients.
 
-The exercises use enthalpy, entropy, and Gibbs free-energy changes to analyze energy transfer, equilibrium, and thermodynamic spontaneity.
-
-[**Explore Reaction Energetics Problems →**]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
+[**Reaction Energetics →**]({{ "/physics/thermodynamics/reaction-energetics/" | relative_url }})
 
 </div>
 

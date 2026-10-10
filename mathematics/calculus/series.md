@@ -30,7 +30,7 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-## Complete Recall: Sequences and Series of Functions
+## Theoretical Recall: Sequences and Series of Functions
 
 Let fₙ:A→ℝ and f:A→ℝ, where A⊆ℝ. Pointwise convergence means
 $$
@@ -46,7 +46,7 @@ Here the threshold depends only on ε. Writing fₙ⇉f, this is equivalent to
 $$
 \alpha_n=\sup_{x\in A}|f_n(x)-f(x)|,\qquad \lim_{n\to\infty}\alpha_n=0.
 $$
-Uniform convergence implies pointwise convergence; the converse fails. The source lists three transfer properties on an interval I:
+Uniform convergence implies pointwise convergence; the converse fails. The following three transfer properties hold on an interval I:
 
 1. If continuous fₙ converge uniformly to f, then f is continuous.
 2. For continuous fₙ converging uniformly on I, integration commutes with the limit on every [a,b]⊆I:
@@ -73,7 +73,7 @@ $$
 $$
 \beta_n=\sup_{x\in A}|f_n(x)|,\qquad \sum_{n=0}^\infty\beta_n<\infty.
 $$
-Total convergence implies uniform convergence. Starting the sum at 1, as the book does, does not affect convergence when the omitted term has finite supremum.
+Total convergence implies uniform convergence. Omitting or adding finitely many bounded terms does not affect total convergence.
 
 **Power series** have a center x₀ and coefficient sequence aₙ:
 $$
@@ -95,11 +95,11 @@ r=\begin{cases}1/L&0<L<\infty,\\0&L=+\infty,\\+\infty&L=0.\end{cases}
 $$
 ## Fourier Series
 
-The source concludes its recall of function series with the Fourier expansion
+For a periodic function, the Fourier expansion has the form
 $$
 \frac{a_0}{2}+\sum_{n=1}^\infty\bigl(a_n\cos(nx)+b_n\sin(nx)\bigr).
 $$
-For a function integrable on [−π,π], the coefficients are determined by all three formulas given in the exercise book:
+For a function integrable on [−π,π], the coefficients are determined by the following three formulas:
 $$
 a_0=\frac1\pi\int_{-\pi}^{\pi}f(x)\,dx,
 $$
@@ -207,7 +207,7 @@ $$
 \end{cases}
 $$
 
-**Observation:** The exponential decay dominates only if p < 1/2.
+**Observation:** For every fixed x > 0, exponential decay dominates every power of n. The restriction p < 1/2 concerns uniform convergence: the maximum occurs at x = 1/√(2n), which approaches zero as n increases.
 
 **Final Result**
 
@@ -339,13 +339,13 @@ g_n'(x)
 \left(1+\frac{n}{x^n}\right)^{\frac{1-n}{n}}-1.
 $$
 
-For x ≥ 1:
+For x ≥ 1 and n ≥ 2:
 
 $$
 g_n'(x)<0.
 $$
 
-Therefore gₙ is decreasing and its maximum occurs at x = 1:
+For n = 1, g₁(x) = 1 is constant. Thus, for every n ≥ 1, the supremum is attained at x = 1:
 
 $$
 \alpha_{n,2}
@@ -587,7 +587,7 @@ $$
 \end{cases}
 $$
 
-**Observation:** The balance between polynomial growth and exponential decay breaks precisely at p = 1.
+**Observation:** For each fixed x < 1, the exponential factor tends to zero faster than any power of n grows. The threshold p = 1 concerns uniform convergence, because points approaching x = 1 determine the supremum.
 
 **Final Result**
 

@@ -1,0 +1,81 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+
+
+\geometry{margin=1.5cm}
+\pagestyle{empty} % ← niente numeri di pagina o intestazioni
+
+
+\setlength{\tabcolsep}{7pt}
+   % padding celle
+\renewcommand{\arraystretch}{1.55}
+
+\begin{document}
+
+	\definecolor{headerblue}{RGB}{200, 230, 255}
+
+\begin{tabular}{|>{\centering\arraybackslash}m{0.45\linewidth}|
+			>{\centering\arraybackslash}m{0.45\linewidth}|}
+		\hline
+		\textbf{Immediate Integrals} & \textbf{Generalized Immediate Integrals} \\
+		\hline
+		$\displaystyle \int x^n dx = \frac{x^{n+1}}{n+1} + c \quad (n \neq -1)$ &
+		$\displaystyle \int f(x)^n \cdot f'(x) dx = \frac{f(x)^{n+1}}{n+1} + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{x} dx = \ln|x| + c$ &
+		$\displaystyle \int \frac{f'(x)}{f(x)} dx = \ln|f(x)| + c$ \\
+		\hline
+		$\displaystyle \int a^x dx = \frac{a^x}{\ln a} + c$ &
+		$\displaystyle \int f'(x) \cdot a^{f(x)} dx = \frac{a^{f(x)}}{\ln a} + c$ \\
+		\hline
+		$\displaystyle \int e^x dx = e^x + c$ &
+		$\displaystyle \int f'(x) \cdot e^{f(x)} dx = e^{f(x)} + c$ \\
+		\hline
+		$\displaystyle \int \sin x dx = -\cos x + c$ &
+		$\displaystyle \int \sin(f(x)) \cdot f'(x) dx = -\cos(f(x)) + c$ \\
+		\hline
+		$\displaystyle \int \cos x dx = \sin x + c$ &
+		$\displaystyle \int \cos(f(x)) \cdot f'(x) dx = \sin(f(x)) + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{\cos^2 x} dx = \tan x + c$ &
+		$\displaystyle \int \frac{f'(x)}{\cos^2(f(x))} dx = \tan f(x) + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{\sin^2 x} dx = -\cot x + c$ &
+		$\displaystyle \int \frac{f'(x)}{\sin^2(f(x))} dx = -\cot f(x) + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{\sqrt{1 - x^2}} dx = \arcsin x + c$ &
+		$\displaystyle \int \frac{f'(x)}{\sqrt{1 - f(x)^2}} dx = \arcsin f(x) + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{\sqrt{a^2 - x^2}} dx = \arcsin \left( \frac{x}{|a|} \right) + c$ &
+		$\displaystyle \int \frac{f'(x)}{\sqrt{a^2 - f(x)^2}} dx = \arcsin \left( \frac{f(x)}{|a|} \right) + c$ \\
+		\hline
+		$\displaystyle \int \frac{1}{1 + x^2} dx = \arctan x + c$ &
+		$\displaystyle \int \frac{f'(x)}{1 + f(x)^2} dx = \arctan f(x) + c$ \\
+		\hline
+		\multicolumn{2}{|c|}{\textbf{In General}} \\
+		\hline
+		\multicolumn{2}{|c|}{$\displaystyle \int f(g(x)) \cdot g'(x) dx = F(g(x)) + c$} \\
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Integration Rules}} \\
+		\hline
+		\multicolumn{2}{|c|}{$\displaystyle \int k \cdot f(x) dx = k \cdot \int f(x) dx$} \\
+		\multicolumn{2}{|c|}{$\displaystyle \int \left[ f(x) \pm g(x) \right] dx = \int f(x) dx \pm \int g(x) dx$} \\
+		\multicolumn{2}{|c|}{$\displaystyle \int f'(x) \cdot g(x) dx = f(x) \cdot g(x) - \int f(x) \cdot g'(x) dx$} \\
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Other Methods of Integration}} \\
+		\hline
+		\multicolumn{2}{|l|}{\quad$\bullet$ Substitution method} \\
+		\multicolumn{2}{|l|}{\quad$\bullet$ Rational function integration (partial fractions)} \\
+		\multicolumn{2}{|l|}{\quad$\bullet$ Integration by series} \\
+		\hline
+	\end{tabular}
+\par\smallskip
+{\footnotesize All formulas hold on intervals where the integrands are defined. In the power formulas, \(n\ne-1\). For real powers use a positive base unless the exponent allows a larger real domain. In exponential formulas, \(a>0\) and \(a\ne1\). In the formulas with \(\sqrt{a^2-x^2}\), \(a\ne0\) and \(|x|<|a|\); similarly \(|f(x)|<|a|\). In the logarithmic primitive, \(f(x)\ne0\). The composite formulas require differentiability of \(f\); in the general rule, \(F'=f\). Constants of integration may differ between disconnected intervals.}
+
+	
+\end{document}

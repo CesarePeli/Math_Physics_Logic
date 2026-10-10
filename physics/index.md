@@ -6,6 +6,7 @@ permalink: /physics/
 background_image: "/images/quantistica.png"
 description: "Physics resources on mechanics, worked thermodynamics problems, dynamical systems, chaos, and quantum physics, with mathematical models and conceptual explanations."
 area: physics
+last_modified_at: 2026-10-10
 ---
 
 # Physics
@@ -18,7 +19,7 @@ Most of the current material concerns mechanics and thermodynamics, with additio
 
 ## Mechanics
 
-The mechanics section contains problems and mathematical treatments involving kinematics, dynamics, energy, momentum, forces, and the principles used to describe motion.
+The mechanics section presents Cesare Peli’s thesis on Galileo’s treatment of parabolic motion. A short resource on vertical motion and quadratic functions is available in the algebra section.
 
 [**Explore Mechanics →**]({{ "/physics/mechanics/" | relative_url }})
 

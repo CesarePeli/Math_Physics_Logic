@@ -12,6 +12,7 @@ topic: algebra
 subtopic: logarithms
 level: high-school
 content_type: theory
+last_modified_at: 2026-10-10
 ---
 
 <div class="content-box">
@@ -191,7 +192,7 @@ $$
 $$
 
 - It increases if a > 1, and decreases if 0 < a < 1
-- It grows slowly: logarithms increase very slowly for large values
+- For a > 1, it increases without bound, but more slowly than every positive power of x. For 0 < a < 1, it decreases without bound as x increases.
 
 A classic example:
 
@@ -213,7 +214,7 @@ So even multiplying by 10 gives only a small change in the logarithm.
 
 ## Core Logarithmic Rules
 
-These rules are essential for simplifying logarithmic expressions:
+In the first three rules, a > 0, a ≠ 1, and b,c > 0; the power n may be any real number. In the change-of-base formula, the new base c must satisfy c > 0 and c ≠ 1.
 
 ### Product Rule
 
@@ -249,7 +250,7 @@ Most often, we use log₁₀ or ln (log base e).
 
 ## Practice: A Detailed Example
 
-Let’s simplify this expression:
+For x > 0 and y > 0, with every logarithm taken in the same valid base, simplify:
 
 $$
 2 \log x + 3 \log y
@@ -295,7 +296,7 @@ $$
 
 <div class="content-box">
 
-## Want to Go Further?
+## Exercises
 
 Try proving these properties from the definition:
 

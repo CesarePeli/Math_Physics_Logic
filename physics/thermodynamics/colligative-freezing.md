@@ -12,6 +12,7 @@ background_image: /images/termodinamica.png
 area: physics
 topic: thermodynamics
 content_type: solved-exercises
+last_modified_at: 2026-10-10
 ---
 
 # Freezing Point Depression: Formula and Solved Example
@@ -38,10 +39,10 @@ $$
 
 where:
 
-- $\Delta T_f$ is the decrease in freezing temperature;
-- $i$ is the van ’t Hoff factor, representing the effective number of dissolved particles produced by each solute unit;
-- $K_f$ is the cryoscopic or molal freezing-point-depression constant of the solvent;
-- $m$ is the molality of the solute.
+- ΔT<sub>f</sub> is the decrease in freezing temperature;
+- i is the van ’t Hoff factor, representing the effective number of dissolved particles produced by each solute unit;
+- K<sub>f</sub> is the cryoscopic or molal freezing-point-depression constant of the solvent;
+- m is the molality of the solute.
 
 For water,
 
@@ -57,13 +58,13 @@ $$
 
 ### When Does the Formula Apply?
 
-The relation $\Delta T_f=iK_fm$ is a dilute-solution approximation. It applies when:
+The relation ΔT<sub>f</sub>=iK<sub>f</sub>m is a dilute-solution approximation. It applies when:
 
-- the solute is effectively nonvolatile;
+- the solid phase that crystallizes is essentially pure solvent; the solute remains in the liquid phase;
 - the solution is sufficiently dilute and behaves approximately ideally;
 - solvent and solute do not undergo a chemical reaction that changes the species present;
-- $K_f$ is the constant for the chosen solvent;
-- the factor $i$ represents the effective number of dissolved particles, including dissociation or association.
+- K<sub>f</sub> is the constant for the chosen solvent;
+- the factor i represents the effective number of dissolved particles, including dissociation or association.
 
 </div>
 
@@ -73,9 +74,9 @@ The relation $\Delta T_f=iK_fm$ is a dilute-solution approximation. It applies w
 
 A solution is prepared by dissolving **10.0 g of NaCl** in **200 g of water**.  
 
-1. Calculate the freezing point depression $\Delta T_f$.  
+1. Calculate the freezing point depression ΔT<sub>f</sub>.  
 2. Assume complete dissociation of NaCl.  
-3. Use $K_f(\text{H}_2O) = 1.86\, K\,kg\,mol^{-1}$.
+3. Use K<sub>f</sub>(H₂O) = 1.86  K kg mol⁻¹.
 
 </div>
 
@@ -84,7 +85,7 @@ A solution is prepared by dissolving **10.0 g of NaCl** in **200 g of water**.
 ## Step-by-Step Solution
 
 **Step 1. Moles of solute**  
-Molar mass NaCl = $58.44\, g\,mol^{-1}$  
+Molar mass NaCl = 58.44  g mol⁻¹  
 $$
 n = \frac{10.0}{58.44} = 0.171\, mol
 $$
@@ -92,7 +93,7 @@ $$
 ---
 
 **Step 2. Molality**  
-Mass of solvent = $200 g = 0.200 kg$  
+Mass of solvent = 200 g = 0.200 kg  
 $$
 m = \frac{0.171}{0.200} = 0.855\, mol\,kg^{-1}
 $$
@@ -100,7 +101,7 @@ $$
 ---
 
 **Step 3. van ’t Hoff factor**  
-NaCl dissociates ideally into 2 ions ($Na^+, Cl^-$), so:  
+NaCl dissociates ideally into 2 ions (Na⁺, Cl⁻), so:  
 $$
 i = 2
 $$
@@ -128,9 +129,9 @@ $$
 
 ## Notes
 
-- The assumption of **complete dissociation** is an idealization; in real solutions the van ’t Hoff factor $i$ is slightly less than 2 due to **ion pairing**.  
-- Colligative properties provide a powerful experimental tool to determine **molar masses** of solutes or to estimate their **degree of dissociation**.  
-- This case illustrates why adding salt lowers the freezing point of water — the scientific basis of **road de-icing** in winter and of **antifreeze mixtures** in car engines.  
+- Complete dissociation gives the ideal estimate i = 2. At the calculated molality, 0.855 mol kg⁻¹, the solution is not in the very dilute limit, so −3.2 °C is an estimate rather than a measured freezing point. Deviations depend on solvent activity and ionic interactions; they cannot be attributed to ion pairing alone.  
+- In sufficiently dilute solutions, colligative measurements can be used to estimate molar masses or dissociation, provided the relevant solution model is justified.  
+- Sodium chloride is used for road de-icing within a limited temperature range. Engine coolants generally use glycol–water mixtures; the same dilute-solution formula does not describe every coolant composition.  
 
 </div>
 

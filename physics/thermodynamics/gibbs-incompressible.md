@@ -2,12 +2,13 @@
 layout: default
 title: "Gibbs Free Energy for Incompressible Substances"
 author: Marco Ruzzi
-meta-description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
+description: "Worked example on the dependence of Gibbs free energy on pressure for incompressible substances. Includes theoretical recalls, full derivation, and explanatory notes."
 permalink: /physics/thermodynamics/gibbs-free-energy/
 redirect_from:
   - /university/physics/thermodynamics/gibbs-incompressible/
 nav_order: 27
 background_image: /images/termodinamica.png
+last_modified_at: 2026-10-10
 ---
 
 # Gibbs Free Energy for Incompressible Substances
@@ -23,17 +24,17 @@ background_image: /images/termodinamica.png
   G = H - TS
   $$
 
-- Differential form for a closed system of fixed composition:
+- Differential form for a simple compressible closed system of fixed composition, with pressure–volume work as the only work mode:
   $$
   dG = V\,dp - S\,dT
   $$
 
-- For an **isothermal process** ($dT = 0$):
+- For an **isothermal process** (dT = 0):
   $$
   dG = V\,dp
   $$
 
-- For a fixed amount of an **incompressible** substance (constant total volume $V$):
+- For a fixed amount of an **incompressible** substance (constant total volume V):
   $$
   \Delta G = V\,(p_2 - p_1)
   $$
@@ -46,7 +47,7 @@ For a fixed amount of an incompressible substance at constant temperature, the G
 
 ## Exercise
 
-For **1.00 L of liquid water** at $25^\circ C$, calculate the change in Gibbs free energy when pressure increases from **1 bar to 100 bar**, assuming water is incompressible with molar volume $V_m = 18.0 \times 10^{-6}\, m^3 mol^{-1}$.
+For **1.00 L of liquid water** at 25° C, calculate the change in Gibbs free energy when pressure increases from **1 bar to 100 bar**, assuming water is incompressible with molar volume V<sub>m</sub> = 18.0 × 10⁻⁶  m³ mol⁻¹.
 
 </div>
 
@@ -75,7 +76,7 @@ $$
 ---
 
 **Step 3. Gibbs free energy change**  
-Use $\Delta G = n V_m \Delta p$:  
+Use ΔG = n V<sub>m</sub> Δ p:  
 $$
 \Delta G
 = (55.6\,\mathrm{mol})
@@ -100,12 +101,16 @@ $$
 
 ## Notes
 
-- The calculation shows that for liquids, $\Delta G$ is proportional to the pressure change.  
-- Increasing the pressure from 1 bar to 100 bar changes $G$ by about $9.9\,\text{kJ}$ for one litre of water; the change per mole is only about $0.18\,\text{kJ mol}^{-1}$ because the molar volume is small.  
+- The calculation shows that for liquids, ΔG is proportional to the pressure change.  
+- Increasing the pressure from 1 bar to 100 bar changes G by about 9.9 kJ for one litre of water; the change per mole is only about 0.18 kJ mol⁻¹ because the molar volume is small.  
 - For a pure ideal gas, the molar Gibbs free energy, or chemical potential, is
-  $
-  \mu(T,p)=\mu^\circ(T)+RT\ln\!\left(\frac{p}{p^\circ}\right).
-  $
+  
+
+$$
+\mu(T,p)=\mu^\circ(T)+RT\ln\!\left(\frac{p}{p^\circ}\right).
+$$
+
+
   Its pressure dependence is logarithmic.  
 - Pressure enters gas chemical potentials explicitly. For liquids and solids, the pressure contribution is usually much smaller because their molar volumes are small.  
 

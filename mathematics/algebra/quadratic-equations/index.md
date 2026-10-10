@@ -12,6 +12,7 @@ topic: algebra
 subtopic: quadratic-equations
 level: high-school
 content_type: resources
+last_modified_at: 2026-10-10
 ---
 
 <div class="content-box">
@@ -28,11 +29,11 @@ The resources collected here introduce quadratic equations step by step, from th
 
 ## Quadratic Equations – Intro & Solved Exercises
 
-A free introductory resource covering the foundations of quadratic equations.
+An introductory presentation on quadratic equations.
 
 The material introduces the standard form of a quadratic equation, roots and real solutions, square roots, pure quadratic equations, and a first collection of solved exercises.
 
-<span class="badge free">FREE</span>
+
 
 [**Download the introductory PDF →**]({{ "/mathematics/algebra/quadratic-equations/quadratic-equations-intro.pdf" | relative_url }}){:target="_blank"}
 
@@ -40,35 +41,35 @@ The material introduces the standard form of a quadratic equation, roots and rea
 
 <div class="content-box">
 
-## Parabolic Motion – Demo Slide Deck
+## Complete Quadratic-Equation Slides
+
+The full presentation adds factoring, completing the square, the general formula and the discriminant, with exercises and solutions.
+
+[**Download the complete presentation →**]({{ "/mathematics/algebra/quadratic-equations/Quadratic Equation.pdf" | relative_url }}){:target="_blank"}
+
+</div>
+
+<div class="content-box">
+
+## Quadratic Functions and Vertical Motion
 
 Quadratic structures also appear naturally in physics.
 
-This interdisciplinary demo explores the connection between quadratic mathematics and **parabolic motion**, showing how algebraic ideas can be used to describe physical phenomena.
+The slides relate the vertex of a quadratic function to the maximum height of a vertically launched ball. They include the model assumptions, a calculated graph and a worked exercise, followed by the range formula for equal launch and landing heights.
 
-<span class="badge free">FREE</span> <span class="badge inter">Interdisciplinary</span>
+ <span class="badge inter">Interdisciplinary</span>
 
-[**Download the demo slide deck →**]({{ "/mathematics/algebra/quadratic-equations/parabolic-motion-demo.pdf" | relative_url }}){:target="_blank"}
-
-</div>
-
-<div class="content-box">
-
-## Why Quadratic Equations Matter
-
-Quadratic equations are more than a standard algebraic technique. They provide an early example of how different mathematical representations can describe the same structure.
-
-An equation can be studied symbolically through its coefficients and roots, algebraically through factorisation, and geometrically through the corresponding parabola.
-
-This connection between **equations, functions, graphs, and mathematical models** makes quadratic equations an important bridge between elementary algebra and more advanced mathematics.
+[**Download the vertical-motion slides →**]({{ "/mathematics/algebra/quadratic-equations/parabolic-motion-demo.pdf" | relative_url }}){:target="_blank"}
 
 </div>
 
+
+
 <div class="content-box">
 
-## Continue Exploring Algebra
+## Related Algebra Topics
 
-Quadratic equations are part of a broader algebraic landscape that includes logarithms, complex numbers, functions, and increasingly abstract mathematical structures.
+
 
 [**← Back to Algebra**]({{ "/mathematics/algebra/" | relative_url }})
 

@@ -6,6 +6,7 @@ background_image: "/images/odd-infinity.png"
 description: "Explore the foundations of mathematics through infinity, division by zero, mathematical definitions, number systems, and conceptual questions."
 area: mathematics
 topic: foundations
+last_modified_at: 2026-10-10
 ---
 
 # Foundations of Mathematics
@@ -40,11 +41,6 @@ The answer depends on what we mean by infinity. The question opens the door to d
 
 </div>
 
-## Why Mathematical Foundations Matter
-
-Mathematics depends not only on calculation, but on **precise definitions and logical consistency**. Operations that appear obvious in familiar numerical settings may behave differently — or cease to be defined — when the underlying mathematical structure changes.
-
-Studying these boundary cases helps clarify what mathematical symbols actually mean and why the rules of mathematics take the form they do.
 
 ---
 
