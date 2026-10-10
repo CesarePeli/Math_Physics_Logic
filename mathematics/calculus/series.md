@@ -1,14 +1,14 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
-date: 2026-08-24
+last_modified_at: 2026-10-10
+date: 2026-10-10
 original_date: 2025-08-31
-title: "Solved Exercises — Sequences and Series of Functions"
+title: "Sequences and Series of Functions: Complete Theory and Exercises"
 permalink: /mathematics/calculus/series/
 redirect_from:
   - /university/math/calculus-1/series/
 background_image: "/images/serie.png"
-description: "Solved exercises on sequences and series of functions, including pointwise and uniform convergence, power series, radius of convergence, and series sums."
+description: "Pointwise, uniform and total convergence, power-series radii and ten original solved exercises."
 featured: false
 area: mathematics
 topic: calculus
@@ -17,150 +17,83 @@ level: university
 content_type: solved-exercises
 ---
 
-<div class="content-box">
-
-# Solved Exercises — Sequences and Series of Functions
-
-## Theoretical Recall
-
-Let:
-
-$$
-A\subset\mathbb{R},
-$$
-
-and let:
-
-$$
-f_n:A\to\mathbb{R},
-$$
-
-$$
-f:A\to\mathbb{R}.
-$$
-
-### Pointwise Convergence
-
-The sequence fₙ converges **pointwise** to f on A if:
-
-$$
-\lim_{n\to\infty}f_n(x)=f(x),
-\qquad
-\forall x\in A.
-$$
-
-Equivalently:
-
-$$
-\forall\varepsilon>0,
-\quad
-\exists n_{\varepsilon,x}:
-\quad
-\forall n>n_{\varepsilon,x},
-\quad
-|f_n(x)-f(x)|<\varepsilon.
-$$
-
-The index n depends both on ε and on the chosen point x.
-
-
-### Uniform Convergence
-
-The sequence fₙ converges **uniformly** to f on A if:
-
-$$
-\forall\varepsilon>0,
-\quad
-\exists n_\varepsilon:
-\quad
-\forall n>n_\varepsilon,
-\quad
-\forall x\in A,
-\quad
-|f_n(x)-f(x)|<\varepsilon.
-$$
-
-Unlike pointwise convergence, the same index n works simultaneously for every x in A.
-
-Equivalently, setting:
-
-$$
-\alpha_n
-=
-\sup_{x\in A}|f_n(x)-f(x)|,
-$$
-
-uniform convergence is equivalent to:
-
-$$
-\alpha_n\to0.
-$$
-
-
-### Fundamental Facts
-
-- Uniform convergence implies pointwise convergence, but the converse does not hold.
-
-- If fₙ converges uniformly to f and every fₙ is continuous on an interval I, then f is continuous on I.
-
-- If every fₙ is Riemann integrable on the compact interval [a,b], uniform convergence allows the limit to commute with integration:
-
-$$
-\lim_{n\to\infty}
-\int_a^b f_n(x)\,dx
-=
-\int_a^b f(x)\,dx.
-$$
-
-- Suppose:
-
-$$
-f_n\to f,
-$$
-
-$$
-f_n'\rightrightarrows g,
-$$
-
-and:
-
-$$
-f_n\in C^1(I).
-$$
-
-Under the standard hypotheses ensuring convergence of fₙ at at least one point of I, it follows that:
-
-$$
-f\in C^1(I),
-$$
-
-and:
-
-$$
-f'=g.
-$$
-
-</div>
+# Sequences and Series of Functions: Complete Theory and Exercises
 
 
 <div class="content-box">
 
-For series of real numbers and convergence tests, see [Numerical Series]({{ "/mathematics/calculus/numerical-series/" | relative_url }}).
-
-## Worked Exercises
-
-**Note.** When summing a power series, unless otherwise specified, sums are understood on intervals:
-
-$$
-[x_0-\rho,x_0+\rho],
-\qquad
-0\le\rho<r,
-$$
-
-where r is the radius of convergence. Convergence at the boundary points x₀ ± r must be checked separately; no general convergence assertion is made there.
+The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
 
 </div>
 
+<div class="content-box">
+
+## Complete Recall: Sequences and Series of Functions
+
+Let fₙ:A→ℝ and f:A→ℝ, where A⊆ℝ. Pointwise convergence means
+$$
+\forall x\in A\ \forall\varepsilon>0\ \exists N_{\varepsilon,x}\ \forall n>N_{\varepsilon,x}:\quad |f_n(x)-f(x)|<\varepsilon.
+$$
+Equivalently fₙ(x)→f(x) for every x; the notation is fₙ→f. The threshold depends both on ε and on x, and may change with x even for fixed ε.
+
+Uniform convergence means
+$$
+\forall\varepsilon>0\ \exists N_\varepsilon\ \forall n>N_\varepsilon\ \forall x\in A:\quad |f_n(x)-f(x)|<\varepsilon.
+$$
+Here the threshold depends only on ε. Writing fₙ⇉f, this is equivalent to
+$$
+\alpha_n=\sup_{x\in A}|f_n(x)-f(x)|,\qquad \lim_{n\to\infty}\alpha_n=0.
+$$
+Uniform convergence implies pointwise convergence; the converse fails. The source lists three transfer properties on an interval I:
+
+1. If continuous fₙ converge uniformly to f, then f is continuous.
+2. For continuous fₙ converging uniformly on I, integration commutes with the limit on every [a,b]⊆I:
+$$
+\lim_{n\to\infty}\int_a^b f_n(x)\,dx=\int_a^b f(x)\,dx.
+$$
+3. If fₙ∈C¹(I), fₙ→f pointwise and fₙ′⇉g uniformly, then f∈C¹(I) and
+$$
+f'=g,\qquad \lim_{n\to\infty}f_n'(x)=\left(\lim_{n\to\infty}f_n(x)\right)'.
+$$
+
+For a function series, take partial sums exactly as for a numerical series, treating x as a parameter:
+$$
+\sum_{n=0}^\infty f_n(x),\qquad s_n(x)=\sum_{k=0}^n f_k(x).
+$$
+Pointwise convergence to s on B⊆A means sₙ(x)→s(x) at every x∈B; uniform convergence means the supremum of the tail tends to zero:
+$$
+|s_n(x)-s(x)|=\left|\sum_{k=n+1}^\infty f_k(x)\right|\to0\quad\text{(pointwise)},
+$$
+$$
+\sup_{x\in B}|s_n(x)-s(x)|=\sup_{x\in B}\left|\sum_{k=n+1}^\infty f_k(x)\right|\to0\quad\text{(uniform)}.
+$$
+**Total convergence** means that the series of suprema converges:
+$$
+\beta_n=\sup_{x\in A}|f_n(x)|,\qquad \sum_{n=0}^\infty\beta_n<\infty.
+$$
+Total convergence implies uniform convergence. Starting the sum at 1, as the book does, does not affect convergence when the omitted term has finite supremum.
+
+**Power series** have a center x₀ and coefficient sequence aₙ:
+$$
+f_n(x)=a_n(x-x_0)^n,\qquad \sum_{n=0}^\infty a_n(x-x_0)^n.
+$$
+**Editorial correction:** the defining formula in the source omits the exponent n. If X is the convergence set, its radius is
+$$
+r=\sup\{|x-x_0|:x\in X\}.
+$$
+Inside |x−x₀|<r the series converges absolutely; outside |x−x₀|>r it does not converge. For every 0<ρ<r it converges totally on the closed interval [x₀−ρ,x₀+ρ]. Boundary points require separate checks.
+
+Either of the following coefficient limits, when it exists (the ratio requires eventually nonzero coefficients), determines the radius:
+$$
+\lim_{n\to\infty}\sqrt[n]{|a_n|}=L,\qquad
+\lim_{n\to\infty}\frac{|a_{n+1}|}{|a_n|}=L.
+$$
+$$
+r=\begin{cases}1/L&0<L<\infty,\\0&L=+\infty,\\+\infty&L=0.\end{cases}
+$$
+The final topic in the book's recall is Fourier series. Its complete formulas are retained on the [**Fourier Series page →**]({{ "/mathematics/calculus/fourier-series/" | relative_url }}).
+
+</div>
 <div class="content-box">
 
 ### Exercise 1
@@ -1260,5 +1193,11 @@ Power series also connect infinite processes with familiar elementary functions,
 [**Explore Sequences →**]({{ "/mathematics/calculus/sequences/" | relative_url }})
 
 [**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+
+</div>
+
+<div class="content-box">
+
+[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>

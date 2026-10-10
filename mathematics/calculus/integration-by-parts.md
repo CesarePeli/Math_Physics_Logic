@@ -1,14 +1,14 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
-date: 2026-08-24
+last_modified_at: 2026-10-10
+date: 2026-10-10
 original_date: 2025-08-29
-title: "Solved Exercises — Integration by Parts"
+title: "Integration by Parts: Original University Exercises"
 permalink: /mathematics/calculus/integration-by-parts/
 redirect_from:
   - /university/math/calculus-1/integration-by-parts/
 background_image: "/images/integrali.png"
-description: "Solved integration by parts exercises with step-by-step solutions for polynomial, exponential, trigonometric, and logarithmic integrals."
+description: "Six original solved integrals combining integration by parts, substitutions, definite bounds and logarithmic endpoint singularities."
 area: mathematics
 topic: calculus
 subtopic: integration-by-parts
@@ -17,9 +17,18 @@ content_type: solved-exercises
 featured: true
 ---
 
+# Integration by Parts: Original University Exercises
+
+
 <div class="content-box">
 
-# Integration by Parts — Theory and Solved Exercises
+The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+
+</div>
+
+
+<div class="content-box">
+
 
 ## Theoretical Recall
 
@@ -98,64 +107,49 @@ This is a guideline rather than a theorem: the best choice is always the one tha
 
 </div>
 
+
+<div class="content-box">
+
+## Original Worked Exercises
+
+These retain the definite and improper bounds in the original statements. C denotes an arbitrary integration constant on each interval of definition.
+
+</div>
+
 <div class="content-box">
 
 ### Exercise 1
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5921. -->
+
+Evaluate the integral:
 
 $$
-\int xe^x\,dx.
+\int \sin x e^{x} \, dx
 $$
+
+
 
 **Solution.**
 
-Choose:
-
-f = x
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = 1
-
-and:
-
-g = eˣ.
-
-Using integration by parts:
-
+Integrate by parts twice, as in the source:
 $$
-\int xe^x\,dx
-=
-xe^x-\int e^x\,dx.
+I=\int e^x\sin x\,dx=e^x\sin x-\int e^x\cos x\,dx.
+$$
+$$
+\int e^x\cos x\,dx=e^x\cos x+\int e^x\sin x\,dx.
+$$
+Substitution gives the original integral on both sides:
+$$
+I=e^x(\sin x-\cos x)-I,
+\qquad2I=e^x(\sin x-\cos x).
 $$
 
-Therefore:
+**Final result**
 
 $$
-\int xe^x\,dx
-=
-xe^x-e^x+C.
+\frac{e^x}{2}(\sin x-\cos x)+C
 $$
-
-Factor out the exponential:
-
-$$
-\int xe^x\,dx
-=
-(x-1)e^x+C.
-$$
-
-**Final Result**
-
-$$
-(x-1)e^x+C
-$$
-
 
 </div>
 
@@ -163,58 +157,39 @@ $$
 
 ### Exercise 2
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5947. -->
+
+Evaluate the integral:
 
 $$
-\int x\cos x\,dx.
+\int_{1}^{e} \sin( \log x) \, dx
 $$
+
+
 
 **Solution.**
 
-Choose:
-
-f = x
-
-and:
-
-g′ = cos x.
-
-Then:
-
-f′ = 1
-
-and:
-
-g = sin x.
-
-Therefore:
-
+Write the integrand as a product of one and sin(log x):
 $$
-\int x\cos x\,dx
-=
-x\sin x-\int\sin x\,dx.
+I=\left[x\sin(\log x)\right]_1^e-\int_1^e\cos(\log x)\,dx.
+$$
+Apply integration by parts to the remaining integral:
+$$
+\int_1^e\cos(\log x)\,dx
+=\left[x\cos(\log x)\right]_1^e+\int_1^e\sin(\log x)\,dx.
+$$
+$$
+I=e\sin1-e\cos1+1-I.
+$$
+$$
+2I=e(\sin1-\cos1)+1.
 $$
 
-Since:
+**Final result**
 
 $$
-\int\sin x\,dx=-\cos x,
+\frac{e(\sin1-\cos1)+1}{2}
 $$
-
-we obtain:
-
-$$
-\int x\cos x\,dx
-=
-x\sin x+\cos x+C.
-$$
-
-**Final Result**
-
-$$
-x\sin x+\cos x+C
-$$
-
 
 </div>
 
@@ -222,52 +197,44 @@ $$
 
 ### Exercise 3
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5932. -->
+
+Evaluate the integral:
 
 $$
-\int x\sin x\,dx.
+\int_{0}^{1} e^{2x} \log(1+e^{x}) \, dx.
 $$
+
+
 
 **Solution.**
 
-Choose:
-
-f = x
-
-and:
-
-g′ = sin x.
-
-Then:
-
-f′ = 1
-
-and:
-
-g = −cos x.
-
-Applying integration by parts:
-
+Put t = eˣ, with dx = dt/t; the bounds become one and e:
 $$
-\int x\sin x\,dx
-=
--x\cos x+\int\cos x\,dx.
+I=\int_1^e t\log(1+t)\,dt
+=\left[\frac{t^2}{2}\log(1+t)\right]_1^e
+-\frac12\int_1^e\frac{t^2}{1+t}\,dt.
+$$
+Polynomial division yields:
+$$
+\frac{t^2}{1+t}=t-1+\frac1{t+1}.
+$$
+$$
+\int\frac{t^2}{1+t}\,dt=\frac{t^2}{2}-t+\log(1+t)+C.
+$$
+Evaluate all terms at the endpoints:
+$$
+I=\frac{e^2}{2}\log(1+e)-\frac{\log2}{2}
+-\frac12\left[\frac{t^2}{2}-t+\log(1+t)\right]_1^e.
 $$
 
-Therefore:
+**Editorial correction.** The source prints 1/(t+1) in a primitive where log(1+t) is required; its final evaluated expression uses the logarithm correctly.
+
+**Final result**
 
 $$
-\int x\sin x\,dx
-=
--x\cos x+\sin x+C.
+\frac{e^2-1}{2}\log(1+e)-\frac{e^2}{4}+\frac e2-\frac14
 $$
-
-**Final Result**
-
-$$
--x\cos x+\sin x+C
-$$
-
 
 </div>
 
@@ -275,78 +242,37 @@ $$
 
 ### Exercise 4
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6458. -->
+
+Evaluate the integral:
 
 $$
-\int xe^{2x}\,dx.
+\int _{0}^{\frac{\pi}{2}}x \sin^{2} x \, dx.
 $$
+
+
 
 **Solution.**
 
-Choose:
-
-f = x
-
-and:
-
-g′ = e²ˣ.
-
-Then:
-
-f′ = 1.
-
-Moreover:
-
+The half-angle formula gives:
 $$
-g
-=
-\int e^{2x}\,dx
-=
-\frac12e^{2x}.
+\int\sin^2x\,dx=\frac x2-\frac{\sin2x}{4}+C.
+$$
+Integrate by parts with this primitive:
+$$
+I=\left[\frac{x^2}{2}-\frac{x\sin2x}{4}\right]_0^{\pi/2}
+-\int_0^{\pi/2}\left(\frac x2-\frac{\sin2x}{4}\right)dx.
+$$
+$$
+I=\frac{\pi^2}{8}-\left[\frac{x^2}{4}+\frac{\cos2x}{8}\right]_0^{\pi/2}
+=\frac{\pi^2}{8}-\frac{\pi^2}{16}+\frac14.
 $$
 
-Integration by parts gives:
+**Final result**
 
 $$
-\int xe^{2x}\,dx
-=
-\frac{x}{2}e^{2x}
--
-\frac12\int e^{2x}\,dx.
+\frac{\pi^2}{16}+\frac14
 $$
-
-Hence:
-
-$$
-\int xe^{2x}\,dx
-=
-\frac{x}{2}e^{2x}
--
-\frac14e^{2x}
-+
-C.
-$$
-
-Factoring:
-
-$$
-\int xe^{2x}\,dx
-=
-\left(
-\frac{x}{2}
--
-\frac14
-\right)e^{2x}
-+
-C.
-$$
-
-**Final Result**
-
-$$
-\left(\frac{x}{2}-\frac14\right)e^{2x}+C
-$$
-
 
 </div>
 
@@ -354,74 +280,43 @@ $$
 
 ### Exercise 5
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6467. -->
+
+Evaluate the integral:
 
 $$
-\int\ln x\,dx.
+\int_{0}^{1} x^{2} \log \sqrt{1-x} \, dx.
 $$
+
+
 
 **Solution.**
 
-Although the integrand appears to contain only one function, write:
-
+Use the logarithm rule and substitute t = 1 − x:
 $$
-\ln x
-=
-(\ln x)\cdot1.
+I=\frac12\int_0^1x^2\log(1-x)\,dx
+=\frac12\int_0^1(1-t)^2\log t\,dt.
 $$
-
-Choose:
-
-f = ln x
-
-and:
-
-g′ = 1.
-
-Then:
-
+This is improper at t = 0. Integration by parts gives the primitive:
 $$
-f'
-=
-\frac1x,
+\int(1-t)^2\log t\,dt
+=-\frac{(1-t)^3}{3}\log t+\frac13\int\frac{(1-t)^3}{t}\,dt.
+$$
+$$
+F(t)=-\frac{(1-t)^3}{3}\log t+\frac{\log t}{3}
+-\frac{t^3}{9}-t+\frac{t^2}{2}.
+$$
+The logarithmic part is [1 − (1 − t)³] log t/3 and tends to zero at zero. All polynomial terms also tend to zero:
+$$
+I=\frac12\lim_{a\to0^+}[F(t)]_a^1
+=\frac12\left(-\frac19-1+\frac12\right).
 $$
 
-and:
-
-g = x.
-
-Integration by parts gives:
+**Final result**
 
 $$
-\int\ln x\,dx
-=
-x\ln x
--
-\int x\frac1x\,dx.
+-\frac{11}{36}
 $$
-
-Thus:
-
-$$
-\int\ln x\,dx
-=
-x\ln x-\int1\,dx.
-$$
-
-Therefore:
-
-$$
-\int\ln x\,dx
-=
-x\ln x-x+C.
-$$
-
-**Final Result**
-
-$$
-x\ln x-x+C
-$$
-
 
 </div>
 
@@ -429,556 +324,51 @@ $$
 
 ### Exercise 6
 
-Evaluate:
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6713. -->
+
+Evaluate the integral:
 
 $$
-\int x^2e^x\,dx.
-$$
-
-**Solution.**
-
-Choose:
-
-f = x²
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = 2x
-
-and:
-
-g = eˣ.
-
-Therefore:
-
-$$
-\int x^2e^x\,dx
-=
-x^2e^x
--
-2\int xe^x\,dx.
-$$
-
-The remaining integral still requires integration by parts.
-
-From Exercise 1:
-
-$$
-\int xe^x\,dx
-=
-xe^x-e^x.
-$$
-
-Substituting:
-
-$$
-\int x^2e^x\,dx
-=
-x^2e^x
--
-2(xe^x-e^x)
-+
-C.
-$$
-
-Expanding:
-
-$$
-\int x^2e^x\,dx
-=
-x^2e^x
--
-2xe^x
-+
-2e^x
-+
-C.
-$$
-
-Factoring out eˣ:
-
-$$
-\int x^2e^x\,dx
-=
-(x^2-2x+2)e^x+C.
-$$
-
-**Final Result**
-
-$$
-(x^2-2x+2)e^x+C
+\int_{0}^{1} x^{2} \log \frac{1+x}{1-x} \, dx.
 $$
 
 
-</div>
-
-<div class="content-box">
-
-### Exercise 7
-
-Evaluate:
-
-$$
-\int x\ln x\,dx.
-$$
 
 **Solution.**
 
-Choose the logarithmic factor for differentiation:
-
-f = ln x.
-
-Then choose:
-
-g′ = x.
-
+Split the logarithm, retaining the source's link with the preceding exercise:
+$$
+I=\int_0^1x^2\log(1+x)\,dx-\int_0^1x^2\log(1-x)\,dx.
+$$
+From Exercise 5, the second integral equals −11/18. For the first, integrate by parts and divide the rational term:
+$$
+\int_0^1x^2\log(1+x)\,dx
+=\frac{\log2}{3}-\frac13\int_0^1\frac{x^3}{1+x}\,dx.
+$$
+$$
+\frac{x^3}{1+x}=x^2-x+1-\frac1{1+x}.
+$$
+$$
+\int_0^1x^2\log(1+x)\,dx
+=\frac{\log2}{3}-\frac13\left[\frac{x^3}{3}-\frac{x^2}{2}+x-\log(1+x)\right]_0^1
+=\frac{2\log2}{3}-\frac5{18}.
+$$
 Therefore:
-
-$$
-f'
-=
-\frac1x,
-$$
-
-and:
-
-$$
-g
-=
-\frac{x^2}{2}.
-$$
-
-Integration by parts gives:
-
-$$
-\int x\ln x\,dx
-=
-\frac{x^2}{2}\ln x
--
-\int
-\frac{x^2}{2}
-\frac1x
-\,dx.
-$$
-
-Simplifying:
-
-$$
-\int x\ln x\,dx
-=
-\frac{x^2}{2}\ln x
--
-\frac12\int x\,dx.
-$$
-
-Therefore:
-
-$$
-\int x\ln x\,dx
-=
-\frac{x^2}{2}\ln x
--
-\frac{x^2}{4}
-+
-C.
-$$
-
-**Final Result**
-
-$$
-\frac{x^2}{2}\ln x-\frac{x^2}{4}+C
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 8
-
-Evaluate:
-
-$$
-\int e^x\cos x\,dx.
-$$
-
-**Solution.**
-
-Let:
-
-$$
-I
-=
-\int e^x\cos x\,dx.
-$$
-
-Choose:
-
-f = cos x
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = −sin x
-
-and:
-
-g = eˣ.
-
-Integration by parts gives:
-
-$$
-I
-=
-e^x\cos x
-+
-\int e^x\sin x\,dx.
-$$
-
-Now define:
-
-$$
-J
-=
-\int e^x\sin x\,dx.
-$$
-
-Apply integration by parts again, choosing:
-
-f = sin x
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = cos x
-
-and:
-
-g = eˣ.
-
-Therefore:
-
-$$
-J
-=
-e^x\sin x
--
-\int e^x\cos x\,dx.
-$$
-
-Since the remaining integral is I:
-
-$$
-J
-=
-e^x\sin x-I.
-$$
-
-Substitute this into the first equation:
-
-$$
-I
-=
-e^x\cos x
-+
-e^x\sin x
--
-I.
-$$
-
-Hence:
-
-$$
-2I
-=
-e^x(\cos x+\sin x).
-$$
-
-Therefore:
-
-$$
-I
-=
-\frac12e^x(\sin x+\cos x)+C.
-$$
-
-**Final Result**
-
-$$
-\frac12e^x(\sin x+\cos x)+C
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 9
-
-Evaluate:
-
-$$
-\int e^x\sin x\,dx.
-$$
-
-**Solution.**
-
-Let:
-
-$$
-I
-=
-\int e^x\sin x\,dx.
 $$
-
-Choose:
-
-f = sin x
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = cos x
-
-and:
-
-g = eˣ.
-
-Integration by parts gives:
-
-$$
-I
-=
-e^x\sin x
--
-\int e^x\cos x\,dx.
-$$
-
-Now apply integration by parts to the remaining integral:
-
-$$
-\int e^x\cos x\,dx.
-$$
-
-Choose:
-
-f = cos x
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-$$
-\int e^x\cos x\,dx
-=
-e^x\cos x
-+
-\int e^x\sin x\,dx.
-$$
-
-The last integral is I, so:
-
-$$
-\int e^x\cos x\,dx
-=
-e^x\cos x+I.
-$$
-
-Substitute into the original equation:
-
-$$
-I
-=
-e^x\sin x
--
-e^x\cos x
--
-I.
-$$
-
-Therefore:
-
-$$
-2I
-=
-e^x(\sin x-\cos x).
-$$
-
-Hence:
-
-$$
-I
-=
-\frac12e^x(\sin x-\cos x)+C.
-$$
-
-**Final Result**
-
-$$
-\frac12e^x(\sin x-\cos x)+C
-$$
-
-
-</div>
-
-<div class="content-box">
-
-### Exercise 10
-
-Evaluate:
-
-$$
-\int x^3e^x\,dx.
-$$
-
-**Solution.**
-
-Let:
-
-$$
-I
-=
-\int x^3e^x\,dx.
-$$
-
-Choose:
-
-f = x³
-
-and:
-
-g′ = eˣ.
-
-Then:
-
-f′ = 3x²
-
-and:
-
-g = eˣ.
-
-Therefore:
-
-$$
-I
-=
-x^3e^x
--
-3\int x^2e^x\,dx.
-$$
-
-Now apply integration by parts to:
-
-$$
-\int x^2e^x\,dx.
+I=\frac{2\log2}{3}-\frac5{18}+\frac{11}{18}.
 $$
 
-We obtain:
+**Final result**
 
 $$
-\int x^2e^x\,dx
-=
-x^2e^x
--
-2\int xe^x\,dx.
+\frac{\log4+1}{3}
 $$
-
-For the remaining integral:
-
-$$
-\int xe^x\,dx
-=
-xe^x-e^x.
-$$
-
-Therefore:
-
-$$
-\int x^2e^x\,dx
-=
-x^2e^x
--
-2xe^x
-+
-2e^x.
-$$
-
-Substitute this expression into I:
-
-$$
-I
-=
-x^3e^x
--
-3(x^2e^x-2xe^x+2e^x)
-+
-C.
-$$
-
-Expanding:
-
-$$
-I
-=
-x^3e^x
--
-3x^2e^x
-+
-6xe^x
--
-6e^x
-+
-C.
-$$
-
-Factor out eˣ:
-
-$$
-I
-=
-(x^3-3x^2+6x-6)e^x+C.
-$$
-
-**Final Result**
-
-$$
-(x^3-3x^2+6x-6)e^x+C
-$$
-
 
 </div>
 
 
-
-
 <div class="content-box">
 
-## Explore More Topics in Calculus
-
-- [Limits]({{ "/mathematics/calculus/limits/" | relative_url }})
-- [Sequences]({{ "/mathematics/calculus/sequences/" | relative_url }})
-- [Series]({{ "/mathematics/calculus/series/" | relative_url }})
-- [Continuity]({{ "/mathematics/calculus/continuity/" | relative_url }})
-- [Differentiability]({{ "/mathematics/calculus/differentiability/" | relative_url }})
-- [Integration by Substitution]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
-- [Ordinary Differential Equations]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
-- [Cauchy Problems]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
-
-[**← Back to Calculus**]({{ "/mathematics/calculus/" | relative_url }})
+[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
 
 </div>

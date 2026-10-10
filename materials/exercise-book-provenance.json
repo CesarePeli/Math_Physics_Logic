@@ -1,0 +1,448 @@
+{
+  "source_sha256": "c5a28750f72c0ca79d8bc2a19eb9c4ed3509f68a86e3f03e659254585b25ddc9",
+  "exercises": [
+    {
+      "number": 1,
+      "source_line": 2899,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{\\sin x -\\frac{1}{2}x+x^{3}}{\\tan x -1+ \\cos x}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 2,
+      "source_line": 2907,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{\\sinh x -\\sin x}{x^{3}}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 3,
+      "source_line": 2930,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{(2+\\cos(3x)-3 \\cosh x)^{4}}{\\log(1+x^{2})}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 4,
+      "source_line": 2946,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}(\\log(1+x)+\\cos ^{2}x)^{\\frac{1}{x}}\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 5,
+      "source_line": 2966,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 1^{+}}\\frac{\\sin (\\sqrt{x-1})-\\sqrt{\\log x}}{x-1}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 6,
+      "source_line": 2985,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{\\sin (2x) e^{-x}-\\log(1+2x)}{x^{3}}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 7,
+      "source_line": 2995,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{e^{x-x^{2}}-\\log(1+x)-1}{x-\\sin x}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 8,
+      "source_line": 3014,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{5^{1+\\tan^{2}x}-5}{1-\\cos x}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 9,
+      "source_line": 3023,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{x^{2}-\\sin^{2} x}{x^{3}(e^{x}-\\cos x)}.\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "number": 10,
+      "source_line": 3129,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 1}\\biggl(\\frac{x}{x-1}-\\frac{1}{\\log x}\\biggl).\n$$\n\n",
+      "page": "mathematics/calculus/limits/limits-taylor.md"
+    },
+    {
+      "page": "mathematics/calculus/limits/limits-taylor.md",
+      "number": 11,
+      "source_line": 2853,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 1}\\frac{\\log(1+\\pi -4\\arctan x)}{\\sin (1-x)}.\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/limits/limits-taylor.md",
+      "number": 12,
+      "source_line": 2922,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{x \\arcsin x -x^{2}}{\\sqrt{1+x^{4}}-\\cos(x^{2})}.\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/limits/limits-taylor.md",
+      "number": 13,
+      "source_line": 2956,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{\\sin(3x) \\log(1+2x)-6x^{2}+6x^{3}}{x^{4}}\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/limits/limits-taylor.md",
+      "number": 14,
+      "source_line": 3005,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{\\sqrt[5]{1-5x^{2}+x^{4}}-1+x^{2}}{x^{4}}.\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/limits/limits-taylor.md",
+      "number": 15,
+      "source_line": 3032,
+      "problem": "Evaluate the following limit:\n\n$$\n\\lim_{x \\to 0}\\frac{x^{5}[e^{2x^{3}}-1]}{\\sqrt{1+x^{8}}-\\sqrt[3]{1+x^{8}}}.\n$$\n\n"
+    },
+    {
+      "number": 1,
+      "source_line": 4879,
+      "problem": "Study continuity and classify every exceptional point:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\t\\frac{2}{3}-x \\qquad x<0\\\\\n\t\t0 \\qquad x=0\\\\\n\t\t\\frac{\\sin 2x}{\\sin 3x} \\qquad 0<x<\\frac{\\pi}{6}\\\\\n\t\t\\cos x \\qquad \\frac{\\pi}{6}< x \\leq \\frac{\\pi}{2}\\\\\n\t\t1 \\qquad x> \\frac{\\pi}{2}\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/continuity.md"
+    },
+    {
+      "number": 2,
+      "source_line": 4910,
+      "problem": "Study continuity and classify every exceptional point:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\t\\frac{1}{\\sqrt{|x|}}-\\sqrt{1-\\frac{1}{x}} \\qquad x<0\\\\\n\t\t1 \\qquad x=0\\\\\n\t\t\\frac{\\sin x \\log(1+x)}{x^{2}} \\qquad x>0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/continuity.md"
+    },
+    {
+      "number": 3,
+      "source_line": 5010,
+      "problem": "Study continuity and classify every exceptional point:\n\n$$\nf(x)=\\frac{1}{2-e^{\\frac{1}{x}}}.\n$$\n\n",
+      "page": "mathematics/calculus/continuity.md"
+    },
+    {
+      "number": 4,
+      "source_line": 5060,
+      "problem": "Study continuity and classify every exceptional point:\n\n$$\nf(x)= \\frac{\\log(x^{2})-1}{\\log(x^{2})+1}.\n$$\n\n",
+      "page": "mathematics/calculus/continuity.md"
+    },
+    {
+      "number": 1,
+      "source_line": 4683,
+      "problem": "Study continuity and differentiability, including all parameter cases:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\t\\frac{\\log(1+x^{3})-x^{3}}{\\sqrt{x}} \\qquad x >0 \\\\\n\t\tx^{3}+2x^{4} \\qquad x \\leq 0.\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 2,
+      "source_line": 4705,
+      "problem": "Study continuity and differentiability, including all parameter cases:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\tx^{2}+x \\qquad x \\geq 0\\\\\n\t\t\\frac{\\cos x -\\cos 3x}{x} \\qquad x<0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 3,
+      "source_line": 4773,
+      "problem": "Study continuity and differentiability, including all parameter cases:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\tx^{x \\log x} \\qquad x>0,\\\\\n\t\t1 \\qquad x \\leq 0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 4,
+      "source_line": 4792,
+      "problem": "Study continuity and differentiability, including all parameter cases:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\te^{x-1}+a \\qquad x <1\\\\\n\t\tbx^{2}+1 \\qquad x \\geq 1.\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 5,
+      "source_line": 4821,
+      "problem": "Find the greatest integer k ≥ 0 for which f belongs to Cᵏ(ℝ), as the real parameters vary:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\te^{x^{2} \\sin 2x} \\qquad x>0\\\\\n\t\t1 \\qquad x=0\\\\\n\t\tx^{2}+a \\qquad x <0\\\\\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 6,
+      "source_line": 4932,
+      "problem": "Study continuity and differentiability, including all parameter cases:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\t\\frac{1}{1-x} \\qquad x \\leq 0\\\\\n\t\tx e^{a x}+b \\qquad x>0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 7,
+      "source_line": 4973,
+      "problem": "Find the greatest integer k ≥ 0 for which f belongs to Cᵏ(ℝ), as the real parameters vary:\n\n$$\nf(x)=\n\t\\begin{cases}\n\t\t\\log(1+x) \\qquad x>0\\\\\n\t\t0 \\qquad x=0\\\\\n\t\tax^{2}+bx+c \\qquad x<0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/differentiability.md"
+    },
+    {
+      "number": 1,
+      "source_line": 5921,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\sin x e^{x} \\, dx\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 2,
+      "source_line": 5947,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{1}^{e} \\sin( \\log x) \\, dx\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 3,
+      "source_line": 5932,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{1} e^{2x} \\log(1+e^{x}) \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 4,
+      "source_line": 6458,
+      "problem": "Evaluate the integral:\n\n$$\n\\int _{0}^{\\frac{\\pi}{2}}x \\sin^{2} x \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 5,
+      "source_line": 6467,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{1} x^{2} \\log \\sqrt{1-x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 6,
+      "source_line": 6713,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{1} x^{2} \\log \\frac{1+x}{1-x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-parts.md"
+    },
+    {
+      "number": 1,
+      "source_line": 6062,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{1}{\\sqrt{x^{2}-2x}} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 2,
+      "source_line": 6130,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{\\frac{\\pi}{3}} \\frac{2 \\cos x}{5-4 \\cos^{2} x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 3,
+      "source_line": 6154,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} \\frac{\\cos x}{\\sin^{2} x-2 \\sin x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 4,
+      "source_line": 6203,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{1} x^{2} e^{x^{\\frac{3}{2}}} \\,dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 5,
+      "source_line": 6214,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{x^{3}}{\\sqrt{1-x^{2}}} \\, dx\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 6,
+      "source_line": 6326,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{0}^{\\frac{\\pi}{2}} \\cos x \\log(1+\\sin x) \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/integration-by-sostitution.md"
+    },
+    {
+      "number": 1,
+      "source_line": 5961,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{1}{x^{3}-1} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/rational-integrals.md"
+    },
+    {
+      "number": 2,
+      "source_line": 6000,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{x^{3}}{x^{2}-5x+6}\\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/rational-integrals.md"
+    },
+    {
+      "number": 3,
+      "source_line": 6027,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{x^{2}+1}{x^{3}-4x^{2}+5x-2}\\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/rational-integrals.md"
+    },
+    {
+      "number": 1,
+      "source_line": 5839,
+      "problem": "Prove convergence and evaluate the integral:\n\n$$\n\\int_{\\frac{1}{e}}^e \\frac{\\log (|\\log x|)}{x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 2,
+      "source_line": 6227,
+      "problem": "Determine whether the following function is improperly integrable on [1,+∞):\n\n$$\nf(x)=\\frac{\\sin x}{x\\sqrt{x+1}}.\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 3,
+      "source_line": 6236,
+      "problem": "Determine whether the following function is improperly integrable on [0,1]:\n\n$$\nf(x)=\\frac1{\\sqrt{1-x^3}}.\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 4,
+      "source_line": 6261,
+      "problem": "Prove convergence and evaluate the integral:\n\n$$\n\\int_{2}^{+\\infty} \\frac{1}{x \\sqrt{x^{2}-1}} \\,dx.\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 5,
+      "source_line": 6348,
+      "problem": "Prove convergence:\n\n$$\n\\int_{0}^{1} \\frac{\\log(1+\\sqrt[4]{x})}{e^{x}-1} \\, dx\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 6,
+      "source_line": 6607,
+      "problem": "Prove convergence and evaluate the integral:\n\n$$\n\\int_{3}^{+ \\infty} \\frac{x+1}{(x-1)^{2}(x-2)} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/improper-integrals.md"
+    },
+    {
+      "number": 1,
+      "source_line": 5861,
+      "problem": "Evaluate the definite integral:\n\n$$\n\\int_{-1}^{1} \\sqrt{1-x^{2}} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/definite-integrals.md"
+    },
+    {
+      "number": 2,
+      "source_line": 5908,
+      "problem": "Evaluate the definite integral:\n\n$$\n\\int_{-2}^{2} \\sqrt{4-x^{2}} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/definite-integrals.md"
+    },
+    {
+      "number": 3,
+      "source_line": 6436,
+      "problem": "Evaluate the definite integral:\n\n$$\n\\int_{2}^{4} | \\log (x-2) | \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/definite-integrals.md"
+    },
+    {
+      "number": 4,
+      "source_line": 6564,
+      "problem": "Evaluate the definite integral:\n\n$$\n\\int_{1}^{e} x^{\\log x} \\frac{\\log^{3} x}{x} \\, dx.\n$$\n\n",
+      "page": "mathematics/calculus/definite-integrals.md"
+    },
+    {
+      "page": "mathematics/calculus/immediate-integrals.md",
+      "number": 1,
+      "source_line": 5853,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{1}{\\sin^{2}x \\cos^{2}x} \\, dx.\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/immediate-integrals.md",
+      "number": 2,
+      "source_line": 5873,
+      "problem": "Evaluate the integral:\n\n$$\n\\int_{-1}^{1} \\frac{1}{\\sqrt{4-x^{2}}}\\, dx.\n$$\n\n"
+    },
+    {
+      "page": "mathematics/calculus/immediate-integrals.md",
+      "number": 3,
+      "source_line": 5881,
+      "problem": "Evaluate the integral:\n\n$$\n\\int \\frac{x^{2}}{x^{2}+2} \\, dx.\n$$\n\n"
+    },
+    {
+      "number": 1,
+      "source_line": 8172,
+      "problem": "Solve the following initial-value problem:\n\n$$\n\\begin{cases}\n\t\ty''(x)-y(x)= e^{x}+ \\cos x\\\\\n\t\ty(0)=0\\\\\n\t\ty'(0)=1.\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/odes-cauchy.md"
+    },
+    {
+      "number": 2,
+      "source_line": 8280,
+      "problem": "Solve the following initial-value problem:\n\n$$\n\\begin{cases}\n\t\ty'(x)= \\frac{e^{x}}{y(x)}\\\\\n\t\ty(0)=1\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/odes-cauchy.md"
+    },
+    {
+      "number": 3,
+      "source_line": 8337,
+      "problem": "Solve the following initial-value problem:\n\n$$\n\\begin{cases}\n\t\ty'''(x)-3y'(x)-2y(x)=x^{3}+2\\\\\n\t\ty(0)= \\frac{61}{8}\\\\\n\t\ty'(0)=- \\frac{27}{4}\\\\\n\t\ty''(0)= \\frac{9}{2}\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/odes-cauchy.md"
+    },
+    {
+      "number": 4,
+      "source_line": 8513,
+      "problem": "Solve the following initial-value problem:\n\n$$\n\\begin{cases}\n\t\ty^{IV}(x)-y(x)=e^{x}( \\cos x+ \\sin x)\\\\\n\t\ty(0)=0\\\\\n\t\ty'(0)=0\\\\\n\t\ty''(0)=0\\\\\n\t\ty'''(0)=0\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/odes-cauchy.md"
+    },
+    {
+      "number": 5,
+      "source_line": 8606,
+      "problem": "Solve the following initial-value problem:\n\n$$\n\\begin{cases}\n\t\ty''(x)+y(x)= \\frac{2}{ \\sin^{3} x}\\\\\n\t\ty \\bigl( \\frac{\\pi}{2} \\bigl)=0\\\\\n\t\ty' \\bigl( \\frac{\\pi}{2} \\bigl)=1\n\t\\end{cases}\n$$\n\n",
+      "page": "mathematics/calculus/odes-cauchy.md"
+    },
+    {
+      "number": 1,
+      "source_line": 102,
+      "problem": "Prove:\n\n$$\n2^n\\le(n+1)!\\quad(n\\ge0)\n$$\n\n",
+      "page": "mathematics/calculus/mathematical-induction.md"
+    },
+    {
+      "number": 2,
+      "source_line": 117,
+      "problem": "Prove:\n\n$$\n(1+a)^n\\ge1+na\\quad(n\\ge0,\\ a\\ge-1)\n$$\n\n",
+      "page": "mathematics/calculus/mathematical-induction.md"
+    },
+    {
+      "number": 3,
+      "source_line": 147,
+      "problem": "Prove:\n\n$$\n\\sum_{k=0}^n k=\\frac{n(n+1)}2\\quad(n\\ge0)\n$$\n\n",
+      "page": "mathematics/calculus/mathematical-induction.md"
+    },
+    {
+      "number": 1,
+      "source_line": 5361,
+      "problem": "Analyze and sketch the following function:\n\n$$\nf(x)= \\frac{\\log^{2} x}{x}.\n$$\n\n",
+      "page": "mathematics/calculus/function-analysis.md"
+    },
+    {
+      "number": 2,
+      "source_line": 5554,
+      "problem": "Analyze and sketch the following function:\n\n$$\nf(x)= \\arctan x- \\frac{x}{2}\n$$\n\n",
+      "page": "mathematics/calculus/function-analysis.md"
+    },
+    {
+      "number": 3,
+      "source_line": 5633,
+      "problem": "Analyze and sketch the following function:\n\n$$\nf(x)= \\frac{5-x}{\\sqrt{5+x^{2}}}\n$$\n\n",
+      "page": "mathematics/calculus/function-analysis.md"
+    }
+  ],
+  "files": [
+    "mathematics/calculus/limits/limits-taylor.md",
+    "mathematics/calculus/continuity.md",
+    "mathematics/calculus/differentiability.md",
+    "mathematics/calculus/integration-by-parts.md",
+    "mathematics/calculus/integration-by-sostitution.md",
+    "mathematics/calculus/rational-integrals.md",
+    "mathematics/calculus/improper-integrals.md",
+    "mathematics/calculus/definite-integrals.md",
+    "mathematics/calculus/immediate-integrals.md",
+    "mathematics/calculus/odes-cauchy.md",
+    "mathematics/calculus/mathematical-induction.md",
+    "images/exercise-book/log-squared-over-x.png",
+    "images/exercise-book/arctan-minus-half-x.png",
+    "images/exercise-book/five-minus-x-over-root.png",
+    "mathematics/calculus/function-analysis.md",
+    "mathematics/calculus/series.md",
+    "mathematics/calculus/fourier-series.md",
+    "mathematics/calculus/index.md"
+  ],
+  "source_title": "Eserciziario 2.1",
+  "authors": [
+    "Antonino De Martino",
+    "Luana Manfredini"
+  ],
+  "coverage": {
+    "Induction": "/mathematics/calculus/mathematical-induction/",
+    "Complex numbers": "/mathematics/algebra/complex-numbers/",
+    "Limits": "/mathematics/calculus/limits/",
+    "Recursive sequences": "/mathematics/calculus/sequences/",
+    "Numerical series": "/mathematics/calculus/numerical-series/",
+    "Continuity and differentiability": [
+      "/mathematics/calculus/continuity/",
+      "/mathematics/calculus/differentiability/"
+    ],
+    "Function analysis": "/mathematics/calculus/function-analysis/",
+    "Integration": [
+      "/mathematics/calculus/immediate-integrals/",
+      "/mathematics/calculus/integration-by-parts/",
+      "/mathematics/calculus/integration-by-substitution/",
+      "/mathematics/calculus/rational-integrals/",
+      "/mathematics/calculus/definite-integrals/",
+      "/mathematics/calculus/improper-integrals/"
+    ],
+    "Ordinary differential equations": [
+      "/mathematics/calculus/ordinary-differential-equations/",
+      "/mathematics/calculus/cauchy-problems/"
+    ],
+    "Sequences and series of functions": [
+      "/mathematics/calculus/series/",
+      "/mathematics/calculus/fourier-series/"
+    ]
+  }
+}
