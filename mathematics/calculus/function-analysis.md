@@ -7,19 +7,22 @@ content_type: solved-exercises
 background_image: "/images/limiti.png"
 permalink: /mathematics/calculus/function-analysis/
 title: "Function Analysis: Domain, Asymptotes and Original Exercises"
-description: "Three original function studies with extrema, asymptotes, convexity and the exercise book\u2019s original diagrams."
+description: "Eight original function studies with extrema, asymptotes, convexity and the exercise book\u2019s original diagrams."
 date: 2026-10-10
 last_modified_at: 2026-10-10
 ---
 
-# Function Analysis: Domain, Asymptotes and Original Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Function Analysis: Domain, Asymptotes and Original Exercises
+
+
+
 
 <div class="content-box">
 
@@ -106,9 +109,9 @@ x_\pm=\exp\!\left(\frac{3\pm\sqrt5}{2}\right).
 $$
 The function is convex outside [x₋,x₊] and concave between these two inflection abscissae.
 
-Original diagram from the exercise book:
+Original diagram:
 
-![Original function graph]({{ "/images/exercise-book/log-squared-over-x.png" | relative_url }})
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/log-squared-over-x.png" | relative_url }}" alt="Graph of log squared x divided by x" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
@@ -145,9 +148,9 @@ f'(x)=\frac{1-x^2}{2(1+x^2)},\qquad f''(x)=-\frac{2x}{(1+x^2)^2}.
 $$
 The function decreases on (−∞,−1), increases on (−1,1), and decreases on (1,∞). Its local minimum is f(−1)=1/2−π/4; its local maximum is f(1)=π/4−1/2. It is convex for x<0 and concave for x>0; (0,0) is an inflection point. For completeness, besides zero there are two symmetric roots ±α, where α is the unique positive solution of arctan α=α/2 beyond 1. The signs follow from oddness and the monotonicity just established: positive on (−∞,−α) and (0,α), negative on (−α,0) and (α,∞).
 
-Original diagram from the exercise book:
+Original diagram:
 
-![Original function graph]({{ "/images/exercise-book/arctan-minus-half-x.png" | relative_url }})
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/arctan-minus-half-x.png" | relative_url }}" alt="Graph of arctan x minus x divided by two" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
@@ -187,9 +190,9 @@ f''(x)=\frac{5(2x^2+3x-5)}{(5+x^2)^{5/2}}=\frac{5(2x+5)(x-1)}{(5+x^2)^{5/2}}.
 $$
 The function is convex on (−∞,−5/2) and (1,∞), and concave on (−5/2,1). The inflection points are (−5/2,√5) and (1,4/√6). The infimum is −1 and is not attained.
 
-Original diagram from the exercise book:
+Original diagram:
 
-![Original function graph]({{ "/images/exercise-book/five-minus-x-over-root.png" | relative_url }})
+<img class="exercise-book-graph" src="{{ "/images/exercise-book/five-minus-x-over-root.png" | relative_url }}" alt="Graph of five minus x divided by the square root of five plus x squared" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 
 **Final result**
 
@@ -200,6 +203,159 @@ $$
 </div>
 
 
+
+<div class="content-box">
+
+### Exercise 4
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5385. -->
+
+Analyze and sketch the following function:
+
+$$
+f(x)= \log| \log(x^{2}-1)|.
+$$
+
+
+
+**Solution.**
+
+For the nested logarithms, require x²−1>0 and log(x²−1)≠0. Thus |x|>1 and x≠±√2. The function is even, so the analysis may be restricted to x>1 and reflected. Its zeros satisfy |log(x²−1)|=1:
+$$x=\pm\sqrt{1+e^{-1}},\qquad x=\pm\sqrt{1+e}.$$
+There is no vertical-axis intercept. On x>1, the function is positive on (1,√(1+e⁻¹)) and (√(1+e),∞); negative between these zeros, with the excluded point √2 splitting that interval. Reflect the signs to x<−1. The limits at 1 from the right and at −1 from the left are +∞; both limits at each of ±√2 are −∞. These four lines are vertical asymptotes. At either infinity f tends to +∞, so there are no horizontal asymptotes; f/x tends to zero, so there is no nonzero-slope oblique asymptote. Differentiate:
+$$f'(x)=\frac{2x}{(x^2-1)\log(x^2-1)}.$$
+For x>1 it is negative on (1,√2) and positive on (√2,∞); evenness reverses these signs on the reflected intervals. The derivative never vanishes in the domain, so there are no extrema. The source leaves the second derivative optional.
+
+**Final result**
+
+$$
+D=(-\infty,-\sqrt2)\cup(-\sqrt2,-1)\cup(1,\sqrt2)\cup(\sqrt2,\infty);\quad\text{no extrema}
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 5
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5435. -->
+
+Analyze and sketch the following function:
+
+$$
+f(x)=x e^{\frac{1}{1+x}}.
+$$
+
+
+
+**Solution.**
+
+The domain is ℝ excluding −1; the function is neither even nor odd. Its only intercept is (0,0), and its sign is the sign of x. At −1 the left limit is 0 and the right limit is −∞, so x=−1 is only a right vertical asymptote. At the two infinities f tends respectively to −∞ and +∞. Since
+$$\lim_{x\to\pm\infty}\frac{f(x)}x=1,\qquad\lim_{x\to\pm\infty}(f(x)-x)=1,$$
+the bilateral oblique asymptote is y=x+1. The derivatives are
+$$f'(x)=e^{1/(x+1)}\frac{x^2+x+1}{(x+1)^2}>0,\qquad f''(x)=-e^{1/(x+1)}\frac{x+2}{(x+1)^4}.$$
+The numerator x²+x+1=(x+1/2)²+3/4 is positive. The function therefore increases on each domain interval and has no extrema. It is convex on (−∞,−2), concave on (−2,−1) and (−1,∞); the inflection point is (−2,−2/e).
+
+**Final result**
+
+$$
+\text{Asymptote }y=x+1;\quad\text{inflection }(-2,-2/e)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 6
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5464. -->
+
+Analyze and sketch the following function:
+
+$$
+f(x)=x+ \frac{1}{x} \log x.
+$$
+
+
+
+**Solution.**
+
+The domain is (0,∞), so the function has neither parity symmetry. Its unique horizontal-axis intercept α satisfies x²=−log x with 0<α<1; there is no vertical-axis intercept. At zero from the right the limit is −∞, giving a vertical asymptote; at infinity it is +∞. The oblique asymptote is y=x, since f/x→1 and f−x=log x/x→0. The first derivative is
+$$f'(x)=\frac{x^2+1-\log x}{x^2}>0.$$
+For 0<x≤1 positivity is immediate; for x>1 use log x<x−1<x²+1. Thus f is increasing throughout its domain, with no extrema, and changes sign at its unique zero α. A fresh differentiation gives
+$$f''(x)=\frac{2\log x-3}{x^3}.$$
+It is concave on (0,e³ᐟ²) and convex on (e³ᐟ²,∞), with inflection ordinate e³ᐟ²+(3/2)e⁻³ᐟ².
+
+**Editorial correction.** The source gives 2(log x−1)/x³ for the second derivative and places the inflection at e. Differentiating its correct first derivative instead gives (2log x−3)/x³ and the point displayed here. The original function is unchanged.
+
+**Final result**
+
+$$
+\text{Inflection at }\left(e^{3/2},e^{3/2}+\frac32e^{-3/2}\right)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5534. -->
+
+Analyze and sketch the following function:
+
+$$
+f(x)=e^{-x} \sqrt[3]{x^{2}}.
+$$
+
+
+
+**Solution.**
+
+The real cube root makes the domain all ℝ. The function is nonnegative, neither even nor odd, and has its only intercept at the origin. At −∞ it tends to +∞; at +∞ it tends to zero, giving the right horizontal asymptote y=0. There is no vertical asymptote and no finite-slope oblique asymptote at −∞. For x≠0,
+$$f'(x)=e^{-x}\left(\frac{2}{3\sqrt[3]x}-\sqrt[3]{x^2}\right)=\frac{e^{-x}(2-3x)}{3\sqrt[3]x}.$$
+It is negative for x<0, positive for 0<x<2/3, and negative for x>2/3. At zero the left and right difference quotients tend respectively to −∞ and +∞; the origin is a cusp and the absolute minimum. The point at x=2/3 is a local maximum, with value e⁻²ᐟ³(4/9)¹ᐟ³. There is no absolute maximum because of the unbounded behavior at −∞. The source leaves the second derivative optional.
+
+**Editorial correction.** The source prints inconsistent powers in the first derivative and e⁻³ᐟ² in the maximum ordinate. The original function gives the derivative and ordinate above.
+
+**Final result**
+
+$$
+\min f=f(0)=0;\quad\text{local maximum at }\left(\frac23,e^{-2/3}\sqrt[3]{\frac49}\right)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5655. -->
+
+Analyze and sketch the following function:
+
+$$
+f(x)= \frac{2x^{2}+x+2}{x^{2}+1}.
+$$
+
+
+
+**Solution.**
+
+Write f(x)=2+x/(x²+1). The domain is ℝ; the function is neither even nor odd and is strictly positive, since 2x²+x+2 has negative discriminant. Its only axis intercept is (0,2). Both limits at infinity equal 2, so y=2 is a bilateral horizontal asymptote; there are no vertical asymptotes. The derivatives are
+$$f'(x)=\frac{1-x^2}{(1+x^2)^2},\qquad f''(x)=\frac{2x(x^2-3)}{(1+x^2)^3}.$$
+The function decreases on (−∞,−1), increases on (−1,1) and decreases on (1,∞). Hence f(−1)=3/2 is the absolute minimum and f(1)=5/2 the absolute maximum. The second derivative is negative on (−∞,−√3), positive on (−√3,0), negative on (0,√3), and positive on (√3,∞). All three sign-changing zeros give inflections:
+$$(-\sqrt3,2-\sqrt3/4),\qquad(0,2),\qquad(\sqrt3,2+\sqrt3/4).$$
+
+**Editorial correction.** The source simplifies the second derivative incorrectly using x³−3 and omits the inflection at zero. The correct factor is x²−3. No original graph with incorrect labels is reproduced.
+
+**Final result**
+
+$$
+\min f=\frac32,\quad\max f=\frac52;\quad\text{inflection abscissae }-\sqrt3,0,\sqrt3
+$$
+
+</div>
 <div class="content-box">
 
 [**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})

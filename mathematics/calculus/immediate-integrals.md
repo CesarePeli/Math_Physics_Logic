@@ -4,12 +4,19 @@ last_modified_at: 2026-10-10
 date: 2026-10-10
 title: "Immediate Integrals: Formulas and Worked Examples"
 permalink: /mathematics/calculus/immediate-integrals/
-description: "Immediate-integral formulas, the complete integration recall and three original exercises from Eserciziario 2.1."
+description: "Immediate-integral formulas, the complete integration recall and eight original exercises from Eserciziario 2.1."
 background_image: "/images/integrali.png"
 area: mathematics
 topic: calculus
 content_type: solved-exercises
 ---
+
+
+<div class="content-box">
+
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+
+</div>
 
 # Immediate Integrals: Formulas and Worked Examples
 
@@ -54,7 +61,7 @@ Integration is linear: integrate sums term by term and take constant factors out
 
 <div class="content-box">
 
-## Complete Integration Recall from the Exercise Book
+## Complete Integration Recall
 
 The following recall preserves all formulas, methods and improper-integral cases in the source introduction. Constants and domain restrictions omitted in the source are made explicit. Here C is arbitrary on each interval where the integrand is defined.
 
@@ -194,7 +201,7 @@ $$
 
 <div class="content-box">
 
-## Three Further Integrals from the Exercise Book
+## Original Worked Exercises
 
 These additional exercises and their solutions are translated from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. No new exercise statements have been introduced.
 
@@ -202,7 +209,7 @@ These additional exercises and their solutions are translated from *Eserciziario
 
 <div class="content-box">
 
-### Source Exercise 1 — Recognizing two trigonometric derivatives
+### Exercise 1 — Recognizing two trigonometric derivatives
 
 $$
 \int\frac1{\sin^2x\cos^2x}\,dx.
@@ -236,7 +243,7 @@ $$
 
 <div class="content-box">
 
-### Source Exercise 2 — An immediate arcsine after rescaling
+### Exercise 2 — An immediate arcsine after rescaling
 
 $$
 \int_{-1}^1\frac1{\sqrt{4-x^2}}\,dx.
@@ -276,7 +283,7 @@ $$
 
 <div class="content-box">
 
-### Source Exercise 3 — Algebra before integration
+### Exercise 3 — Algebra before integration
 
 $$
 \int\frac{x^2}{x^2+2}\,dx.
@@ -330,5 +337,163 @@ $$
 [**Improper Integrals →**]({{ "/mathematics/calculus/improper-integrals/" | relative_url }})
 
 [**Rational Integrals →**]({{ "/mathematics/calculus/rational-integrals/" | relative_url }})
+
+</div>
+
+
+<div class="content-box">
+
+### Exercise 4
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5894. -->
+
+Solve the following exercise:
+
+$$
+\int \frac{1}{\sin x}\, dx.
+$$
+
+
+
+**Solution.**
+
+Multiply numerator and denominator by sin x and use sin²x=1−cos²x:
+$$\int\frac{dx}{\sin x}=\int\frac{\sin x}{1-\cos^2x}\,dx.$$
+Put t=cos x, dt=−sin x dx. Partial fractions give
+$$-\int\frac{dt}{1-t^2}=\frac12\log\left|\frac{1-t}{1+t}\right|+C.$$
+Replace t by cos x. This equals log|tan(x/2)|+C on every interval where sin x≠0.
+
+**Final result**
+
+$$
+\frac12\log\left|\frac{1-\cos x}{1+\cos x}\right|+C
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 5
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6140. -->
+
+Solve the following exercise:
+
+$$
+\int \frac{1}{1+ \sin x} \, dx.
+$$
+
+
+
+**Solution.**
+
+Rationalize the integrand:
+$$\frac1{1+\sin x}=\frac{1-\sin x}{\cos^2x}=\frac1{\cos^2x}-\frac{\sin x}{\cos^2x}.$$
+The first term has primitive tan x. In the second, set u=cos x, du=−sin x dx, giving the primitive 1/cos x before the subtraction. Thus tan x−sec x is a primitive where cos x≠0. Its equivalent expression −cos x/(1+sin x) extends across points with sin x=1; points with sin x=−1 remain excluded.
+
+**Final result**
+
+$$
+-\frac{\cos x}{1+\sin x}+C\qquad(\sin x\ne-1)
+$$
+
+</div>
+
+
+<div class="content-box">
+
+### Exercise 6
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6733. -->
+
+Evaluate the integral:
+
+$$
+\int x e^{4 x^{2}} \, dx.
+$$
+
+
+
+**Solution.**
+
+This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
+Recognize the inner derivative: d(4x²)=8x dx. With u=4x²,
+$$\int xe^{4x^2}\,dx=\frac18\int e^u\,du=\frac18e^u+C.$$
+Substituting u back gives a primitive whose derivative is xe⁴ˣ².
+
+**Final result**
+
+$$
+\frac18e^{4x^2}+C
+$$
+
+</div>
+
+
+<div class="content-box">
+
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6734. -->
+
+Evaluate the integral:
+
+$$
+\int \frac{3^{\tan x}}{1+\cos 2x} \,dx.
+$$
+
+
+
+**Solution.**
+
+This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
+Use 1+cos 2x=2 cos²x and u=tan x, du=sec²x dx:
+$$\int\frac{3^{\tan x}}{1+\cos2x}\,dx=\frac12\int3^u\,du.$$
+The exponential antiderivative is 3ᵘ/log 3. Work on intervals with cos x≠0.
+
+**Final result**
+
+$$
+\frac{3^{\tan x}}{2\log3}+C
+$$
+
+</div>
+
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6737. -->
+
+Evaluate the integral:
+
+$$
+\int \frac{\cos x (1+\sin x)}{\sqrt{\sin x}} \, dx.
+$$
+
+
+
+**Solution.**
+
+This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
+On intervals with sin x>0 put u=sin x, du=cos x dx. Then
+$$\int\frac{(1+u)}{\sqrt u}\,du=\int(u^{-1/2}+u^{1/2})\,du=2\sqrt u+\frac23u^{3/2}+C.$$
+Return to the original variable.
+
+**Final result**
+
+$$
+2\sqrt{\sin x}+\frac23(\sin x)^{3/2}+C
+$$
+
+</div>
+
+<div class="content-box">
+
+[**← Back to Integrals**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>

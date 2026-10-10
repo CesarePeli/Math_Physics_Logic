@@ -14,7 +14,16 @@ subtopic: limits
 method: lhopital
 level: university
 content_type: solved-exercises
+
+last_modified_at: 2026-10-10
 ---
+
+
+<div class="content-box">
+
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+
+</div>
 
 <div class="content-box">
 

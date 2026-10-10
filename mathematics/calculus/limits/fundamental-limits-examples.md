@@ -1,6 +1,6 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-10
 date: 2026-08-29
 original_date: 2025-04-15
 title: "Notable Limits in Calculus — 14 Solved Examples"
@@ -18,6 +18,13 @@ subtopic: limits
 level: university
 content_type: solved-exercises
 ---
+
+
+<div class="content-box">
+
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+
+</div>
 
 **Prepared by Professor Antonino De Martino (Polytechnic University of Milan) and Dr. Luana Manfredini.**
 
@@ -876,7 +883,7 @@ $$
 
 <div class="content-box">
 
-## Further Notable Limits from the Exercise Book
+## Further Notable Limits
 
 These additional exercises and their solutions are translated from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. No new exercise statements have been introduced.
 

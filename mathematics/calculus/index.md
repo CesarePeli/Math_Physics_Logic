@@ -10,21 +10,32 @@ area: mathematics
 topic: calculus
 ---
 
+
+<div class="content-box">
+
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+
+</div>
+
 # Calculus
 
-**Calculus** studies change, approximation, accumulation, and the behavior of functions.
+Calculus studies change, approximation, accumulation and the behavior of functions. Choose a topic below to explore its theory and original worked exercises.
 
-It provides the mathematical language needed to describe limits, continuity, derivatives, integrals, sequences, series, and differential equations. These ideas form a central bridge between elementary mathematics and the mathematical structures used throughout physics, engineering, and the sciences.
+<div class="content-box">
 
-This section organizes the material by mathematical topic, combining theoretical ideas with detailed worked exercises.
+## Mathematical Induction
+
+The principle of induction, Peano’s axiom, well-ordering, and original proofs including Bernoulli’s inequality.
+
+[**Explore Mathematical Induction →**]({{ "/mathematics/calculus/mathematical-induction/" | relative_url }})
+
+</div>
 
 <div class="content-box">
 
 ## Limits
 
-Limits describe the behavior of functions as a variable approaches a particular value or tends toward infinity.
-
-The resources in this section explore fundamental limits, indeterminate forms, L’Hôpital’s rule, and Taylor expansions through theory and worked examples. [**Limits Using Taylor Expansions: Formulas and Solved Examples**]({{ "/mathematics/calculus/limits/limits-taylor/" | relative_url }}) gives the principal expansions, the rules for truncating them, and fifteen original applications.
+Notable limits, indeterminate forms, L’Hôpital’s rule and Taylor expansions, with original solved exercises.
 
 [**Explore Limits →**]({{ "/mathematics/calculus/limits/" | relative_url }})
 
@@ -34,9 +45,7 @@ The resources in this section explore fundamental limits, indeterminate forms, L
 
 ## Continuity
 
-Continuity formalizes the idea that a function varies without abrupt breaks near a point.
-
-The exercises examine the definition of continuity, removable and jump discontinuities, infinite and oscillatory discontinuities, piecewise functions, and continuity conditions involving parameters.
+Continuity and the classification of removable, jump and infinite discontinuities.
 
 [**Explore Continuity →**]({{ "/mathematics/calculus/continuity/" | relative_url }})
 
@@ -46,9 +55,7 @@ The exercises examine the definition of continuity, removable and jump discontin
 
 ## Differentiability
 
-Differentiability describes the local rate of change of a function and provides the foundation for differential calculus.
-
-The worked problems explore differentiability at critical points, one-sided derivatives, piecewise functions, and conditions for higher-order smoothness.
+Difference quotients, one-sided derivatives, piecewise functions and complete parameter cases for higher regularity.
 
 [**Explore Differentiability →**]({{ "/mathematics/calculus/differentiability/" | relative_url }})
 
@@ -56,102 +63,9 @@ The worked problems explore differentiability at critical points, one-sided deri
 
 <div class="content-box">
 
-## Recursively Defined Sequences
-
-Recursive sequences are defined by specifying initial values and a rule that determines each new term from previous ones.
-
-The exercises focus on monotonicity, boundedness, invariant intervals, induction arguments, fixed points, convergence, and divergence.
-
-[**Explore Recursive Sequences →**]({{ "/mathematics/calculus/sequences/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Series
-
-Infinite series extend the idea of finite addition to sequences of partial sums.
-
-This section studies convergence and divergence, fundamental convergence criteria, and the behavior of important classes of numerical series.
-
-[**Numerical Series: Convergence Tests and Solved Exercises →**]({{ "/mathematics/calculus/numerical-series/" | relative_url }})
-
-For pointwise and uniform convergence, power series, and sums of function series:
-
-[**Sequences and Series of Functions →**]({{ "/mathematics/calculus/series/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Immediate Integrals
-
-Begin with basic antiderivatives, the power rule, logarithmic integrals, and checking answers by differentiation. Three original worked exercises from Eserciziario 2.1 are included, together with its complete integration recall.
-
-[**Immediate Integrals: Formulas and Worked Examples →**]({{ "/mathematics/calculus/immediate-integrals/" | relative_url }})
-
-## Integration by Parts
-
-Integration by parts transforms integrals of products by reversing the product rule for derivatives.
-
-The worked exercises include polynomial-exponential products, trigonometric functions, logarithmic integrals, and repeated applications of the method.
-
-[**Explore Integration by Parts →**]({{ "/mathematics/calculus/integration-by-parts/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Integration by Substitution
-
-Integration by substitution simplifies integrals through an appropriate change of variable.
-
-The examples include algebraic, logarithmic, trigonometric, and Euler substitutions, with detailed transformations and final results.
-
-[**Explore Integration by Substitution →**]({{ "/mathematics/calculus/integration-by-substitution/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Ordinary Differential Equations
-
-Ordinary differential equations describe relationships between an unknown function and its derivatives.
-
-This section introduces fundamental solution methods for first- and second-order differential equations and explores how differential equations model mathematical and physical processes.
-
-[**Explore Ordinary Differential Equations →**]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Cauchy Problems
-
-Cauchy problems combine differential equations with initial conditions that select a particular solution.
-
-The worked exercises include first- through fourth-order equations, separable and linear equations, characteristic equations, and the determination of constants from initial data.
-
-[**Explore Cauchy Problems →**]({{ "/mathematics/calculus/cauchy-problems/" | relative_url }})
-
-</div>
-
-
-<div class="content-box">
-
-## Mathematical Induction
-
-The principle of induction, Peano’s axiom, well-ordering, Bernoulli’s inequality and original proofs.
-
-[**Explore Mathematical Induction →**]({{ "/mathematics/calculus/mathematical-induction/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
 ## Function Analysis
 
-The complete study of three original functions: domain, sign, extrema, asymptotes and convexity, with the original diagrams.
+Domain, symmetry, sign, asymptotes, monotonicity, extrema and convexity, with eight original function studies and diagrams.
 
 [**Explore Function Analysis →**]({{ "/mathematics/calculus/function-analysis/" | relative_url }})
 
@@ -159,52 +73,45 @@ The complete study of three original functions: domain, sign, extrema, asymptote
 
 <div class="content-box">
 
-## Rational Integrals
+## Recursively Defined Sequences
 
-Polynomial division, partial fractions, repeated roots and irreducible quadratic factors.
+Monotonicity, boundedness, invariant intervals, induction and fixed-point limits.
 
-[**Explore Rational Integrals →**]({{ "/mathematics/calculus/rational-integrals/" | relative_url }})
-
-</div>
-
-<div class="content-box">
-
-## Definite Integrals
-
-Original integrals with bounds, symmetry, absolute values and changes of variable.
-
-[**Explore Definite Integrals →**]({{ "/mathematics/calculus/definite-integrals/" | relative_url }})
+[**Explore Recursively Defined Sequences →**]({{ "/mathematics/calculus/sequences/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Improper Integrals
+## Series
 
-Endpoint singularities, infinite intervals, comparison and convergence tests, with six original exercises.
+Convergence tests for numerical series, and pointwise, uniform and total convergence for sequences and series of functions. The function-series recall also includes power-series radii and the book’s brief Fourier formulas.
 
-[**Explore Improper Integrals →**]({{ "/mathematics/calculus/improper-integrals/" | relative_url }})
+[**Numerical Series →**]({{ "/mathematics/calculus/numerical-series/" | relative_url }})
+
+[**Sequences and Series of Functions →**]({{ "/mathematics/calculus/series/" | relative_url }})
 
 </div>
 
 <div class="content-box">
 
-## Fourier Series
+## Integrals
 
-The complete coefficient formulas from the exercise book’s theoretical introduction.
+All integration topics in one place: immediate integrals, substitution, parts, rational functions, definite integrals and improper integrals.
 
-[**Explore Fourier Series →**]({{ "/mathematics/calculus/fourier-series/" | relative_url }})
+[**Explore Integrals →**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>
 
-## Why Calculus Matters
+<div class="content-box">
 
-Calculus provides a framework for reasoning about quantities that change continuously.
+## Ordinary Differential Equations
 
-Limits make it possible to describe approximation precisely. Derivatives capture local change. Integrals describe accumulation. Sequences and series connect finite procedures with infinite processes, while differential equations express laws of evolution.
+General solution methods and original initial-value problems, including equations of first through fourth order.
 
-Together, these ideas form one of the fundamental mathematical languages of modern science.
+[**Differential Equations and Cauchy Problems →**]({{ "/mathematics/calculus/ordinary-differential-equations/" | relative_url }})
 
----
+</div>
+
 
 [**← Back to Mathematics**]({{ "/mathematics/" | relative_url }})

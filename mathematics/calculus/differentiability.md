@@ -16,14 +16,17 @@ level: university
 content_type: solved-exercises
 ---
 
-# Differentiability: Original Exercises and Parameter Cases
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Differentiability: Original Exercises and Parameter Cases
+
+
+
 
 <div class="content-box">
 
@@ -425,6 +428,35 @@ $$
 </div>
 
 
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4736. -->
+
+Determine whether the function is differentiable at x=1:
+
+$$
+f(x)=\sqrt{x^{4}-(x^{2}+x|x|)+\frac{x}{|x|}},
+$$
+
+
+
+**Solution.**
+
+On the positive half-axis, |x|=x and x/|x|=1, so the radicand becomes x⁴−2x²+1=(x²−1)². Consequently f(x)=|x²−1| near 1 and f(1)=0. The one-sided difference quotients are
+$$\lim_{x\to1^-}\frac{1-x^2}{x-1}=\lim_{x\to1^-}-(x+1)=-2,$$
+$$\lim_{x\to1^+}\frac{x^2-1}{x-1}=\lim_{x\to1^+}(x+1)=2.$$
+They differ, so the function is continuous but has a corner at 1. On the negative half-axis the radicand is x⁴−1, requiring x≤−1. Zero is excluded by x/|x|.
+
+**Final result**
+
+$$
+D=(-\infty,-1]\cup(0,\infty);\quad f\text{ is not differentiable at }1
+$$
+
+</div>
 <div class="content-box">
 
 [**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})

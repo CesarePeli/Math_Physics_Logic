@@ -12,14 +12,17 @@ date: 2026-10-10
 last_modified_at: 2026-10-10
 ---
 
-# Mathematical Induction: Proofs and Original Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Mathematical Induction: Proofs and Original Exercises
+
+
+
 
 <div class="content-box">
 
@@ -127,6 +130,153 @@ $$
 </div>
 
 
+
+<div class="content-box">
+
+### Exercise 4
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 132. -->
+
+Solve the following exercise:
+
+$$
+\label{3}
+		3^{n} \geq 2^{n+1} \qquad \forall n \geq 2.
+$$
+
+
+
+**Solution.**
+
+For n=2, 9≥8. Assume 3ⁿ≥2ⁿ⁺¹. Multiplying by 3 and using 3≥2 proves the next case:
+$$3^{n+1}\ge3\cdot2^{n+1}\ge2^{n+2}.$$
+Both the base and induction step hold.
+
+**Final result**
+
+$$
+3^n\ge2^{n+1}\quad\forall n\ge2
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 5
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 161. -->
+
+Solve the following exercise:
+
+$$
+\label{5}
+		\sum_{k=1}^{n}k^{2}=\frac{n(n+1)(2n+1)}{6} \qquad n \geq 1.
+$$
+
+
+
+**Solution.**
+
+The base case n=1 gives 1=1. Add (n+1)² to the induction hypothesis:
+$$\sum_{k=1}^{n+1}k^2=\frac{n(n+1)(2n+1)}6+(n+1)^2.$$
+Factor (n+1) and combine the remaining terms:
+$$\frac{(n+1)[2n^2+7n+6]}6=\frac{(n+1)(n+2)(2n+3)}6.$$
+This is precisely the asserted formula at n+1.
+
+**Final result**
+
+$$
+\sum_{k=1}^n k^2=\frac{n(n+1)(2n+1)}6\quad(n\ge1)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 6
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 178. -->
+
+Solve the following exercise:
+
+$$
+\label{6}
+		\sum_{k=1}^{n}k^{3}=\biggl(\sum_{k=1}^{n} k \biggl)^{2} \qquad n \geq 1
+$$
+
+
+
+**Solution.**
+
+For n=1 both sides equal one. Using the finite-sum identity established earlier, assume the sum of cubes through n equals n²(n+1)²/4. Then
+$$\sum_{k=1}^{n+1}k^3=\frac{n^2(n+1)^2}4+(n+1)^3=\frac{(n+1)^2(n^2+4n+4)}4=\frac{(n+1)^2(n+2)^2}4.$$
+The final expression is the square of the sum of the first n+1 integers. The source's cross-reference to the sum-of-squares identity should instead refer to the sum-of-integers identity.
+
+**Final result**
+
+$$
+\sum_{k=1}^n k^3=\left(\frac{n(n+1)}2\right)^2\quad(n\ge1)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 225. -->
+
+Prove that the following expression is divisible by 9 for every integer n≥1:
+
+$$
+\label{8}
+		4^{n}+15n-1 \qquad \forall n\geq 1,
+$$
+
+
+
+**Solution.**
+
+For n=1 the expression is 4+15−1=18, divisible by 9. Write Aₙ=4ⁿ+15n−1. The difference needed in the induction step is
+$$A_{n+1}-4A_n=4^{n+1}+15n+14-4(4^n+15n-1)=18-45n=9(2-5n).$$
+If 9 divides Aₙ, it divides 4Aₙ and this difference; therefore it divides Aₙ₊₁.
+
+**Final result**
+
+$$
+9\mid(4^n+15n-1)\quad\forall n\ge1
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 242. -->
+
+Solve the following exercise:
+
+$$
+\label{9}
+		\sum_{k=1}^{n}(2k-1)=n^{2} \qquad  \forall n\geq 1.
+$$
+
+
+
+**Solution.**
+
+For n=1 the sum is 1=1². Assume the sum through n is n². The next odd summand is 2(n+1)−1=2n+1, hence
+$$\sum_{k=1}^{n+1}(2k-1)=n^2+2n+1=(n+1)^2.$$
+This completes the induction.
+
+**Final result**
+
+$$
+\sum_{k=1}^n(2k-1)=n^2\quad\forall n\ge1
+$$
+
+</div>
 <div class="content-box">
 
 [**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})

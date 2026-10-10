@@ -12,20 +12,23 @@ date: 2026-10-10
 last_modified_at: 2026-10-10
 ---
 
-# Rational Integrals and Partial Fractions: Original Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Rational Integrals and Partial Fractions: Original Exercises
+
+
+
 
 <div class="content-box">
 
 ## Polynomial Division and Hermite Decomposition
 
-These three original exercises cover proper and improper rational functions, distinct linear factors, irreducible quadratic factors and repeated poles. Factor the denominator, divide first if needed, and match numerator coefficients. Primitives are valid separately on each interval avoiding the poles.
+These eight original exercises cover proper and improper rational functions, distinct linear factors, irreducible quadratic factors and repeated poles. Factor the denominator, divide first if needed, and match numerator coefficients. Primitives are valid separately on each interval avoiding the poles.
 
 </div>
 
@@ -173,8 +176,159 @@ $$
 </div>
 
 
+
 <div class="content-box">
 
-[**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})
+### Exercise 4
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6052. -->
+
+Solve the following exercise:
+
+$$
+\int \frac{\tan^{3} x + \tan x}{\tan x+4} \, dx
+$$
+
+
+
+**Solution.**
+
+Set t=tan x and dt=(1+tan²x)dx. The numerator tan³x+tan x equals t(1+t²), so
+$$\int\frac{\tan^3x+\tan x}{\tan x+4}\,dx=\int\frac{t}{t+4}\,dt.$$
+Polynomial division gives t/(t+4)=1−4/(t+4). Integrate and return to x. Work on intervals where tan x exists and tan x≠−4.
+
+**Final result**
+
+$$
+\tan x-4\log|\tan x+4|+C
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 5
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6176. -->
+
+Solve the following exercise:
+
+$$
+\int_{4}^{16} \frac{1}{(x-\sqrt{x})^2} \, dx.
+$$
+
+
+
+**Solution.**
+
+Set t=√x, dx=2t dt. The bounds become 2 and 4, and (x−√x)²=t²(t−1)². Hence
+$$I=\int_2^4\frac2{t(t-1)^2}\,dt.$$
+Determine the partial fractions:
+$$\frac2{t(t-1)^2}=\frac2t-\frac2{t-1}+\frac2{(t-1)^2}.$$
+A primitive is 2log t−2log(t−1)−2/(t−1). Its values at 4 and 2 give
+$$I=2\log\frac43-\frac23-(2\log2-2).$$
+
+**Final result**
+
+$$
+\frac43+2\log\frac23
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 6
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6636. -->
+
+Solve the following exercise:
+
+$$
+\int \frac{2 \tan x+1}{\sin^{2} x +3 \cos^{2} x} \, dx
+$$
+
+
+
+**Solution.**
+
+Set t=tan x, so dx=dt/(1+t²), sin²x=t²/(1+t²) and cos²x=1/(1+t²). The resulting rational integral is
+$$\int\frac{2t+1}{t^2+3}\,dt=\int\frac{2t}{t^2+3}\,dt+\int\frac{dt}{t^2+3}.$$
+The first term is a logarithmic derivative; rescale t by √3 in the second to obtain an arctangent. This substitution works on intervals where tan x is defined.
+
+**Final result**
+
+$$
+\log(\tan^2x+3)+\frac1{\sqrt3}\arctan\frac{\tan x}{\sqrt3}+C
+$$
+
+</div>
+
+
+
+<div class="content-box">
+
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6738. -->
+
+Evaluate the integral:
+
+$$
+\int \frac{1}{x^{3}+1} \, dx.
+$$
+
+
+
+**Solution.**
+
+This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
+Factor x³+1=(x+1)(x²−x+1) and determine coefficients:
+$$\frac1{x^3+1}=\frac1{3(x+1)}+\frac{-x+2}{3(x^2-x+1)}.$$
+In the quadratic numerator use −x+2=−(2x−1)/2+3/2. The derivative part integrates to −log(x²−x+1)/6. Complete the square x²−x+1=(x−1/2)²+3/4 to integrate the remaining part as an arctangent. The pole x=−1 separates the primitive intervals.
+
+**Final result**
+
+$$
+\frac13\log|x+1|-\frac16\log(x^2-x+1)+\frac1{\sqrt3}\arctan\frac{2x-1}{\sqrt3}+C
+$$
+
+</div>
+
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 6736. -->
+
+Evaluate the integral:
+
+$$
+\int \frac{x-1}{x^{2}-4x+5} \, dx.
+$$
+
+
+
+**Solution.**
+
+This original statement appears in the unsolved-exercise list. The following worked solution is supplied for this edition.
+
+Write the denominator as (x−2)²+1, and split x−1=(x−2)+1. Then
+$$\int\frac{x-1}{(x-2)^2+1}\,dx=\int\frac{x-2}{(x-2)^2+1}\,dx+\int\frac{dx}{(x-2)^2+1}.$$
+The first term is half the logarithmic derivative of the denominator; the second is the derivative of arctan(x−2). The denominator is positive for every real x.
+
+**Final result**
+
+$$
+\frac12\log(x^2-4x+5)+\arctan(x-2)+C
+$$
+
+</div>
+
+<div class="content-box">
+
+[**← Back to Integrals**]({{ "/mathematics/calculus/integrals/" | relative_url }})
 
 </div>

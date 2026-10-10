@@ -16,14 +16,17 @@ level: university
 content_type: solved-exercises
 ---
 
-# Continuity: Original Piecewise and Discontinuity Exercises
-
 
 <div class="content-box">
 
-The theory and selected worked exercises are adapted into English from *Eserciziario 2.1* by Antonino De Martino and Luana Manfredini. Original exercise statements and parameter cases are retained. Mathematical corrections are identified explicitly.
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
 
 </div>
+
+# Continuity: Original Piecewise and Discontinuity Exercises
+
+
+
 
 <div class="content-box">
 
@@ -252,6 +255,138 @@ $$
 </div>
 
 
+
+<div class="content-box">
+
+### Exercise 5
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4859. -->
+
+Solve the following exercise:
+
+$$
+f(x)=
+	\begin{cases}
+		\frac{\log x}{x-1} \qquad x \neq 1\\
+		1 \qquad x=1
+	\end{cases}
+$$
+
+
+
+**Solution.**
+
+The logarithm requires x>0; x=1 is assigned separately. Away from 1, continuity follows from composition and division. At 1 the notable logarithm limit gives
+$$\lim_{x\to1}\frac{\log x}{x-1}=1=f(1).$$
+For completeness, set h=x−1 and expand the original difference quotient:
+$$\frac{f(1+h)-f(1)}h=\frac{\log(1+h)-h}{h^2}\longrightarrow-\frac12.$$
+Thus the assigned value removes the apparent singularity and the function is differentiable there.
+
+**Final result**
+
+$$
+D=(0,\infty),\quad f\text{ continuous on }D,\quad f'(1)=-\frac12
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 6
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 4952. -->
+
+Determine the real parameters for continuity and differentiability at zero:
+
+$$
+f(x)=
+	\begin{cases}
+		a \sin 2x -4 \qquad x<0\\
+		b(x-1)+e^{x} \qquad x \geq 0
+	\end{cases}
+$$
+
+
+
+**Solution.**
+
+The left limit at zero is −4; the assigned right-hand value is 1−b. Continuity requires −4=1−b, so b=5. Under this condition, the one-sided difference quotients are
+$$f'_-(0)=\lim_{x\to0^-}\frac{a\sin2x}{x}=2a,\qquad f'_+(0)=b+1=6.$$
+They agree if a=3. When b=5 but a≠3 the function remains continuous and has a corner; when b≠5 it is discontinuous.
+
+**Final result**
+
+$$
+\text{Continuous iff }b=5;\quad\text{differentiable iff }(a,b)=(3,5)
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 7
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5031. -->
+
+Determine the domain and classify discontinuities:
+
+$$
+f(x)=
+	\begin{cases}
+		\frac{\sqrt{2-\sqrt{x+1}}}{1-x}+2^{-\frac{1}{x^{2}}} \qquad x \neq 0\\
+		1 \qquad x=0
+	\end{cases}
+$$
+
+
+
+**Solution.**
+
+The nested square roots require x+1≥0 and √(x+1)≤2; thus −1≤x≤3. The denominator excludes x=1; x=0 is defined by its separate branch. Therefore
+$$D=[-1,1)\cup(1,3].$$
+As x→0, the radical quotient tends to 1 and 2⁻¹⁄ˣ² tends to 0, giving f(0)=1. At x=1 the numerator tends to √(2−√2)>0, so the limits are +∞ from the left and −∞ from the right. Elsewhere the function is continuous, including relative continuity at the endpoints −1 and 3.
+
+**Editorial correction.** The source domain omits the valid endpoint −1 and the assigned point 0. Both are included here.
+
+**Final result**
+
+$$
+f\text{ is continuous on }D;\quad x=1\text{ is an infinite singularity}
+$$
+
+</div>
+
+<div class="content-box">
+
+### Exercise 8
+
+<!-- Source: Eserciziario 2.1.tex, Ex beginning at line 5088. -->
+
+Find all real parameter cases for continuity and differentiability:
+
+$$
+f(x)=
+		\begin{cases}
+			(1-x^{2}) \log(1-x) \qquad x<1 \\
+			(2x+b)(ax-1) \qquad x \geq 1.
+		\end{cases}
+$$
+
+
+
+**Solution.**
+
+As x→1 from the left, (1−x²)log(1−x)=(1+x)(1−x)log(1−x) tends to zero. From the right, and at the assigned value, the limit is (2+b)(a−1). Hence continuity requires a=1 or b=−2. Under either continuity condition, f(1)=0 and the left difference quotient is
+$$\frac{(1-x^2)\log(1-x)}{x-1}=-(1+x)\log(1-x)\longrightarrow+\infty.$$
+The right branch is a polynomial and has finite derivative 4a+ab−2 at 1. The one-sided values therefore cannot agree as finite derivatives for any parameters.
+
+**Final result**
+
+$$
+\text{Continuous iff }a=1\text{ or }b=-2;\quad\text{never differentiable at }1
+$$
+
+</div>
 <div class="content-box">
 
 [**Back to Calculus →**]({{ "/mathematics/calculus/" | relative_url }})

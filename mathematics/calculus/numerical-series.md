@@ -1,6 +1,6 @@
 ---
 layout: default
-last_modified_at: 2026-10-09
+last_modified_at: 2026-10-10
 date: 2026-10-09
 title: "Numerical Series: Convergence Tests and 10 Solved Exercises"
 description: "Learn comparison, ratio, root, condensation and alternating-series tests with complete theory and ten solved numerical-series exercises, including parameters."
@@ -13,6 +13,13 @@ level: university
 content_type: solved-exercises
 author: "Antonino De Martino and Luana Manfredini"
 ---
+
+
+<div class="content-box">
+
+**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion. Any editorial corrections are marked explicitly.
+
+</div>
 
 <div class="content-box">
 
