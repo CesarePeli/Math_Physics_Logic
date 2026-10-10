@@ -9,7 +9,7 @@ permalink: /physics/thermodynamics/entropy-adiabatic/
 redirect_from:
   - /university/physics/thermodynamics/entropy-adiabatic/
 background_image: "/images/termodinamica.png"
-description: "Reversible and irreversible adiabatic transformations: entropy balance and why different final states are consistent with entropy being a state function."
+description: "Is entropy constant in an adiabatic process? Compare reversible and irreversible transformations using entropy balances and worked thermodynamics examples."
 area: physics
 topic: thermodynamics
 content_type: solved-exercise
