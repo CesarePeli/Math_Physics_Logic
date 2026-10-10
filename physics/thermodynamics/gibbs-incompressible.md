@@ -12,7 +12,7 @@ background_image: /images/termodinamica.png
 
 # Gibbs Free Energy for Incompressible Substances
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

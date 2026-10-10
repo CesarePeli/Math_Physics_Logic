@@ -12,7 +12,7 @@ background_image: /images/termodinamica.png
 
 # Ideal-Gas Processes — Work, $\Delta U$ and $\Delta S$
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

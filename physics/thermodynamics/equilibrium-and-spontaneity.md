@@ -12,7 +12,7 @@ background_image: /images/termodinamica.png
 
 # Equilibrium & Spontaneity — $\Delta G^\circ$, $K$, Temperature
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

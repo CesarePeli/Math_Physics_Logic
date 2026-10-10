@@ -12,7 +12,7 @@ background_image: /images/termodinamica.png
 
 # Reaction Energetics — Internal Energy and Enthalpy
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

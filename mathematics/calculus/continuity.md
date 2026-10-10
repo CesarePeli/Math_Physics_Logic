@@ -19,11 +19,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
+# Continuity: Original Piecewise and Discontinuity Exercises
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 </div>
-
-# Continuity: Original Piecewise and Discontinuity Exercises
 
 
 <div class="content-box">

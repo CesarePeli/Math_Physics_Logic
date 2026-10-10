@@ -14,11 +14,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
+# Immediate Integrals: Formulas and Worked Examples
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 </div>
-
-# Immediate Integrals: Formulas and Worked Examples
 
 An immediate integral is evaluated by recognizing a derivative in reverse. This page introduces a few basic patterns and shows how to check the result by differentiation.
 

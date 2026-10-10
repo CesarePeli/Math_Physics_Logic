@@ -16,7 +16,7 @@ content_type: solved-exercises
 
 # Freezing Point Depression: Formula and Solved Example
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

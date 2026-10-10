@@ -12,7 +12,7 @@ topic: thermodynamics
 
 # Thermodynamics Worked Problems
 
-**The worked problems in this section are by Prof. Marco Ruzzi.**
+*The worked problems in this section are by Prof. Marco Ruzzi.*
 
 **Thermodynamics** connects a small number of fundamental principles with a remarkably wide range of physical phenomena.
 

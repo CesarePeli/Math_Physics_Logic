@@ -12,7 +12,7 @@ background_image: /images/termodinamica.png
 
 # Phase Transitions — Heating Curve and Enthalpy Changes
 
-**By Prof. Marco Ruzzi.**
+*By Prof. Marco Ruzzi.*
 
 <div class="content-box">
 

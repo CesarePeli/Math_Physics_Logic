@@ -19,11 +19,11 @@ content_type: solved-exercises
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
+# Differentiability: Original Exercises and Parameter Cases
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 </div>
-
-# Differentiability: Original Exercises and Parameter Cases
 
 
 <div class="content-box">

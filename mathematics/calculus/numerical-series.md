@@ -17,13 +17,9 @@ author: "Antonino De Martino and Luana Manfredini"
 
 <div class="content-box">
 
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
-
-</div>
-
-<div class="content-box">
-
 # Numerical Series: Convergence Tests and Solved Exercises
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 This page translates the complete theoretical introduction to numerical series and the first ten worked exercises in *Eserciziario 2.1*, by Antonino De Martino and Luana Manfredini. The English adaptation corrects indexing and positivity slips explicitly noted below and adds a check for absolute convergence in Exercise 10.
 

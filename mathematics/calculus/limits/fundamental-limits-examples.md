@@ -20,17 +20,12 @@ content_type: solved-exercises
 ---
 
 
-<div class="content-box">
-
-**Exercise editors and source:** **Antonino De Martino and Luana Manfredini**, *Eserciziario 2.1*. The original exercises and source theory are presented here in English for Logic & Motion.
-
-</div>
-
-**Prepared by Professor Antonino De Martino (Polytechnic University of Milan) and Dr. Luana Manfredini.**
 
 <div class="content-box">
 
 # Notable Limits in Calculus: 14 Solved Examples
+
+*Exercise editors and source: Prof. Antonino De Martino and Dr. Luana Manfredini, Eserciziario 2.1. The original exercises and source theory are presented here in English for Logic & Motion.*
 
 ## Notable and Remarkable Limits in Calculus
 
