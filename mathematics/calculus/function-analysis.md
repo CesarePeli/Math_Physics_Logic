@@ -139,11 +139,11 @@ The function is convex outside [x₋,x₊] and concave between these two inflect
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/log-squared-over-x.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/log-squared-over-x.png" | relative_url }}" alt="Graph of log squared x divided by x" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/log-squared-over-x.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -200,11 +200,11 @@ For completeness, besides zero there are two symmetric roots ±α, where α is t
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/arctan-minus-half-x.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/arctan-minus-half-x.png" | relative_url }}" alt="Graph of arctan x minus x divided by two" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/arctan-minus-half-x.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -257,11 +257,11 @@ The inflection points are (−5/2,√5) and (1,4/√6). The infimum is −1 and 
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/five-minus-x-over-root.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/five-minus-x-over-root.png" | relative_url }}" alt="Graph of five minus x divided by the square root of five plus x squared" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/five-minus-x-over-root.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -327,11 +327,11 @@ The graph is convex for 1 < |x| < r and concave for |x| > r on each domain inter
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/log-absolute-log-x-squared-minus-one.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/log-absolute-log-x-squared-minus-one.png" | relative_url }}" alt="Graph of log of the absolute value of log of x squared minus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/log-absolute-log-x-squared-minus-one.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -384,11 +384,11 @@ It is convex on (−∞,−2), concave on (−2,−1) and (−1,∞); the inflec
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/x-exp-one-over-x-plus-one.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/x-exp-one-over-x-plus-one.png" | relative_url }}" alt="Graph of x times exp of one divided by x plus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/x-exp-one-over-x-plus-one.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -438,11 +438,11 @@ It is concave on (0,e³ᐟ²) and convex on (e³ᐟ²,∞), with inflection ordi
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/x-plus-log-x-over-x.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/x-plus-log-x-over-x.png" | relative_url }}" alt="Graph of x plus log x divided by x" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/x-plus-log-x-over-x.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -494,11 +494,11 @@ The cusp at zero is not an inflection point, since concavity is negative on both
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/exp-minus-x-cube-root-x-squared.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/exp-minus-x-cube-root-x-squared.png" | relative_url }}" alt="Graph of exp minus x times the real cube root of x squared" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/exp-minus-x-cube-root-x-squared.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
@@ -557,11 +557,11 @@ $$
 
 Original diagram:
 
-<a href="{{ " aria-label="Open graph at full size">
+<a href="{{ '/images/exercise-book/quadratic-ratio-two-plus-x-over-x-squared-plus-one.png' | relative_url }}" aria-label="Open graph at full size">
 <img class="exercise-book-graph" src="{{ "/images/exercise-book/quadratic-ratio-two-plus-x-over-x-squared-plus-one.png" | relative_url }}" alt="Graph of two plus x divided by x squared plus one" style="display:block;width:100%;max-width:100%;height:auto;box-sizing:border-box;background-color:#fff;padding:1rem;border-radius:8px;" />
 </a>
 
-[View graph at full size]({{ )
+<a href="{{ '/images/exercise-book/quadratic-ratio-two-plus-x-over-x-squared-plus-one.png' | relative_url }}">View graph at full size</a>
 
 **Final result**
 
