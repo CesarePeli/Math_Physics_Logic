@@ -14,6 +14,16 @@
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
+  {% if page.image %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.seo_title | default: page.title | escape }}">
+  <meta property="og:description" content="{{ page.meta_description | default: page.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.alt | default: page.title | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+
   <link rel="stylesheet" href="{{ '/style.css?v=20260830-mobile-5' | relative_url }}">
   <link rel="icon" href="{{ '/favicon.png' | relative_url }}" type="image/png">
 
@@ -135,3 +145,4 @@
 
 </body>
 </html>
+
