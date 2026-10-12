@@ -15,7 +15,7 @@ last_modified_at: 2026-10-12
   {% assign artworks = site.gallery | sort: "order" %}
   {% for art in artworks %}
     <div class="gallery-item">
-      <img src="{{ art.image | relative_url }}" alt="{{ art.title | escape }} — {{ art.author | default: 'Cesare Peli' | escape }}" loading="lazy" tabindex="0" role="button" onclick="openLightbox({{ forloop.index0 }})" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox({{ forloop.index0 }}); }">
+      <img src="{{ art.image | relative_url }}" alt="{{ art.title | escape }} — {{ art.author | default: 'Cesare Peli' | escape }}" loading="lazy" tabindex="0" role="button" onclick="openLightbox({{ forloop.index0 }}, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox({{ forloop.index0 }}, true); }">
       <h2>{{ art.title }}</h2>
       <details class="gallery-explanation"><summary>About this work</summary><p>{{ art.description }}</p></details>
       <p class="gallery-credit">{{ art.author | default: "Cesare Peli" }}{% if art.year %} · {{ art.year }}{% endif %}</p>
@@ -62,7 +62,7 @@ last_modified_at: 2026-10-12
   let previousOverflow = "";
   let currentIndex = 0;
 
-  function openLightbox(index) {
+  function openLightbox(index, zoomOnMobile = false) {
     if (!lightbox.classList.contains("active")) {
       previousFocus = document.activeElement;
       previousOverflow = document.body.style.overflow;
@@ -79,6 +79,7 @@ last_modified_at: 2026-10-12
     document.getElementById("lightbox-description").textContent = item.description;
     document.getElementById("lightbox").classList.add("active");
     document.getElementById("lightbox").focus();
+    if (zoomOnMobile && window.matchMedia("(max-width: 600px)").matches) toggleZoom();
   }
 
   function toggleZoom() {
@@ -190,3 +191,4 @@ last_modified_at: 2026-10-12
   .close-btn { position: absolute; top: 0.3rem; right: 0.5rem; font-size: 1.4rem; }
   @media (max-width: 600px) { .gallery-grid { padding: 0.75rem; } }
 </style>
+
