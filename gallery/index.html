@@ -17,6 +17,7 @@ last_modified_at: 2026-10-12
     <div class="gallery-item">
       <img src="{{ art.image | relative_url }}" alt="{{ art.title | escape }} — {{ art.author | default: 'Cesare Peli' | escape }}" loading="lazy" tabindex="0" role="button" onclick="openLightbox({{ forloop.index0 }})" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox({{ forloop.index0 }}); }">
       <h2>{{ art.title }}</h2>
+      <details class="gallery-explanation"><summary>About this work</summary><p>{{ art.description }}</p></details>
       <p class="gallery-credit">{{ art.author | default: "Cesare Peli" }}{% if art.year %} · {{ art.year }}{% endif %}</p>
     </div>
   {% endfor %}
@@ -25,9 +26,12 @@ last_modified_at: 2026-10-12
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
   <div class="lightbox-inner">
-    <button type="button" aria-label="Previous artwork" class="nav-btn left" onclick="prevImage()">&#10094;</button>
-    <img id="lightbox-img" src="" alt="">
-    <button type="button" aria-label="Next artwork" class="nav-btn right" onclick="nextImage()">&#10095;</button>
+    <img id="lightbox-img" src="" alt="" onclick="toggleZoom()" title="Tap to zoom">
+  </div>
+  <div class="lightbox-controls">
+    <button type="button" aria-label="Previous artwork" onclick="prevImage()">&#10094;</button>
+    <button type="button" id="lightbox-zoom" onclick="toggleZoom()">Zoom in</button>
+    <button type="button" aria-label="Next artwork" onclick="nextImage()">&#10095;</button>
   </div>
   <div class="lightbox-text">
     <h2 id="lightbox-title"></h2>
@@ -68,11 +72,22 @@ last_modified_at: 2026-10-12
     const item = galleryItems[index];
     document.getElementById("lightbox-img").src = item.image;
     document.getElementById("lightbox-img").alt = item.title + " — " + item.author;
-    document.getElementById("lightbox-img").style.width = item.width ? Math.min(item.width / 2, 600) + "px" : "";
+    document.querySelector(".lightbox-inner").classList.remove("zoomed");
+    document.getElementById("lightbox-img").style.width = "";
+    document.getElementById("lightbox-zoom").textContent = "Zoom in";
     document.getElementById("lightbox-title").textContent = item.title + " — " + item.author;
     document.getElementById("lightbox-description").textContent = item.description;
     document.getElementById("lightbox").classList.add("active");
     document.getElementById("lightbox").focus();
+  }
+
+  function toggleZoom() {
+    const stage = document.querySelector(".lightbox-inner");
+    const image = document.getElementById("lightbox-img");
+    const zoomed = stage.classList.toggle("zoomed");
+    image.style.width = zoomed ? Math.max(image.naturalWidth, stage.clientWidth * 2) + "px" : "";
+    document.getElementById("lightbox-zoom").textContent = zoomed ? "Fit image" : "Zoom in";
+    stage.scrollTo(0, 0);
   }
 
   function closeLightbox() {
@@ -139,108 +154,39 @@ last_modified_at: 2026-10-12
     font-size: 1.1rem;
   }
 
+  .gallery-explanation { color: #ddd; text-align: left; font-size: 0.95rem; }
+  .gallery-explanation summary { cursor: pointer; padding: 0.5rem 0; }
   .lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background-color: #1c1f2b;
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    box-sizing: border-box;
-    overflow-y: auto;
-    padding: 3rem 0 1rem;
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    width: 100%; height: 100vh; height: 100dvh;
+    background: #1c1f2b; color: white; box-sizing: border-box;
+    padding: 3rem 0.5rem 0.5rem; outline: none;
   }
-
-  .lightbox.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
+  .lightbox.active { display: flex; flex-direction: column; align-items: center; }
   .lightbox-inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100vw - 1rem);
-    max-width: 1100px;
-    max-height: 65vh;
-    max-height: 65dvh;
-    margin: 1rem auto;
-    padding: 0 2.75rem;
-    box-sizing: border-box;
+    width: 100%; min-height: 0; flex: 1 1 0;
+    display: flex; align-items: center; justify-content: center;
+    overflow: auto; overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
-
   .lightbox-inner img {
-    max-width: 100%;
-    max-height: 60vh;
-    max-height: 60dvh;
-    height: auto;
-    object-fit: contain;
-    display: block;
+    display: block; width: 100%; height: 100%; max-width: 100%; max-height: 100%;
+    object-fit: contain; flex-shrink: 0; cursor: zoom-in;
   }
-
+  .lightbox-inner.zoomed { display: block; }
+  .lightbox-inner.zoomed img { height: auto; max-width: none; max-height: none; cursor: zoom-out; }
+  .lightbox-controls { display: flex; flex: 0 0 auto; gap: 1rem; padding: 0.4rem; }
+  .lightbox-controls button, .close-btn {
+    min-width: 44px; min-height: 44px; cursor: pointer; touch-action: manipulation;
+    color: white; background: #313747; border: 1px solid #75809a; border-radius: 0.4rem;
+    font-size: 1rem; padding: 0.4rem 0.8rem;
+  }
   .lightbox-text {
-    text-align: center;
-    color: white;
-    padding: 1rem 1.5rem;
-    background-color: rgba(28, 31, 43, 0.85);
-    border-radius: 0.5rem;
-    width: min(90%, 700px);
-    box-sizing: border-box;
-    z-index: 40;
+    flex: 0 1 auto; max-height: 25vh; max-height: 25dvh; overflow-y: auto;
+    width: min(100%, 850px); box-sizing: border-box; padding: 0.5rem 0.75rem;
   }
-
-  .lightbox-text h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
-  }
-
-  .lightbox-text p {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin: 0;
-  }
-
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    min-width: 44px;
-    min-height: 44px;
-    touch-action: manipulation;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 40;
-  }
-
-  .nav-btn.left {
-    left: 0;
-  }
-
-  .nav-btn.right {
-    right: 0;
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    min-width: 44px;
-    min-height: 44px;
-    touch-action: manipulation;
-    font-size: 2rem;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 50;
-  }
+  .lightbox-text h2 { font-size: 1.15rem; margin: 0 0 0.5rem; }
+  .lightbox-text p { font-size: 0.95rem; color: #ddd; margin: 0; text-align: left; }
+  .close-btn { position: absolute; top: 0.3rem; right: 0.5rem; font-size: 1.4rem; }
+  @media (max-width: 600px) { .gallery-grid { padding: 0.75rem; } }
 </style>
