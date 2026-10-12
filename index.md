@@ -47,7 +47,7 @@ Articles on logic, linguistics, formal systems, symbolic representation, and art
 
 ### Gallery
 
-Generative images inspired by mathematical, scientific, and conceptual themes.
+Paper artworks by CREW and generative images by Cesare Peli, exploring mathematical, scientific, and conceptual themes.
 
 [**Gallery →**]({{ "/gallery/" | relative_url }})
 
