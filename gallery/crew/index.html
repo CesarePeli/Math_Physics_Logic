@@ -1,0 +1,211 @@
+---
+layout: default
+title: CREW — Mathematical Art
+permalink: /gallery/crew/
+description: "Explore mathematical paper artworks by CREW: sequences, combinatorial rules and literary constraints, with photographs and detailed explanations."
+last_modified_at: 2026-10-12
+---
+
+<p><a href="{{ '/gallery/' | relative_url }}">← Art and Mathematics</a></p>
+<h1>CREW</h1>
+<p>Flaviano Raschietti, Leopoldo Morbin, Nicola Cracco and Mauro Forlani construct artworks from coloured paper and glue, following numerical sequences, combinatorial rules and formal constraints.</p>
+<p>Selected works from <em>Linus, Bach, Beatles. L’Arte Matematica: istruzioni per l’uso</em>, curated by Giovanna Grossato, 2026.</p>
+<p><a href="https://www.crew-project.it/" target="_blank" rel="noopener">Visit the official CREW website →</a></p>
+
+{% assign artworks = site.gallery | where: "author", "CREW" | sort: "order" %}
+<div class="gallery-grid">
+  {% for art in artworks %}
+    <div class="gallery-item">
+      <img src="{{ art.image | relative_url }}" alt="{{ art.title | escape }} — {{ art.author | default: 'Cesare Peli' | escape }}" loading="lazy" tabindex="0" role="button" onclick="openLightbox({{ forloop.index0 }}, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox({{ forloop.index0 }}, true); }">
+      <h2>{{ art.title }}</h2>
+      <p><a href="{{ art.url | relative_url }}">View artwork and explanation →</a></p>
+      <details class="gallery-explanation"><summary>About this work</summary>{% if art.explanation %}{% for paragraph in art.explanation %}<p>{{ paragraph }}</p>{% endfor %}{% else %}<p>{{ art.description }}</p>{% endif %}</details>
+      <p class="gallery-credit">{{ art.author | default: "Cesare Peli" }}{% if art.year %} · {{ art.year }}{% endif %}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+  <div class="lightbox-inner">
+    <img id="lightbox-img" src="" alt="" onclick="toggleZoom()" title="Tap to zoom">
+  </div>
+  <div class="lightbox-controls">
+    <button type="button" aria-label="Previous artwork" onclick="prevImage()">&#10094;</button>
+    <button type="button" id="lightbox-zoom" onclick="toggleZoom()">Zoom in</button>
+    <a id="lightbox-page" href="">Artwork page</a>
+    <button type="button" aria-label="Next artwork" onclick="nextImage()">&#10095;</button>
+  </div>
+  <div class="lightbox-text">
+    <h2 id="lightbox-title"></h2>
+    <div id="lightbox-description"></div>
+  </div>
+  <button type="button" aria-label="Close enlarged image" class="close-btn" onclick="closeLightbox()">&times;</button>
+</div>
+
+<script>
+  const galleryItems = [
+    {% for art in artworks %}
+    {
+      image: {{ art.image | relative_url | jsonify }},
+      url: {{ art.url | relative_url | jsonify }},
+      title: {{ art.title | jsonify }},
+      description: {{ art.description | jsonify }},
+      explanation: {{ art.explanation | jsonify }},
+      author: {{ art.author | default: "Cesare Peli" | jsonify }},
+      width: {{ art.width | default: 0 }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  // The page container uses backdrop-filter, which traps fixed-position children.
+  // Attach the viewer to the body so it always covers the visible viewport.
+  const lightbox = document.getElementById("lightbox");
+  document.body.appendChild(lightbox);
+  let previousFocus = null;
+  let previousOverflow = "";
+  let currentIndex = 0;
+
+  function openLightbox(index, useFullscreen = false) {
+    if (!lightbox.classList.contains("active")) {
+      previousFocus = document.activeElement;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+    }
+    currentIndex = index;
+    const item = galleryItems[index];
+    document.getElementById("lightbox-page").href = item.url;
+    document.getElementById("lightbox-img").src = item.image;
+    document.getElementById("lightbox-img").alt = item.title + " — " + item.author;
+    document.querySelector(".lightbox-inner").classList.remove("zoomed");
+    document.getElementById("lightbox-img").style.width = "";
+    document.getElementById("lightbox-zoom").textContent = "Zoom in";
+    document.getElementById("lightbox-title").textContent = item.title + " — " + item.author;
+    const description = document.getElementById("lightbox-description");
+    description.replaceChildren();
+    (item.explanation || [item.description]).forEach(text => {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      description.appendChild(paragraph);
+    });
+    document.querySelector(".lightbox-text").scrollTop = 0;
+    document.getElementById("lightbox").classList.add("active");
+    document.getElementById("lightbox").focus();
+    if (useFullscreen && !document.fullscreenElement && lightbox.requestFullscreen) {
+      lightbox.requestFullscreen().catch(() => {});
+    }
+  }
+
+  function toggleZoom() {
+    const stage = document.querySelector(".lightbox-inner");
+    const image = document.getElementById("lightbox-img");
+    const zoomed = stage.classList.toggle("zoomed");
+    image.style.width = zoomed ? Math.max(image.naturalWidth, stage.clientWidth * 2) + "px" : "";
+    document.getElementById("lightbox-zoom").textContent = zoomed ? "Fit image" : "Zoom in";
+    stage.scrollTo(0, 0);
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = previousOverflow;
+    if (previousFocus) previousFocus.focus({ preventScroll: true });
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    }
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    openLightbox(currentIndex);
+  }
+
+  document.addEventListener("keydown", function (event) {
+    const isOpen = document.getElementById("lightbox").classList.contains("active");
+    if (!isOpen) return;
+    if (event.key === "ArrowRight") nextImage();
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "Escape") closeLightbox();
+  });
+</script>
+
+<style>
+  body {
+    background-color: #1c1f2b;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #1c1f2b;
+  }
+
+  .gallery-section { grid-column: 1 / -1; text-align: left; margin: 0; }
+
+  .gallery-item {
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #1c1f2b;
+  }
+
+  .gallery-credit { color: #ccc; font-size: 0.9rem; }
+
+  .gallery-item h2 {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .gallery-explanation { color: #ddd; text-align: left; font-size: 0.95rem; }
+  .gallery-explanation summary { cursor: pointer; padding: 0.5rem 0; }
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 1000;
+    width: 100%; height: 100vh; height: 100dvh;
+    background: #1c1f2b; color: white; box-sizing: border-box;
+    padding: 3rem 0 0; outline: none;
+  }
+  .lightbox.active { display: flex; flex-direction: column; align-items: center; }
+  .lightbox-inner {
+    width: 100%; min-height: 0; flex: 1 1 0;
+    display: flex; align-items: center; justify-content: center;
+    overflow: auto; overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .lightbox-inner img {
+    display: block; width: 100%; height: 100%; max-width: 100%; max-height: 100%;
+    object-fit: contain; flex-shrink: 0; cursor: zoom-in;
+  }
+  .lightbox-inner.zoomed { display: block; }
+  .lightbox-inner.zoomed img { height: auto; max-width: none; max-height: none; cursor: zoom-out; }
+  .lightbox-controls { flex-wrap: wrap; justify-content: center; align-items: center; display: flex; flex: 0 0 auto; gap: 1rem; padding: 0.4rem; }
+  .lightbox-controls button, .close-btn {
+    min-width: 44px; min-height: 44px; cursor: pointer; touch-action: manipulation;
+    color: white; background: #313747; border: 1px solid #75809a; border-radius: 0.4rem;
+    font-size: 1rem; padding: 0.4rem 0.8rem;
+  }
+  .lightbox-text {
+    flex: 0 0 28%; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    width: 100%; box-sizing: border-box; padding: 0.75rem max(1rem, calc((100vw - 850px) / 2));
+    background: #252b39; border-top: 1px solid #667085;
+  }
+  .lightbox-text h2 { font-size: 1.15rem; margin: 0 0 0.5rem; }
+  .lightbox-text p { font-size: 1rem; line-height: 1.55; color: #ddd; margin: 0 0 1rem; text-align: left; }
+  .close-btn { position: absolute; top: 0.3rem; right: 0.5rem; font-size: 1.4rem; }
+  @media (max-width: 600px) { .gallery-grid { padding: 0.75rem; } }
+</style>

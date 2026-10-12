@@ -5,7 +5,7 @@ permalink: /
 nav_exclude: false
 background_image: "/images/spirale.png"
 description: "Articles, notes, exercises, and resources on mathematics, physics, logic, linguistics, formal systems, and artificial intelligence."
-last_modified_at: 2026-10-10
+last_modified_at: 2026-10-12
 ---
 
 # Logic & Motion
@@ -45,11 +45,15 @@ Articles on logic, linguistics, formal systems, symbolic representation, and art
 
 [**Logic & Language →**]({{ "/logic-language/" | relative_url }})
 
-### Gallery
+### Art and Mathematics
 
-Paper artworks by CREW and generative images by Cesare Peli, exploring mathematical, scientific, and conceptual themes.
+Visual explorations of mathematical structures, patterns and scientific ideas.
 
-[**Gallery →**]({{ "/gallery/" | relative_url }})
+[**Art and Mathematics →**]({{ "/gallery/" | relative_url }})
+
+[**CREW**]({{ "/gallery/crew/" | relative_url }}): paper artworks governed by numerical sequences and combinatorial constraints.
+
+[**Generative Images**]({{ "/gallery/generative-images/" | relative_url }}): visual interpretations by Cesare Peli.
 
 ### About
 

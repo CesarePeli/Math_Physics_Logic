@@ -2,7 +2,10 @@
 layout: default
 ---
 <article class="artwork-page">
-  <nav aria-label="Gallery"><a href="{{ '/gallery/' | relative_url }}">← The Scientific Gallery</a></nav>
+  <nav aria-label="Art and Mathematics">
+    <a href="{{ '/gallery/' | relative_url }}">Art and Mathematics</a> ·
+    {% if page.author == 'CREW' %}<a href="{{ '/gallery/crew/' | relative_url }}">CREW collection</a>{% else %}<a href="{{ '/gallery/generative-images/' | relative_url }}">Generative Images</a>{% endif %}
+  </nav>
   <h1>{{ page.title | escape }}</h1>
   <p class="artwork-byline">{{ page.author | escape }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.model %} · {{ page.model | escape }}{% endif %}</p>
   <figure>
