@@ -2,40 +2,20 @@
 title: "Unstable Equilibrium"
 image: "/gallery-images/equilibrium.png"
 description: "A suspended sphere and an inclined plane in perfect tension."
-meta_description: "A visual metaphor of instability and precision: a suspended sphere and an inclined plane in perfect tension. Midjourney artwork on physical balance and abstraction."
+meta_description: "Unstable Equilibrium by Cesare Peli: a generative image of a sphere and inclined plane, exploring physical balance and geometric tension."
 topic: "Mechanics"
 tags: ["inclined plane", "equilibrium", "balance", "geometry", "gravity"]
 model: "Midjourney v6"
 author: "Cesare Peli"
 order: 8
-last_modified_at: 2026-10-10
-date: 2025-06-17
+last_modified_at: "2026-10-12"
+date: "2025-06-17"
+layout: "artwork"
+seo_title: "Unstable Equilibrium — Cesare Peli"
+alt: "Suspended sphere above an inclined plane in a geometric composition."
+permalink: "/gallery/unstable-equilibrium/"
+width: 1024
+height: 1024
 ---
 
-<figure>
-  <img src="/gallery-images/equilibrium.png" alt="Geometric artwork of a sphere suspended above an inclined plane, symbolizing unstable equilibrium and physical tension">
-  <figcaption><strong>Unstable Equilibrium</strong> – A reflection on balance, geometry, and the forces we cannot see</figcaption>
-</figure>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ImageObject",
-  "contentUrl": "https://www.cesarepeli.com/gallery-images/equilibrium.png",
-  "name": "Unstable Equilibrium",
-  "description": "A suspended sphere, delicately balanced above an inclined plane, explores the paradox between geometric control and gravitational inevitability.",
-  "author": {
-    "@type": "Person",
-    "name": "Cesare Peli"
-  },
-  "creator": {
-    "@type": "Person",
-    "name": "Cesare Peli"
-  },
-  "copyrightHolder": {
-    "@type": "Person",
-    "name": "Cesare Peli"
-  },
-  "datePublished": "2025-06-17"
-}
-</script>
+A suspended sphere and an inclined plane in perfect tension.

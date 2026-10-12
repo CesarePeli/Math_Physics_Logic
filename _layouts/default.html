@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="{{ page.description | default: 'Logic & Motion – Mathematics, physics, reasoning, language and intelligence.' | escape }}"
+    content="{{ page.meta_description | default: page.description | default: 'Logic & Motion – Mathematics, physics, reasoning, language and intelligence.' | escape }}"
   >
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">

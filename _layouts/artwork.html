@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="artwork-page">
+  <nav aria-label="Gallery"><a href="{{ '/gallery/' | relative_url }}">← The Scientific Gallery</a></nav>
+  <h1>{{ page.title | escape }}</h1>
+  <p class="artwork-byline">{{ page.author | escape }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.model %} · {{ page.model | escape }}{% endif %}</p>
+  <figure>
+    <a href="{{ page.image | relative_url }}" aria-label="Open full-size image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.alt | escape }}" width="{{ page.width }}" height="{{ page.height }}" fetchpriority="high">
+    </a>
+    <figcaption>{{ page.title | escape }} — {{ page.author | escape }}</figcaption>
+  </figure>
+  <section aria-label="Explanation">{{ content }}</section>
+  {% if page.catalogue_code %}<p class="artwork-source">Source: <em>Linus, Bach, Beatles. L’Arte Matematica: istruzioni per l’uso</em>, 2026. {{ page.catalogue_code }}, catalogue page {{ page.catalogue_page }}. Curated by Giovanna Grossato.</p>{% endif %}
+  {% if page.author == 'CREW' %}<p>CREW: Flaviano Raschietti, Leopoldo Morbin, Nicola Cracco and Mauro Forlani.</p>{% endif %}
+</article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.meta_description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "contentUrl": {{ page.image | absolute_url | jsonify }},
+  "width": {{ page.width }},
+  "height": {{ page.height }},
+  "creator": { "@type": {% if page.author == 'CREW' %}"Organization"{% else %}"Person"{% endif %}, "name": {{ page.author | jsonify }} },
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }}
+}
+</script>
+<style>
+.artwork-page figure { margin: 1.5rem 0; }
+.artwork-page figure img { display: block; width: 100%; height: auto; max-height: 75vh; object-fit: contain; }
+.artwork-page figcaption, .artwork-source { color: #cbd2df; font-size: 0.95rem; }
+.artwork-byline { color: #cbd2df; }
+</style>

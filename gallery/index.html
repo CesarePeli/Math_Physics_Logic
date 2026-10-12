@@ -20,6 +20,7 @@ last_modified_at: 2026-10-12
     <div class="gallery-item">
       <img src="{{ art.image | relative_url }}" alt="{{ art.title | escape }} — {{ art.author | default: 'Cesare Peli' | escape }}" loading="lazy" tabindex="0" role="button" onclick="openLightbox({{ forloop.index0 }}, true)" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox({{ forloop.index0 }}, true); }">
       <h2>{{ art.title }}</h2>
+      <p><a href="{{ art.url | relative_url }}">View artwork and explanation →</a></p>
       <details class="gallery-explanation"><summary>About this work</summary>{% if art.explanation %}{% for paragraph in art.explanation %}<p>{{ paragraph }}</p>{% endfor %}{% else %}<p>{{ art.description }}</p>{% endif %}</details>
       <p class="gallery-credit">{{ art.author | default: "Cesare Peli" }}{% if art.year %} · {{ art.year }}{% endif %}</p>
     </div>
@@ -34,6 +35,7 @@ last_modified_at: 2026-10-12
   <div class="lightbox-controls">
     <button type="button" aria-label="Previous artwork" onclick="prevImage()">&#10094;</button>
     <button type="button" id="lightbox-zoom" onclick="toggleZoom()">Zoom in</button>
+    <a id="lightbox-page" href="">Artwork page</a>
     <button type="button" aria-label="Next artwork" onclick="nextImage()">&#10095;</button>
   </div>
   <div class="lightbox-text">
@@ -48,6 +50,7 @@ last_modified_at: 2026-10-12
     {% for art in artworks %}
     {
       image: {{ art.image | relative_url | jsonify }},
+      url: {{ art.url | relative_url | jsonify }},
       title: {{ art.title | jsonify }},
       description: {{ art.description | jsonify }},
       explanation: {{ art.explanation | jsonify }},
@@ -73,6 +76,7 @@ last_modified_at: 2026-10-12
     }
     currentIndex = index;
     const item = galleryItems[index];
+    document.getElementById("lightbox-page").href = item.url;
     document.getElementById("lightbox-img").src = item.image;
     document.getElementById("lightbox-img").alt = item.title + " — " + item.author;
     document.querySelector(".lightbox-inner").classList.remove("zoomed");
@@ -190,7 +194,7 @@ last_modified_at: 2026-10-12
   }
   .lightbox-inner.zoomed { display: block; }
   .lightbox-inner.zoomed img { height: auto; max-width: none; max-height: none; cursor: zoom-out; }
-  .lightbox-controls { display: flex; flex: 0 0 auto; gap: 1rem; padding: 0.4rem; }
+  .lightbox-controls { flex-wrap: wrap; justify-content: center; align-items: center; display: flex; flex: 0 0 auto; gap: 1rem; padding: 0.4rem; }
   .lightbox-controls button, .close-btn {
     min-width: 44px; min-height: 44px; cursor: pointer; touch-action: manipulation;
     color: white; background: #313747; border: 1px solid #75809a; border-radius: 0.4rem;
