@@ -3,10 +3,14 @@ layout: default
 title: Art & Mathematics
 seo_title: "Art & Mathematics: Collections and Artworks"
 permalink: /gallery/
-background_image: "/gallery-images/crew-linus-60-sally-30.webp"
 description: "Explore visual approaches to mathematical structures. Browse the collections, view individual artworks and read their mathematical explanations."
 last_modified_at: 2026-10-13
 ---
+
+<!-- Crop the photograph to the coloured artwork, excluding its white mount. -->
+<svg class="art-background" viewBox="160 118 710 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <image href="{{ '/gallery-images/crew-il-grande-c.webp' | relative_url }}" width="1034" height="800" />
+</svg>
 
 <h1>Art &amp; Mathematics</h1>
 <p>Mathematical structures, patterns and ideas explored through visual form.</p>
@@ -24,6 +28,10 @@ last_modified_at: 2026-10-13
   </section>
 </div>
 <style>
+body { isolation: isolate; background-color: #1c1f2b; }
+.art-background { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+main > .content-box { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(15, 19, 27, 0.82); }
+
 .art-collections { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 1.5rem; margin: 2rem 0; }
 .art-collections section { padding: 1.5rem; border: 1px solid #65718a; border-radius: 0.75rem; background: #202636; }
 .art-collections h2 { margin-top: 0; }
