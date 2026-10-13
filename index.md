@@ -115,38 +115,28 @@ Logic & Motion is an independent educational project devoted to mathematics, phy
 
 ## Sections
 
-### Mathematics
+### [Mathematics]({{ "/mathematics/" | relative_url }})
 
 Articles and resources on foundations, algebra, calculus, mathematical methods, and proof.
 
-[**Mathematics →**]({{ "/mathematics/" | relative_url }})
-
-### Physics
+### [Physics]({{ "/physics/" | relative_url }})
 
 Conceptual material and worked problems on mechanics, thermodynamics, dynamical systems, and quantum physics.
 
-[**Physics →**]({{ "/physics/" | relative_url }})
-
-### Logic & Language
+### [Logic & Language]({{ "/logic-language/" | relative_url }})
 
 Articles on logic, linguistics, formal systems, symbolic representation, and artificial intelligence.
 
-[**Logic & Language →**]({{ "/logic-language/" | relative_url }})
-
-### Art & Mathematics
+### [Art & Mathematics]({{ "/gallery/" | relative_url }})
 
 Visual explorations of mathematical structures, patterns and scientific ideas.
-
-[**Art & Mathematics →**]({{ "/gallery/" | relative_url }})
 
 [**CREW**]({{ "/gallery/crew/" | relative_url }}): paper artworks governed by numerical sequences and combinatorial constraints.
 
 [**Generative Images**]({{ "/gallery/generative-images/" | relative_url }}): visual interpretations by Cesare Peli.
 
-### About
+### [About]({{ "/about/" | relative_url }})
 
 Information about the project, its contents, and its author.
-
-[**About Logic & Motion →**]({{ "/about/" | relative_url }})
 
 </div>
