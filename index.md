@@ -78,7 +78,7 @@ Logic & Motion is an independent educational project devoted to mathematics, phy
 }
 </style>
 
-<div class="featured-readings">
+<div class="featured-readings" markdown="0">
   <a class="featured-reading" href="{{ "/logic-language/large-language-models-grammar/" | relative_url }}">
     <img src="{{ "/images/LLM.png" | relative_url }}" alt="" width="120" height="120" loading="lazy" decoding="async">
     <div>
