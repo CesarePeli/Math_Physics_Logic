@@ -131,10 +131,6 @@ Articles on logic, linguistics, formal systems, symbolic representation, and art
 
 Visual explorations of mathematical structures, patterns and scientific ideas.
 
-[**CREW**]({{ "/gallery/crew/" | relative_url }}): paper artworks governed by numerical sequences and combinatorial constraints.
-
-[**Generative Images**]({{ "/gallery/generative-images/" | relative_url }}): visual interpretations by Cesare Peli.
-
 ### [About]({{ "/about/" | relative_url }})
 
 Information about the project, its contents, and its author.
